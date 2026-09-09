@@ -16,7 +16,7 @@ The approval file has this shape (substitute exact real values):
   "approved": true,
   "commit": "<40-character tested candidate commit>",
   "f0Digest": "<64-character foundation digest>",
-  "workflowRun": "https://github.com/tecxbro/grokbotonimessage/actions/runs/<run-id>"
+  "workflowRun": "https://github.com/tecxbro/grokbotxphoton/actions/runs/<run-id>"
 }
 ```
 

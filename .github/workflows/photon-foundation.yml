@@ -1,9 +1,8 @@
-name: Photon foundation
+name: Grokbot x Photon checks
 on:
   push:
-    paths: ['packages/photon-features/**', 'docs/photon-features/**', 'package.json', 'package-lock.json', '.github/workflows/photon-*.yml']
+    branches: [main]
   pull_request:
-    paths: ['packages/photon-features/**', 'docs/photon-features/**', 'package.json', 'package-lock.json', '.github/workflows/photon-*.yml']
 permissions:
   contents: read
 jobs:
@@ -18,5 +17,6 @@ jobs:
       - run: npm install --global npm@10.9.2
       - run: npm ci --ignore-scripts
       - run: npm test
-      - run: npm run photon:test
-      - run: npm run photon:check
+      - run: npm run check
+      - run: node packages/photon-features/scripts/generate-skill.mjs --check
+      - run: npm run smoke

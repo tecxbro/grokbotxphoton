@@ -40,7 +40,7 @@ export async function packageCandidate({ candidate, approval, output }) {
   if (git('rev-parse', '--show-toplevel') !== candidate || git('status', '--porcelain', '--untracked-files=all')) throw new Error('CLEAN_ASSEMBLED_CANDIDATE_REQUIRED');
   const commit = git('rev-parse', 'HEAD');
   const authorization = JSON.parse(await readFile(approval, 'utf8'));
-  if (authorization.kind !== 'assembled-candidate-approval' || authorization.commit !== commit || typeof authorization.workflowRun !== 'string' || !authorization.workflowRun.startsWith('https://github.com/tecxbro/grokbotonimessage/actions/runs/') || authorization.approved !== true) throw new Error('INTEGRATION_APPROVAL_REQUIRED');
+  if (authorization.kind !== 'assembled-candidate-approval' || authorization.commit !== commit || typeof authorization.workflowRun !== 'string' || !authorization.workflowRun.startsWith('https://github.com/tecxbro/grokbotxphoton/actions/runs/') || authorization.approved !== true) throw new Error('INTEGRATION_APPROVAL_REQUIRED');
   const outputRelative = relative(candidate, resolve(output));
   if (!outputRelative.startsWith('..' + '/') && !isAbsolute(outputRelative)) throw new Error('OUTPUT_MUST_BE_OUTSIDE_CANDIDATE');
   const root = join(candidate, 'packages/photon-features');

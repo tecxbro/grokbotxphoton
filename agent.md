@@ -1,7 +1,10 @@
 # Agent working guide
 
-Last reviewed: 2026-09-08, against the committed F0 foundation.
+Standalone repository: https://github.com/tecxbro/grokbotxphoton.
+Last updated: 2026-09-09 for product separation. Historical F0 evidence remains unchanged.
 Read this file and [architecthure.md](architecthure.md) when starting a lane assignment.
+
+The former root Grok Bot CLI, its tests, demos, changesets and publishing workflows are excluded from this product. The external Grok orchestrator remains an integration dependency; its implementation is not bundled here.
 
 ## Mission and boundaries
 
@@ -39,7 +42,8 @@ Use Node 24.13.0 and npm 10.9.2 on PATH; exact dependency versions and compatibi
 
 | Check | Command from repository root |
 | --- | --- |
-| Existing CLI tests | `npm test` |
+| Product foundation tests | `npm test` |
+| Independent offline integration/security verification (known failures) | `npm run test:verification` |
 | Package compilation and public SDK probes | `npm run photon:build` |
 | F0 foundation tests | `npm run photon:test` |
 | Schema and foundation digest drift | `npm run photon:check` |

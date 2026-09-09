@@ -1,51 +1,75 @@
-# grok-bot-cli
+# Grokbot x Photon
 
-[![npm version](https://img.shields.io/npm/v/grok-bot-cli.svg)](https://www.npmjs.com/package/grok-bot-cli)
+A standalone deterministic messaging runtime for Grok tasks using Photon Spectrum. It provides typed messaging actions, durable local state, authenticated worker IPC, feature modules, and a local `grok-photon` executable.
 
-Manage [Grok Bot](https://cursor.com/help/grok-bot/plans) agents, groups, and messages from your terminal.
+The Grok orchestrator is an external integration dependency. This repository contains the new Photon product; it does not include the separate Grok Bot CLI implementation.
 
-![Live create, group, send, and delete smoke test](https://raw.githubusercontent.com/tecxbro/grokbotonimessage/main/demo/grok-bot-cli-demo.gif)
+## What is included
 
-[Watch the MP4](https://github.com/tecxbro/grokbotonimessage/blob/main/demo/grok-bot-cli-demo.mp4)
+- **Runtime and state:** durable inbox/outbox, task claims, fenced execution, cancellation and recovery.
+- **Transport:** inbound normalization, authenticated webhook handling, and typing lifecycle.
+- **Messaging features:** text/composition, media, polls, app cards, and native conversation operations across a 44-operation contract.
+- **Worker tools:** local CLI, operating skill, validated examples, inactive installation and rollback tooling.
+- **Verification:** foundation, lane, integration, security and explicitly gated live tests, plus source/evidence records.
 
-## Install
+Source: [`packages/photon-features/src/`](packages/photon-features/src/). Tests: [`packages/photon-features/tests/`](packages/photon-features/tests/). Architecture: [`architecthure.md`](architecthure.md). Contributor guide: [`agent.md`](agent.md).
+
+## Development
+
+Use **Node 24.13.0** and **npm 10.9.2**. Spectrum is pinned to **12.8.0** in the feature workspace.
 
 ```sh
-npm install --global grok-bot-cli
+npm ci --ignore-scripts
+npm run build
+npm test
+npm run check
+npm run smoke
 ```
 
-Requires Node.js 18+ and the Grok Bot macOS app. Open Grok Bot and sign in once; `gbot` automatically uses the app's encrypted session and routing credentials. No token copying is required.
+`npm test` runs the 60 foundation tests. `npm run check` verifies generated schemas and the frozen F0 contract digest. `npm run smoke` exercises the CLI offline without connecting a host or provider.
 
-## Use
+Run independent offline integration/security verification separately:
 
 ```sh
-gbot bots list
-gbot bots create --name Researcher
-gbot bots update Researcher --description "Research the launch" --notify on
-gbot bots create --name Writer
-gbot groups create --name Launch --member Researcher --member Writer --description "Ship together"
-gbot groups update Launch --title "Launch room" --hidden off
-gbot send Researcher "Summarize the launch status."
-gbot send Launch "Share your updates."
-gbot thread Researcher
-gbot groups delete Launch
-gbot bots delete Researcher
-gbot bots delete Writer
+npm run test:verification
 ```
 
-`update` fields: `--name` `--description`/`--instructions` `--title` `--avatar-shape` `--avatar-color` `--notify` `--hidden`. `--description` is the UI Instructions field.
+This suite currently fails on the documented integration defects below. It is not part of the foundation-only CI job. The existing live tests require separate explicit authorization and configuration.
 
-Run `gbot --help` for every command.
+For a particular lane after building:
 
-## Gateway URL policy
+```sh
+node --test packages/photon-features/dist/tests/lanes/wt-03/*.test.js
+```
 
-By default `gbot` only sends credentials to `https` URLs on `*.cursor.sh` / `*.cursor.com` / `*.cursorvm.com`.
+## Current status
 
-- `GROK_BOT_ALLOW_LOCAL_GATEWAY=1` — permit `http(s)://127.0.0.1`, `localhost`, and `::1` (local/dev gateways).
-- `GROK_BOT_ALLOW_ANY_GATEWAY=1` — disable host checks (unsafe; for break-glass only).
+All nine implementation/verification lanes are present. This is an implementation snapshot under integration, not an installable production release.
 
-All gateway / `EnsureSandBox` fetches use `redirect: "error"` so credentials are not followed across redirects.
+| Gate | Status |
+| --- | --- |
+| Product foundation and compilation | Passed in the recorded preflight |
+| Text through durable executor | Blocked: execution-service contract mismatch (WT09-001) |
+| Inbound poll continuation | Blocked: router/reducer duplicate inbox ownership (WT09-002) |
+| Runtime database versus installer | Blocked: private-file permission mismatch (WT09-003) |
+| Full poll management | `poll.get`, `poll.vote`, `poll.unvote`, `poll.addOption` require implementation |
+| Production host and Grok wake wiring | Incomplete / unverified |
+| Final package, activation and live verification | Not complete |
 
-## License
+Read the [44-operation evidence matrix](docs/photon-features/reports/wt-09/operation-coverage.md), [verification requirements](docs/photon-features/reports/wt-09/requirements.md), and [defect reports](docs/photon-features/requests/wt-09/).
 
-MIT
+## Local executable and installation
+
+After building, the new executable can be invoked directly:
+
+```sh
+node packages/photon-features/dist/src/cli/main.js doctor --json
+```
+
+An active host requires a scoped context, private credential file and local socket configuration. Missing configuration produces a structured failure. No host is activated by cloning, installing development dependencies, or running the offline checks.
+
+See the [operating skill](packages/photon-features/SKILL.md) and [installation/rollback guide](packages/photon-features/INSTALL.md). Final artifact generation remains gated on an assembled tested candidate.
+
+## Provenance
+
+Historical F0/lane evidence is retained unchanged, including its original repository URLs, commit identities and old CLI regression counts. Those references document where the work was developed; the former CLI source, tests, demos, changelog and automatic publishing setup are excluded from this product's current tree.

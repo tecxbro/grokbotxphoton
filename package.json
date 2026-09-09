@@ -1,58 +1,33 @@
 {
-  "name": "grok-bot-cli",
-  "version": "0.2.2",
-  "description": "CLI for Grok Bot agents and groups: create, update, message, inspect threads, and automate cleanup",
+  "name": "grokbotxphoton",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Deterministic Photon messaging runtime, local worker protocol, and operating tools for Grok tasks.",
   "type": "module",
-  "bin": {
-    "gbot": "src/cli.js",
-    "grok-bot": "src/cli.js"
-  },
   "engines": {
-    "node": ">=18"
+    "node": ">=24.13.0 <25"
   },
-  "scripts": {
-    "changeset": "changeset",
-    "gbot": "node src/cli.js",
-    "release": "changeset publish",
-    "test": "node --test test/*.test.js",
-    "photon:build": "npm run build --workspace=@grokbot/photon-features",
-    "photon:test": "npm run test --workspace=@grokbot/photon-features",
-    "photon:check": "npm run check --workspace=@grokbot/photon-features"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tecxbro/grokbotonimessage.git"
-  },
-  "homepage": "https://github.com/tecxbro/grokbotonimessage#readme",
-  "bugs": {
-    "url": "https://github.com/tecxbro/grokbotonimessage/issues"
-  },
-  "author": "tecxbro (https://github.com/tecxbro)",
-  "license": "MIT",
-  "keywords": [
-    "grok",
-    "grok-bot",
-    "grokbot",
-    "gbot",
-    "cursor",
-    "ai-agents",
-    "automation",
-    "terminal",
-    "cli"
-  ],
-  "files": [
-    "src",
-    "README.md",
-    "LICENSE"
-  ],
-  "devDependencies": {
-    "@changesets/cli": "3.0.1"
-  },
-  "dependencies": {
-    "spectrum-ts": "^12.8.0"
-  },
+  "packageManager": "npm@10.9.2",
   "workspaces": [
     "packages/photon-features"
   ],
-  "packageManager": "npm@10.9.2"
+  "scripts": {
+    "build": "npm run photon:build",
+    "test": "npm run photon:test",
+    "check": "npm run photon:check",
+    "photon:build": "npm run build --workspace=@grokbot/photon-features",
+    "photon:test": "npm run test --workspace=@grokbot/photon-features",
+    "photon:check": "npm run check --workspace=@grokbot/photon-features",
+    "test:verification": "npm run photon:build && node --test \"packages/photon-features/dist/tests/e2e/*.test.js\" \"packages/photon-features/dist/tests/security/*.test.js\" \"packages/photon-features/dist/tests/lanes/wt-09/*.test.js\"",
+    "smoke": "node packages/photon-features/scripts/smoke-test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tecxbro/grokbotxphoton.git"
+  },
+  "homepage": "https://github.com/tecxbro/grokbotxphoton#readme",
+  "bugs": {
+    "url": "https://github.com/tecxbro/grokbotxphoton/issues"
+  },
+  "license": "MIT"
 }

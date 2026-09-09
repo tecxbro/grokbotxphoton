@@ -1,7 +1,15 @@
 # Photon Feature Runtime architecture
 
-Living architecture overview. Last reviewed: 2026-09-08.
+Living architecture overview. Product separation updated: 2026-09-09.
 Working rules: [agent.md](agent.md). Detailed behavior: [runtime contract](docs/photon-features/runtime-contract.md).
+
+## Current repository scope
+
+This repository contains the new Photon Feature Runtime in `packages/photon-features/`, its tests, schemas, worker operating skill, packaging tools and `docs/photon-features/` evidence. The inherited root Grok Bot CLI and its release pipeline have been removed. The root is a private npm workspace named `grokbotxphoton`; the feature package retains its existing identity to preserve imports and contracts.
+
+All nine lane implementations are present. Integration remains incomplete: production text execution, router/poll transactional ownership and SQLite installation permissions have three reproduced failures. Four poll management operations and production host composition remain unfinished. The external Grok task/wake connection is unverified. Product separation does not resolve those defects.
+
+Historical evidence below and under `docs/photon-features/evidence/` records the original checkout, source URLs, commits and legacy regression counts. Those records are preserved as provenance and are not the current product test inventory. Current `npm test` runs the 60 foundation tests; `npm run test:verification` runs independent offline integration/security tests.
 
 ## Purpose
 
@@ -65,7 +73,7 @@ flowchart TB
 
 **Incoming work:** explicitly select Photon stream or webhook ingress, verify authenticity and scope, normalize typed events, and persist inbox/reducer/handoff state transactionally before upstream acknowledgement. Wake the existing task after commit. The bot then uses `work.list`, `work.claim`, `work.heartbeat` and `work.ack` to retrieve and manage actual durable work. The wake body is neither the work record nor authorization.
 
-**Outgoing operations:** the executable submits a strict versioned action through local IPC. The runtime resolves the authenticated principal, context and resource scope, checks current generation/permissions/capabilities, and records idempotent outbox work. A claimed executor invokes an injected feature handler through the single SDK owner, then persists results and recovery state. WT-01 still needs to implement this integrated execution path.
+**Outgoing operations:** the executable submits a strict versioned action through local IPC. The runtime resolves the authenticated principal, context and resource scope, checks current generation/permissions/capabilities, and records idempotent outbox work. A claimed executor invokes an injected feature handler through the single SDK owner, then persists results and recovery state. WT-01 supplies the durable executor; production feature/host composition still needs integration.
 
 **Recovery:** leases and fences prevent stale database writes. Multipart children have stable identities and checkpoints. A provider call whose outcome was not persisted can remain unknown; retry requires verified deduplication or reconciliation support. A successful void operation does not need an invented message reference. Delivery/read receipts are correlated observations, distinct from executor completion or provider acceptance.
 
