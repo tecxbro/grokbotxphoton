@@ -73,3 +73,7 @@ See the [operating skill](packages/photon-features/SKILL.md) and [installation/r
 ## Provenance
 
 Historical F0/lane evidence is retained unchanged, including its original repository URLs, commit identities and old CLI regression counts. Those references document where the work was developed; the former CLI source, tests, demos, changelog and automatic publishing setup are excluded from this product's current tree.
+
+## License
+
+[MIT](LICENSE). The license records tecxbro and contributors for the new product and retains the original ScriptedAlchemy notice for inherited materials. The feature package and release collector include the same license.

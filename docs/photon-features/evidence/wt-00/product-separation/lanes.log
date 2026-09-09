@@ -1,0 +1,2067 @@
+TAP version 13
+# (node:47278) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: two processes concurrently reserve the same identity in a real SQLite file
+ok 1 - two processes concurrently reserve the same identity in a real SQLite file
+  ---
+  duration_ms: 268.53025
+  type: 'test'
+  ...
+# Subtest: admission rejects unknown operations/fields, huge text, and forged authorization
+ok 2 - admission rejects unknown operations/fields, huge text, and forged authorization
+  ---
+  duration_ms: 20.226417
+  type: 'test'
+  ...
+# Subtest: wrong principal, context, chat, line, reference ownership and expired contexts fail
+ok 3 - wrong principal, context, chat, line, reference ownership and expired contexts fail
+  ---
+  duration_ms: 5.552084
+  type: 'test'
+  ...
+# Subtest: read/status/cancel/diagnostics enforce task identity and current generation
+ok 4 - read/status/cancel/diagnostics enforce task identity and current generation
+  ---
+  duration_ms: 11.990791
+  type: 'test'
+  ...
+# Subtest: revocation before execution prevents the handler invocation
+ok 5 - revocation before execution prevents the handler invocation
+  ---
+  duration_ms: 12.238958
+  type: 'test'
+  ...
+# Subtest: admin operations need an explicit host policy and approved recipients
+ok 6 - admin operations need an explicit host policy and approved recipients
+  ---
+  duration_ms: 13.705291
+  type: 'test'
+  ...
+# Subtest: executor completed void is distinct from provider accepted and delivered
+ok 7 - executor completed void is distinct from provider accepted and delivered
+  ---
+  duration_ms: 37.090167
+  type: 'test'
+  ...
+# Subtest: capability unavailability blocks before a provider call
+ok 8 - capability unavailability blocks before a provider call
+  ---
+  duration_ms: 17.140667
+  type: 'test'
+  ...
+# Subtest: per-line FIFO prevents overtaking; bounded concurrency does not duplicate a running request
+ok 9 - per-line FIFO prevents overtaking; bounded concurrency does not duplicate a running request
+  ---
+  duration_ms: 29.862125
+  type: 'test'
+  ...
+# Subtest: heartbeat preserves the fence; expired owners cannot write or heartbeat after reclaim
+ok 10 - heartbeat preserves the fence; expired owners cannot write or heartbeat after reclaim
+  ---
+  duration_ms: 13.233333
+  type: 'test'
+  ...
+# Subtest: pre-dispatch cancellation is cancelled; cancellation during transmission stays unknown
+ok 11 - pre-dispatch cancellation is cancelled; cancellation during transmission stays unknown
+  ---
+  duration_ms: 17.473292
+  type: 'test'
+  ...
+# Subtest: revocation between multipart sends blocks the later callback and preserves the first result
+ok 12 - revocation between multipart sends blocks the later callback and preserves the first result
+  ---
+  duration_ms: 14.526167
+  type: 'test'
+  ...
+# Subtest: later multipart provider failure retains prior references and checkpoints
+ok 13 - later multipart provider failure retains prior references and checkpoints
+  ---
+  duration_ms: 11.42975
+  type: 'test'
+  ...
+# Subtest: crash process after possible send recovers unknown without a duplicate callback
+ok 14 - crash process after possible send recovers unknown without a duplicate callback
+  ---
+  duration_ms: 161.844542
+  type: 'test'
+  ...
+# Subtest: lease takeover while send is in flight cannot be overwritten by the old completion
+ok 15 - lease takeover while send is in flight cannot be overwritten by the old completion
+  ---
+  duration_ms: 18.6335
+  type: 'test'
+  ...
+# Subtest: safe pre-dispatch failures can be retried explicitly after revalidation
+ok 16 - safe pre-dispatch failures can be retried explicitly after revalidation
+  ---
+  duration_ms: 15.717458
+  type: 'test'
+  ...
+# Subtest: provider deadline preserves uncertainty and blocks automatic replay
+ok 17 - provider deadline preserves uncertainty and blocks automatic replay
+  ---
+  duration_ms: 29.952875
+  type: 'test'
+  ...
+# Subtest: abandoned child callback cannot convert an in-flight send into a safely retryable failure
+ok 18 - abandoned child callback cannot convert an in-flight send into a safely retryable failure
+  ---
+  duration_ms: 16.158208
+  type: 'test'
+  ...
+# Subtest: generation invalidation immediately before a later multipart send blocks that send
+ok 19 - generation invalidation immediately before a later multipart send blocks that send
+  ---
+  duration_ms: 12.774916
+  type: 'test'
+  ...
+# Subtest: host-controlled engine processes committed requests only after explicit activation
+ok 20 - host-controlled engine processes committed requests only after explicit activation
+  ---
+  duration_ms: 18.805166
+  type: 'test'
+  ...
+# (node:47279) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: event, reducer state and continuation all roll back on a reducer crash
+ok 21 - event, reducer state and continuation all roll back on a reducer crash
+  ---
+  duration_ms: 41.888084
+  type: 'test'
+  ...
+# Subtest: persisted interaction survives a failed wake, with idempotent repeated application
+ok 22 - persisted interaction survives a failed wake, with idempotent repeated application
+  ---
+  duration_ms: 5.128
+  type: 'test'
+  ...
+# Subtest: unsupported events persist as unresolved without creating a guessed continuation
+ok 23 - unsupported events persist as unresolved without creating a guessed continuation
+  ---
+  duration_ms: 4.334833
+  type: 'test'
+  ...
+# Subtest: work fencing, expiry, heartbeat and exact repeated acknowledgement
+ok 24 - work fencing, expiry, heartbeat and exact repeated acknowledgement
+  ---
+  duration_ms: 12.760458
+  type: 'test'
+  ...
+# Subtest: work acknowledgement rejects cancellation, revocation and changed generation
+ok 25 - work acknowledgement rejects cancellation, revocation and changed generation
+  ---
+  duration_ms: 8.026666
+  type: 'test'
+  ...
+# Subtest: restart retains work, poll/card/session state, references and claims
+ok 26 - restart retains work, poll/card/session state, references and claims
+  ---
+  duration_ms: 29.558542
+  type: 'test'
+  ...
+# Subtest: completed multipart child is reused from its checkpoint after pre-dispatch interruption
+ok 27 - completed multipart child is reused from its checkpoint after pre-dispatch interruption
+  ---
+  duration_ms: 49.131041
+  type: 'test'
+  ...
+# Subtest: socket authenticates outside the action; framing is bounded and malformed UTF-8 is rejected
+ok 28 - socket authenticates outside the action; framing is bounded and malformed UTF-8 is rejected
+  ---
+  duration_ms: 27.956334
+  type: 'test'
+  ...
+# Subtest: protocol exposes no credential or other-task data in diagnostics/status errors
+ok 29 - protocol exposes no credential or other-task data in diagnostics/status errors
+  ---
+  duration_ms: 9.406792
+  type: 'test'
+  ...
+# Subtest: socket refuses existing paths, public directories and malformed configured credentials
+ok 30 - socket refuses existing paths, public directories and malformed configured credentials
+  ---
+  duration_ms: 10.776625
+  type: 'test'
+  ...
+# Subtest: an accidentally async reducer cannot commit a continuation before its state
+ok 31 - an accidentally async reducer cannot commit a continuation before its state
+  ---
+  duration_ms: 16.047292
+  type: 'test'
+  ...
+# (node:47280) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: normalizes text, attachments, groups, edits, reactions, read and membership without prose coercion
+ok 32 - normalizes text, attachments, groups, edits, reactions, read and membership without prose coercion
+  ---
+  duration_ms: 149.935042
+  type: 'test'
+  ...
+# Subtest: unknown, senderless, unsent, card and ambiguous poll content is durably unresolved
+ok 33 - unknown, senderless, unsent, card and ambiguous poll content is durably unresolved
+  ---
+  duration_ms: 39.297708
+  type: 'test'
+  ...
+# Subtest: correlated poll votes and unvotes retain distinct identities and scoped references
+ok 34 - correlated poll votes and unvotes retain distinct identities and scoped references
+  ---
+  duration_ms: 15.361584
+  type: 'test'
+  ...
+# Subtest: two-second quiet window resets on new text; restart and duplicate arrival preserve individual input
+ok 35 - two-second quiet window resets on new text; restart and duplicate arrival preserve individual input
+  ---
+  duration_ms: 19.170458
+  type: 'test'
+  ...
+# Subtest: non-text wakes immediately; outbound echoes and operational events do not create reply loops
+ok 36 - non-text wakes immediately; outbound echoes and operational events do not create reply loops
+  ---
+  duration_ms: 49.569541
+  type: 'test'
+  ...
+# Subtest: distinct events targeting one message survive dedupe and out-of-order arrivals
+ok 37 - distinct events targeting one message survive dedupe and out-of-order arrivals
+  ---
+  duration_ms: 12.637416
+  type: 'test'
+  ...
+# Subtest: reducer state and continuation commit atomically; early correlation remains durable and retries
+ok 38 - reducer state and continuation commit atomically; early correlation remains durable and retries
+  ---
+  duration_ms: 15.460167
+  type: 'test'
+  ...
+# Subtest: persistence failure prevents acceptance and wake; crash in reduction leaves inbox replayable
+ok 39 - persistence failure prevents acceptance and wake; crash in reduction leaves inbox replayable
+  ---
+  duration_ms: 25.936084
+  type: 'test'
+  ...
+# Subtest: wake retries the same committed identity after SQLite close/reopen; claims and cancellations are honored
+ok 40 - wake retries the same committed identity after SQLite close/reopen; claims and cancellations are honored
+  ---
+  duration_ms: 13.04
+  type: 'test'
+  ...
+# Subtest: cancellation never discards batched text; new generation can accept retained inputs
+ok 41 - cancellation never discards batched text; new generation can accept retained inputs
+  ---
+  duration_ms: 22.341959
+  type: 'test'
+  ...
+# Subtest: checkpoint barrier never skips a missing preceding event; public restart recovery limit stays explicit
+ok 42 - checkpoint barrier never skips a missing preceding event; public restart recovery limit stays explicit
+  ---
+  duration_ms: 26.800667
+  type: 'test'
+  ...
+# Subtest: local capture replay closes the pre-inbox crash window and reports missing routes
+ok 43 - local capture replay closes the pre-inbox crash window and reports missing routes
+  ---
+  duration_ms: 22.460083
+  type: 'test'
+  ...
+# Subtest: historical text bursts stay separate after delayed restart recovery
+ok 44 - historical text bursts stay separate after delayed restart recovery
+  ---
+  duration_ms: 16.081875
+  type: 'test'
+  ...
+# Subtest: poll capture can be promoted from unresolved after authoritative correlation arrives
+ok 45 - poll capture can be promoted from unresolved after authoritative correlation arrives
+  ---
+  duration_ms: 14.356875
+  type: 'test'
+  ...
+# Subtest: JSON key order does not alter logical event identity
+ok 46 - JSON key order does not alter logical event identity
+  ---
+  duration_ms: 18.570208
+  type: 'test'
+  ...
+# Subtest: simple contacts normalize; richer unsupported contacts retain full capture
+ok 47 - simple contacts normalize; richer unsupported contacts retain full capture
+  ---
+  duration_ms: 28.452208
+  type: 'test'
+  ...
+# Subtest: host pump batches before dispatch and retries a failed wake using the same work
+ok 48 - host pump batches before dispatch and retries a failed wake using the same work
+  ---
+  duration_ms: 17.421
+  type: 'test'
+  ...
+# Subtest: cross-scope targets and conflicting reuse of an event identity are rejected
+ok 49 - cross-scope targets and conflicting reuse of an event identity are rejected
+  ---
+  duration_ms: 13.244792
+  type: 'test'
+  ...
+# Subtest: duplicate unresolved delivery with a new capture pointer remains accepted
+ok 50 - duplicate unresolved delivery with a new capture pointer remains accepted
+  ---
+  duration_ms: 27.460375
+  type: 'test'
+  ...
+# Subtest: async reducers cannot commit a continuation ahead of correlated state
+ok 51 - async reducers cannot commit a continuation ahead of correlated state
+  ---
+  duration_ms: 15.579542
+  type: 'test'
+  ...
+# (node:47281) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# [spectrum.lifecycle] INFO Spectrum started {
+#   'spectrum.lifecycle.provider_count': 1,
+#   'spectrum.lifecycle.providers': 'wt02_test',
+#   'spectrum.lifecycle.telemetry': false
+# }
+# Subtest: single SDK lifecycle and explicit multi-line routing; feature calls never create listeners
+ok 52 - single SDK lifecycle and explicit multi-line routing; feature calls never create listeners
+  ---
+  duration_ms: 2.868
+  type: 'test'
+  ...
+# Subtest: owner startup failure and stop during delayed startup clean up correctly
+ok 53 - owner startup failure and stop during delayed startup clean up correctly
+  ---
+  duration_ms: 0.177625
+  type: 'test'
+  ...
+# Subtest: webhook acknowledges only after awaited durable acceptance and rejects persistence failure
+ok 54 - webhook acknowledges only after awaited durable acceptance and rejects persistence failure
+  ---
+  duration_ms: 74.42275
+  type: 'test'
+  ...
+# Subtest: invalid signatures, raw-byte tampering, stale/future timestamps and alternate envelopes cannot enter inbox
+ok 55 - invalid signatures, raw-byte tampering, stale/future timestamps and alternate envelopes cannot enter inbox
+  ---
+  duration_ms: 17.254292
+  type: 'test'
+  ...
+# [spectrum.lifecycle] INFO Spectrum stopped {
+#   'spectrum.lifecycle.providers': 'wt02_test',
+#   'spectrum.lifecycle.stream_close_ms': 0,
+#   'spectrum.lifecycle.fusor_close_ms': 0,
+#   'spectrum.lifecycle.client_close_ms': 0
+# }
+# Subtest: actual pinned SDK helper returns before callback settles (offline custom provider)
+ok 56 - actual pinned SDK helper returns before callback settles (offline custom provider)
+  ---
+  duration_ms: 17.221459
+  type: 'test'
+  ...
+# Subtest: stream failure remains inspectable and SDK's reconnect is not replaced with another connection
+ok 57 - stream failure remains inspectable and SDK's reconnect is not replaced with another connection
+  ---
+  duration_ms: 7.463416
+  type: 'test'
+  ...
+# Subtest: owner stops typing before destroying the shared client
+ok 58 - owner stops typing before destroying the shared client
+  ---
+  duration_ms: 0.15075
+  type: 'test'
+  ...
+# (node:47282) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: delayed start cancelled before dispatch; expiry and timeout stop active typing
+ok 59 - delayed start cancelled before dispatch; expiry and timeout stop active typing
+  ---
+  duration_ms: 7.611458
+  type: 'test'
+  ...
+# Subtest: old generation and old same-generation ticket cannot stop newer indicator
+ok 60 - old generation and old same-generation ticket cannot stop newer indicator
+  ---
+  duration_ms: 2.472916
+  type: 'test'
+  ...
+# Subtest: late start after cancellation is followed by stop
+ok 61 - late start after cancellation is followed by stop
+  ---
+  duration_ms: 7.712792
+  type: 'test'
+  ...
+# Subtest: delayed stop completes before newer start; stale completion cannot leave new generation off
+ok 62 - delayed stop completes before newer start; stale completion cannot leave new generation off
+  ---
+  duration_ms: 0.556125
+  type: 'test'
+  ...
+# Subtest: overlapping start generations need no stale stop
+ok 63 - overlapping start generations need no stale stop
+  ---
+  duration_ms: 1.688542
+  type: 'test'
+  ...
+# Subtest: slow resolver cannot replay expired typing-start work
+ok 64 - slow resolver cannot replay expired typing-start work
+  ---
+  duration_ms: 0.160833
+  type: 'test'
+  ...
+# Subtest: completion, error, abort, and long-worker waiting run the stop path
+ok 65 - completion, error, abort, and long-worker waiting run the stop path
+  ---
+  duration_ms: 5.719333
+  type: 'test'
+  ...
+# Subtest: typing rejection and hung control never block real response
+ok 66 - typing rejection and hung control never block real response
+  ---
+  duration_ms: 0.316583
+  type: 'test'
+  ...
+# Subtest: shutdown, connection loss, restoration, and restart invalidate prior starts
+ok 67 - shutdown, connection loss, restoration, and restart invalidate prior starts
+  ---
+  duration_ms: 7.773667
+  type: 'test'
+  ...
+# Subtest: failure reports unknown visibility and does not spin on failed stop
+ok 68 - failure reports unknown visibility and does not spin on failed stop
+  ---
+  duration_ms: 0.196291
+  type: 'test'
+  ...
+# Subtest: explicit typing module consumes F0 services and persisted execution identity; expired starts do not replay
+ok 69 - explicit typing module consumes F0 services and persisted execution identity; expired starts do not replay
+  ---
+  duration_ms: 13.225667
+  type: 'test'
+  ...
+# Subtest: bounded shutdown reports a hung control without claiming a stop
+ok 70 - bounded shutdown reports a hung control without claiming a stop
+  ---
+  duration_ms: 12.313
+  type: 'test'
+  ...
+# Subtest: dispatch revalidates the fence after a delayed resolver
+ok 71 - dispatch revalidates the fence after a delayed resolver
+  ---
+  duration_ms: 0.152875
+  type: 'test'
+  ...
+# Subtest: old start rejection cannot cancel a newer generation
+ok 72 - old start rejection cannot cancel a newer generation
+  ---
+  duration_ms: 0.107042
+  type: 'test'
+  ...
+# Subtest: old stop rejection cannot cancel a newer generation
+ok 73 - old stop rejection cannot cancel a newer generation
+  ---
+  duration_ms: 0.084959
+  type: 'test'
+  ...
+# (node:47283) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: text.send: valid F0 fixture and invalid arguments
+ok 74 - text.send: valid F0 fixture and invalid arguments
+  ---
+  duration_ms: 14.195292
+  type: 'test'
+  ...
+# Subtest: text.send: executable handler and schema-valid result
+ok 75 - text.send: executable handler and schema-valid result
+  ---
+  duration_ms: 26.462667
+  type: 'test'
+  ...
+# Subtest: text.stream: valid F0 fixture and invalid arguments
+ok 76 - text.stream: valid F0 fixture and invalid arguments
+  ---
+  duration_ms: 2.928083
+  type: 'test'
+  ...
+# Subtest: text.stream: executable handler and schema-valid result
+ok 77 - text.stream: executable handler and schema-valid result
+  ---
+  duration_ms: 16.96425
+  type: 'test'
+  ...
+# Subtest: markdown.send: valid F0 fixture and invalid arguments
+ok 78 - markdown.send: valid F0 fixture and invalid arguments
+  ---
+  duration_ms: 4.669542
+  type: 'test'
+  ...
+# Subtest: markdown.send: executable handler and schema-valid result
+ok 79 - markdown.send: executable handler and schema-valid result
+  ---
+  duration_ms: 17.3215
+  type: 'test'
+  ...
+# Subtest: link.send: valid F0 fixture and invalid arguments
+ok 80 - link.send: valid F0 fixture and invalid arguments
+  ---
+  duration_ms: 1.981875
+  type: 'test'
+  ...
+# Subtest: link.send: executable handler and schema-valid result
+ok 81 - link.send: executable handler and schema-valid result
+  ---
+  duration_ms: 15.465916
+  type: 'test'
+  ...
+# Subtest: content.group: valid F0 fixture and invalid arguments
+ok 82 - content.group: valid F0 fixture and invalid arguments
+  ---
+  duration_ms: 1.608625
+  type: 'test'
+  ...
+# Subtest: content.group: executable handler and schema-valid result
+ok 83 - content.group: executable handler and schema-valid result
+  ---
+  duration_ms: 16.997208
+  type: 'test'
+  ...
+# Subtest: content.compose: valid F0 fixture and invalid arguments
+ok 84 - content.compose: valid F0 fixture and invalid arguments
+  ---
+  duration_ms: 1.578625
+  type: 'test'
+  ...
+# Subtest: content.compose: executable handler and schema-valid result
+ok 85 - content.compose: executable handler and schema-valid result
+  ---
+  duration_ms: 11.615333
+  type: 'test'
+  ...
+# Subtest: message.get: valid F0 fixture and invalid arguments
+ok 86 - message.get: valid F0 fixture and invalid arguments
+  ---
+  duration_ms: 0.873542
+  type: 'test'
+  ...
+# Subtest: message.get: executable handler and schema-valid result
+ok 87 - message.get: executable handler and schema-valid result
+  ---
+  duration_ms: 9.7355
+  type: 'test'
+  ...
+# Subtest: message.reply: valid F0 fixture and invalid arguments
+ok 88 - message.reply: valid F0 fixture and invalid arguments
+  ---
+  duration_ms: 1.470917
+  type: 'test'
+  ...
+# Subtest: message.reply: executable handler and schema-valid result
+ok 89 - message.reply: executable handler and schema-valid result
+  ---
+  duration_ms: 9.757791
+  type: 'test'
+  ...
+# Subtest: message.react: valid F0 fixture and invalid arguments
+ok 90 - message.react: valid F0 fixture and invalid arguments
+  ---
+  duration_ms: 1.3205
+  type: 'test'
+  ...
+# Subtest: message.react: executable handler and schema-valid result
+ok 91 - message.react: executable handler and schema-valid result
+  ---
+  duration_ms: 12.695666
+  type: 'test'
+  ...
+# Subtest: reaction.remove: valid F0 fixture and invalid arguments
+ok 92 - reaction.remove: valid F0 fixture and invalid arguments
+  ---
+  duration_ms: 1.930333
+  type: 'test'
+  ...
+# Subtest: reaction.remove: executable handler and schema-valid result
+ok 93 - reaction.remove: executable handler and schema-valid result
+  ---
+  duration_ms: 14.810833
+  type: 'test'
+  ...
+# Subtest: message.edit: valid F0 fixture and invalid arguments
+ok 94 - message.edit: valid F0 fixture and invalid arguments
+  ---
+  duration_ms: 6.060958
+  type: 'test'
+  ...
+# Subtest: message.edit: executable handler and schema-valid result
+ok 95 - message.edit: executable handler and schema-valid result
+  ---
+  duration_ms: 9.574084
+  type: 'test'
+  ...
+# Subtest: message.unsend: valid F0 fixture and invalid arguments
+ok 96 - message.unsend: valid F0 fixture and invalid arguments
+  ---
+  duration_ms: 0.665708
+  type: 'test'
+  ...
+# Subtest: message.unsend: executable handler and schema-valid result
+ok 97 - message.unsend: executable handler and schema-valid result
+  ---
+  duration_ms: 6.746667
+  type: 'test'
+  ...
+# Subtest: message.markRead: valid F0 fixture and invalid arguments
+ok 98 - message.markRead: valid F0 fixture and invalid arguments
+  ---
+  duration_ms: 1.325709
+  type: 'test'
+  ...
+# Subtest: message.markRead: executable handler and schema-valid result
+ok 99 - message.markRead: executable handler and schema-valid result
+  ---
+  duration_ms: 9.161167
+  type: 'test'
+  ...
+# Subtest: registry registers all 13 operations with truthful capabilities
+ok 100 - registry registers all 13 operations with truthful capabilities
+  ---
+  duration_ms: 7.295459
+  type: 'test'
+  ...
+# Subtest: plain prose bubbles and structured content remain distinct
+ok 101 - plain prose bubbles and structured content remain distinct
+  ---
+  duration_ms: 14.841709
+  type: 'test'
+  ...
+# Subtest: voice policy preserves names, acronyms, URLs, paths, commands and fenced code without arbitrary splits
+ok 102 - voice policy preserves names, acronyms, URLs, paths, commands and fenced code without arbitrary splits
+  ---
+  duration_ms: 0.436209
+  type: 'test'
+  ...
+# Subtest: URL-only richlink and missing provider result are never reported as confirmed rendering
+ok 103 - URL-only richlink and missing provider result are never reported as confirmed rendering
+  ---
+  duration_ms: 8.387375
+  type: 'test'
+  ...
+# Subtest: target rejects wrong chat
+ok 104 - target rejects wrong chat
+  ---
+  duration_ms: 12.947167
+  type: 'test'
+  ...
+# Subtest: target rejects wrong line
+ok 105 - target rejects wrong line
+  ---
+  duration_ms: 10.560417
+  type: 'test'
+  ...
+# Subtest: target rejects wrong provider
+ok 106 - target rejects wrong provider
+  ---
+  duration_ms: 41.909083
+  type: 'test'
+  ...
+# Subtest: target rejects wrong scope
+ok 107 - target rejects wrong scope
+  ---
+  duration_ms: 3.604042
+  type: 'test'
+  ...
+# Subtest: target rejects wrong native-id
+ok 108 - target rejects wrong native-id
+  ---
+  duration_ms: 14.748708
+  type: 'test'
+  ...
+# Subtest: target rejects wrong owner
+ok 109 - target rejects wrong owner
+  ---
+  duration_ms: 5.869333
+  type: 'test'
+  ...
+# Subtest: target rejects wrong direction
+ok 110 - target rejects wrong direction
+  ---
+  duration_ms: 4.240875
+  type: 'test'
+  ...
+# Subtest: reaction removal uses the exact returned authorized handle and target metadata
+ok 111 - reaction removal uses the exact returned authorized handle and target metadata
+  ---
+  duration_ms: 6.395417
+  type: 'test'
+  ...
+# Subtest: message.edit: explicit eligibility failure and uncertain provider failure
+ok 112 - message.edit: explicit eligibility failure and uncertain provider failure
+  ---
+  duration_ms: 7.915708
+  type: 'test'
+  ...
+# Subtest: message.unsend: explicit eligibility failure and uncertain provider failure
+ok 113 - message.unsend: explicit eligibility failure and uncertain provider failure
+  ---
+  duration_ms: 7.284667
+  type: 'test'
+  ...
+# Subtest: outbound mark-read and poll unsend are rejected before SDK no-op paths
+ok 114 - outbound mark-read and poll unsend are rejected before SDK no-op paths
+  ---
+  duration_ms: 8.373667
+  type: 'test'
+  ...
+# (node:47284) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: part three preparation failure retries only part three using durable child outcomes
+ok 115 - part three preparation failure retries only part three using durable child outcomes
+  ---
+  duration_ms: 56.288833
+  type: 'test'
+  ...
+# Subtest: ambiguous part three provider failure never repeats earlier or unknown children
+ok 116 - ambiguous part three provider failure never repeats earlier or unknown children
+  ---
+  duration_ms: 19.255875
+  type: 'test'
+  ...
+# Subtest: group call journals each actual returned child; ambiguous group failure blocks all replay
+ok 117 - group call journals each actual returned child; ambiguous group failure blocks all replay
+  ---
+  duration_ms: 29.301125
+  type: 'test'
+  ...
+# Subtest: group rejects unsupported combination [{"type":"text","text":"first"}]
+ok 118 - group rejects unsupported combination [{"type":"text","text":"first"}]
+  ---
+  duration_ms: 8.506333
+  type: 'test'
+  ...
+# Subtest: group rejects unsupported combination [{"type":"text","text":"first"},{"type":"text","text":"second"}]
+ok 119 - group rejects unsupported combination [{"type":"text","text":"first"},{"type":"text","text":"second"}]
+  ---
+  duration_ms: 10.024708
+  type: 'test'
+  ...
+# Subtest: group rejects unsupported combination [{"type":"text","text":"first"},{"type":"link","url":"https://example.com"}]
+ok 120 - group rejects unsupported combination [{"type":"text","text":"first"},{"type":"link","url":"https://example.com"}]
+  ---
+  duration_ms: 8.118917
+  type: 'test'
+  ...
+# Subtest: F0 finite nesting, wrapper combinations and size bounds are enforced
+ok 121 - F0 finite nesting, wrapper combinations and size bounds are enforced
+  ---
+  duration_ms: 19.897292
+  type: 'test'
+  ...
+# Subtest: nested poll duplicate keys and missing compilers fail before dispatch
+ok 122 - nested poll duplicate keys and missing compilers fail before dispatch
+  ---
+  duration_ms: 6.554208
+  type: 'test'
+  ...
+# Subtest: stale fence and cancellation cannot dispatch or overwrite shared journal
+ok 123 - stale fence and cancellation cannot dispatch or overwrite shared journal
+  ---
+  duration_ms: 8.334834
+  type: 'test'
+  ...
+# Subtest: compiler output cannot smuggle a control into a group
+ok 124 - compiler output cannot smuggle a control into a group
+  ---
+  duration_ms: 9.833916
+  type: 'test'
+  ...
+# Subtest: one question per compose turn is checked across all text children
+ok 125 - one question per compose turn is checked across all text children
+  ---
+  duration_ms: 9.751
+  type: 'test'
+  ...
+# Subtest: lost lease after dispatch preserves an unknown child, never completion or replay
+ok 126 - lost lease after dispatch preserves an unknown child, never completion or replay
+  ---
+  duration_ms: 14.816667
+  type: 'test'
+  ...
+# (node:47285) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: pinned public builders retain exact content, grouping and stream shapes
+ok 127 - pinned public builders retain exact content, grouping and stream shapes
+  ---
+  duration_ms: 18.512292
+  type: 'test'
+  ...
+# Subtest: real Spectrum runtime preserves reaction handles, void controls, buffering and unsupported skip semantics
+ok 128 - real Spectrum runtime preserves reaction handles, void controls, buffering and unsupported skip semantics
+  ---
+  duration_ms: 6.860792
+  type: 'test'
+  ...
+# (node:47286) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: registered stream normal: bounded, buffered and single consumption
+ok 129 - registered stream normal: bounded, buffered and single consumption
+  ---
+  duration_ms: 48.2125
+  type: 'test'
+  ...
+# Subtest: registered stream oversize: bounded, buffered and single consumption
+ok 130 - registered stream oversize: bounded, buffered and single consumption
+  ---
+  duration_ms: 16.039625
+  type: 'test'
+  ...
+# Subtest: registered stream too-many-chunks: bounded, buffered and single consumption
+ok 131 - registered stream too-many-chunks: bounded, buffered and single consumption
+  ---
+  duration_ms: 61.57175
+  type: 'test'
+  ...
+# Subtest: registered stream empty: bounded, buffered and single consumption
+ok 132 - registered stream empty: bounded, buffered and single consumption
+  ---
+  duration_ms: 5.649708
+  type: 'test'
+  ...
+# Subtest: registered stream error: bounded, buffered and single consumption
+ok 133 - registered stream error: bounded, buffered and single consumption
+  ---
+  duration_ms: 10.87625
+  type: 'test'
+  ...
+# Subtest: registered stream cancel: bounded, buffered and single consumption
+ok 134 - registered stream cancel: bounded, buffered and single consumption
+  ---
+  duration_ms: 13.652792
+  type: 'test'
+  ...
+# Subtest: stream cancellation interrupts a pending next and asks its producer to close
+ok 135 - stream cancellation interrupts a pending next and asks its producer to close
+  ---
+  duration_ms: 16.283916
+  type: 'test'
+  ...
+# Subtest: stream rejects missing reference before open
+ok 136 - stream rejects missing reference before open
+  ---
+  duration_ms: 7.598875
+  type: 'test'
+  ...
+# Subtest: stream rejects expired reference before open
+ok 137 - stream rejects expired reference before open
+  ---
+  duration_ms: 8.286959
+  type: 'test'
+  ...
+# Subtest: stream rejects wrong-generation reference before open
+ok 138 - stream rejects wrong-generation reference before open
+  ---
+  duration_ms: 4.060917
+  type: 'test'
+  ...
+# Subtest: stream rejects wrong-scope reference before open
+ok 139 - stream rejects wrong-scope reference before open
+  ---
+  duration_ms: 13.696959
+  type: 'test'
+  ...
+# Subtest: expiry timeout cancels a hanging producer before dispatch
+ok 140 - expiry timeout cancels a hanging producer before dispatch
+  ---
+  duration_ms: 23.933167
+  type: 'test'
+  ...
+# (node:47287) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: real SDK builders and all four handlers execute with injected, scoped provider context
+ok 141 - real SDK builders and all four handlers execute with injected, scoped provider context
+  ---
+  duration_ms: 140.149084
+  type: 'test'
+  ...
+# Subtest: native retrieval verifies resource, parent conversation and serving phone before getAttachment
+ok 142 - native retrieval verifies resource, parent conversation and serving phone before getAttachment
+  ---
+  duration_ms: 9.924417
+  type: 'test'
+  ...
+# Subtest: contact subset and vCard round trip use actual pinned public contact/fromVCard/toVCard
+ok 143 - contact subset and vCard round trip use actual pinned public contact/fromVCard/toVCard
+  ---
+  duration_ms: 4.486458
+  type: 'test'
+  ...
+# Subtest: voice sends real audio and reports explicit regular-attachment fallback
+ok 144 - voice sends real audio and reports explicit regular-attachment fallback
+  ---
+  duration_ms: 51.2685
+  type: 'test'
+  ...
+# Subtest: SDK void is unknown outcome, never safe automatic replay
+ok 145 - SDK void is unknown outcome, never safe automatic replay
+  ---
+  duration_ms: 9.657417
+  type: 'test'
+  ...
+# Subtest: SDK throw is unknown outcome, never safe automatic replay
+ok 146 - SDK throw is unknown outcome, never safe automatic replay
+  ---
+  duration_ms: 6.087291
+  type: 'test'
+  ...
+# Subtest: compiler resolves bytes before building; cancelled leases block dispatch after async staging
+ok 147 - compiler resolves bytes before building; cancelled leases block dispatch after async staging
+  ---
+  duration_ms: 20.247542
+  type: 'test'
+  ...
+# Subtest: model JSON cannot embed binary, local paths, URLs, contact raw fields or text voice data
+ok 148 - model JSON cannot embed binary, local paths, URLs, contact raw fields or text voice data
+  ---
+  duration_ms: 5.340375
+  type: 'test'
+  ...
+# Subtest: logical resource IDs map to distinct native IDs and normalized input metadata survives
+ok 149 - logical resource IDs map to distinct native IDs and normalized input metadata survives
+  ---
+  duration_ms: 8.696542
+  type: 'test'
+  ...
+# (node:47292) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: rejects credentials, schemes, literals, ports, deceptive hosts and metadata URLs
+ok 150 - rejects credentials, schemes, literals, ports, deceptive hosts and metadata URLs
+  ---
+  duration_ms: 5.1675
+  type: 'test'
+  ...
+# Subtest: address policy rejects private, mapped, metadata, multicast and transition networks
+ok 151 - address policy rejects private, mapped, metadata, multicast and transition networks
+  ---
+  duration_ms: 3.522958
+  type: 'test'
+  ...
+# Subtest: the connection receives the validated address without a second DNS lookup
+ok 152 - the connection receives the validated address without a second DNS lookup
+  ---
+  duration_ms: 1.92
+  type: 'test'
+  ...
+# Subtest: redirects are reauthorized and address changes to private destinations stop before connection
+ok 153 - redirects are reauthorized and address changes to private destinations stop before connection
+  ---
+  duration_ms: 1.115708
+  type: 'test'
+  ...
+# Subtest: private answers in a mixed DNS set and direct private redirects are rejected
+ok 154 - private answers in a mixed DNS set and direct private redirects are rejected
+  ---
+  duration_ms: 0.766209
+  type: 'test'
+  ...
+# Subtest: DNS lookup timeout and redirect loops are bounded
+ok 155 - DNS lookup timeout and redirect loops are bounded
+  ---
+  duration_ms: 21.237917
+  type: 'test'
+  ...
+# Subtest: local download missing-length remains bounded
+ok 156 - local download missing-length remains bounded
+  ---
+  duration_ms: 16.514834
+  type: 'test'
+  ...
+# Subtest: local download claimed-large remains bounded
+ok 157 - local download claimed-large remains bounded
+  ---
+  duration_ms: 3.903
+  type: 'test'
+  ...
+# Subtest: local download interrupted remains bounded
+ok 158 - local download interrupted remains bounded
+  ---
+  duration_ms: 11.44675
+  type: 'test'
+  ...
+# Subtest: local download timeout remains bounded
+ok 159 - local download timeout remains bounded
+  ---
+  duration_ms: 70.496959
+  type: 'test'
+  ...
+# Subtest: a lying content length never substitutes for actual stream byte accounting
+ok 160 - a lying content length never substitutes for actual stream byte accounting
+  ---
+  duration_ms: 5.622917
+  type: 'test'
+  ...
+# Subtest: the actual HTTPS adapter pins lookup and rejects a changed connected peer
+ok 161 - the actual HTTPS adapter pins lookup and rejects a changed connected peer
+  ---
+  duration_ms: 2.892125
+  type: 'test'
+  ...
+# (node:47293) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: staging persists integrity, metadata and scoped references across service restart
+ok 162 - staging persists integrity, metadata and scoped references across service restart
+  ---
+  duration_ms: 33.686625
+  type: 'test'
+  ...
+# Subtest: missing files, traversal, symlinks, hardlinks and a swap during open are rejected
+ok 163 - missing files, traversal, symlinks, hardlinks and a swap during open are rejected
+  ---
+  duration_ms: 17.385667
+  type: 'test'
+  ...
+# Subtest: an already-open approved handle cannot be retargeted by a subsequent path swap
+ok 164 - an already-open approved handle cannot be retargeted by a subsequent path swap
+  ---
+  duration_ms: 14.330834
+  type: 'test'
+  ...
+# Subtest: invalid MIME, mismatched signatures and oversized files leave no partial resources
+ok 165 - invalid MIME, mismatched signatures and oversized files leave no partial resources
+  ---
+  duration_ms: 25.808917
+  type: 'test'
+  ...
+# Subtest: native metadata preserves source, stable ID, duration and retrieval handle
+ok 166 - native metadata preserves source, stable ID, duration and retrieval handle
+  ---
+  duration_ms: 31.644125
+  type: 'test'
+  ...
+# Subtest: native oversize cancels and removes partial files
+ok 167 - native oversize cancels and removes partial files
+  ---
+  duration_ms: 7.991917
+  type: 'test'
+  ...
+# Subtest: native interrupted cancels and removes partial files
+ok 168 - native interrupted cancels and removes partial files
+  ---
+  duration_ms: 6.380792
+  type: 'test'
+  ...
+# Subtest: native timeout cancels and removes partial files
+ok 169 - native timeout cancels and removes partial files
+  ---
+  duration_ms: 36.468708
+  type: 'test'
+  ...
+# Subtest: queued, retryable, accepted and unknown requests retain resources until final release
+ok 170 - queued, retryable, accepted and unknown requests retain resources until final release
+  ---
+  duration_ms: 37.748834
+  type: 'test'
+  ...
+# Subtest: durable read pins prevent cleanup by another instance and survive crashes conservatively
+ok 171 - durable read pins prevent cleanup by another instance and survive crashes conservatively
+  ---
+  duration_ms: 17.562959
+  type: 'test'
+  ...
+# Subtest: unresolved input and truncated shared scans fail closed for retention
+ok 172 - unresolved input and truncated shared scans fail closed for retention
+  ---
+  duration_ms: 17.282625
+  type: 'test'
+  ...
+# Subtest: concurrency rejects excess work without an unbounded queue
+ok 173 - concurrency rejects excess work without an unbounded queue
+  ---
+  duration_ms: 25.755
+  type: 'test'
+  ...
+# Subtest: a saturated outbox scan blocks cleanup even if its visible prefix is final
+ok 174 - a saturated outbox scan blocks cleanup even if its visible prefix is final
+  ---
+  duration_ms: 128.032166
+  type: 'test'
+  ...
+# Subtest: ancestor directory replacement between inspection and open cannot redirect a file read
+ok 175 - ancestor directory replacement between inspection and open cannot redirect a file read
+  ---
+  duration_ms: 11.5575
+  type: 'test'
+  ...
+# Subtest: generic files, images, video, audio and vCard resources retain their MIME
+ok 176 - generic files, images, video, audio and vCard resources retain their MIME
+  ---
+  duration_ms: 91.33875
+  type: 'test'
+  ...
+# (node:47296) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: F0 transactional fixture (WT-01/WT-02 rerun pending): real store/router contract keeps task correlation and deduplicates work
+ok 177 - F0 transactional fixture (WT-01/WT-02 rerun pending): real store/router contract keeps task correlation and deduplicates work
+  ---
+  duration_ms: 14.102375
+  type: 'test'
+  ...
+# Subtest: F0 transactional fixture (WT-01/WT-02 rerun pending): failed commit leaves neither a vote nor a continuation
+ok 178 - F0 transactional fixture (WT-01/WT-02 rerun pending): failed commit leaves neither a vote nor a continuation
+  ---
+  duration_ms: 7.958709
+  type: 'test'
+  ...
+# (node:47297) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: all five F0 schemas validate their fixtures and reject malformed payloads
+ok 179 - all five F0 schemas validate their fixtures and reject malformed payloads
+  ---
+  duration_ms: 26.337167
+  type: 'test'
+  ...
+# Subtest: public pinned advanced call shapes compile and execute only against a test double
+ok 180 - public pinned advanced call shapes compile and execute only against a test double
+  ---
+  duration_ms: 0.672875
+  type: 'test'
+  ...
+# Subtest: create uses actual Spectrum builders; keys and duplicate labels persist without fabricated native option IDs
+ok 181 - create uses actual Spectrum builders; keys and duplicate labels persist without fabricated native option IDs
+  ---
+  duration_ms: 29.3305
+  type: 'test'
+  ...
+# Subtest: four native operations are explicitly unimplemented at F0, never private-client or alternate sends
+ok 182 - four native operations are explicitly unimplemented at F0, never private-client or alternate sends
+  ---
+  duration_ms: 12.091125
+  type: 'test'
+  ...
+# Subtest: unauthorized bot vote and wrong line/conversation are rejected before SDK dispatch
+ok 183 - unauthorized bot vote and wrong line/conversation are rejected before SDK dispatch
+  ---
+  duration_ms: 9.29075
+  type: 'test'
+  ...
+# Subtest: timeout has unknown outcome and repeated recovery never resends
+ok 184 - timeout has unknown outcome and repeated recovery never resends
+  ---
+  duration_ms: 7.478916
+  type: 'test'
+  ...
+# Subtest: undefined has unknown outcome and repeated recovery never resends
+ok 185 - undefined has unknown outcome and repeated recovery never resends
+  ---
+  duration_ms: 7.589417
+  type: 'test'
+  ...
+# Subtest: creation and unavailable vote ingress have separate capability status; registry composition is lane-local
+ok 186 - creation and unavailable vote ingress have separate capability status; registry composition is lane-local
+  ---
+  duration_ms: 0.223375
+  type: 'test'
+  ...
+# Subtest: provider acceptance followed by local registration failure leaves a durable no-resend marker
+ok 187 - provider acceptance followed by local registration failure leaves a durable no-resend marker
+  ---
+  duration_ms: 5.411667
+  type: 'test'
+  ...
+# Subtest: concurrent execution of the same claimed request issues only one SDK send
+ok 188 - concurrent execution of the same claimed request issues only one SDK send
+  ---
+  duration_ms: 8.309625
+  type: 'test'
+  ...
+# Subtest: revoked context and expired/replaced executor fences prevent sends
+ok 189 - revoked context and expired/replaced executor fences prevent sends
+  ---
+  duration_ms: 6.931167
+  type: 'test'
+  ...
+# (node:47298) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: two simultaneous polls and duplicate display labels correlate using native identities to their own tasks
+ok 190 - two simultaneous polls and duplicate display labels correlate using native identities to their own tasks
+  ---
+  duration_ms: 19.472167
+  type: 'test'
+  ...
+# Subtest: independent option selections, multiple voters, duplicates, removal, and stale events
+ok 191 - independent option selections, multiple voters, duplicates, removal, and stale events
+  ---
+  duration_ms: 18.217708
+  type: 'test'
+  ...
+# Subtest: vote before local registration is retained and repeated reconciliation creates one continuation
+ok 192 - vote before local registration is retained and repeated reconciliation creates one continuation
+  ---
+  duration_ms: 6.821084
+  type: 'test'
+  ...
+# Subtest: unknown option additions wait for native metadata registration; never derive a label from an ID
+ok 193 - unknown option additions wait for native metadata registration; never derive a label from an ID
+  ---
+  duration_ms: 11.937958
+  type: 'test'
+  ...
+# Subtest: unknown ordering, contradictory sequence, unrelated source and cross-scope targets stay unresolved
+ok 194 - unknown ordering, contradictory sequence, unrelated source and cross-scope targets stay unresolved
+  ---
+  duration_ms: 6.988333
+  type: 'test'
+  ...
+# Subtest: ambiguous native target remains explicit unresolved, not latest poll
+ok 195 - ambiguous native target remains explicit unresolved, not latest poll
+  ---
+  duration_ms: 4.967458
+  type: 'test'
+  ...
+# Subtest: transaction failure rolls back vote, inbox and continuation together
+ok 196 - transaction failure rolls back vote, inbox and continuation together
+  ---
+  duration_ms: 5.402125
+  type: 'test'
+  ...
+# Subtest: restart preserves task/option/voter correlation and replay creates no duplicate continuation
+ok 197 - restart preserves task/option/voter correlation and replay creates no duplicate continuation
+  ---
+  duration_ms: 8.231125
+  type: 'test'
+  ...
+# Subtest: stale task generation and reused event identity do not wake another task
+ok 198 - stale task generation and reused event identity do not wake another task
+  ---
+  duration_ms: 9.464083
+  type: 'test'
+  ...
+# Subtest: delivery timestamps do not create a new event; stable provider identity deduplicates router aliases
+ok 199 - delivery timestamps do not create a new event; stable provider identity deduplicates router aliases
+  ---
+  duration_ms: 6.34675
+  type: 'test'
+  ...
+# Subtest: native vote replacement ambiguity cannot be treated as independent multi-select deltas
+ok 200 - native vote replacement ambiguity cannot be treated as independent multi-select deltas
+  ---
+  duration_ms: 6.080166
+  type: 'test'
+  ...
+# (node:47299) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: missing real backend stays blocked and performs no wake
+ok 201 - missing real backend stays blocked and performs no wake
+  ---
+  duration_ms: 27.747959
+  type: 'test'
+  ...
+# Subtest: authenticated callback atomically records state and continuation, then wakes; event and nonce replay are durable
+ok 202 - authenticated callback atomically records state and continuation, then wakes; event and nonce replay are durable
+  ---
+  duration_ms: 12.361625
+  type: 'test'
+  ...
+# Subtest: rejects authenticated callback with wrong scope
+ok 203 - rejects authenticated callback with wrong scope
+  ---
+  duration_ms: 7.999041
+  type: 'test'
+  ...
+# Subtest: rejects authenticated callback with wrong session-scope
+ok 204 - rejects authenticated callback with wrong session-scope
+  ---
+  duration_ms: 12.787958
+  type: 'test'
+  ...
+# Subtest: rejects authenticated callback with wrong line
+ok 205 - rejects authenticated callback with wrong line
+  ---
+  duration_ms: 11.248334
+  type: 'test'
+  ...
+# Subtest: rejects authenticated callback with wrong participant
+ok 206 - rejects authenticated callback with wrong participant
+  ---
+  duration_ms: 11.133041
+  type: 'test'
+  ...
+# Subtest: rejects authenticated callback with wrong task
+ok 207 - rejects authenticated callback with wrong task
+  ---
+  duration_ms: 11.842958
+  type: 'test'
+  ...
+# Subtest: rejects authenticated callback with wrong generation
+ok 208 - rejects authenticated callback with wrong generation
+  ---
+  duration_ms: 12.293792
+  type: 'test'
+  ...
+# Subtest: rejects authenticated callback with wrong nonce
+ok 209 - rejects authenticated callback with wrong nonce
+  ---
+  duration_ms: 12.871083
+  type: 'test'
+  ...
+# Subtest: rejects authenticated callback with wrong action
+ok 210 - rejects authenticated callback with wrong action
+  ---
+  duration_ms: 11.647042
+  type: 'test'
+  ...
+# Subtest: rejects authenticated callback with wrong expiry
+ok 211 - rejects authenticated callback with wrong expiry
+  ---
+  duration_ms: 5.895083
+  type: 'test'
+  ...
+# Subtest: rejects authenticated callback with wrong future
+ok 212 - rejects authenticated callback with wrong future
+  ---
+  duration_ms: 5.74325
+  type: 'test'
+  ...
+# Subtest: rejects authenticated callback with wrong cancelled-task
+ok 213 - rejects authenticated callback with wrong cancelled-task
+  ---
+  duration_ms: 4.823416
+  type: 'test'
+  ...
+# Subtest: strict schema/body/header bounds and real fixture authentication reject malformed/unauthorized callbacks
+ok 214 - strict schema/body/header bounds and real fixture authentication reject malformed/unauthorized callbacks
+  ---
+  duration_ms: 6.240709
+  type: 'test'
+  ...
+# Subtest: callback transaction failure rolls back nonce/state/handoff and never wakes; retry can commit
+ok 215 - callback transaction failure rolls back nonce/state/handoff and never wakes; retry can commit
+  ---
+  duration_ms: 6.894375
+  type: 'test'
+  ...
+# Subtest: unknown session and missing task/card remain durable unresolved records without wake
+ok 216 - unknown session and missing task/card remain durable unresolved records without wake
+  ---
+  duration_ms: 7.324958
+  type: 'test'
+  ...
+# Subtest: generic app-interaction events cannot bypass the authenticated return path
+ok 217 - generic app-interaction events cannot bypass the authenticated return path
+  ---
+  duration_ms: 4.59075
+  type: 'test'
+  ...
+# Subtest: failed/unknown wake leaves a committed pending continuation for shared recovery
+ok 218 - failed/unknown wake leaves a committed pending continuation for shared recovery
+  ---
+  duration_ms: 5.326959
+  type: 'test'
+  ...
+# (node:47300) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: registers exactly three handlers and keeps all four capability categories separate
+ok 219 - registers exactly three handlers and keeps all four capability categories separate
+  ---
+  duration_ms: 9.66775
+  type: 'test'
+  ...
+# Subtest: universal cards do not require extension/backend config; customized cards do
+ok 220 - universal cards do not require extension/backend config; customized cards do
+  ---
+  duration_ms: 24.900125
+  type: 'test'
+  ...
+# Subtest: customized staged image maps caption to the pinned required imageTitle field
+ok 221 - customized staged image maps caption to the pinned required imageTitle field
+  ---
+  duration_ms: 10.758041
+  type: 'test'
+  ...
+# Subtest: customized update retains original target and refreshes metadata on successful void
+ok 222 - customized update retains original target and refreshes metadata on successful void
+  ---
+  duration_ms: 18.528834
+  type: 'test'
+  ...
+# Subtest: universal update is blocked without real URL mapping and works through registered mapping
+ok 223 - universal update is blocked without real URL mapping and works through registered mapping
+  ---
+  duration_ms: 18.456125
+  type: 'test'
+  ...
+# Subtest: live flag requires configured evidence and is never inferred from a send
+ok 224 - live flag requires configured evidence and is never inferred from a send
+  ---
+  duration_ms: 12.104042
+  type: 'test'
+  ...
+# Subtest: undefined send, uncertain dispatch and duplicate request do not invent card references
+ok 225 - undefined send, uncertain dispatch and duplicate request do not invent card references
+  ---
+  duration_ms: 10.853125
+  type: 'test'
+  ...
+# Subtest: same-card concurrent requests cannot silently overwrite a completed revision
+ok 226 - same-card concurrent requests cannot silently overwrite a completed revision
+  ---
+  duration_ms: 13.56625
+  type: 'test'
+  ...
+# Subtest: delayed admission intent cannot overwrite newer state and missing revision binding blocks
+ok 227 - delayed admission intent cannot overwrite newer state and missing revision binding blocks
+  ---
+  duration_ms: 7.809458
+  type: 'test'
+  ...
+# Subtest: second module is excluded by durable in-flight marker, including after lease expiry
+ok 228 - second module is excluded by durable in-flight marker, including after lease expiry
+  ---
+  duration_ms: 7.375167
+  type: 'test'
+  ...
+# Subtest: rejects cancel before side effects
+ok 229 - rejects cancel before side effects
+  ---
+  duration_ms: 6.274708
+  type: 'test'
+  ...
+# Subtest: rejects generation before side effects
+ok 230 - rejects generation before side effects
+  ---
+  duration_ms: 6.457916
+  type: 'test'
+  ...
+# Subtest: rejects fence before side effects
+ok 231 - rejects fence before side effects
+  ---
+  duration_ms: 5.239
+  type: 'test'
+  ...
+# Subtest: rejects line before side effects
+ok 232 - rejects line before side effects
+  ---
+  duration_ms: 4.699
+  type: 'test'
+  ...
+# Subtest: rejects conversation before side effects
+ok 233 - rejects conversation before side effects
+  ---
+  duration_ms: 5.155958
+  type: 'test'
+  ...
+# Subtest: cancellation during asynchronous preparation is fenced immediately before dispatch
+ok 234 - cancellation during asynchronous preparation is fenced immediately before dispatch
+  ---
+  duration_ms: 4.9985
+  type: 'test'
+  ...
+# Subtest: provider failure leaves durable uncertainty and blocks retries
+ok 235 - provider failure leaves durable uncertainty and blocks retries
+  ---
+  duration_ms: 6.381
+  type: 'test'
+  ...
+# Subtest: post-dispatch-generation failure leaves durable uncertainty and blocks retries
+ok 236 - post-dispatch-generation failure leaves durable uncertainty and blocks retries
+  ---
+  duration_ms: 6.159583
+  type: 'test'
+  ...
+# Subtest: commit failure leaves durable uncertainty and blocks retries
+ok 237 - commit failure leaves durable uncertainty and blocks retries
+  ---
+  duration_ms: 5.146584
+  type: 'test'
+  ...
+# (node:47301) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: pins exact installed SDK and uses public builders for distinct app/richlink/customized shapes
+ok 238 - pins exact installed SDK and uses public builders for distinct app/richlink/customized shapes
+  ---
+  duration_ms: 3.781917
+  type: 'test'
+  ...
+# Subtest: real edit builder retains original object and rejects inbound targets
+ok 239 - real edit builder retains original object and rejects inbound targets
+  ---
+  duration_ms: 0.5585
+  type: 'test'
+  ...
+# (node:47302) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: versioned codec round-trips only bounded data, rejects credentials, methods and unknown versions
+ok 240 - versioned codec round-trips only bounded data, rejects credentials, methods and unknown versions
+  ---
+  duration_ms: 25.576583
+  type: 'test'
+  ...
+# Subtest: SQLite reopen plus shared public getMessage resolver preserves the original target when its real handle survives
+ok 241 - SQLite reopen plus shared public getMessage resolver preserves the original target when its real handle survives
+  ---
+  duration_ms: 20.900459
+  type: 'test'
+  ...
+# Subtest: full handle loss after restart explicitly requires_original_session, never fabricates metadata or sends
+ok 242 - full handle loss after restart explicitly requires_original_session, never fabricates metadata or sends
+  ---
+  duration_ms: 12.336125
+  type: 'test'
+  ...
+# Subtest: rehydration without provider session or with different metadata is unsupported
+ok 243 - rehydration without provider session or with different metadata is unsupported
+  ---
+  duration_ms: 16.442291
+  type: 'test'
+  ...
+# Subtest: dispatching/unknown checkpoint survives restart and cannot be treated as safe to retry
+ok 244 - dispatching/unknown checkpoint survives restart and cannot be treated as safe to retry
+  ---
+  duration_ms: 20.899666
+  type: 'test'
+  ...
+# (node:47303) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: space.get: F0 strict schema and pinned public dispatch
+ok 245 - space.get: F0 strict schema and pinned public dispatch
+  ---
+  duration_ms: 31.346208
+  type: 'test'
+  ...
+# Subtest: space.get: missing permission and exact user intent reject before lookup
+ok 246 - space.get: missing permission and exact user intent reject before lookup
+  ---
+  duration_ms: 10.675208
+  type: 'test'
+  ...
+# Subtest: space.create: F0 strict schema and pinned public dispatch
+ok 247 - space.create: F0 strict schema and pinned public dispatch
+  ---
+  duration_ms: 10.82025
+  type: 'test'
+  ...
+# Subtest: space.create: missing permission and exact user intent reject before lookup
+ok 248 - space.create: missing permission and exact user intent reject before lookup
+  ---
+  duration_ms: 11.650416
+  type: 'test'
+  ...
+# Subtest: space.getName: F0 strict schema and pinned public dispatch
+ok 249 - space.getName: F0 strict schema and pinned public dispatch
+  ---
+  duration_ms: 12.801458
+  type: 'test'
+  ...
+# Subtest: space.getName: missing permission and exact user intent reject before lookup
+ok 250 - space.getName: missing permission and exact user intent reject before lookup
+  ---
+  duration_ms: 8.79675
+  type: 'test'
+  ...
+# Subtest: space.rename: F0 strict schema and pinned public dispatch
+ok 251 - space.rename: F0 strict schema and pinned public dispatch
+  ---
+  duration_ms: 12.0245
+  type: 'test'
+  ...
+# Subtest: space.rename: missing permission and exact user intent reject before lookup
+ok 252 - space.rename: missing permission and exact user intent reject before lookup
+  ---
+  duration_ms: 7.783041
+  type: 'test'
+  ...
+# Subtest: space.getMembers: F0 strict schema and pinned public dispatch
+ok 253 - space.getMembers: F0 strict schema and pinned public dispatch
+  ---
+  duration_ms: 5.756625
+  type: 'test'
+  ...
+# Subtest: space.getMembers: missing permission and exact user intent reject before lookup
+ok 254 - space.getMembers: missing permission and exact user intent reject before lookup
+  ---
+  duration_ms: 4.524875
+  type: 'test'
+  ...
+# Subtest: space.addMembers: F0 strict schema and pinned public dispatch
+ok 255 - space.addMembers: F0 strict schema and pinned public dispatch
+  ---
+  duration_ms: 5.078667
+  type: 'test'
+  ...
+# Subtest: space.addMembers: missing permission and exact user intent reject before lookup
+ok 256 - space.addMembers: missing permission and exact user intent reject before lookup
+  ---
+  duration_ms: 4.251042
+  type: 'test'
+  ...
+# Subtest: space.removeMembers: F0 strict schema and pinned public dispatch
+ok 257 - space.removeMembers: F0 strict schema and pinned public dispatch
+  ---
+  duration_ms: 6.675666
+  type: 'test'
+  ...
+# Subtest: space.removeMembers: missing permission and exact user intent reject before lookup
+ok 258 - space.removeMembers: missing permission and exact user intent reject before lookup
+  ---
+  duration_ms: 3.819541
+  type: 'test'
+  ...
+# Subtest: space.leave: F0 strict schema and pinned public dispatch
+ok 259 - space.leave: F0 strict schema and pinned public dispatch
+  ---
+  duration_ms: 4.3305
+  type: 'test'
+  ...
+# Subtest: space.leave: missing permission and exact user intent reject before lookup
+ok 260 - space.leave: missing permission and exact user intent reject before lookup
+  ---
+  duration_ms: 3.846083
+  type: 'test'
+  ...
+# Subtest: space.getAvatar: F0 strict schema and pinned public dispatch
+ok 261 - space.getAvatar: F0 strict schema and pinned public dispatch
+  ---
+  duration_ms: 5.094375
+  type: 'test'
+  ...
+# Subtest: space.getAvatar: missing permission and exact user intent reject before lookup
+ok 262 - space.getAvatar: missing permission and exact user intent reject before lookup
+  ---
+  duration_ms: 3.328959
+  type: 'test'
+  ...
+# Subtest: space.setAvatar: F0 strict schema and pinned public dispatch
+ok 263 - space.setAvatar: F0 strict schema and pinned public dispatch
+  ---
+  duration_ms: 5.241959
+  type: 'test'
+  ...
+# Subtest: space.setAvatar: missing permission and exact user intent reject before lookup
+ok 264 - space.setAvatar: missing permission and exact user intent reject before lookup
+  ---
+  duration_ms: 3.189167
+  type: 'test'
+  ...
+# Subtest: space.clearAvatar: F0 strict schema and pinned public dispatch
+ok 265 - space.clearAvatar: F0 strict schema and pinned public dispatch
+  ---
+  duration_ms: 4.734166
+  type: 'test'
+  ...
+# Subtest: space.clearAvatar: missing permission and exact user intent reject before lookup
+ok 266 - space.clearAvatar: missing permission and exact user intent reject before lookup
+  ---
+  duration_ms: 2.745083
+  type: 'test'
+  ...
+# Subtest: space.setBackground: F0 strict schema and pinned public dispatch
+ok 267 - space.setBackground: F0 strict schema and pinned public dispatch
+  ---
+  duration_ms: 4.505583
+  type: 'test'
+  ...
+# Subtest: space.setBackground: missing permission and exact user intent reject before lookup
+ok 268 - space.setBackground: missing permission and exact user intent reject before lookup
+  ---
+  duration_ms: 3.232666
+  type: 'test'
+  ...
+# Subtest: space.clearBackground: F0 strict schema and pinned public dispatch
+ok 269 - space.clearBackground: F0 strict schema and pinned public dispatch
+  ---
+  duration_ms: 4.013375
+  type: 'test'
+  ...
+# Subtest: space.clearBackground: missing permission and exact user intent reject before lookup
+ok 270 - space.clearBackground: missing permission and exact user intent reject before lookup
+  ---
+  duration_ms: 2.863709
+  type: 'test'
+  ...
+# Subtest: account.shareContact: F0 strict schema and pinned public dispatch
+ok 271 - account.shareContact: F0 strict schema and pinned public dispatch
+  ---
+  duration_ms: 3.454
+  type: 'test'
+  ...
+# Subtest: account.shareContact: missing permission and exact user intent reject before lookup
+ok 272 - account.shareContact: missing permission and exact user intent reject before lookup
+  ---
+  duration_ms: 3.353625
+  type: 'test'
+  ...
+# Subtest: effect.send: F0 strict schema and pinned public dispatch
+ok 273 - effect.send: F0 strict schema and pinned public dispatch
+  ---
+  duration_ms: 4.4565
+  type: 'test'
+  ...
+# Subtest: effect.send: missing permission and exact user intent reject before lookup
+ok 274 - effect.send: missing permission and exact user intent reject before lookup
+  ---
+  duration_ms: 3.260542
+  type: 'test'
+  ...
+# Subtest: metadata.get: F0 strict schema and pinned public dispatch
+ok 275 - metadata.get: F0 strict schema and pinned public dispatch
+  ---
+  duration_ms: 3.336333
+  type: 'test'
+  ...
+# Subtest: metadata.get: missing permission and exact user intent reject before lookup
+ok 276 - metadata.get: missing permission and exact user intent reject before lookup
+  ---
+  duration_ms: 2.928209
+  type: 'test'
+  ...
+# Subtest: custom.send: F0 strict schema and pinned public dispatch
+ok 277 - custom.send: F0 strict schema and pinned public dispatch
+  ---
+  duration_ms: 4.370084
+  type: 'test'
+  ...
+# Subtest: custom.send: missing permission and exact user intent reject before lookup
+ok 278 - custom.send: missing permission and exact user intent reject before lookup
+  ---
+  duration_ms: 2.724416
+  type: 'test'
+  ...
+# Subtest: reject cross-projectId references and provider binding
+ok 279 - reject cross-projectId references and provider binding
+  ---
+  duration_ms: 3.291959
+  type: 'test'
+  ...
+# Subtest: reject cross-accountId references and provider binding
+ok 280 - reject cross-accountId references and provider binding
+  ---
+  duration_ms: 2.731709
+  type: 'test'
+  ...
+# Subtest: reject cross-lineId references and provider binding
+ok 281 - reject cross-lineId references and provider binding
+  ---
+  duration_ms: 3.261542
+  type: 'test'
+  ...
+# Subtest: reject cross-spaceId references and provider binding
+ok 282 - reject cross-spaceId references and provider binding
+  ---
+  duration_ms: 2.866292
+  type: 'test'
+  ...
+# Subtest: provider resolver cannot return another line/chat or a local space
+ok 283 - provider resolver cannot return another line/chat or a local space
+  ---
+  duration_ms: 3.244708
+  type: 'test'
+  ...
+# Subtest: all group-only operations reject direct conversations
+ok 284 - all group-only operations reject direct conversations
+  ---
+  duration_ms: 5.213708
+  type: 'test'
+  ...
+# Subtest: shared/missing account prerequisites never configure or allocate a line
+ok 285 - shared/missing account prerequisites never configure or allocate a line
+  ---
+  duration_ms: 8.626083
+  type: 'test'
+  ...
+# Subtest: creation uses exact recipients and line; generated reference is durable and scoped
+ok 286 - creation uses exact recipients and line; generated reference is durable and scoped
+  ---
+  duration_ms: 3.059042
+  type: 'test'
+  ...
+# Subtest: creation cannot name a DM or bypass additional rename permission
+ok 287 - creation cannot name a DM or bypass additional rename permission
+  ---
+  duration_ms: 3.081208
+  type: 'test'
+  ...
+# Subtest: new recipients cannot reuse another recipient's trusted grant
+ok 288 - new recipients cannot reuse another recipient's trusted grant
+  ---
+  duration_ms: 2.54075
+  type: 'test'
+  ...
+# Subtest: invalid, duplicate, and own-account recipients are rejected
+ok 289 - invalid, duplicate, and own-account recipients are rejected
+  ---
+  duration_ms: 5.287708
+  type: 'test'
+  ...
+# Subtest: read operations have no provider/account side effects
+ok 290 - read operations have no provider/account side effects
+  ---
+  duration_ms: 4.127333
+  type: 'test'
+  ...
+# Subtest: image setters use the shared guarded media port and exact buffer shapes
+ok 291 - image setters use the shared guarded media port and exact buffer shapes
+  ---
+  duration_ms: 3.677541
+  type: 'test'
+  ...
+# Subtest: shared media rejection and integrity mismatch never dispatch
+ok 292 - shared media rejection and integrity mismatch never dispatch
+  ---
+  duration_ms: 3.020666
+  type: 'test'
+  ...
+# Subtest: cross-line media references fail before the media port
+ok 293 - cross-line media references fail before the media port
+  ---
+  duration_ms: 3.183791
+  type: 'test'
+  ...
+# Subtest: avatar reads return a retained resource or null; missing retention blocks
+ok 294 - avatar reads return a retained resource or null; missing retention blocks
+  ---
+  duration_ms: 3.389417
+  type: 'test'
+  ...
+# Subtest: effect mapping slam builds with the actual pinned SDK
+ok 295 - effect mapping slam builds with the actual pinned SDK
+  ---
+  duration_ms: 2.978417
+  type: 'test'
+  ...
+# Subtest: effect mapping loud builds with the actual pinned SDK
+ok 296 - effect mapping loud builds with the actual pinned SDK
+  ---
+  duration_ms: 3.044708
+  type: 'test'
+  ...
+# Subtest: effect mapping gentle builds with the actual pinned SDK
+ok 297 - effect mapping gentle builds with the actual pinned SDK
+  ---
+  duration_ms: 3.6095
+  type: 'test'
+  ...
+# Subtest: effect mapping invisible-ink builds with the actual pinned SDK
+ok 298 - effect mapping invisible-ink builds with the actual pinned SDK
+  ---
+  duration_ms: 3.073417
+  type: 'test'
+  ...
+# Subtest: effect mapping confetti builds with the actual pinned SDK
+ok 299 - effect mapping confetti builds with the actual pinned SDK
+  ---
+  duration_ms: 3.537083
+  type: 'test'
+  ...
+# Subtest: effect mapping balloons builds with the actual pinned SDK
+ok 300 - effect mapping balloons builds with the actual pinned SDK
+  ---
+  duration_ms: 2.852917
+  type: 'test'
+  ...
+# Subtest: effect mapping fireworks builds with the actual pinned SDK
+ok 301 - effect mapping fireworks builds with the actual pinned SDK
+  ---
+  duration_ms: 2.932834
+  type: 'test'
+  ...
+# Subtest: effect mapping lasers builds with the actual pinned SDK
+ok 302 - effect mapping lasers builds with the actual pinned SDK
+  ---
+  duration_ms: 3.230792
+  type: 'test'
+  ...
+# Subtest: effect mapping celebration builds with the actual pinned SDK
+ok 303 - effect mapping celebration builds with the actual pinned SDK
+  ---
+  duration_ms: 3.084666
+  type: 'test'
+  ...
+# Subtest: effect mapping echo builds with the actual pinned SDK
+ok 304 - effect mapping echo builds with the actual pinned SDK
+  ---
+  duration_ms: 3.012084
+  type: 'test'
+  ...
+# Subtest: effect mapping spotlight builds with the actual pinned SDK
+ok 305 - effect mapping spotlight builds with the actual pinned SDK
+  ---
+  duration_ms: 3.052875
+  type: 'test'
+  ...
+# Subtest: effect mapping love builds with the actual pinned SDK
+ok 306 - effect mapping love builds with the actual pinned SDK
+  ---
+  duration_ms: 3.056459
+  type: 'test'
+  ...
+# Subtest: effect mapping shooting-star builds with the actual pinned SDK
+ok 307 - effect mapping shooting-star builds with the actual pinned SDK
+  ---
+  duration_ms: 3.534333
+  type: 'test'
+  ...
+# Subtest: effect aliases explicitly map to the SDK constants
+ok 308 - effect aliases explicitly map to the SDK constants
+  ---
+  duration_ms: 0.056375
+  type: 'test'
+  ...
+# Subtest: effects reject unsupported leaves, nested wrappers, and wrong compiler families
+ok 309 - effects reject unsupported leaves, nested wrappers, and wrong compiler families
+  ---
+  duration_ms: 3.966834
+  type: 'test'
+  ...
+# Subtest: metadata allowlist redacts all content, contacts and provider internals
+ok 310 - metadata allowlist redacts all content, contacts and provider internals
+  ---
+  duration_ms: 3.660625
+  type: 'test'
+  ...
+# Subtest: custom handler is named, resource-backed and requires account-sharing intent/permission
+ok 311 - custom handler is named, resource-backed and requires account-sharing intent/permission
+  ---
+  duration_ms: 3.88525
+  type: 'test'
+  ...
+# Subtest: custom resource cross-scope and wrong host registration reject
+ok 312 - custom resource cross-scope and wrong host registration reject
+  ---
+  duration_ms: 3.1005
+  type: 'test'
+  ...
+# Subtest: composition cannot bypass native permission, capability, or explicit content intent
+ok 313 - composition cannot bypass native permission, capability, or explicit content intent
+  ---
+  duration_ms: 3.757417
+  type: 'test'
+  ...
+# Subtest: no native group subscription, reducer or automatic reply loop is registered
+ok 314 - no native group subscription, reducer or automatic reply loop is registered
+  ---
+  duration_ms: 2.666667
+  type: 'test'
+  ...
+# Subtest: void operations never invent provider acceptance and dispatch failures are ambiguous
+ok 315 - void operations never invent provider acceptance and dispatch failures are ambiguous
+  ---
+  duration_ms: 4.123083
+  type: 'test'
+  ...
+# Subtest: silent missing send evidence is not successful effect delivery
+ok 316 - silent missing send evidence is not successful effect delivery
+  ---
+  duration_ms: 3.038125
+  type: 'test'
+  ...
+# Subtest: expired context, revoked context, cancellation and stale lease reject
+ok 317 - expired context, revoked context, cancellation and stale lease reject
+  ---
+  duration_ms: 3.185542
+  type: 'test'
+  ...
+# Subtest: cancellation during staging is checked before native dispatch
+ok 318 - cancellation during staging is checked before native dispatch
+  ---
+  duration_ms: 3.61675
+  type: 'test'
+  ...
+# Subtest: membership preflight rejects small groups, wrong service, existing adds and absent removals
+ok 319 - membership preflight rejects small groups, wrong service, existing adds and absent removals
+  ---
+  duration_ms: 4.54725
+  type: 'test'
+  ...
+# Subtest: reads and writes route correctly when each of two dedicated lines is selected
+ok 320 - reads and writes route correctly when each of two dedicated lines is selected
+  ---
+  duration_ms: 8.501417
+  type: 'test'
+  ...
+# Subtest: effects delegate markdown and attachment leaves through common compilers
+ok 321 - effects delegate markdown and attachment leaves through common compilers
+  ---
+  duration_ms: 4.977459
+  type: 'test'
+  ...
+# Subtest: unsupported appearance formats and oversized buffers fail closed
+ok 322 - unsupported appearance formats and oversized buffers fail closed
+  ---
+  duration_ms: 3.605709
+  type: 'test'
+  ...
+# Subtest: clear appearance actions use the reserved clear sentinel without staging
+ok 323 - clear appearance actions use the reserved clear sentinel without staging
+  ---
+  duration_ms: 4.180708
+  type: 'test'
+  ...
+# Subtest: custom compiler enforces the host allowlist within composition
+ok 324 - custom compiler enforces the host allowlist within composition
+  ---
+  duration_ms: 3.676667
+  type: 'test'
+  ...
+# Subtest: partial create-plus-rename retains the new reference and cannot be blindly retried
+ok 325 - partial create-plus-rename retains the new reference and cannot be blindly retried
+  ---
+  duration_ms: 3.209625
+  type: 'test'
+  ...
+# Subtest: read failure returns redacted provider failure without mutation ambiguity
+ok 326 - read failure returns redacted provider failure without mutation ambiguity
+  ---
+  duration_ms: 3.063333
+  type: 'test'
+  ...
+# Subtest: context expiry during route resolution prevents provider lookup
+ok 327 - context expiry during route resolution prevents provider lookup
+  ---
+  duration_ms: 3.468
+  type: 'test'
+  ...
+# Subtest: context revocation during a read prevents disclosure
+ok 328 - context revocation during a read prevents disclosure
+  ---
+  duration_ms: 3.052
+  type: 'test'
+  ...
+# (node:47304) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: strict stdin, UTF-8 and bounds; stable exit and separate output
+ok 329 - strict stdin, UTF-8 and bounds; stable exit and separate output
+  ---
+  duration_ms: 39.954958
+  type: 'test'
+  ...
+# Subtest: doctor and capabilities read-only; scoped authenticated status and cancellation
+ok 330 - doctor and capabilities read-only; scoped authenticated status and cancellation
+  ---
+  duration_ms: 29.15425
+  type: 'test'
+  ...
+# Subtest: work list, claim, actual events, heartbeat, stale fence, ack and generation
+ok 331 - work list, claim, actual events, heartbeat, stale fence, ack and generation
+  ---
+  duration_ms: 20.772583
+  type: 'test'
+  ...
+# Subtest: unsafe credential and socket files rejected without exposing contents
+ok 332 - unsafe credential and socket files rejected without exposing contents
+  ---
+  duration_ms: 15.337167
+  type: 'test'
+  ...
+# Subtest: host response validation rejects credentials and extra payload; timeout never retries
+ok 333 - host response validation rejects credentials and extra payload; timeout never retries
+  ---
+  duration_ms: 39.071458
+  type: 'test'
+  ...
+# Subtest: CLI runs through an executable symlink and keeps machine output clean
+ok 334 - CLI runs through an executable symlink and keeps machine output clean
+  ---
+  duration_ms: 129.071125
+  type: 'test'
+  ...
+1..334
+# tests 334
+# suites 0
+# pass 334
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1926.7135

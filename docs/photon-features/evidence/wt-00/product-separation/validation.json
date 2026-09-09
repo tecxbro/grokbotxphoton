@@ -14,7 +14,8 @@
       ],
       "exitCode": 0,
       "log": "/tmp/grokbotxphoton-product-foundation.log",
-      "logSha256": "71cbda09b6859c4ec4ce752ae3f2da937f969f0cbab9811a2e3c7031c671bfde"
+      "logSha256": "71cbda09b6859c4ec4ce752ae3f2da937f969f0cbab9811a2e3c7031c671bfde",
+      "committedLog": "docs/photon-features/evidence/wt-00/product-separation/foundation.log"
     },
     {
       "name": "check",
@@ -25,7 +26,8 @@
       ],
       "exitCode": 0,
       "log": "/tmp/grokbotxphoton-product-check.log",
-      "logSha256": "8549edd39d803c6ddbf47d58802280ad34a6d3ed68dc554f6cdb068d754a76e9"
+      "logSha256": "8549edd39d803c6ddbf47d58802280ad34a6d3ed68dc554f6cdb068d754a76e9",
+      "committedLog": "docs/photon-features/evidence/wt-00/product-separation/check.log"
     },
     {
       "name": "skill",
@@ -36,7 +38,8 @@
       ],
       "exitCode": 0,
       "log": "/tmp/grokbotxphoton-product-skill.log",
-      "logSha256": "f71ce053ab176476261de5ddc42a1bde85d2812b09921f79e16c6631eddec6d4"
+      "logSha256": "f71ce053ab176476261de5ddc42a1bde85d2812b09921f79e16c6631eddec6d4",
+      "committedLog": "docs/photon-features/evidence/wt-00/product-separation/skill.log"
     },
     {
       "name": "smoke",
@@ -47,7 +50,8 @@
       ],
       "exitCode": 0,
       "log": "/tmp/grokbotxphoton-product-smoke.log",
-      "logSha256": "2529a4ad9cace1d98eb3f371e4d3d731750fd8f3715145fd861226f4409548c1"
+      "logSha256": "2529a4ad9cace1d98eb3f371e4d3d731750fd8f3715145fd861226f4409548c1",
+      "committedLog": "docs/photon-features/evidence/wt-00/product-separation/smoke.log"
     },
     {
       "name": "lanes",
@@ -79,7 +83,8 @@
       ],
       "exitCode": 0,
       "log": "/tmp/grokbotxphoton-product-lanes.log",
-      "logSha256": "dbdac5d153399fc92af3071927b1bff7921a60b352eca6fcce52c4287be2788f"
+      "logSha256": "dbdac5d153399fc92af3071927b1bff7921a60b352eca6fcce52c4287be2788f",
+      "committedLog": "docs/photon-features/evidence/wt-00/product-separation/lanes.log"
     },
     {
       "name": "distribution",
@@ -91,7 +96,8 @@
       ],
       "exitCode": 0,
       "log": "/tmp/grokbotxphoton-product-distribution.log",
-      "logSha256": "068a4d1beeb3239cb4cbe1eb52d73e58d5936276a49af0f8cdefed91410f16b6"
+      "logSha256": "068a4d1beeb3239cb4cbe1eb52d73e58d5936276a49af0f8cdefed91410f16b6",
+      "committedLog": "docs/photon-features/evidence/wt-00/product-separation/distribution.log"
     },
     {
       "name": "verification",
@@ -102,7 +108,8 @@
       ],
       "exitCode": 1,
       "log": "/tmp/grokbotxphoton-product-verification.log",
-      "logSha256": "58d3494240c2d6c6577bdbea6a07bd7a0982c2bc51844fe1fbe4c802a1be67b3"
+      "logSha256": "58d3494240c2d6c6577bdbea6a07bd7a0982c2bc51844fe1fbe4c802a1be67b3",
+      "committedLog": "docs/photon-features/evidence/wt-00/product-separation/verification.log"
     }
   ],
   "integrated": false,

@@ -1,0 +1,178 @@
+
+> grokbotxphoton@0.1.0 test:verification
+> npm run photon:build && node --test "packages/photon-features/dist/tests/e2e/*.test.js" "packages/photon-features/dist/tests/security/*.test.js" "packages/photon-features/dist/tests/lanes/wt-09/*.test.js"
+
+
+> grokbotxphoton@0.1.0 photon:build
+> npm run build --workspace=@grokbot/photon-features
+
+
+> @grokbot/photon-features@0.1.0 build
+> tsc -p tsconfig.json
+
+(node:47410) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ card codec keeps original target/session and rejects malformed parent or SDK version (15.041833ms)
+✔ restart without public original-session rehydration is explicitly blocked (8.4445ms)
+✔ callback binding enforces participant, expiry, scope, nonce and single-use replay before wake (18.093125ms)
+✔ production card module keeps original target across repeated updates, rejects stale revisions and restores via public resolver (26.116083ms)
+(node:47411) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✖ CLI → authenticated host → durable executor → production text feature reaches offline SDK send (32.950334ms)
+(node:47412) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ attachment, vote/unvote, edit and read identities survive repeated message IDs (53.820375ms)
+✔ router retains unknown events, suppresses echoes/receipt loops and deduplicates replay (13.831917ms)
+(node:47413) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ real installer with explicit offline archive fixture: clean/repeat install, inactive rollback, pending/unknown preservation (359.716083ms)
+✖ runtime-created database satisfies installer private-file contract under ordinary umask (13.298667ms)
+(node:47414) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ concurrent IPC duplicates produce one durable request and survive a second DB connection (113.118458ms)
+✔ same key with changed content conflicts and preserves original content (20.853541ms)
+✔ pre-dispatch cancellation is durable and a duplicate cannot resurrect it (14.722333ms)
+(node:47415) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ process death after possible provider acceptance retains unknown and never blindly resends (251.025833ms)
+✔ completed earlier child survives later pre-dispatch failure and retry (33.975166ms)
+✔ unknown later child preserves earlier completion and prevents replay (23.906ms)
+✔ resolved promise cannot manufacture provider acceptance or read evidence (24.708458ms)
+(node:47416) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ two polls with duplicate labels, multiple voters/selections, unvote and out-of-order replay survive DB reopen (67.513834ms)
+✔ early vote is retained then reconciled by identity; absent ordering stays unresolved (25.714875ms)
+✔ vote state and continuation roll back together on failed handoff commit (12.327333ms)
+✖ WT-02 router and WT-05 reducer commit one correlated continuation together (16.258792ms)
+(node:47417) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ one host owner starts one SDK and rejects competing subscriptions (4.551959ms)
+✔ host is inactive by default and startup failure cleans up all owned components (11.653666ms)
+(node:47418) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ completion, failure, cancellation and timeout stop typing (25.568125ms)
+✔ overlap ignores old stop, long-work wait ends lease and delayed expired start never replays (4.174333ms)
+✔ connection loss and fresh manager never resume old starts (1.007875ms)
+✔ delayed start completion after cancellation is followed by stop (11.522208ms)
+✔ failed start attempts cleanup and failed stop is reported without pretending idle (8.022083ms)
+✔ unresolved typing start never blocks real work; stopping it drains after completion (0.747917ms)
+✔ delayed old stop finishes before a newer generation start (1.811667ms)
+(node:47419) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ 44 operation fixtures are accounted for with explicit implementation and availability (57.987375ms)
+✔ pinned public builders execute offline; duplicate labels do not imply unique option identity (2.435542ms)
+✔ voice keeps names/acronyms/code/URLs intact and structured content bypasses formatter (9.525625ms)
+(node:47422) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ lease heartbeat preserves fence; stale owner/fence/generation cannot write (26.857292ms)
+✔ cancellation and revocation invalidate an already held claim (9.054833ms)
+✔ revocation and task generation change fence a previously acquired executor (18.515292ms)
+(node:47423) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ actual socket authenticates outside model JSON and persists submit/status (167.537583ms)
+✔ authoritative context rejects expired before queueing (9.363ms)
+✔ authoritative context rejects future-issued before queueing (7.9825ms)
+✔ authoritative context rejects revoked before queueing (11.63675ms)
+✔ authoritative context rejects wrong-principal before queueing (6.777292ms)
+✔ authoritative context rejects permission-removed before queueing (15.059166ms)
+✔ forged context and model-supplied permission cannot grant access (22.638583ms)
+✔ rejects cross-projectId target even when resource id is known (7.897917ms)
+✔ rejects cross-accountId target even when resource id is known (5.506833ms)
+✔ rejects cross-lineId target even when resource id is known (6.744958ms)
+✔ rejects cross-spaceId target even when resource id is known (7.273916ms)
+✔ space.create permission alone is insufficient for administrative intent (8.179875ms)
+✔ space.rename permission alone is insufficient for administrative intent (9.748084ms)
+✔ space.addMembers permission alone is insufficient for administrative intent (7.727542ms)
+✔ space.removeMembers permission alone is insufficient for administrative intent (10.110792ms)
+✔ space.leave permission alone is insufficient for administrative intent (8.117708ms)
+✔ account.shareContact permission alone is insufficient for administrative intent (14.94825ms)
+✔ trusted administrative intent still cannot authorize a new recipient (8.110958ms)
+✔ status and cancellation conceal results from another task and principal (12.893959ms)
+✔ context is refreshed on every socket request after revocation (20.223ms)
+(node:47424) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ guarded file access rejects traversal, leaf/ancestor symlinks and hard links (68.120958ms)
+✔ opened handle keeps approved inode when pathname is replaced (16.538458ms)
+✔ egress rejects controlled address fixture 127.0.0.1 (0.335708ms)
+✔ egress rejects controlled address fixture 10.0.0.1 (0.386625ms)
+✔ egress rejects controlled address fixture 169.254.169.254 (0.108625ms)
+✔ egress rejects controlled address fixture 172.16.0.1 (0.116625ms)
+✔ egress rejects controlled address fixture 192.168.1.1 (0.112292ms)
+✔ egress rejects controlled address fixture 100.64.0.1 (0.155541ms)
+✔ egress rejects controlled address fixture 198.18.0.1 (0.064458ms)
+✔ egress rejects controlled address fixture 0.0.0.0 (0.066166ms)
+✔ egress rejects controlled address fixture 224.0.0.1 (0.029625ms)
+✔ egress rejects controlled address fixture ::1 (5.892708ms)
+✔ egress rejects controlled address fixture ::ffff:127.0.0.1 (0.3085ms)
+✔ egress rejects controlled address fixture fc00::1 (0.141167ms)
+✔ egress rejects controlled address fixture fe80::1 (0.055833ms)
+✔ egress rejects controlled address fixture 2001:db8::1 (0.050709ms)
+✔ URL authorization rejects misleading hosts, credentials, ports and schemes (0.387083ms)
+✔ redirect DNS rebinding and mixed public/private answers fail before private connection (2.641083ms)
+✔ byte count overrides misleading size and interrupted stream releases reader (3.188167ms)
+✔ retention keeps bytes referenced by pending and unknown work (22.068708ms)
+(node:47425) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ HMAC uses exact bytes and rejects missing, invalid, stale and future signatures (1.505334ms)
+✔ webhook awaits durable acceptance; database failure is 503 and alternate envelope is rejected (43.003792ms)
+ℹ tests 77
+ℹ suites 0
+ℹ pass 74
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1260.2845
+
+✖ failing tests:
+
+test at packages/photon-features/dist/tests/e2e/feature-runtime.test.js:14:1
+✖ CLI → authenticated host → durable executor → production text feature reaches offline SDK send (32.950334ms)
+  AssertionError [ERR_ASSERTION]: {"version":1,"requestId":"da9b5f05e85ee66301a76ad193db2f488027391a6eecd628a69a31141b00ab43","status":"blocked","revision":2,"updatedAt":10000,"references":[],"observations":[],"error":{"code":"UNIMPLEMENTED","message":"UNIMPLEMENTED","retry":"safe-before-dispatch"}}
+  + actual - expected
+  
+  + 'blocked'
+  - 'executor-completed'
+  
+      at TestContext.<anonymous> (file:///Users/darshan/Documents/ChatGPT/grokbotxphoton-product/packages/photon-features/dist/tests/e2e/feature-runtime.test.js:40:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'blocked',
+    expected: 'executor-completed',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at packages/photon-features/dist/tests/e2e/install-rollback.test.js:52:1
+✖ runtime-created database satisfies installer private-file contract under ordinary umask (13.298667ms)
+  AssertionError [ERR_ASSERTION]: WT-01 database cannot be reinstalled/rolled back by WT-08
+  
+  36 !== 0
+  
+      at file:///Users/darshan/Documents/ChatGPT/grokbotxphoton-product/packages/photon-features/dist/tests/e2e/install-rollback.test.js:66:60
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 36,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at packages/photon-features/dist/tests/e2e/poll-restart.test.js:80:1
+✖ WT-02 router and WT-05 reducer commit one correlated continuation together (16.258792ms)
+  Error: STALE_FENCE
+      at Object.put (file:///Users/darshan/Documents/ChatGPT/grokbotxphoton-product/packages/photon-features/dist/src/state/sqlite.js:92:31)
+      at file:///Users/darshan/Documents/ChatGPT/grokbotxphoton-product/packages/photon-features/dist/src/runtime/inbound/router.js:131:24
+      at DurableSQLiteStore.transaction (file:///Users/darshan/Documents/ChatGPT/grokbotxphoton-product/packages/photon-features/dist/src/state/sqlite.js:97:28)
+      at InboundRouter.reduce (file:///Users/darshan/Documents/ChatGPT/grokbotxphoton-product/packages/photon-features/dist/src/runtime/inbound/router.js:92:31)
+      at InboundRouter.accept (file:///Users/darshan/Documents/ChatGPT/grokbotxphoton-product/packages/photon-features/dist/src/runtime/inbound/router.js:88:18)
+      at TestContext.<anonymous> (file:///Users/darshan/Documents/ChatGPT/grokbotxphoton-product/packages/photon-features/dist/tests/e2e/poll-restart.test.js:85:18)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)
+      at Test.postRun (node:internal/test_runner/test:1235:19)

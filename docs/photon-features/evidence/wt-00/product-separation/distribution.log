@@ -1,0 +1,54 @@
+TAP version 13
+# (node:47310) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: archive is deterministic, complete, checksummed and traversal/secret safe
+ok 1 - archive is deterministic, complete, checksummed and traversal/secret safe
+  ---
+  duration_ms: 3.392
+  type: 'test'
+  ...
+# Subtest: clean and repeat installation is inactive, preserves fuller skill and unrelated files
+ok 2 - clean and repeat installation is inactive, preserves fuller skill and unrelated files
+  ---
+  duration_ms: 17.40675
+  type: 'test'
+  ...
+# Subtest: owner lock, active configuration and existing socket prevent installation
+ok 3 - owner lock, active configuration and existing socket prevent installation
+  ---
+  duration_ms: 7.9315
+  type: 'test'
+  ...
+# Subtest: compatible rollback preserves queued and unknown work; unsafe downgrade fails without state loss
+ok 4 - compatible rollback preserves queued and unknown work; unsafe downgrade fails without state loss
+  ---
+  duration_ms: 17.51475
+  type: 'test'
+  ...
+# Subtest: tampered releases and symlink roots are refused
+ok 5 - tampered releases and symlink roots are refused
+  ---
+  duration_ms: 10.006833
+  type: 'test'
+  ...
+# Subtest: release boundary rejects current dirty isolated lane, never produces final artifact
+ok 6 - release boundary rejects current dirty isolated lane, never produces final artifact
+  ---
+  duration_ms: 35.3475
+  type: 'test'
+  ...
+# Subtest: all generated examples validate, registry drift detected, offline smoke needs no host
+ok 7 - all generated examples validate, registry drift detected, offline smoke needs no host
+  ---
+  duration_ms: 252.042042
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 420.141709

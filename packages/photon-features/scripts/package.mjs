@@ -80,7 +80,7 @@ export async function packageCandidate({ candidate, approval, output }) {
   await collect(join(root, 'schemas'), 'schemas/');
   await collect(join(root, 'examples/wt-08'), 'examples/wt-08/');
   await collect(join(candidate, 'node_modules'), 'node_modules/', true);
-  for (const name of ['package.json', 'SKILL.md', 'INSTALL.md', 'README.md', 'scripts/install.mjs', 'scripts/package.mjs', 'scripts/smoke-test.mjs']) files[name] = await readFile(join(root, name));
+  for (const name of ['package.json', 'LICENSE', 'SKILL.md', 'INSTALL.md', 'README.md', 'scripts/install.mjs', 'scripts/package.mjs', 'scripts/smoke-test.mjs']) files[name] = await readFile(join(root, name));
   files['bin/grok-photon'] = { content: Buffer.from("#!/usr/bin/env node\nimport { run } from '../dist/src/cli/main.js';\nprocess.exitCode = await run(process.argv.slice(2));\n"), mode: 0o700 };
   files['dependency-lock.json'] = await readFile(join(candidate, 'package-lock.json'));
   const lock = JSON.parse(files['dependency-lock.json'].toString('utf8'));

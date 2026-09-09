@@ -1,8 +1,36 @@
+# Dependencies and generated builds
 node_modules/
-.worktrees/
 dist/
+packages/photon-features/tests/lanes/*/build/
+coverage/
+*.tsbuildinfo
+__pycache__/
+
+# Local checkouts and operating-system files
+.worktrees/
+.DS_Store
+
+# Private configuration; keep sanitized example templates visible
 .env
 .env.*
-tmp-agents/
+!.env.example
+!.env.*.example
+.npmrc
+
+# Local host state and generated release artifacts
+/runtime/
+/artifacts/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db
+*.db-wal
+*.db-shm
+*.sock
+*.gpf.gz
+*.gpf.gz.sha256
+*.gpf.gz.provenance.json
+
+# Operational logs are local; reviewed test evidence belongs in Git
 *.log
-.DS_Store
+!docs/photon-features/evidence/**/*.log

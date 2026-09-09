@@ -1,0 +1,5 @@
+
+> grokbotxphoton@0.1.0 smoke
+> node packages/photon-features/scripts/smoke-test.mjs
+
+{"offlineSmoke":"passed","activated":false,"liveVerified":false}
