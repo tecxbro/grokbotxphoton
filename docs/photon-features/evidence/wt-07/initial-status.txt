@@ -1,0 +1,15 @@
+ M package-lock.json
+ M package.json
+?? agent.md
+?? architecthure.md
+?? docs/photon-features/evidence/wt-01/
+?? docs/photon-features/evidence/wt-02/
+?? docs/photon-features/evidence/wt-03/
+?? docs/photon-features/evidence/wt-04/
+?? docs/photon-features/evidence/wt-05/
+?? docs/photon-features/evidence/wt-06/
+?? docs/photon-features/evidence/wt-07/
+?? packages/photon-features/src/adapters/state/
+?? packages/photon-features/src/adapters/transport/
+?? packages/photon-features/src/features/
+?? packages/photon-features/src/runtime/

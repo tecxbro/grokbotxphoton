@@ -1,0 +1,600 @@
+{
+  "sources": [
+    {
+      "url": "https://photon.codes/docs/llms.txt",
+      "accessedAt": "2026-09-09T03:12:24.967245+00:00",
+      "readStatus": "reviewed relevant index entries",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "sha256": "0e9cff75bdffdb8e625583fdd88ccd7317d027fa3f9a74cbe3cebfa256c0c033",
+      "bytes": 16307,
+      "capturePath": "/tmp/wt05-sources/0e9cff75bdffdb8e625583fdd88ccd7317d027fa3f9a74cbe3cebfa256c0c033.txt",
+      "supports": [
+        "source discovery"
+      ]
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/content/polls",
+      "accessedAt": "2026-09-09T03:12:24.967566+00:00",
+      "readStatus": "fetched; Markdown counterpart reviewed",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "e1bfc808e4357472a459cf953edab704ca98bb0e6293473439890e9b797a60c6",
+      "bytes": 283586,
+      "capturePath": "/tmp/wt05-sources/e1bfc808e4357472a459cf953edab704ca98bb0e6293473439890e9b797a60c6.txt",
+      "supports": [
+        "poll.create public builder",
+        "native identity limitation",
+        "schema/call-shape tests"
+      ]
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/content/polls.md",
+      "accessedAt": "2026-09-09T03:12:24.967687+00:00",
+      "readStatus": "reviewed relevant poll/event/retry excerpts",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "sha256": "e57ffa8265660ccbe175e92f46862af905e9129a10be598c0cc851d6643a61b9",
+      "bytes": 2220,
+      "capturePath": "/tmp/wt05-sources/e57ffa8265660ccbe175e92f46862af905e9129a10be598c0cc851d6643a61b9.txt",
+      "supports": [
+        "poll.create public builder",
+        "native identity limitation",
+        "schema/call-shape tests"
+      ],
+      "markdownVerified": true
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/messages",
+      "accessedAt": "2026-09-09T03:12:24.967738+00:00",
+      "readStatus": "fetched; Markdown counterpart reviewed",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "a5fe08605b70bd80a813bc4718180abd921a32a63299abb075d953ac2ff97d82",
+      "bytes": 451499,
+      "capturePath": "/tmp/wt05-sources/a5fe08605b70bd80a813bc4718180abd921a32a63299abb075d953ac2ff97d82.txt",
+      "supports": [
+        "poll.create public builder",
+        "native identity limitation",
+        "schema/call-shape tests"
+      ]
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/messages.md",
+      "accessedAt": "2026-09-09T03:12:24.967783+00:00",
+      "readStatus": "reviewed relevant poll/event/retry excerpts",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "sha256": "0da88e0f2336f1f0757dc7359dd702ce9fc2d3e586e523871244251f97c7d39b",
+      "bytes": 42753,
+      "capturePath": "/tmp/wt05-sources/0da88e0f2336f1f0757dc7359dd702ce9fc2d3e586e523871244251f97c7d39b.txt",
+      "supports": [
+        "poll.create public builder",
+        "native identity limitation",
+        "schema/call-shape tests"
+      ],
+      "markdownVerified": true
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/imessage/polls",
+      "accessedAt": "2026-09-09T03:12:24.967823+00:00",
+      "readStatus": "fetched; Markdown counterpart reviewed",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "b6d11a8ad1ae2d8262e1407188a9af23def812ce701e8c291966d6a07923bcc4",
+      "bytes": 447349,
+      "capturePath": "/tmp/wt05-sources/b6d11a8ad1ae2d8262e1407188a9af23def812ce701e8c291966d6a07923bcc4.txt",
+      "supports": [
+        "all five public call-shape probes",
+        "native option identity",
+        "bot-only vote semantics"
+      ]
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/imessage/polls.md",
+      "accessedAt": "2026-09-09T03:12:25.448204+00:00",
+      "readStatus": "reviewed relevant poll/event/retry excerpts",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "sha256": "6170945b2e0f8f36c429085d1e2e01b89830e5304b357c0912b70e723b95c481",
+      "bytes": 10004,
+      "capturePath": "/tmp/wt05-sources/6170945b2e0f8f36c429085d1e2e01b89830e5304b357c0912b70e723b95c481.txt",
+      "supports": [
+        "all five public call-shape probes",
+        "native option identity",
+        "bot-only vote semantics"
+      ],
+      "markdownVerified": true
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/imessage/events",
+      "accessedAt": "2026-09-09T03:12:25.611907+00:00",
+      "readStatus": "fetched; Markdown counterpart reviewed",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "05656dc3eca9cb7c977e27cc972611e31469e026af6bd245ff2784a4fe95fa94",
+      "bytes": 418174,
+      "capturePath": "/tmp/wt05-sources/05656dc3eca9cb7c977e27cc972611e31469e026af6bd245ff2784a4fe95fa94.txt",
+      "supports": [
+        "ordered reducer",
+        "unknown actor request",
+        "restart/replay tests"
+      ]
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/imessage/events.md",
+      "accessedAt": "2026-09-09T03:12:25.653039+00:00",
+      "readStatus": "reviewed relevant poll/event/retry excerpts",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "sha256": "ffbfaec5c8146c923a3df23dc84ab0df607a5f78beb4faf5675f2cac17df58f9",
+      "bytes": 9479,
+      "capturePath": "/tmp/wt05-sources/ffbfaec5c8146c923a3df23dc84ab0df607a5f78beb4faf5675f2cac17df58f9.txt",
+      "supports": [
+        "ordered reducer",
+        "unknown actor request",
+        "restart/replay tests"
+      ],
+      "markdownVerified": true
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/imessage/error-handling",
+      "accessedAt": "2026-09-09T03:12:25.845222+00:00",
+      "readStatus": "fetched; Markdown counterpart reviewed",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "947758668266d72ee5fb5027c937345091b99df4519497faff28a787a0ec147a",
+      "bytes": 366929,
+      "capturePath": "/tmp/wt05-sources/947758668266d72ee5fb5027c937345091b99df4519497faff28a787a0ec147a.txt",
+      "supports": [
+        "timeout/no-resend tests",
+        "recovery codec",
+        "advanced seam request"
+      ]
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/imessage/error-handling.md",
+      "accessedAt": "2026-09-09T03:12:25.857610+00:00",
+      "readStatus": "reviewed relevant poll/event/retry excerpts",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "sha256": "ea68f162fd7ed4d4ea24ff7223754bdc7e8941bb148fc247404d7821f492a3b9",
+      "bytes": 10858,
+      "capturePath": "/tmp/wt05-sources/ea68f162fd7ed4d4ea24ff7223754bdc7e8941bb148fc247404d7821f492a3b9.txt",
+      "supports": [
+        "timeout/no-resend tests",
+        "recovery codec",
+        "advanced seam request"
+      ],
+      "markdownVerified": true
+    },
+    {
+      "url": "https://photon.codes/docs/webhooks/events",
+      "accessedAt": "2026-09-09T03:12:26.114818+00:00",
+      "readStatus": "fetched; Markdown counterpart reviewed",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "3209becd675fc2bd44efcf02ab9912c7210db38cb41aa51696fcec52f99e97cd",
+      "bytes": 593417,
+      "capturePath": "/tmp/wt05-sources/3209becd675fc2bd44efcf02ab9912c7210db38cb41aa51696fcec52f99e97cd.txt",
+      "supports": [
+        "capability separation",
+        "duplicate delivery tests",
+        "WT-02 ingress request"
+      ]
+    },
+    {
+      "url": "https://photon.codes/docs/webhooks/events.md",
+      "accessedAt": "2026-09-09T03:12:26.859789+00:00",
+      "readStatus": "reviewed relevant poll/event/retry excerpts",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "sha256": "7aa55c7ecee4ebe392f314302205d8158a20550a5162e68574bf3dd9f0620853",
+      "bytes": 30404,
+      "capturePath": "/tmp/wt05-sources/7aa55c7ecee4ebe392f314302205d8158a20550a5162e68574bf3dd9f0620853.txt",
+      "supports": [
+        "capability separation",
+        "duplicate delivery tests",
+        "WT-02 ingress request"
+      ],
+      "markdownVerified": true
+    },
+    {
+      "url": "https://photon.codes/docs/webhooks/delivery",
+      "accessedAt": "2026-09-09T03:12:27.429770+00:00",
+      "readStatus": "fetched; Markdown counterpart reviewed",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "61b9ba14b6e67ca86bde5502294758a7aa1bf2403fe99dcf8d77c2887e076275",
+      "bytes": 390024,
+      "capturePath": "/tmp/wt05-sources/61b9ba14b6e67ca86bde5502294758a7aa1bf2403fe99dcf8d77c2887e076275.txt",
+      "supports": [
+        "capability separation",
+        "duplicate delivery tests",
+        "WT-02 ingress request"
+      ]
+    },
+    {
+      "url": "https://photon.codes/docs/webhooks/delivery.md",
+      "accessedAt": "2026-09-09T03:12:27.478584+00:00",
+      "readStatus": "reviewed relevant poll/event/retry excerpts",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "sha256": "6e8105b77cd5c763586f0cd869a76ad2dc90b395ce331feb6505ebf177d23e6b",
+      "bytes": 19742,
+      "capturePath": "/tmp/wt05-sources/6e8105b77cd5c763586f0cd869a76ad2dc90b395ce331feb6505ebf177d23e6b.txt",
+      "supports": [
+        "capability separation",
+        "duplicate delivery tests",
+        "WT-02 ingress request"
+      ],
+      "markdownVerified": true
+    },
+    {
+      "url": "https://photon.codes/docs/best-practices/recovery-and-state",
+      "accessedAt": "2026-09-09T03:12:27.488000+00:00",
+      "readStatus": "fetched; Markdown counterpart reviewed",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "af12cf315c8bf04d8e0b51218132d90749bc1b8f2ae05c61ad5e470c2a99ea5d",
+      "bytes": 319226,
+      "capturePath": "/tmp/wt05-sources/af12cf315c8bf04d8e0b51218132d90749bc1b8f2ae05c61ad5e470c2a99ea5d.txt",
+      "supports": [
+        "timeout/no-resend tests",
+        "recovery codec",
+        "advanced seam request"
+      ]
+    },
+    {
+      "url": "https://photon.codes/docs/best-practices/recovery-and-state.md",
+      "accessedAt": "2026-09-09T03:12:27.733782+00:00",
+      "readStatus": "reviewed relevant poll/event/retry excerpts",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "sha256": "65944f4b202e0142388403aff39b3135b3dca7ab87035cdc36af22713716a9f0",
+      "bytes": 5801,
+      "capturePath": "/tmp/wt05-sources/65944f4b202e0142388403aff39b3135b3dca7ab87035cdc36af22713716a9f0.txt",
+      "supports": [
+        "timeout/no-resend tests",
+        "recovery codec",
+        "advanced seam request"
+      ],
+      "markdownVerified": true
+    },
+    {
+      "url": "https://github.com/photon-hq/spectrum-ts",
+      "accessedAt": "2026-09-09T03:12:27.738222+00:00",
+      "readStatus": "fetched repository page; local pinned package and authored template reviewed",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "sha256": "978e533dd92b8085b1e98d8994d038fcf434bda9fb71d2469f9ab213b6f47c8d",
+      "bytes": 326103,
+      "capturePath": "/tmp/wt05-sources/978e533dd92b8085b1e98d8994d038fcf434bda9fb71d2469f9ab213b6f47c8d.txt",
+      "supports": [
+        "poll.create public builder",
+        "native identity limitation",
+        "schema/call-shape tests"
+      ],
+      "observedRepositoryHead": "ff44053f821fcffb967797d0a204d8bfebae91c3",
+      "commitLimitation": "HEAD observed separately; exact fetched rolling bytes identified by SHA-256"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/photon-hq/spectrum-ts/main/docs/content/polls.mdx.vel",
+      "accessedAt": "2026-09-09T03:12:27.762014+00:00",
+      "readStatus": "reviewed relevant poll/event/retry excerpts",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "sha256": "e2e4d1f6a9b80119bb189a607f93adeb3744f3dd50f96a9fd298c0fdab87607a",
+      "bytes": 874,
+      "capturePath": "/tmp/wt05-sources/e2e4d1f6a9b80119bb189a607f93adeb3744f3dd50f96a9fd298c0fdab87607a.txt",
+      "supports": [
+        "poll.create public builder",
+        "native identity limitation",
+        "schema/call-shape tests"
+      ],
+      "observedRepositoryHead": "ff44053f821fcffb967797d0a204d8bfebae91c3",
+      "commitLimitation": "HEAD observed separately; exact fetched rolling bytes identified by SHA-256"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/polls-groups-and-custom.md",
+      "accessedAt": "2026-09-09T03:12:27.966911+00:00",
+      "readStatus": "reviewed relevant poll/event/retry excerpts",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "sha256": "c185c67526664c24224d63b79975115ed4bda5f6a5f021b6b2f3a3c592a2ebb7",
+      "bytes": 1128,
+      "capturePath": "/tmp/wt05-sources/c185c67526664c24224d63b79975115ed4bda5f6a5f021b6b2f3a3c592a2ebb7.txt",
+      "supports": [
+        "poll.create public builder",
+        "native identity limitation",
+        "schema/call-shape tests"
+      ],
+      "observedRepositoryHead": "11f5d755a652fff73b4410559b1c1d7d5f30a522",
+      "commitLimitation": "HEAD observed separately; exact fetched rolling bytes identified by SHA-256"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/advanced/polls.md",
+      "accessedAt": "2026-09-09T03:12:28.119914+00:00",
+      "readStatus": "reviewed relevant poll/event/retry excerpts",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "sha256": "50305b954d4f478012d34297b9094390ed8ecfcdcc44c96a70fb6d45d25e91d1",
+      "bytes": 1535,
+      "capturePath": "/tmp/wt05-sources/50305b954d4f478012d34297b9094390ed8ecfcdcc44c96a70fb6d45d25e91d1.txt",
+      "supports": [
+        "all five public call-shape probes",
+        "native option identity",
+        "bot-only vote semantics"
+      ],
+      "observedRepositoryHead": "11f5d755a652fff73b4410559b1c1d7d5f30a522",
+      "commitLimitation": "HEAD observed separately; exact fetched rolling bytes identified by SHA-256"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/advanced/events.md",
+      "accessedAt": "2026-09-09T03:12:28.207228+00:00",
+      "readStatus": "reviewed relevant poll/event/retry excerpts",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "sha256": "a425253f21fd4045ef978436cb68fc30fbd94f71287fa5e87e329573da21feb5",
+      "bytes": 2195,
+      "capturePath": "/tmp/wt05-sources/a425253f21fd4045ef978436cb68fc30fbd94f71287fa5e87e329573da21feb5.txt",
+      "supports": [
+        "ordered reducer",
+        "unknown actor request",
+        "restart/replay tests"
+      ],
+      "observedRepositoryHead": "11f5d755a652fff73b4410559b1c1d7d5f30a522",
+      "commitLimitation": "HEAD observed separately; exact fetched rolling bytes identified by SHA-256"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/capability-semantics.md",
+      "accessedAt": "2026-09-09T03:12:28.339381+00:00",
+      "readStatus": "reviewed relevant poll/event/retry excerpts",
+      "version": "rolling website or main; pinned local SDK is authority",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "sha256": "7451fec93c937bf92238e916f6e811ce4e41ddd5459a2211950b0efdda471fe5",
+      "bytes": 2122,
+      "capturePath": "/tmp/wt05-sources/7451fec93c937bf92238e916f6e811ce4e41ddd5459a2211950b0efdda471fe5.txt",
+      "supports": [
+        "undefined SDK return test",
+        "directional capabilities"
+      ],
+      "observedRepositoryHead": "11f5d755a652fff73b4410559b1c1d7d5f30a522",
+      "commitLimitation": "HEAD observed separately; exact fetched rolling bytes identified by SHA-256"
+    },
+    {
+      "path": "node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts",
+      "version": "12.8.0",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "c452a8fc2ffbab03c6e548ce13dcf28f841ec7c9331513c65975e12f869ad954",
+      "supports": [
+        "Public Space, ContentBuilder, Poll and PollOption types; create call shape and native-ID absence"
+      ]
+    },
+    {
+      "path": "node_modules/@spectrum-ts/imessage/dist/index.d.ts",
+      "version": "12.8.0",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "6a2278d14fd42a5603675b046fd1c8ad5c584da760e60b621f74059bf7dc3aa0",
+      "supports": [
+        "Public imessage narrowing and absence of poll management seam"
+      ]
+    },
+    {
+      "path": "node_modules/@spectrum-ts/imessage/dist/index.js",
+      "version": "12.8.0",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "2f7e13c432ad4e84f96b76eb3d59062d70d3d7e46737a7e15198a47ecda6ef24",
+      "supports": [
+        "Read-only trace: outbound poll GUID becomes message ID; public vote conversion drops native identities. No internal symbols imported."
+      ]
+    },
+    {
+      "path": "node_modules/@photon-ai/advanced-imessage/dist/grpc.d.ts",
+      "version": "2.1.0",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "fa27c25cf23e2c9995958b305a8669c83db5dae115b8085648fae56022940f89",
+      "supports": [
+        "Public AdvancedIMessage polls signatures; compile-only probe for future F0 extension"
+      ]
+    },
+    {
+      "path": "node_modules/@photon-ai/advanced-imessage/dist/groups-CMgks3Ll.d.ts",
+      "version": "2.1.0",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "2a07e49a8470c954adca2529475c67e7b748c650f3d829a75660d950792da8cd",
+      "supports": [
+        "Poll and PollEvent native IDs, optional actor, sequence, vote shapes"
+      ]
+    },
+    {
+      "path": "docs/photon-features/foundation.json",
+      "version": "F0",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "3f26e5326c08a15220e20b26e390703fd9cec5e66faa55d6b0ab4e4433feb03c",
+      "supports": [
+        "Start gate versions and digest"
+      ]
+    },
+    {
+      "path": "docs/photon-features/contracts-v1.md",
+      "version": "F0",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "e650a7eb152928b23fff5eff4d9fa090c7d62fef634f44a571b7d237650ba280",
+      "supports": [
+        "Normative lane boundaries"
+      ]
+    },
+    {
+      "path": "docs/photon-features/ownership.json",
+      "version": "F0",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "f8bf4f903f4982f6829ad1b30de5a7e7252560e739ecd38b4026b9c82d0edaf9",
+      "supports": [
+        "Owned paths and shared-change requests"
+      ]
+    },
+    {
+      "path": "docs/photon-features/runtime-contract.md",
+      "version": "F0",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "e644e36e8d522c70799bd5bb7bfe67522aca58557a336cb68491831686b0be85",
+      "supports": [
+        "Shared outbox, UoW, no client or stream ownership"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/contracts/ports.ts",
+      "version": "F0",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "e723c7832d1ebe51af49af1413832ca4c5ca7c9b6f9f6c2d761065aba814f6a1",
+      "supports": [
+        "ExecutionServices and EventReducer interfaces; absent native extension"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/contracts/events.ts",
+      "version": "F0",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "a56598c257065fc7fcfe73aeaea4989126e54fe993f83cd00b415e6ff9dfb092",
+      "supports": [
+        "Normalized poll fields and missing actor/snapshot expressiveness"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/contracts/execution.ts",
+      "version": "F0",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "26241f99c2e5db61e3a2163c1c95a0c30ba5c616f3074558299bb7875f9c3091",
+      "supports": [
+        "Empty approvedAdvancedExtensions; claim fencing"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/contracts/actions.ts",
+      "version": "F0",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "8903e95b30e31f08ab87cc55932b8767f3aa3668eb836a62b06ea2bf60449ccf",
+      "supports": [
+        "Five operation schemas and parent checks"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/contracts/results.ts",
+      "version": "F0",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "44ed00b47bbf8f00494b1e449b9929fb51cfad20d5c663f5dccf4cab9e47e839",
+      "supports": [
+        "Honest implementation and result status"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/state/ports.ts",
+      "version": "F0",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "91788e91c3197fcd9ae0e419708c47cd190c76ed795930a8e238a1b297bcd8e4",
+      "supports": [
+        "Durable poll/vote/reference/inbox/handoff/checkpoint records"
+      ]
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/harness.ts",
+      "version": "F0",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "89da65833e4815dcb632c2da5329ec0ca869c86901c15a4e3320d1ad0af75692",
+      "supports": [
+        "Independent SQLite fixture, clock and crash hooks"
+      ]
+    },
+    {
+      "path": "/Users/darshan/.codex/skills/spectrum/SKILL.md",
+      "version": "3.1.0; targets Spectrum 12.8.0",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "0a2f328fe6da4d202497e8bb859625de06af23cce884d1639dd1e8f3cb737de8",
+      "supports": [
+        "User-requested contract-gate workflow"
+      ]
+    },
+    {
+      "path": "/Users/darshan/.codex/skills/spectrum/providers/imessage.md",
+      "version": "supplementary",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "10fb889be4fd62e0e3f201ab46e6b34096e8aa2f24101bdecb49197926e8c3de",
+      "supports": [
+        "Cloud provider routing"
+      ]
+    },
+    {
+      "path": "/Users/darshan/.codex/skills/spectrum/capability-semantics.md",
+      "version": "supplementary",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "7451fec93c937bf92238e916f6e811ce4e41ddd5459a2211950b0efdda471fe5",
+      "supports": [
+        "Warn-and-skip and no-op distinctions"
+      ]
+    },
+    {
+      "path": "/Users/darshan/.codex/skills/spectrum/content/polls-groups-and-custom.md",
+      "version": "supplementary",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "c185c67526664c24224d63b79975115ed4bda5f6a5f021b6b2f3a3c592a2ebb7",
+      "supports": [
+        "Builder syntax"
+      ]
+    },
+    {
+      "path": "/Users/darshan/.agents/skills/verification-before-completion/SKILL.md",
+      "version": "local skill",
+      "accessedAt": "2026-09-09T03:22:35.950432+00:00",
+      "readStatus": "reviewed relevant declarations or instructions",
+      "sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
+      "supports": [
+        "Fresh verification workflow"
+      ]
+    }
+  ],
+  "authority": "Installed pinned public SDK types; website and skill content supplementary. No live provider execution."
+}

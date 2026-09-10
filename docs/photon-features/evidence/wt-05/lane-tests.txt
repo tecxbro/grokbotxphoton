@@ -1,0 +1,38 @@
+(node:30905) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ F0 transactional fixture (WT-01/WT-02 rerun pending): real store/router contract keeps task correlation and deduplicates work (10.974292ms)
+✔ F0 transactional fixture (WT-01/WT-02 rerun pending): failed commit leaves neither a vote nor a continuation (6.083166ms)
+(node:30907) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ all five F0 schemas validate their fixtures and reject malformed payloads (21.317792ms)
+✔ public pinned advanced call shapes compile and execute only against a test double (0.708291ms)
+✔ create uses actual Spectrum builders; keys and duplicate labels persist without fabricated native option IDs (16.534875ms)
+✔ four native operations are explicitly unimplemented at F0, never private-client or alternate sends (8.009625ms)
+✔ unauthorized bot vote and wrong line/conversation are rejected before SDK dispatch (5.802542ms)
+✔ timeout has unknown outcome and repeated recovery never resends (5.18725ms)
+✔ undefined has unknown outcome and repeated recovery never resends (5.816917ms)
+✔ creation and unavailable vote ingress have separate capability status; registry composition is lane-local (0.226125ms)
+✔ provider acceptance followed by local registration failure leaves a durable no-resend marker (4.9775ms)
+✔ concurrent execution of the same claimed request issues only one SDK send (4.464125ms)
+✔ revoked context and expired/replaced executor fences prevent sends (4.183625ms)
+(node:30908) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ two simultaneous polls and duplicate display labels correlate using native identities to their own tasks (12.005875ms)
+✔ independent option selections, multiple voters, duplicates, removal, and stale events (8.250833ms)
+✔ vote before local registration is retained and repeated reconciliation creates one continuation (7.924083ms)
+✔ unknown option additions wait for native metadata registration; never derive a label from an ID (5.228875ms)
+✔ unknown ordering, contradictory sequence, unrelated source and cross-scope targets stay unresolved (5.618959ms)
+✔ ambiguous native target remains explicit unresolved, not latest poll (4.988958ms)
+✔ transaction failure rolls back vote, inbox and continuation together (4.296625ms)
+✔ restart preserves task/option/voter correlation and replay creates no duplicate continuation (5.251375ms)
+✔ stale task generation and reused event identity do not wake another task (3.709542ms)
+✔ delivery timestamps do not create a new event; stable provider identity deduplicates router aliases (4.530208ms)
+✔ native vote replacement ambiguity cannot be treated as independent multi-select deltas (4.40825ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 767.389042

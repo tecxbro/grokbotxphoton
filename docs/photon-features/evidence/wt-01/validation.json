@@ -1,0 +1,67 @@
+{
+  "recordedAt": "2026-09-09T03:28:20.792951+00:00",
+  "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/photon-wt01-validation-rcy03fs9",
+  "node": "/Users/darshan/.npm/_npx/cee224165f95995d/node_modules/node/bin/node",
+  "nodeVersion": "24.13.0",
+  "npmVersion": "10.9.2",
+  "typescriptVersion": "5.9.3",
+  "input": "git archive of exact F0 plus copies of WT-01 source/test/example paths only; npm ci uses committed lockfile",
+  "commands": [
+    {
+      "command": "npm ci --ignore-scripts",
+      "exitCode": 0,
+      "passed": null,
+      "log": "docs/photon-features/evidence/wt-01/clean-install.txt",
+      "logSha256": "4d06c98597a797b6be3fba5f9995e72b56369a4d9b14dc7cce115b77da1b57e7"
+    },
+    {
+      "command": "npm run photon:build",
+      "exitCode": 0,
+      "passed": null,
+      "log": "docs/photon-features/evidence/wt-01/build.txt",
+      "logSha256": "5cb697ca32933079847aecf61164a6ed1f78fdcd64fa2731f760c003cf5e48d8",
+      "logNormalization": "Trailing blank lines removed for Git whitespace validation; test output unchanged."
+    },
+    {
+      "command": "node --test packages/photon-features/dist/tests/lanes/wt-01/*.test.js",
+      "exitCode": 0,
+      "passed": 31,
+      "log": "docs/photon-features/evidence/wt-01/lane.txt",
+      "logSha256": "07151c7f095b368497ad48cf6a2128c963b3cdf1cc5c8c1e5066cdff43e421f3"
+    },
+    {
+      "command": "npm run photon:test",
+      "exitCode": 0,
+      "passed": 60,
+      "log": "docs/photon-features/evidence/wt-01/foundation.txt",
+      "logSha256": "aab739229821be45b32d4b7dfc741eeca346fc4035f43408cefbdadd4d24200e"
+    },
+    {
+      "command": "npm run photon:check",
+      "exitCode": 0,
+      "passed": null,
+      "log": "docs/photon-features/evidence/wt-01/check.txt",
+      "logSha256": "17329cd5d46848b27afbff5efb55e170fe2964055be820a145d0b9a610f97bf4"
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "passed": 31,
+      "log": "docs/photon-features/evidence/wt-01/existing.txt",
+      "logSha256": "7e746ec4cf021a40fe7a5afdad084ae9cea9fa0bec0dc46e453855eba7373058"
+    }
+  ],
+  "evidenceTiers": {
+    "codeBuilt": true,
+    "realSQLiteAndUnixIPCVerified": true,
+    "SDKTypeCompatibilityVerified": true,
+    "realMessagingDependenciesIntegrated": false,
+    "installedActivated": false,
+    "liveVerified": false
+  },
+  "limitations": [
+    "Frozen handler interface needs mandatory per-child boundary and approved host/package wiring before production integration.",
+    "No automatic provider idempotency/reconciliation or dependency-aware deletion exists under F0.",
+    "Same-user hostile process isolation is not provided."
+  ]
+}

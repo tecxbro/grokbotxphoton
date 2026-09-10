@@ -1,0 +1,261 @@
+{
+  "version": 1,
+  "retrievedAt": "2026-09-10T08:08:22.016Z",
+  "packages": {
+    "spectrum-ts": "12.8.0",
+    "@spectrum-ts/core": "12.8.0",
+    "@spectrum-ts/imessage": "12.8.0"
+  },
+  "skills": {
+    "spectrum": {
+      "version": "3.1.0",
+      "sha256": "0a2f328fe6da4d202497e8bb859625de06af23cce884d1639dd1e8f3cb737de8"
+    },
+    "imessage": {
+      "version": "9.1.0",
+      "sha256": "218af7703b8d12537ca8c6077c1b8b5d9865ccc2202fc7eaef2d883651a59dbb"
+    }
+  },
+  "sources": [
+    {
+      "url": "https://photon.codes/docs/llms.txt",
+      "finalUrl": "https://photon.codes/docs/llms.txt",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/plain; charset=utf-8",
+      "identity": "Photon",
+      "sha256": "0e9cff75bdffdb8e625583fdd88ccd7317d027fa3f9a74cbe3cebfa256c0c033",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/spaces-and-users.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/spaces-and-users.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Spaces and Users",
+      "sha256": "f69d3567ce5bb75b6db2348c1906ff0e8629941be75c49f64416311693fbe044",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/platform-narrowing.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/platform-narrowing.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Platform Narrowing",
+      "sha256": "bf4786f4ecab20832500b0585ceb406281eaf04299f1c6af987cbc980a7d137b",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/connection-and-routing.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers/imessage/connection-and-routing.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "iMessage connection and routing",
+      "sha256": "566a8ddbd1cf0dccdbcd3695c6e28c3cc4b100d97e606c0ee923ade339f24c47",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "iMessage messaging features",
+      "sha256": "89bbcb9198006cec8bf8d834351c1fe0b8847437cecd46318b5cc0b564fdabd0",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/message-effects.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/message-effects.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "iMessage message effects",
+      "sha256": "b6558c95ea9fd52271eefd0362e743aa0d5e53b59ec6b4ef6372c2855acb7aa8",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/chat-renaming.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/chat-renaming.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "iMessage chat renaming",
+      "sha256": "47e2e1621f87a5c60ec88531f863aac5a510145d6344fd6729efc147fd87960d",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/group-avatars.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/group-avatars.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "iMessage group avatars",
+      "sha256": "70c7bf4ba02b59f3c88bfb47b6301998e8b6d1f2ceb867dbf07dee7d5fe49cf3",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/group-membership.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/group-membership.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "iMessage group membership",
+      "sha256": "9e046c199c41d25d3192ead799ffbe8b6ca0f3c14aff3e3959731133cb140413",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/inbound-group-events.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/inbound-group-events.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Inbound iMessage group events",
+      "sha256": "d73dd5727d96a1145458d5a7e417149b24ee05e26899f710983e57aca4f4ce70",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/chat-backgrounds.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/chat-backgrounds.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "iMessage chat backgrounds",
+      "sha256": "6a0f5a11c3056296632fb501181cbadd762d2ea2579f35d961102086fe988f83",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/contact-card-sharing.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/contact-card-sharing.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Native iMessage contact card sharing",
+      "sha256": "f96ec1311476f01e4f055f3badb7295d3c9859f56caeb81976b8c23eec6e4f98",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/message-metadata.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/message-metadata.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Native iMessage message metadata",
+      "sha256": "e3c4d5d536853a7a9f463585a53866abcf630735d53b43b347c3b4ded3fd6e0c",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/content/rename.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/content/rename.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Rename",
+      "sha256": "6579aa3b519f1887690e0376b6e6d53b83c4c92c917ebcd5b9b728ff8147047e",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/content/avatar.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/content/avatar.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Avatar",
+      "sha256": "91b4282d329127036a22b5e5e83981cc905e2f235168d504fdc9dafcdf1cb3a6",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/content/membership.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/content/membership.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Membership",
+      "sha256": "009d7a2eeede558e61e3120560dec41956159f82c7698f75b269aa22ebf4d53b",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/content/custom.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/content/custom.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Custom content",
+      "sha256": "502ccec12ef61938203a844d6c70855aa31616ba7c5dc94504b4b82d2cfe0cca",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/imessage/chats.md",
+      "finalUrl": "https://photon.codes/docs/advanced-kits/imessage/chats.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Chats",
+      "sha256": "6bc31a7e8d4aad09decf805b2bf1c747142d53f2a0d1834bb2ff8ab8ea9c673d",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/imessage/groups.md",
+      "finalUrl": "https://photon.codes/docs/advanced-kits/imessage/groups.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Groups",
+      "sha256": "0268d8c399e5767980e5111d449fe40ea6ebfb667e85443a5b2472d1437e88fa",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/imessage/addresses.md",
+      "finalUrl": "https://photon.codes/docs/advanced-kits/imessage/addresses.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:08:22.016Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Addresses",
+      "sha256": "f748f7d0b45dc9fdb68cb131dbed63a104dec43578bb76799822bcf14a57719b",
+      "snapshot": null,
+      "failure": null,
+      "classification": "official"
+    }
+  ]
+}

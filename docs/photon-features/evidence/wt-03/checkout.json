@@ -1,0 +1,29 @@
+{
+  "repository": "https://github.com/tecxbro/grokbotonimessage",
+  "path": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+  "branch": "main",
+  "HEAD": "57e40736be8a59047b776654c766fbe8bfd10c9e",
+  "F0": "57e40736be8a59047b776654c766fbe8bfd10c9e",
+  "contractDigest": "e0f7779bc9ca3d45696e9b4e24e8579d922c8d2d7d4323c821202d8f599acbf8",
+  "comparisonCommit": "57e40736be8a59047b776654c766fbe8bfd10c9e",
+  "mergeBaseWithOriginMain": "24468391b57f028b4b881ddbf71efab3a49a6f73",
+  "remoteMainObserved": "24468391b57f028b4b881ddbf71efab3a49a6f73",
+  "remoteDivergence": {
+    "ahead": 1,
+    "behind": 0
+  },
+  "originalCreationBase": "unknown",
+  "initialDirty": [
+    "package.json",
+    "package-lock.json",
+    "agent.md (untracked)",
+    "architecthure.md (untracked)"
+  ],
+  "observedAt": "2026-09-09T03:21:59.666441+00:00",
+  "worktreeSelection": "Only registered worktree; current checkout retained as requested. No branch/worktree creation or switch.",
+  "concurrency": "Other lanes appeared during work. Only committed F0 and WT-03 files used for isolated validation.",
+  "codeBuilt": true,
+  "integrated": false,
+  "installedActivated": false,
+  "liveVerified": false
+}

@@ -1,0 +1,13 @@
+
+> grok-bot-cli@0.2.2 photon:check
+> npm run check --workspace=@grokbot/photon-features
+
+
+> @grokbot/photon-features@0.1.0 check
+> npm run build && node scripts/generate-contracts.mjs --check
+
+
+> @grokbot/photon-features@0.1.0 build
+> tsc -p tsconfig.json
+
+{"contractVersion":1,"algorithm":"sha256","contractDigest":"e0f7779bc9ca3d45696e9b4e24e8579d922c8d2d7d4323c821202d8f599acbf8","files":71,"schemas":51}

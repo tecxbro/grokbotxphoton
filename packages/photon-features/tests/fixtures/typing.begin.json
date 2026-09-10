@@ -1,0 +1,32 @@
+{
+  "valid": {
+    "version": 1,
+    "idempotencyKey": "request-typing.begin",
+    "contextId": "context-1",
+    "operation": "typing.begin",
+    "arguments": {
+      "space": {
+        "version": 1,
+        "kind": "space",
+        "id": "space-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        }
+      },
+      "ttlMs": 5000
+    }
+  },
+  "rejected": {
+    "version": 1,
+    "idempotencyKey": "request-typing.begin",
+    "contextId": "context-1",
+    "operation": "typing.begin",
+    "arguments": {
+      "ttlMs": 5000
+    }
+  }
+}

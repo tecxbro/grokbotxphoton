@@ -1,0 +1,27 @@
+
+> grok-bot-cli@0.2.2 photon:check
+> npm run check --workspace=@grokbot/photon-features
+
+
+> @grokbot/photon-features@0.1.0 check
+> npm run build && node scripts/generate-contracts.mjs --check
+
+
+> @grokbot/photon-features@0.1.0 build
+> tsc -p tsconfig.json
+
+src/runtime/core/executor.ts(104,18): error TS2339: Property 'withDeadline' does not exist on type 'DurableExecutor'.
+npm error Lifecycle script `build` failed with error:
+npm error code 2
+npm error path /private/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt09-snapshot-NPfZcA/packages/photon-features
+npm error workspace @grokbot/photon-features@0.1.0
+npm error location /private/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt09-snapshot-NPfZcA/packages/photon-features
+npm error command failed
+npm error command sh -c tsc -p tsconfig.json
+npm error Lifecycle script `check` failed with error:
+npm error code 2
+npm error path /private/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt09-snapshot-NPfZcA/packages/photon-features
+npm error workspace @grokbot/photon-features@0.1.0
+npm error location /private/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt09-snapshot-NPfZcA/packages/photon-features
+npm error command failed
+npm error command sh -c npm run build && node scripts/generate-contracts.mjs --check

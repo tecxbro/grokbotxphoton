@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "repository": "https://github.com/tecxbro/grokbotonimessage.git",
+  "worktree": "/Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-integration",
+  "branch": "photon-v3/integration",
+  "base": {
+    "tag": "photon-v3-f0",
+    "commit": "ee2f8576b55973eee312bca5cad0549b6f959a88",
+    "contractVersion": "f0-services-2",
+    "contractDigest": "d95caace5f188fd13b6d4d26250be1c77aafa1f42447263e5e3e7982e7e1a60f"
+  },
+  "status": "working-path-integrated",
+  "lanes": [
+    {
+      "lane": "wt-01",
+      "reviewedCommits": ["08d9ed396e1b18b0bd5edfcc866c7dde0518c006", "15aa038084451f930e6fead1831f908fbe00e56c"],
+      "earlierPartialCommits": ["08d9ed396e1b18b0bd5edfcc866c7dde0518c006"],
+      "changedPathCount": 30,
+      "changedPaths": "git diff --name-only photon-v3-f0..15aa038084451f930e6fead1831f908fbe00e56c; exact responsibilities in docs/worktrees/wt-01/FILES.json",
+      "tests": "15/15 required focused; 46/46 lane; 125 foundation; 45 security; 31 CLI; local/offline",
+      "approvedSharedRequests": ["public durable executor/service binding", "receipt writer/correlation", "lane-aware verification", "F0-relative ownership"],
+      "limitations": ["three assembled E2E failures at lane handoff", "not activated", "no provider or device evidence"],
+      "integrationStatus": "integrated",
+      "integrationCommits": ["3f080d9c6c09d3bf9827fd60dbffe3c33a7a68f3", "a30044a74649a9fa1d7c636a68a68c96af773ae2"]
+    },
+    {
+      "lane": "wt-02",
+      "reviewedCommits": ["e832b78c71e28baa167c616d5941215f7b504f5d"],
+      "earlierPartialCommits": [],
+      "changedPathCount": 83,
+      "changedPaths": "git diff --name-only photon-v3-f0..e832b78c71e28baa167c616d5941215f7b504f5d; exact responsibilities in docs/worktrees/wt-02/FILES.json",
+      "tests": "67/67 lane; 125 foundation; 31 CLI; local/offline",
+      "approvedSharedRequests": ["single receipt-aware ingress", "production receipt writer", "existing Grok wake binding", "bounded inbox pagination", "lane-aware verification"],
+      "limitations": ["wake and receipt writers are fixtures until host binding", "no live receipt or typing evidence"],
+      "integrationStatus": "integrated",
+      "integrationCommits": ["12120d91f80558bee6d1f98d157c8080a7491e22"]
+    },
+    {
+      "lane": "wt-03",
+      "reviewedCommits": ["6f3ed3a231c45ede5d17d61148865165dad08fa6"],
+      "earlierPartialCommits": [],
+      "changedPathCount": 52,
+      "changedPaths": "git diff --name-only photon-v3-f0..6f3ed3a231c45ede5d17d61148865165dad08fa6; exact responsibilities in docs/worktrees/wt-03/FILES.json",
+      "tests": "40/40 focused; 65 retained; 1 SDK probe; 31 CLI; local/offline",
+      "approvedSharedRequests": ["public compiler registry", "production f0-services-2 executeChild", "short socket test facility", "lane-aware verification"],
+      "limitations": ["legacy E2E returned UNIMPLEMENTED", "buffered stream fallback is not progressive delivery", "no live rendering or receipts"],
+      "integrationStatus": "integrated",
+      "integrationCommits": ["44251b72479f32e97fba43801767f5b79e9acee7"]
+    },
+    {
+      "lane": "wt-04",
+      "reviewedCommits": ["1693d58fb7a04bc11b2dfea01a6a5aaaf620d6be"],
+      "earlierPartialCommits": [],
+      "changedPathCount": 35,
+      "changedPaths": "git diff --name-only photon-v3-f0..1693d58fb7a04bc11b2dfea01a6a5aaaf620d6be; exact responsibilities in docs/worktrees/wt-04/FILES.json",
+      "tests": "70/70 lane; 65 foundation; 60 legacy foundation; 31 CLI; local/offline",
+      "approvedSharedRequests": ["atomic admission-time resource retention", "authoritative no-consumer cleanup proof", "shared media capacity", "lane-aware verification"],
+      "limitations": ["cleanup disabled until consumer proof is wired", "provider callbacks are fixtures", "no native media/device evidence"],
+      "integrationStatus": "integrated",
+      "integrationCommits": ["51c73c3617ecc3298c5bd68272a00795a56185f5"]
+    },
+    {
+      "lane": "wt-05",
+      "reviewedCommits": ["df54e2eca907bc6c987698758c20a64638e98bee"],
+      "earlierPartialCommits": [],
+      "changedPathCount": 36,
+      "changedPaths": "git diff --name-only photon-v3-f0..df54e2eca907bc6c987698758c20a64638e98bee; exact responsibilities in docs/worktrees/wt-05/FILES.json",
+      "tests": "47/47 lane; 65 foundation; 60 legacy foundation; 31 CLI; local/offline",
+      "approvedSharedRequests": ["typed native poll management seam", "durable unresolved ingress", "atomic inbox disposition/continuation", "lane-aware verification"],
+      "limitations": ["only poll.create enabled without advanced extension", "unvote semantics unresolved", "no real participant event"],
+      "integrationStatus": "integrated",
+      "integrationCommits": ["cc9940561c8606ea694ba314dcc9dbfa0bb98d05"]
+    },
+    {
+      "lane": "wt-06",
+      "reviewedCommits": ["7b87c8682272591aa68d0daca24aaa4af82eabe4"],
+      "earlierPartialCommits": [],
+      "changedPathCount": 35,
+      "changedPaths": "git diff --name-only photon-v3-f0..7b87c8682272591aa68d0daca24aaa4af82eabe4; exact responsibilities in docs/worktrees/wt-06/FILES.json",
+      "tests": "40/40 focused; 44 inherited cards; 65 foundation; 60 legacy foundation; 31 CLI; local/offline",
+      "approvedSharedRequests": ["durable versioned card session payload", "authenticated durable callback ingress", "single host CardRuntime", "lane-aware verification"],
+      "limitations": ["bounded in-memory provider session cache is not cold recovery", "backend and extension remain unverified"],
+      "integrationStatus": "integrated",
+      "integrationCommits": ["7a56e232b74b8203806140f61303d1b760d686aa"]
+    },
+    {
+      "lane": "wt-07",
+      "reviewedCommits": ["48ff70995a53edc9fdaadc09b5e21b6d72bfdb3a"],
+      "earlierPartialCommits": [],
+      "changedPathCount": 26,
+      "changedPaths": "git diff --name-only photon-v3-f0..48ff70995a53edc9fdaadc09b5e21b6d72bfdb3a; exact responsibilities in docs/worktrees/wt-07/FILES.json",
+      "tests": "94/94 lane; 65 foundation; 60 legacy foundation; 31 CLI; local/offline",
+      "approvedSharedRequests": ["scoped cloud iMessage binding", "capability/permission evidence", "guarded media retention", "lane-aware verification"],
+      "limitations": ["dedicated line required for group administration", "no provider/device evidence"],
+      "integrationStatus": "integrated",
+      "integrationCommits": ["532aab4723ed8a94e5108a2dca1f495b4b70b904"]
+    },
+    {
+      "lane": "wt-08",
+      "reviewedCommits": ["1187f7b467803f0ff8a13f39e3f0476562bd546e"],
+      "earlierPartialCommits": [],
+      "changedPathCount": 58,
+      "changedPaths": "git diff --name-only photon-v3-f0..1187f7b467803f0ff8a13f39e3f0476562bd546e; exact responsibilities in docs/worktrees/wt-08/FILES.json",
+      "tests": "11/11 focused; 6 CLI; 7 distribution; 31 root CLI; 60 inherited Photon; local/offline",
+      "approvedSharedRequests": ["grok-photon package bin", "photon:test:integration script", "assembled-candidate package metadata", "lane-aware verification"],
+      "limitations": ["synthetic installer fixtures only", "no assembled archive, install, activation, or live evidence"],
+      "integrationStatus": "integrated",
+      "integrationCommits": ["f343a46f2a57256b57fa372d1b10ac924e472ab6"]
+    },
+    {
+      "lane": "wt-09",
+      "reviewedCommits": ["dacae5e6626c7ec05b9c1a8f624ae342d0463004", "4743aa7e2bfcda5df9bd400444c38b3281c17cd9"],
+      "earlierPartialCommits": ["dacae5e6626c7ec05b9c1a8f624ae342d0463004"],
+      "changedPathCount": 50,
+      "changedPaths": "git diff --name-only photon-v3-f0..4743aa7e2bfcda5df9bd400444c38b3281c17cd9; exact responsibilities in docs/worktrees/wt-09/FILES.json",
+      "tests": "F0 candidate 76 total: 71 pass, 4 product failures, 1 authorized-live skip",
+      "approvedSharedRequests": ["assembled candidate rerun", "F0-relative ownership", "lane-aware verification"],
+      "limitations": ["WT09-001 UNIMPLEMENTED", "WT09-002 STALE_FENCE", "WT09-003 SQLite 0644", "WT09-004 missing durable recordReceipt", "live gate not authorized"],
+      "integrationStatus": "integrated",
+      "integrationCommits": ["cb2c776a19f0c1da99b048ac5ccf11d55d860d25", "a6ab37a1c93959ee0c5343b91aa8d94141d0fd14"]
+    }
+  ]
+}

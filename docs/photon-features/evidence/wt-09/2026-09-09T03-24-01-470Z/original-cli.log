@@ -1,0 +1,43 @@
+
+> grok-bot-cli@0.2.2 test
+> node --test test/*.test.js
+
+✔ decrypts an Electron Safe Storage v10 string (1.210792ms)
+✔ loads the signed-in Grok Bot gateway without manual tokens (1.432959ms)
+✔ loads a version 2 Grok Bot gateway entry (0.728791ms)
+✔ rejects a version 2 descriptor with no entries (0.726834ms)
+✔ rejects a version 2 descriptor with ambiguous entries (1.009542ms)
+✔ rejects a gateway entry without an encrypted payload (0.59675ms)
+✔ rejects an unsupported gateway descriptor version (0.985334ms)
+✔ rejects an incomplete decrypted gateway descriptor (3.271125ms)
+✔ reports a present but unusable Grok Bot app session (1.59725ms)
+✔ does not probe macOS credentials on other platforms (0.11575ms)
+✔ doctor reports a present but unusable Grok Bot app session (104.659083ms)
+✔ parses env JSON headers (0.737ms)
+✔ reads EnsureSandBox gatewayHeaders (0.317375ms)
+✔ reads EnsureSandBox token field (0.0735ms)
+✔ env headers override EnsureSandBox (0.122333ms)
+✔ request headers keep routing header (0.136042ms)
+✔ empty env JSON is a no-op (0.756625ms)
+✔ credential-bearing requests reject redirects (13.244708ms)
+✔ gateway URL validation happens before credentials are sent (0.319167ms)
+✔ npm package metadata identifies the public source repository (0.65375ms)
+✔ npm executable paths are already normalized for publishing (0.071917ms)
+✔ create list delete bots (5.211041ms)
+✔ group add remove set (22.085042ms)
+✔ rejects nested and empty groups (4.8485ms)
+✔ update merges profile, clears title, changes description, toggles settings, rejects blank name (3.017167ms)
+✔ update settings merge preserves extra keys (2.617875ms)
+✔ allows https Cursor gateway hosts (0.733458ms)
+✔ rejects http and non-cursor hosts by default (0.338ms)
+✔ allows local gateways when opted in (0.085209ms)
+✔ ALLOW_ANY_GATEWAY bypasses host checks (0.065583ms)
+✔ redacts bearer and token-like fields (0.644375ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 160.53075

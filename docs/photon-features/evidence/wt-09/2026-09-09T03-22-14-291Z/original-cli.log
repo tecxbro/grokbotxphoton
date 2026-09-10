@@ -1,0 +1,43 @@
+
+> grok-bot-cli@0.2.2 test
+> node --test test/*.test.js
+
+✔ decrypts an Electron Safe Storage v10 string (1.357125ms)
+✔ loads the signed-in Grok Bot gateway without manual tokens (1.2965ms)
+✔ loads a version 2 Grok Bot gateway entry (0.912958ms)
+✔ rejects a version 2 descriptor with no entries (1.610042ms)
+✔ rejects a version 2 descriptor with ambiguous entries (2.028375ms)
+✔ rejects a gateway entry without an encrypted payload (0.879791ms)
+✔ rejects an unsupported gateway descriptor version (0.633833ms)
+✔ rejects an incomplete decrypted gateway descriptor (1.7125ms)
+✔ reports a present but unusable Grok Bot app session (0.727333ms)
+✔ does not probe macOS credentials on other platforms (0.1075ms)
+✔ doctor reports a present but unusable Grok Bot app session (105.133209ms)
+✔ parses env JSON headers (1.367875ms)
+✔ reads EnsureSandBox gatewayHeaders (0.456875ms)
+✔ reads EnsureSandBox token field (0.186125ms)
+✔ env headers override EnsureSandBox (0.095ms)
+✔ request headers keep routing header (0.694625ms)
+✔ empty env JSON is a no-op (0.052584ms)
+✔ credential-bearing requests reject redirects (15.18875ms)
+✔ gateway URL validation happens before credentials are sent (0.309083ms)
+✔ npm package metadata identifies the public source repository (1.983042ms)
+✔ npm executable paths are already normalized for publishing (0.155875ms)
+✔ create list delete bots (4.732125ms)
+✔ group add remove set (22.388667ms)
+✔ rejects nested and empty groups (4.408208ms)
+✔ update merges profile, clears title, changes description, toggles settings, rejects blank name (2.640334ms)
+✔ update settings merge preserves extra keys (2.0285ms)
+✔ allows https Cursor gateway hosts (0.634292ms)
+✔ rejects http and non-cursor hosts by default (3.66125ms)
+✔ allows local gateways when opted in (0.123292ms)
+✔ ALLOW_ANY_GATEWAY bypasses host checks (0.078125ms)
+✔ redacts bearer and token-like fields (1.223375ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 162.2515

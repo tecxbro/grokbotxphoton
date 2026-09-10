@@ -1,0 +1,91 @@
+
+> @grokbot/photon-features@0.1.0 test:lane
+> npm run build && node --test dist/tests/lanes/wt-03/*.test.js
+
+
+> @grokbot/photon-features@0.1.0 build
+> tsc -p tsconfig.json
+
+(node:39532) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ text.send: valid F0 fixture and invalid arguments (10.111958ms)
+✔ text.send: executable handler and schema-valid result (16.130208ms)
+✔ text.stream: valid F0 fixture and invalid arguments (3.779666ms)
+✔ text.stream: executable handler and schema-valid result (7.468084ms)
+✔ markdown.send: valid F0 fixture and invalid arguments (3.42375ms)
+✔ markdown.send: executable handler and schema-valid result (5.814417ms)
+✔ link.send: valid F0 fixture and invalid arguments (1.072084ms)
+✔ link.send: executable handler and schema-valid result (5.33925ms)
+✔ content.group: valid F0 fixture and invalid arguments (1.267417ms)
+✔ content.group: executable handler and schema-valid result (5.565166ms)
+✔ content.compose: valid F0 fixture and invalid arguments (1.479541ms)
+✔ content.compose: executable handler and schema-valid result (5.504708ms)
+✔ message.get: valid F0 fixture and invalid arguments (0.858959ms)
+✔ message.get: executable handler and schema-valid result (5.78525ms)
+✔ message.reply: valid F0 fixture and invalid arguments (0.845792ms)
+✔ message.reply: executable handler and schema-valid result (5.558375ms)
+✔ message.react: valid F0 fixture and invalid arguments (0.797208ms)
+✔ message.react: executable handler and schema-valid result (4.753208ms)
+✔ reaction.remove: valid F0 fixture and invalid arguments (0.7865ms)
+✔ reaction.remove: executable handler and schema-valid result (5.183792ms)
+✔ message.edit: valid F0 fixture and invalid arguments (3.111375ms)
+✔ message.edit: executable handler and schema-valid result (4.896209ms)
+✔ message.unsend: valid F0 fixture and invalid arguments (0.726292ms)
+✔ message.unsend: executable handler and schema-valid result (4.756709ms)
+✔ message.markRead: valid F0 fixture and invalid arguments (0.545375ms)
+✔ message.markRead: executable handler and schema-valid result (4.36975ms)
+✔ registry registers all 13 operations with truthful capabilities (3.151209ms)
+✔ plain prose bubbles and structured content remain distinct (4.664792ms)
+✔ voice policy preserves names, acronyms, URLs, paths, commands and fenced code without arbitrary splits (0.329875ms)
+✔ URL-only richlink and missing provider result are never reported as confirmed rendering (3.795875ms)
+✔ target rejects wrong chat (3.619875ms)
+✔ target rejects wrong line (3.5545ms)
+✔ target rejects wrong provider (3.261125ms)
+✔ target rejects wrong scope (3.513875ms)
+✔ target rejects wrong native-id (3.128958ms)
+✔ target rejects wrong owner (3.328916ms)
+✔ target rejects wrong direction (3.115542ms)
+✔ reaction removal uses the exact returned authorized handle and target metadata (4.405416ms)
+✔ message.edit: explicit eligibility failure and uncertain provider failure (4.145167ms)
+✔ message.unsend: explicit eligibility failure and uncertain provider failure (3.491792ms)
+✔ outbound mark-read and poll unsend are rejected before SDK no-op paths (4.278291ms)
+(node:39533) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ part three preparation failure retries only part three using durable child outcomes (21.164958ms)
+✔ ambiguous part three provider failure never repeats earlier or unknown children (7.641917ms)
+✔ group call journals each actual returned child; ambiguous group failure blocks all replay (7.228875ms)
+✔ group rejects unsupported combination [{"type":"text","text":"first"}] (3.919792ms)
+✔ group rejects unsupported combination [{"type":"text","text":"first"},{"type":"text","text":"second"}] (4.61275ms)
+✔ group rejects unsupported combination [{"type":"text","text":"first"},{"type":"link","url":"https://example.com"}] (4.5735ms)
+✔ F0 finite nesting, wrapper combinations and size bounds are enforced (10.457208ms)
+✔ nested poll duplicate keys and missing compilers fail before dispatch (5.4125ms)
+✔ stale fence and cancellation cannot dispatch or overwrite shared journal (4.517833ms)
+✔ compiler output cannot smuggle a control into a group (5.156042ms)
+✔ one question per compose turn is checked across all text children (3.575ms)
+✔ lost lease after dispatch preserves an unknown child, never completion or replay (4.707291ms)
+(node:39534) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ pinned public builders retain exact content, grouping and stream shapes (9.320792ms)
+✔ real Spectrum runtime preserves reaction handles, void controls, buffering and unsupported skip semantics (4.502375ms)
+(node:39535) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ registered stream normal: bounded, buffered and single consumption (18.257583ms)
+✔ registered stream oversize: bounded, buffered and single consumption (5.241209ms)
+✔ registered stream too-many-chunks: bounded, buffered and single consumption (35.707417ms)
+✔ registered stream empty: bounded, buffered and single consumption (4.746041ms)
+✔ registered stream error: bounded, buffered and single consumption (5.951667ms)
+✔ registered stream cancel: bounded, buffered and single consumption (4.720709ms)
+✔ stream cancellation interrupts a pending next and asks its producer to close (14.6845ms)
+✔ stream rejects missing reference before open (4.941125ms)
+✔ stream rejects expired reference before open (4.007292ms)
+✔ stream rejects wrong-generation reference before open (4.378208ms)
+✔ stream rejects wrong-scope reference before open (3.847334ms)
+✔ expiry timeout cancels a hanging producer before dispatch (15.807125ms)
+ℹ tests 67
+ℹ suites 0
+ℹ pass 67
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 547.10325

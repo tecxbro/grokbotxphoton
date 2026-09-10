@@ -1,0 +1,17 @@
+(node:32814) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ archive is deterministic, complete, checksummed and traversal/secret safe (2.136666ms)
+✔ clean and repeat installation is inactive, preserves fuller skill and unrelated files (18.480541ms)
+✔ owner lock, active configuration and existing socket prevent installation (8.203166ms)
+✔ compatible rollback preserves queued and unknown work; unsafe downgrade fails without state loss (17.712709ms)
+✔ tampered releases and symlink roots are refused (9.772291ms)
+✔ release boundary rejects current dirty isolated lane, never produces final artifact (30.055125ms)
+✔ all generated examples validate, registry drift detected, offline smoke needs no host (235.5285ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 397.42625

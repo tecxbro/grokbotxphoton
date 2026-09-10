@@ -1,0 +1,169 @@
+{
+  "recordedAt": "2026-09-09T03:29:08.666991+00:00",
+  "repository": "https://github.com/tecxbro/grokbotonimessage",
+  "path": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+  "branch": "main",
+  "head": "57e40736be8a59047b776654c766fbe8bfd10c9e",
+  "F0": "57e40736be8a59047b776654c766fbe8bfd10c9e",
+  "contractDigest": "e0f7779bc9ca3d45696e9b4e24e8579d922c8d2d7d4323c821202d8f599acbf8",
+  "comparisonCommit": "24468391b57f028b4b881ddbf71efab3a49a6f73",
+  "remoteHeadVerified": "24468391b57f028b4b881ddbf71efab3a49a6f73",
+  "knownDivergence": {
+    "ahead": 1,
+    "behind": 0
+  },
+  "initialDirtyState": {
+    "tracked": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "untracked": [
+      "agent.md",
+      "architecthure.md",
+      "docs/photon-features/evidence/wt-01/",
+      "docs/photon-features/evidence/wt-02/",
+      "docs/photon-features/evidence/wt-03/",
+      "docs/photon-features/evidence/wt-04/",
+      "packages/photon-features/src/adapters/state/",
+      "packages/photon-features/src/adapters/transport/",
+      "packages/photon-features/src/features/",
+      "packages/photon-features/src/runtime/"
+    ]
+  },
+  "finalDirtyState": [
+    " M package-lock.json",
+    " M package.json",
+    "?? agent.md",
+    "?? architecthure.md",
+    "?? docs/photon-features/evidence/wt-01/",
+    "?? docs/photon-features/evidence/wt-02/",
+    "?? docs/photon-features/evidence/wt-03/",
+    "?? docs/photon-features/evidence/wt-04/",
+    "?? docs/photon-features/evidence/wt-05/",
+    "?? docs/photon-features/evidence/wt-06/",
+    "?? docs/photon-features/evidence/wt-07/",
+    "?? docs/photon-features/evidence/wt-08/",
+    "?? docs/photon-features/evidence/wt-09/",
+    "?? docs/photon-features/requests/wt-01/",
+    "?? docs/photon-features/requests/wt-02/",
+    "?? docs/photon-features/requests/wt-03/",
+    "?? docs/photon-features/requests/wt-04/",
+    "?? docs/photon-features/requests/wt-05/",
+    "?? docs/photon-features/requests/wt-06/",
+    "?? docs/photon-features/requests/wt-07/",
+    "?? docs/photon-features/requests/wt-08/",
+    "?? packages/photon-features/INSTALL.md",
+    "?? packages/photon-features/README.md",
+    "?? packages/photon-features/SKILL.md",
+    "?? packages/photon-features/examples/wt-01/",
+    "?? packages/photon-features/examples/wt-02/",
+    "?? packages/photon-features/examples/wt-03/",
+    "?? packages/photon-features/examples/wt-04/",
+    "?? packages/photon-features/examples/wt-05/",
+    "?? packages/photon-features/examples/wt-06/",
+    "?? packages/photon-features/examples/wt-07/",
+    "?? packages/photon-features/examples/wt-08/",
+    "?? packages/photon-features/examples/wt-09/",
+    "?? packages/photon-features/scripts/generate-skill.mjs",
+    "?? packages/photon-features/scripts/install.mjs",
+    "?? packages/photon-features/scripts/package.mjs",
+    "?? packages/photon-features/scripts/smoke-test.mjs",
+    "?? packages/photon-features/src/adapters/state/",
+    "?? packages/photon-features/src/adapters/transport/",
+    "?? packages/photon-features/src/cli/",
+    "?? packages/photon-features/src/features/",
+    "?? packages/photon-features/src/runtime/",
+    "?? packages/photon-features/tests/e2e/",
+    "?? packages/photon-features/tests/lanes/wt-01/",
+    "?? packages/photon-features/tests/lanes/wt-02/",
+    "?? packages/photon-features/tests/lanes/wt-03/",
+    "?? packages/photon-features/tests/lanes/wt-04/",
+    "?? packages/photon-features/tests/lanes/wt-05/",
+    "?? packages/photon-features/tests/lanes/wt-06/",
+    "?? packages/photon-features/tests/lanes/wt-07/",
+    "?? packages/photon-features/tests/lanes/wt-08/",
+    "?? packages/photon-features/tests/lanes/wt-09/",
+    "?? packages/photon-features/tests/live/",
+    "?? packages/photon-features/tests/security/"
+  ],
+  "ownedPaths": [
+    "packages/photon-features/src/features/cards",
+    "packages/photon-features/tests/lanes/wt-06",
+    "packages/photon-features/examples/wt-06",
+    "docs/photon-features/evidence/wt-06",
+    "docs/photon-features/requests/wt-06"
+  ],
+  "worktreeOperations": "none; clean verification used git archive artifact copies, not Git worktrees",
+  "status": {
+    "built": true,
+    "integrated": false,
+    "installedActivated": false,
+    "liveVerified": false
+  },
+  "files": [
+    {
+      "path": "packages/photon-features/examples/wt-06/host-seam.ts",
+      "sha256": "31f97a6db208b9b1453de136854f2b685b560783b2b9ec422a5e05133a2a754d"
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/configuration.ts",
+      "sha256": "88d3f8401d03d35e29137681f1136b1a96e2ccd78396396f126d8dd48a5d87fa"
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/interaction-adapter.ts",
+      "sha256": "ea06db85407f9e7bba4d51ccbd619fe3c92f4139d7c574bb91da0f48bb0bc003"
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/module.ts",
+      "sha256": "b372d8d0a0097945f63240d633d8add18b3de5253e16db30b0810fa4b8e1d784"
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/operations.ts",
+      "sha256": "6de057a6d1781506f8a951b1e9648d4d22098a6fe9df420b0f26c312a32041d4"
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/reducer.ts",
+      "sha256": "a7bd4193364fde885bd12271532d9c09099bc8cf1f4ed5d14e9604edc29d0eed"
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/sdk.ts",
+      "sha256": "6960682ed3d4bad7befdf00b3bbf3268925d69e753f475e8d05f06a287eeb0bf"
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/session-codec.ts",
+      "sha256": "81775f33767f1923baff8066f59ff8e357a02526f174f5c6bcaa72b4b22ec725"
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/state.ts",
+      "sha256": "61fa88a49d1c08a8f7810f11c963754511ba279cad6f696fd0b46d641e7507bb"
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/update-ordering.ts",
+      "sha256": "fcbf2c7677de8fe63ed7618fb582bc392e717a6041475454ec51f3a9a0880be2"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-06/fixture.ts",
+      "sha256": "007e5ae689a4beea0af18c344fa55b912d0a6c000a578b6aead3533ee1a76d33"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-06/interactions.test.ts",
+      "sha256": "9fffa46326e870cf4f6d6a806804b58253e6683efffdc640029f0aab563d5f4d"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-06/operations.test.ts",
+      "sha256": "51917ba4e0699e2697bce7b76a11e4c10c0bee5164a84fb11a7cea9ef212fe06"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-06/sdk.test.ts",
+      "sha256": "c3918c7d9a8a95ef4a024001b34c3f5c552b8d37835b8e6c0f1a933dd2390f2d"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-06/session-codec.test.ts",
+      "sha256": "40314ec6a5c57f85c98d82d0dbba433b9e32fcb538977bded8fe70dc9747a4af"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-06/tsconfig.json",
+      "sha256": "df2037f22972a629c12401f9e4044f500bdba2b3333c88661b3a69b1c5304078"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "grok-bot-cli",
+  "version": "0.2.2",
+  "description": "CLI for Grok Bot agents and groups: create, update, message, inspect threads, and automate cleanup",
+  "type": "module",
+  "bin": {
+    "gbot": "src/cli.js",
+    "grok-bot": "src/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "changeset": "changeset",
+    "gbot": "node src/cli.js",
+    "release": "changeset publish",
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tecxbro/grokbotonimessage.git"
+  },
+  "homepage": "https://github.com/tecxbro/grokbotonimessage#readme",
+  "bugs": {
+    "url": "https://github.com/tecxbro/grokbotonimessage/issues"
+  },
+  "author": "tecxbro (https://github.com/tecxbro)",
+  "license": "MIT",
+  "keywords": [
+    "grok",
+    "grok-bot",
+    "grokbot",
+    "gbot",
+    "cursor",
+    "ai-agents",
+    "automation",
+    "terminal",
+    "cli"
+  ],
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@changesets/cli": "3.0.1"
+  }
+}

@@ -1,0 +1,9 @@
+Controlled artifact-copy corruption: expected nonzero exit observed.
+file:///private/tmp/wt00-checkpoint/packages/photon-features/scripts/generate-contracts.mjs:41
+      throw new Error(`SCHEMA_DRIFT:${name}`);
+            ^
+
+Error: SCHEMA_DRIFT:text.send
+    at file:///private/tmp/wt00-checkpoint/packages/photon-features/scripts/generate-contracts.mjs:41:13
+
+Node.js v24.13.0

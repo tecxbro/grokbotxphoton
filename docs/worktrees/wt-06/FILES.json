@@ -1,0 +1,168 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "packages/photon-features/src/features/cards/module.ts",
+      "purpose": "Public createFeatureModule and retained compatibility exports",
+      "symbols": [
+        "createFeatureModule"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/operations.ts",
+      "purpose": "Public executeCardOperation and retained compatibility exports",
+      "symbols": [
+        "executeCardOperation"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/session-codec.ts",
+      "purpose": "Public encodeCardSession, restoreCardSession and retained compatibility exports",
+      "symbols": [
+        "encodeCardSession",
+        "restoreCardSession"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/update-ordering.ts",
+      "purpose": "Public assertCurrentCardRevision and retained compatibility exports",
+      "symbols": [
+        "assertCurrentCardRevision"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/interaction-adapter.ts",
+      "purpose": "Public authenticateInteraction, normalizeInteraction and retained compatibility exports",
+      "symbols": [
+        "authenticateInteraction",
+        "normalizeInteraction"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/reducer.ts",
+      "purpose": "Public applyCardInteraction and retained compatibility exports",
+      "symbols": [
+        "applyCardInteraction"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/sdk.ts",
+      "purpose": "Public mapCardOperation and retained compatibility exports",
+      "symbols": [
+        "mapCardOperation"
+      ]
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-06/unit.test.ts",
+      "purpose": "unit evidence"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-06/sdk-contract.test.ts",
+      "purpose": "sdk-contract evidence"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-06/integration.test.ts",
+      "purpose": "integration evidence"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-06/regression.test.ts",
+      "purpose": "regression evidence"
+    },
+    {
+      "path": "docs/worktrees/wt-06/AGENTS.md",
+      "purpose": "Lane AGENTS.md"
+    },
+    {
+      "path": "docs/worktrees/wt-06/README.md",
+      "purpose": "Lane README.md"
+    },
+    {
+      "path": "docs/worktrees/wt-06/ARCHITECTURE.md",
+      "purpose": "Lane ARCHITECTURE.md"
+    },
+    {
+      "path": "docs/worktrees/wt-06/WORKLOG.md",
+      "purpose": "Lane WORKLOG.md"
+    },
+    {
+      "path": "docs/worktrees/wt-06/SOURCES.md",
+      "purpose": "Lane SOURCES.md"
+    },
+    {
+      "path": "docs/worktrees/wt-06/ACCEPTANCE.md",
+      "purpose": "Lane ACCEPTANCE.md"
+    },
+    {
+      "path": "docs/worktrees/wt-06/TEST-EVIDENCE.md",
+      "purpose": "Lane TEST-EVIDENCE.md"
+    },
+    {
+      "path": "docs/worktrees/wt-06/HANDOFF.md",
+      "purpose": "Lane HANDOFF.md"
+    },
+    {
+      "path": "docs/worktrees/wt-06/CHANGE-REQUESTS.md",
+      "purpose": "Lane CHANGE-REQUESTS.md"
+    },
+    {
+      "path": "docs/worktrees/wt-06/FILES.json",
+      "purpose": "Lane FILES.json"
+    },
+    {
+      "path": "docs/worktrees/wt-06/source-lock.json",
+      "purpose": "Lane source-lock.json"
+    },
+    {
+      "path": "docs/worktrees/wt-06/references/best-practices/recovery-and-state.md",
+      "purpose": "Source snapshot; reference data only"
+    },
+    {
+      "path": "docs/worktrees/wt-06/references/llms.txt",
+      "purpose": "Source snapshot; reference data only"
+    },
+    {
+      "path": "docs/worktrees/wt-06/references/skills/imessage/SKILL.md",
+      "purpose": "Source snapshot; reference data only"
+    },
+    {
+      "path": "docs/worktrees/wt-06/references/skills/spectrum/SKILL.md",
+      "purpose": "Source snapshot; reference data only"
+    },
+    {
+      "path": "docs/worktrees/wt-06/references/skills/spectrum/capability-semantics.md",
+      "purpose": "Source snapshot; reference data only"
+    },
+    {
+      "path": "docs/worktrees/wt-06/references/skills/spectrum/content/app-cards.md",
+      "purpose": "Source snapshot; reference data only"
+    },
+    {
+      "path": "docs/worktrees/wt-06/references/skills/spectrum/providers/imessage.md",
+      "purpose": "Source snapshot; reference data only"
+    },
+    {
+      "path": "docs/worktrees/wt-06/references/spectrum-ts/content/app.md",
+      "purpose": "Source snapshot; reference data only"
+    },
+    {
+      "path": "docs/worktrees/wt-06/references/spectrum-ts/content/edits.md",
+      "purpose": "Source snapshot; reference data only"
+    },
+    {
+      "path": "docs/worktrees/wt-06/references/spectrum-ts/content/rich-links.md",
+      "purpose": "Source snapshot; reference data only"
+    },
+    {
+      "path": "docs/worktrees/wt-06/references/spectrum-ts/custom-events-and-lifecycle.md",
+      "purpose": "Source snapshot; reference data only"
+    },
+    {
+      "path": "docs/worktrees/wt-06/references/spectrum-ts/providers/imessage/messaging-features/apps.md",
+      "purpose": "Source snapshot; reference data only"
+    },
+    {
+      "path": "docs/worktrees/wt-06/references/verification.json",
+      "purpose": "Offline verification evidence"
+    }
+  ]
+}

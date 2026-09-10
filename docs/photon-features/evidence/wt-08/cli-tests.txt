@@ -1,0 +1,16 @@
+(node:32811) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ strict stdin, UTF-8 and bounds; stable exit and separate output (23.402125ms)
+✔ doctor and capabilities read-only; scoped authenticated status and cancellation (9.594458ms)
+✔ work list, claim, actual events, heartbeat, stale fence, ack and generation (11.546875ms)
+✔ unsafe credential and socket files rejected without exposing contents (3.982875ms)
+✔ host response validation rejects credentials and extra payload; timeout never retries (35.46775ms)
+✔ CLI runs through an executable symlink and keeps machine output clean (66.991166ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 225.800709

@@ -1,0 +1,50 @@
+(node:36255) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ real SDK builders and all four handlers execute with injected, scoped provider context (74.999709ms)
+✔ native retrieval verifies resource, parent conversation and serving phone before getAttachment (5.848584ms)
+✔ contact subset and vCard round trip use actual pinned public contact/fromVCard/toVCard (2.034875ms)
+✔ voice sends real audio and reports explicit regular-attachment fallback (33.741333ms)
+✔ SDK void is unknown outcome, never safe automatic replay (5.219875ms)
+✔ SDK throw is unknown outcome, never safe automatic replay (4.391166ms)
+✔ compiler resolves bytes before building; cancelled leases block dispatch after async staging (15.020917ms)
+✔ model JSON cannot embed binary, local paths, URLs, contact raw fields or text voice data (5.457834ms)
+✔ logical resource IDs map to distinct native IDs and normalized input metadata survives (6.426084ms)
+(node:36256) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ rejects credentials, schemes, literals, ports, deceptive hosts and metadata URLs (3.770583ms)
+✔ address policy rejects private, mapped, metadata, multicast and transition networks (2.230584ms)
+✔ the connection receives the validated address without a second DNS lookup (1.595417ms)
+✔ redirects are reauthorized and address changes to private destinations stop before connection (0.404416ms)
+✔ private answers in a mixed DNS set and direct private redirects are rejected (0.249125ms)
+✔ DNS lookup timeout and redirect loops are bounded (21.31175ms)
+✔ local download missing-length remains bounded (9.535333ms)
+✔ local download claimed-large remains bounded (1.677625ms)
+✔ local download interrupted remains bounded (8.208417ms)
+✔ local download timeout remains bounded (42.769ms)
+✔ a lying content length never substitutes for actual stream byte accounting (0.412542ms)
+✔ the actual HTTPS adapter pins lookup and rejects a changed connected peer (0.5665ms)
+(node:36257) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ staging persists integrity, metadata and scoped references across service restart (37.967333ms)
+✔ missing files, traversal, symlinks, hardlinks and a swap during open are rejected (11.220333ms)
+✔ an already-open approved handle cannot be retargeted by a subsequent path swap (6.699792ms)
+✔ invalid MIME, mismatched signatures and oversized files leave no partial resources (14.927083ms)
+✔ native metadata preserves source, stable ID, duration and retrieval handle (19.418792ms)
+✔ native oversize cancels and removes partial files (12.035625ms)
+✔ native interrupted cancels and removes partial files (7.426ms)
+✔ native timeout cancels and removes partial files (35.732166ms)
+✔ queued, retryable, accepted and unknown requests retain resources until final release (24.313ms)
+✔ durable read pins prevent cleanup by another instance and survive crashes conservatively (12.290667ms)
+✔ unresolved input and truncated shared scans fail closed for retention (10.545083ms)
+✔ concurrency rejects excess work without an unbounded queue (12.435834ms)
+✔ a saturated outbox scan blocks cleanup even if its visible prefix is final (63.039792ms)
+✔ ancestor directory replacement between inspection and open cannot redirect a file read (6.386792ms)
+✔ generic files, images, video, audio and vCard resources retain their MIME (60.731708ms)
+ℹ tests 36
+ℹ suites 0
+ℹ pass 36
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 837.033083

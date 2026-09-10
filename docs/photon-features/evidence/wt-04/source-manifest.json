@@ -1,0 +1,24 @@
+{
+  "recordedAt": "2026-09-09T03:28:51.130599+00:00",
+  "files": {
+    "packages/photon-features/examples/wt-04/host-composition.ts": "0c2b32e344f6266e1a968c8d9569425430bc1944dc202d5777e3a35134ec7c24",
+    "packages/photon-features/src/features/media/attachments.ts": "c2e343dfc2e6dc72af7395bd7ad5db037e909e6641d25c0f5cf62e6610f80309",
+    "packages/photon-features/src/features/media/contacts.ts": "9610d670b580e0d7ce6258512a9e0aa5ff3b56a4cbb32fa83382683ce16f2741",
+    "packages/photon-features/src/features/media/file-access.ts": "35cf92086ef816b871e8ff474032072fa5a66e4bb291971ffda7a6767e3f9277",
+    "packages/photon-features/src/features/media/guarded-fetch.ts": "0b76f59645c61215a18e9e46b0ddeadcfb38134c0627a8f875906d6ea30f48c9",
+    "packages/photon-features/src/features/media/index.ts": "1caf9438f68a9a5db381c5c2a846d55fe441bb7cea89bef7eea7b13118d4beb2",
+    "packages/photon-features/src/features/media/metadata.ts": "c14d809d9a98d0513bd5ae29ee8b604409d86cf34af593bb4afefa5f502c40c0",
+    "packages/photon-features/src/features/media/module.ts": "43634195237a8cafb3140dfc1fbec1ec02aa5cf41f586cc3cb343335ea6c32e6",
+    "packages/photon-features/src/features/media/retention.ts": "0ab6a16ee17b9c7c55585a80deed9e0060487014be2c67a5cba3f555a620afba",
+    "packages/photon-features/src/features/media/safety.ts": "63b4111d48a812381b749081ed593c82b4678ffa48d81e6e8d3d526c110de02d",
+    "packages/photon-features/src/features/media/sdk.ts": "fa551da7a627f7a30470ee81524dc1374a324ac98a216db8adb4c70a914a677b",
+    "packages/photon-features/src/features/media/staging.ts": "586378d85ad253ff60de5fd8b39801b022f7fcf47a2eabd2a7c4472443ecbc75",
+    "packages/photon-features/src/features/media/voice.ts": "ad2589cb228e7825e790cc986952f6832ef8c11dbf18f6f7c39c8ef11559e34a",
+    "packages/photon-features/tests/lanes/wt-04/helpers.ts": "571f7c41b9559e4b2720d27321c5546396edeb6e733c8f3d200c1d5f8b56740c",
+    "packages/photon-features/tests/lanes/wt-04/module.test.ts": "b84f54c72e24f7be613bcca082f159b0ecc2bc217785a22d1671ae59d9d38ce5",
+    "packages/photon-features/tests/lanes/wt-04/network.test.ts": "eae51dab1e8b0a708cee14df2db370e076899b2833e679397b18c6af7222967d",
+    "packages/photon-features/tests/lanes/wt-04/staging.test.ts": "462a396cc427b4c24e1dae6f97c1cf3c44f94df249dd90b82942a062d83bfe9c",
+    "packages/photon-features/tests/lanes/wt-04/tsconfig.json": "356ad5eaf280f23ce2dcb946524dbad9a4ad4b58f9192ce6540df7ac22ab3eca",
+    "packages/photon-features/tests/lanes/wt-04/verify.mjs": "667765a9e7074152d158e058821aeb1b9dcff5baf2937c0610fca0855f4ff1ff"
+  }
+}

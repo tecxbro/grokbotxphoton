@@ -1,0 +1,9 @@
+{
+  "extends": "../../../tsconfig.json",
+  "include": [
+    "../../../src/features/cards/**/*.ts",
+    "./*.ts",
+    "../../fixtures/harness.ts",
+    "../../../examples/wt-06/**/*.ts"
+  ]
+}

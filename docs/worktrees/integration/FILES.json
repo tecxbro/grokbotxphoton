@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "lane": "integration",
+  "files": [
+    {"path":"docs/worktrees/integration/AGENTS.md","purpose":"Integration-local rules"},
+    {"path":"docs/worktrees/integration/README.md","purpose":"Scope and status"},
+    {"path":"docs/worktrees/integration/ARCHITECTURE.md","purpose":"Assembled architecture and decisions"},
+    {"path":"docs/worktrees/integration/WORKLOG.md","purpose":"Chronological checkpoints"},
+    {"path":"docs/worktrees/integration/SOURCES.md","purpose":"Official, skill, SDK and Git source distinction"},
+    {"path":"docs/worktrees/integration/source-lock.json","purpose":"Required official source identities"},
+    {"path":"docs/worktrees/integration/FILES.json","purpose":"Integration-owned inventory"},
+    {"path":"docs/worktrees/integration/ACCEPTANCE.md","purpose":"Observable aggregate acceptance"},
+    {"path":"docs/worktrees/integration/TEST-EVIDENCE.md","purpose":"Candidate commands and evidence"},
+    {"path":"docs/worktrees/integration/HANDOFF.md","purpose":"Evidence-tiered final handoff"},
+    {"path":"docs/worktrees/integration/CHANGE-REQUESTS.md","purpose":"Unresolved shared and lane requests"},
+    {"path":"docs/worktrees/integration/candidate-contract.json","purpose":"Post-F0 integration contract digest without moving the foundation tag"},
+    {"path":"docs/worktrees/integration/included-commits.json","purpose":"Immutable reviewed input ledger"},
+    {"path":"docs/worktrees/integration/references/README.md","purpose":"Reference provenance index"},
+    {"path":"packages/photon-features/tests/e2e/feature-runtime.test.ts","purpose":"Integration-owned public F0 CLI-to-offline-Spectrum text round trip"},
+    {"path":"packages/photon-features/tests/e2e/local-roundtrip.test.ts","purpose":"WT-09 aggregate round trip migrated to the public F0 executor"},
+    {"path":"packages/photon-features/src/runtime/inbound/router.ts","purpose":"Cross-lane reducer continuation adoption and inbox fence ownership"},
+    {"path":"packages/photon-features/src/features/polls/reducer.ts","purpose":"Expose the atomically created poll continuation to shared ingress"}
+    ,{"path":"package.json","purpose":"Root assembled integration and verification command wiring"}
+    ,{"path":"packages/photon-features/INSTALL.md","purpose":"Approval-bound assembled candidate installation and rollback instructions"}
+    ,{"path":"packages/photon-features/README.md","purpose":"Assembled package commands and evidence boundary"}
+    ,{"path":"packages/photon-features/package.json","purpose":"grok-photon bin and integration export wiring"}
+    ,{"path":"packages/photon-features/src/index.ts","purpose":"Public integration composition export"}
+    ,{"path":"packages/photon-features/src/features/native/module.ts","purpose":"Public durable-child adapter for scoped WT-07 native operations"}
+    ,{"path":"packages/photon-features/src/integration/assembly.ts","purpose":"Fail-closed 44-operation and compiler surface assembly"}
+    ,{"path":"packages/photon-features/src/integration/index.ts","purpose":"Integration composition entry point"}
+    ,{"path":"packages/photon-features/tests/integration/assembly.test.ts","purpose":"Actual lane factory registration and compiler completeness tests"}
+    ,{"path":"packages/photon-features/tests/lanes/wt-08/distribution.test.mjs","purpose":"Deterministic clean-candidate release-boundary regression fixture"}
+    ,{"path":"scripts/run-integration-tests.mjs","purpose":"No-skip assembled local test runner excluding only the live authorization boundary"}
+    ,{"path":"scripts/generate-contracts.mjs","purpose":"Branch-aware immutable F0 and post-F0 candidate digest validation"}
+    ,{"path":"scripts/verify-all.mjs","purpose":"Integration-aware aggregate verification entry point"}
+    ,{"path":"scripts/verify-docs.mjs","purpose":"Integration documentation and evidence validation"}
+    ,{"path":"scripts/verify-lane.mjs","purpose":"No-skip result validation for TAP and Node spec reporters"}
+    ,{"path":"scripts/verify-ownership.mjs","purpose":"Reviewed-SHA plus exact integration ownership validation"}
+    ,{"path":"scripts/verify-worktree.mjs","purpose":"Relocated registered integration worktree identity validation"}
+    ,{"path":"docs/worktrees/ownership.json","purpose":"Exact integration ownership assignments"}
+    ,{"path":"docs/worktrees/worktree-map.json","purpose":"Authoritative relocated worktree registry map"}
+  ],
+  "sharedOwnership": "Integration owns public F0 roundtrip migration and the WT-02/WT-05 continuation composition contract; lane-internal behavior is otherwise preserved."
+}

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "basis": "docs/photon/source-lock.json verified 2026-09-09; llms index read live 2026-09-10",
+  "sources": [
+    {"url":"https://photon.codes/docs/llms.txt","sha256":"0e9cff75bdffdb8e625583fdd88ccd7317d027fa3f9a74cbe3cebfa256c0c033","snapshot":"docs/photon/reference/photon.codes/llms.txt","classification":"official"},
+    {"url":"https://photon.codes/docs/best-practices/architecture.md","sha256":"9df570ca7d3e08256f47e03673d47ec3e96e05f250b738badda5980c0c0eb8e1","snapshot":"docs/photon/reference/photon.codes/best-practices/architecture.md","classification":"official"},
+    {"url":"https://photon.codes/docs/best-practices/inbound-pipeline.md","sha256":"4a7113e2a9b987f51e8098f33a9b007f7cc31890487bff42a031c36bc15e9ee3","snapshot":"docs/photon/reference/photon.codes/best-practices/inbound-pipeline.md","classification":"official"},
+    {"url":"https://photon.codes/docs/best-practices/recovery-and-state.md","sha256":"65944f4b202e0142388403aff39b3135b3dca7ab87035cdc36af22713716a9f0","snapshot":"docs/photon/reference/photon.codes/best-practices/recovery-and-state.md","classification":"official"},
+    {"url":"https://photon.codes/docs/spectrum-ts/custom-events-and-lifecycle.md","sha256":"f00445888cb5944ff77f259b3e781009977d57367d753d586029705e406980c5","snapshot":"docs/photon/reference/photon.codes/spectrum-ts/custom-events-and-lifecycle.md","classification":"official"},
+    {"url":"https://photon.codes/docs/advanced-kits/imessage/events.md","sha256":"ffbfaec5c8146c923a3df23dc84ab0df607a5f78beb4faf5675f2cac17df58f9","snapshot":"docs/photon/reference/photon.codes/advanced-kits/imessage/events.md","classification":"official"},
+    {"url":"https://photon.codes/docs/advanced-kits/imessage/error-handling.md","sha256":"ea68f162fd7ed4d4ea24ff7223754bdc7e8941bb148fc247404d7821f492a3b9","snapshot":"docs/photon/reference/photon.codes/advanced-kits/imessage/error-handling.md","classification":"official"}
+  ]
+}

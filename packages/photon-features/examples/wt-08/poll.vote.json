@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "idempotencyKey": "request-poll.vote",
+  "contextId": "context-1",
+  "operation": "poll.vote",
+  "arguments": {
+    "poll": {
+      "version": 1,
+      "id": "poll-1",
+      "scope": {
+        "projectId": "project-1",
+        "provider": "imessage",
+        "accountId": "account-1",
+        "lineId": "line-1",
+        "spaceId": "space-1"
+      },
+      "kind": "poll",
+      "messageId": "message-1"
+    },
+    "option": {
+      "version": 1,
+      "id": "option-1",
+      "scope": {
+        "projectId": "project-1",
+        "provider": "imessage",
+        "accountId": "account-1",
+        "lineId": "line-1",
+        "spaceId": "space-1"
+      },
+      "kind": "poll-option",
+      "pollId": "poll-1"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "name": "lane-build",
+    "command": "node packages/photon-features/node_modules/typescript/bin/tsc -p packages/photon-features/tests/lanes/wt-08/tsconfig.json",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "node": "24.13.0",
+    "npm": "10.9.2",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:24:51.410968+00:00",
+    "log": "/Users/darshan/Documents/ChatGPT/grokbotxphoton/docs/photon-features/evidence/wt-08/lane-build.txt"
+  },
+  {
+    "name": "cli-tests",
+    "command": "node --test packages/photon-features/dist/tests/lanes/wt-08/cli.test.js",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "node": "24.13.0",
+    "npm": "10.9.2",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:24:51.667299+00:00",
+    "log": "/Users/darshan/Documents/ChatGPT/grokbotxphoton/docs/photon-features/evidence/wt-08/cli-tests.txt"
+  },
+  {
+    "name": "distribution-tests",
+    "command": "node --test packages/photon-features/tests/lanes/wt-08/distribution.test.mjs",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "node": "24.13.0",
+    "npm": "10.9.2",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:24:52.094956+00:00",
+    "log": "/Users/darshan/Documents/ChatGPT/grokbotxphoton/docs/photon-features/evidence/wt-08/distribution-tests.txt"
+  },
+  {
+    "name": "skill-drift",
+    "command": "node packages/photon-features/scripts/generate-skill.mjs --check",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "node": "24.13.0",
+    "npm": "10.9.2",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:24:52.194690+00:00",
+    "log": "/Users/darshan/Documents/ChatGPT/grokbotxphoton/docs/photon-features/evidence/wt-08/skill-drift.txt"
+  },
+  {
+    "name": "offline-smoke",
+    "command": "node packages/photon-features/scripts/smoke-test.mjs",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "node": "24.13.0",
+    "npm": "10.9.2",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:24:52.414540+00:00",
+    "log": "/Users/darshan/Documents/ChatGPT/grokbotxphoton/docs/photon-features/evidence/wt-08/offline-smoke.txt"
+  },
+  {
+    "name": "existing-cli",
+    "command": "npm test",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "node": "24.13.0",
+    "npm": "10.9.2",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:24:52.697452+00:00",
+    "log": "/Users/darshan/Documents/ChatGPT/grokbotxphoton/docs/photon-features/evidence/wt-08/existing-cli.txt"
+  },
+  {
+    "name": "full-foundation-tests",
+    "command": "npm run photon:test",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "node": "24.13.0",
+    "npm": "10.9.2",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:24:56.380380+00:00",
+    "log": "/Users/darshan/Documents/ChatGPT/grokbotxphoton/docs/photon-features/evidence/wt-08/full-foundation-tests.txt"
+  },
+  {
+    "name": "full-schema-check",
+    "command": "npm run photon:check",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "node": "24.13.0",
+    "npm": "10.9.2",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:24:59.750702+00:00",
+    "log": "/Users/darshan/Documents/ChatGPT/grokbotxphoton/docs/photon-features/evidence/wt-08/full-schema-check.txt"
+  }
+]

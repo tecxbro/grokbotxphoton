@@ -1,0 +1,389 @@
+{
+  "version": 1,
+  "at": "2026-09-10T08:30:08.216Z",
+  "identity": {
+    "at": "2026-09-10T08:30:50.902Z",
+    "base": "ee2f8576b55973eee312bca5cad0549b6f959a88",
+    "head": "ee2f8576b55973eee312bca5cad0549b6f959a88",
+    "branch": "photon-v3/wt-06",
+    "codeAndTestsDigest": "5f2db897b6a800e18b0971a25a51b995ec857dd6a82e083b918df8a76df0ab5f",
+    "code": [
+      {
+        "path": "packages/photon-features/src/features/cards/module.ts",
+        "sha256": "b124478d13c6d0616ee00d903ec45de318b5cfdd21cb343cf8106c529e17bd0e"
+      },
+      {
+        "path": "packages/photon-features/src/features/cards/operations.ts",
+        "sha256": "9560a9165f0a3fb6f8cc41322344af5f3cffcb5f8c1d44ec7ca8c8a5b98d14cf"
+      },
+      {
+        "path": "packages/photon-features/src/features/cards/session-codec.ts",
+        "sha256": "5d9dca6170c3d403c85caf2a0ff657b3c539c5c1fc29cad67d207066a5f14275"
+      },
+      {
+        "path": "packages/photon-features/src/features/cards/update-ordering.ts",
+        "sha256": "4328d8b4d88bedb4575ba1f06dc45d5160d595fa3fde9d1f273411407b739778"
+      },
+      {
+        "path": "packages/photon-features/src/features/cards/interaction-adapter.ts",
+        "sha256": "09bbf801fcb87f0b773974cd14eae4540a4d23e022773dc8da493676cc6949ec"
+      },
+      {
+        "path": "packages/photon-features/src/features/cards/reducer.ts",
+        "sha256": "c3ccef26c93d01f2f7dac15f9b45a8f1d22de4a28a5120bae34eb4fe584bb69b"
+      },
+      {
+        "path": "packages/photon-features/src/features/cards/sdk.ts",
+        "sha256": "b40f15cd2b339b3b25c90573779984b477c8cb712886eae9cb94b4dc88c3966c"
+      },
+      {
+        "path": "packages/photon-features/tests/lanes/wt-06/unit.test.ts",
+        "sha256": "8aec5471c40594e4d89f4086c2a72b064d9af9645d92ed3d24f135d1dd71daaf"
+      },
+      {
+        "path": "packages/photon-features/tests/lanes/wt-06/sdk-contract.test.ts",
+        "sha256": "e9f4f2a9a25300b1362c3dbc5e091eb946a813b8f8678a5c0adb649a4d9d4598"
+      },
+      {
+        "path": "packages/photon-features/tests/lanes/wt-06/integration.test.ts",
+        "sha256": "e6b089bed8f19aa02e523d28eb36a64e88eb2d43c405f2f38b0e752f9727dd3b"
+      },
+      {
+        "path": "packages/photon-features/tests/lanes/wt-06/regression.test.ts",
+        "sha256": "7b17af8af3d5850fb83fb1138329eee87030d02ab0f016005f895e619c77d6d8"
+      }
+    ],
+    "ownership": {
+      "lane": "wt-06",
+      "checked": 35
+    },
+    "protectedPatchSha256": "e69c6362071341f7e87898c676a1ceb9eee23258c81cf7fb01b7398ab1f89075",
+    "sourcesVerified": 12,
+    "installedPackages": [
+      {
+        "name": "spectrum-ts",
+        "version": "12.8.0"
+      },
+      {
+        "name": "@spectrum-ts/core",
+        "version": "12.8.0"
+      },
+      {
+        "name": "@spectrum-ts/imessage",
+        "version": "12.8.0"
+      }
+    ],
+    "status": "passed"
+  },
+  "checks": [
+    {
+      "name": "focused",
+      "command": [
+        "/Users/darshan/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "--test",
+        "--test-reporter=tap",
+        "packages/photon-features/dist/tests/lanes/wt-06/unit.test.js",
+        "packages/photon-features/dist/tests/lanes/wt-06/sdk-contract.test.js",
+        "packages/photon-features/dist/tests/lanes/wt-06/integration.test.js",
+        "packages/photon-features/dist/tests/lanes/wt-06/regression.test.js"
+      ],
+      "exit": 0,
+      "tests": 40,
+      "failed": 0,
+      "skipped": 0,
+      "verifiedAt": "2026-09-10T08:28:13.970Z",
+      "log": ".photon-local/focused.log",
+      "logSha256": "76ac8d86753cad933fdf47bed912055580e66c572d00bd20d60e6e6e14309213",
+      "passed": 40,
+      "summary": "# tests 40\n# suites 0\n# pass 40\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 672.391458"
+    },
+    {
+      "name": "legacy-cards",
+      "command": [
+        "/Users/darshan/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "--test",
+        "--test-reporter=tap",
+        "packages/photon-features/dist/tests/lanes/wt-06/operations.test.js",
+        "packages/photon-features/dist/tests/lanes/wt-06/interactions.test.js",
+        "packages/photon-features/dist/tests/lanes/wt-06/session-codec.test.js",
+        "packages/photon-features/dist/tests/lanes/wt-06/sdk.test.js"
+      ],
+      "exit": 0,
+      "tests": 44,
+      "failed": 0,
+      "skipped": 0,
+      "verifiedAt": "2026-09-10T08:25:10.708Z",
+      "log": ".photon-local/legacy-cards.log",
+      "logSha256": "527c3456504c44d1b9ee6c8fc659858b9cbb411a0c209d35e88ab7ab48e840bc",
+      "passed": 44,
+      "summary": "# tests 44\n# suites 0\n# pass 44\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2472.379417"
+    },
+    {
+      "name": "foundation",
+      "command": [
+        "/Users/darshan/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "--test",
+        "--test-reporter=tap",
+        "packages/photon-features/dist/tests/foundation/*.test.js"
+      ],
+      "exit": 0,
+      "tests": 65,
+      "failed": 0,
+      "skipped": 0,
+      "verifiedAt": "2026-09-10T08:25:10.371Z",
+      "log": ".photon-local/foundation.log",
+      "logSha256": "3312181f38c13544eeee65a3220eef49d4c655b6744710067e5397b5a350f490",
+      "passed": 65,
+      "summary": "# tests 65\n# suites 0\n# pass 65\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2118.001833"
+    },
+    {
+      "name": "legacy-foundation",
+      "command": [
+        "/Users/darshan/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "--test",
+        "--test-reporter=tap",
+        "packages/photon-features/dist/tests/lanes/wt-00/*.test.js"
+      ],
+      "exit": 0,
+      "tests": 60,
+      "failed": 0,
+      "skipped": 0,
+      "verifiedAt": "2026-09-10T08:25:10.391Z",
+      "log": ".photon-local/legacy-foundation.log",
+      "logSha256": "ac1d957f929a8c71e4fe969bca0fca3ff7a8d9949424ee1bb834117867fd074e",
+      "passed": 60,
+      "summary": "# tests 60\n# suites 0\n# pass 60\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2131.435083"
+    },
+    {
+      "name": "existing-cli",
+      "command": [
+        "/Users/darshan/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "--test",
+        "--test-reporter=tap",
+        "test/*.test.js"
+      ],
+      "exit": 0,
+      "tests": 31,
+      "failed": 0,
+      "skipped": 0,
+      "verifiedAt": "2026-09-10T08:25:09.171Z",
+      "log": ".photon-local/existing-cli.log",
+      "logSha256": "9d65fa329d4ff25462c5abfedf1ff0b31cf33efbadf8ebe742342d3408ab8cb3",
+      "passed": 31,
+      "summary": "# tests 31\n# suites 0\n# pass 31\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 856.544542"
+    },
+    {
+      "name": "typecheck",
+      "command": [
+        "/Users/darshan/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "node_modules/typescript/bin/tsc",
+        "-p",
+        "packages/photon-features/tsconfig.json",
+        "--noEmit"
+      ],
+      "exit": 0,
+      "verifiedAt": "2026-09-10T08:30:02.712Z",
+      "log": ".photon-local/typecheck.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary": ""
+    },
+    {
+      "name": "schema-drift",
+      "command": [
+        "/Users/darshan/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/generate-contracts.mjs",
+        "--check"
+      ],
+      "exit": 0,
+      "verifiedAt": "2026-09-10T08:25:09.001Z",
+      "log": ".photon-local/schema-drift.log",
+      "logSha256": "3ed0ce51a09c8e57f07679f23b23cea37175606e0a8128923a982a9ea029f608",
+      "summary": ""
+    },
+    {
+      "name": "build",
+      "command": [
+        "/Users/darshan/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "node_modules/typescript/bin/tsc",
+        "-p",
+        "packages/photon-features/tsconfig.json"
+      ],
+      "exit": 0,
+      "log": ".photon-local/build.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verifiedAt": "2026-09-10T08:28:08.373Z"
+    }
+  ],
+  "gates": [
+    {
+      "name": "verify-lane",
+      "command": [
+        "/Users/darshan/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/verify-lane.mjs",
+        "wt-06"
+      ],
+      "exit": 1,
+      "output": "LANE_NOT_ASSEMBLED\n",
+      "sha256": "9deae2ed3c9156699f88a0b1459f1fe209f162348d05b85f5f0b03bdfba082bb"
+    },
+    {
+      "name": "verify-worktree",
+      "command": [
+        "/Users/darshan/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/verify-worktree.mjs",
+        "wt-06"
+      ],
+      "exit": 0,
+      "output": "{\"lane\":\"wt-06\",\"path\":\"/Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-06\",\"branch\":\"photon-v3/wt-06\",\"startCommit\":\"5c342f5eeb654b1ad7cb00e52855b425f25148ae\",\"head\":\"ee2f8576b55973eee312bca5cad0549b6f959a88\",\"dirty\":true}\n",
+      "sha256": "bcd62963d3c5dc102284ca6a155702fceaa5b2b4a9bf783afa23ef1e37a6a944"
+    },
+    {
+      "name": "verify-ownership",
+      "command": [
+        "/Users/darshan/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/verify-ownership.mjs",
+        "wt-06"
+      ],
+      "exit": 1,
+      "output": "UNOWNED_PATH:.gitignore\n",
+      "sha256": "54ad17419c868eee2edcd4015a45f99ff4af0ee62ab0279f8872be07cd6df42b"
+    },
+    {
+      "name": "verify-docs",
+      "command": [
+        "/Users/darshan/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/verify-docs.mjs",
+        "wt-06"
+      ],
+      "exit": 1,
+      "output": "FILE_INVENTORY_DRIFT\n",
+      "sha256": "7a9124c740e377298ead93f9bd5524c817f563389c57b1f137295c194de74709"
+    }
+  ],
+  "acceptance": [
+    {
+      "id": 1,
+      "status": "passed-offline",
+      "evidence": [
+        "focused",
+        "legacy-cards"
+      ],
+      "detail": "Configured static/customized content and missing configuration checks"
+    },
+    {
+      "id": 2,
+      "status": "passed-offline",
+      "evidence": [
+        "focused",
+        "legacy-cards"
+      ],
+      "detail": "Original object identity, real edit builder and void outcomes"
+    },
+    {
+      "id": 3,
+      "status": "partial-shared-blocker",
+      "evidence": [
+        "focused"
+      ],
+      "detail": "Bounded versioned codec/retained-handle proof passed; full snapshot persistence unavailable in public F0; cold restore blocked"
+    },
+    {
+      "id": 4,
+      "status": "passed-offline",
+      "evidence": [
+        "focused"
+      ],
+      "detail": "Admission revision, concurrent modules, SQLite reopen, stale generation and cancellation"
+    },
+    {
+      "id": 5,
+      "status": "passed-offline",
+      "evidence": [
+        "focused"
+      ],
+      "detail": "Authentication seam/bounds/bindings verified with test backend; production return path unconfigured"
+    },
+    {
+      "id": 6,
+      "status": "passed-offline",
+      "evidence": [
+        "focused"
+      ],
+      "detail": "Single-use replay and SQLite callback transaction rollback/commit"
+    },
+    {
+      "id": 7,
+      "status": "partial-integration-required",
+      "evidence": [
+        "focused"
+      ],
+      "detail": "Unknown sessions unresolved; exact durable capture gate tested; host wake/backend integration absent"
+    },
+    {
+      "id": 8,
+      "status": "partial-shared-blocker",
+      "evidence": [
+        "focused",
+        "legacy-cards",
+        "foundation",
+        "legacy-foundation",
+        "existing-cli",
+        "typecheck",
+        "build",
+        "schema-drift"
+      ],
+      "detail": "Direct evidence passed, shared lane/ownership/docs gates blocked as recorded"
+    }
+  ],
+  "totalTests": 240,
+  "focusedTestNames": [
+    "child execution replays the same provider result with no duplicate send/update",
+    "authenticated durable callback consumes session and creates one continuation atomically",
+    "callback continuation failure rolls back session consumption and allows retry",
+    "uncaptured events, unauthenticated normalization and post-auth mutation cannot wake work",
+    "callback rejects wrong participant",
+    "callback rejects wrong line",
+    "callback rejects wrong chat",
+    "callback rejects wrong task",
+    "callback rejects wrong generation",
+    "callback rejects wrong nonce",
+    "callback rejects wrong action",
+    "callback rejects wrong future timestamp",
+    "unknown session is unresolved, missing backend does not prevent static send",
+    "expiry and cancellation after capture fence reduction before commit",
+    "SQLite domain transaction survives reopening and rolls back failed callback continuation",
+    "missing authoritative session stays unresolved despite a retained host snapshot",
+    "repeated updates use refreshed session on the same original bubble",
+    "two admitted updates serialize; stale intent does not dispatch",
+    "cold module restart requires the original session and never sends a replacement",
+    "cancellation or stale generation before and after preparation prevents effects",
+    "in-flight cancellation preserves uncertainty and durable reservation across modules",
+    "provider exception or post-send commit failure never authorizes a retry",
+    "shared child boundary failure after dispatch remains unknown",
+    "universal updates require the configured URL mapper and retain original message",
+    "extension configuration changes cannot silently replace original app identity",
+    "parallel modules share durable reservation even with retained original handles",
+    "reference remapping during asynchronous media preparation is fenced before send",
+    "installed public SDK remains exactly 12.8.0",
+    "public module registers three owned F0 handlers",
+    "real builders keep URL fallback, static, live and customized content distinct",
+    "actual edit builder retains original object and void updates refresh provider metadata",
+    "undefined send is an unknown result, never a successful card",
+    "configured static and customized sends use separate native builder shapes",
+    "missing template blocks before provider effects",
+    "missing extension blocks before provider effects",
+    "missing live installation blocks before provider effects",
+    "unapproved origin, inbound card and wrong serving line are rejected",
+    "session codec rejects SDK graphs, oversized metadata, versions and fake restoration",
+    "missing immutable revision and universal URL mapping block only updates",
+    "callback backend and raw payload bounds fail closed"
+  ],
+  "manualReview": "Complete: inspected all seven source diffs, four new test files, public/legacy separation, effect/claim boundaries, CAS ordering, callback trust/transaction, SDK metadata ownership, inventory, source evidence and preserved patch.",
+  "evidenceLimits": [
+    "Offline tests only; SDK sends stubbed.",
+    "SQLite domain persistence uses existing store behind a test public facade.",
+    "Production shared durable executor/transport/callback wake integration unverified.",
+    "No live sends, activation, provisioning, delivery/read or device rendering.",
+    "Full snapshot storage/cold-session rehydration blocked by WT06-003."
+  ]
+}

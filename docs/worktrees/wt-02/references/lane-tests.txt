@@ -1,0 +1,503 @@
+TAP version 13
+# (node:9442) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: normalizes text, attachments, groups, edits, reactions, read and membership without prose coercion
+ok 1 - normalizes text, attachments, groups, edits, reactions, read and membership without prose coercion
+  ---
+  duration_ms: 181.983667
+  type: 'test'
+  ...
+# Subtest: unknown, senderless, unsent, card and ambiguous poll content is durably unresolved
+ok 2 - unknown, senderless, unsent, card and ambiguous poll content is durably unresolved
+  ---
+  duration_ms: 52.81575
+  type: 'test'
+  ...
+# Subtest: correlated poll votes and unvotes retain distinct identities and scoped references
+ok 3 - correlated poll votes and unvotes retain distinct identities and scoped references
+  ---
+  duration_ms: 20.603083
+  type: 'test'
+  ...
+# Subtest: two-second quiet window resets on new text; restart and duplicate arrival preserve individual input
+ok 4 - two-second quiet window resets on new text; restart and duplicate arrival preserve individual input
+  ---
+  duration_ms: 15.512834
+  type: 'test'
+  ...
+# Subtest: non-text wakes immediately; outbound echoes and operational events do not create reply loops
+ok 5 - non-text wakes immediately; outbound echoes and operational events do not create reply loops
+  ---
+  duration_ms: 41.768375
+  type: 'test'
+  ...
+# Subtest: distinct events targeting one message survive dedupe and out-of-order arrivals
+ok 6 - distinct events targeting one message survive dedupe and out-of-order arrivals
+  ---
+  duration_ms: 9.206167
+  type: 'test'
+  ...
+# Subtest: reducer state and continuation commit atomically; early correlation remains durable and retries
+ok 7 - reducer state and continuation commit atomically; early correlation remains durable and retries
+  ---
+  duration_ms: 13.0315
+  type: 'test'
+  ...
+# Subtest: persistence failure prevents acceptance and wake; crash in reduction leaves inbox replayable
+ok 8 - persistence failure prevents acceptance and wake; crash in reduction leaves inbox replayable
+  ---
+  duration_ms: 16.916375
+  type: 'test'
+  ...
+# Subtest: wake retries the same committed identity after SQLite close/reopen; claims and cancellations are honored
+ok 9 - wake retries the same committed identity after SQLite close/reopen; claims and cancellations are honored
+  ---
+  duration_ms: 11.923041
+  type: 'test'
+  ...
+# Subtest: cancellation never discards batched text; new generation can accept retained inputs
+ok 10 - cancellation never discards batched text; new generation can accept retained inputs
+  ---
+  duration_ms: 11.116166
+  type: 'test'
+  ...
+# Subtest: checkpoint barrier never skips a missing preceding event; public restart recovery limit stays explicit
+ok 11 - checkpoint barrier never skips a missing preceding event; public restart recovery limit stays explicit
+  ---
+  duration_ms: 18.717625
+  type: 'test'
+  ...
+# Subtest: local capture replay closes the pre-inbox crash window and reports missing routes
+ok 12 - local capture replay closes the pre-inbox crash window and reports missing routes
+  ---
+  duration_ms: 16.0375
+  type: 'test'
+  ...
+# Subtest: historical text bursts stay separate after delayed restart recovery
+ok 13 - historical text bursts stay separate after delayed restart recovery
+  ---
+  duration_ms: 14.879459
+  type: 'test'
+  ...
+# Subtest: poll capture can be promoted from unresolved after authoritative correlation arrives
+ok 14 - poll capture can be promoted from unresolved after authoritative correlation arrives
+  ---
+  duration_ms: 8.811167
+  type: 'test'
+  ...
+# Subtest: JSON key order does not alter logical event identity
+ok 15 - JSON key order does not alter logical event identity
+  ---
+  duration_ms: 14.448334
+  type: 'test'
+  ...
+# Subtest: simple contacts normalize; richer unsupported contacts retain full capture
+ok 16 - simple contacts normalize; richer unsupported contacts retain full capture
+  ---
+  duration_ms: 22.967667
+  type: 'test'
+  ...
+# Subtest: host pump batches before dispatch and retries a failed wake using the same work
+ok 17 - host pump batches before dispatch and retries a failed wake using the same work
+  ---
+  duration_ms: 11.90975
+  type: 'test'
+  ...
+# Subtest: cross-scope targets and conflicting reuse of an event identity are rejected
+ok 18 - cross-scope targets and conflicting reuse of an event identity are rejected
+  ---
+  duration_ms: 9.437125
+  type: 'test'
+  ...
+# Subtest: duplicate unresolved delivery with a new capture pointer remains accepted
+ok 19 - duplicate unresolved delivery with a new capture pointer remains accepted
+  ---
+  duration_ms: 18.025459
+  type: 'test'
+  ...
+# Subtest: async reducers cannot commit a continuation ahead of correlated state
+ok 20 - async reducers cannot commit a continuation ahead of correlated state
+  ---
+  duration_ms: 9.08675
+  type: 'test'
+  ...
+# (node:9443) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# [spectrum.lifecycle] INFO Spectrum started {
+#   'spectrum.lifecycle.provider_count': 1,
+#   'spectrum.lifecycle.providers': 'imessage',
+#   'spectrum.lifecycle.telemetry': false
+# }
+# [spectrum.lifecycle] INFO Spectrum stopped {
+#   'spectrum.lifecycle.providers': 'imessage',
+#   'spectrum.lifecycle.stream_close_ms': 0,
+#   'spectrum.lifecycle.fusor_close_ms': 0,
+#   'spectrum.lifecycle.client_close_ms': 0
+# }
+# Subtest: shared SQLite handoff is committed before wake and failed wakes retry by durable identity
+ok 21 - shared SQLite handoff is committed before wake and failed wakes retry by durable identity
+  ---
+  duration_ms: 92.114084
+  type: 'test'
+  ...
+# Subtest: webhook acknowledgement awaits shared receipt writer then durable inbox, including failures
+ok 22 - webhook acknowledgement awaits shared receipt writer then durable inbox, including failures
+  ---
+  duration_ms: 72.49875
+  type: 'test'
+  ...
+# Subtest: tampered, alternate, mismatched and unavailable receipt webhooks never acknowledge
+ok 23 - tampered, alternate, mismatched and unavailable receipt webhooks never acknowledge
+  ---
+  duration_ms: 33.987084
+  type: 'test'
+  ...
+# Subtest: one stream subscription captures read before shared writer and exposes receive failure
+ok 24 - one stream subscription captures read before shared writer and exposes receive failure
+  ---
+  duration_ms: 28.408667
+  type: 'test'
+  ...
+# Subtest: current typing feature uses F0 services, fences after resolve and never claims visibility
+ok 25 - current typing feature uses F0 services, fences after resolve and never claims visibility
+  ---
+  duration_ms: 1.034625
+  type: 'test'
+  ...
+# Subtest: typing unavailable/disconnected is explicit and delayed resource resolution rechecks claim
+ok 26 - typing unavailable/disconnected is explicit and delayed resource resolution rechecks claim
+  ---
+  duration_ms: 0.223334
+  type: 'test'
+  ...
+# Subtest: official standalone iMessage wire spelling routes through the same signed ingress
+ok 27 - official standalone iMessage wire spelling routes through the same signed ingress
+  ---
+  duration_ms: 19.258208
+  type: 'test'
+  ...
+# (node:9444) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# [spectrum.lifecycle] INFO Spectrum started {
+#   'spectrum.lifecycle.provider_count': 1,
+#   'spectrum.lifecycle.providers': 'imessage',
+#   'spectrum.lifecycle.telemetry': false
+# }
+# [spectrum.lifecycle] INFO Spectrum stopped {
+#   'spectrum.lifecycle.providers': 'imessage',
+#   'spectrum.lifecycle.stream_close_ms': 0,
+#   'spectrum.lifecycle.fusor_close_ms': 0,
+#   'spectrum.lifecycle.client_close_ms': 0
+# }
+# [spectrum.lifecycle] INFO Spectrum started {
+#   'spectrum.lifecycle.provider_count': 1,
+#   'spectrum.lifecycle.providers': 'imessage',
+#   'spectrum.lifecycle.telemetry': false
+# }
+# [spectrum.lifecycle] INFO Spectrum stopped {
+#   'spectrum.lifecycle.providers': 'imessage',
+#   'spectrum.lifecycle.stream_close_ms': 0,
+#   'spectrum.lifecycle.fusor_close_ms': 0,
+#   'spectrum.lifecycle.client_close_ms': 0
+# }
+# Subtest: operational events and outgoing echoes cannot be opted into conversation wakes
+ok 28 - operational events and outgoing echoes cannot be opted into conversation wakes
+  ---
+  duration_ms: 126.396875
+  type: 'test'
+  ...
+# Subtest: checkpoint cannot cross missing input and recovery preserves original read observation time
+ok 29 - checkpoint cannot cross missing input and recovery preserves original read observation time
+  ---
+  duration_ms: 51.673875
+  type: 'test'
+  ...
+# Subtest: recovery aborts receipt write failure before inbox acceptance and leaves raw capture
+ok 30 - recovery aborts receipt write failure before inbox acceptance and leaves raw capture
+  ---
+  duration_ms: 22.10125
+  type: 'test'
+  ...
+# Subtest: native reconciliation is exact, idempotent and does not infer individual group readers
+ok 31 - native reconciliation is exact, idempotent and does not infer individual group readers
+  ---
+  duration_ms: 6.373792
+  type: 'test'
+  ...
+# Subtest: missing native targets and wrong returned line remain unavailable rather than evidence
+ok 32 - missing native targets and wrong returned line remain unavailable rather than evidence
+  ---
+  duration_ms: 1.316
+  type: 'test'
+  ...
+# Subtest: hung lookup is bounded and cannot stack repeated calls or persist late evidence
+ok 33 - hung lookup is bounded and cannot stack repeated calls or persist late evidence
+  ---
+  duration_ms: 10.392708
+  type: 'test'
+  ...
+# Subtest: lookup timeout during space resolution cannot start a late native query
+ok 34 - lookup timeout during space resolution cannot start a late native query
+  ---
+  duration_ms: 11.520542
+  type: 'test'
+  ...
+# (node:9445) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# [spectrum.lifecycle] INFO Spectrum started {
+#   'spectrum.lifecycle.provider_count': 1,
+#   'spectrum.lifecycle.providers': 'wt02_offline_contract',
+#   'spectrum.lifecycle.telemetry': false
+# }
+# [spectrum.lifecycle] INFO Spectrum stopped {
+#   'spectrum.lifecycle.providers': 'wt02_offline_contract',
+#   'spectrum.lifecycle.stream_close_ms': 0,
+#   'spectrum.lifecycle.fusor_close_ms': 0,
+#   'spectrum.lifecycle.client_close_ms': 0
+# }
+# [spectrum.lifecycle] INFO Spectrum started {
+#   'spectrum.lifecycle.provider_count': 1,
+#   'spectrum.lifecycle.providers': 'wt02_offline_contract',
+#   'spectrum.lifecycle.telemetry': false
+# }
+# Subtest: installed SDK is exactly pinned and exports provider narrowing/content builders
+ok 35 - installed SDK is exactly pinned and exports provider narrowing/content builders
+  ---
+  duration_ms: 1.975834
+  type: 'test'
+  ...
+# Subtest: actual SDK unsupported typing no-ops and undefined send result is not delivery evidence
+ok 36 - actual SDK unsupported typing no-ops and undefined send result is not delivery evidence
+  ---
+  duration_ms: 7.201792
+  type: 'test'
+  ...
+# [spectrum.lifecycle] INFO Spectrum stopped {
+#   'spectrum.lifecycle.providers': 'wt02_offline_contract',
+#   'spectrum.lifecycle.stream_close_ms': 0,
+#   'spectrum.lifecycle.fusor_close_ms': 0,
+#   'spectrum.lifecycle.client_close_ms': 0
+# }
+# [spectrum.lifecycle] INFO Spectrum started {
+#   'spectrum.lifecycle.provider_count': 1,
+#   'spectrum.lifecycle.providers': 'imessage',
+#   'spectrum.lifecycle.telemetry': false
+# }
+# [spectrum.lifecycle] INFO Spectrum stopped {
+#   'spectrum.lifecycle.providers': 'imessage',
+#   'spectrum.lifecycle.stream_close_ms': 0,
+#   'spectrum.lifecycle.fusor_close_ms': 0,
+#   'spectrum.lifecycle.client_close_ms': 0
+# }
+# Subtest: actual SDK webhook returns before its async durable callback resolves
+ok 37 - actual SDK webhook returns before its async durable callback resolves
+  ---
+  duration_ms: 17.427792
+  type: 'test'
+  ...
+# Subtest: native lookup uses documented Space.getMessage and scoped imessage narrowing
+ok 38 - native lookup uses documented Space.getMessage and scoped imessage narrowing
+  ---
+  duration_ms: 2.833125
+  type: 'test'
+  ...
+# (node:9446) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# [spectrum.lifecycle] INFO Spectrum started {
+#   'spectrum.lifecycle.provider_count': 1,
+#   'spectrum.lifecycle.providers': 'wt02_test',
+#   'spectrum.lifecycle.telemetry': false
+# }
+# Subtest: single SDK lifecycle and explicit multi-line routing; feature calls never create listeners
+ok 39 - single SDK lifecycle and explicit multi-line routing; feature calls never create listeners
+  ---
+  duration_ms: 1.236833
+  type: 'test'
+  ...
+# Subtest: owner startup failure and stop during delayed startup clean up correctly
+ok 40 - owner startup failure and stop during delayed startup clean up correctly
+  ---
+  duration_ms: 0.859916
+  type: 'test'
+  ...
+# Subtest: webhook acknowledges only after awaited durable acceptance and rejects persistence failure
+ok 41 - webhook acknowledges only after awaited durable acceptance and rejects persistence failure
+  ---
+  duration_ms: 100.363875
+  type: 'test'
+  ...
+# Subtest: invalid signatures, raw-byte tampering, stale/future timestamps and alternate envelopes cannot enter inbox
+ok 42 - invalid signatures, raw-byte tampering, stale/future timestamps and alternate envelopes cannot enter inbox
+  ---
+  duration_ms: 41.122291
+  type: 'test'
+  ...
+# [spectrum.lifecycle] INFO Spectrum stopped {
+#   'spectrum.lifecycle.providers': 'wt02_test',
+#   'spectrum.lifecycle.stream_close_ms': 0,
+#   'spectrum.lifecycle.fusor_close_ms': 0,
+#   'spectrum.lifecycle.client_close_ms': 0
+# }
+# Subtest: actual pinned SDK helper returns before callback settles (offline custom provider)
+ok 43 - actual pinned SDK helper returns before callback settles (offline custom provider)
+  ---
+  duration_ms: 9.835333
+  type: 'test'
+  ...
+# Subtest: stream failure remains inspectable and SDK's reconnect is not replaced with another connection
+ok 44 - stream failure remains inspectable and SDK's reconnect is not replaced with another connection
+  ---
+  duration_ms: 21.851833
+  type: 'test'
+  ...
+# Subtest: owner stops typing before destroying the shared client
+ok 45 - owner stops typing before destroying the shared client
+  ---
+  duration_ms: 0.406166
+  type: 'test'
+  ...
+# (node:9447) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: delayed start cancelled before dispatch; expiry and timeout stop active typing
+ok 46 - delayed start cancelled before dispatch; expiry and timeout stop active typing
+  ---
+  duration_ms: 2.310875
+  type: 'test'
+  ...
+# Subtest: old generation and old same-generation ticket cannot stop newer indicator
+ok 47 - old generation and old same-generation ticket cannot stop newer indicator
+  ---
+  duration_ms: 0.628625
+  type: 'test'
+  ...
+# Subtest: late start after cancellation is followed by stop
+ok 48 - late start after cancellation is followed by stop
+  ---
+  duration_ms: 0.460292
+  type: 'test'
+  ...
+# Subtest: delayed stop completes before newer start; stale completion cannot leave new generation off
+ok 49 - delayed stop completes before newer start; stale completion cannot leave new generation off
+  ---
+  duration_ms: 0.496
+  type: 'test'
+  ...
+# Subtest: overlapping start generations need no stale stop
+ok 50 - overlapping start generations need no stale stop
+  ---
+  duration_ms: 0.366209
+  type: 'test'
+  ...
+# Subtest: slow resolver cannot replay expired typing-start work
+ok 51 - slow resolver cannot replay expired typing-start work
+  ---
+  duration_ms: 0.320417
+  type: 'test'
+  ...
+# Subtest: completion, error, abort, and long-worker waiting run the stop path
+ok 52 - completion, error, abort, and long-worker waiting run the stop path
+  ---
+  duration_ms: 3.74725
+  type: 'test'
+  ...
+# Subtest: typing rejection and hung control never block real response
+ok 53 - typing rejection and hung control never block real response
+  ---
+  duration_ms: 0.445292
+  type: 'test'
+  ...
+# Subtest: shutdown, connection loss, restoration, and restart invalidate prior starts
+ok 54 - shutdown, connection loss, restoration, and restart invalidate prior starts
+  ---
+  duration_ms: 0.627709
+  type: 'test'
+  ...
+# Subtest: failure reports unknown visibility and does not spin on failed stop
+ok 55 - failure reports unknown visibility and does not spin on failed stop
+  ---
+  duration_ms: 0.39125
+  type: 'test'
+  ...
+# Subtest: explicit typing module consumes F0 services and persisted execution identity; expired starts do not replay
+ok 56 - explicit typing module consumes F0 services and persisted execution identity; expired starts do not replay
+  ---
+  duration_ms: 25.2095
+  type: 'test'
+  ...
+# Subtest: bounded shutdown reports a hung control without claiming a stop
+ok 57 - bounded shutdown reports a hung control without claiming a stop
+  ---
+  duration_ms: 11.8565
+  type: 'test'
+  ...
+# Subtest: dispatch revalidates the fence after a delayed resolver
+ok 58 - dispatch revalidates the fence after a delayed resolver
+  ---
+  duration_ms: 0.862084
+  type: 'test'
+  ...
+# Subtest: old start rejection cannot cancel a newer generation
+ok 59 - old start rejection cannot cancel a newer generation
+  ---
+  duration_ms: 0.436875
+  type: 'test'
+  ...
+# Subtest: old stop rejection cannot cancel a newer generation
+ok 60 - old stop rejection cannot cancel a newer generation
+  ---
+  duration_ms: 0.3405
+  type: 'test'
+  ...
+# (node:9448) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: event identity preserves persisted legacy keys, ignores observation time and separates edits/readers
+ok 61 - event identity preserves persisted legacy keys, ignores observation time and separates edits/readers
+  ---
+  duration_ms: 30.072875
+  type: 'test'
+  ...
+# Subtest: structured data stays captured/unresolved and references remain scoped
+ok 62 - structured data stays captured/unresolved and references remain scoped
+  ---
+  duration_ms: 1.517708
+  type: 'test'
+  ...
+# Subtest: durable text bursts release at the two-second boundary without merging individual inputs
+ok 63 - durable text bursts release at the two-second boundary without merging individual inputs
+  ---
+  duration_ms: 76.550459
+  type: 'test'
+  ...
+# Subtest: early receipts retain real target/reader/time and duplicate arrival is idempotent
+ok 64 - early receipts retain real target/reader/time and duplicate arrival is idempotent
+  ---
+  duration_ms: 1.394292
+  type: 'test'
+  ...
+# Subtest: native read does not synthesize delivery, acceptance, readers or unread
+ok 65 - native read does not synthesize delivery, acceptance, readers or unread
+  ---
+  duration_ms: 0.388291
+  type: 'test'
+  ...
+# Subtest: typing token/generation, explicit expiry, cancellation and restart do not replay stale starts
+ok 66 - typing token/generation, explicit expiry, cancellation and restart do not replay stale starts
+  ---
+  duration_ms: 26.854917
+  type: 'test'
+  ...
+# Subtest: malformed read targets and conflicting reuse of a source event cannot create receipt evidence
+ok 67 - malformed read targets and conflicting reuse of a source event cannot create receipt evidence
+  ---
+  duration_ms: 0.437583
+  type: 'test'
+  ...
+1..67
+# tests 67
+# suites 0
+# pass 67
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1285.493583

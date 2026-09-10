@@ -1,0 +1,522 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "purpose": "Foundation . artifact: AGENTS.md",
+      "symbols": []
+    },
+    {
+      "path": "README.md",
+      "purpose": "Foundation . artifact: README.md",
+      "symbols": []
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "purpose": "Foundation . artifact: ARCHITECTURE.md",
+      "symbols": []
+    },
+    {
+      "path": "package.json",
+      "purpose": "Foundation . artifact: package.json",
+      "symbols": []
+    },
+    {
+      "path": "package-lock.json",
+      "purpose": "Foundation . artifact: package-lock.json",
+      "symbols": []
+    },
+    {
+      "path": ".gitignore",
+      "purpose": "Foundation . artifact: .gitignore",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/package.json",
+      "purpose": "Foundation photon-features artifact: package.json",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/tsconfig.json",
+      "purpose": "Foundation photon-features artifact: tsconfig.json",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/src/index.ts",
+      "purpose": "Foundation src artifact: index.ts",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/src/capabilities.ts",
+      "purpose": "Public definitions and invariants: foundationCapabilities, CapabilityRecord, evaluateCapabilities",
+      "symbols": [
+        "foundationCapabilities",
+        "CapabilityRecord",
+        "evaluateCapabilities"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/host/main.ts",
+      "purpose": "Public definitions and invariants: LocalExecutor, RuntimeHostComponents, createRuntimeHost",
+      "symbols": [
+        "LocalExecutor",
+        "RuntimeHostComponents",
+        "createRuntimeHost"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/registry/catalog.ts",
+      "purpose": "Public definitions and invariants: operationCatalog",
+      "symbols": [
+        "operationCatalog"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/registry/modules.ts",
+      "purpose": "Public definitions and invariants: registerFeatureModules",
+      "symbols": [
+        "registerFeatureModules"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/state/schema.ts",
+      "purpose": "Public definitions and invariants: freshStorePath, initialMigration, ReceiptRecord, ClaimRecord",
+      "symbols": [
+        "freshStorePath",
+        "initialMigration",
+        "ReceiptRecord",
+        "ClaimRecord"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/state/migrations/0001-initial.sql",
+      "purpose": "Foundation migrations artifact: 0001-initial.sql",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/src/contracts/actions.ts",
+      "purpose": "Public definitions and invariants: operationArguments, Operation, operations, ActionFor, Action, actionSchemas, actionSchema, MAX_REQUEST_BYTES, parseAction, ActionRequest, parseActionRequest",
+      "symbols": [
+        "operationArguments",
+        "Operation",
+        "operations",
+        "ActionFor",
+        "Action",
+        "actionSchemas",
+        "actionSchema",
+        "MAX_REQUEST_BYTES",
+        "parseAction",
+        "ActionRequest",
+        "parseActionRequest"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/contracts/context.ts",
+      "purpose": "Public definitions and invariants: principalSchema, AuthenticatedPrincipal, contextSchema, TrustedContext, assertTrustedContext",
+      "symbols": [
+        "principalSchema",
+        "AuthenticatedPrincipal",
+        "contextSchema",
+        "TrustedContext",
+        "assertTrustedContext"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/contracts/references.ts",
+      "purpose": "Public definitions and invariants: MessageRef, ReactionRef, PollRef, CardRef, AttachmentRef",
+      "symbols": [
+        "MessageRef",
+        "ReactionRef",
+        "PollRef",
+        "CardRef",
+        "AttachmentRef"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/contracts/content.ts",
+      "purpose": "Public definitions and invariants: proseSchema, httpsSchema, stagedMediaSchema, mediaSchema, contactSchema, pollChoiceSchema, cardLayoutSchema, leafContentSchema, groupContentSchema, contentSchema, ContentSpec, voicePolicy, assertJsonData, parseContentSpec",
+      "symbols": [
+        "proseSchema",
+        "httpsSchema",
+        "stagedMediaSchema",
+        "mediaSchema",
+        "contactSchema",
+        "pollChoiceSchema",
+        "cardLayoutSchema",
+        "leafContentSchema",
+        "groupContentSchema",
+        "contentSchema",
+        "ContentSpec",
+        "voicePolicy",
+        "assertJsonData",
+        "parseContentSpec"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/contracts/events.ts",
+      "purpose": "Public definitions and invariants: incomingEventSchema, IncomingEvent, InboundEvent, UnresolvedEvent",
+      "symbols": [
+        "incomingEventSchema",
+        "IncomingEvent",
+        "InboundEvent",
+        "UnresolvedEvent"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/contracts/results.ts",
+      "purpose": "Public definitions and invariants: lifecycleSchema, Lifecycle, errorSchema, capabilitySchema, Capability, observationSchema, resultSchema, OperationResult, RuntimeError, OperationError",
+      "symbols": [
+        "lifecycleSchema",
+        "Lifecycle",
+        "errorSchema",
+        "capabilitySchema",
+        "Capability",
+        "observationSchema",
+        "resultSchema",
+        "OperationResult",
+        "RuntimeError",
+        "OperationError"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/contracts/receipts.ts",
+      "purpose": "Public definitions and invariants: receiptObservationSchema, ReceiptObservation, parseReceiptObservation, appendReceipt, reconcileReceipt, summarizeReceipts",
+      "symbols": [
+        "receiptObservationSchema",
+        "ReceiptObservation",
+        "parseReceiptObservation",
+        "appendReceipt",
+        "reconcileReceipt",
+        "summarizeReceipts"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/contracts/feature.ts",
+      "purpose": "Public definitions and invariants: FeatureModule",
+      "symbols": [
+        "FeatureModule"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/contracts/services.ts",
+      "purpose": "Public definitions and invariants: ChildExecution, ExecutionServices",
+      "symbols": [
+        "ChildExecution",
+        "ExecutionServices"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/contracts/store.ts",
+      "purpose": "Public definitions and invariants: ExecutionClaim, DomainTable, ContinuationSpec, UnitOfWork, StateStore",
+      "symbols": [
+        "ExecutionClaim",
+        "DomainTable",
+        "ContinuationSpec",
+        "UnitOfWork",
+        "StateStore"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/contracts/transport.ts",
+      "purpose": "Public definitions and invariants: ProviderContext, EventSource",
+      "symbols": [
+        "ProviderContext",
+        "EventSource"
+      ]
+    },
+    {
+      "path": "packages/photon-features/schemas/action.schema.json",
+      "purpose": "Foundation action.schema.json",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/schemas/event.schema.json",
+      "purpose": "Foundation event.schema.json",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/schemas/result.schema.json",
+      "purpose": "Foundation result.schema.json",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/tests/foundation/contracts.test.ts",
+      "purpose": "Executable verification scenarios for contracts",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/tests/foundation/feature-services.test.ts",
+      "purpose": "Executable verification scenarios for feature-services",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/tests/foundation/receipts.test.ts",
+      "purpose": "Executable verification scenarios for receipts",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/tests/foundation/sdk-compatibility.test.ts",
+      "purpose": "Executable verification scenarios for sdk-compatibility",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/tests/foundation/ownership.test.ts",
+      "purpose": "Executable verification scenarios for ownership",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/tests/foundation/verification-tools.test.ts",
+      "purpose": "Executable verification scenarios for verification-tools",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/runtime-services.ts",
+      "purpose": "Public definitions and invariants: scope, principal, context, makeServices",
+      "symbols": [
+        "scope",
+        "principal",
+        "context",
+        "makeServices"
+      ]
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/provider.ts",
+      "purpose": "Public definitions and invariants: TestProvider",
+      "symbols": [
+        "TestProvider"
+      ]
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/clock.ts",
+      "purpose": "Public definitions and invariants: TestClock",
+      "symbols": [
+        "TestClock"
+      ]
+    },
+    {
+      "path": "scripts/verify-worktree.mjs",
+      "purpose": "Public definitions and invariants: git, verifyWorktree",
+      "symbols": [
+        "git",
+        "verifyWorktree"
+      ]
+    },
+    {
+      "path": "scripts/fetch-photon-docs.mjs",
+      "purpose": "Public definitions and invariants: root, officialTargets, skillPaths, validateDocument, fetchDocument, writeSourceRecord",
+      "symbols": [
+        "root",
+        "officialTargets",
+        "skillPaths",
+        "validateDocument",
+        "fetchDocument",
+        "writeSourceRecord"
+      ]
+    },
+    {
+      "path": "scripts/verify-ownership.mjs",
+      "purpose": "Public definitions and invariants: checkOwnership, changedPaths, verifyOwnership",
+      "symbols": [
+        "checkOwnership",
+        "changedPaths",
+        "verifyOwnership"
+      ]
+    },
+    {
+      "path": "scripts/verify-docs.mjs",
+      "purpose": "Public definitions and invariants: checkSourceLock, checkEvidence, verifyDocs",
+      "symbols": [
+        "checkSourceLock",
+        "checkEvidence",
+        "verifyDocs"
+      ]
+    },
+    {
+      "path": "scripts/verify-lane.mjs",
+      "purpose": "Public definitions and invariants: foundationTests, validateTestResult, requireTests, workingIdentity, verifyLane",
+      "symbols": [
+        "foundationTests",
+        "validateTestResult",
+        "requireTests",
+        "workingIdentity",
+        "verifyLane"
+      ]
+    },
+    {
+      "path": "scripts/verify-all.mjs",
+      "purpose": "Foundation scripts artifact: verify-all.mjs",
+      "symbols": []
+    },
+    {
+      "path": "scripts/generate-contracts.mjs",
+      "purpose": "Foundation scripts artifact: generate-contracts.mjs",
+      "symbols": []
+    },
+    {
+      "path": "docs/contracts/execution.md",
+      "purpose": "Foundation contracts artifact: execution.md",
+      "symbols": []
+    },
+    {
+      "path": "docs/contracts/receipts.md",
+      "purpose": "Foundation contracts artifact: receipts.md",
+      "symbols": []
+    },
+    {
+      "path": "docs/contracts/operations.md",
+      "purpose": "Foundation operations.md",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/ownership.json",
+      "purpose": "Foundation worktrees artifact: ownership.json",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/worktree-map.json",
+      "purpose": "Foundation worktrees artifact: worktree-map.json",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/foundation.json",
+      "purpose": "Foundation worktrees artifact: foundation.json",
+      "symbols": []
+    },
+    {
+      "path": "docs/photon-features/baseline.md",
+      "purpose": "Foundation photon-features artifact: baseline.md",
+      "symbols": []
+    },
+    {
+      "path": "docs/photon-features/runtime-contract.md",
+      "purpose": "Foundation photon-features artifact: runtime-contract.md",
+      "symbols": []
+    },
+    {
+      "path": "docs/photon-features/capabilities.md",
+      "purpose": "Foundation photon-features artifact: capabilities.md",
+      "symbols": []
+    },
+    {
+      "path": "docs/photon-features/documentation.md",
+      "purpose": "Foundation photon-features artifact: documentation.md",
+      "symbols": []
+    },
+    {
+      "path": "docs/photon-features/test-evidence.md",
+      "purpose": "Foundation photon-features artifact: test-evidence.md",
+      "symbols": []
+    },
+    {
+      "path": "docs/photon-features/rollout.md",
+      "purpose": "Foundation photon-features artifact: rollout.md",
+      "symbols": []
+    },
+    {
+      "path": "docs/photon-features/docs-manifest.json",
+      "purpose": "Foundation docs-manifest.json",
+      "symbols": []
+    },
+    {
+      "path": "docs/photon/source-lock.json",
+      "purpose": "Foundation photon artifact: source-lock.json",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-00/AGENTS.md",
+      "purpose": "Foundation wt-00 artifact: AGENTS.md",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-00/README.md",
+      "purpose": "Foundation wt-00 artifact: README.md",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-00/ARCHITECTURE.md",
+      "purpose": "Foundation wt-00 artifact: ARCHITECTURE.md",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-00/WORKLOG.md",
+      "purpose": "Foundation wt-00 artifact: WORKLOG.md",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-00/SOURCES.md",
+      "purpose": "Foundation wt-00 artifact: SOURCES.md",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-00/source-lock.json",
+      "purpose": "Foundation wt-00 artifact: source-lock.json",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-00/FILES.json",
+      "purpose": "Foundation wt-00 artifact: FILES.json",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-00/ACCEPTANCE.md",
+      "purpose": "Foundation wt-00 artifact: ACCEPTANCE.md",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-00/TEST-EVIDENCE.md",
+      "purpose": "Foundation wt-00 artifact: TEST-EVIDENCE.md",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-00/HANDOFF.md",
+      "purpose": "Foundation wt-00 artifact: HANDOFF.md",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-00/CHANGE-REQUESTS.md",
+      "purpose": "Foundation wt-00 artifact: CHANGE-REQUESTS.md",
+      "symbols": []
+    }
+  ],
+  "snapshots": [
+    "docs/photon/reference/docs.photon.codes/llms.txt",
+    "docs/photon/reference/photon.codes/llms.txt",
+    "docs/photon/reference/photon.codes/spectrum-ts/introduction.md",
+    "docs/photon/reference/photon.codes/spectrum-ts/getting-started.md",
+    "docs/photon/reference/photon.codes/spectrum-ts/messages.md",
+    "docs/photon/reference/photon.codes/spectrum-ts/spaces-and-users.md",
+    "docs/photon/reference/photon.codes/spectrum-ts/platform-narrowing.md",
+    "docs/photon/reference/photon.codes/spectrum-ts/providers.md",
+    "docs/photon/reference/photon.codes/spectrum-ts/providers/imessage/connection-and-routing.md",
+    "docs/photon/reference/photon.codes/spectrum-ts/content.md",
+    "docs/photon/reference/photon.codes/spectrum-ts/content/composing-content.md",
+    "docs/photon/reference/photon.codes/spectrum-ts/content/polls.md",
+    "docs/photon/reference/photon.codes/spectrum-ts/content/app.md",
+    "docs/photon/reference/photon.codes/spectrum-ts/content/read.md",
+    "docs/photon/reference/photon.codes/spectrum-ts/custom-events-and-lifecycle.md",
+    "docs/photon/reference/photon.codes/spectrum-ts/providers/imessage/messaging-features/inbound-read-receipts.md",
+    "docs/photon/reference/photon.codes/spectrum-ts/providers/imessage/messaging-features/message-metadata.md",
+    "docs/photon/reference/photon.codes/best-practices/architecture.md",
+    "docs/photon/reference/photon.codes/best-practices/inbound-pipeline.md",
+    "docs/photon/reference/photon.codes/best-practices/recovery-and-state.md",
+    "docs/photon/reference/photon.codes/advanced-kits/imessage/getting-started.md",
+    "docs/photon/reference/photon.codes/advanced-kits/imessage/error-handling.md",
+    "docs/photon/reference/photon.codes/advanced-kits/imessage/events.md",
+    "docs/photon/reference/photon.codes/webhooks/delivery.md",
+    "docs/worktrees/wt-00/references/raw.githubusercontent.com/tecxbro/photon-skills/main/README.md",
+    "docs/worktrees/wt-00/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/SKILL.md",
+    "docs/worktrees/wt-00/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/SKILL.md",
+    "docs/worktrees/wt-00/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/photon-cli/SKILL.md",
+    "docs/worktrees/wt-00/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/photon-webhooks/SKILL.md",
+    "docs/worktrees/wt-00/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/getting-started.md",
+    "docs/worktrees/wt-00/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content.md",
+    "docs/worktrees/wt-00/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/capability-semantics.md",
+    "docs/worktrees/wt-00/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/platform-narrowing.md",
+    "docs/worktrees/wt-00/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/providers/imessage.md",
+    "docs/worktrees/wt-00/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/best-practices.md",
+    "docs/worktrees/wt-00/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/choosing-a-stack.md",
+    "docs/worktrees/wt-00/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/advanced/getting-started.md",
+    "docs/worktrees/wt-00/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/references/hosted-v2.md",
+    "docs/worktrees/wt-00/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/references/spectrum.md"
+  ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "command": "node node_modules/typescript/bin/tsc -p packages/photon-features/tests/lanes/wt-07/tsconfig.json",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "observedAt": "2026-09-09T03:24:35.999960+00:00",
+    "exitCode": 0,
+    "log": "docs/photon-features/evidence/wt-07/isolated-build.txt"
+  },
+  {
+    "command": "node --test packages/photon-features/tests/lanes/wt-07/build/tests/lanes/wt-07/native.test.js",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "observedAt": "2026-09-09T03:24:37.802265+00:00",
+    "exitCode": 0,
+    "log": "docs/photon-features/evidence/wt-07/isolated-lane-tests.txt"
+  },
+  {
+    "command": "npm test",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "observedAt": "2026-09-09T03:24:38.725805+00:00",
+    "exitCode": 0,
+    "log": "docs/photon-features/evidence/wt-07/existing-tests.txt"
+  },
+  {
+    "command": "npm run photon:build",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "observedAt": "2026-09-09T03:24:39.046293+00:00",
+    "exitCode": 0,
+    "log": "docs/photon-features/evidence/wt-07/package-build.txt"
+  },
+  {
+    "command": "npm run photon:test",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "observedAt": "2026-09-09T03:24:42.979703+00:00",
+    "exitCode": 0,
+    "log": "docs/photon-features/evidence/wt-07/foundation-tests.txt"
+  },
+  {
+    "command": "npm run photon:check",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "observedAt": "2026-09-09T03:24:47.087897+00:00",
+    "exitCode": 0,
+    "log": "docs/photon-features/evidence/wt-07/schema-check.txt"
+  },
+  {
+    "command": "node node_modules/typescript/bin/tsc -p packages/photon-features/tests/lanes/wt-07/tsconfig.json",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "observedAt": "2026-09-09T03:27:45.253198+00:00",
+    "exitCode": 0,
+    "log": "docs/photon-features/evidence/wt-07/final-isolated-build.txt"
+  },
+  {
+    "command": "node --test packages/photon-features/tests/lanes/wt-07/build/tests/lanes/wt-07/native.test.js",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "observedAt": "2026-09-09T03:27:49.262987+00:00",
+    "exitCode": 0,
+    "log": "docs/photon-features/evidence/wt-07/final-isolated-tests.txt"
+  }
+]

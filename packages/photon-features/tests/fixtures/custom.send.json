@@ -1,0 +1,58 @@
+{
+  "valid": {
+    "version": 1,
+    "idempotencyKey": "request-custom.send",
+    "contextId": "context-1",
+    "operation": "custom.send",
+    "arguments": {
+      "space": {
+        "version": 1,
+        "kind": "space",
+        "id": "space-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        }
+      },
+      "codecId": "registered-card-v1",
+      "resource": {
+        "version": 1,
+        "kind": "card",
+        "id": "card-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        },
+        "messageId": "message-1"
+      }
+    }
+  },
+  "rejected": {
+    "version": 1,
+    "idempotencyKey": "request-custom.send",
+    "contextId": "context-1",
+    "operation": "custom.send",
+    "arguments": {
+      "codecId": "registered-card-v1",
+      "resource": {
+        "version": 1,
+        "kind": "card",
+        "id": "card-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        },
+        "messageId": "message-1"
+      }
+    }
+  }
+}

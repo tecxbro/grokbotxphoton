@@ -1,0 +1,43 @@
+
+> grok-bot-cli@0.2.2 test
+> node --test test/*.test.js
+
+✔ decrypts an Electron Safe Storage v10 string (1.319875ms)
+✔ loads the signed-in Grok Bot gateway without manual tokens (1.0965ms)
+✔ loads a version 2 Grok Bot gateway entry (2.9385ms)
+✔ rejects a version 2 descriptor with no entries (1.960875ms)
+✔ rejects a version 2 descriptor with ambiguous entries (1.042959ms)
+✔ rejects a gateway entry without an encrypted payload (0.47775ms)
+✔ rejects an unsupported gateway descriptor version (1.761708ms)
+✔ rejects an incomplete decrypted gateway descriptor (2.018083ms)
+✔ reports a present but unusable Grok Bot app session (0.766083ms)
+✔ does not probe macOS credentials on other platforms (0.112292ms)
+✔ doctor reports a present but unusable Grok Bot app session (116.565334ms)
+✔ parses env JSON headers (0.741416ms)
+✔ reads EnsureSandBox gatewayHeaders (0.11175ms)
+✔ reads EnsureSandBox token field (0.051334ms)
+✔ env headers override EnsureSandBox (0.054084ms)
+✔ request headers keep routing header (0.106042ms)
+✔ empty env JSON is a no-op (0.046ms)
+✔ credential-bearing requests reject redirects (14.776834ms)
+✔ gateway URL validation happens before credentials are sent (0.317834ms)
+✔ npm package metadata identifies the public source repository (0.930833ms)
+✔ npm executable paths are already normalized for publishing (0.079959ms)
+✔ create list delete bots (2.681666ms)
+✔ group add remove set (23.874ms)
+✔ rejects nested and empty groups (3.534542ms)
+✔ update merges profile, clears title, changes description, toggles settings, rejects blank name (3.10875ms)
+✔ update settings merge preserves extra keys (1.968958ms)
+✔ allows https Cursor gateway hosts (0.652625ms)
+✔ rejects http and non-cursor hosts by default (0.375333ms)
+✔ allows local gateways when opted in (0.097917ms)
+✔ ALLOW_ANY_GATEWAY bypasses host checks (0.06775ms)
+✔ redacts bearer and token-like fields (1.259666ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 175.178917

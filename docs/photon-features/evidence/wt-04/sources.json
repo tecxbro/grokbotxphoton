@@ -1,0 +1,493 @@
+[
+  {
+    "url": "https://photon.codes/docs/llms.txt",
+    "attemptedAt": "2026-09-09T03:04:35.676258+00:00",
+    "version": "unversioned documentation; installed 12.8.0 declarations authoritative",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/",
+    "limitations": "Supplementary documentation; no live verification.",
+    "readStatus": "read via web tool; direct HTTP returned 403",
+    "error": "HTTP Error 403: Forbidden",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "readNotes": "Documentation index and linked media topics",
+    "hashLimitation": "Web tool text has no authoritative raw-body hash."
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/attachments",
+    "attemptedAt": "2026-09-09T03:04:35.676470+00:00",
+    "version": "unversioned documentation; installed 12.8.0 declarations authoritative",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/",
+    "limitations": "Supplementary documentation; no live verification.",
+    "readStatus": "read via web tool; direct HTTP returned 403",
+    "error": "HTTP Error 403: Forbidden",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "readNotes": "Attachment builder inputs and stable IDs",
+    "hashLimitation": "Web tool text has no authoritative raw-body hash."
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/voice",
+    "attemptedAt": "2026-09-09T03:04:35.676522+00:00",
+    "version": "unversioned documentation; installed 12.8.0 declarations authoritative",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/",
+    "limitations": "Supplementary documentation; no live verification.",
+    "readStatus": "read via web tool; direct HTTP returned 403",
+    "error": "HTTP Error 403: Forbidden",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "readNotes": "Voice builder fields, streams and documented fallback",
+    "hashLimitation": "Web tool text has no authoritative raw-body hash."
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/contacts",
+    "attemptedAt": "2026-09-09T03:04:35.676561+00:00",
+    "version": "unversioned documentation; installed 12.8.0 declarations authoritative",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/",
+    "limitations": "Supplementary documentation; no live verification.",
+    "readStatus": "read via web tool; direct HTTP returned 403",
+    "error": "HTTP Error 403: Forbidden",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "readNotes": "Structured contact fields and vCard conversion",
+    "hashLimitation": "Web tool text has no authoritative raw-body hash."
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/fetching-attachments",
+    "attemptedAt": "2026-09-09T03:04:35.676599+00:00",
+    "version": "unversioned documentation; installed 12.8.0 declarations authoritative",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/",
+    "limitations": "Supplementary documentation; no live verification.",
+    "readStatus": "direct HTTP 403; web tool unavailable; pinned public provider types and implementation read instead",
+    "error": "HTTP Error 403: Forbidden",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00"
+  },
+  {
+    "url": "https://photon.codes/docs/advanced-kits/imessage/attachments",
+    "attemptedAt": "2026-09-09T03:04:35.676631+00:00",
+    "version": "unversioned documentation; installed 12.8.0 declarations authoritative",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/",
+    "limitations": "Supplementary documentation; no live verification.",
+    "readStatus": "read via web tool; direct HTTP returned 403",
+    "error": "HTTP Error 403: Forbidden",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "readNotes": "Advanced primary/companion streams, metadata and upload shapes",
+    "hashLimitation": "Web tool text has no authoritative raw-body hash."
+  },
+  {
+    "url": "https://photon.codes/docs/utilities/heif2jpeg",
+    "attemptedAt": "2026-09-09T03:04:36.065894+00:00",
+    "version": "unversioned documentation; installed 12.8.0 declarations authoritative",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/",
+    "limitations": "Supplementary documentation; no live verification.",
+    "readStatus": "read via web tool; direct HTTP returned 403",
+    "error": "HTTP Error 403: Forbidden",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "readNotes": "HEIF conversion reference inspected; no conversion feature added",
+    "hashLimitation": "Web tool text has no authoritative raw-body hash."
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/attachments.md",
+    "attemptedAt": "2026-09-09T03:04:36.073832+00:00",
+    "version": "unversioned documentation; installed 12.8.0 declarations authoritative",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/",
+    "limitations": "Supplementary documentation; no live verification.",
+    "readStatus": "checked individually: direct HTTP 403; web tool unavailable",
+    "error": "HTTP Error 403: Forbidden",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/voice.md",
+    "attemptedAt": "2026-09-09T03:04:36.073958+00:00",
+    "version": "unversioned documentation; installed 12.8.0 declarations authoritative",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/",
+    "limitations": "Supplementary documentation; no live verification.",
+    "readStatus": "checked individually: direct HTTP 403; web tool unavailable",
+    "error": "HTTP Error 403: Forbidden",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/contacts.md",
+    "attemptedAt": "2026-09-09T03:04:36.074066+00:00",
+    "version": "unversioned documentation; installed 12.8.0 declarations authoritative",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/",
+    "limitations": "Supplementary documentation; no live verification.",
+    "readStatus": "checked individually: direct HTTP 403; web tool unavailable",
+    "error": "HTTP Error 403: Forbidden",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/fetching-attachments.md",
+    "attemptedAt": "2026-09-09T03:04:36.074168+00:00",
+    "version": "unversioned documentation; installed 12.8.0 declarations authoritative",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/",
+    "limitations": "Supplementary documentation; no live verification.",
+    "readStatus": "checked individually: direct HTTP 403; web tool unavailable",
+    "error": "HTTP Error 403: Forbidden",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00"
+  },
+  {
+    "url": "https://photon.codes/docs/advanced-kits/imessage/attachments.md",
+    "attemptedAt": "2026-09-09T03:04:36.078021+00:00",
+    "version": "unversioned documentation; installed 12.8.0 declarations authoritative",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/",
+    "limitations": "Supplementary documentation; no live verification.",
+    "readStatus": "checked individually: direct HTTP 403; web tool unavailable",
+    "error": "HTTP Error 403: Forbidden",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00"
+  },
+  {
+    "url": "https://photon.codes/docs/utilities/heif2jpeg.md",
+    "attemptedAt": "2026-09-09T03:04:36.185775+00:00",
+    "version": "unversioned documentation; installed 12.8.0 declarations authoritative",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/",
+    "limitations": "Supplementary documentation; no live verification.",
+    "readStatus": "checked individually: direct HTTP 403; web tool unavailable",
+    "error": "HTTP Error 403: Forbidden",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00"
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts",
+    "attemptedAt": "2026-09-09T03:04:36.193795+00:00",
+    "version": "unversioned documentation; installed 12.8.0 declarations authoritative",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/",
+    "limitations": "Supplementary documentation; no live verification.",
+    "status": 200,
+    "finalUrl": "https://github.com/photon-hq/spectrum-ts",
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "5c5917f9d122b819974fb3d7cc0fc6a5127a69c6d6a0f79189e806baf8b27abe",
+    "bytes": 326102,
+    "readStatus": "repository overview inspected",
+    "capture": "/tmp/wt04-source-reads/13",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "commit": "ff44053f821fcffb967797d0a204d8bfebae91c3",
+    "pinnedTagCommit": "938b0f86abbb998e2f36e5ef0f09b415e9913fd7"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/attachments-and-voice.md",
+    "attemptedAt": "2026-09-09T03:04:36.194140+00:00",
+    "version": "unversioned documentation; installed 12.8.0 declarations authoritative",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/",
+    "limitations": "Supplementary documentation; no live verification.",
+    "status": 200,
+    "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/attachments-and-voice.md",
+    "contentType": "text/plain; charset=utf-8",
+    "sha256": "e9b827340e7599a2cd8495d145c148bf7447a8e1dabfd0b726199d4abc4e956d",
+    "bytes": 1276,
+    "readStatus": "downloaded and read",
+    "capture": "/tmp/wt04-source-reads/14",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "commit": "11f5d755a652fff73b4410559b1c1d7d5f30a522",
+    "commitLimitation": "main ref observed after read; body SHA256 records the exact content read",
+    "requestedUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/content/attachments-and-voice.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/contacts-and-rich-links.md",
+    "attemptedAt": "2026-09-09T03:04:36.194243+00:00",
+    "version": "unversioned documentation; installed 12.8.0 declarations authoritative",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/",
+    "limitations": "Supplementary documentation; no live verification.",
+    "status": 200,
+    "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/contacts-and-rich-links.md",
+    "contentType": "text/plain; charset=utf-8",
+    "sha256": "7a0f1e9f0a386df2c2e945b4880f41d417752255ab6b042c2e49da497cf2225c",
+    "bytes": 1160,
+    "readStatus": "downloaded and read",
+    "capture": "/tmp/wt04-source-reads/15",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "commit": "11f5d755a652fff73b4410559b1c1d7d5f30a522",
+    "commitLimitation": "main ref observed after read; body SHA256 records the exact content read",
+    "requestedUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/content/contacts-and-rich-links.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/advanced/attachments.md",
+    "attemptedAt": "2026-09-09T03:04:36.194334+00:00",
+    "version": "unversioned documentation; installed 12.8.0 declarations authoritative",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/",
+    "limitations": "Supplementary documentation; no live verification.",
+    "status": 200,
+    "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/advanced/attachments.md",
+    "contentType": "text/plain; charset=utf-8",
+    "sha256": "b83072648e25c3ff63d290ad66d57870acb7d6fead03511922042cd7d93e9a43",
+    "bytes": 3817,
+    "readStatus": "downloaded and read",
+    "capture": "/tmp/wt04-source-reads/16",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "commit": "11f5d755a652fff73b4410559b1c1d7d5f30a522",
+    "commitLimitation": "main ref observed after read; body SHA256 records the exact content read",
+    "requestedUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/imessage/advanced/attachments.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/photon-hq/spectrum-ts/main/docs/content/attachments.mdx.vel",
+    "attemptedAt": "2026-09-09T03:04:36.194420+00:00",
+    "version": "unversioned documentation; installed 12.8.0 declarations authoritative",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/",
+    "limitations": "Supplementary documentation; no live verification.",
+    "status": 200,
+    "finalUrl": "https://raw.githubusercontent.com/photon-hq/spectrum-ts/main/docs/content/attachments.mdx.vel",
+    "contentType": "text/plain; charset=utf-8",
+    "sha256": "e5b83a55deb3b562db5a9379bfd08071b123e9b34633db71ac16c916709fd51a",
+    "bytes": 1703,
+    "readStatus": "downloaded and read",
+    "capture": "/tmp/wt04-source-reads/17",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "commit": "ff44053f821fcffb967797d0a204d8bfebae91c3",
+    "commitLimitation": "main ref observed after read; body SHA256 records the exact content read",
+    "requestedUrl": "https://github.com/photon-hq/spectrum-ts/blob/main/docs/content/attachments.mdx.vel"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/photon-hq/spectrum-ts/main/docs/content/contacts.mdx.vel",
+    "attemptedAt": "2026-09-09T03:04:36.279520+00:00",
+    "version": "unversioned documentation; installed 12.8.0 declarations authoritative",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/",
+    "limitations": "Supplementary documentation; no live verification.",
+    "status": 200,
+    "finalUrl": "https://raw.githubusercontent.com/photon-hq/spectrum-ts/main/docs/content/contacts.mdx.vel",
+    "contentType": "text/plain; charset=utf-8",
+    "sha256": "d2481036ea6f88f590a5c992265910533a8f88247ebd251275dca05b49473c79",
+    "bytes": 3176,
+    "readStatus": "downloaded and read",
+    "capture": "/tmp/wt04-source-reads/18",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "commit": "ff44053f821fcffb967797d0a204d8bfebae91c3",
+    "commitLimitation": "main ref observed after read; body SHA256 records the exact content read",
+    "requestedUrl": "https://github.com/photon-hq/spectrum-ts/blob/main/docs/content/contacts.mdx.vel"
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts/tree/938b0f86abbb998e2f36e5ef0f09b415e9913fd7",
+    "localFile": "node_modules/spectrum-ts/package.json",
+    "readStatus": "relevant exported declarations and implementation inspected",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "version": "12.8.0",
+    "sha256": "69248e5615aecbe5844d9cc94323aa2a93391e76ac322cf82477c75df95dbcc2",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/module.test.ts",
+    "limitations": "Installed artifact is authoritative; compiled SDK calls/builders tested, provider network not exercised."
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts/tree/938b0f86abbb998e2f36e5ef0f09b415e9913fd7",
+    "localFile": "node_modules/@spectrum-ts/core/package.json",
+    "readStatus": "relevant exported declarations and implementation inspected",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "version": "12.8.0",
+    "sha256": "bf239b4f2bea2a1fce09ba09c8c4a3570014b2fa8842ed43101d8b88b81d34a4",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/module.test.ts",
+    "limitations": "Installed artifact is authoritative; compiled SDK calls/builders tested, provider network not exercised."
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts/tree/938b0f86abbb998e2f36e5ef0f09b415e9913fd7",
+    "localFile": "node_modules/@spectrum-ts/core/dist/index.d.ts",
+    "readStatus": "relevant exported declarations and implementation inspected",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "version": "12.8.0",
+    "sha256": "651577159733a34e4243b86b80bfd088f9d82281db9ed0f11e1e0a2db769676a",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/module.test.ts",
+    "limitations": "Installed artifact is authoritative; compiled SDK calls/builders tested, provider network not exercised."
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts/tree/938b0f86abbb998e2f36e5ef0f09b415e9913fd7",
+    "localFile": "node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts",
+    "readStatus": "relevant exported declarations and implementation inspected",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "version": "12.8.0",
+    "sha256": "c452a8fc2ffbab03c6e548ce13dcf28f841ec7c9331513c65975e12f869ad954",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/module.test.ts",
+    "limitations": "Installed artifact is authoritative; compiled SDK calls/builders tested, provider network not exercised."
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts/tree/938b0f86abbb998e2f36e5ef0f09b415e9913fd7",
+    "localFile": "node_modules/@spectrum-ts/core/dist/index.js",
+    "readStatus": "relevant exported declarations and implementation inspected",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "version": "12.8.0",
+    "sha256": "3c0aee84d815ed67827ff64016e182669528714842036f0b4fca95527a5761e6",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/module.test.ts",
+    "limitations": "Installed artifact is authoritative; compiled SDK calls/builders tested, provider network not exercised."
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts/tree/938b0f86abbb998e2f36e5ef0f09b415e9913fd7",
+    "localFile": "node_modules/@spectrum-ts/imessage/package.json",
+    "readStatus": "relevant exported declarations and implementation inspected",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "version": "12.8.0",
+    "sha256": "4da6358fdaa9d40e97598f0882bf9c719c38469ec955dd129958002e1ec20e81",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/module.test.ts",
+    "limitations": "Installed artifact is authoritative; compiled SDK calls/builders tested, provider network not exercised."
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts/tree/938b0f86abbb998e2f36e5ef0f09b415e9913fd7",
+    "localFile": "node_modules/@spectrum-ts/imessage/dist/index.d.ts",
+    "readStatus": "relevant exported declarations and implementation inspected",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "version": "12.8.0",
+    "sha256": "6a2278d14fd42a5603675b046fd1c8ad5c584da760e60b621f74059bf7dc3aa0",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/module.test.ts",
+    "limitations": "Installed artifact is authoritative; compiled SDK calls/builders tested, provider network not exercised."
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts/tree/938b0f86abbb998e2f36e5ef0f09b415e9913fd7",
+    "localFile": "node_modules/@spectrum-ts/imessage/dist/index.js",
+    "readStatus": "relevant exported declarations and implementation inspected",
+    "recordedAt": "2026-09-09T03:25:39.120533+00:00",
+    "version": "12.8.0",
+    "sha256": "2f7e13c432ad4e84f96b76eb3d59062d70d3d7e46737a7e15198a47ecda6ef24",
+    "operations": [
+      "attachment.send",
+      "attachment.fetch",
+      "voice.send",
+      "contact.send"
+    ],
+    "tests": "tests/lanes/wt-04/module.test.ts",
+    "limitations": "Installed artifact is authoritative; compiled SDK calls/builders tested, provider network not exercised."
+  }
+]

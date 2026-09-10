@@ -1,0 +1,30 @@
+
+> grok-bot-cli@0.2.2 photon:check
+> npm run check --workspace=@grokbot/photon-features
+
+
+> @grokbot/photon-features@0.1.0 check
+> npm run build && node scripts/generate-contracts.mjs --check
+
+
+> @grokbot/photon-features@0.1.0 build
+> tsc -p tsconfig.json
+
+tests/e2e/card-restart.test.ts(77,59): error TS2322: Type '{ permissions: string[]; version: 1; contextId: string; principalId: string; scope: { projectId: string; provider: "imessage"; accountId: string; lineId: string; spaceId: string; }; taskId: string; generation: number; issuedAt: number; expiresAt: number; revokedAt: number | null; }' is not assignable to type '{ version: 1; contextId: string; principalId: string; scope: { projectId: string; provider: "imessage"; accountId: string; lineId: string; spaceId: string; }; taskId: string; generation: number; permissions: ("typing.begin" | ... 42 more ... | "custom.send")[]; issuedAt: number; expiresAt: number; revokedAt: number ...'.
+  Types of property 'permissions' are incompatible.
+    Type 'string[]' is not assignable to type '("typing.begin" | "typing.end" | "text.send" | "text.stream" | "markdown.send" | "link.send" | "content.group" | "content.compose" | "message.get" | "message.reply" | "message.react" | ... 32 more ... | "custom.send")[]'.
+      Type 'string' is not assignable to type '"typing.begin" | "typing.end" | "text.send" | "text.stream" | "markdown.send" | "link.send" | "content.group" | "content.compose" | "message.get" | "message.reply" | "message.react" | ... 32 more ... | "custom.send"'.
+npm error Lifecycle script `build` failed with error:
+npm error code 2
+npm error path /private/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt09-snapshot-RXNgsW/packages/photon-features
+npm error workspace @grokbot/photon-features@0.1.0
+npm error location /private/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt09-snapshot-RXNgsW/packages/photon-features
+npm error command failed
+npm error command sh -c tsc -p tsconfig.json
+npm error Lifecycle script `check` failed with error:
+npm error code 2
+npm error path /private/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt09-snapshot-RXNgsW/packages/photon-features
+npm error workspace @grokbot/photon-features@0.1.0
+npm error location /private/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt09-snapshot-RXNgsW/packages/photon-features
+npm error command failed
+npm error command sh -c npm run build && node scripts/generate-contracts.mjs --check

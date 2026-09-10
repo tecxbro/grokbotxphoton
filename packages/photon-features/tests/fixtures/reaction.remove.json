@@ -1,0 +1,30 @@
+{
+  "valid": {
+    "version": 1,
+    "idempotencyKey": "request-reaction.remove",
+    "contextId": "context-1",
+    "operation": "reaction.remove",
+    "arguments": {
+      "reaction": {
+        "version": 1,
+        "kind": "reaction",
+        "id": "reaction-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        },
+        "messageId": "message-1"
+      }
+    }
+  },
+  "rejected": {
+    "version": 1,
+    "idempotencyKey": "request-reaction.remove",
+    "contextId": "context-1",
+    "operation": "reaction.remove",
+    "arguments": {}
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "url": "https://photon.codes/docs/llms.txt",
+      "finalUrl": "https://photon.codes/docs/llms.txt",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:07:09.669Z",
+      "contentType": "text/plain; charset=utf-8",
+      "identity": "Photon",
+      "sha256": "0e9cff75bdffdb8e625583fdd88ccd7317d027fa3f9a74cbe3cebfa256c0c033",
+      "snapshot": "docs/worktrees/wt-05/references/official-_docs_llms.txt",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/content/polls.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/content/polls.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:07:10.596Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Polls",
+      "sha256": "e57ffa8265660ccbe175e92f46862af905e9129a10be598c0cc851d6643a61b9",
+      "snapshot": "docs/worktrees/wt-05/references/official-_docs_spectrum-ts_content_polls.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/messages.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/messages.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:07:10.596Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Messages",
+      "sha256": "0da88e0f2336f1f0757dc7359dd702ce9fc2d3e586e523871244251f97c7d39b",
+      "snapshot": "docs/worktrees/wt-05/references/official-_docs_spectrum-ts_messages.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/imessage/polls.md",
+      "finalUrl": "https://photon.codes/docs/advanced-kits/imessage/polls.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:07:10.597Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Polls",
+      "sha256": "6170945b2e0f8f36c429085d1e2e01b89830e5304b357c0912b70e723b95c481",
+      "snapshot": "docs/worktrees/wt-05/references/official-_docs_advanced-kits_imessage_polls.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/imessage/events.md",
+      "finalUrl": "https://photon.codes/docs/advanced-kits/imessage/events.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:07:10.598Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Events",
+      "sha256": "ffbfaec5c8146c923a3df23dc84ab0df607a5f78beb4faf5675f2cac17df58f9",
+      "snapshot": "docs/worktrees/wt-05/references/official-_docs_advanced-kits_imessage_events.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/imessage/error-handling.md",
+      "finalUrl": "https://photon.codes/docs/advanced-kits/imessage/error-handling.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:07:10.600Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Error Handling",
+      "sha256": "ea68f162fd7ed4d4ea24ff7223754bdc7e8941bb148fc247404d7821f492a3b9",
+      "snapshot": "docs/worktrees/wt-05/references/official-_docs_advanced-kits_imessage_error-handling.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/webhooks/events.md",
+      "finalUrl": "https://photon.codes/docs/webhooks/events.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:07:10.601Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Events",
+      "sha256": "7aa55c7ecee4ebe392f314302205d8158a20550a5162e68574bf3dd9f0620853",
+      "snapshot": "docs/worktrees/wt-05/references/official-_docs_webhooks_events.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/webhooks/delivery.md",
+      "finalUrl": "https://photon.codes/docs/webhooks/delivery.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:07:10.602Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Delivery and retries",
+      "sha256": "6e8105b77cd5c763586f0cd869a76ad2dc90b395ce331feb6505ebf177d23e6b",
+      "snapshot": "docs/worktrees/wt-05/references/official-_docs_webhooks_delivery.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/best-practices/recovery-and-state.md",
+      "finalUrl": "https://photon.codes/docs/best-practices/recovery-and-state.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:07:10.603Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Recovery and state",
+      "sha256": "65944f4b202e0142388403aff39b3135b3dca7ab87035cdc36af22713716a9f0",
+      "snapshot": "docs/worktrees/wt-05/references/official-_docs_best-practices_recovery-and-state.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/SKILL.md",
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/SKILL.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:07:10.943Z",
+      "contentType": "text/plain; charset=utf-8",
+      "identity": "Spectrum",
+      "sha256": "0a2f328fe6da4d202497e8bb859625de06af23cce884d1639dd1e8f3cb737de8",
+      "snapshot": "docs/worktrees/wt-05/references/skill-_tecxbro_photon-skills_main_skills_spectrum_SKILL.md",
+      "failure": null,
+      "classification": "skill"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/SKILL.md",
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/SKILL.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:07:10.944Z",
+      "contentType": "text/plain; charset=utf-8",
+      "identity": "iMessage",
+      "sha256": "218af7703b8d12537ca8c6077c1b8b5d9865ccc2202fc7eaef2d883651a59dbb",
+      "snapshot": "docs/worktrees/wt-05/references/skill-_tecxbro_photon-skills_main_skills_imessage_SKILL.md",
+      "failure": null,
+      "classification": "skill"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/polls-groups-and-custom.md",
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/polls-groups-and-custom.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:07:10.944Z",
+      "contentType": "text/plain; charset=utf-8",
+      "identity": "Spectrum polls, groups, and custom content",
+      "sha256": "c185c67526664c24224d63b79975115ed4bda5f6a5f021b6b2f3a3c592a2ebb7",
+      "snapshot": "docs/worktrees/wt-05/references/skill-_tecxbro_photon-skills_main_skills_spectrum_content_polls-groups-and-custom.md",
+      "failure": null,
+      "classification": "skill"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/advanced/polls.md",
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/advanced/polls.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:07:10.944Z",
+      "contentType": "text/plain; charset=utf-8",
+      "identity": "Advanced iMessage polls",
+      "sha256": "50305b954d4f478012d34297b9094390ed8ecfcdcc44c96a70fb6d45d25e91d1",
+      "snapshot": "docs/worktrees/wt-05/references/skill-_tecxbro_photon-skills_main_skills_imessage_advanced_polls.md",
+      "failure": null,
+      "classification": "skill"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/advanced/events.md",
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/advanced/events.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:07:10.945Z",
+      "contentType": "text/plain; charset=utf-8",
+      "identity": "Advanced iMessage events and recovery",
+      "sha256": "a425253f21fd4045ef978436cb68fc30fbd94f71287fa5e87e329573da21feb5",
+      "snapshot": "docs/worktrees/wt-05/references/skill-_tecxbro_photon-skills_main_skills_imessage_advanced_events.md",
+      "failure": null,
+      "classification": "skill"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/capability-semantics.md",
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/capability-semantics.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:07:10.945Z",
+      "contentType": "text/plain; charset=utf-8",
+      "identity": "Capability and fallback semantics",
+      "sha256": "7451fec93c937bf92238e916f6e811ce4e41ddd5459a2211950b0efdda471fe5",
+      "snapshot": "docs/worktrees/wt-05/references/skill-_tecxbro_photon-skills_main_skills_spectrum_capability-semantics.md",
+      "failure": null,
+      "classification": "skill"
+    }
+  ],
+  "localSkills": [
+    {
+      "path": "/Users/darshan/.codex/skills/spectrum/SKILL.md",
+      "sha256": "0a2f328fe6da4d202497e8bb859625de06af23cce884d1639dd1e8f3cb737de8"
+    },
+    {
+      "path": "/Users/darshan/.codex/skills/imessage/SKILL.md",
+      "sha256": "218af7703b8d12537ca8c6077c1b8b5d9865ccc2202fc7eaef2d883651a59dbb"
+    },
+    {
+      "path": "/Users/darshan/.codex/skills/spectrum/content/polls-groups-and-custom.md",
+      "sha256": "c185c67526664c24224d63b79975115ed4bda5f6a5f021b6b2f3a3c592a2ebb7"
+    },
+    {
+      "path": "/Users/darshan/.codex/skills/imessage/advanced/polls.md",
+      "sha256": "50305b954d4f478012d34297b9094390ed8ecfcdcc44c96a70fb6d45d25e91d1"
+    },
+    {
+      "path": "/Users/darshan/.codex/skills/imessage/advanced/events.md",
+      "sha256": "a425253f21fd4045ef978436cb68fc30fbd94f71287fa5e87e329573da21feb5"
+    },
+    {
+      "path": "/Users/darshan/.codex/skills/spectrum/capability-semantics.md",
+      "sha256": "7451fec93c937bf92238e916f6e811ce4e41ddd5459a2211950b0efdda471fe5"
+    }
+  ],
+  "sdk": {
+    "versions": {
+      "spectrum-ts": "12.8.0",
+      "@spectrum-ts/core": "12.8.0",
+      "@spectrum-ts/imessage": "12.8.0",
+      "@photon-ai/advanced-imessage": "2.1.0"
+    },
+    "typescript": "5.9.3",
+    "hashes": [
+      {
+        "path": "package-lock.json",
+        "sha256": "6aff930eec3f42597185e7f504f66e66b3ea1684126099ad3260d31c16111b88"
+      },
+      {
+        "path": "packages/photon-features/package.json",
+        "sha256": "14dfe2e710ede0b2ae40e486eaea75c770ec78d2383ad36b37b263f732fe7006"
+      },
+      {
+        "path": "node_modules/spectrum-ts/dist/index.d.ts",
+        "sha256": "ede89b7bc2b923b70c83245525ccb59f3e122f3452be14e88a9ba39aef143242"
+      },
+      {
+        "path": "node_modules/@spectrum-ts/core/dist/index.d.ts",
+        "sha256": "651577159733a34e4243b86b80bfd088f9d82281db9ed0f11e1e0a2db769676a"
+      },
+      {
+        "path": "node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts",
+        "sha256": "c452a8fc2ffbab03c6e548ce13dcf28f841ec7c9331513c65975e12f869ad954"
+      },
+      {
+        "path": "node_modules/@spectrum-ts/imessage/dist/index.d.ts",
+        "sha256": "6a2278d14fd42a5603675b046fd1c8ad5c584da760e60b621f74059bf7dc3aa0"
+      },
+      {
+        "path": "node_modules/@spectrum-ts/imessage/dist/index.js",
+        "sha256": "2f7e13c432ad4e84f96b76eb3d59062d70d3d7e46737a7e15198a47ecda6ef24"
+      },
+      {
+        "path": "node_modules/@photon-ai/advanced-imessage/dist/index.d.ts",
+        "sha256": "bf8f15350cb7037e747f13d6dc2091a3994045f1c6e76dd5300c3dc6a23903bc"
+      },
+      {
+        "path": "node_modules/@photon-ai/advanced-imessage/dist/http.d.ts",
+        "sha256": "b8f4755e076429d400e49d1025e04a1c3ca55c73169dfcaedbd1eca7a7fa81b1"
+      },
+      {
+        "path": "node_modules/@photon-ai/advanced-imessage/dist/groups-CMgks3Ll.d.ts",
+        "sha256": "2a07e49a8470c954adca2529475c67e7b748c650f3d829a75660d950792da8cd"
+      }
+    ]
+  }
+}

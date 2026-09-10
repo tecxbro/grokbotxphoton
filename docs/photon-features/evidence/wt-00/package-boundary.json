@@ -1,0 +1,7 @@
+{
+  "command": "npm pack --workspace=@grokbot/photon-features --dry-run --json --ignore-scripts",
+  "exitCode": 0,
+  "files": 94,
+  "testFilesIncluded": false,
+  "published": false
+}

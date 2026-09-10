@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "number",
+      "const": 1
+    },
+    "contextId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+    },
+    "principalId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+    },
+    "scope": {
+      "type": "object",
+      "properties": {
+        "projectId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+        },
+        "provider": {
+          "type": "string",
+          "const": "imessage"
+        },
+        "accountId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+        },
+        "lineId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+        },
+        "spaceId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+        }
+      },
+      "required": [
+        "projectId",
+        "provider",
+        "accountId",
+        "lineId",
+        "spaceId"
+      ],
+      "additionalProperties": false
+    },
+    "taskId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+    },
+    "generation": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "permissions": {
+      "maxItems": 44,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "typing.begin",
+          "typing.end",
+          "text.send",
+          "text.stream",
+          "markdown.send",
+          "link.send",
+          "content.group",
+          "content.compose",
+          "message.get",
+          "message.reply",
+          "message.react",
+          "reaction.remove",
+          "message.edit",
+          "message.unsend",
+          "message.markRead",
+          "attachment.send",
+          "attachment.fetch",
+          "voice.send",
+          "contact.send",
+          "poll.create",
+          "poll.get",
+          "poll.vote",
+          "poll.unvote",
+          "poll.addOption",
+          "app.send",
+          "app.sendCustomized",
+          "app.update",
+          "space.get",
+          "space.create",
+          "space.getName",
+          "space.rename",
+          "space.getMembers",
+          "space.addMembers",
+          "space.removeMembers",
+          "space.leave",
+          "space.getAvatar",
+          "space.setAvatar",
+          "space.clearAvatar",
+          "space.setBackground",
+          "space.clearBackground",
+          "account.shareContact",
+          "effect.send",
+          "metadata.get",
+          "custom.send"
+        ]
+      }
+    },
+    "issuedAt": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "expiresAt": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "revokedAt": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "version",
+    "contextId",
+    "principalId",
+    "scope",
+    "taskId",
+    "generation",
+    "permissions",
+    "issuedAt",
+    "expiresAt",
+    "revokedAt"
+  ],
+  "additionalProperties": false
+}

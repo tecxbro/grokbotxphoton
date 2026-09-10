@@ -1,0 +1,5 @@
+{
+  "extends": "../../../tsconfig.json",
+  "include": ["../../../src/features/polls/**/*.ts", "./**/*.ts", "../wt-00/**/*.ts", "../../../examples/wt-05/**/*.ts"],
+  "exclude": []
+}

@@ -1,0 +1,52 @@
+{
+  "valid": {
+    "version": 1,
+    "idempotencyKey": "request-poll.create",
+    "contextId": "context-1",
+    "operation": "poll.create",
+    "arguments": {
+      "space": {
+        "version": 1,
+        "kind": "space",
+        "id": "space-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        }
+      },
+      "question": "which?",
+      "options": [
+        {
+          "key": "one",
+          "label": "one"
+        },
+        {
+          "key": "two",
+          "label": "two"
+        }
+      ]
+    }
+  },
+  "rejected": {
+    "version": 1,
+    "idempotencyKey": "request-poll.create",
+    "contextId": "context-1",
+    "operation": "poll.create",
+    "arguments": {
+      "question": "which?",
+      "options": [
+        {
+          "key": "one",
+          "label": "one"
+        },
+        {
+          "key": "two",
+          "label": "two"
+        }
+      ]
+    }
+  }
+}

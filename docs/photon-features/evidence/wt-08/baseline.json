@@ -1,0 +1,45 @@
+{
+  "recordedAt": "2026-09-09T03:26:22.324682+00:00",
+  "repository": "https://github.com/tecxbro/grokbotonimessage",
+  "path": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+  "branch": "main",
+  "HEAD": "57e40736be8a59047b776654c766fbe8bfd10c9e",
+  "F0Commit": "57e40736be8a59047b776654c766fbe8bfd10c9e",
+  "F0Digest": "e0f7779bc9ca3d45696e9b4e24e8579d922c8d2d7d4323c821202d8f599acbf8",
+  "comparisonCommit": "24468391b57f028b4b881ddbf71efab3a49a6f73",
+  "remoteEvidence": "24468391b57f028b4b881ddbf71efab3a49a6f73\trefs/heads/main",
+  "divergence": {
+    "ahead": 1,
+    "behind": 0
+  },
+  "worktreeChanges": "none created/switched/reset/rebased",
+  "initialDirtyState": {
+    "tracked": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "untracked": [
+      "agent.md",
+      "architecthure.md",
+      "docs/photon-features/evidence/wt-01/",
+      "docs/photon-features/evidence/wt-02/",
+      "docs/photon-features/evidence/wt-03/",
+      "docs/photon-features/evidence/wt-04/",
+      "docs/photon-features/evidence/wt-05/",
+      "packages/photon-features/src/adapters/state/",
+      "packages/photon-features/src/adapters/transport/",
+      "packages/photon-features/src/features/",
+      "packages/photon-features/src/runtime/"
+    ]
+  },
+  "finalDirtyState": "M package-lock.json\n M package.json\n?? agent.md\n?? architecthure.md\n?? docs/photon-features/evidence/wt-01/\n?? docs/photon-features/evidence/wt-02/\n?? docs/photon-features/evidence/wt-03/\n?? docs/photon-features/evidence/wt-04/\n?? docs/photon-features/evidence/wt-05/\n?? docs/photon-features/evidence/wt-06/\n?? docs/photon-features/evidence/wt-07/\n?? docs/photon-features/evidence/wt-08/\n?? docs/photon-features/evidence/wt-09/\n?? docs/photon-features/requests/wt-01/\n?? docs/photon-features/requests/wt-03/\n?? docs/photon-features/requests/wt-04/\n?? docs/photon-features/requests/wt-05/\n?? docs/photon-features/requests/wt-06/\n?? docs/photon-features/requests/wt-08/\n?? packages/photon-features/INSTALL.md\n?? packages/photon-features/README.md\n?? packages/photon-features/SKILL.md\n?? packages/photon-features/examples/wt-01/\n?? packages/photon-features/examples/wt-02/\n?? packages/photon-features/examples/wt-03/\n?? packages/photon-features/examples/wt-04/\n?? packages/photon-features/examples/wt-05/\n?? packages/photon-features/examples/wt-06/\n?? packages/photon-features/examples/wt-07/\n?? packages/photon-features/examples/wt-08/\n?? packages/photon-features/scripts/generate-skill.mjs\n?? packages/photon-features/scripts/install.mjs\n?? packages/photon-features/scripts/package.mjs\n?? packages/photon-features/scripts/smoke-test.mjs\n?? packages/photon-features/src/adapters/state/\n?? packages/photon-features/src/adapters/transport/\n?? packages/photon-features/src/cli/\n?? packages/photon-features/src/features/\n?? packages/photon-features/src/runtime/\n?? packages/photon-features/tests/e2e/\n?? packages/photon-features/tests/lanes/wt-01/\n?? packages/photon-features/tests/lanes/wt-02/\n?? packages/photon-features/tests/lanes/wt-03/\n?? packages/photon-features/tests/lanes/wt-04/\n?? packages/photon-features/tests/lanes/wt-05/\n?? packages/photon-features/tests/lanes/wt-06/\n?? packages/photon-features/tests/lanes/wt-07/\n?? packages/photon-features/tests/lanes/wt-08/\n?? packages/photon-features/tests/lanes/wt-09/\n?? packages/photon-features/tests/live/\n?? packages/photon-features/tests/security/",
+  "status": {
+    "wt08Built": true,
+    "integratedRuntime": false,
+    "productionInstalledActivated": false,
+    "liveVerified": false,
+    "finalReleaseArtifactCreated": false,
+    "fixtureInstallsAndRollbackTested": true
+  },
+  "scope": "Only WT-08-owned source/docs/examples/tests/scripts written; no shared metadata or other lanes edited."
+}

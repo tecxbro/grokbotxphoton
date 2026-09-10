@@ -1,0 +1,1291 @@
+[
+  {
+    "url": "https://github.com/tecxbro/grokbotonimessage",
+    "retrievedAt": "2026-09-09T03:04:23.774459+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "retrieved-not-yet-reviewed",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "ee9a4b7110f8fcbaf313c97c5a9c69cb1b6529264e197b876cefa1c05c249344",
+    "capture": "/tmp/wt03-sources/ee9a4b7110f8fcbaf313c97c5a9c69cb1b6529264e197b876cefa1c05c249344.txt"
+  },
+  {
+    "url": "https://photon.codes/docs/llms.txt",
+    "retrievedAt": "2026-09-09T03:04:23.774665+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden",
+    "fallbackRead": {
+      "method": "web.run open",
+      "status": "reviewed-relevant-excerpts",
+      "retrievedAt": "2026-09-09T03:21:59.666441+00:00",
+      "hash": null,
+      "note": "Direct HTTP attempt returned 403; web retrieval supplied readable content."
+    }
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content",
+    "retrievedAt": "2026-09-09T03:04:23.774737+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/text",
+    "retrievedAt": "2026-09-09T03:04:23.774778+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden",
+    "fallbackRead": {
+      "method": "web.run open",
+      "status": "reviewed-relevant-excerpts",
+      "retrievedAt": "2026-09-09T03:21:59.666441+00:00",
+      "hash": null,
+      "note": "Direct HTTP attempt returned 403; web retrieval supplied readable content."
+    }
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/markdown",
+    "retrievedAt": "2026-09-09T03:04:23.774824+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "markdown.send"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/rich-links",
+    "retrievedAt": "2026-09-09T03:04:23.774857+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "link.send"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden",
+    "fallbackRead": {
+      "method": "web.run open",
+      "status": "reviewed-relevant-excerpts",
+      "retrievedAt": "2026-09-09T03:21:59.666441+00:00",
+      "hash": null,
+      "note": "Direct HTTP attempt returned 403; web retrieval supplied readable content."
+    }
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/groups",
+    "retrievedAt": "2026-09-09T03:04:23.774942+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "content.group"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden",
+    "fallbackRead": {
+      "method": "web.run open",
+      "status": "reviewed-relevant-excerpts",
+      "retrievedAt": "2026-09-09T03:21:59.666441+00:00",
+      "hash": null,
+      "note": "Direct HTTP attempt returned 403; web retrieval supplied readable content."
+    }
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/composing-content",
+    "retrievedAt": "2026-09-09T03:04:23.774974+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "content.compose",
+      "content.group",
+      "text.stream"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden",
+    "fallbackRead": {
+      "method": "web.run open",
+      "status": "reviewed-relevant-excerpts",
+      "retrievedAt": "2026-09-09T03:21:59.666441+00:00",
+      "hash": null,
+      "note": "Direct HTTP attempt returned 403; web retrieval supplied readable content."
+    }
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/replies",
+    "retrievedAt": "2026-09-09T03:04:23.775006+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "message.reply",
+      "message.react",
+      "reaction.remove"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/edits",
+    "retrievedAt": "2026-09-09T03:04:23.775042+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "message.edit"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden",
+    "fallbackRead": {
+      "method": "web.run open",
+      "status": "reviewed-relevant-excerpts",
+      "retrievedAt": "2026-09-09T03:21:59.666441+00:00",
+      "hash": null,
+      "note": "Direct HTTP attempt returned 403; web retrieval supplied readable content."
+    }
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/unsend",
+    "retrievedAt": "2026-09-09T03:04:24.264574+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "message.unsend",
+      "reaction.remove"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/read",
+    "retrievedAt": "2026-09-09T03:04:24.268914+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden",
+    "fallbackRead": {
+      "method": "web.run open",
+      "status": "reviewed-relevant-excerpts",
+      "retrievedAt": "2026-09-09T03:21:59.666441+00:00",
+      "hash": null,
+      "note": "Direct HTTP attempt returned 403; web retrieval supplied readable content."
+    }
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/reactions-and-replies",
+    "retrievedAt": "2026-09-09T03:04:24.284187+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "message.reply",
+      "message.react",
+      "reaction.remove"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden",
+    "fallbackRead": {
+      "method": "web.run open",
+      "status": "reviewed-relevant-excerpts",
+      "retrievedAt": "2026-09-09T03:21:59.666441+00:00",
+      "hash": null,
+      "note": "Direct HTTP attempt returned 403; web retrieval supplied readable content."
+    }
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/messages",
+    "retrievedAt": "2026-09-09T03:04:24.309392+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/tapback-reactions",
+    "retrievedAt": "2026-09-09T03:04:24.309549+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "message.reply",
+      "message.react",
+      "reaction.remove"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/inbound-read-receipts",
+    "retrievedAt": "2026-09-09T03:04:24.313488+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/advanced-kits/imessage/messages",
+    "retrievedAt": "2026-09-09T03:04:24.313571+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts",
+    "retrievedAt": "2026-09-09T03:04:24.322681+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "retrieved-not-yet-reviewed",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "161dc697da99eecd30e25727d3d527a3a7eb61ca7acea3de7e4a22901a386b82",
+    "capture": "/tmp/wt03-sources/161dc697da99eecd30e25727d3d527a3a7eb61ca7acea3de7e4a22901a386b82.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/content.md",
+    "retrievedAt": "2026-09-09T03:04:24.324149+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "retrieved-not-yet-reviewed",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "3358b6c103528f7fdb7ac7158e0ab4c3eea7db65036846eb87a4a23fda3921ad",
+    "capture": "/tmp/wt03-sources/3358b6c103528f7fdb7ac7158e0ab4c3eea7db65036846eb87a4a23fda3921ad.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/content/text-and-markdown.md",
+    "retrievedAt": "2026-09-09T03:04:24.324230+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "retrieved-not-yet-reviewed",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "a5d3ca14d0467a490ca59c434ca530d34c4d44f43ebdbb62fab870b9d10e7f83",
+    "capture": "/tmp/wt03-sources/a5d3ca14d0467a490ca59c434ca530d34c4d44f43ebdbb62fab870b9d10e7f83.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/content/contacts-and-rich-links.md",
+    "retrievedAt": "2026-09-09T03:04:24.352776+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "retrieved-not-yet-reviewed",
+    "operations": [
+      "link.send"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "ad48b0ab32a1a0b0f623ef64e25323937a294593959dbfdf39ea3cc15a05b064",
+    "capture": "/tmp/wt03-sources/ad48b0ab32a1a0b0f623ef64e25323937a294593959dbfdf39ea3cc15a05b064.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/content/composing-and-streaming.md",
+    "retrievedAt": "2026-09-09T03:04:24.365943+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "retrieved-not-yet-reviewed",
+    "operations": [
+      "content.compose",
+      "content.group",
+      "text.stream"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "57cd07c14606d56fc38afd8dbd9a35c0cc085f27e3d13762f2fd26981bfbd3de",
+    "capture": "/tmp/wt03-sources/57cd07c14606d56fc38afd8dbd9a35c0cc085f27e3d13762f2fd26981bfbd3de.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/content/replies-edits-and-unsend.md",
+    "retrievedAt": "2026-09-09T03:04:24.464040+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "retrieved-not-yet-reviewed",
+    "operations": [
+      "message.reply",
+      "message.edit",
+      "message.unsend"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "e53719629d25130c1d553e9a1af03904d367fbf68f6496a849c16c931961d6dc",
+    "capture": "/tmp/wt03-sources/e53719629d25130c1d553e9a1af03904d367fbf68f6496a849c16c931961d6dc.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/content/read-and-typing.md",
+    "retrievedAt": "2026-09-09T03:04:24.464346+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "retrieved-not-yet-reviewed",
+    "operations": [
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "8a48e1579b188096f53ebb8df994734d2da960cbf622406ba8e83987aa0c8c54",
+    "capture": "/tmp/wt03-sources/8a48e1579b188096f53ebb8df994734d2da960cbf622406ba8e83987aa0c8c54.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/reactions-and-replies.md",
+    "retrievedAt": "2026-09-09T03:04:24.464480+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "retrieved-not-yet-reviewed",
+    "operations": [
+      "message.reply",
+      "message.react",
+      "reaction.remove"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "8547e10f22ac41a2e06f8927d01574ce2625ee563cbe93d06b7444a53078b4b8",
+    "capture": "/tmp/wt03-sources/8547e10f22ac41a2e06f8927d01574ce2625ee563cbe93d06b7444a53078b4b8.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/imessage/advanced/messages.md",
+    "retrievedAt": "2026-09-09T03:04:24.464540+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "retrieved-not-yet-reviewed",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "ca5e8f47c39f52cb82742490e55186a735d8e9935fd5bdb87a6d7785158b4932",
+    "capture": "/tmp/wt03-sources/ca5e8f47c39f52cb82742490e55186a735d8e9935fd5bdb87a6d7785158b4932.txt"
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts/blob/main/docs/content/composing-content.mdx.vel",
+    "retrievedAt": "2026-09-09T03:04:26.612769+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "retrieved-not-yet-reviewed",
+    "operations": [
+      "content.compose",
+      "content.group",
+      "text.stream"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "13b079b7f8cea348d98a71ed1783ba51c25729752fb31964648ad8dc8bde2499",
+    "capture": "/tmp/wt03-sources/13b079b7f8cea348d98a71ed1783ba51c25729752fb31964648ad8dc8bde2499.txt"
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts/blob/main/docs/content/edits.mdx.vel",
+    "retrievedAt": "2026-09-09T03:04:26.688252+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "retrieved-not-yet-reviewed",
+    "operations": [
+      "message.edit"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "874e21020494aedbfcbf5783cada1a220be312a60196c86d6d855e3a07b6cc24",
+    "capture": "/tmp/wt03-sources/874e21020494aedbfcbf5783cada1a220be312a60196c86d6d855e3a07b6cc24.txt"
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts/blob/main/docs/content/groups.mdx.vel",
+    "retrievedAt": "2026-09-09T03:04:26.731947+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "retrieved-not-yet-reviewed",
+    "operations": [
+      "content.group"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "922d09a18bf22dc52c0c654f1c07f7194f0baae67ae39ad8df50265575a8afe6",
+    "capture": "/tmp/wt03-sources/922d09a18bf22dc52c0c654f1c07f7194f0baae67ae39ad8df50265575a8afe6.txt"
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts/blob/main/docs/content/markdown.mdx.vel",
+    "retrievedAt": "2026-09-09T03:04:26.767628+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "retrieved-not-yet-reviewed",
+    "operations": [
+      "markdown.send"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "aa70a03f2b5cb7378d3a0d905205866657e1570be74882f2f2a28e268ea36061",
+    "capture": "/tmp/wt03-sources/aa70a03f2b5cb7378d3a0d905205866657e1570be74882f2f2a28e268ea36061.txt"
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts/blob/main/docs/content/read.mdx.vel",
+    "retrievedAt": "2026-09-09T03:04:26.771063+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "retrieved-not-yet-reviewed",
+    "operations": [
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "24775d7fc1a1713c042b8b70e85c57042333b4f54f3b7fe374cba0b5fb28e242",
+    "capture": "/tmp/wt03-sources/24775d7fc1a1713c042b8b70e85c57042333b4f54f3b7fe374cba0b5fb28e242.txt"
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts/blob/main/docs/content/replies.mdx.vel",
+    "retrievedAt": "2026-09-09T03:04:26.811397+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "retrieved-not-yet-reviewed",
+    "operations": [
+      "message.reply",
+      "message.react",
+      "reaction.remove"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "c6ae700897317ecff6f7f272e4e96304e9d6a21bfd57be0565c6167e0e94b889",
+    "capture": "/tmp/wt03-sources/c6ae700897317ecff6f7f272e4e96304e9d6a21bfd57be0565c6167e0e94b889.txt"
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts/blob/main/docs/content/rich-links.mdx.vel",
+    "retrievedAt": "2026-09-09T03:04:26.875860+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "retrieved-not-yet-reviewed",
+    "operations": [
+      "link.send"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "d87c3cb44dabb72ab6ff4222b7ae6100c3d1756de9dd27a32494ca7468487286",
+    "capture": "/tmp/wt03-sources/d87c3cb44dabb72ab6ff4222b7ae6100c3d1756de9dd27a32494ca7468487286.txt"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content.md",
+    "retrievedAt": "2026-09-09T03:04:26.900079+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/text.md",
+    "retrievedAt": "2026-09-09T03:04:26.997577+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/markdown.md",
+    "retrievedAt": "2026-09-09T03:04:27.091320+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "markdown.send"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/rich-links.md",
+    "retrievedAt": "2026-09-09T03:04:27.165044+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "link.send"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/groups.md",
+    "retrievedAt": "2026-09-09T03:04:27.179124+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "content.group"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/composing-content.md",
+    "retrievedAt": "2026-09-09T03:04:27.212392+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "content.compose",
+      "content.group",
+      "text.stream"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/replies.md",
+    "retrievedAt": "2026-09-09T03:04:27.244954+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "message.reply",
+      "message.react",
+      "reaction.remove"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/edits.md",
+    "retrievedAt": "2026-09-09T03:04:27.269879+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "message.edit"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/unsend.md",
+    "retrievedAt": "2026-09-09T03:04:27.309745+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "message.unsend",
+      "reaction.remove"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/read.md",
+    "retrievedAt": "2026-09-09T03:04:27.323411+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/reactions-and-replies.md",
+    "retrievedAt": "2026-09-09T03:04:27.335914+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "message.reply",
+      "message.react",
+      "reaction.remove"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/messages.md",
+    "retrievedAt": "2026-09-09T03:04:27.380434+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/tapback-reactions.md",
+    "retrievedAt": "2026-09-09T03:04:27.399908+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "message.reply",
+      "message.react",
+      "reaction.remove"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/inbound-read-receipts.md",
+    "retrievedAt": "2026-09-09T03:04:27.404206+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/advanced-kits/imessage/messages.md",
+    "retrievedAt": "2026-09-09T03:04:27.453598+00:00",
+    "version": "unpinned web documentation",
+    "readStatus": "unavailable",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content.md",
+    "retrievedAt": "2026-09-09T03:17:54.927561+00:00",
+    "version": "main branch, unpinned",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "sha256": "2caaf9d60f47be87a9f9974eb851a09ef71b446b991b7510d4a6daa6b8c27004",
+    "capture": "/tmp/wt03-sources/2caaf9d60f47be87a9f9974eb851a09ef71b446b991b7510d4a6daa6b8c27004.txt",
+    "readStatus": "reviewed-relevant-excerpts",
+    "reviewedAt": "2026-09-09T03:21:59.666441+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/text-and-markdown.md",
+    "retrievedAt": "2026-09-09T03:17:54.927780+00:00",
+    "version": "main branch, unpinned",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "sha256": "39e74efcc75ffb2b3d75ac64f55c0e3a3ab63fce94873e19cad85f98bc697ee6",
+    "capture": "/tmp/wt03-sources/39e74efcc75ffb2b3d75ac64f55c0e3a3ab63fce94873e19cad85f98bc697ee6.txt",
+    "readStatus": "reviewed-relevant-excerpts",
+    "reviewedAt": "2026-09-09T03:21:59.666441+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/contacts-and-rich-links.md",
+    "retrievedAt": "2026-09-09T03:17:54.927832+00:00",
+    "version": "main branch, unpinned",
+    "operations": [
+      "link.send"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "sha256": "7a0f1e9f0a386df2c2e945b4880f41d417752255ab6b042c2e49da497cf2225c",
+    "capture": "/tmp/wt03-sources/7a0f1e9f0a386df2c2e945b4880f41d417752255ab6b042c2e49da497cf2225c.txt",
+    "readStatus": "reviewed-relevant-excerpts",
+    "reviewedAt": "2026-09-09T03:21:59.666441+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/composing-and-streaming.md",
+    "retrievedAt": "2026-09-09T03:17:54.927873+00:00",
+    "version": "main branch, unpinned",
+    "operations": [
+      "content.compose",
+      "content.group",
+      "text.stream"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "sha256": "ebdefa8d7d2fd8a88afa7093da32c7c761a83b0dbb6b2309dda095e4a9f7992e",
+    "capture": "/tmp/wt03-sources/ebdefa8d7d2fd8a88afa7093da32c7c761a83b0dbb6b2309dda095e4a9f7992e.txt",
+    "readStatus": "reviewed-relevant-excerpts",
+    "reviewedAt": "2026-09-09T03:21:59.666441+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/replies-edits-and-unsend.md",
+    "retrievedAt": "2026-09-09T03:17:54.927920+00:00",
+    "version": "main branch, unpinned",
+    "operations": [
+      "message.reply",
+      "message.edit",
+      "message.unsend"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "sha256": "fec3f5baeee1acc9b95337da3c0ed176f63bf34c15b34e48d0bb21d3f63339d2",
+    "capture": "/tmp/wt03-sources/fec3f5baeee1acc9b95337da3c0ed176f63bf34c15b34e48d0bb21d3f63339d2.txt",
+    "readStatus": "reviewed-relevant-excerpts",
+    "reviewedAt": "2026-09-09T03:21:59.666441+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/read-and-typing.md",
+    "retrievedAt": "2026-09-09T03:17:54.927977+00:00",
+    "version": "main branch, unpinned",
+    "operations": [
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "sha256": "c93b2de5ed273a859943bb573fb02375d69a987d3717e9efb750de1c80305bb0",
+    "capture": "/tmp/wt03-sources/c93b2de5ed273a859943bb573fb02375d69a987d3717e9efb750de1c80305bb0.txt",
+    "readStatus": "reviewed-relevant-excerpts",
+    "reviewedAt": "2026-09-09T03:21:59.666441+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/reactions-and-replies.md",
+    "retrievedAt": "2026-09-09T03:17:54.928011+00:00",
+    "version": "main branch, unpinned",
+    "operations": [
+      "message.reply",
+      "message.react",
+      "reaction.remove"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "sha256": "c8e999f1cbbf33ce42babb80361ab3a411405524b71a0294569568ef5ac9dbc2",
+    "capture": "/tmp/wt03-sources/c8e999f1cbbf33ce42babb80361ab3a411405524b71a0294569568ef5ac9dbc2.txt",
+    "readStatus": "reviewed-relevant-excerpts",
+    "reviewedAt": "2026-09-09T03:21:59.666441+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/advanced/messages.md",
+    "retrievedAt": "2026-09-09T03:17:54.928045+00:00",
+    "version": "main branch, unpinned",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "sha256": "81c8e77c5789779b5338b6d199228b9ae12d7abad49e64e5ca05d69eaa502abb",
+    "capture": "/tmp/wt03-sources/81c8e77c5789779b5338b6d199228b9ae12d7abad49e64e5ca05d69eaa502abb.txt",
+    "readStatus": "reviewed-relevant-excerpts",
+    "reviewedAt": "2026-09-09T03:21:59.666441+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/photon-hq/spectrum-ts/main/docs/content/composing-content.mdx.vel",
+    "retrievedAt": "2026-09-09T03:17:55.481237+00:00",
+    "version": "main branch, unpinned",
+    "operations": [
+      "content.compose",
+      "content.group",
+      "text.stream"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "sha256": "9dbc716010623459e54e53a3d037f8b285eabbfa8e90b383c41d50f6aca257e6",
+    "capture": "/tmp/wt03-sources/9dbc716010623459e54e53a3d037f8b285eabbfa8e90b383c41d50f6aca257e6.txt",
+    "readStatus": "reviewed-relevant-excerpts",
+    "reviewedAt": "2026-09-09T03:21:59.666441+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/photon-hq/spectrum-ts/main/docs/content/edits.mdx.vel",
+    "retrievedAt": "2026-09-09T03:17:55.502434+00:00",
+    "version": "main branch, unpinned",
+    "operations": [
+      "message.edit"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "sha256": "ba6bffc62ef31d8f32889c194276ef8c23b7c559dab3fbbb79c57c15ff737486",
+    "capture": "/tmp/wt03-sources/ba6bffc62ef31d8f32889c194276ef8c23b7c559dab3fbbb79c57c15ff737486.txt",
+    "readStatus": "reviewed-relevant-excerpts",
+    "reviewedAt": "2026-09-09T03:21:59.666441+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/photon-hq/spectrum-ts/main/docs/content/groups.mdx.vel",
+    "retrievedAt": "2026-09-09T03:17:55.515136+00:00",
+    "version": "main branch, unpinned",
+    "operations": [
+      "content.group"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "sha256": "d5e06e0c01350e4852497906d742698bca31c9b6fd15c8a8e52908f26ff2e06a",
+    "capture": "/tmp/wt03-sources/d5e06e0c01350e4852497906d742698bca31c9b6fd15c8a8e52908f26ff2e06a.txt",
+    "readStatus": "reviewed-relevant-excerpts",
+    "reviewedAt": "2026-09-09T03:21:59.666441+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/photon-hq/spectrum-ts/main/docs/content/markdown.mdx.vel",
+    "retrievedAt": "2026-09-09T03:17:55.528644+00:00",
+    "version": "main branch, unpinned",
+    "operations": [
+      "markdown.send"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "sha256": "6835b56d72d0d8923de1bf0b0d6f871b576832c32d93161f61dca2695e01b91c",
+    "capture": "/tmp/wt03-sources/6835b56d72d0d8923de1bf0b0d6f871b576832c32d93161f61dca2695e01b91c.txt",
+    "readStatus": "reviewed-relevant-excerpts",
+    "reviewedAt": "2026-09-09T03:21:59.666441+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/photon-hq/spectrum-ts/main/docs/content/read.mdx.vel",
+    "retrievedAt": "2026-09-09T03:17:55.534098+00:00",
+    "version": "main branch, unpinned",
+    "operations": [
+      "message.markRead"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "sha256": "cc1d8bba58b12d7f54f57864d3b75be7702a595d4a108ef581ba18be6a18e0ac",
+    "capture": "/tmp/wt03-sources/cc1d8bba58b12d7f54f57864d3b75be7702a595d4a108ef581ba18be6a18e0ac.txt",
+    "readStatus": "reviewed-relevant-excerpts",
+    "reviewedAt": "2026-09-09T03:21:59.666441+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/photon-hq/spectrum-ts/main/docs/content/replies.mdx.vel",
+    "retrievedAt": "2026-09-09T03:17:55.630089+00:00",
+    "version": "main branch, unpinned",
+    "operations": [
+      "message.reply",
+      "message.react",
+      "reaction.remove"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "sha256": "a5d6724d403ecef34fba92c2a8657e034ff15c6bfc5946a55b767c3b7a94114f",
+    "capture": "/tmp/wt03-sources/a5d6724d403ecef34fba92c2a8657e034ff15c6bfc5946a55b767c3b7a94114f.txt",
+    "readStatus": "reviewed-relevant-excerpts",
+    "reviewedAt": "2026-09-09T03:21:59.666441+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/photon-hq/spectrum-ts/main/docs/content/rich-links.mdx.vel",
+    "retrievedAt": "2026-09-09T03:17:55.630671+00:00",
+    "version": "main branch, unpinned",
+    "operations": [
+      "link.send"
+    ],
+    "test": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+    "httpStatus": 200,
+    "sha256": "51d0ce2c906f47fd823164b0aed3135bd780890a9721a8f3ad5ed105bf5a9a3a",
+    "capture": "/tmp/wt03-sources/51d0ce2c906f47fd823164b0aed3135bd780890a9721a8f3ad5ed105bf5a9a3a.txt",
+    "readStatus": "reviewed-relevant-excerpts",
+    "reviewedAt": "2026-09-09T03:21:59.666441+00:00"
+  },
+  {
+    "url": "local:node_modules/spectrum-ts/package.json",
+    "readStatus": "reviewed-relevant-excerpts",
+    "retrievedAt": "2026-09-09T03:21:59.666441+00:00",
+    "version": "12.8.0",
+    "sha256": "69248e5615aecbe5844d9cc94323aa2a93391e76ac322cf82477c75df95dbcc2",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "sdk-contract.test.ts and operations.test.ts"
+  },
+  {
+    "url": "local:node_modules/@spectrum-ts/core/package.json",
+    "readStatus": "reviewed-relevant-excerpts",
+    "retrievedAt": "2026-09-09T03:21:59.666441+00:00",
+    "version": "12.8.0",
+    "sha256": "bf239b4f2bea2a1fce09ba09c8c4a3570014b2fa8842ed43101d8b88b81d34a4",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "sdk-contract.test.ts and operations.test.ts"
+  },
+  {
+    "url": "local:node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts",
+    "readStatus": "reviewed-relevant-excerpts",
+    "retrievedAt": "2026-09-09T03:21:59.666441+00:00",
+    "version": "12.8.0",
+    "sha256": "c452a8fc2ffbab03c6e548ce13dcf28f841ec7c9331513c65975e12f869ad954",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "sdk-contract.test.ts and operations.test.ts"
+  },
+  {
+    "url": "local:node_modules/@spectrum-ts/imessage/package.json",
+    "readStatus": "reviewed-relevant-excerpts",
+    "retrievedAt": "2026-09-09T03:21:59.666441+00:00",
+    "version": "12.8.0",
+    "sha256": "4da6358fdaa9d40e97598f0882bf9c719c38469ec955dd129958002e1ec20e81",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "sdk-contract.test.ts and operations.test.ts"
+  },
+  {
+    "url": "local:node_modules/@spectrum-ts/imessage/dist/index.d.ts",
+    "readStatus": "reviewed-relevant-excerpts",
+    "retrievedAt": "2026-09-09T03:21:59.666441+00:00",
+    "version": "12.8.0",
+    "sha256": "6a2278d14fd42a5603675b046fd1c8ad5c584da760e60b621f74059bf7dc3aa0",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "sdk-contract.test.ts and operations.test.ts"
+  },
+  {
+    "url": "local:node_modules/@spectrum-ts/imessage/dist/index.js",
+    "readStatus": "reviewed-relevant-excerpts",
+    "retrievedAt": "2026-09-09T03:21:59.666441+00:00",
+    "version": "12.8.0",
+    "sha256": "2f7e13c432ad4e84f96b76eb3d59062d70d3d7e46737a7e15198a47ecda6ef24",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "sdk-contract.test.ts and operations.test.ts"
+  },
+  {
+    "url": "local:node_modules/@photon-ai/advanced-imessage/dist/grpc.d.ts",
+    "readStatus": "reviewed-relevant-excerpts",
+    "retrievedAt": "2026-09-09T03:21:59.666441+00:00",
+    "version": "2.1.0",
+    "sha256": "fa27c25cf23e2c9995958b305a8669c83db5dae115b8085648fae56022940f89",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "sdk-contract.test.ts and operations.test.ts"
+  },
+  {
+    "url": "local:docs/photon-features/foundation.json",
+    "readStatus": "reviewed-relevant-excerpts",
+    "retrievedAt": "2026-09-09T03:21:59.666441+00:00",
+    "version": "F0:57e40736be8a59047b776654c766fbe8bfd10c9e",
+    "sha256": "3f26e5326c08a15220e20b26e390703fd9cec5e66faa55d6b0ab4e4433feb03c",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "sdk-contract.test.ts and operations.test.ts"
+  },
+  {
+    "url": "local:docs/photon-features/contracts-v1.md",
+    "readStatus": "reviewed-relevant-excerpts",
+    "retrievedAt": "2026-09-09T03:21:59.666441+00:00",
+    "version": "F0:57e40736be8a59047b776654c766fbe8bfd10c9e",
+    "sha256": "e650a7eb152928b23fff5eff4d9fa090c7d62fef634f44a571b7d237650ba280",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "sdk-contract.test.ts and operations.test.ts"
+  },
+  {
+    "url": "local:docs/photon-features/ownership.json",
+    "readStatus": "reviewed-relevant-excerpts",
+    "retrievedAt": "2026-09-09T03:21:59.666441+00:00",
+    "version": "F0:57e40736be8a59047b776654c766fbe8bfd10c9e",
+    "sha256": "f8bf4f903f4982f6829ad1b30de5a7e7252560e739ecd38b4026b9c82d0edaf9",
+    "operations": [
+      "text.send",
+      "text.stream",
+      "markdown.send",
+      "link.send",
+      "content.group",
+      "content.compose",
+      "message.get",
+      "message.reply",
+      "message.react",
+      "reaction.remove",
+      "message.edit",
+      "message.unsend",
+      "message.markRead"
+    ],
+    "test": "sdk-contract.test.ts and operations.test.ts"
+  },
+  {
+    "url": "https://support.apple.com/en-gb/guide/iphone/iphe67195653/26/ios/26",
+    "readStatus": "reviewed-search-excerpt",
+    "retrievedAt": "2026-09-09T03:21:59.666441+00:00",
+    "version": "iOS 26 guide, unpinned",
+    "operations": [
+      "message.edit",
+      "message.unsend"
+    ],
+    "test": "operations.test.ts eligibility tests",
+    "note": "Five edits within fifteen minutes; remote eligibility remains provider-enforced."
+  }
+]

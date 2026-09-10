@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-09-09T03:34:42.136704+00:00",
+  "snapshotDigest": "e84694892ea9642967df6e63df83a4583b166b7ce152546c88cc0715b7529662",
+  "matchingWT09TypeScriptFiles": 18,
+  "reportJsonAndWhitespace": "passed",
+  "tests": {
+    "tests": 78,
+    "pass": 74,
+    "fail": 3,
+    "skipped": 1,
+    "todo": 0
+  }
+}

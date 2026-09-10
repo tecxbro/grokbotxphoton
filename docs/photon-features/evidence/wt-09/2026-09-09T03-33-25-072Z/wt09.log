@@ -1,0 +1,558 @@
+TAP version 13
+# (node:37942) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: card codec keeps original target/session and rejects malformed parent or SDK version
+ok 1 - card codec keeps original target/session and rejects malformed parent or SDK version
+  ---
+  duration_ms: 17.534583
+  type: 'test'
+  ...
+# Subtest: restart without public original-session rehydration is explicitly blocked
+ok 2 - restart without public original-session rehydration is explicitly blocked
+  ---
+  duration_ms: 23.372584
+  type: 'test'
+  ...
+# Subtest: callback binding enforces participant, expiry, scope, nonce and single-use replay before wake
+ok 3 - callback binding enforces participant, expiry, scope, nonce and single-use replay before wake
+  ---
+  duration_ms: 20.594333
+  type: 'test'
+  ...
+# Subtest: production card module keeps original target across repeated updates, rejects stale revisions and restores via public resolver
+ok 4 - production card module keeps original target across repeated updates, rejects stale revisions and restores via public resolver
+  ---
+  duration_ms: 51.258625
+  type: 'test'
+  ...
+# (node:37943) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: CLI → authenticated host → durable executor → production text feature reaches offline SDK send
+not ok 5 - CLI → authenticated host → durable executor → production text feature reaches offline SDK send
+  ---
+  duration_ms: 45.868
+  type: 'test'
+  location: '/private/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt09-snapshot-FBBYk8/packages/photon-features/dist/tests/e2e/feature-runtime.test.js:14:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    {"version":1,"requestId":"da9b5f05e85ee66301a76ad193db2f488027391a6eecd628a69a31141b00ab43","status":"blocked","revision":2,"updatedAt":10000,"references":[],"observations":[],"error":{"code":"UNIMPLEMENTED","message":"UNIMPLEMENTED","retry":"safe-before-dispatch"}}
+    + actual - expected
+    
+    + 'blocked'
+    - 'executor-completed'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'executor-completed'
+  actual: 'blocked'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///private/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt09-snapshot-FBBYk8/packages/photon-features/dist/tests/e2e/feature-runtime.test.js:40:12)
+    process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    async Test.run (node:internal/test_runner/test:1113:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+  ...
+# (node:37944) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: attachment, vote/unvote, edit and read identities survive repeated message IDs
+ok 6 - attachment, vote/unvote, edit and read identities survive repeated message IDs
+  ---
+  duration_ms: 56.2725
+  type: 'test'
+  ...
+# Subtest: router retains unknown events, suppresses echoes/receipt loops and deduplicates replay
+ok 7 - router retains unknown events, suppresses echoes/receipt loops and deduplicates replay
+  ---
+  duration_ms: 17.698167
+  type: 'test'
+  ...
+# (node:37945) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: real installer with explicit offline archive fixture: clean/repeat install, inactive rollback, pending/unknown preservation
+ok 8 - real installer with explicit offline archive fixture: clean/repeat install, inactive rollback, pending/unknown preservation
+  ---
+  duration_ms: 160.007375
+  type: 'test'
+  ...
+# Subtest: runtime-created database satisfies installer private-file contract under ordinary umask
+not ok 9 - runtime-created database satisfies installer private-file contract under ordinary umask
+  ---
+  duration_ms: 22.11325
+  type: 'test'
+  location: '/private/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt09-snapshot-FBBYk8/packages/photon-features/dist/tests/e2e/install-rollback.test.js:52:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    WT-01 database cannot be reinstalled/rolled back by WT-08
+    
+    36 !== 0
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 0
+  actual: 36
+  operator: 'strictEqual'
+  stack: |-
+    file:///private/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt09-snapshot-FBBYk8/packages/photon-features/dist/tests/e2e/install-rollback.test.js:66:60
+    async Test.run (node:internal/test_runner/test:1113:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:788:7)
+  ...
+# (node:37946) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: concurrent IPC duplicates produce one durable request and survive a second DB connection
+ok 10 - concurrent IPC duplicates produce one durable request and survive a second DB connection
+  ---
+  duration_ms: 153.580417
+  type: 'test'
+  ...
+# Subtest: same key with changed content conflicts and preserves original content
+ok 11 - same key with changed content conflicts and preserves original content
+  ---
+  duration_ms: 10.394667
+  type: 'test'
+  ...
+# Subtest: pre-dispatch cancellation is durable and a duplicate cannot resurrect it
+ok 12 - pre-dispatch cancellation is durable and a duplicate cannot resurrect it
+  ---
+  duration_ms: 17.2285
+  type: 'test'
+  ...
+# (node:37947) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: process death after possible provider acceptance retains unknown and never blindly resends
+ok 13 - process death after possible provider acceptance retains unknown and never blindly resends
+  ---
+  duration_ms: 260.806791
+  type: 'test'
+  ...
+# Subtest: completed earlier child survives later pre-dispatch failure and retry
+ok 14 - completed earlier child survives later pre-dispatch failure and retry
+  ---
+  duration_ms: 24.376583
+  type: 'test'
+  ...
+# Subtest: unknown later child preserves earlier completion and prevents replay
+ok 15 - unknown later child preserves earlier completion and prevents replay
+  ---
+  duration_ms: 15.795625
+  type: 'test'
+  ...
+# Subtest: resolved promise cannot manufacture provider acceptance or read evidence
+ok 16 - resolved promise cannot manufacture provider acceptance or read evidence
+  ---
+  duration_ms: 33.304
+  type: 'test'
+  ...
+# (node:37948) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: two polls with duplicate labels, multiple voters/selections, unvote and out-of-order replay survive DB reopen
+ok 17 - two polls with duplicate labels, multiple voters/selections, unvote and out-of-order replay survive DB reopen
+  ---
+  duration_ms: 28.2045
+  type: 'test'
+  ...
+# Subtest: early vote is retained then reconciled by identity; absent ordering stays unresolved
+ok 18 - early vote is retained then reconciled by identity; absent ordering stays unresolved
+  ---
+  duration_ms: 22.002458
+  type: 'test'
+  ...
+# Subtest: vote state and continuation roll back together on failed handoff commit
+ok 19 - vote state and continuation roll back together on failed handoff commit
+  ---
+  duration_ms: 10.539834
+  type: 'test'
+  ...
+# Subtest: WT-02 router and WT-05 reducer commit one correlated continuation together
+not ok 20 - WT-02 router and WT-05 reducer commit one correlated continuation together
+  ---
+  duration_ms: 14.777584
+  type: 'test'
+  location: '/private/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt09-snapshot-FBBYk8/packages/photon-features/dist/tests/e2e/poll-restart.test.js:80:1'
+  failureType: 'testCodeFailure'
+  error: 'STALE_FENCE'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    Object.put (file:///private/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt09-snapshot-FBBYk8/packages/photon-features/dist/src/state/sqlite.js:92:31)
+    file:///private/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt09-snapshot-FBBYk8/packages/photon-features/dist/src/runtime/inbound/router.js:131:24
+    DurableSQLiteStore.transaction (file:///private/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt09-snapshot-FBBYk8/packages/photon-features/dist/src/state/sqlite.js:97:28)
+    InboundRouter.reduce (file:///private/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt09-snapshot-FBBYk8/packages/photon-features/dist/src/runtime/inbound/router.js:92:31)
+    InboundRouter.accept (file:///private/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt09-snapshot-FBBYk8/packages/photon-features/dist/src/runtime/inbound/router.js:88:18)
+    TestContext.<anonymous> (file:///private/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt09-snapshot-FBBYk8/packages/photon-features/dist/tests/e2e/poll-restart.test.js:85:18)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1106:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:788:18)
+    Test.postRun (node:internal/test_runner/test:1235:19)
+  ...
+# (node:37949) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: one host owner starts one SDK and rejects competing subscriptions
+ok 21 - one host owner starts one SDK and rejects competing subscriptions
+  ---
+  duration_ms: 5.925333
+  type: 'test'
+  ...
+# Subtest: host is inactive by default and startup failure cleans up all owned components
+ok 22 - host is inactive by default and startup failure cleans up all owned components
+  ---
+  duration_ms: 17.109292
+  type: 'test'
+  ...
+# (node:37950) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: completion, failure, cancellation and timeout stop typing
+ok 23 - completion, failure, cancellation and timeout stop typing
+  ---
+  duration_ms: 7.694917
+  type: 'test'
+  ...
+# Subtest: overlap ignores old stop, long-work wait ends lease and delayed expired start never replays
+ok 24 - overlap ignores old stop, long-work wait ends lease and delayed expired start never replays
+  ---
+  duration_ms: 20.543791
+  type: 'test'
+  ...
+# Subtest: connection loss and fresh manager never resume old starts
+ok 25 - connection loss and fresh manager never resume old starts
+  ---
+  duration_ms: 14.914625
+  type: 'test'
+  ...
+# Subtest: delayed start completion after cancellation is followed by stop
+ok 26 - delayed start completion after cancellation is followed by stop
+  ---
+  duration_ms: 8.011792
+  type: 'test'
+  ...
+# Subtest: failed start attempts cleanup and failed stop is reported without pretending idle
+ok 27 - failed start attempts cleanup and failed stop is reported without pretending idle
+  ---
+  duration_ms: 4.045375
+  type: 'test'
+  ...
+# Subtest: unresolved typing start never blocks real work; stopping it drains after completion
+ok 28 - unresolved typing start never blocks real work; stopping it drains after completion
+  ---
+  duration_ms: 4.761458
+  type: 'test'
+  ...
+# Subtest: delayed old stop finishes before a newer generation start
+ok 29 - delayed old stop finishes before a newer generation start
+  ---
+  duration_ms: 3.405625
+  type: 'test'
+  ...
+# (node:37951) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: 44 operation fixtures are accounted for with explicit implementation and availability
+ok 30 - 44 operation fixtures are accounted for with explicit implementation and availability
+  ---
+  duration_ms: 99.6615
+  type: 'test'
+  ...
+# Subtest: pinned public builders execute offline; duplicate labels do not imply unique option identity
+ok 31 - pinned public builders execute offline; duplicate labels do not imply unique option identity
+  ---
+  duration_ms: 1.23275
+  type: 'test'
+  ...
+# Subtest: voice keeps names/acronyms/code/URLs intact and structured content bypasses formatter
+ok 32 - voice keeps names/acronyms/code/URLs intact and structured content bypasses formatter
+  ---
+  duration_ms: 12.516375
+  type: 'test'
+  ...
+# (node:37952) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: authorized exact text action: provider acceptance only
+ok 33 - authorized exact text action: provider acceptance only # SKIP
+  ---
+  duration_ms: 0.774167
+  type: 'test'
+  ...
+# (node:37954) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: lease heartbeat preserves fence; stale owner/fence/generation cannot write
+ok 34 - lease heartbeat preserves fence; stale owner/fence/generation cannot write
+  ---
+  duration_ms: 25.003541
+  type: 'test'
+  ...
+# Subtest: cancellation and revocation invalidate an already held claim
+ok 35 - cancellation and revocation invalidate an already held claim
+  ---
+  duration_ms: 11.460083
+  type: 'test'
+  ...
+# Subtest: revocation and task generation change fence a previously acquired executor
+ok 36 - revocation and task generation change fence a previously acquired executor
+  ---
+  duration_ms: 31.961042
+  type: 'test'
+  ...
+# (node:37955) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: actual socket authenticates outside model JSON and persists submit/status
+ok 37 - actual socket authenticates outside model JSON and persists submit/status
+  ---
+  duration_ms: 62.662875
+  type: 'test'
+  ...
+# Subtest: authoritative context rejects expired before queueing
+ok 38 - authoritative context rejects expired before queueing
+  ---
+  duration_ms: 10.450125
+  type: 'test'
+  ...
+# Subtest: authoritative context rejects future-issued before queueing
+ok 39 - authoritative context rejects future-issued before queueing
+  ---
+  duration_ms: 16.476458
+  type: 'test'
+  ...
+# Subtest: authoritative context rejects revoked before queueing
+ok 40 - authoritative context rejects revoked before queueing
+  ---
+  duration_ms: 15.280375
+  type: 'test'
+  ...
+# Subtest: authoritative context rejects wrong-principal before queueing
+ok 41 - authoritative context rejects wrong-principal before queueing
+  ---
+  duration_ms: 26.582292
+  type: 'test'
+  ...
+# Subtest: authoritative context rejects permission-removed before queueing
+ok 42 - authoritative context rejects permission-removed before queueing
+  ---
+  duration_ms: 10.263625
+  type: 'test'
+  ...
+# Subtest: forged context and model-supplied permission cannot grant access
+ok 43 - forged context and model-supplied permission cannot grant access
+  ---
+  duration_ms: 23.417875
+  type: 'test'
+  ...
+# Subtest: rejects cross-projectId target even when resource id is known
+ok 44 - rejects cross-projectId target even when resource id is known
+  ---
+  duration_ms: 10.201416
+  type: 'test'
+  ...
+# Subtest: rejects cross-accountId target even when resource id is known
+ok 45 - rejects cross-accountId target even when resource id is known
+  ---
+  duration_ms: 7.451125
+  type: 'test'
+  ...
+# Subtest: rejects cross-lineId target even when resource id is known
+ok 46 - rejects cross-lineId target even when resource id is known
+  ---
+  duration_ms: 6.58525
+  type: 'test'
+  ...
+# Subtest: rejects cross-spaceId target even when resource id is known
+ok 47 - rejects cross-spaceId target even when resource id is known
+  ---
+  duration_ms: 4.203125
+  type: 'test'
+  ...
+# Subtest: space.create permission alone is insufficient for administrative intent
+ok 48 - space.create permission alone is insufficient for administrative intent
+  ---
+  duration_ms: 6.7645
+  type: 'test'
+  ...
+# Subtest: space.rename permission alone is insufficient for administrative intent
+ok 49 - space.rename permission alone is insufficient for administrative intent
+  ---
+  duration_ms: 5.574917
+  type: 'test'
+  ...
+# Subtest: space.addMembers permission alone is insufficient for administrative intent
+ok 50 - space.addMembers permission alone is insufficient for administrative intent
+  ---
+  duration_ms: 6.612917
+  type: 'test'
+  ...
+# Subtest: space.removeMembers permission alone is insufficient for administrative intent
+ok 51 - space.removeMembers permission alone is insufficient for administrative intent
+  ---
+  duration_ms: 6.977458
+  type: 'test'
+  ...
+# Subtest: space.leave permission alone is insufficient for administrative intent
+ok 52 - space.leave permission alone is insufficient for administrative intent
+  ---
+  duration_ms: 4.472167
+  type: 'test'
+  ...
+# Subtest: account.shareContact permission alone is insufficient for administrative intent
+ok 53 - account.shareContact permission alone is insufficient for administrative intent
+  ---
+  duration_ms: 5.268333
+  type: 'test'
+  ...
+# Subtest: trusted administrative intent still cannot authorize a new recipient
+ok 54 - trusted administrative intent still cannot authorize a new recipient
+  ---
+  duration_ms: 7.310333
+  type: 'test'
+  ...
+# Subtest: status and cancellation conceal results from another task and principal
+ok 55 - status and cancellation conceal results from another task and principal
+  ---
+  duration_ms: 7.910792
+  type: 'test'
+  ...
+# Subtest: context is refreshed on every socket request after revocation
+ok 56 - context is refreshed on every socket request after revocation
+  ---
+  duration_ms: 22.218625
+  type: 'test'
+  ...
+# (node:37956) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: guarded file access rejects traversal, leaf/ancestor symlinks and hard links
+ok 57 - guarded file access rejects traversal, leaf/ancestor symlinks and hard links
+  ---
+  duration_ms: 44.62
+  type: 'test'
+  ...
+# Subtest: opened handle keeps approved inode when pathname is replaced
+ok 58 - opened handle keeps approved inode when pathname is replaced
+  ---
+  duration_ms: 11.834959
+  type: 'test'
+  ...
+# Subtest: egress rejects controlled address fixture 127.0.0.1
+ok 59 - egress rejects controlled address fixture 127.0.0.1
+  ---
+  duration_ms: 0.518542
+  type: 'test'
+  ...
+# Subtest: egress rejects controlled address fixture 10.0.0.1
+ok 60 - egress rejects controlled address fixture 10.0.0.1
+  ---
+  duration_ms: 0.39075
+  type: 'test'
+  ...
+# Subtest: egress rejects controlled address fixture 169.254.169.254
+ok 61 - egress rejects controlled address fixture 169.254.169.254
+  ---
+  duration_ms: 0.093625
+  type: 'test'
+  ...
+# Subtest: egress rejects controlled address fixture 172.16.0.1
+ok 62 - egress rejects controlled address fixture 172.16.0.1
+  ---
+  duration_ms: 0.092834
+  type: 'test'
+  ...
+# Subtest: egress rejects controlled address fixture 192.168.1.1
+ok 63 - egress rejects controlled address fixture 192.168.1.1
+  ---
+  duration_ms: 0.079584
+  type: 'test'
+  ...
+# Subtest: egress rejects controlled address fixture 100.64.0.1
+ok 64 - egress rejects controlled address fixture 100.64.0.1
+  ---
+  duration_ms: 0.096792
+  type: 'test'
+  ...
+# Subtest: egress rejects controlled address fixture 198.18.0.1
+ok 65 - egress rejects controlled address fixture 198.18.0.1
+  ---
+  duration_ms: 0.102708
+  type: 'test'
+  ...
+# Subtest: egress rejects controlled address fixture 0.0.0.0
+ok 66 - egress rejects controlled address fixture 0.0.0.0
+  ---
+  duration_ms: 0.132084
+  type: 'test'
+  ...
+# Subtest: egress rejects controlled address fixture 224.0.0.1
+ok 67 - egress rejects controlled address fixture 224.0.0.1
+  ---
+  duration_ms: 0.060375
+  type: 'test'
+  ...
+# Subtest: egress rejects controlled address fixture ::1
+ok 68 - egress rejects controlled address fixture ::1
+  ---
+  duration_ms: 6.63425
+  type: 'test'
+  ...
+# Subtest: egress rejects controlled address fixture ::ffff:127.0.0.1
+ok 69 - egress rejects controlled address fixture ::ffff:127.0.0.1
+  ---
+  duration_ms: 0.133958
+  type: 'test'
+  ...
+# Subtest: egress rejects controlled address fixture fc00::1
+ok 70 - egress rejects controlled address fixture fc00::1
+  ---
+  duration_ms: 0.068209
+  type: 'test'
+  ...
+# Subtest: egress rejects controlled address fixture fe80::1
+ok 71 - egress rejects controlled address fixture fe80::1
+  ---
+  duration_ms: 0.0545
+  type: 'test'
+  ...
+# Subtest: egress rejects controlled address fixture 2001:db8::1
+ok 72 - egress rejects controlled address fixture 2001:db8::1
+  ---
+  duration_ms: 0.044416
+  type: 'test'
+  ...
+# Subtest: URL authorization rejects misleading hosts, credentials, ports and schemes
+ok 73 - URL authorization rejects misleading hosts, credentials, ports and schemes
+  ---
+  duration_ms: 0.469417
+  type: 'test'
+  ...
+# Subtest: redirect DNS rebinding and mixed public/private answers fail before private connection
+ok 74 - redirect DNS rebinding and mixed public/private answers fail before private connection
+  ---
+  duration_ms: 1.264083
+  type: 'test'
+  ...
+# Subtest: byte count overrides misleading size and interrupted stream releases reader
+ok 75 - byte count overrides misleading size and interrupted stream releases reader
+  ---
+  duration_ms: 5.606666
+  type: 'test'
+  ...
+# Subtest: retention keeps bytes referenced by pending and unknown work
+ok 76 - retention keeps bytes referenced by pending and unknown work
+  ---
+  duration_ms: 13.285292
+  type: 'test'
+  ...
+# (node:37957) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: HMAC uses exact bytes and rejects missing, invalid, stale and future signatures
+ok 77 - HMAC uses exact bytes and rejects missing, invalid, stale and future signatures
+  ---
+  duration_ms: 2.059375
+  type: 'test'
+  ...
+# Subtest: webhook awaits durable acceptance; database failure is 503 and alternate envelope is rejected
+ok 78 - webhook awaits durable acceptance; database failure is 503 and alternate envelope is rejected
+  ---
+  duration_ms: 83.997834
+  type: 'test'
+  ...
+1..78
+# tests 78
+# suites 0
+# pass 74
+# fail 3
+# cancelled 0
+# skipped 1
+# todo 0
+# duration_ms 1322.705125

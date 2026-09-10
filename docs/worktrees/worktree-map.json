@@ -1,0 +1,78 @@
+{
+  "repository": "https://github.com/tecxbro/grokbotonimessage",
+  "primary": "/Users/darshan/Documents/ChatGPT/grokbotonimessage/main",
+  "lanes": {
+    "wt-00": {
+      "path": "/Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-00-foundation",
+      "branch": "photon-v3/wt-00-foundation",
+      "base": "5c342f5eeb654b1ad7cb00e52855b425f25148ae",
+      "created": true
+    },
+    "wt-01": {
+      "path": "/Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-01",
+      "branch": "photon-v3/wt-01",
+      "base": "photon-v3-f0",
+      "created": false
+    },
+    "wt-02": {
+      "path": "/Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-02",
+      "branch": "photon-v3/wt-02",
+      "base": "photon-v3-f0",
+      "created": false
+    },
+    "wt-03": {
+      "path": "/Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-03",
+      "branch": "photon-v3/wt-03",
+      "base": "photon-v3-f0",
+      "created": false
+    },
+    "wt-04": {
+      "path": "/Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-04",
+      "branch": "photon-v3/wt-04",
+      "base": "photon-v3-f0",
+      "created": false
+    },
+    "wt-05": {
+      "path": "/Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-05",
+      "branch": "photon-v3/wt-05",
+      "base": "photon-v3-f0",
+      "created": false
+    },
+    "wt-06": {
+      "path": "/Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-06",
+      "branch": "photon-v3/wt-06",
+      "base": "photon-v3-f0",
+      "created": false
+    },
+    "wt-07": {
+      "path": "/Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-07",
+      "branch": "photon-v3/wt-07",
+      "base": "photon-v3-f0",
+      "created": false
+    },
+    "wt-08": {
+      "path": "/Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-08",
+      "branch": "photon-v3/wt-08",
+      "base": "photon-v3-f0",
+      "created": false
+    },
+    "wt-09": {
+      "path": "/Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-09",
+      "branch": "photon-v3/wt-09",
+      "base": "photon-v3-f0",
+      "created": false
+    },
+    "integration": {
+      "path": "/Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-integration",
+      "branch": "photon-v3/integration",
+      "base": "photon-v3-f0",
+      "created": true
+    }
+  },
+  "integration": {
+    "path": "/Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-integration",
+    "branch": "photon-v3/integration",
+    "base": "photon-v3-f0",
+    "created": true
+  }
+}

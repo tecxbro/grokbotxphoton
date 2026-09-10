@@ -1,0 +1,43 @@
+(node:33716) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ two processes concurrently reserve the same identity in a real SQLite file (117.331417ms)
+✔ admission rejects unknown operations/fields, huge text, and forged authorization (11.659375ms)
+✔ wrong principal, context, chat, line, reference ownership and expired contexts fail (4.477084ms)
+✔ read/status/cancel/diagnostics enforce task identity and current generation (4.485291ms)
+✔ revocation before execution prevents the handler invocation (4.65625ms)
+✔ admin operations need an explicit host policy and approved recipients (3.896333ms)
+✔ executor completed void is distinct from provider accepted and delivered (9.69125ms)
+✔ capability unavailability blocks before a provider call (4.307541ms)
+✔ per-line FIFO prevents overtaking; bounded concurrency does not duplicate a running request (7.158583ms)
+✔ heartbeat preserves the fence; expired owners cannot write or heartbeat after reclaim (4.675291ms)
+✔ pre-dispatch cancellation is cancelled; cancellation during transmission stays unknown (5.954083ms)
+✔ revocation between multipart sends blocks the later callback and preserves the first result (5.662125ms)
+✔ later multipart provider failure retains prior references and checkpoints (6.319375ms)
+✔ crash process after possible send recovers unknown without a duplicate callback (83.784541ms)
+✔ lease takeover while send is in flight cannot be overwritten by the old completion (5.675834ms)
+✔ safe pre-dispatch failures can be retried explicitly after revalidation (6.175416ms)
+✔ provider deadline preserves uncertainty and blocks automatic replay (25.720875ms)
+✔ abandoned child callback cannot convert an in-flight send into a safely retryable failure (4.719583ms)
+✔ generation invalidation immediately before a later multipart send blocks that send (5.627834ms)
+✔ host-controlled engine processes committed requests only after explicit activation (6.40675ms)
+(node:33717) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ event, reducer state and continuation all roll back on a reducer crash (8.5595ms)
+✔ persisted interaction survives a failed wake, with idempotent repeated application (4.940084ms)
+✔ unsupported events persist as unresolved without creating a guessed continuation (4.086667ms)
+✔ work fencing, expiry, heartbeat and exact repeated acknowledgement (5.974958ms)
+✔ work acknowledgement rejects cancellation, revocation and changed generation (4.994375ms)
+✔ restart retains work, poll/card/session state, references and claims (7.818667ms)
+✔ completed multipart child is reused from its checkpoint after pre-dispatch interruption (12.126292ms)
+✔ socket authenticates outside the action; framing is bounded and malformed UTF-8 is rejected (25.742625ms)
+✔ protocol exposes no credential or other-task data in diagnostics/status errors (6.506333ms)
+✔ socket refuses existing paths, public directories and malformed configured credentials (5.445125ms)
+✔ an accidentally async reducer cannot commit a continuation before its state (3.876875ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 429.950458

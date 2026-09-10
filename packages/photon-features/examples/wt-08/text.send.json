@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "idempotencyKey": "request-text.send",
+  "contextId": "context-1",
+  "operation": "text.send",
+  "arguments": {
+    "space": {
+      "version": 1,
+      "id": "space-1",
+      "scope": {
+        "projectId": "project-1",
+        "provider": "imessage",
+        "accountId": "account-1",
+        "lineId": "line-1",
+        "spaceId": "space-1"
+      },
+      "kind": "space"
+    },
+    "text": "hello"
+  }
+}

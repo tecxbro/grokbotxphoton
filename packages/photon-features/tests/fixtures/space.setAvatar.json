@@ -1,0 +1,42 @@
+{
+  "valid": {
+    "version": 1,
+    "idempotencyKey": "request-space.setAvatar",
+    "contextId": "context-1",
+    "operation": "space.setAvatar",
+    "arguments": {
+      "space": {
+        "version": 1,
+        "kind": "space",
+        "id": "space-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        }
+      },
+      "media": {
+        "stagingId": "staged-1",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "mimeType": "image/png",
+        "bytes": 20
+      }
+    }
+  },
+  "rejected": {
+    "version": 1,
+    "idempotencyKey": "request-space.setAvatar",
+    "contextId": "context-1",
+    "operation": "space.setAvatar",
+    "arguments": {
+      "media": {
+        "stagingId": "staged-1",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "mimeType": "image/png",
+        "bytes": 20
+      }
+    }
+  }
+}

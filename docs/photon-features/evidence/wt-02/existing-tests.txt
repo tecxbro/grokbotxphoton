@@ -1,0 +1,43 @@
+
+> grok-bot-cli@0.2.2 test
+> node --test test/*.test.js
+
+✔ decrypts an Electron Safe Storage v10 string (1.95525ms)
+✔ loads the signed-in Grok Bot gateway without manual tokens (4.030875ms)
+✔ loads a version 2 Grok Bot gateway entry (5.355959ms)
+✔ rejects a version 2 descriptor with no entries (2.300583ms)
+✔ rejects a version 2 descriptor with ambiguous entries (6.270625ms)
+✔ rejects a gateway entry without an encrypted payload (1.022042ms)
+✔ rejects an unsupported gateway descriptor version (1.648708ms)
+✔ rejects an incomplete decrypted gateway descriptor (2.159292ms)
+✔ reports a present but unusable Grok Bot app session (0.730917ms)
+✔ does not probe macOS credentials on other platforms (0.098292ms)
+✔ doctor reports a present but unusable Grok Bot app session (121.398ms)
+✔ parses env JSON headers (1.382583ms)
+✔ reads EnsureSandBox gatewayHeaders (0.204917ms)
+✔ reads EnsureSandBox token field (0.069042ms)
+✔ env headers override EnsureSandBox (0.062042ms)
+✔ request headers keep routing header (0.126834ms)
+✔ empty env JSON is a no-op (0.943833ms)
+✔ credential-bearing requests reject redirects (22.267291ms)
+✔ gateway URL validation happens before credentials are sent (0.342458ms)
+✔ npm package metadata identifies the public source repository (0.790334ms)
+✔ npm executable paths are already normalized for publishing (0.43875ms)
+✔ create list delete bots (13.191958ms)
+✔ group add remove set (39.436875ms)
+✔ rejects nested and empty groups (6.089959ms)
+✔ update merges profile, clears title, changes description, toggles settings, rejects blank name (3.564584ms)
+✔ update settings merge preserves extra keys (7.010666ms)
+✔ allows https Cursor gateway hosts (1.15525ms)
+✔ rejects http and non-cursor hosts by default (0.845417ms)
+✔ allows local gateways when opted in (0.100084ms)
+✔ ALLOW_ANY_GATEWAY bypasses host checks (0.738542ms)
+✔ redacts bearer and token-like fields (1.818625ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 203.111292

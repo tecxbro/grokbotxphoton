@@ -1,0 +1,43 @@
+
+> grok-bot-cli@0.2.2 test
+> node --test test/*.test.js
+
+✔ decrypts an Electron Safe Storage v10 string (5.280625ms)
+✔ loads the signed-in Grok Bot gateway without manual tokens (3.497417ms)
+✔ loads a version 2 Grok Bot gateway entry (3.134542ms)
+✔ rejects a version 2 descriptor with no entries (1.911209ms)
+✔ rejects a version 2 descriptor with ambiguous entries (2.723625ms)
+✔ rejects a gateway entry without an encrypted payload (2.604625ms)
+✔ rejects an unsupported gateway descriptor version (1.657417ms)
+✔ rejects an incomplete decrypted gateway descriptor (4.552625ms)
+✔ reports a present but unusable Grok Bot app session (1.553709ms)
+✔ does not probe macOS credentials on other platforms (0.220458ms)
+✔ doctor reports a present but unusable Grok Bot app session (1392.555333ms)
+✔ parses env JSON headers (11.948708ms)
+✔ reads EnsureSandBox gatewayHeaders (2.763625ms)
+✔ reads EnsureSandBox token field (0.415166ms)
+✔ env headers override EnsureSandBox (0.231917ms)
+✔ request headers keep routing header (4.0695ms)
+✔ empty env JSON is a no-op (0.409083ms)
+✔ credential-bearing requests reject redirects (78.116333ms)
+✔ gateway URL validation happens before credentials are sent (1.066833ms)
+✔ npm package metadata identifies the public source repository (1.759375ms)
+✔ npm executable paths are already normalized for publishing (2.199833ms)
+✔ create list delete bots (10.086125ms)
+✔ group add remove set (127.02875ms)
+✔ rejects nested and empty groups (24.498625ms)
+✔ update merges profile, clears title, changes description, toggles settings, rejects blank name (85.213458ms)
+✔ update settings merge preserves extra keys (16.316459ms)
+✔ allows https Cursor gateway hosts (3.613875ms)
+✔ rejects http and non-cursor hosts by default (6.692834ms)
+✔ allows local gateways when opted in (0.1765ms)
+✔ ALLOW_ANY_GATEWAY bypasses host checks (0.077167ms)
+✔ redacts bearer and token-like fields (1.265709ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1558.878916

@@ -1,0 +1,238 @@
+[
+  {
+    "path": "docs/photon-features/requests/wt-08/integration.md",
+    "sha256": "c20ec1f72fc7fd7df4eb402d321f4f1635a5a27a9ec57f0c0de7638f542c28da"
+  },
+  {
+    "path": "packages/photon-features/INSTALL.md",
+    "sha256": "8b83475f786aca44bd63048b94b04b7567431fe8e275f3139d0bbc4e06afde54"
+  },
+  {
+    "path": "packages/photon-features/README.md",
+    "sha256": "2b06202536bedf042c7235bbb32d433aaed334e686ba28061a1738321e7ea882"
+  },
+  {
+    "path": "packages/photon-features/SKILL.md",
+    "sha256": "e6b4158ee8b3d9cccd8f5adc4098ef50503122c189660835eac1825abecaf04e"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/account.shareContact.json",
+    "sha256": "10745d68b84f8599d08dfea760398ad863faa832e29aabef5e1d36902e2f338d"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/app.send.json",
+    "sha256": "59ea958b692d0ff89bded8ece2bec10d927a6fb0f7490d0e1f2cba944c147a38"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/app.sendCustomized.json",
+    "sha256": "5ae462d8c623bea20c704fa593170a318ef60f35dc1cfeb82495c59480db3ffc"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/app.update.json",
+    "sha256": "bc4a810c55d84c37f8f52029a75ab7c10e7c5158b858a5b4e182a14d59acfba9"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/attachment.fetch.json",
+    "sha256": "0e306a31d71ddc5ed34996e2d2ff5935cdb99c7e77a6ce3625f9c9a5b5eae30c"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/attachment.send.json",
+    "sha256": "731ccb820bd1f6080b29d6199a9d00c955e3b85a0f3144127b597e3807a50b9d"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/contact.send.json",
+    "sha256": "b4a9dafa47e3bbe3da794fbfd812545736b0833ab756312574ed52c4261b7295"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/content.compose.json",
+    "sha256": "874f150c6a60d3eee444cec4520c95d6510d48b0f9f1338e0b87f90697d5f8c1"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/content.group.json",
+    "sha256": "973fa790b24b4f604b192fab9b6d423c6d2d7bd63a75dcb76302bf05e8a4770b"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/custom.send.json",
+    "sha256": "80b418d0564cf47390ba0ea93e32ac49bc80cf7d4f5314c403b4902ade451cc0"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/effect.send.json",
+    "sha256": "9aa82e68b1813f81faf5bd480c36126a4f06acf05a485842b300e0be5f8e2a5a"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/link.send.json",
+    "sha256": "59a55b8af601df7a0f49818f17be96d32193bd8e2495ada7d93d4db6336e8c1a"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/markdown.send.json",
+    "sha256": "6340bd03dec8afddb350ed71d55b9b9e9ca4bf1eddceb768ece79d783e477909"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/message.edit.json",
+    "sha256": "ceb042a6532f38422d877fd8421f01318a60bb3d2ebb899bb0df4cc58ff3d290"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/message.get.json",
+    "sha256": "1e646c4d9d7daaaaf1578afeb13d61e954603a7228583a51bd09a0068399f7c2"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/message.markRead.json",
+    "sha256": "94b0e161bc5cdc4ccb2fd4800fc543faa034e5e007fc063bfd770565b8511d15"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/message.react.json",
+    "sha256": "c2fa1342879157783460ca3a865a11fca1d4a4848036ad5ef2d7be01739cafbb"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/message.reply.json",
+    "sha256": "577b546a32a8aa395bb6653861b849f961539dfd1dcfeda57bc5d17e8151b5b6"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/message.unsend.json",
+    "sha256": "3c61ba5022dacf9a024b8a819cf14c332943bd4c298f8e6bd3ca36d18f36df81"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/metadata.get.json",
+    "sha256": "6007bb6d85586a4ca362111a30b546c0970b4defd15bb72fddee20be5e103294"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/poll.addOption.json",
+    "sha256": "b624fa984d03337e1bd118c11af56814f6ed8f4d3ca6a0439a3e9b3de75f165e"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/poll.create.json",
+    "sha256": "944ae8a7193aa0476b797d111db485b8f7cdaa1b8eba590097cdd96f1dd81910"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/poll.get.json",
+    "sha256": "28850d7f13fe0cf6e9c39bf2093f859f5c56375cc558ea2cb459f3e946f2961c"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/poll.unvote.json",
+    "sha256": "d6878c1ae4651a9a47a8c307556ffc7e250f314828a7e55f89e02032b442d32c"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/poll.vote.json",
+    "sha256": "e04e80306830f79e30127558641eabfd79d5ab208b300a51e98a29eefd75e990"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/reaction.remove.json",
+    "sha256": "7611c19a9a03a4363aae15333c149eb8904925b8854c63dd5dd1353c48042aa6"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/space.addMembers.json",
+    "sha256": "cb7c2969105a27ba839b1e4f4c955b3122f7062de311e1e3268c9cd93f1a8573"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/space.clearAvatar.json",
+    "sha256": "9ddec9e0e5487b1c01a632ce9d7238504dee88c6c244080fb879270da139b2f7"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/space.clearBackground.json",
+    "sha256": "83046ed3c693ed7013ca64a3321d29490f0330469a1eee69ff70cbbaa07b01de"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/space.create.json",
+    "sha256": "e01fc49f854ee00b290400a03b07b159a14ed364c8d1f00030b60185177eb3dc"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/space.get.json",
+    "sha256": "4efc76c1a8a4cfc859a506ec7883b6c015fb708956634ba064818092ef75a3b1"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/space.getAvatar.json",
+    "sha256": "4671f45eab52c8a63ba519eedc44904da46844f4ba8a8244e47ff474a2f70889"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/space.getMembers.json",
+    "sha256": "9e19e84d161e0bc0a5e3eeb5de98972d18948a883f1122e1c6ee2747699d6cd1"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/space.getName.json",
+    "sha256": "f099830fe53d339b077cf90f587c0ec5b88b776bba6ee41bc2b4e79832f901c6"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/space.leave.json",
+    "sha256": "dd543d93e7ea00dc297151d98bc44f5a888259827ea8272e0045ab6ffd746ac4"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/space.removeMembers.json",
+    "sha256": "f91cc7f62e95ef188e8c8d8b870f9bfa619720554953723503ad448ed19bbe0f"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/space.rename.json",
+    "sha256": "8fe5d9b0f7c9aa8fddd16ac761ae339a1aefc6f02d05be9f85fcd91c5b5e5f93"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/space.setAvatar.json",
+    "sha256": "75b4986202d2937c3e1ae6234eb6fb8de00de31e0eb63c9495a751285f2b5c9c"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/space.setBackground.json",
+    "sha256": "35e7e82847db946705362f1972a059a589719acc0b3bdc4e296713f473e25bbf"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/text.send.json",
+    "sha256": "267a10dfe1ad108fa58cfaa03e208d4472f2204859fe67ea1e8d46e754e08d9c"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/text.stream.json",
+    "sha256": "10e1fb0678155afe6ffe88824b5c701ff71d2e905a6657cd8d49a7a0d5d67569"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/typing.begin.json",
+    "sha256": "40326628e22220206a40011ff5b0196fd0642914c50c3c3806b2105bd40c6c12"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/typing.end.json",
+    "sha256": "9dbaefc6af7cbaca0d90aedbd749f5494298c4b5d43abbeb0bb384d7ffc0b3e6"
+  },
+  {
+    "path": "packages/photon-features/examples/wt-08/voice.send.json",
+    "sha256": "00942d021942cde79582146c474d22fe7bba34a06944c0bf707627346346dc6b"
+  },
+  {
+    "path": "packages/photon-features/scripts/generate-skill.mjs",
+    "sha256": "755d9cc436cfe7b0709c45f43f3892d1a138aa6f3022cb5c0870b48b1a64b2f9"
+  },
+  {
+    "path": "packages/photon-features/scripts/install.mjs",
+    "sha256": "0e9bd65d571b1d43b9065e39adac3ec16e544185f3df982424d20432bb03078a"
+  },
+  {
+    "path": "packages/photon-features/scripts/package.mjs",
+    "sha256": "38c42f790486d0520bbe6a719eca2459e700068d68ce2331f885c6531ff094b9"
+  },
+  {
+    "path": "packages/photon-features/scripts/smoke-test.mjs",
+    "sha256": "12e88978f8be1721978a34c008d84646d94fc30d5f83fefda4a6fe6a080e060e"
+  },
+  {
+    "path": "packages/photon-features/src/cli/commands.ts",
+    "sha256": "a3577039a52559ff282b0884da755cff9733a2f00cea57a18fdd6029d9d29ea0"
+  },
+  {
+    "path": "packages/photon-features/src/cli/local-client.ts",
+    "sha256": "0c90ad33702aa19df54c38bc81e2eb6589f6d21a4cd0724c9af7503e9bbd9c1f"
+  },
+  {
+    "path": "packages/photon-features/src/cli/main.ts",
+    "sha256": "772c6e493b225d11baedf5ed0f2e6cefe672d01e69b85a32b44b2cb5efa2e37b"
+  },
+  {
+    "path": "packages/photon-features/src/cli/output.ts",
+    "sha256": "2c7c18e59022e68651a521d02ebd427dd983dcd78ba0d75a76e47ae6e86aceea"
+  },
+  {
+    "path": "packages/photon-features/tests/lanes/wt-08/cli.test.ts",
+    "sha256": "7243b72d5eafd2a5bd84f99343fea23da3a082f381c80664dfeb1d31001b4a24"
+  },
+  {
+    "path": "packages/photon-features/tests/lanes/wt-08/distribution.test.mjs",
+    "sha256": "784209d7ed5a88c260443898a66cc7e73304e7ed59704173bd0549a8da3fd432"
+  },
+  {
+    "path": "packages/photon-features/tests/lanes/wt-08/tsconfig.json",
+    "sha256": "47a90171311041f363b5bc64ff563941d8d39b0f9b7ca601fc989d25c89146cd"
+  }
+]

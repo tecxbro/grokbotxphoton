@@ -1,0 +1,43 @@
+
+> grok-bot-cli@0.2.2 test
+> node --test test/*.test.js
+
+✔ decrypts an Electron Safe Storage v10 string (2.421042ms)
+✔ loads the signed-in Grok Bot gateway without manual tokens (0.901375ms)
+✔ loads a version 2 Grok Bot gateway entry (1.641417ms)
+✔ rejects a version 2 descriptor with no entries (1.576666ms)
+✔ rejects a version 2 descriptor with ambiguous entries (0.705084ms)
+✔ rejects a gateway entry without an encrypted payload (0.720666ms)
+✔ rejects an unsupported gateway descriptor version (1.38775ms)
+✔ rejects an incomplete decrypted gateway descriptor (1.531125ms)
+✔ reports a present but unusable Grok Bot app session (1.217666ms)
+✔ does not probe macOS credentials on other platforms (0.107083ms)
+✔ doctor reports a present but unusable Grok Bot app session (99.308875ms)
+✔ parses env JSON headers (2.055625ms)
+✔ reads EnsureSandBox gatewayHeaders (0.128583ms)
+✔ reads EnsureSandBox token field (0.053125ms)
+✔ env headers override EnsureSandBox (0.055375ms)
+✔ request headers keep routing header (0.120292ms)
+✔ empty env JSON is a no-op (0.047083ms)
+✔ credential-bearing requests reject redirects (16.138292ms)
+✔ gateway URL validation happens before credentials are sent (0.308542ms)
+✔ npm package metadata identifies the public source repository (1.191542ms)
+✔ npm executable paths are already normalized for publishing (0.075708ms)
+✔ create list delete bots (6.988208ms)
+✔ group add remove set (21.007208ms)
+✔ rejects nested and empty groups (3.860792ms)
+✔ update merges profile, clears title, changes description, toggles settings, rejects blank name (2.40475ms)
+✔ update settings merge preserves extra keys (1.681292ms)
+✔ allows https Cursor gateway hosts (1.007875ms)
+✔ rejects http and non-cursor hosts by default (0.317834ms)
+✔ allows local gateways when opted in (0.087917ms)
+✔ ALLOW_ANY_GATEWAY bypasses host checks (0.181542ms)
+✔ redacts bearer and token-like fields (1.591083ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 153.136292

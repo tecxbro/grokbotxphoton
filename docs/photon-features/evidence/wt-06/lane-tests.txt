@@ -1,0 +1,60 @@
+(node:36902) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ missing real backend stays blocked and performs no wake (44.062125ms)
+✔ authenticated callback atomically records state and continuation, then wakes; event and nonce replay are durable (42.043042ms)
+✔ rejects authenticated callback with wrong scope (27.640292ms)
+✔ rejects authenticated callback with wrong session-scope (36.134875ms)
+✔ rejects authenticated callback with wrong line (33.143667ms)
+✔ rejects authenticated callback with wrong participant (15.211667ms)
+✔ rejects authenticated callback with wrong task (11.95475ms)
+✔ rejects authenticated callback with wrong generation (14.916167ms)
+✔ rejects authenticated callback with wrong nonce (8.550791ms)
+✔ rejects authenticated callback with wrong action (10.688375ms)
+✔ rejects authenticated callback with wrong expiry (11.094375ms)
+✔ rejects authenticated callback with wrong future (11.935042ms)
+✔ rejects authenticated callback with wrong cancelled-task (8.747084ms)
+✔ strict schema/body/header bounds and real fixture authentication reject malformed/unauthorized callbacks (11.424ms)
+✔ callback transaction failure rolls back nonce/state/handoff and never wakes; retry can commit (9.405458ms)
+✔ unknown session and missing task/card remain durable unresolved records without wake (12.418625ms)
+✔ generic app-interaction events cannot bypass the authenticated return path (9.901333ms)
+✔ failed/unknown wake leaves a committed pending continuation for shared recovery (9.42875ms)
+(node:36903) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ registers exactly three handlers and keeps all four capability categories separate (9.65675ms)
+✔ universal cards do not require extension/backend config; customized cards do (45.614458ms)
+✔ customized staged image maps caption to the pinned required imageTitle field (15.492209ms)
+✔ customized update retains original target and refreshes metadata on successful void (68.970208ms)
+✔ universal update is blocked without real URL mapping and works through registered mapping (38.267208ms)
+✔ live flag requires configured evidence and is never inferred from a send (13.096917ms)
+✔ undefined send, uncertain dispatch and duplicate request do not invent card references (11.797125ms)
+✔ same-card concurrent requests cannot silently overwrite a completed revision (15.188958ms)
+✔ delayed admission intent cannot overwrite newer state and missing revision binding blocks (16.368625ms)
+✔ second module is excluded by durable in-flight marker, including after lease expiry (13.78ms)
+✔ rejects cancel before side effects (12.31225ms)
+✔ rejects generation before side effects (10.165292ms)
+✔ rejects fence before side effects (11.823417ms)
+✔ rejects line before side effects (8.384625ms)
+✔ rejects conversation before side effects (8.819833ms)
+✔ cancellation during asynchronous preparation is fenced immediately before dispatch (7.487167ms)
+✔ provider failure leaves durable uncertainty and blocks retries (10.925375ms)
+✔ post-dispatch-generation failure leaves durable uncertainty and blocks retries (10.093208ms)
+✔ commit failure leaves durable uncertainty and blocks retries (8.8125ms)
+(node:36904) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ pins exact installed SDK and uses public builders for distinct app/richlink/customized shapes (7.140625ms)
+✔ real edit builder retains original object and rejects inbound targets (0.655292ms)
+(node:36905) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ versioned codec round-trips only bounded data, rejects credentials, methods and unknown versions (58.339709ms)
+✔ SQLite reopen plus shared public getMessage resolver preserves the original target when its real handle survives (41.449291ms)
+✔ full handle loss after restart explicitly requires_original_session, never fabricates metadata or sends (37.482542ms)
+✔ rehydration without provider session or with different metadata is unsupported (42.81375ms)
+✔ dispatching/unknown checkpoint survives restart and cannot be treated as safe to retry (23.336083ms)
+ℹ tests 44
+ℹ suites 0
+ℹ pass 44
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1074.372625

@@ -1,0 +1,75 @@
+{
+  "base": "57e40736be8a59047b776654c766fbe8bfd10c9e",
+  "source": "git archive HEAD plus WT-04 owned source/tests/examples only",
+  "directory": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt04-f0-repro-_0fw5sqg",
+  "commands": [
+    {
+      "command": [
+        "npm",
+        "ci",
+        "--ignore-scripts"
+      ],
+      "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt04-f0-repro-_0fw5sqg",
+      "exitCode": 0,
+      "observedAt": "2026-09-09T03:24:35.595659+00:00",
+      "log": "clean-install.txt"
+    },
+    {
+      "command": [
+        "npm",
+        "test"
+      ],
+      "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt04-f0-repro-_0fw5sqg",
+      "exitCode": 0,
+      "observedAt": "2026-09-09T03:24:35.875589+00:00",
+      "log": "existing-tests.txt"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "photon:build"
+      ],
+      "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt04-f0-repro-_0fw5sqg",
+      "exitCode": 0,
+      "observedAt": "2026-09-09T03:27:11.707568+00:00",
+      "log": "build.txt"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "photon:test"
+      ],
+      "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt04-f0-repro-_0fw5sqg",
+      "exitCode": 0,
+      "observedAt": "2026-09-09T03:27:16.082134+00:00",
+      "log": "foundation-tests.txt"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "photon:check"
+      ],
+      "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt04-f0-repro-_0fw5sqg",
+      "exitCode": 0,
+      "observedAt": "2026-09-09T03:27:19.786443+00:00",
+      "log": "schema-check.txt"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "test:lane",
+        "--workspace=@grokbot/photon-features",
+        "--",
+        "dist/tests/lanes/wt-04/*.test.js"
+      ],
+      "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt04-f0-repro-_0fw5sqg",
+      "exitCode": 0,
+      "observedAt": "2026-09-09T03:27:23.845434+00:00",
+      "log": "clean-lane-tests.txt"
+    }
+  ]
+}

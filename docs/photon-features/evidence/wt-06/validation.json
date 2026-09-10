@@ -1,0 +1,79 @@
+[
+  {
+    "command": "node node_modules/typescript/bin/tsc -p packages/photon-features/tests/lanes/wt-06/tsconfig.json",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:30:02.148045+00:00",
+    "log": "lane-build.txt"
+  },
+  {
+    "command": "node --test packages/photon-features/dist/tests/lanes/wt-06/interactions.test.js packages/photon-features/dist/tests/lanes/wt-06/operations.test.js packages/photon-features/dist/tests/lanes/wt-06/sdk.test.js packages/photon-features/dist/tests/lanes/wt-06/session-codec.test.js",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:30:03.271540+00:00",
+    "log": "lane-tests.txt"
+  },
+  {
+    "command": "npm test",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:27:00.352840+00:00",
+    "log": "existing-tests.txt"
+  },
+  {
+    "command": "npm run photon:build",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:27:04.836391+00:00",
+    "log": "aggregate-build.txt"
+  },
+  {
+    "command": "npm run photon:test",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:27:10.254564+00:00",
+    "log": "foundation-tests.txt"
+  },
+  {
+    "command": "npm run photon:check",
+    "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:27:16.571702+00:00",
+    "log": "schema-check.txt"
+  },
+  {
+    "command": "npm ci --ignore-scripts",
+    "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt06-f0-8hct8f1o",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:27:19.231745+00:00",
+    "log": "clean-install.txt"
+  },
+  {
+    "command": "node node_modules/typescript/bin/tsc -p packages/photon-features/tests/lanes/wt-06/tsconfig.json",
+    "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt06-f0-8hct8f1o",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:30:05.613967+00:00",
+    "log": "clean-lane-build.txt"
+  },
+  {
+    "command": "node --test packages/photon-features/dist/tests/lanes/wt-06/interactions.test.js packages/photon-features/dist/tests/lanes/wt-06/operations.test.js packages/photon-features/dist/tests/lanes/wt-06/sdk.test.js packages/photon-features/dist/tests/lanes/wt-06/session-codec.test.js",
+    "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt06-f0-8hct8f1o",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:30:06.321759+00:00",
+    "log": "clean-lane-tests.txt"
+  },
+  {
+    "command": "npm run photon:test",
+    "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt06-f0-8hct8f1o",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:27:25.848397+00:00",
+    "log": "clean-foundation-tests.txt"
+  },
+  {
+    "command": "npm run photon:check",
+    "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt06-f0-8hct8f1o",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:27:32.374944+00:00",
+    "log": "clean-schema-check.txt"
+  }
+]

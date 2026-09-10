@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "number",
+      "const": 1
+    },
+    "idempotencyKey": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+    },
+    "contextId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+    },
+    "operation": {
+      "type": "string",
+      "const": "contact.send"
+    },
+    "arguments": {
+      "type": "object",
+      "properties": {
+        "space": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "number",
+              "const": 1
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200,
+              "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+            },
+            "scope": {
+              "type": "object",
+              "properties": {
+                "projectId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200,
+                  "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+                },
+                "provider": {
+                  "type": "string",
+                  "const": "imessage"
+                },
+                "accountId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200,
+                  "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+                },
+                "lineId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200,
+                  "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+                },
+                "spaceId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200,
+                  "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+                }
+              },
+              "required": [
+                "projectId",
+                "provider",
+                "accountId",
+                "lineId",
+                "spaceId"
+              ],
+              "additionalProperties": false
+            },
+            "kind": {
+              "type": "string",
+              "const": "space"
+            }
+          },
+          "required": [
+            "version",
+            "id",
+            "scope",
+            "kind"
+          ],
+          "additionalProperties": false
+        },
+        "contact": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200
+            },
+            "phones": {
+              "maxItems": 10,
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^\\+[1-9]\\d{6,14}$"
+              }
+            },
+            "emails": {
+              "maxItems": 10,
+              "type": "array",
+              "items": {
+                "type": "string",
+                "maxLength": 254,
+                "format": "email",
+                "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$"
+              }
+            }
+          },
+          "required": [
+            "name",
+            "phones",
+            "emails"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "space",
+        "contact"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "version",
+    "idempotencyKey",
+    "contextId",
+    "operation",
+    "arguments"
+  ],
+  "additionalProperties": false
+}

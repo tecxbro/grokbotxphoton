@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "operation": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+    },
+    "providerSupport": {
+      "type": "string",
+      "enum": [
+        "native",
+        "fallback",
+        "unsupported",
+        "unknown"
+      ]
+    },
+    "availability": {
+      "type": "object",
+      "properties": {
+        "account": {
+          "type": "string",
+          "enum": [
+            "available",
+            "unavailable",
+            "unknown"
+          ]
+        },
+        "conversation": {
+          "type": "string",
+          "enum": [
+            "available",
+            "unavailable",
+            "unknown"
+          ]
+        },
+        "checkedAt": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "account",
+        "conversation",
+        "checkedAt"
+      ],
+      "additionalProperties": false
+    },
+    "implementation": {
+      "type": "string",
+      "enum": [
+        "unimplemented",
+        "partial",
+        "implemented"
+      ]
+    },
+    "direction": {
+      "type": "object",
+      "properties": {
+        "inbound": {
+          "type": "string",
+          "enum": [
+            "implemented",
+            "unimplemented",
+            "not-applicable",
+            "unknown"
+          ]
+        },
+        "outbound": {
+          "type": "string",
+          "enum": [
+            "implemented",
+            "unimplemented",
+            "not-applicable",
+            "unknown"
+          ]
+        }
+      },
+      "required": [
+        "inbound",
+        "outbound"
+      ],
+      "additionalProperties": false
+    },
+    "evidence": {
+      "maxItems": 100,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tier": {
+            "type": "string",
+            "enum": [
+              "unit",
+              "sdk-contract",
+              "live"
+            ]
+          },
+          "reference": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "observedAt": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "sdkVersion": {
+            "type": "string",
+            "maxLength": 50
+          }
+        },
+        "required": [
+          "tier",
+          "reference",
+          "observedAt",
+          "sdkVersion"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "sdkVersion": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "sources": {
+      "maxItems": 100,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 1000
+      }
+    },
+    "blockers": {
+      "maxItems": 30,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 500
+      }
+    }
+  },
+  "required": [
+    "operation",
+    "providerSupport",
+    "availability",
+    "implementation",
+    "direction",
+    "evidence",
+    "sdkVersion",
+    "sources",
+    "blockers"
+  ],
+  "additionalProperties": false
+}

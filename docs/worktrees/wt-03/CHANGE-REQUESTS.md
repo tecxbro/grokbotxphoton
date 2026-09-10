@@ -1,0 +1,15 @@
+# Change requests
+Shared verify-lane.mjs explicitly rejects lanes other than wt-00 (LANE_NOT_ASSEMBLED). The committed ownership list predates the requested text.ts, replies.ts, reactions.ts, edits.ts and mark-read.ts paths. The latest user assignment authorizes these paths; do not modify shared ownership here. F0 ContentCompiler in legacy ports.ts still takes legacy services; integration must expose the same registry with public-services compilers. WT-03 accepts an injected public compiler registry, without importing sibling implementations. Exact command outputs will follow.
+
+## Exact shared gate results
+- Bundled Node 24.19.0 `node scripts/verify-lane.mjs wt-03`: exit 1, `LANE_NOT_ASSEMBLED`, before any checks. Default shell Node 23.11.0 is not the pinned runtime.
+- `node scripts/verify-worktree.mjs wt-03`: exit 0; actual registered path, branch and HEAD accepted using the existing relocation edit.
+- `node scripts/verify-ownership.mjs wt-03`: exit 1, `UNOWNED_PATH:.gitignore`. It compares against foundation.startCommit 5c342f5 rather than the lane F0 base and includes WT-00 changes. New explicitly assigned text paths also need shared ownership entries. An initial task tooling symlink at the root caused OWNED_SYMLINK_FORBIDDEN; that task-created issue was fixed by using a real ignored node_modules directory with read-only dependency links. It is not a remaining shared blocker.
+- `node scripts/verify-docs.mjs wt-03`: exit 1, `FILE_INVENTORY_DRIFT`. It demands old ownership inventory and WT-00 evidence/source paths, not the exact latest lane assignment. Source validator hardcodes docs/photon/reference and docs/worktrees/wt-00/references; this task must snapshot under WT-03.
+
+Do not change these shared tools here or mark their aggregate gate passed. Integration should reconcile their base, assigned paths, public compiler-registry service signature and lane-local source/evidence support.
+
+## Inherited end-to-end integration failure
+The unchanged `tests/e2e/feature-runtime.test.ts` was also executed offline. With the normal temporary directory it reached the unchanged shared executor and returned status `blocked`, error `{code:"UNIMPLEMENTED",message:"UNIMPLEMENTED",retry:"safe-before-dispatch"}` instead of executor-completed (1 test failed). Shared executor.ts rejects legacy durable-children execution with zero shared-boundary invocations. This is not repaired in WT-03.
+
+A rerun keeping temporary state under this long WT-03 path hits the inherited socket harness limit first: `listen EINVAL: invalid argument /Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-03/.photon-local/wt09-vX8gEd/runtime.sock`. A relative TMPDIR cannot bypass it because the shared store requires an absolute path (`ABSOLUTE_STORE_PATH_REQUIRED`). These extra harness probes were not marked passing and did not change any shared code. `.photon-local/legacy-e2e-final.log` records the final EINVAL result. Integration owns a short socket-path facility while keeping database/test artifacts scoped.

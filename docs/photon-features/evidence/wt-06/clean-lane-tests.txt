@@ -1,0 +1,60 @@
+(node:36941) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ missing real backend stays blocked and performs no wake (19.882ms)
+✔ authenticated callback atomically records state and continuation, then wakes; event and nonce replay are durable (9.980334ms)
+✔ rejects authenticated callback with wrong scope (7.160208ms)
+✔ rejects authenticated callback with wrong session-scope (5.289959ms)
+✔ rejects authenticated callback with wrong line (7.01625ms)
+✔ rejects authenticated callback with wrong participant (6.711083ms)
+✔ rejects authenticated callback with wrong task (6.029083ms)
+✔ rejects authenticated callback with wrong generation (5.773208ms)
+✔ rejects authenticated callback with wrong nonce (5.762417ms)
+✔ rejects authenticated callback with wrong action (7.399375ms)
+✔ rejects authenticated callback with wrong expiry (6.296625ms)
+✔ rejects authenticated callback with wrong future (5.002708ms)
+✔ rejects authenticated callback with wrong cancelled-task (6.050542ms)
+✔ strict schema/body/header bounds and real fixture authentication reject malformed/unauthorized callbacks (6.291125ms)
+✔ callback transaction failure rolls back nonce/state/handoff and never wakes; retry can commit (6.18025ms)
+✔ unknown session and missing task/card remain durable unresolved records without wake (7.102125ms)
+✔ generic app-interaction events cannot bypass the authenticated return path (4.873292ms)
+✔ failed/unknown wake leaves a committed pending continuation for shared recovery (5.366417ms)
+(node:36942) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ registers exactly three handlers and keeps all four capability categories separate (5.9735ms)
+✔ universal cards do not require extension/backend config; customized cards do (18.992292ms)
+✔ customized staged image maps caption to the pinned required imageTitle field (6.158334ms)
+✔ customized update retains original target and refreshes metadata on successful void (14.028791ms)
+✔ universal update is blocked without real URL mapping and works through registered mapping (9.00025ms)
+✔ live flag requires configured evidence and is never inferred from a send (7.192875ms)
+✔ undefined send, uncertain dispatch and duplicate request do not invent card references (6.239167ms)
+✔ same-card concurrent requests cannot silently overwrite a completed revision (6.785875ms)
+✔ delayed admission intent cannot overwrite newer state and missing revision binding blocks (7.016459ms)
+✔ second module is excluded by durable in-flight marker, including after lease expiry (11.517709ms)
+✔ rejects cancel before side effects (5.500959ms)
+✔ rejects generation before side effects (5.349708ms)
+✔ rejects fence before side effects (5.7735ms)
+✔ rejects line before side effects (4.367ms)
+✔ rejects conversation before side effects (5.521166ms)
+✔ cancellation during asynchronous preparation is fenced immediately before dispatch (5.1525ms)
+✔ provider failure leaves durable uncertainty and blocks retries (10.818208ms)
+✔ post-dispatch-generation failure leaves durable uncertainty and blocks retries (5.043083ms)
+✔ commit failure leaves durable uncertainty and blocks retries (5.680125ms)
+(node:36943) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ pins exact installed SDK and uses public builders for distinct app/richlink/customized shapes (3.640333ms)
+✔ real edit builder retains original object and rejects inbound targets (0.800375ms)
+(node:36944) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ versioned codec round-trips only bounded data, rejects credentials, methods and unknown versions (20.333792ms)
+✔ SQLite reopen plus shared public getMessage resolver preserves the original target when its real handle survives (11.496084ms)
+✔ full handle loss after restart explicitly requires_original_session, never fabricates metadata or sends (10.495875ms)
+✔ rehydration without provider session or with different metadata is unsupported (9.607917ms)
+✔ dispatching/unknown checkpoint survives restart and cannot be treated as safe to retry (10.490333ms)
+ℹ tests 44
+ℹ suites 0
+ℹ pass 44
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 672.931625

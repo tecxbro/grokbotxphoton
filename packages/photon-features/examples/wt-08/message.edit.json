@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "idempotencyKey": "request-message.edit",
+  "contextId": "context-1",
+  "operation": "message.edit",
+  "arguments": {
+    "message": {
+      "version": 1,
+      "id": "message-1",
+      "scope": {
+        "projectId": "project-1",
+        "provider": "imessage",
+        "accountId": "account-1",
+        "lineId": "line-1",
+        "spaceId": "space-1"
+      },
+      "kind": "message"
+    },
+    "text": "updated"
+  }
+}

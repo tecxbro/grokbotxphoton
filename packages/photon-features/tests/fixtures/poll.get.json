@@ -1,0 +1,30 @@
+{
+  "valid": {
+    "version": 1,
+    "idempotencyKey": "request-poll.get",
+    "contextId": "context-1",
+    "operation": "poll.get",
+    "arguments": {
+      "poll": {
+        "version": 1,
+        "kind": "poll",
+        "id": "poll-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        },
+        "messageId": "message-1"
+      }
+    }
+  },
+  "rejected": {
+    "version": 1,
+    "idempotencyKey": "request-poll.get",
+    "contextId": "context-1",
+    "operation": "poll.get",
+    "arguments": {}
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "contractVersion": "f0-services-2",
+  "foundationDigest": "d95caace5f188fd13b6d4d26250be1c77aafa1f42447263e5e3e7982e7e1a60f",
+  "contractDigest": "eebf9be149f9edc354fc9f7509214062a9fc5fadb7755a28be535aaa5f609b19",
+  "digestFileCount": 36,
+  "reason": "Integration adds package, exports, registration, and verification wiring without moving photon-v3-f0."
+}

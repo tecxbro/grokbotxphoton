@@ -1,0 +1,115 @@
+{
+  "contractVersion": 1,
+  "algorithm": "sha256",
+  "contractDigest": "e0f7779bc9ca3d45696e9b4e24e8579d922c8d2d7d4323c821202d8f599acbf8",
+  "files": 71,
+  "schemas": 51,
+  "checkpoint": "F0",
+  "runtime": {
+    "node": "24.13.0",
+    "npm": "10.9.2",
+    "sqlite": "node:sqlite from Node 24.13.0"
+  },
+  "dependencies": {
+    "spectrum-ts": "12.8.0",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "24.10.1"
+  },
+  "resolvedProviderVersions": {
+    "@spectrum-ts/core": "12.8.0",
+    "@spectrum-ts/imessage": "12.8.0",
+    "@photon-ai/advanced-imessage": "2.1.0"
+  },
+  "digestScope": "sorted relative filenames, NUL, bytes, NUL for contracts/state/registry/host/legacy/capabilities source and generated schemas; see generator",
+  "ownershipFile": "docs/photon-features/ownership.json",
+  "validation": [
+    {
+      "command": "npm test",
+      "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+      "exitCode": 0,
+      "observedAt": "2026-09-08T23:09:41.864144+00:00",
+      "log": "docs/photon-features/evidence/wt-00/existing-tests.txt"
+    },
+    {
+      "command": "npm run photon:test",
+      "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+      "exitCode": 0,
+      "observedAt": "2026-09-08T23:09:44.164941+00:00",
+      "log": "docs/photon-features/evidence/wt-00/foundation-tests.txt"
+    },
+    {
+      "command": "npm run photon:check",
+      "cwd": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+      "exitCode": 0,
+      "observedAt": "2026-09-08T23:09:45.986804+00:00",
+      "log": "docs/photon-features/evidence/wt-00/schema-check.txt"
+    },
+    {
+      "command": "npm ci --ignore-scripts",
+      "cwd": "/private/tmp/wt00-checkpoint",
+      "exitCode": 0,
+      "observedAt": "2026-09-08T23:09:47.905485+00:00",
+      "log": "docs/photon-features/evidence/wt-00/clean-install.txt"
+    },
+    {
+      "command": "npm test",
+      "cwd": "/private/tmp/wt00-checkpoint",
+      "exitCode": 0,
+      "observedAt": "2026-09-08T23:09:48.177981+00:00",
+      "log": "docs/photon-features/evidence/wt-00/clean-existing-tests.txt"
+    },
+    {
+      "command": "npm run photon:test",
+      "cwd": "/private/tmp/wt00-checkpoint",
+      "exitCode": 0,
+      "observedAt": "2026-09-08T23:09:50.176594+00:00",
+      "log": "docs/photon-features/evidence/wt-00/clean-foundation-tests.txt"
+    },
+    {
+      "command": "npm run photon:check",
+      "cwd": "/private/tmp/wt00-checkpoint",
+      "exitCode": 0,
+      "observedAt": "2026-09-08T23:09:51.860704+00:00",
+      "log": "docs/photon-features/evidence/wt-00/clean-schema-check.txt"
+    }
+  ],
+  "status": {
+    "codeBuilt": true,
+    "integratedRuntime": false,
+    "installedActivated": false,
+    "liveVerified": false,
+    "parallelImplementationReady": true
+  },
+  "implementation": {
+    "messagingOperations": 44,
+    "implementedMessagingHandlers": 0,
+    "schemaRegistrationIsImplementation": false
+  },
+  "limitations": [
+    "No live messages, credentials, provisioning or service activation.",
+    "SDK declaration compatibility: skipLibCheck=true; exactOptionalPropertyTypes=false; strict/noUncheckedIndexedAccess remain enabled.",
+    "Node SQLite API is experimental in selected Node.",
+    "Provider availability and deployment bindings unknown.",
+    "No public provider idempotency or advanced mutation extension approved."
+  ],
+  "preExistingTests": {
+    "command": "npm test before changes",
+    "passed": 31,
+    "failed": 0
+  },
+  "remotePublished": false,
+  "additionalValidation": {
+    "packageBoundary": "npm pack --dry-run: test fixtures and examples excluded",
+    "ownership": "44 exact matches between ownership.json and typed registry",
+    "driftNegative": "Corrupted generated schema rejected; restored artifact passed",
+    "fullDependencyDeclarations": {
+      "exitCode": 2,
+      "gate": false,
+      "limitation": "Known upstream SDK declaration errors; selected compatibility build and real public call-site probes pass",
+      "log": "docs/photon-features/evidence/wt-00/sdk-full-declaration-limit.txt"
+    }
+  }
+}

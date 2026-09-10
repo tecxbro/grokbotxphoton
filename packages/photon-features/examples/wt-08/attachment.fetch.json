@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "idempotencyKey": "request-attachment.fetch",
+  "contextId": "context-1",
+  "operation": "attachment.fetch",
+  "arguments": {
+    "attachment": {
+      "version": 1,
+      "id": "attachment-1",
+      "scope": {
+        "projectId": "project-1",
+        "provider": "imessage",
+        "accountId": "account-1",
+        "lineId": "line-1",
+        "spaceId": "space-1"
+      },
+      "kind": "attachment",
+      "messageId": "message-1"
+    }
+  }
+}

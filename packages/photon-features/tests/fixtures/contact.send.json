@@ -1,0 +1,44 @@
+{
+  "valid": {
+    "version": 1,
+    "idempotencyKey": "request-contact.send",
+    "contextId": "context-1",
+    "operation": "contact.send",
+    "arguments": {
+      "space": {
+        "version": 1,
+        "kind": "space",
+        "id": "space-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        }
+      },
+      "contact": {
+        "name": "Ada",
+        "phones": [
+          "+15555550100"
+        ],
+        "emails": []
+      }
+    }
+  },
+  "rejected": {
+    "version": 1,
+    "idempotencyKey": "request-contact.send",
+    "contextId": "context-1",
+    "operation": "contact.send",
+    "arguments": {
+      "contact": {
+        "name": "Ada",
+        "phones": [
+          "+15555550100"
+        ],
+        "emails": []
+      }
+    }
+  }
+}

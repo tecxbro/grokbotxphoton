@@ -1,0 +1,20 @@
+
+> grok-bot-cli@0.2.2 photon:build
+> npm run build --workspace=@grokbot/photon-features
+
+
+> @grokbot/photon-features@0.1.0 build
+> tsc -p tsconfig.json
+
+src/cli/local-client.ts(17,82): error TS2322: Type '{ version: 1; ok: false; error: { code: string; requestId?: string | undefined; }; }' is not assignable to type 'LocalResponse'.
+  Type '{ version: 1; ok: false; error: { code: string; requestId?: string | undefined; }; }' is not assignable to type '{ version: 1; ok: false; error: { code: string; requestId: string; }; }'.
+    The types of 'error.requestId' are incompatible between these types.
+      Type 'string | undefined' is not assignable to type 'string'.
+        Type 'undefined' is not assignable to type 'string'.
+npm error Lifecycle script `build` failed with error:
+npm error code 2
+npm error path /Users/darshan/Documents/ChatGPT/grokbotxphoton/packages/photon-features
+npm error workspace @grokbot/photon-features@0.1.0
+npm error location /Users/darshan/Documents/ChatGPT/grokbotxphoton/packages/photon-features
+npm error command failed
+npm error command sh -c tsc -p tsconfig.json

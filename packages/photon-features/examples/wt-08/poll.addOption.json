@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "idempotencyKey": "request-poll.addOption",
+  "contextId": "context-1",
+  "operation": "poll.addOption",
+  "arguments": {
+    "poll": {
+      "version": 1,
+      "id": "poll-1",
+      "scope": {
+        "projectId": "project-1",
+        "provider": "imessage",
+        "accountId": "account-1",
+        "lineId": "line-1",
+        "spaceId": "space-1"
+      },
+      "kind": "poll",
+      "messageId": "message-1"
+    },
+    "option": {
+      "key": "three",
+      "label": "three"
+    }
+  }
+}

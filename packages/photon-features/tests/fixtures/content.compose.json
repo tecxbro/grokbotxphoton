@@ -1,0 +1,48 @@
+{
+  "valid": {
+    "version": 1,
+    "idempotencyKey": "request-content.compose",
+    "contextId": "context-1",
+    "operation": "content.compose",
+    "arguments": {
+      "space": {
+        "version": 1,
+        "kind": "space",
+        "id": "space-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        }
+      },
+      "content": {
+        "type": "compose",
+        "items": [
+          {
+            "type": "text",
+            "text": "hello"
+          }
+        ]
+      }
+    }
+  },
+  "rejected": {
+    "version": 1,
+    "idempotencyKey": "request-content.compose",
+    "contextId": "context-1",
+    "operation": "content.compose",
+    "arguments": {
+      "content": {
+        "type": "compose",
+        "items": [
+          {
+            "type": "text",
+            "text": "hello"
+          }
+        ]
+      }
+    }
+  }
+}

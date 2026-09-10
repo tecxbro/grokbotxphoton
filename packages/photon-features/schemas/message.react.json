@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "number",
+      "const": 1
+    },
+    "idempotencyKey": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+    },
+    "contextId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+    },
+    "operation": {
+      "type": "string",
+      "const": "message.react"
+    },
+    "arguments": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "number",
+              "const": 1
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200,
+              "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+            },
+            "scope": {
+              "type": "object",
+              "properties": {
+                "projectId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200,
+                  "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+                },
+                "provider": {
+                  "type": "string",
+                  "const": "imessage"
+                },
+                "accountId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200,
+                  "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+                },
+                "lineId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200,
+                  "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+                },
+                "spaceId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200,
+                  "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+                }
+              },
+              "required": [
+                "projectId",
+                "provider",
+                "accountId",
+                "lineId",
+                "spaceId"
+              ],
+              "additionalProperties": false
+            },
+            "kind": {
+              "type": "string",
+              "const": "message"
+            }
+          },
+          "required": [
+            "version",
+            "id",
+            "scope",
+            "kind"
+          ],
+          "additionalProperties": false
+        },
+        "reaction": {
+          "type": "string",
+          "enum": [
+            "love",
+            "like",
+            "dislike",
+            "laugh",
+            "emphasize",
+            "question"
+          ]
+        }
+      },
+      "required": [
+        "message",
+        "reaction"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "version",
+    "idempotencyKey",
+    "contextId",
+    "operation",
+    "arguments"
+  ],
+  "additionalProperties": false
+}

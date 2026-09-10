@@ -1,0 +1,26 @@
+Diagnostic only: full dependency declaration checking remains unsupported.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(3,19): error TS7016: Could not find a declaration file for module 'vcf'. '/Users/darshan/Documents/ChatGPT/grokbotxphoton/node_modules/vcf/lib/vcard.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/vcf` if it exists or add a new declaration (.d.ts) file containing `declare module 'vcf';`
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(3558,90): error TS2709: Cannot use namespace 'Iterator$1' as a type.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(3747,97): error TS2344: Type 'args$1<unknown[]>' does not satisfy the constraint 'unknown[]'.
+  Type 'args$1<unknown[]>' is missing the following properties from type 'unknown[]': length, pop, push, concat, and 35 more.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(4460,125): error TS2709: Cannot use namespace 'Numbers' as a type.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(4477,125): error TS2709: Cannot use namespace 'Numbers' as a type.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(4750,171): error TS2707: Generic type 'Min' requires between 0 and 1 type arguments.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(4766,171): error TS2707: Generic type 'Max' requires between 0 and 1 type arguments.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(5240,88): error TS2344: Type 'Str' does not satisfy the constraint 'string | unique symbol | unique symbol'.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(5254,98): error TS2344: Type 'Str' does not satisfy the constraint 'number | unique symbol | unique symbol'.
+  Type 'string' is not assignable to type 'number | unique symbol | unique symbol'.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(5412,13): error TS2315: Type 'SnakeCase' is not generic.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(5424,13): error TS2315: Type 'CamelCase' is not generic.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(5438,13): error TS2315: Type 'KebabCase' is not generic.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(5560,13): error TS2315: Type 'FromEntries' is not generic.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(5572,13): error TS2315: Type 'Entries' is not generic.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(5773,39): error TS2315: Type 'FromEntries' is not generic.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(5773,67): error TS2315: Type 'Entries' is not generic.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(5792,39): error TS2315: Type 'FromEntries' is not generic.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(5792,67): error TS2315: Type 'Entries' is not generic.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(5982,116): error TS2344: Type 'obj' does not satisfy the constraint 'string | number | unique symbol | unique symbol'.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(6026,13): error TS2315: Type 'Keys' is not generic.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(6038,13): error TS2315: Type 'Values' is not generic.
+node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts(6052,13): error TS2315: Type 'AllPaths' is not generic.

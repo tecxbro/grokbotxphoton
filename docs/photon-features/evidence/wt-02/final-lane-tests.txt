@@ -1,0 +1,67 @@
+(node:36921) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ normalizes text, attachments, groups, edits, reactions, read and membership without prose coercion (121.888541ms)
+✔ unknown, senderless, unsent, card and ambiguous poll content is durably unresolved (34.281709ms)
+✔ correlated poll votes and unvotes retain distinct identities and scoped references (17.821959ms)
+✔ two-second quiet window resets on new text; restart and duplicate arrival preserve individual input (23.654417ms)
+✔ non-text wakes immediately; outbound echoes and operational events do not create reply loops (56.286416ms)
+✔ distinct events targeting one message survive dedupe and out-of-order arrivals (10.1755ms)
+✔ reducer state and continuation commit atomically; early correlation remains durable and retries (14.324459ms)
+✔ persistence failure prevents acceptance and wake; crash in reduction leaves inbox replayable (17.451083ms)
+✔ wake retries the same committed identity after SQLite close/reopen; claims and cancellations are honored (26.472875ms)
+✔ cancellation never discards batched text; new generation can accept retained inputs (32.842167ms)
+✔ checkpoint barrier never skips a missing preceding event; public restart recovery limit stays explicit (19.044459ms)
+✔ local capture replay closes the pre-inbox crash window and reports missing routes (21.7855ms)
+✔ historical text bursts stay separate after delayed restart recovery (18.639916ms)
+✔ poll capture can be promoted from unresolved after authoritative correlation arrives (12.215416ms)
+✔ JSON key order does not alter logical event identity (16.454459ms)
+✔ simple contacts normalize; richer unsupported contacts retain full capture (30.259833ms)
+✔ host pump batches before dispatch and retries a failed wake using the same work (12.161167ms)
+✔ cross-scope targets and conflicting reuse of an event identity are rejected (10.809708ms)
+✔ duplicate unresolved delivery with a new capture pointer remains accepted (16.203583ms)
+✔ async reducers cannot commit a continuation ahead of correlated state (9.206458ms)
+(node:36922) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[spectrum.lifecycle] INFO Spectrum started {
+  'spectrum.lifecycle.provider_count': 1,
+  'spectrum.lifecycle.providers': 'wt02_test',
+  'spectrum.lifecycle.telemetry': false
+}
+✔ single SDK lifecycle and explicit multi-line routing; feature calls never create listeners (1.600916ms)
+✔ owner startup failure and stop during delayed startup clean up correctly (0.167791ms)
+✔ webhook acknowledges only after awaited durable acceptance and rejects persistence failure (57.602958ms)
+✔ invalid signatures, raw-byte tampering, stale/future timestamps and alternate envelopes cannot enter inbox (16.349875ms)
+[spectrum.lifecycle] INFO Spectrum stopped {
+  'spectrum.lifecycle.providers': 'wt02_test',
+  'spectrum.lifecycle.stream_close_ms': 0,
+  'spectrum.lifecycle.fusor_close_ms': 0,
+  'spectrum.lifecycle.client_close_ms': 0
+}
+✔ actual pinned SDK helper returns before callback settles (offline custom provider) (9.904584ms)
+✔ stream failure remains inspectable and SDK's reconnect is not replaced with another connection (16.423083ms)
+✔ owner stops typing before destroying the shared client (0.152667ms)
+(node:36923) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ delayed start cancelled before dispatch; expiry and timeout stop active typing (1.530209ms)
+✔ old generation and old same-generation ticket cannot stop newer indicator (0.298541ms)
+✔ late start after cancellation is followed by stop (1.644292ms)
+✔ delayed stop completes before newer start; stale completion cannot leave new generation off (0.200208ms)
+✔ overlapping start generations need no stale stop (0.117041ms)
+✔ slow resolver cannot replay expired typing-start work (0.107042ms)
+✔ completion, error, abort, and long-worker waiting run the stop path (0.738583ms)
+✔ typing rejection and hung control never block real response (0.513542ms)
+✔ shutdown, connection loss, restoration, and restart invalidate prior starts (0.321208ms)
+✔ failure reports unknown visibility and does not spin on failed stop (0.175625ms)
+✔ explicit typing module consumes F0 services and persisted execution identity; expired starts do not replay (9.193375ms)
+✔ bounded shutdown reports a hung control without claiming a stop (10.716083ms)
+✔ dispatch revalidates the fence after a delayed resolver (0.168333ms)
+✔ old start rejection cannot cancel a newer generation (0.106958ms)
+✔ old stop rejection cannot cancel a newer generation (0.081458ms)
+ℹ tests 42
+ℹ suites 0
+ℹ pass 42
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 665.01825

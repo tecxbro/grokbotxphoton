@@ -1,0 +1,32 @@
+{
+  "valid": {
+    "version": 1,
+    "idempotencyKey": "request-message.react",
+    "contextId": "context-1",
+    "operation": "message.react",
+    "arguments": {
+      "message": {
+        "version": 1,
+        "kind": "message",
+        "id": "message-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        }
+      },
+      "reaction": "love"
+    }
+  },
+  "rejected": {
+    "version": 1,
+    "idempotencyKey": "request-message.react",
+    "contextId": "context-1",
+    "operation": "message.react",
+    "arguments": {
+      "reaction": "love"
+    }
+  }
+}

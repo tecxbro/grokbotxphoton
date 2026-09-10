@@ -1,0 +1,1974 @@
+{
+  "records": [
+    {
+      "url": "https://photon.codes/docs/llms.txt",
+      "title": "Photon",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:54.848183+00:00",
+      "read": true,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/llms.txt",
+      "contentType": "text/plain; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "0e9cff75bdffdb8e625583fdd88ccd7317d027fa3f9a74cbe3cebfa256c0c033",
+      "bytes": 16307,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/f2dfc2e2a0f48cb3.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed."
+    },
+    {
+      "url": "https://photon.codes/docs/llms-spectrum.txt",
+      "title": "llms-spectrum.txt",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:54.848583+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "http-error",
+      "httpStatus": 404,
+      "limitation": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://photon.codes/docs/llms-cli.txt",
+      "title": "llms-cli.txt",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:54.848665+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "http-error",
+      "httpStatus": 404,
+      "limitation": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://photon.codes/docs/llms-webhooks.txt",
+      "title": "llms-webhooks.txt",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:54.848718+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "http-error",
+      "httpStatus": 404,
+      "limitation": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://photon.codes/docs/llms-low-level-sdks.txt",
+      "title": "llms-low-level-sdks.txt",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:54.848764+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "http-error",
+      "httpStatus": 404,
+      "limitation": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://photon.codes/docs/llms-api-reference.txt",
+      "title": "llms-api-reference.txt",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:54.848804+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "http-error",
+      "httpStatus": 404,
+      "limitation": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://docs.photon.codes/docs/llms.txt",
+      "title": "Photon",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:54.848844+00:00",
+      "read": true,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/llms.txt",
+      "contentType": "text/plain; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "0e9cff75bdffdb8e625583fdd88ccd7317d027fa3f9a74cbe3cebfa256c0c033",
+      "bytes": 16307,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/c9f446dde978aa04.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/introduction",
+      "title": "introduction",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:54.848882+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/introduction",
+      "contentType": "text/html; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "25e81af503dee55aaef0357112c10b1cf1caded323055a1a96767acafa543390",
+      "bytes": 337774,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "readExtent": "HTTP result and body type checked only; Markdown equivalent used where available.",
+      "retrievedBodyArchived": false
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/introduction.md",
+      "title": "Introduction",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:54.848944+00:00",
+      "read": true,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/introduction.md",
+      "contentType": "text/markdown; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "b5eb80fad3e2c756cd1b7438fc3e695edffe7816eafb21ce99bbd0b539f27f3e",
+      "bytes": 6505,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/4f83e3008e7ebb73.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/getting-started",
+      "title": "getting-started",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:54.849015+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/getting-started",
+      "contentType": "text/html; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "8f5b066a46faecdfb48a795df6d02fa5cc8ff3da497ab4c2e1e25a7be144d279",
+      "bytes": 491468,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "readExtent": "HTTP result and body type checked only; Markdown equivalent used where available.",
+      "retrievedBodyArchived": false
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/getting-started.md",
+      "title": "Getting Started",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:55.814550+00:00",
+      "read": true,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/getting-started.md",
+      "contentType": "text/markdown; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "6f8ead1678e917693423a932ad0b00c8c12b88665151f0f936630b0c3c8f3ce4",
+      "bytes": 21914,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/4d520abbb1564086.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/messages",
+      "title": "messages",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:55.971430+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/messages",
+      "contentType": "text/html; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "a5fe08605b70bd80a813bc4718180abd921a32a63299abb075d953ac2ff97d82",
+      "bytes": 451499,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "readExtent": "HTTP result and body type checked only; Markdown equivalent used where available.",
+      "retrievedBodyArchived": false
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/messages.md",
+      "title": "Messages",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.000646+00:00",
+      "read": true,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/messages.md",
+      "contentType": "text/markdown; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "0da88e0f2336f1f0757dc7359dd702ce9fc2d3e586e523871244251f97c7d39b",
+      "bytes": 42753,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/e22b5eda8bfeeba7.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/spaces-and-users",
+      "title": "spaces-and-users",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.020535+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/spaces-and-users",
+      "contentType": "text/html; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "ed4137bc637b303643f4029d744040c5de5fb5209d494b73ed1631d434da190a",
+      "bytes": 411780,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "readExtent": "HTTP result and body type checked only; Markdown equivalent used where available.",
+      "retrievedBodyArchived": false
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/spaces-and-users.md",
+      "title": "Spaces and Users",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.037598+00:00",
+      "read": true,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/spaces-and-users.md",
+      "contentType": "text/markdown; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "f69d3567ce5bb75b6db2348c1906ff0e8629941be75c49f64416311693fbe044",
+      "bytes": 21511,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/795a1cf6bd225ed5.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/platform-narrowing",
+      "title": "platform-narrowing",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.095560+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/platform-narrowing",
+      "contentType": "text/html; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "116b927a52d4b2a6e4d18200f2cf09c55658feeb0dee7bf9c640a18ccdb90162",
+      "bytes": 359635,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "readExtent": "HTTP result and body type checked only; Markdown equivalent used where available.",
+      "retrievedBodyArchived": false
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/platform-narrowing.md",
+      "title": "Platform Narrowing",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.095649+00:00",
+      "read": true,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/platform-narrowing.md",
+      "contentType": "text/markdown; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "bf4786f4ecab20832500b0585ceb406281eaf04299f1c6af987cbc980a7d137b",
+      "bytes": 7549,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/a277bf12ed7f7f52.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers",
+      "title": "providers",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.096337+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers",
+      "contentType": "text/html; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "fe4ccc1b49ed9bf4039b1750e262e61e55eed6e7f12de572fea58e5d3eaa83b3",
+      "bytes": 326955,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "readExtent": "HTTP result and body type checked only; Markdown equivalent used where available.",
+      "retrievedBodyArchived": false
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers.md",
+      "title": "Providers",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.113148+00:00",
+      "read": true,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers.md",
+      "contentType": "text/markdown; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "04616a36a7dcd45def78fbeded3d2c5f508dae3353f496b6d79d608eba15f796",
+      "bytes": 3765,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/301e54f25d427958.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage",
+      "title": "imessage",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.230900+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers/imessage",
+      "contentType": "text/html; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "4f08733d2a6bb8da118b7c718fe9e04f853743d69f1d64016a76ebf0ae074f30",
+      "bytes": 423409,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "readExtent": "HTTP result and body type checked only; Markdown equivalent used where available.",
+      "retrievedBodyArchived": false
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage.md",
+      "title": "iMessage",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.301427+00:00",
+      "read": true,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers/imessage.md",
+      "contentType": "text/markdown; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "5677f6f500a06b8286f0fa43dedc24aebb1ec2c61f67c8ba13491f590632399f",
+      "bytes": 8326,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/0efab1eff5a62cbb.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/connection-and-routing",
+      "title": "connection-and-routing",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.316299+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers/imessage/connection-and-routing",
+      "contentType": "text/html; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "b9261dfed92e9320bff7d7d098d6bce28843fa0af2a0df898dc6b0141dd4624b",
+      "bytes": 494310,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "readExtent": "HTTP result and body type checked only; Markdown equivalent used where available.",
+      "retrievedBodyArchived": false
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/connection-and-routing.md",
+      "title": "iMessage connection and routing",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.499470+00:00",
+      "read": true,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers/imessage/connection-and-routing.md",
+      "contentType": "text/markdown; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "566a8ddbd1cf0dccdbcd3695c6e28c3cc4b100d97e606c0ee923ade339f24c47",
+      "bytes": 12563,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/3c5aa1ecf9e69006.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/content",
+      "title": "content",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.500996+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/content",
+      "contentType": "text/html; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "e935988a86e42f230a48cc73dd15f29f500284112a2ce033bb865488122b1c0c",
+      "bytes": 325686,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "readExtent": "HTTP result and body type checked only; Markdown equivalent used where available.",
+      "retrievedBodyArchived": false
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/content.md",
+      "title": "Content",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.512959+00:00",
+      "read": true,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/content.md",
+      "contentType": "text/markdown; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "ff7fc65dfecc07fc3e760115262c14b3439b36e2f9fe2a3f109cee9e619bd42d",
+      "bytes": 5186,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/ec7b3410fa4f3bc3.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/webhooks",
+      "title": "webhooks",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.524325+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/webhooks",
+      "contentType": "text/html; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "9eeb188dc651348fdc73af399a676b891161d82fd2d2d30b65e66aa8e5fb18d0",
+      "bytes": 500883,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "readExtent": "HTTP result and body type checked only; Markdown equivalent used where available.",
+      "retrievedBodyArchived": false
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/webhooks.md",
+      "title": "Webhooks",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.543603+00:00",
+      "read": true,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/webhooks.md",
+      "contentType": "text/markdown; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "467ef6c27f50ff72555a335fd674402199a396237433d0cb4543c7836a4652f7",
+      "bytes": 10774,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/6d609c45d12a50d3.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/custom-events-and-lifecycle",
+      "title": "custom-events-and-lifecycle",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.543695+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/custom-events-and-lifecycle",
+      "contentType": "text/html; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "c2180501a0cceae33079f44c738241b3aa7c1a8040a418c882e9926b8696afe8",
+      "bytes": 340659,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "readExtent": "HTTP result and body type checked only; Markdown equivalent used where available.",
+      "retrievedBodyArchived": false
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/custom-events-and-lifecycle.md",
+      "title": "Custom Events and Lifecycle",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.549182+00:00",
+      "read": true,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/custom-events-and-lifecycle.md",
+      "contentType": "text/markdown; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "f00445888cb5944ff77f259b3e781009977d57367d753d586029705e406980c5",
+      "bytes": 4862,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/a66f06c0a3a40208.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed."
+    },
+    {
+      "url": "https://photon.codes/docs/best-practices/architecture",
+      "title": "architecture",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.609804+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/best-practices/architecture",
+      "contentType": "text/html; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "f6e6f18a20398ab4413cbe5ef45771d9c41cac363fa99efd04a13d38d2237643",
+      "bytes": 283733,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "readExtent": "HTTP result and body type checked only; Markdown equivalent used where available.",
+      "retrievedBodyArchived": false
+    },
+    {
+      "url": "https://photon.codes/docs/best-practices/architecture.md",
+      "title": "Architecture",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.624495+00:00",
+      "read": true,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/best-practices/architecture.md",
+      "contentType": "text/markdown; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "9df570ca7d3e08256f47e03673d47ec3e96e05f250b738badda5980c0c0eb8e1",
+      "bytes": 3230,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/4f8d436cefb3b88e.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed."
+    },
+    {
+      "url": "https://photon.codes/docs/best-practices/recovery-and-state",
+      "title": "recovery-and-state",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.627499+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/best-practices/recovery-and-state",
+      "contentType": "text/html; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "af12cf315c8bf04d8e0b51218132d90749bc1b8f2ae05c61ad5e470c2a99ea5d",
+      "bytes": 319226,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "readExtent": "HTTP result and body type checked only; Markdown equivalent used where available.",
+      "retrievedBodyArchived": false
+    },
+    {
+      "url": "https://photon.codes/docs/best-practices/recovery-and-state.md",
+      "title": "Recovery and state",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:56.707774+00:00",
+      "read": true,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://photon.codes/docs/best-practices/recovery-and-state.md",
+      "contentType": "text/markdown; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "65944f4b202e0142388403aff39b3135b3dca7ab87035cdc36af22713716a9f0",
+      "bytes": 5801,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/eaf6ade3d6b64d67.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/custom-platforms",
+      "title": "custom-platforms",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.707966+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/terminal/setup-and-usage",
+      "title": "setup-and-usage",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.707982+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/terminal/interactions",
+      "title": "interactions",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.707989+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/whatsapp-business/setup",
+      "title": "setup",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.707996+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/whatsapp-business/conversations",
+      "title": "conversations",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.708001+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/telegram/setup",
+      "title": "setup",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.708006+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/telegram/conversations-and-features",
+      "title": "conversations-and-features",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.708012+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/voice/outbound-calls",
+      "title": "outbound-calls",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.708018+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/voice/inbound-calls",
+      "title": "inbound-calls",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.708023+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/voice/troubleshooting",
+      "title": "troubleshooting",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.708028+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/integrations/chat-sdk",
+      "title": "chat-sdk",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.708033+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/integrations/eve",
+      "title": "eve",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.708038+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/legacy/imessage",
+      "title": "imessage",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.708044+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/opensource/imessage-kit",
+      "title": "imessage-kit",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.708050+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/imessage/locations",
+      "title": "locations",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.708056+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/whatsapp/getting-started",
+      "title": "getting-started",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.708060+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/whatsapp/messages",
+      "title": "messages",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.708065+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/whatsapp/interactive-messages",
+      "title": "interactive-messages",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.708070+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/whatsapp/templates",
+      "title": "templates",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.708075+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/whatsapp/events",
+      "title": "events",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.708080+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/whatsapp/media",
+      "title": "media",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.708084+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/whatsapp/error-handling",
+      "title": "error-handling",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:56.708089+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://github.com/tecxbro/grokbotonimessage",
+      "title": "grokbotonimessage",
+      "classification": "public SDK",
+      "accessedAt": "2026-09-08T22:47:56.708094+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/grokbotonimessage/main/package.json",
+      "title": "package.json",
+      "classification": "public SDK",
+      "accessedAt": "2026-09-08T22:47:56.708099+00:00",
+      "read": true,
+      "sourceVersion": "24468391b57f028b4b881ddbf71efab3a49a6f73",
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/grokbotonimessage/main/package.json",
+      "contentType": "text/plain; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "fb98345203b4a62462643df68280b64b78eaa58420505bb3e23e1e1776dba671",
+      "bytes": 1044,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/6a1c63a5fbf0bb9a.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed.",
+      "pinnedBodyVerified": true
+    },
+    {
+      "url": "https://github.com/photon-hq/docs",
+      "title": "docs",
+      "classification": "public SDK",
+      "accessedAt": "2026-09-08T22:47:56.708596+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/photon-hq/docs/main/README.md",
+      "title": "Photon Docs",
+      "classification": "public SDK",
+      "accessedAt": "2026-09-08T22:47:56.708604+00:00",
+      "read": true,
+      "sourceVersion": "5e0af33d27e62279a74c559671a86864a38e47a8",
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://raw.githubusercontent.com/photon-hq/docs/main/README.md",
+      "contentType": "text/plain; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "bcad66030707ffe00b5397e5a468c711d3db5c7de7d5c31cab85270ca98a0891",
+      "bytes": 4799,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/a5d95cb791f762ed.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed.",
+      "pinnedBodyVerified": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/photon-hq/docs/main/scripts/sources.json",
+      "title": "sources.json",
+      "classification": "public SDK",
+      "accessedAt": "2026-09-08T22:47:56.828421+00:00",
+      "read": true,
+      "sourceVersion": "5e0af33d27e62279a74c559671a86864a38e47a8",
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://raw.githubusercontent.com/photon-hq/docs/main/scripts/sources.json",
+      "contentType": "text/plain; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "818b2e1c00d9edb84a63d4a229e55c3b1d9568e12c2e41d3e450207f8be1a460",
+      "bytes": 1111,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/ec03c9d13405be87.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed.",
+      "pinnedBodyVerified": true
+    },
+    {
+      "url": "https://github.com/tecxbro/photon-skills",
+      "title": "photon-skills",
+      "classification": "supplementary skill",
+      "accessedAt": "2026-09-08T22:47:56.857695+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/SKILL.md",
+      "title": "Spectrum",
+      "classification": "supplementary skill",
+      "accessedAt": "2026-09-08T22:47:56.857714+00:00",
+      "read": true,
+      "sourceVersion": "11f5d755a652fff73b4410559b1c1d7d5f30a522",
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/SKILL.md",
+      "contentType": "text/plain; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "0a2f328fe6da4d202497e8bb859625de06af23cce884d1639dd1e8f3cb737de8",
+      "bytes": 4842,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/0d3d03e9c4311928.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed.",
+      "pinnedBodyVerified": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/getting-started.md",
+      "title": "Getting started",
+      "classification": "supplementary skill",
+      "accessedAt": "2026-09-08T22:47:56.869750+00:00",
+      "read": true,
+      "sourceVersion": "11f5d755a652fff73b4410559b1c1d7d5f30a522",
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/getting-started.md",
+      "contentType": "text/plain; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "673b2fd18f7a6ec0f769ac9fff2cda4b03190e78cea064c782bfb1c448f2698b",
+      "bytes": 6191,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/c67caa9377eea087.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed.",
+      "pinnedBodyVerified": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/capability-semantics.md",
+      "title": "Capability and fallback semantics",
+      "classification": "supplementary skill",
+      "accessedAt": "2026-09-08T22:47:56.872211+00:00",
+      "read": true,
+      "sourceVersion": "11f5d755a652fff73b4410559b1c1d7d5f30a522",
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/capability-semantics.md",
+      "contentType": "text/plain; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "7451fec93c937bf92238e916f6e811ce4e41ddd5459a2211950b0efdda471fe5",
+      "bytes": 2122,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/570445ae670a7bc0.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed.",
+      "pinnedBodyVerified": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/platform-narrowing.md",
+      "title": "Platform narrowing",
+      "classification": "supplementary skill",
+      "accessedAt": "2026-09-08T22:47:56.873402+00:00",
+      "read": true,
+      "sourceVersion": "11f5d755a652fff73b4410559b1c1d7d5f30a522",
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/platform-narrowing.md",
+      "contentType": "text/plain; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "dc003541cb706fe0cc0d175aefa9343e0f16545f8f7c86ce579bba5256da0137",
+      "bytes": 3671,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/d00523caefbd4d1c.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed.",
+      "pinnedBodyVerified": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/SKILL.md",
+      "title": "iMessage",
+      "classification": "supplementary skill",
+      "accessedAt": "2026-09-08T22:47:56.888901+00:00",
+      "read": true,
+      "sourceVersion": "11f5d755a652fff73b4410559b1c1d7d5f30a522",
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/SKILL.md",
+      "contentType": "text/plain; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "218af7703b8d12537ca8c6077c1b8b5d9865ccc2202fc7eaef2d883651a59dbb",
+      "bytes": 5503,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/4a6527efce8d619c.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed.",
+      "pinnedBodyVerified": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/choosing-a-stack.md",
+      "title": "Choosing an iMessage stack",
+      "classification": "supplementary skill",
+      "accessedAt": "2026-09-08T22:47:56.918671+00:00",
+      "read": true,
+      "sourceVersion": "11f5d755a652fff73b4410559b1c1d7d5f30a522",
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/choosing-a-stack.md",
+      "contentType": "text/plain; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "b3db924a0af366a16924334549acb509266e973b5485890f4490f5ab4bb6f41a",
+      "bytes": 1569,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/8fdf47cb3771dbea.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed.",
+      "pinnedBodyVerified": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/advanced/getting-started.md",
+      "title": "Advanced iMessage getting started",
+      "classification": "supplementary skill",
+      "accessedAt": "2026-09-08T22:47:57.223342+00:00",
+      "read": true,
+      "sourceVersion": "11f5d755a652fff73b4410559b1c1d7d5f30a522",
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/advanced/getting-started.md",
+      "contentType": "text/plain; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "8fd4fd2d31b7e67793115eca2e44a05d44689ccfeb2d266698f5da9d8b98ac71",
+      "bytes": 5495,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/fed4c469c38f5d5c.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed.",
+      "pinnedBodyVerified": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/references/hosted-v2.md",
+      "title": "Advanced iMessage 2.x",
+      "classification": "supplementary skill",
+      "accessedAt": "2026-09-08T22:47:57.230566+00:00",
+      "read": true,
+      "sourceVersion": "11f5d755a652fff73b4410559b1c1d7d5f30a522",
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/references/hosted-v2.md",
+      "contentType": "text/plain; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "c67608ba7501fa7de8d8490f84e78afcaa88b4e5b44f86c0024cf0d8d2a21114",
+      "bytes": 9202,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/b17557afa43dc829.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed.",
+      "pinnedBodyVerified": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/references/spectrum.md",
+      "title": "Spectrum iMessage",
+      "classification": "supplementary skill",
+      "accessedAt": "2026-09-08T22:47:57.230744+00:00",
+      "read": true,
+      "sourceVersion": "11f5d755a652fff73b4410559b1c1d7d5f30a522",
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/references/spectrum.md",
+      "contentType": "text/plain; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "4f3d5ad114aea76fad698c4985c8db1df04eebd66babf7c0bbfec37cac08fffb",
+      "bytes": 4591,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "bodyPath": "docs/photon-features/sources/812592b12ec09e37.txt",
+      "readExtent": "Relevant headings and contract sections; website generated tooltip markup not exhaustively reviewed.",
+      "pinnedBodyVerified": true
+    },
+    {
+      "url": "https://github.com/photon-hq/spectrum-ts",
+      "title": "spectrum-ts",
+      "classification": "public SDK",
+      "accessedAt": "2026-09-08T22:47:57.231074+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://github.com/photon-hq/spectrum-ts/tree/main/docs/content",
+      "title": "content",
+      "classification": "supplementary skill",
+      "accessedAt": "2026-09-08T22:47:57.231080+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://git-scm.com/docs/git-worktree",
+      "title": "git-worktree",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:57.231084+00:00",
+      "read": true,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://git-scm.com/docs/git-worktree",
+      "contentType": "text/html; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "f00c8c296c55f999cd6a68bb1c15280f7831c171a4d7bb1dc977999983ce500d",
+      "bytes": 97870,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "readExtent": "Relevant worktree description/commands and merge documentation accessed through browser tool after HTTP capture.",
+      "retrievedBodyArchived": false
+    },
+    {
+      "url": "https://git-scm.com/docs/git-merge",
+      "title": "git-merge",
+      "classification": "official documentation",
+      "accessedAt": "2026-09-08T22:47:57.231346+00:00",
+      "read": true,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://git-scm.com/docs/git-merge",
+      "contentType": "text/html; charset=utf-8",
+      "accessResult": "retrieved",
+      "sha256": "0044102b4dbd04da920199fb1e76ba8c8617126a13b6397d4b3a226c91932c2d",
+      "bytes": 142233,
+      "limitation": "Website is unversioned; installed SDK declarations take precedence.",
+      "readExtent": "Relevant worktree description/commands and merge documentation accessed through browser tool after HTTP capture.",
+      "retrievedBodyArchived": false
+    },
+    {
+      "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/providers/whatsapp-business.md",
+      "title": "whatsapp-business.md",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:57.236529+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/providers/telegram.md",
+      "title": "telegram.md",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:57.236568+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/providers/terminal.md",
+      "title": "terminal.md",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:57.236572+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/providers/voice.md",
+      "title": "voice.md",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:57.236575+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/providers/slack.md",
+      "title": "slack.md",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:57.236577+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/integrations/chat-sdk.md",
+      "title": "chat-sdk.md",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:57.236580+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/integrations/eve.md",
+      "title": "eve.md",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:57.236582+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/custom-platforms.md",
+      "title": "custom-platforms.md",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:57.236585+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/imessage/advanced/locations.md",
+      "title": "locations.md",
+      "classification": "reference-only",
+      "accessedAt": "2026-09-08T22:47:57.236587+00:00",
+      "read": false,
+      "sourceVersion": null,
+      "relevantContracts": [
+        "contracts-v1",
+        "runtime-contract"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "accessResult": "discovered-only",
+      "limitation": "Inventory only; not used as API authority."
+    },
+    {
+      "url": "https://www.npmjs.com/package/spectrum-ts/v/12.8.0",
+      "title": "spectrum-ts installed public package",
+      "classification": "public SDK",
+      "accessedAt": "2026-09-08T23:03:32.392074+00:00",
+      "accessResult": "installed-package-read",
+      "read": true,
+      "sourceVersion": "12.8.0",
+      "sha256": "69248e5615aecbe5844d9cc94323aa2a93391e76ac322cf82477c75df95dbcc2",
+      "relevantContracts": [
+        "ports.ts",
+        "operation-map.md"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "limitation": "Public exports and declarations inspected; no live SDK client was constructed. Advanced package is transitive only; no extension approved.",
+      "publicExports": {
+        ".": {
+          "types": "./dist/index.d.ts",
+          "default": "./dist/index.js"
+        },
+        "./authoring": {
+          "types": "./dist/authoring.d.ts",
+          "default": "./dist/authoring.js"
+        },
+        "./providers": {
+          "types": "./dist/providers/index.d.ts",
+          "default": "./dist/providers/index.js"
+        },
+        "./providers/*": {
+          "types": "./dist/providers/*/index.d.ts",
+          "default": "./dist/providers/*/index.js"
+        },
+        "./manifest.json": "./dist/manifest.json"
+      }
+    },
+    {
+      "url": "https://www.npmjs.com/package/@spectrum-ts/core/v/12.8.0",
+      "title": "@spectrum-ts/core installed public package",
+      "classification": "public SDK",
+      "accessedAt": "2026-09-08T23:03:32.392369+00:00",
+      "accessResult": "installed-package-read",
+      "read": true,
+      "sourceVersion": "12.8.0",
+      "sha256": "bf239b4f2bea2a1fce09ba09c8c4a3570014b2fa8842ed43101d8b88b81d34a4",
+      "relevantContracts": [
+        "ports.ts",
+        "operation-map.md"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "limitation": "Public exports and declarations inspected; no live SDK client was constructed. Advanced package is transitive only; no extension approved.",
+      "publicExports": {
+        ".": {
+          "types": "./dist/index.d.ts",
+          "default": "./dist/index.js"
+        },
+        "./authoring": {
+          "types": "./dist/authoring.d.ts",
+          "default": "./dist/authoring.js"
+        },
+        "./webhook": {
+          "types": "./dist/webhook.d.ts",
+          "default": "./dist/webhook.js"
+        }
+      }
+    },
+    {
+      "url": "https://www.npmjs.com/package/@spectrum-ts/imessage/v/12.8.0",
+      "title": "@spectrum-ts/imessage installed public package",
+      "classification": "public SDK",
+      "accessedAt": "2026-09-08T23:03:32.392599+00:00",
+      "accessResult": "installed-package-read",
+      "read": true,
+      "sourceVersion": "12.8.0",
+      "sha256": "4da6358fdaa9d40e97598f0882bf9c719c38469ec955dd129958002e1ec20e81",
+      "relevantContracts": [
+        "ports.ts",
+        "operation-map.md"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "limitation": "Public exports and declarations inspected; no live SDK client was constructed. Advanced package is transitive only; no extension approved.",
+      "publicExports": {
+        ".": {
+          "types": "./dist/index.d.ts",
+          "default": "./dist/index.js"
+        }
+      }
+    },
+    {
+      "url": "https://www.npmjs.com/package/@photon-ai/advanced-imessage/v/2.1.0",
+      "title": "@photon-ai/advanced-imessage installed public package",
+      "classification": "public SDK",
+      "accessedAt": "2026-09-08T23:03:32.392877+00:00",
+      "accessResult": "installed-package-read",
+      "read": true,
+      "sourceVersion": "2.1.0",
+      "sha256": "74713e5318ad25e5162aa9d4ece0bbae503d78a87d768e72bcc018313d008593",
+      "relevantContracts": [
+        "ports.ts",
+        "operation-map.md"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "limitation": "Public exports and declarations inspected; no live SDK client was constructed. Advanced package is transitive only; no extension approved.",
+      "publicExports": {
+        ".": {
+          "types": "./dist/index.d.ts",
+          "bun": "./dist/index.js",
+          "import": "./dist/index.js",
+          "default": "./dist/index.js"
+        },
+        "./http": {
+          "types": "./dist/http.d.ts",
+          "bun": "./dist/http.js",
+          "import": "./dist/http.js",
+          "default": "./dist/http.js"
+        },
+        "./grpc": {
+          "types": "./dist/grpc.d.ts",
+          "bun": "./dist/grpc.js",
+          "import": "./dist/grpc.js",
+          "default": "./dist/grpc.js"
+        }
+      }
+    },
+    {
+      "url": "https://www.npmjs.com/package/zod/v/4.5.4",
+      "title": "zod installed public package",
+      "classification": "public SDK",
+      "accessedAt": "2026-09-08T23:03:32.393114+00:00",
+      "accessResult": "installed-package-read",
+      "read": true,
+      "sourceVersion": "4.5.4",
+      "sha256": "5a1983857f982cc7d69336f32053ac7e38780de313d9e18ca3f7b9b7f2f94298",
+      "relevantContracts": [
+        "ports.ts",
+        "operation-map.md"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "limitation": "Public exports and declarations inspected; no live SDK client was constructed. Advanced package is transitive only; no extension approved.",
+      "publicExports": {
+        "./package.json": "./package.json",
+        ".": {
+          "@zod/source": "./src/index.ts",
+          "types": "./index.d.cts",
+          "import": "./index.js",
+          "require": "./index.cjs"
+        },
+        "./mini": {
+          "@zod/source": "./src/mini/index.ts",
+          "types": "./mini/index.d.cts",
+          "import": "./mini/index.js",
+          "require": "./mini/index.cjs"
+        },
+        "./compile": {
+          "@zod/source": "./src/compile.ts",
+          "types": "./compile.d.cts",
+          "import": "./compile.js",
+          "require": "./compile.cjs"
+        },
+        "./locales": {
+          "@zod/source": "./src/locales/index.ts",
+          "types": "./locales/index.d.cts",
+          "import": "./locales/index.js",
+          "require": "./locales/index.cjs"
+        },
+        "./v3": {
+          "@zod/source": "./src/v3/index.ts",
+          "types": "./v3/index.d.cts",
+          "import": "./v3/index.js",
+          "require": "./v3/index.cjs"
+        },
+        "./v4": {
+          "@zod/source": "./src/v4/index.ts",
+          "types": "./v4/index.d.cts",
+          "import": "./v4/index.js",
+          "require": "./v4/index.cjs"
+        },
+        "./v4-mini": {
+          "@zod/source": "./src/v4-mini/index.ts",
+          "types": "./v4-mini/index.d.cts",
+          "import": "./v4-mini/index.js",
+          "require": "./v4-mini/index.cjs"
+        },
+        "./v4/mini": {
+          "@zod/source": "./src/v4/mini/index.ts",
+          "types": "./v4/mini/index.d.cts",
+          "import": "./v4/mini/index.js",
+          "require": "./v4/mini/index.cjs"
+        },
+        "./v4/core": {
+          "@zod/source": "./src/v4/core/index.ts",
+          "types": "./v4/core/index.d.cts",
+          "import": "./v4/core/index.js",
+          "require": "./v4/core/index.cjs"
+        },
+        "./v4/locales": {
+          "@zod/source": "./src/v4/locales/index.ts",
+          "types": "./v4/locales/index.d.cts",
+          "import": "./v4/locales/index.js",
+          "require": "./v4/locales/index.cjs"
+        },
+        "./v4/locales/*": {
+          "@zod/source": "./src/v4/locales/*",
+          "types": "./v4/locales/*",
+          "import": "./v4/locales/*",
+          "require": "./v4/locales/*"
+        }
+      }
+    },
+    {
+      "url": "https://www.npmjs.com/package/typescript/v/6.0.3",
+      "title": "typescript installed public package",
+      "classification": "public SDK",
+      "accessedAt": "2026-09-08T23:03:32.393363+00:00",
+      "accessResult": "installed-package-read",
+      "read": true,
+      "sourceVersion": "6.0.3",
+      "sha256": "9332e97c30d3e53ed54910b89207ed657fb444066484df6e5b6965bf130865e9",
+      "relevantContracts": [
+        "ports.ts",
+        "operation-map.md"
+      ],
+      "testReferences": [
+        "tests/lanes/wt-00/sdk-probe.ts"
+      ],
+      "limitation": "Public exports and declarations inspected; no live SDK client was constructed. Advanced package is transitive only; no extension approved.",
+      "publicExports": null
+    }
+  ],
+  "repositoryHeadsObserved": {
+    "tecxbro/grokbotonimessage": "24468391b57f028b4b881ddbf71efab3a49a6f73",
+    "tecxbro/photon-skills": "11f5d755a652fff73b4410559b1c1d7d5f30a522",
+    "photon-hq/docs": "5e0af33d27e62279a74c559671a86864a38e47a8",
+    "photon-hq/spectrum-ts": "ff44053f821fcffb967797d0a204d8bfebae91c3"
+  },
+  "browserAccessNote": {
+    "url": "https://photon.codes/docs/llms-spectrum.txt",
+    "result": "web tool non-retryable safe-open failure; independent direct HTTP retrieval confirmed 404; these are distinct observations"
+  },
+  "sourceInterpretation": "GitHub .md is supplementary guidance. .mdx.vel is authored Vellum input, not a rendered Markdown endpoint. The installed exact public exports/types take precedence over unversioned website prose. Reference-only inventory does not expand scope."
+}

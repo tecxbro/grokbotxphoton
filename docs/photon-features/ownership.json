@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "packageRoot": "packages/photon-features/",
+  "lanes": {
+    "wt-00": {
+      "packagePaths": [
+        "src/contracts/",
+        "src/registry/",
+        "src/state/",
+        "src/host/",
+        "src/adapters/legacy/",
+        "src/index.ts",
+        "src/capabilities.ts",
+        "schemas/",
+        "package.json",
+        "tsconfig.json",
+        "scripts/generate-contracts.mjs",
+        "tests/fixtures/",
+        "tests/lanes/wt-00/",
+        "examples/wt-00/"
+      ],
+      "documentationPaths": [
+        "docs/photon-features/evidence/wt-00/",
+        "docs/photon-features/requests/wt-00/",
+        "docs/photon-features/baseline.md",
+        "docs/photon-features/runtime-contract.md",
+        "docs/photon-features/contracts-v1.md",
+        "docs/photon-features/operation-map.md",
+        "docs/photon-features/ownership.json",
+        "docs/photon-features/foundation.json",
+        "docs/photon-features/rollout.md",
+        "docs/photon-features/sources/"
+      ]
+    },
+    "wt-01": {
+      "packagePaths": [
+        "src/runtime/core/",
+        "src/adapters/state/",
+        "tests/lanes/wt-01/",
+        "examples/wt-01/"
+      ],
+      "documentationPaths": [
+        "docs/photon-features/evidence/wt-01/",
+        "docs/photon-features/requests/wt-01/"
+      ]
+    },
+    "wt-02": {
+      "packagePaths": [
+        "src/adapters/transport/",
+        "src/runtime/inbound/",
+        "src/runtime/typing/",
+        "tests/lanes/wt-02/",
+        "examples/wt-02/"
+      ],
+      "documentationPaths": [
+        "docs/photon-features/evidence/wt-02/",
+        "docs/photon-features/requests/wt-02/"
+      ]
+    },
+    "wt-03": {
+      "packagePaths": [
+        "src/features/text-messages/",
+        "tests/lanes/wt-03/",
+        "examples/wt-03/"
+      ],
+      "documentationPaths": [
+        "docs/photon-features/evidence/wt-03/",
+        "docs/photon-features/requests/wt-03/"
+      ]
+    },
+    "wt-04": {
+      "packagePaths": [
+        "src/features/media/",
+        "tests/lanes/wt-04/",
+        "examples/wt-04/"
+      ],
+      "documentationPaths": [
+        "docs/photon-features/evidence/wt-04/",
+        "docs/photon-features/requests/wt-04/"
+      ]
+    },
+    "wt-05": {
+      "packagePaths": [
+        "src/features/polls/",
+        "tests/lanes/wt-05/",
+        "examples/wt-05/"
+      ],
+      "documentationPaths": [
+        "docs/photon-features/evidence/wt-05/",
+        "docs/photon-features/requests/wt-05/"
+      ]
+    },
+    "wt-06": {
+      "packagePaths": [
+        "src/features/cards/",
+        "tests/lanes/wt-06/",
+        "examples/wt-06/"
+      ],
+      "documentationPaths": [
+        "docs/photon-features/evidence/wt-06/",
+        "docs/photon-features/requests/wt-06/"
+      ]
+    },
+    "wt-07": {
+      "packagePaths": [
+        "src/features/native/",
+        "tests/lanes/wt-07/",
+        "examples/wt-07/"
+      ],
+      "documentationPaths": [
+        "docs/photon-features/evidence/wt-07/",
+        "docs/photon-features/requests/wt-07/"
+      ]
+    },
+    "wt-08": {
+      "packagePaths": [
+        "src/cli/",
+        "scripts/install.mjs",
+        "scripts/smoke-test.mjs",
+        "scripts/package.mjs",
+        "scripts/generate-skill.mjs",
+        "SKILL.md",
+        "INSTALL.md",
+        "README.md",
+        "tests/lanes/wt-08/",
+        "examples/wt-08/"
+      ],
+      "documentationPaths": [
+        "docs/photon-features/evidence/wt-08/",
+        "docs/photon-features/requests/wt-08/"
+      ]
+    },
+    "wt-09": {
+      "packagePaths": [
+        "tests/e2e/",
+        "tests/security/",
+        "tests/live/",
+        "tests/lanes/wt-09/",
+        "examples/wt-09/"
+      ],
+      "documentationPaths": [
+        "docs/photon-features/evidence/wt-09/",
+        "docs/photon-features/requests/wt-09/",
+        "docs/photon-features/reports/wt-09/"
+      ]
+    }
+  },
+  "operations": {
+    "typing.begin": "wt-02",
+    "typing.end": "wt-02",
+    "text.send": "wt-03",
+    "text.stream": "wt-03",
+    "markdown.send": "wt-03",
+    "link.send": "wt-03",
+    "content.group": "wt-03",
+    "content.compose": "wt-03",
+    "message.get": "wt-03",
+    "message.reply": "wt-03",
+    "message.react": "wt-03",
+    "reaction.remove": "wt-03",
+    "message.edit": "wt-03",
+    "message.unsend": "wt-03",
+    "message.markRead": "wt-03",
+    "attachment.send": "wt-04",
+    "attachment.fetch": "wt-04",
+    "voice.send": "wt-04",
+    "contact.send": "wt-04",
+    "poll.create": "wt-05",
+    "poll.get": "wt-05",
+    "poll.vote": "wt-05",
+    "poll.unvote": "wt-05",
+    "poll.addOption": "wt-05",
+    "app.send": "wt-06",
+    "app.sendCustomized": "wt-06",
+    "app.update": "wt-06",
+    "space.get": "wt-07",
+    "space.create": "wt-07",
+    "space.getName": "wt-07",
+    "space.rename": "wt-07",
+    "space.getMembers": "wt-07",
+    "space.addMembers": "wt-07",
+    "space.removeMembers": "wt-07",
+    "space.leave": "wt-07",
+    "space.getAvatar": "wt-07",
+    "space.setAvatar": "wt-07",
+    "space.clearAvatar": "wt-07",
+    "space.setBackground": "wt-07",
+    "space.clearBackground": "wt-07",
+    "account.shareContact": "wt-07",
+    "effect.send": "wt-07",
+    "metadata.get": "wt-07",
+    "custom.send": "wt-07"
+  },
+  "sharedChangePolicy": "Submit requests in your own docs/photon-features/requests/wt-NN/; only WT-00 edits contracts, package metadata/dependencies/lockfile, migrations, aggregate registration or host composition.",
+  "rootOwnedByWT00": [
+    "package.json",
+    "package-lock.json",
+    ".github/workflows/photon-*.yml"
+  ],
+  "rootNotCreated": [
+    "tsconfig.json (package tsconfig is sufficient)",
+    "additional lockfile",
+    "additional workspace configuration file (npm workspaces is in package.json)"
+  ]
+}

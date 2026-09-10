@@ -1,0 +1,39 @@
+{
+  "baseCommit": "57e40736be8a59047b776654c766fbe8bfd10c9e",
+  "ownedPaths": [
+    "packages/photon-features/src/features/polls",
+    "packages/photon-features/tests/lanes/wt-05",
+    "packages/photon-features/examples/wt-05",
+    "docs/photon-features/evidence/wt-05",
+    "docs/photon-features/requests/wt-05"
+  ],
+  "files": [
+    "docs/photon-features/evidence/wt-05/aggregate-build.txt",
+    "docs/photon-features/evidence/wt-05/changed-files.json",
+    "docs/photon-features/evidence/wt-05/existing-tests.txt",
+    "docs/photon-features/evidence/wt-05/foundation-check.txt",
+    "docs/photon-features/evidence/wt-05/foundation-tests.txt",
+    "docs/photon-features/evidence/wt-05/handoff.md",
+    "docs/photon-features/evidence/wt-05/lane-build.txt",
+    "docs/photon-features/evidence/wt-05/lane-tests.txt",
+    "docs/photon-features/evidence/wt-05/sources.json",
+    "docs/photon-features/evidence/wt-05/sources.md",
+    "docs/photon-features/evidence/wt-05/start-gate-check.txt",
+    "docs/photon-features/evidence/wt-05/start-gate.json",
+    "docs/photon-features/requests/wt-05/advanced-polls.md",
+    "packages/photon-features/examples/wt-05/consume-polls.ts",
+    "packages/photon-features/src/features/polls/identity.ts",
+    "packages/photon-features/src/features/polls/module.ts",
+    "packages/photon-features/src/features/polls/operations.ts",
+    "packages/photon-features/src/features/polls/reconciliation.ts",
+    "packages/photon-features/src/features/polls/reducer.ts",
+    "packages/photon-features/src/features/polls/sdk.ts",
+    "packages/photon-features/tests/lanes/wt-05/integration-contract.ts",
+    "packages/photon-features/tests/lanes/wt-05/integration.test.ts",
+    "packages/photon-features/tests/lanes/wt-05/operations.test.ts",
+    "packages/photon-features/tests/lanes/wt-05/reducer.test.ts",
+    "packages/photon-features/tests/lanes/wt-05/support.ts",
+    "packages/photon-features/tests/lanes/wt-05/tsconfig.json"
+  ],
+  "allChangesUncommitted": true
+}

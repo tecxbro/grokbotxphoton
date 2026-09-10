@@ -1,0 +1,440 @@
+[
+  {
+    "url": "https://photon.codes/docs/llms.txt",
+    "retrievedAt": "2026-09-09T03:07:16.851397+00:00",
+    "versionOrCommit": null,
+    "readStatus": "read index and relevant links",
+    "associatedImplementation": [
+      "runtime/core/",
+      "adapters/state/"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://photon.codes/docs/llms.txt",
+    "contentType": "text/plain; charset=utf-8",
+    "sha256": "0e9cff75bdffdb8e625583fdd88ccd7317d027fa3f9a74cbe3cebfa256c0c033",
+    "bytes": 16307,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/f2dfc2e2a0f48cb359836d0d2ded6a1e84d56c42ab220eb9513a06f51a6fcb94.txt",
+    "readAt": "2026-09-09T03:25:45.017990+00:00"
+  },
+  {
+    "url": "https://photon.codes/docs/best-practices/architecture",
+    "retrievedAt": "2026-09-09T03:07:16.851926+00:00",
+    "versionOrCommit": null,
+    "readStatus": "retrieval verified; HTML body not used as API authority; Markdown or pinned declarations used",
+    "associatedImplementation": [
+      "runtime/core/",
+      "adapters/state/"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://photon.codes/docs/best-practices/architecture",
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "f6e6f18a20398ab4413cbe5ef45771d9c41cac363fa99efd04a13d38d2237643",
+    "bytes": 283733,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/3604d876195e9cabbcaf4380dfbfe2dbe6ec956f088f063b3bb59a93bca28908.txt"
+  },
+  {
+    "url": "https://photon.codes/docs/best-practices/inbound-pipeline",
+    "retrievedAt": "2026-09-09T03:07:16.852016+00:00",
+    "versionOrCommit": null,
+    "readStatus": "retrieval verified; HTML body not used as API authority; Markdown or pinned declarations used",
+    "associatedImplementation": [
+      "runtime/core/",
+      "adapters/state/"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://photon.codes/docs/best-practices/inbound-pipeline",
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "321a70781a28772162374d449f5f3928495bf924996448cbc7d5937882b3c26f",
+    "bytes": 306618,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/01758cbdc0d1b0e6b831045d893ce94c5995a8c1526dcbd332daeb3af576c7b3.txt"
+  },
+  {
+    "url": "https://photon.codes/docs/best-practices/recovery-and-state",
+    "retrievedAt": "2026-09-09T03:07:16.852075+00:00",
+    "versionOrCommit": null,
+    "readStatus": "retrieval verified; HTML body not used as API authority; Markdown or pinned declarations used",
+    "associatedImplementation": [
+      "runtime/core/",
+      "adapters/state/"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://photon.codes/docs/best-practices/recovery-and-state",
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "af12cf315c8bf04d8e0b51218132d90749bc1b8f2ae05c61ad5e470c2a99ea5d",
+    "bytes": 319226,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/eb1a871718db97970aa21bf7b0802e217dbc5c09301f65899046f43d79e27629.txt"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/messages",
+    "retrievedAt": "2026-09-09T03:07:16.852134+00:00",
+    "versionOrCommit": null,
+    "readStatus": "retrieval verified; HTML body not used as API authority; Markdown or pinned declarations used",
+    "associatedImplementation": [
+      "runtime/core/",
+      "adapters/state/"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://photon.codes/docs/spectrum-ts/messages",
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "a5fe08605b70bd80a813bc4718180abd921a32a63299abb075d953ac2ff97d82",
+    "bytes": 451499,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/90517cb1811cde29db8b079a2772500f5d99d2a4832159a040594a9d112d07c9.txt"
+  },
+  {
+    "url": "https://photon.codes/docs/advanced-kits/imessage/events",
+    "retrievedAt": "2026-09-09T03:07:16.852258+00:00",
+    "versionOrCommit": null,
+    "readStatus": "retrieval verified; HTML body not used as API authority; Markdown or pinned declarations used",
+    "associatedImplementation": [
+      "runtime/core/",
+      "adapters/state/"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://photon.codes/docs/advanced-kits/imessage/events",
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "05656dc3eca9cb7c977e27cc972611e31469e026af6bd245ff2784a4fe95fa94",
+    "bytes": 418174,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/2cd874b2af038776c6f96419ae7c2997aacb5b5b59019d8ff612633ec06b6b96.txt"
+  },
+  {
+    "url": "https://photon.codes/docs/advanced-kits/imessage/error-handling",
+    "retrievedAt": "2026-09-09T03:07:16.852322+00:00",
+    "versionOrCommit": null,
+    "readStatus": "retrieval verified; HTML body not used as API authority; Markdown or pinned declarations used",
+    "associatedImplementation": [
+      "runtime/core/",
+      "adapters/state/"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://photon.codes/docs/advanced-kits/imessage/error-handling",
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "947758668266d72ee5fb5027c937345091b99df4519497faff28a787a0ec147a",
+    "bytes": 366929,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/8cbf78ed4a2099d9d476cb9b978c89a218e56ab3adf8eb522850e27762511c05.txt"
+  },
+  {
+    "url": "https://photon.codes/docs/api-reference/rate-limit",
+    "retrievedAt": "2026-09-09T03:07:16.852367+00:00",
+    "versionOrCommit": null,
+    "readStatus": "retrieval verified; HTML body not used as API authority; Markdown or pinned declarations used",
+    "associatedImplementation": [
+      "runtime/core/",
+      "adapters/state/"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://photon.codes/docs/api-reference/rate-limit",
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "f5bc52fa9863fc9a2949b1237c8cb3f9a407dd6aec6b1ecbf5b15b330e1f6a01",
+    "bytes": 272272,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/c31b8a6f9bac5770e0c54461c19a03e3497cff73b27d91ca29f72898ef57bee2.txt"
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts",
+    "retrievedAt": "2026-09-09T03:07:18.085108+00:00",
+    "versionOrCommit": null,
+    "readStatus": "retrieval verified; HTML body not used as API authority; Markdown or pinned declarations used",
+    "associatedImplementation": [
+      "runtime/core/",
+      "adapters/state/"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://github.com/photon-hq/spectrum-ts",
+    "contentType": "text/html; charset=utf-8",
+    "sha256": "624be43d54ed9a4b6e16a19ecb85e022faa8fd2b11a3b55565944032f4ab978d",
+    "bytes": 326106,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/b425740d617c04330376813e34d4bd4dc6c4ad33590e67c949d8c4bd98796ea4.txt"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/best-practices.md",
+    "retrievedAt": "2026-09-09T03:07:18.982659+00:00",
+    "versionOrCommit": "unversioned document snapshot; sha256 identifies retrieved bytes",
+    "readStatus": "read-relevant-sections",
+    "associatedImplementation": [
+      "runtime/core/outcomes.ts",
+      "runtime/core/executor.ts"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/best-practices.md",
+    "contentType": "text/plain; charset=utf-8",
+    "sha256": "fd0535f3babd1ee764d67132b11a97f39255104648ef1aad8173b2a33b305eb0",
+    "bytes": 12015,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/3f7fffa310cffc2db19c1fa30826c5b8d7492d9abcf4643c7c1887e3498e29a8.txt",
+    "readAt": "2026-09-09T03:25:45.017990+00:00",
+    "requestedSupplementaryUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/best-practices.md",
+    "implementationUse": "Separate provider evidence and executor completion; injected handler execution boundaries."
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/capability-semantics.md",
+    "retrievedAt": "2026-09-09T03:07:19.096912+00:00",
+    "versionOrCommit": "unversioned document snapshot; sha256 identifies retrieved bytes",
+    "readStatus": "read-relevant-sections",
+    "associatedImplementation": [
+      "runtime/core/outcomes.ts",
+      "runtime/core/executor.ts"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/capability-semantics.md",
+    "contentType": "text/plain; charset=utf-8",
+    "sha256": "7451fec93c937bf92238e916f6e811ce4e41ddd5459a2211950b0efdda471fe5",
+    "bytes": 2122,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/570445ae670a7bc01897500c0626ec3072aa3e83552b6a8d225530ff685df5e1.txt",
+    "readAt": "2026-09-09T03:25:45.017990+00:00",
+    "requestedSupplementaryUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/capability-semantics.md",
+    "implementationUse": "Separate provider evidence and executor completion; injected handler execution boundaries."
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/advanced/error-handling.md",
+    "retrievedAt": "2026-09-09T03:07:19.149125+00:00",
+    "versionOrCommit": "unversioned document snapshot; sha256 identifies retrieved bytes",
+    "readStatus": "read-relevant-sections",
+    "associatedImplementation": [
+      "runtime/core/children.ts",
+      "runtime/core/recovery.ts",
+      "runtime/core/cancellation.ts"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/advanced/error-handling.md",
+    "contentType": "text/plain; charset=utf-8",
+    "sha256": "cb2cb9c1e24f930bdb89ad333bd88967f0aa962cf0159d1ac903724d513ddcdd",
+    "bytes": 2831,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/0b8d17a6c225875a9111df0578a4877c4bc38f576cbc3167023b42dab8c90f6d.txt",
+    "readAt": "2026-09-09T03:25:45.017990+00:00",
+    "requestedSupplementaryUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/imessage/advanced/error-handling.md",
+    "implementationUse": "Persist child progress; do not infer Spectrum provider idempotency from low-level or generic examples."
+  },
+  {
+    "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/advanced/events.md",
+    "retrievedAt": "2026-09-09T03:07:19.184890+00:00",
+    "versionOrCommit": "unversioned document snapshot; sha256 identifies retrieved bytes",
+    "readStatus": "read-relevant-sections",
+    "associatedImplementation": [
+      "adapters/state/unit-of-work.ts",
+      "runtime/core/work-handoff.ts"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/advanced/events.md",
+    "contentType": "text/plain; charset=utf-8",
+    "sha256": "a425253f21fd4045ef978436cb68fc30fbd94f71287fa5e87e329573da21feb5",
+    "bytes": 2195,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/e2b76b019603d3c1f3d92a143a62c87e10916a3de56ebb3a59dad591d4c76b65.txt",
+    "readAt": "2026-09-09T03:25:45.017990+00:00",
+    "requestedSupplementaryUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/imessage/advanced/events.md",
+    "implementationUse": "Durable inbox/state/handoff transaction; wake after commit. No ingress stream or catch-up implementation in WT-01."
+  },
+  {
+    "url": "https://photon.codes/docs/best-practices/architecture.md",
+    "retrievedAt": "2026-09-09T03:07:19.185135+00:00",
+    "versionOrCommit": "unversioned document snapshot; sha256 identifies retrieved bytes",
+    "readStatus": "read-relevant-sections",
+    "associatedImplementation": [
+      "runtime/core/outcomes.ts",
+      "runtime/core/executor.ts"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://photon.codes/docs/best-practices/architecture.md",
+    "contentType": "text/markdown; charset=utf-8",
+    "sha256": "9df570ca7d3e08256f47e03673d47ec3e96e05f250b738badda5980c0c0eb8e1",
+    "bytes": 3230,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/4f8d436cefb3b88e1704154687fc2b4d8702ffc2198d492f56f40c290e456ffc.txt",
+    "readAt": "2026-09-09T03:25:45.017990+00:00",
+    "implementationUse": "Separate provider evidence and executor completion; injected handler execution boundaries."
+  },
+  {
+    "url": "https://photon.codes/docs/best-practices/inbound-pipeline.md",
+    "retrievedAt": "2026-09-09T03:07:19.314437+00:00",
+    "versionOrCommit": "unversioned document snapshot; sha256 identifies retrieved bytes",
+    "readStatus": "read-relevant-sections",
+    "associatedImplementation": [
+      "adapters/state/unit-of-work.ts",
+      "runtime/core/work-handoff.ts"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://photon.codes/docs/best-practices/inbound-pipeline.md",
+    "contentType": "text/markdown; charset=utf-8",
+    "sha256": "4a7113e2a9b987f51e8098f33a9b007f7cc31890487bff42a031c36bc15e9ee3",
+    "bytes": 4154,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/674546bd7979c46bc19baadfdc391212d362b99081d1ed7606233d2126cc1ba7.txt",
+    "readAt": "2026-09-09T03:25:45.017990+00:00",
+    "implementationUse": "Durable inbox/state/handoff transaction; wake after commit. No ingress stream or catch-up implementation in WT-01."
+  },
+  {
+    "url": "https://photon.codes/docs/best-practices/recovery-and-state.md",
+    "retrievedAt": "2026-09-09T03:07:19.353019+00:00",
+    "versionOrCommit": "unversioned document snapshot; sha256 identifies retrieved bytes",
+    "readStatus": "read-relevant-sections",
+    "associatedImplementation": [
+      "runtime/core/children.ts",
+      "runtime/core/recovery.ts",
+      "runtime/core/cancellation.ts"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://photon.codes/docs/best-practices/recovery-and-state.md",
+    "contentType": "text/markdown; charset=utf-8",
+    "sha256": "65944f4b202e0142388403aff39b3135b3dca7ab87035cdc36af22713716a9f0",
+    "bytes": 5801,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/eaf6ade3d6b64d67a22c212ebbdbfd3e9c5eeb3d2f8abbf732fccee60cb7ef30.txt",
+    "readAt": "2026-09-09T03:25:45.017990+00:00",
+    "implementationUse": "Persist child progress; do not infer Spectrum provider idempotency from low-level or generic examples."
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/messages.md",
+    "retrievedAt": "2026-09-09T03:07:19.374312+00:00",
+    "versionOrCommit": "unversioned document snapshot; sha256 identifies retrieved bytes",
+    "readStatus": "read Space/Message shape and receiving/narrowing sections",
+    "associatedImplementation": [
+      "runtime/core/outcomes.ts",
+      "runtime/core/executor.ts"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://photon.codes/docs/spectrum-ts/messages.md",
+    "contentType": "text/markdown; charset=utf-8",
+    "sha256": "0da88e0f2336f1f0757dc7359dd702ce9fc2d3e586e523871244251f97c7d39b",
+    "bytes": 42753,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/e22b5eda8bfeeba73ee07f6850622699c65f67aad268303f569016856ec6f0bf.txt",
+    "readAt": "2026-09-09T03:25:45.017990+00:00",
+    "implementationUse": "Separate provider evidence and executor completion; injected handler execution boundaries."
+  },
+  {
+    "url": "https://photon.codes/docs/advanced-kits/imessage/events.md",
+    "retrievedAt": "2026-09-09T03:07:19.413891+00:00",
+    "versionOrCommit": "unversioned document snapshot; sha256 identifies retrieved bytes",
+    "readStatus": "read-relevant-sections",
+    "associatedImplementation": [
+      "adapters/state/unit-of-work.ts",
+      "runtime/core/work-handoff.ts"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://photon.codes/docs/advanced-kits/imessage/events.md",
+    "contentType": "text/markdown; charset=utf-8",
+    "sha256": "ffbfaec5c8146c923a3df23dc84ab0df607a5f78beb4faf5675f2cac17df58f9",
+    "bytes": 9479,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/12b2fe90a9b8175ffe7f51fbd1ae0f662bcc13ae64b78a45ff0a8caf45cd3a89.txt",
+    "readAt": "2026-09-09T03:25:45.017990+00:00",
+    "implementationUse": "Durable inbox/state/handoff transaction; wake after commit. No ingress stream or catch-up implementation in WT-01."
+  },
+  {
+    "url": "https://photon.codes/docs/advanced-kits/imessage/error-handling.md",
+    "retrievedAt": "2026-09-09T03:07:19.443748+00:00",
+    "versionOrCommit": "unversioned document snapshot; sha256 identifies retrieved bytes",
+    "readStatus": "read-relevant-sections",
+    "associatedImplementation": [
+      "runtime/core/children.ts",
+      "runtime/core/recovery.ts",
+      "runtime/core/cancellation.ts"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://photon.codes/docs/advanced-kits/imessage/error-handling.md",
+    "contentType": "text/markdown; charset=utf-8",
+    "sha256": "ea68f162fd7ed4d4ea24ff7223754bdc7e8941bb148fc247404d7821f492a3b9",
+    "bytes": 10858,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/cc39a404eabe24e6e5191aff67698254ee6b9056bd84068304f86222d37f04fd.txt",
+    "readAt": "2026-09-09T03:25:45.017990+00:00",
+    "implementationUse": "Persist child progress; do not infer Spectrum provider idempotency from low-level or generic examples."
+  },
+  {
+    "url": "https://photon.codes/docs/api-reference/rate-limit.md",
+    "retrievedAt": "2026-09-09T03:07:19.638256+00:00",
+    "versionOrCommit": "unversioned document snapshot; sha256 identifies retrieved bytes",
+    "readStatus": "read-relevant-sections",
+    "associatedImplementation": [
+      "runtime/core/outcomes.ts",
+      "runtime/core/recovery.ts"
+    ],
+    "httpStatus": 200,
+    "finalUrl": "https://photon.codes/docs/api-reference/rate-limit.md",
+    "contentType": "text/markdown; charset=utf-8",
+    "sha256": "f1a55751989c786237ba08b27fa9ec577f150d062a8abb282387cbfe86153290",
+    "bytes": 559,
+    "accessStatus": "retrieved",
+    "capturePath": "/tmp/photon-wt01-source-captures/64e5c65712ec34a682bee685a68ae26c8e2c34b661057fb70cd4774c843341c2.txt",
+    "readAt": "2026-09-09T03:25:45.017990+00:00",
+    "implementationUse": "No hard-coded provider quota; typed blocked state and explicit retry only."
+  },
+  {
+    "url": "https://www.npmjs.com/package/@spectrum-ts/core/v/12.8.0",
+    "accessStatus": "read local installed public declarations from clean committed-lock npm ci; npm page not fetched",
+    "readStatus": "Space and Message public declarations read, lines 391-570; searched send overloads and clientGuid/clientMessageId",
+    "retrievedAt": "2026-09-09T03:25:45.017990+00:00",
+    "versionOrCommit": "@spectrum-ts/core 12.8.0",
+    "sha256": "c452a8fc2ffbab03c6e548ce13dcf28f841ec7c9331513c65975e12f869ad954",
+    "localPath": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/photon-wt01-validation-rcy03fs9/node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts",
+    "packageIntegrity": "sha512-S79FOB5OZvFJ9wFnrYEKdaUEIPsIy6g2k1+q5/M9NS+1e0qLrSrLk96t1LgtdMZ+DDA1wTYU2doBipJXc2oA/w==",
+    "associatedImplementation": [
+      "src/contracts/ports.ts consumed unchanged",
+      "runtime/core/feature-services.ts",
+      "runtime/core/children.ts"
+    ],
+    "implementationUse": "Public Space.send overload takes ContentInput, not a per-request clientGuid options object. No provider idempotency extension approved; no live SDK call performed."
+  },
+  {
+    "url": "https://github.com/tecxbro/grokbotonimessage/blob/57e40736be8a59047b776654c766fbe8bfd10c9e/docs/photon-features/foundation.json",
+    "accessStatus": "read committed local Git blob",
+    "readStatus": "read",
+    "retrievedAt": "2026-09-09T03:25:45.017990+00:00",
+    "versionOrCommit": "57e40736be8a59047b776654c766fbe8bfd10c9e",
+    "sha256": "3f26e5326c08a15220e20b26e390703fd9cec5e66faa55d6b0ab4e4433feb03c",
+    "associatedImplementation": [
+      "runtime/core/",
+      "adapters/state/"
+    ],
+    "implementationUse": "Normative frozen project contract and scope."
+  },
+  {
+    "url": "https://github.com/tecxbro/grokbotonimessage/blob/57e40736be8a59047b776654c766fbe8bfd10c9e/docs/photon-features/contracts-v1.md",
+    "accessStatus": "read committed local Git blob",
+    "readStatus": "read",
+    "retrievedAt": "2026-09-09T03:25:45.017990+00:00",
+    "versionOrCommit": "57e40736be8a59047b776654c766fbe8bfd10c9e",
+    "sha256": "e650a7eb152928b23fff5eff4d9fa090c7d62fef634f44a571b7d237650ba280",
+    "associatedImplementation": [
+      "runtime/core/",
+      "adapters/state/"
+    ],
+    "implementationUse": "Normative frozen project contract and scope."
+  },
+  {
+    "url": "https://github.com/tecxbro/grokbotonimessage/blob/57e40736be8a59047b776654c766fbe8bfd10c9e/docs/photon-features/runtime-contract.md",
+    "accessStatus": "read committed local Git blob",
+    "readStatus": "read",
+    "retrievedAt": "2026-09-09T03:25:45.017990+00:00",
+    "versionOrCommit": "57e40736be8a59047b776654c766fbe8bfd10c9e",
+    "sha256": "e644e36e8d522c70799bd5bb7bfe67522aca58557a336cb68491831686b0be85",
+    "associatedImplementation": [
+      "runtime/core/",
+      "adapters/state/"
+    ],
+    "implementationUse": "Normative frozen project contract and scope."
+  },
+  {
+    "url": "https://github.com/tecxbro/grokbotonimessage/blob/57e40736be8a59047b776654c766fbe8bfd10c9e/docs/photon-features/ownership.json",
+    "accessStatus": "read committed local Git blob",
+    "readStatus": "read",
+    "retrievedAt": "2026-09-09T03:25:45.017990+00:00",
+    "versionOrCommit": "57e40736be8a59047b776654c766fbe8bfd10c9e",
+    "sha256": "f8bf4f903f4982f6829ad1b30de5a7e7252560e739ecd38b4026b9c82d0edaf9",
+    "associatedImplementation": [
+      "runtime/core/",
+      "adapters/state/"
+    ],
+    "implementationUse": "Normative frozen project contract and scope."
+  }
+]

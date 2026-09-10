@@ -1,0 +1,49 @@
+{
+  "observedAt": "2026-09-09T03:34:42.130936+00:00",
+  "testedCommit": "57e40736be8a59047b776654c766fbe8bfd10c9e",
+  "testedCandidateSha": null,
+  "snapshotDigest": "e84694892ea9642967df6e63df83a4583b166b7ce152546c88cc0715b7529662",
+  "f0Digest": "e0f7779bc9ca3d45696e9b4e24e8579d922c8d2d7d4323c821202d8f599acbf8",
+  "tests": {
+    "tests": 78,
+    "pass": 74,
+    "fail": 3,
+    "skipped": 1,
+    "todo": 0
+  },
+  "originalCli": {
+    "passed": 31,
+    "failed": 0
+  },
+  "foundation": {
+    "passed": 60,
+    "failed": 0
+  },
+  "status": {
+    "codeBuilt": true,
+    "assembledIntegrationVerified": false,
+    "installedActivated": false,
+    "liveVerified": false
+  },
+  "defects": [
+    "WT09-001",
+    "WT09-002",
+    "WT09-003"
+  ],
+  "operationCoverage": {
+    "total": 44,
+    "F0RegisteredImplemented": 0,
+    "laneDeclaredImplemented": 38,
+    "laneDeclaredUnimplemented": 4,
+    "typingHandlersWithoutCapabilityRecord": 2
+  },
+  "packaging": {
+    "cleanDependencyInstall": "passed",
+    "syntheticArchiveInstallRepeatRollback": "passed",
+    "runtimeDatabaseInstallerCompatibility": "failed WT09-003",
+    "realCandidatePackaging": "pending WT-00 candidate",
+    "activated": false
+  },
+  "runDirectory": "/Users/darshan/Documents/ChatGPT/grokbotxphoton/docs/photon-features/evidence/wt-09/2026-09-09T03-33-25-072Z",
+  "remaining": "See requirements.md. No live actions were executed."
+}

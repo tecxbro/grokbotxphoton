@@ -1,0 +1,63 @@
+{
+  "valid": {
+    "version": 1,
+    "idempotencyKey": "request-app.update",
+    "contextId": "context-1",
+    "operation": "app.update",
+    "arguments": {
+      "card": {
+        "version": 1,
+        "kind": "card",
+        "id": "card-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        },
+        "messageId": "message-1"
+      },
+      "session": {
+        "version": 1,
+        "kind": "card-session",
+        "id": "session-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        },
+        "cardId": "card-1"
+      },
+      "layout": {
+        "caption": "update"
+      }
+    }
+  },
+  "rejected": {
+    "version": 1,
+    "idempotencyKey": "request-app.update",
+    "contextId": "context-1",
+    "operation": "app.update",
+    "arguments": {
+      "session": {
+        "version": 1,
+        "kind": "card-session",
+        "id": "session-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        },
+        "cardId": "card-1"
+      },
+      "layout": {
+        "caption": "update"
+      }
+    }
+  }
+}

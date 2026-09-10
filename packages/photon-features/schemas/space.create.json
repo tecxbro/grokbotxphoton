@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "number",
+      "const": 1
+    },
+    "idempotencyKey": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+    },
+    "contextId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "pattern": "^[A-Za-z0-9_:+.@/-]+$"
+    },
+    "operation": {
+      "type": "string",
+      "const": "space.create"
+    },
+    "arguments": {
+      "type": "object",
+      "properties": {
+        "members": {
+          "minItems": 1,
+          "maxItems": 32,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 254
+          }
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        }
+      },
+      "required": [
+        "members"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "version",
+    "idempotencyKey",
+    "contextId",
+    "operation",
+    "arguments"
+  ],
+  "additionalProperties": false
+}

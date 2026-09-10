@@ -1,0 +1,1 @@
+{"lane":"wt-02","path":"/Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-02","branch":"photon-v3/wt-02","startCommit":"5c342f5eeb654b1ad7cb00e52855b425f25148ae","head":"ee2f8576b55973eee312bca5cad0549b6f959a88","dirty":true}

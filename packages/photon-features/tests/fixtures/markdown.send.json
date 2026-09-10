@@ -1,0 +1,32 @@
+{
+  "valid": {
+    "version": 1,
+    "idempotencyKey": "request-markdown.send",
+    "contextId": "context-1",
+    "operation": "markdown.send",
+    "arguments": {
+      "space": {
+        "version": 1,
+        "kind": "space",
+        "id": "space-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        }
+      },
+      "text": "hello"
+    }
+  },
+  "rejected": {
+    "version": 1,
+    "idempotencyKey": "request-markdown.send",
+    "contextId": "context-1",
+    "operation": "markdown.send",
+    "arguments": {
+      "text": "hello"
+    }
+  }
+}

@@ -1,0 +1,1341 @@
+[
+  {
+    "id": "@grokbot/photon-features@0.1.0",
+    "name": "@grokbot/photon-features",
+    "version": "0.1.0",
+    "size": 182461,
+    "unpackedSize": 2278500,
+    "shasum": "8afe5a8d6c8a7b2aa67a77c378d38ea7f588429e",
+    "integrity": "sha512-kKj6ykUq9qFNWzfYREDeitLoQdW+zfxnMqEWH44h3kt5rWp4oy+9RpxVhUe3MFwXgvOqcG+s7pExe8RqzBLmkQ==",
+    "filename": "grokbot-photon-features-0.1.0.tgz",
+    "files": [
+      {
+        "path": "README.md",
+        "size": 2294,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/adapters/legacy/index.d.ts",
+        "size": 587,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/adapters/legacy/index.js",
+        "size": 280,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/adapters/state/sqlite.d.ts",
+        "size": 678,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/adapters/state/sqlite.js",
+        "size": 2477,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/adapters/state/unit-of-work.d.ts",
+        "size": 648,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/adapters/state/unit-of-work.js",
+        "size": 3720,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/adapters/transport/capture.d.ts",
+        "size": 595,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/adapters/transport/capture.js",
+        "size": 2003,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/adapters/transport/event-source.d.ts",
+        "size": 916,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/adapters/transport/event-source.js",
+        "size": 2064,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/adapters/transport/provider-context.d.ts",
+        "size": 896,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/adapters/transport/provider-context.js",
+        "size": 2444,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/adapters/transport/snapshot.d.ts",
+        "size": 237,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/adapters/transport/snapshot.js",
+        "size": 3307,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/adapters/transport/spectrum-owner.d.ts",
+        "size": 2077,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/adapters/transport/spectrum-owner.js",
+        "size": 4065,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/adapters/transport/webhook-ingress.d.ts",
+        "size": 1050,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/adapters/transport/webhook-ingress.js",
+        "size": 4689,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/capabilities.d.ts",
+        "size": 120,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/capabilities.js",
+        "size": 787,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/cli/commands.d.ts",
+        "size": 177,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/cli/commands.js",
+        "size": 2843,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/cli/local-client.d.ts",
+        "size": 369,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/cli/local-client.js",
+        "size": 4866,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/cli/main.d.ts",
+        "size": 308,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/cli/main.js",
+        "size": 2099,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/cli/output.d.ts",
+        "size": 518,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/cli/output.js",
+        "size": 882,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/actions.d.ts",
+        "size": 56605,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/actions.js",
+        "size": 5570,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/content.d.ts",
+        "size": 35909,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/content.js",
+        "size": 3908,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/context.d.ts",
+        "size": 2770,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/context.js",
+        "size": 764,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/events.d.ts",
+        "size": 68215,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/events.js",
+        "size": 2787,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/execution.d.ts",
+        "size": 1139,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/execution.js",
+        "size": 1474,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/index.d.ts",
+        "size": 272,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/index.js",
+        "size": 272,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/ports.d.ts",
+        "size": 3490,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/ports.js",
+        "size": 11,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/protocol.d.ts",
+        "size": 1733,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/protocol.js",
+        "size": 1709,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/resources.d.ts",
+        "size": 7535,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/resources.js",
+        "size": 2110,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/results.d.ts",
+        "size": 44736,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/contracts/results.js",
+        "size": 4382,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/cards/configuration.d.ts",
+        "size": 2241,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/cards/configuration.js",
+        "size": 2799,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/cards/interaction-adapter.d.ts",
+        "size": 2435,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/cards/interaction-adapter.js",
+        "size": 5384,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/cards/module.d.ts",
+        "size": 1278,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/cards/module.js",
+        "size": 3178,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/cards/operations.d.ts",
+        "size": 453,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/cards/operations.js",
+        "size": 12068,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/cards/reducer.d.ts",
+        "size": 854,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/cards/reducer.js",
+        "size": 3925,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/cards/sdk.d.ts",
+        "size": 874,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/cards/sdk.js",
+        "size": 2341,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/cards/session-codec.d.ts",
+        "size": 3259,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/cards/session-codec.js",
+        "size": 3820,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/cards/state.d.ts",
+        "size": 696,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/cards/state.js",
+        "size": 3062,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/cards/update-ordering.d.ts",
+        "size": 486,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/cards/update-ordering.js",
+        "size": 2377,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/attachments.d.ts",
+        "size": 494,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/attachments.js",
+        "size": 908,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/contacts.d.ts",
+        "size": 702,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/contacts.js",
+        "size": 2067,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/file-access.d.ts",
+        "size": 358,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/file-access.js",
+        "size": 2084,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/guarded-fetch.d.ts",
+        "size": 1259,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/guarded-fetch.js",
+        "size": 5272,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/index.d.ts",
+        "size": 584,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/index.js",
+        "size": 311,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/metadata.d.ts",
+        "size": 2087,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/metadata.js",
+        "size": 799,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/module.d.ts",
+        "size": 285,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/module.js",
+        "size": 9575,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/retention.d.ts",
+        "size": 550,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/retention.js",
+        "size": 2198,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/safety.d.ts",
+        "size": 2054,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/safety.js",
+        "size": 5452,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/sdk.d.ts",
+        "size": 1414,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/sdk.js",
+        "size": 5544,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/staging.d.ts",
+        "size": 2413,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/staging.js",
+        "size": 12745,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/voice.d.ts",
+        "size": 467,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/media/voice.js",
+        "size": 764,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/native/appearance.d.ts",
+        "size": 574,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/native/appearance.js",
+        "size": 1871,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/native/custom-handlers.d.ts",
+        "size": 1050,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/native/custom-handlers.js",
+        "size": 1889,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/native/effects.d.ts",
+        "size": 978,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/native/effects.js",
+        "size": 1972,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/native/guards.d.ts",
+        "size": 1102,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/native/guards.js",
+        "size": 3738,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/native/membership.d.ts",
+        "size": 427,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/native/membership.js",
+        "size": 1526,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/native/metadata.d.ts",
+        "size": 275,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/native/metadata.js",
+        "size": 723,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/native/module.d.ts",
+        "size": 664,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/native/module.js",
+        "size": 14682,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/native/sdk.d.ts",
+        "size": 2103,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/native/sdk.js",
+        "size": 11,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/native/spaces.d.ts",
+        "size": 509,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/native/spaces.js",
+        "size": 1691,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/polls/identity.d.ts",
+        "size": 1012,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/polls/identity.js",
+        "size": 4000,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/polls/module.d.ts",
+        "size": 530,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/polls/module.js",
+        "size": 2398,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/polls/operations.d.ts",
+        "size": 45544,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/polls/operations.js",
+        "size": 9609,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/polls/reconciliation.d.ts",
+        "size": 896,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/polls/reconciliation.js",
+        "size": 1392,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/polls/reducer.d.ts",
+        "size": 493,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/polls/reducer.js",
+        "size": 7658,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/polls/sdk.d.ts",
+        "size": 341,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/polls/sdk.js",
+        "size": 644,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/actions.d.ts",
+        "size": 263,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/actions.js",
+        "size": 6031,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/composition.d.ts",
+        "size": 280,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/composition.js",
+        "size": 3845,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/errors.d.ts",
+        "size": 320,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/errors.js",
+        "size": 260,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/identity.d.ts",
+        "size": 127,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/identity.js",
+        "size": 592,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/journal.d.ts",
+        "size": 992,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/journal.js",
+        "size": 8758,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/module.d.ts",
+        "size": 599,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/module.js",
+        "size": 9844,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/sdk.d.ts",
+        "size": 1017,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/sdk.js",
+        "size": 1200,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/streaming.d.ts",
+        "size": 482,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/streaming.js",
+        "size": 3905,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/targets.d.ts",
+        "size": 671,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/targets.js",
+        "size": 2990,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/voice-policy.d.ts",
+        "size": 312,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/features/text-messages/voice-policy.js",
+        "size": 2248,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/host/composition.d.ts",
+        "size": 958,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/host/composition.js",
+        "size": 2177,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/host/index.d.ts",
+        "size": 100,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/host/index.js",
+        "size": 100,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/host/local-socket.d.ts",
+        "size": 461,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/host/local-socket.js",
+        "size": 3790,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/host/protocol.d.ts",
+        "size": 1549,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/host/protocol.js",
+        "size": 5267,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/index.d.ts",
+        "size": 221,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/index.js",
+        "size": 221,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/registry/index.d.ts",
+        "size": 4009,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/registry/index.js",
+        "size": 4279,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/admission.d.ts",
+        "size": 297,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/admission.js",
+        "size": 1265,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/authorization.d.ts",
+        "size": 1410,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/authorization.js",
+        "size": 6011,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/cancellation.d.ts",
+        "size": 126,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/cancellation.js",
+        "size": 547,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/checkpoint-codec.d.ts",
+        "size": 203,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/checkpoint-codec.js",
+        "size": 671,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/children.d.ts",
+        "size": 769,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/children.js",
+        "size": 9487,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/claims.d.ts",
+        "size": 785,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/claims.js",
+        "size": 2731,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/engine.d.ts",
+        "size": 1339,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/engine.js",
+        "size": 4558,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/errors.d.ts",
+        "size": 407,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/errors.js",
+        "size": 568,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/execution-boundary.d.ts",
+        "size": 540,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/execution-boundary.js",
+        "size": 502,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/executor.d.ts",
+        "size": 824,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/executor.js",
+        "size": 9429,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/feature-services.d.ts",
+        "size": 633,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/feature-services.js",
+        "size": 5313,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/idempotency.d.ts",
+        "size": 415,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/idempotency.js",
+        "size": 1066,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/index.d.ts",
+        "size": 473,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/index.js",
+        "size": 473,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/local-server.d.ts",
+        "size": 1149,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/local-server.js",
+        "size": 8116,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/outcomes.d.ts",
+        "size": 708,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/outcomes.js",
+        "size": 1199,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/recovery.d.ts",
+        "size": 996,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/recovery.js",
+        "size": 4999,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/submission.d.ts",
+        "size": 907,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/submission.js",
+        "size": 2822,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/work-handoff.d.ts",
+        "size": 631,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/core/work-handoff.js",
+        "size": 3142,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/inbound/batching.d.ts",
+        "size": 440,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/inbound/batching.js",
+        "size": 1612,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/inbound/checkpoints.d.ts",
+        "size": 876,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/inbound/checkpoints.js",
+        "size": 976,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/inbound/normalize.d.ts",
+        "size": 1603,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/inbound/normalize.js",
+        "size": 10309,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/inbound/pump.d.ts",
+        "size": 963,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/inbound/pump.js",
+        "size": 1984,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/inbound/recovery.d.ts",
+        "size": 654,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/inbound/recovery.js",
+        "size": 1078,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/inbound/router.d.ts",
+        "size": 1518,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/inbound/router.js",
+        "size": 7552,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/inbound/wake-dispatcher.d.ts",
+        "size": 1247,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/inbound/wake-dispatcher.js",
+        "size": 2132,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/typing/leases.d.ts",
+        "size": 2336,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/typing/leases.js",
+        "size": 8224,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/typing/operations.d.ts",
+        "size": 682,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/runtime/typing/operations.js",
+        "size": 3496,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/state/index.d.ts",
+        "size": 57,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/state/index.js",
+        "size": 57,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/state/ports.d.ts",
+        "size": 4762,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/state/ports.js",
+        "size": 275,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/state/sqlite.d.ts",
+        "size": 446,
+        "mode": 420
+      },
+      {
+        "path": "dist/src/state/sqlite.js",
+        "size": 5106,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 925,
+        "mode": 420
+      },
+      {
+        "path": "schemas/account.shareContact.json",
+        "size": 2766,
+        "mode": 420
+      },
+      {
+        "path": "schemas/app.send.json",
+        "size": 3075,
+        "mode": 420
+      },
+      {
+        "path": "schemas/app.sendCustomized.json",
+        "size": 7423,
+        "mode": 420
+      },
+      {
+        "path": "schemas/app.update.json",
+        "size": 9459,
+        "mode": 420
+      },
+      {
+        "path": "schemas/attachment.fetch.json",
+        "size": 2987,
+        "mode": 420
+      },
+      {
+        "path": "schemas/attachment.send.json",
+        "size": 6253,
+        "mode": 420
+      },
+      {
+        "path": "schemas/capability.json",
+        "size": 3336,
+        "mode": 420
+      },
+      {
+        "path": "schemas/contact.send.json",
+        "size": 3746,
+        "mode": 420
+      },
+      {
+        "path": "schemas/content.compose.json",
+        "size": 68189,
+        "mode": 420
+      },
+      {
+        "path": "schemas/content.group.json",
+        "size": 30768,
+        "mode": 420
+      },
+      {
+        "path": "schemas/content.json",
+        "size": 156451,
+        "mode": 420
+      },
+      {
+        "path": "schemas/context.json",
+        "size": 3635,
+        "mode": 420
+      },
+      {
+        "path": "schemas/custom.send.json",
+        "size": 5093,
+        "mode": 420
+      },
+      {
+        "path": "schemas/effect.send.json",
+        "size": 29826,
+        "mode": 420
+      },
+      {
+        "path": "schemas/event.json",
+        "size": 413406,
+        "mode": 420
+      },
+      {
+        "path": "schemas/link.send.json",
+        "size": 2977,
+        "mode": 420
+      },
+      {
+        "path": "schemas/markdown.send.json",
+        "size": 2887,
+        "mode": 420
+      },
+      {
+        "path": "schemas/message.edit.json",
+        "size": 2892,
+        "mode": 420
+      },
+      {
+        "path": "schemas/message.get.json",
+        "size": 2763,
+        "mode": 420
+      },
+      {
+        "path": "schemas/message.markRead.json",
+        "size": 2768,
+        "mode": 420
+      },
+      {
+        "path": "schemas/message.react.json",
+        "size": 3010,
+        "mode": 420
+      },
+      {
+        "path": "schemas/message.reply.json",
+        "size": 26405,
+        "mode": 420
+      },
+      {
+        "path": "schemas/message.unsend.json",
+        "size": 2766,
+        "mode": 420
+      },
+      {
+        "path": "schemas/metadata.get.json",
+        "size": 2764,
+        "mode": 420
+      },
+      {
+        "path": "schemas/poll.addOption.json",
+        "size": 3508,
+        "mode": 420
+      },
+      {
+        "path": "schemas/poll.create.json",
+        "size": 3583,
+        "mode": 420
+      },
+      {
+        "path": "schemas/poll.get.json",
+        "size": 2961,
+        "mode": 420
+      },
+      {
+        "path": "schemas/poll.unvote.json",
+        "size": 5119,
+        "mode": 420
+      },
+      {
+        "path": "schemas/poll.vote.json",
+        "size": 5117,
+        "mode": 420
+      },
+      {
+        "path": "schemas/protocol.json",
+        "size": 420754,
+        "mode": 420
+      },
+      {
+        "path": "schemas/reaction.remove.json",
+        "size": 2980,
+        "mode": 420
+      },
+      {
+        "path": "schemas/resource.json",
+        "size": 16318,
+        "mode": 420
+      },
+      {
+        "path": "schemas/result.json",
+        "size": 242485,
+        "mode": 420
+      },
+      {
+        "path": "schemas/space.addMembers.json",
+        "size": 3011,
+        "mode": 420
+      },
+      {
+        "path": "schemas/space.clearAvatar.json",
+        "size": 2763,
+        "mode": 420
+      },
+      {
+        "path": "schemas/space.clearBackground.json",
+        "size": 2767,
+        "mode": 420
+      },
+      {
+        "path": "schemas/space.create.json",
+        "size": 1174,
+        "mode": 420
+      },
+      {
+        "path": "schemas/space.get.json",
+        "size": 2755,
+        "mode": 420
+      },
+      {
+        "path": "schemas/space.getAvatar.json",
+        "size": 2761,
+        "mode": 420
+      },
+      {
+        "path": "schemas/space.getMembers.json",
+        "size": 2762,
+        "mode": 420
+      },
+      {
+        "path": "schemas/space.getName.json",
+        "size": 2759,
+        "mode": 420
+      },
+      {
+        "path": "schemas/space.leave.json",
+        "size": 2757,
+        "mode": 420
+      },
+      {
+        "path": "schemas/space.removeMembers.json",
+        "size": 3014,
+        "mode": 420
+      },
+      {
+        "path": "schemas/space.rename.json",
+        "size": 2884,
+        "mode": 420
+      },
+      {
+        "path": "schemas/space.setAvatar.json",
+        "size": 6253,
+        "mode": 420
+      },
+      {
+        "path": "schemas/space.setBackground.json",
+        "size": 6257,
+        "mode": 420
+      },
+      {
+        "path": "schemas/text.send.json",
+        "size": 2883,
+        "mode": 420
+      },
+      {
+        "path": "schemas/text.stream.json",
+        "size": 5045,
+        "mode": 420
+      },
+      {
+        "path": "schemas/typing.begin.json",
+        "size": 2887,
+        "mode": 420
+      },
+      {
+        "path": "schemas/typing.end.json",
+        "size": 2756,
+        "mode": 420
+      },
+      {
+        "path": "schemas/voice.send.json",
+        "size": 6248,
+        "mode": 420
+      }
+    ],
+    "entryCount": 265,
+    "bundled": []
+  }
+]

@@ -1,0 +1,2384 @@
+{
+  "observedAt": "2026-09-09T03-38-17Z",
+  "repository": "https://github.com/tecxbro/grokbotonimessage.git",
+  "worktree": "/Users/darshan/Documents/ChatGPT/grokbotxphoton",
+  "branch": "main",
+  "head": "57e40736be8a59047b776654c766fbe8bfd10c9e",
+  "f0": "57e40736be8a59047b776654c766fbe8bfd10c9e",
+  "comparison": "24468391b57f028b4b881ddbf71efab3a49a6f73",
+  "remoteMain": "24468391b57f028b4b881ddbf71efab3a49a6f73\trefs/heads/main",
+  "divergence": "0\t1",
+  "dirtyState": "A  docs/photon-features/evidence/wt-05/aggregate-build.txt\nA  docs/photon-features/evidence/wt-05/changed-files.json\nA  docs/photon-features/evidence/wt-05/existing-tests.txt\nA  docs/photon-features/evidence/wt-05/foundation-check.txt\nA  docs/photon-features/evidence/wt-05/foundation-tests.txt\nA  docs/photon-features/evidence/wt-05/handoff.md\nA  docs/photon-features/evidence/wt-05/lane-build.txt\nA  docs/photon-features/evidence/wt-05/lane-tests.txt\nA  docs/photon-features/evidence/wt-05/sources.json\nA  docs/photon-features/evidence/wt-05/sources.md\nA  docs/photon-features/evidence/wt-05/start-gate-check.txt\nA  docs/photon-features/evidence/wt-05/start-gate.json\nA  docs/photon-features/evidence/wt-06/aggregate-build.txt\nA  docs/photon-features/evidence/wt-06/clean-foundation-tests.txt\nA  docs/photon-features/evidence/wt-06/clean-install.txt\nA  docs/photon-features/evidence/wt-06/clean-lane-build.txt\nA  docs/photon-features/evidence/wt-06/clean-lane-tests.txt\nA  docs/photon-features/evidence/wt-06/clean-schema-check.txt\nA  docs/photon-features/evidence/wt-06/existing-tests.txt\nA  docs/photon-features/evidence/wt-06/foundation-tests.txt\nA  docs/photon-features/evidence/wt-06/handoff.md\nA  docs/photon-features/evidence/wt-06/lane-build.txt\nA  docs/photon-features/evidence/wt-06/lane-tests.txt\nA  docs/photon-features/evidence/wt-06/manifest.json\nA  docs/photon-features/evidence/wt-06/schema-check.txt\nA  docs/photon-features/evidence/wt-06/sources.json\nA  docs/photon-features/evidence/wt-06/sources.md\nA  docs/photon-features/evidence/wt-06/validation.json\nA  docs/photon-features/evidence/wt-07/existing-tests.txt\nA  docs/photon-features/evidence/wt-07/final-isolated-build.txt\nA  docs/photon-features/evidence/wt-07/final-isolated-tests.txt\nA  docs/photon-features/evidence/wt-07/foundation-tests.txt\nA  docs/photon-features/evidence/wt-07/handoff.md\nA  docs/photon-features/evidence/wt-07/initial-status.txt\nA  docs/photon-features/evidence/wt-07/isolated-build.txt\nA  docs/photon-features/evidence/wt-07/isolated-lane-tests.txt\nA  docs/photon-features/evidence/wt-07/lane-tests.txt\nA  docs/photon-features/evidence/wt-07/manifest.json\nA  docs/photon-features/evidence/wt-07/package-build.txt\nA  docs/photon-features/evidence/wt-07/schema-check.txt\nA  docs/photon-features/evidence/wt-07/sources.json\nA  docs/photon-features/evidence/wt-07/sources.md\nA  docs/photon-features/evidence/wt-07/validation.json\nA  docs/photon-features/requests/wt-05/advanced-polls.md\nA  docs/photon-features/requests/wt-06/host-integration.md\nA  docs/photon-features/requests/wt-07/integration.md\n M package-lock.json\n M package.json\nA  packages/photon-features/examples/wt-05/consume-polls.ts\nA  packages/photon-features/examples/wt-06/host-seam.ts\nA  packages/photon-features/examples/wt-07/consume-native.ts\nA  packages/photon-features/src/features/cards/configuration.ts\nA  packages/photon-features/src/features/cards/interaction-adapter.ts\nA  packages/photon-features/src/features/cards/module.ts\nA  packages/photon-features/src/features/cards/operations.ts\nA  packages/photon-features/src/features/cards/reducer.ts\nA  packages/photon-features/src/features/cards/sdk.ts\nA  packages/photon-features/src/features/cards/session-codec.ts\nA  packages/photon-features/src/features/cards/state.ts\nA  packages/photon-features/src/features/cards/update-ordering.ts\nA  packages/photon-features/src/features/native/appearance.ts\nA  packages/photon-features/src/features/native/custom-handlers.ts\nA  packages/photon-features/src/features/native/effects.ts\nA  packages/photon-features/src/features/native/guards.ts\nA  packages/photon-features/src/features/native/membership.ts\nA  packages/photon-features/src/features/native/metadata.ts\nA  packages/photon-features/src/features/native/module.ts\nA  packages/photon-features/src/features/native/sdk.ts\nA  packages/photon-features/src/features/native/spaces.ts\nA  packages/photon-features/src/features/polls/identity.ts\nA  packages/photon-features/src/features/polls/module.ts\nA  packages/photon-features/src/features/polls/operations.ts\nA  packages/photon-features/src/features/polls/reconciliation.ts\nA  packages/photon-features/src/features/polls/reducer.ts\nA  packages/photon-features/src/features/polls/sdk.ts\nA  packages/photon-features/tests/lanes/wt-05/integration-contract.ts\nA  packages/photon-features/tests/lanes/wt-05/integration.test.ts\nA  packages/photon-features/tests/lanes/wt-05/operations.test.ts\nA  packages/photon-features/tests/lanes/wt-05/reducer.test.ts\nA  packages/photon-features/tests/lanes/wt-05/support.ts\nA  packages/photon-features/tests/lanes/wt-05/tsconfig.json\nA  packages/photon-features/tests/lanes/wt-06/fixture.ts\nA  packages/photon-features/tests/lanes/wt-06/interactions.test.ts\nA  packages/photon-features/tests/lanes/wt-06/operations.test.ts\nA  packages/photon-features/tests/lanes/wt-06/sdk.test.ts\nA  packages/photon-features/tests/lanes/wt-06/session-codec.test.ts\nA  packages/photon-features/tests/lanes/wt-06/tsconfig.json\nA  packages/photon-features/tests/lanes/wt-07/.gitignore\nA  packages/photon-features/tests/lanes/wt-07/fixture.ts\nA  packages/photon-features/tests/lanes/wt-07/native.test.ts\nA  packages/photon-features/tests/lanes/wt-07/tsconfig.json\n?? agent.md\n?? architecthure.md\n?? docs/photon-features/evidence/wt-01/baseline.json\n?? docs/photon-features/evidence/wt-01/build.txt\n?? docs/photon-features/evidence/wt-01/changed-files.json\n?? docs/photon-features/evidence/wt-01/check.txt\n?? docs/photon-features/evidence/wt-01/clean-install.txt\n?? docs/photon-features/evidence/wt-01/existing.txt\n?? docs/photon-features/evidence/wt-01/final-verification.json\n?? docs/photon-features/evidence/wt-01/foundation.txt\n?? docs/photon-features/evidence/wt-01/handoff.md\n?? docs/photon-features/evidence/wt-01/implementation.md\n?? docs/photon-features/evidence/wt-01/lane.txt\n?? docs/photon-features/evidence/wt-01/sources.json\n?? docs/photon-features/evidence/wt-01/sources.md\n?? docs/photon-features/evidence/wt-01/validation-environment.json\n?? docs/photon-features/evidence/wt-01/validation.json\n?? docs/photon-features/evidence/wt-02/aggregate-foundation-tests.txt\n?? docs/photon-features/evidence/wt-02/baseline.json\n?? docs/photon-features/evidence/wt-02/existing-tests.txt\n?? docs/photon-features/evidence/wt-02/f0-digest-check.txt\n?? docs/photon-features/evidence/wt-02/f0-targeted-tests.txt\n?? docs/photon-features/evidence/wt-02/files.json\n?? docs/photon-features/evidence/wt-02/final-aggregate-check.txt\n?? docs/photon-features/evidence/wt-02/final-aggregate-tests.txt\n?? docs/photon-features/evidence/wt-02/final-lane-build.txt\n?? docs/photon-features/evidence/wt-02/final-lane-tests.txt\n?? docs/photon-features/evidence/wt-02/handoff.md\n?? docs/photon-features/evidence/wt-02/lane-and-f0-build.txt\n?? docs/photon-features/evidence/wt-02/lane-build.txt\n?? docs/photon-features/evidence/wt-02/lane-tests.txt\n?? docs/photon-features/evidence/wt-02/schema-check.txt\n?? docs/photon-features/evidence/wt-02/sources.json\n?? docs/photon-features/evidence/wt-02/sources.md\n?? docs/photon-features/evidence/wt-02/validation.json\n?? docs/photon-features/evidence/wt-03/changed-files.txt\n?? docs/photon-features/evidence/wt-03/checkout.json\n?? docs/photon-features/evidence/wt-03/existing-tests.txt\n?? docs/photon-features/evidence/wt-03/foundation-tests.txt\n?? docs/photon-features/evidence/wt-03/handoff.md\n?? docs/photon-features/evidence/wt-03/implementation-manifest.json\n?? docs/photon-features/evidence/wt-03/lane-tests.txt\n?? docs/photon-features/evidence/wt-03/schema-check.txt\n?? docs/photon-features/evidence/wt-03/sources.json\n?? docs/photon-features/evidence/wt-03/sources.md\n?? docs/photon-features/evidence/wt-03/validate.py\n?? docs/photon-features/evidence/wt-03/validation.json\n?? docs/photon-features/evidence/wt-04/HANDOFF.md\n?? docs/photon-features/evidence/wt-04/baseline.json\n?? docs/photon-features/evidence/wt-04/build.txt\n?? docs/photon-features/evidence/wt-04/changed-files.txt\n?? docs/photon-features/evidence/wt-04/clean-install.txt\n?? docs/photon-features/evidence/wt-04/clean-lane-tests.txt\n?? docs/photon-features/evidence/wt-04/existing-tests.txt\n?? docs/photon-features/evidence/wt-04/foundation-check.txt\n?? docs/photon-features/evidence/wt-04/foundation-tests.txt\n?? docs/photon-features/evidence/wt-04/lane-tests.txt\n?? docs/photon-features/evidence/wt-04/reproduction.json\n?? docs/photon-features/evidence/wt-04/schema-check.txt\n?? docs/photon-features/evidence/wt-04/shared-check-latest.txt\n?? docs/photon-features/evidence/wt-04/source-manifest.json\n?? docs/photon-features/evidence/wt-04/sources.json\n?? docs/photon-features/evidence/wt-04/sources.md\n?? docs/photon-features/evidence/wt-08/baseline.json\n?? docs/photon-features/evidence/wt-08/cli-tests.txt\n?? docs/photon-features/evidence/wt-08/distribution-tests.txt\n?? docs/photon-features/evidence/wt-08/existing-cli.txt\n?? docs/photon-features/evidence/wt-08/files.json\n?? docs/photon-features/evidence/wt-08/full-foundation-tests.txt\n?? docs/photon-features/evidence/wt-08/full-schema-check.txt\n?? docs/photon-features/evidence/wt-08/handoff.md\n?? docs/photon-features/evidence/wt-08/lane-build.txt\n?? docs/photon-features/evidence/wt-08/offline-smoke.txt\n?? docs/photon-features/evidence/wt-08/skill-drift.txt\n?? docs/photon-features/evidence/wt-08/sources.json\n?? docs/photon-features/evidence/wt-08/sources.md\n?? docs/photon-features/evidence/wt-08/validation.json\n?? docs/photon-features/evidence/wt-09/2026-09-09T03-22-14-291Z/snapshot.json\n?? docs/photon-features/evidence/wt-09/2026-09-09T03-23-13-616Z/snapshot.json\n?? docs/photon-features/evidence/wt-09/2026-09-09T03-24-01-470Z/snapshot.json\n?? docs/photon-features/evidence/wt-09/2026-09-09T03-26-09-451Z/snapshot.json\n?? docs/photon-features/evidence/wt-09/2026-09-09T03-26-52-481Z/snapshot.json\n?? docs/photon-features/evidence/wt-09/2026-09-09T03-26-52-481Z/wt09.log.gz\n?? docs/photon-features/evidence/wt-09/2026-09-09T03-28-15-023Z/snapshot.json\n?? docs/photon-features/evidence/wt-09/2026-09-09T03-33-25-072Z/snapshot.json\n?? docs/photon-features/evidence/wt-09/final-validation.json\n?? docs/photon-features/evidence/wt-09/latest-run.json\n?? docs/photon-features/evidence/wt-09/sources.json\n?? docs/photon-features/evidence/wt-09/sources.md\n?? docs/photon-features/reports/wt-09/defects.json\n?? docs/photon-features/reports/wt-09/handoff.md\n?? docs/photon-features/reports/wt-09/operation-coverage.json\n?? docs/photon-features/reports/wt-09/operation-coverage.md\n?? docs/photon-features/reports/wt-09/requirements.md\n?? docs/photon-features/reports/wt-09/summary.json\n?? docs/photon-features/requests/wt-01/001-execution-and-host-seams.md\n?? docs/photon-features/requests/wt-02/integration.md\n?? docs/photon-features/requests/wt-03/integration.md\n?? docs/photon-features/requests/wt-04/integration.md\n?? docs/photon-features/requests/wt-08/integration.md\n?? docs/photon-features/requests/wt-09/wt00-candidate-and-test-registration.md\n?? docs/photon-features/requests/wt-09/wt09-001.md\n?? docs/photon-features/requests/wt-09/wt09-002.md\n?? docs/photon-features/requests/wt-09/wt09-003.md\n?? packages/photon-features/INSTALL.md\n?? packages/photon-features/README.md\n?? packages/photon-features/SKILL.md\n?? packages/photon-features/examples/wt-01/compose-engine.ts\n?? packages/photon-features/examples/wt-02/compose.ts\n?? packages/photon-features/examples/wt-03/register.ts\n?? packages/photon-features/examples/wt-04/host-composition.ts\n?? packages/photon-features/examples/wt-08/account.shareContact.json\n?? packages/photon-features/examples/wt-08/app.send.json\n?? packages/photon-features/examples/wt-08/app.sendCustomized.json\n?? packages/photon-features/examples/wt-08/app.update.json\n?? packages/photon-features/examples/wt-08/attachment.fetch.json\n?? packages/photon-features/examples/wt-08/attachment.send.json\n?? packages/photon-features/examples/wt-08/contact.send.json\n?? packages/photon-features/examples/wt-08/content.compose.json\n?? packages/photon-features/examples/wt-08/content.group.json\n?? packages/photon-features/examples/wt-08/custom.send.json\n?? packages/photon-features/examples/wt-08/effect.send.json\n?? packages/photon-features/examples/wt-08/link.send.json\n?? packages/photon-features/examples/wt-08/markdown.send.json\n?? packages/photon-features/examples/wt-08/message.edit.json\n?? packages/photon-features/examples/wt-08/message.get.json\n?? packages/photon-features/examples/wt-08/message.markRead.json\n?? packages/photon-features/examples/wt-08/message.react.json\n?? packages/photon-features/examples/wt-08/message.reply.json\n?? packages/photon-features/examples/wt-08/message.unsend.json\n?? packages/photon-features/examples/wt-08/metadata.get.json\n?? packages/photon-features/examples/wt-08/poll.addOption.json\n?? packages/photon-features/examples/wt-08/poll.create.json\n?? packages/photon-features/examples/wt-08/poll.get.json\n?? packages/photon-features/examples/wt-08/poll.unvote.json\n?? packages/photon-features/examples/wt-08/poll.vote.json\n?? packages/photon-features/examples/wt-08/reaction.remove.json\n?? packages/photon-features/examples/wt-08/space.addMembers.json\n?? packages/photon-features/examples/wt-08/space.clearAvatar.json\n?? packages/photon-features/examples/wt-08/space.clearBackground.json\n?? packages/photon-features/examples/wt-08/space.create.json\n?? packages/photon-features/examples/wt-08/space.get.json\n?? packages/photon-features/examples/wt-08/space.getAvatar.json\n?? packages/photon-features/examples/wt-08/space.getMembers.json\n?? packages/photon-features/examples/wt-08/space.getName.json\n?? packages/photon-features/examples/wt-08/space.leave.json\n?? packages/photon-features/examples/wt-08/space.removeMembers.json\n?? packages/photon-features/examples/wt-08/space.rename.json\n?? packages/photon-features/examples/wt-08/space.setAvatar.json\n?? packages/photon-features/examples/wt-08/space.setBackground.json\n?? packages/photon-features/examples/wt-08/text.send.json\n?? packages/photon-features/examples/wt-08/text.stream.json\n?? packages/photon-features/examples/wt-08/typing.begin.json\n?? packages/photon-features/examples/wt-08/typing.end.json\n?? packages/photon-features/examples/wt-08/voice.send.json\n?? packages/photon-features/examples/wt-09/README.md\n?? packages/photon-features/scripts/generate-skill.mjs\n?? packages/photon-features/scripts/install.mjs\n?? packages/photon-features/scripts/package.mjs\n?? packages/photon-features/scripts/smoke-test.mjs\n?? packages/photon-features/src/adapters/state/sqlite.ts\n?? packages/photon-features/src/adapters/state/unit-of-work.ts\n?? packages/photon-features/src/adapters/transport/capture.ts\n?? packages/photon-features/src/adapters/transport/event-source.ts\n?? packages/photon-features/src/adapters/transport/provider-context.ts\n?? packages/photon-features/src/adapters/transport/snapshot.ts\n?? packages/photon-features/src/adapters/transport/spectrum-owner.ts\n?? packages/photon-features/src/adapters/transport/webhook-ingress.ts\n?? packages/photon-features/src/cli/commands.ts\n?? packages/photon-features/src/cli/local-client.ts\n?? packages/photon-features/src/cli/main.ts\n?? packages/photon-features/src/cli/output.ts\n?? packages/photon-features/src/features/media/attachments.ts\n?? packages/photon-features/src/features/media/contacts.ts\n?? packages/photon-features/src/features/media/file-access.ts\n?? packages/photon-features/src/features/media/guarded-fetch.ts\n?? packages/photon-features/src/features/media/index.ts\n?? packages/photon-features/src/features/media/metadata.ts\n?? packages/photon-features/src/features/media/module.ts\n?? packages/photon-features/src/features/media/retention.ts\n?? packages/photon-features/src/features/media/safety.ts\n?? packages/photon-features/src/features/media/sdk.ts\n?? packages/photon-features/src/features/media/staging.ts\n?? packages/photon-features/src/features/media/voice.ts\n?? packages/photon-features/src/features/text-messages/actions.ts\n?? packages/photon-features/src/features/text-messages/composition.ts\n?? packages/photon-features/src/features/text-messages/errors.ts\n?? packages/photon-features/src/features/text-messages/identity.ts\n?? packages/photon-features/src/features/text-messages/journal.ts\n?? packages/photon-features/src/features/text-messages/module.ts\n?? packages/photon-features/src/features/text-messages/sdk.ts\n?? packages/photon-features/src/features/text-messages/streaming.ts\n?? packages/photon-features/src/features/text-messages/targets.ts\n?? packages/photon-features/src/features/text-messages/voice-policy.ts\n?? packages/photon-features/src/runtime/core/admission.ts\n?? packages/photon-features/src/runtime/core/authorization.ts\n?? packages/photon-features/src/runtime/core/cancellation.ts\n?? packages/photon-features/src/runtime/core/checkpoint-codec.ts\n?? packages/photon-features/src/runtime/core/children.ts\n?? packages/photon-features/src/runtime/core/claims.ts\n?? packages/photon-features/src/runtime/core/engine.ts\n?? packages/photon-features/src/runtime/core/errors.ts\n?? packages/photon-features/src/runtime/core/execution-boundary.ts\n?? packages/photon-features/src/runtime/core/executor.ts\n?? packages/photon-features/src/runtime/core/feature-services.ts\n?? packages/photon-features/src/runtime/core/idempotency.ts\n?? packages/photon-features/src/runtime/core/index.ts\n?? packages/photon-features/src/runtime/core/local-server.ts\n?? packages/photon-features/src/runtime/core/outcomes.ts\n?? packages/photon-features/src/runtime/core/recovery.ts\n?? packages/photon-features/src/runtime/core/submission.ts\n?? packages/photon-features/src/runtime/core/work-handoff.ts\n?? packages/photon-features/src/runtime/inbound/batching.ts\n?? packages/photon-features/src/runtime/inbound/checkpoints.ts\n?? packages/photon-features/src/runtime/inbound/normalize.ts\n?? packages/photon-features/src/runtime/inbound/pump.ts\n?? packages/photon-features/src/runtime/inbound/recovery.ts\n?? packages/photon-features/src/runtime/inbound/router.ts\n?? packages/photon-features/src/runtime/inbound/wake-dispatcher.ts\n?? packages/photon-features/src/runtime/typing/leases.ts\n?? packages/photon-features/src/runtime/typing/operations.ts\n?? packages/photon-features/tests/e2e/card-restart.test.ts\n?? packages/photon-features/tests/e2e/feature-runtime.test.ts\n?? packages/photon-features/tests/e2e/inbound-events.test.ts\n?? packages/photon-features/tests/e2e/install-rollback.test.ts\n?? packages/photon-features/tests/e2e/local-roundtrip.test.ts\n?? packages/photon-features/tests/e2e/multipart-recovery.test.ts\n?? packages/photon-features/tests/e2e/poll-restart.test.ts\n?? packages/photon-features/tests/e2e/single-ownership.test.ts\n?? packages/photon-features/tests/e2e/typing-lifecycle.test.ts\n?? packages/photon-features/tests/lanes/wt-01/fixture.ts\n?? packages/photon-features/tests/lanes/wt-01/process-worker.ts\n?? packages/photon-features/tests/lanes/wt-01/runtime.test.ts\n?? packages/photon-features/tests/lanes/wt-01/work-protocol.test.ts\n?? packages/photon-features/tests/lanes/wt-02/helpers.ts\n?? packages/photon-features/tests/lanes/wt-02/inbound.test.ts\n?? packages/photon-features/tests/lanes/wt-02/transport.test.ts\n?? packages/photon-features/tests/lanes/wt-02/tsconfig.json\n?? packages/photon-features/tests/lanes/wt-02/typing.test.ts\n?? packages/photon-features/tests/lanes/wt-03/fixture.ts\n?? packages/photon-features/tests/lanes/wt-03/operations.test.ts\n?? packages/photon-features/tests/lanes/wt-03/recovery.test.ts\n?? packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts\n?? packages/photon-features/tests/lanes/wt-03/streaming.test.ts\n?? packages/photon-features/tests/lanes/wt-04/helpers.ts\n?? packages/photon-features/tests/lanes/wt-04/module.test.ts\n?? packages/photon-features/tests/lanes/wt-04/network.test.ts\n?? packages/photon-features/tests/lanes/wt-04/staging.test.ts\n?? packages/photon-features/tests/lanes/wt-04/tsconfig.json\n?? packages/photon-features/tests/lanes/wt-04/verify.mjs\n?? packages/photon-features/tests/lanes/wt-08/cli.test.ts\n?? packages/photon-features/tests/lanes/wt-08/distribution.test.mjs\n?? packages/photon-features/tests/lanes/wt-08/tsconfig.json\n?? packages/photon-features/tests/lanes/wt-09/coverage.mjs\n?? packages/photon-features/tests/lanes/wt-09/crash-worker.ts\n?? packages/photon-features/tests/lanes/wt-09/execution-harness.ts\n?? packages/photon-features/tests/lanes/wt-09/harness.ts\n?? packages/photon-features/tests/lanes/wt-09/sdk-and-voice.test.ts\n?? packages/photon-features/tests/lanes/wt-09/verify.mjs\n?? packages/photon-features/tests/live/authorized-smoke.test.ts\n?? packages/photon-features/tests/security/claim-fencing.test.ts\n?? packages/photon-features/tests/security/context-scope.test.ts\n?? packages/photon-features/tests/security/media-access.test.ts\n?? packages/photon-features/tests/security/webhook-auth.test.ts",
+  "testedReleaseCommit": null,
+  "includedLaneCommits": [],
+  "snapshot": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt00-integration-preflight-miwhhyyo",
+  "manifest": [
+    {
+      "path": ".changeset/README.md",
+      "sha256": "495bd4805f8362853bce99689c1cd75db8c475dfa38930619d2e197d7554db27"
+    },
+    {
+      "path": ".changeset/config.json",
+      "sha256": "37959ecbbf9489ab0a762cc841b055e19069c6f7c1cb73a82bd72d0f3680e90d"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "64d92f19f5feb7ce94c5a94692159642d1b004f3519f78e4f281b348c418daa1"
+    },
+    {
+      "path": ".github/workflows/photon-foundation.yml",
+      "sha256": "fb33fed895ebc0a45183f7276bfa3078f84d1731866bb6437ab54c201b26dc41"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "sha256": "3fa3d3033be8bcc8009631144d575073b58ca267a102b0484b6a6dd053fbd0ed"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "4855d66e6b55c7ff51afe7b5e306285309a35930795310669a83260b6db87b71"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "ed3264134c792621444080bd4424b429ff3ab95f09e8bc76e77b42170cbc4cef"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "bc48c8a0f6b6e45842e574c79a6b955fe683ed13f48a50cc08bcccdb1a59fe59"
+    },
+    {
+      "path": "README.md",
+      "sha256": "ad85f60459dbee8f630b1e453eef57d5b8302f4a96ae88b1d3ad84ae53949b91"
+    },
+    {
+      "path": "agent.md",
+      "sha256": "3ca075abad1725705d33dcacf82affe094246809174b5cb56e5c6b5c720e6b95"
+    },
+    {
+      "path": "architecthure.md",
+      "sha256": "a503e5424cdb2e2b952ecf85f7c9d95b22cbae486029175f18390ed4c9cf6cf8"
+    },
+    {
+      "path": "demo/grok-bot-cli-demo.gif",
+      "sha256": "0fe01e15fd2abbbc5cc3313e42931d404d3a320764e22fdcfb995f1a45dd73cd"
+    },
+    {
+      "path": "demo/grok-bot-cli-demo.mp4",
+      "sha256": "b6ed66e43616674096c2f0a4a4da46fe4693c681833eab013f872a66b9ff933c"
+    },
+    {
+      "path": "docs/photon-features/baseline.md",
+      "sha256": "5d232a3a09ca10dc1e1d807149afde2f71bb5a1cb2debaf4ca17923bcc4697c1"
+    },
+    {
+      "path": "docs/photon-features/contracts-v1.md",
+      "sha256": "e650a7eb152928b23fff5eff4d9fa090c7d62fef634f44a571b7d237650ba280"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-00/changed-files.json",
+      "sha256": "7c0d356a919cd0422d981fc294dc55412658acc384054dd5bc9f4a39ed3225bb"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-00/clean-existing-tests.txt",
+      "sha256": "ba0bca734192763f78455fdd4bd5f0505afe76a37abb53bc76e109c1ff83d71b"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-00/clean-foundation-tests.txt",
+      "sha256": "bd3818d24a74626580959ead4869c7fa33761536e8c4da2fe3d1efebab9dd57b"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-00/clean-install.txt",
+      "sha256": "3f3a6824757e889bcea4e0ababb48ac15a72065edb840278d2fa7b76405bc9db"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-00/clean-schema-check.txt",
+      "sha256": "17329cd5d46848b27afbff5efb55e170fe2964055be820a145d0b9a610f97bf4"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-00/drift-negative.txt",
+      "sha256": "76c426a537cbb69cda21d5ecd3e374110fa9b6afcbfd42d6b9e5b6b8df64350d"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-00/drift-restored.txt",
+      "sha256": "82721f6395e7b0c3b7fe0e354a55dd10a7ca107a0c400d540df08897296fe4be"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-00/existing-tests.txt",
+      "sha256": "4bc405122bbb7867b64143c9272b95b1741bfe34c9f96604ceda7816df4d1b37"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-00/foundation-tests.txt",
+      "sha256": "ae33ff04c98ee1e6ce45a481dafb9cdd57f654e0030ca4fad3e98197589b74c0"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-00/generation.txt",
+      "sha256": "c23b73a95857b7f45f823e9660f946102492e7c82b64d535302dd4ed1bce8210"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-00/package-boundary.json",
+      "sha256": "c8cb875e920e1c463045bcbe7e66b93e3548aa39e756f87633eac695c67d191f"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-00/schema-check.txt",
+      "sha256": "17329cd5d46848b27afbff5efb55e170fe2964055be820a145d0b9a610f97bf4"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-00/sdk-full-declaration-limit.txt",
+      "sha256": "53bfa9a8efa3a971a19addf91bedfdb11ba1f1cc5f6ec97b3eb26289e7bd09fb"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-00/sources.json",
+      "sha256": "bdf1be1f536dbbb4471707e0235a09366b2c93177ea4bb49e754799ac71e5dc8"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-00/sources.md",
+      "sha256": "bf0b1eeb9b053874914debde4952b3bc8b8c6f579990ec7f000fb9a83c7fb981"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-01/baseline.json",
+      "sha256": "1ede0282c1b108163663eebf62e6b034d921f6755a3d0cb779095630e81f3f3b"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-01/build.txt",
+      "sha256": "27608d404b2b96a621b62a6e4e79a05a40aaa486cc8d442203f1b06fff48e55a"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-01/changed-files.json",
+      "sha256": "e1c323e76e2814941f2b765923fb4be81b237fad96c929e7dd3ea6e0db191d39"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-01/check.txt",
+      "sha256": "17329cd5d46848b27afbff5efb55e170fe2964055be820a145d0b9a610f97bf4"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-01/clean-install.txt",
+      "sha256": "4d06c98597a797b6be3fba5f9995e72b56369a4d9b14dc7cce115b77da1b57e7"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-01/existing.txt",
+      "sha256": "7e746ec4cf021a40fe7a5afdad084ae9cea9fa0bec0dc46e453855eba7373058"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-01/final-verification.json",
+      "sha256": "ad2c59b799b09d7a6e01856102f62b01a2e8a5fbc33d85ef3e31950c5b76e4d2"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-01/foundation.txt",
+      "sha256": "aab739229821be45b32d4b7dfc741eeca346fc4035f43408cefbdadd4d24200e"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-01/handoff.md",
+      "sha256": "6b6079d0cbdb60ec9e32f0c796c2e608875532631f5fd36928c592534a15cc5c"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-01/implementation.md",
+      "sha256": "7c68a9aac572912b4a5f0873b4dc2110e4938fa3ae74bb413376b7cd6f66ff5c"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-01/lane.txt",
+      "sha256": "07151c7f095b368497ad48cf6a2128c963b3cdf1cc5c8c1e5066cdff43e421f3"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-01/sources.json",
+      "sha256": "5b03b21c8e0f3f26dd7b14e04e938f88ff5644e9fc038ced86dd31c44e211977"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-01/sources.md",
+      "sha256": "65a637469975cfa1232c3711e9c58c1803688703cb2c012a17966df23be8698a"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-01/validation-environment.json",
+      "sha256": "66224f261de1232707d690af569599da661022d0815d32df2f115818d428a1f1"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-01/validation.json",
+      "sha256": "28d6ddfa9d780c3392dba3d014dfd65184034fd61d84e4afb13a93128bf9c3ac"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-02/aggregate-foundation-tests.txt",
+      "sha256": "90c092bb24c1e009530e3ecd75561a264260fad8a6e9f524bf517c632594a637"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-02/baseline.json",
+      "sha256": "5cbd0abfbcb852a2b89a2828748d0cd5a50c2adc3dc620cfb5d6853c252202cd"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-02/existing-tests.txt",
+      "sha256": "e93edcf53136a235aa4dee817655fab82bf75ae59d095d908257bf925ecd527f"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-02/f0-digest-check.txt",
+      "sha256": "82721f6395e7b0c3b7fe0e354a55dd10a7ca107a0c400d540df08897296fe4be"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-02/f0-targeted-tests.txt",
+      "sha256": "d433c329227abf888c26a9e4866725c3802b72108af6eef2bd6222938f75b5b7"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-02/files.json",
+      "sha256": "6ee8f662a424790116033eb982a9bd58b8854a5fe62485da930a5f80791d7ec3"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-02/final-aggregate-check.txt",
+      "sha256": "17329cd5d46848b27afbff5efb55e170fe2964055be820a145d0b9a610f97bf4"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-02/final-aggregate-tests.txt",
+      "sha256": "c1b646ce92b580cf21d10ed620c2aef48576c5b829a9e5aba15a9fd7599cf9bb"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-02/final-lane-build.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-02/final-lane-tests.txt",
+      "sha256": "3f6e1ad6f0d25d97d303595817dad3710112cb253d2af745544aa3f451bb6a4d"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-02/handoff.md",
+      "sha256": "56079de98cc84516bcc17e214b2cabd663fec6345a6961e722822e6bc7c9c60e"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-02/lane-and-f0-build.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-02/lane-build.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-02/lane-tests.txt",
+      "sha256": "b7688df0134f0fe989cadcfe5c257679a7201ca8f9e550167421aeb49c22db23"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-02/schema-check.txt",
+      "sha256": "b86aaa6508ea5f39d5a0ef43cad7059542f51c598ece0101f6083c34666ec94a"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-02/sources.json",
+      "sha256": "db87e1d6aca801253fe6c509c105d914b19d1b8bec47671f27fe9da830d7bb6f"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-02/sources.md",
+      "sha256": "39e57f8c4426b8c3c66d6790644afdb1f2a6313c828b937141a1e6ba035765de"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-02/validation.json",
+      "sha256": "647e6fc9042c30c96d17733c76bdd0ca1aff681984dbbf97e2d75192b13daed2"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-03/changed-files.txt",
+      "sha256": "c322e64216c0e0ebbf64301f970e592a49a54f32166896b4f7579a03d33ae4e1"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-03/checkout.json",
+      "sha256": "ab77894879534475c629c000f01191abaa5e41b7723a56cba23004dc88bcdb20"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-03/existing-tests.txt",
+      "sha256": "4391e9da0df90eedc1d1ff81e668c384d9351a41b05b0d0df276f368289659f9"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-03/foundation-tests.txt",
+      "sha256": "9003e3422d5b735d214d55e832a0c4268f534c0124706c5793ca498957e89dbb"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-03/handoff.md",
+      "sha256": "8f64de8caee995b05c377de1d6fe76e51516113dee64f7b73dcdc28e70a961e5"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-03/implementation-manifest.json",
+      "sha256": "e6c8770c23147f2cd8287ad36a40f4548a480628e96e64481b134e4df178a593"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-03/lane-tests.txt",
+      "sha256": "14410d0f8f6e9bcfbec3b907a692033cbeaf5778eece62f6d2d071521c7be57c"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-03/schema-check.txt",
+      "sha256": "17329cd5d46848b27afbff5efb55e170fe2964055be820a145d0b9a610f97bf4"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-03/sources.json",
+      "sha256": "76f0a1185936110d397afa24906ea41573d28376ec70a651761f8eb2a72564e4"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-03/sources.md",
+      "sha256": "aee6febd9a4043c552c69c96ffb81b05201bd26334ba59a8e5c8859121af3f2a"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-03/validate.py",
+      "sha256": "9568c5a578882b5fcc3faa5d5871557a4aada22ae1940a3f5a36c22112a5caa5"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-03/validation.json",
+      "sha256": "121a772c4a41d7685e9db23bb2293e241f766bdcba65de2b3e5f9631b143049f"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-04/HANDOFF.md",
+      "sha256": "2a2f6d8c0bbfa8399346ff99ace60935497a0ed3f344ec64b337753510c541dc"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-04/baseline.json",
+      "sha256": "82bdbea31988c417fa87bd28975ec1ded1ad13f204e80bf46cb6e6cfb5d2d4a8"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-04/build.txt",
+      "sha256": "27608d404b2b96a621b62a6e4e79a05a40aaa486cc8d442203f1b06fff48e55a"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-04/changed-files.txt",
+      "sha256": "97c9e45dd976090f96cb29528cb76d91938554dbb9f7c5a3896fe6abe15d911f"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-04/clean-install.txt",
+      "sha256": "21e04abd17addcda19141555bc9f0ac7f0e27d8c4b4564aa19c06fb196f81e8c"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-04/clean-lane-tests.txt",
+      "sha256": "2ea7664a191f9d7e6c50077b6480abee6c42dea9b0cdce56ae7d0b3eada36530"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-04/existing-tests.txt",
+      "sha256": "c83d4415c26c590a0c359cb57b49e94db9a979a9731c48e2c3960b4148046bda"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-04/foundation-check.txt",
+      "sha256": "71b5ffd218068873ca865a9965721d1b7859d72b0b3438419ec886ffb575bd6b"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-04/foundation-tests.txt",
+      "sha256": "af19f70356f55f0195e1b02b29d46069daa677658b1afc517bd6e38d3171b80d"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-04/lane-tests.txt",
+      "sha256": "8f3b10da57f61c9ee8e4c750e8c5077fd7da19f4f4cb2da78d5676a36eb797d0"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-04/reproduction.json",
+      "sha256": "96e5b6c59dd90197780a3af6cd688f521ad199f5a3deb38cc59cbf8e48c2a69e"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-04/schema-check.txt",
+      "sha256": "17329cd5d46848b27afbff5efb55e170fe2964055be820a145d0b9a610f97bf4"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-04/shared-check-latest.txt",
+      "sha256": "17329cd5d46848b27afbff5efb55e170fe2964055be820a145d0b9a610f97bf4"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-04/source-manifest.json",
+      "sha256": "e8ac6c08f848a901e268f2af638d656c5148e5f5ef0eb632516eb74d7b7a0e9d"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-04/sources.json",
+      "sha256": "8b5aea6269f1e088b8d771f15cee6d1523498fa72cf41b882407820fece57298"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-04/sources.md",
+      "sha256": "232040d3b3f77cd3c4f9ecfcaa9ee6d7d77635a804d00ac6a43d447799e794b1"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-05/aggregate-build.txt",
+      "sha256": "5c3b32ec5be993f58c85fdacf766869442925cc5a61eb0e2a013e25d1fa3e49a"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-05/changed-files.json",
+      "sha256": "76549783e528701ecf2796ed48fd49ce10b2ff55270992b45e319779831fe922"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-05/existing-tests.txt",
+      "sha256": "1e03b22f61d06b77e1bc890e5560c9a74f390081522cc4aff001c6ef9c53c749"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-05/foundation-check.txt",
+      "sha256": "82721f6395e7b0c3b7fe0e354a55dd10a7ca107a0c400d540df08897296fe4be"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-05/foundation-tests.txt",
+      "sha256": "c7510fc95b55ff3009da09ef809cb1321ba936a8bd4398726535b4ca7cffed64"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-05/handoff.md",
+      "sha256": "9171a6a9417ba3f69fcf62194d19e4060f10c4a7f61535bea5939e2fd7bc6727"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-05/lane-build.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-05/lane-tests.txt",
+      "sha256": "84e3709fe7a22e410131b2f260b05c2a3e8e414459f9d8b397808f14a4653bd1"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-05/sources.json",
+      "sha256": "d3b0bec3bb4287d4079e99d153f2c27d218f15487f225754c960d218e246667d"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-05/sources.md",
+      "sha256": "5b7a8d6917d1e3dc4c46e10ff2248124e4f5be7b096aaa430d717d5ac539c091"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-05/start-gate-check.txt",
+      "sha256": "c763a7afa99b107a1dc4dea3bb1c67a2ae8728d573540b2b7d99620ca6201d57"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-05/start-gate.json",
+      "sha256": "02123383774ca7954379edb0c054f74579e49447c926faae7b8d742102054f20"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-06/aggregate-build.txt",
+      "sha256": "27608d404b2b96a621b62a6e4e79a05a40aaa486cc8d442203f1b06fff48e55a"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-06/clean-foundation-tests.txt",
+      "sha256": "b365d96ca65f3d73702cd96a52138b767d6123268b893c03411b7ba186e6e07d"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-06/clean-install.txt",
+      "sha256": "6eca1e1d11b0a6e7ce73a8f90745b21e3ed2c252a1c6f1cb1821f5499326c880"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-06/clean-lane-build.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-06/clean-lane-tests.txt",
+      "sha256": "e62d1ba236401df461eeb8e743399b98e2ac89cfd81499dc290b1cb02b83237a"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-06/clean-schema-check.txt",
+      "sha256": "17329cd5d46848b27afbff5efb55e170fe2964055be820a145d0b9a610f97bf4"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-06/existing-tests.txt",
+      "sha256": "10e8c9e79973a77d3e2eb4ffe2a40b99aba287689237674eff02dbc954118d5d"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-06/foundation-tests.txt",
+      "sha256": "b256f048981d305a928bee1f8424a31652d5ecefc72959de4863cb22220dc571"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-06/handoff.md",
+      "sha256": "c13580d394931f95d3e16385401fed76119cfa339e2ca41a2cee74414f4b4ab2"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-06/lane-build.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-06/lane-tests.txt",
+      "sha256": "ad9c1f229fafc67aaeef111f4c274572c7da180a90229e5acda18cb39eb7ccc2"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-06/manifest.json",
+      "sha256": "350eb22b4173567d28b30cc83f53695882e60794bd9a3b98c665e67ba854fc1b"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-06/schema-check.txt",
+      "sha256": "17329cd5d46848b27afbff5efb55e170fe2964055be820a145d0b9a610f97bf4"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-06/sources.json",
+      "sha256": "69d97dd60fbca8f89ba9bb3f87a837b42d35da5826b050debfbc857f9df8317f"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-06/sources.md",
+      "sha256": "8f065eeb8f9464ce9476227f8d08404538b20832415c3a8873b7017e9c8c747f"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-06/validation.json",
+      "sha256": "902e0d0f4ba9d31cb9c1b164e97f8b823afdd0862fe6fdbf74c843b87ee7b732"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-07/existing-tests.txt",
+      "sha256": "96b10b0c5fcba55309b71ecf60551691767f2e7b956b9245ea3b85187c2ad894"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-07/final-isolated-build.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-07/final-isolated-tests.txt",
+      "sha256": "fa2c439a07b2da2275012a00110e7af31a48d3d8a3add1f5dda3268e2205d81a"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-07/foundation-tests.txt",
+      "sha256": "df17766cbbff0047f9d2565998085f1b5add816888221aaf7760b82e29d6da5a"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-07/handoff.md",
+      "sha256": "13dcf837e0e2e3ffe8f6437db586c1517627c7194c48dc6f722ca945ed27e570"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-07/initial-status.txt",
+      "sha256": "07125e04869f3f58c70174ddf8cc07b0a20c7db6cc44699d1b093e4ae6962d45"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-07/isolated-build.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-07/isolated-lane-tests.txt",
+      "sha256": "30e4078f9e8a2b5586e5efd4d964c38e91e65899f32c3446dc75ba4bda3eb0a4"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-07/lane-tests.txt",
+      "sha256": "0d373fdc40976335869f21a7acb2034a8de6b1814b58e542afc90b03f409ad34"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-07/manifest.json",
+      "sha256": "006a403b8ccf0907e52bfb8985c3308a9508b8a760786e303d74b408506d19c6"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-07/package-build.txt",
+      "sha256": "27608d404b2b96a621b62a6e4e79a05a40aaa486cc8d442203f1b06fff48e55a"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-07/schema-check.txt",
+      "sha256": "17329cd5d46848b27afbff5efb55e170fe2964055be820a145d0b9a610f97bf4"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-07/sources.json",
+      "sha256": "c929e201814219cc9dcc111db3da00c29255f2200d122f69e0e2e5ccc12e0d6e"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-07/sources.md",
+      "sha256": "8b6d28544879d7a7a4696ee1a25fb367f4f99004c37fe0f1a93e42826c40125a"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-07/validation.json",
+      "sha256": "8ab37539fa3c150b6451994024952cfe0165c3aa107ff0a986f2a7a4933daa61"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-08/baseline.json",
+      "sha256": "ec359488a41647f5c5e512daae63909aa0c6f276553563a33f3fe8fe30a0fe21"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-08/cli-tests.txt",
+      "sha256": "7a13851b42867d64c340468407129f413d4ffd93b1a49928455eba4bc64f3cbb"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-08/distribution-tests.txt",
+      "sha256": "a0b7e9c499ed8fa6a8aee72c6f7cc32f2633c349a1b81daab6ee247dcd8e0d39"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-08/existing-cli.txt",
+      "sha256": "4ab186cf86dec798275e20c6afa094448edf1519dac0ecce95b86d0045228c11"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-08/files.json",
+      "sha256": "2903149468ba366893ffcec6d4ce4cc1081329f73ce7b06943dea39097d320db"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-08/full-foundation-tests.txt",
+      "sha256": "dfbcef0c5206db738f9f2d016ea5b69b83b29924f604208688397c8691b1519f"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-08/full-schema-check.txt",
+      "sha256": "17329cd5d46848b27afbff5efb55e170fe2964055be820a145d0b9a610f97bf4"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-08/handoff.md",
+      "sha256": "35c0593e0d7f478956ce62a90b08eed9e22ee79a6ffbcb669ad956ed167bea55"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-08/lane-build.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-08/offline-smoke.txt",
+      "sha256": "504f13b92f7cf3d4cf5465689a4124cc41f31bfa32e7ab128fd6fd475600866d"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-08/skill-drift.txt",
+      "sha256": "f71ce053ab176476261de5ddc42a1bde85d2812b09921f79e16c6631eddec6d4"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-08/sources.json",
+      "sha256": "72e04abc764167f4785be865de1a44a919e1e5c5cee756bc8d7942d1e2010374"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-08/sources.md",
+      "sha256": "001291af5c79da1c2a6acde67f2b4615ace4dba3321b3e522d1b1bd01268cfba"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-08/validation.json",
+      "sha256": "095b61fae1d3dbff8ec74eca86f518383cc33a02858ecdbb26e9a4fb735d02cf"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-09/2026-09-09T03-22-14-291Z/snapshot.json",
+      "sha256": "bff0f2a52b53832b93de42d6c46c4df7f83a2ee15707e2c4e14241b421857b9b"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-09/2026-09-09T03-23-13-616Z/snapshot.json",
+      "sha256": "e536e8db70079817f6ac97a72c1b80375a3324be28651f869b0df3334db4ddba"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-09/2026-09-09T03-24-01-470Z/snapshot.json",
+      "sha256": "b3234316b758c10bc60b8e961f1db58196c9311976467c8b236fb5f287564929"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-09/2026-09-09T03-26-09-451Z/snapshot.json",
+      "sha256": "65a5c4a74b6d366f5c89e9163df83261a10f8a95df5f84c8bb775e441a2e30a5"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-09/2026-09-09T03-26-52-481Z/snapshot.json",
+      "sha256": "139aed1be7c88cbdf3c66fc8baea048c0d0783aea4e9043e59b15124c6d0b894"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-09/2026-09-09T03-26-52-481Z/wt09.log.gz",
+      "sha256": "1f21f8e8eb7b7f0801874a49938d1234a0db37bf8d4b5cd861ac820c01f0cdc8"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-09/2026-09-09T03-28-15-023Z/snapshot.json",
+      "sha256": "0eb708888df1461a23f1fbb6e39e7cecfcd8fd8de85c2c257469195c646944bc"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-09/2026-09-09T03-33-25-072Z/snapshot.json",
+      "sha256": "5c7fd08fae9e974c4f37ede9ea8366d5faf3caf6b9b1f3e80fdde03eedb455df"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-09/final-validation.json",
+      "sha256": "584ee636fcf2882c9a3a80c887f7acdbaf69b967ca0f6b5c4a7eecf55fe0c880"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-09/latest-run.json",
+      "sha256": "0c0b3a3b20c61125f0f0233ae7e774564c06a0f78102fe148bb46fb2021f449c"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-09/sources.json",
+      "sha256": "d6bb3589fd70304eecede4d434c1765145290b43e12c573818d37165ab2969bc"
+    },
+    {
+      "path": "docs/photon-features/evidence/wt-09/sources.md",
+      "sha256": "617316e396c57daca4b0ab5b14c8966cc0566096cc9b3a68f0530e36c280ce85"
+    },
+    {
+      "path": "docs/photon-features/foundation.json",
+      "sha256": "3f26e5326c08a15220e20b26e390703fd9cec5e66faa55d6b0ab4e4433feb03c"
+    },
+    {
+      "path": "docs/photon-features/operation-map.md",
+      "sha256": "bd0b6f271be0e03f982882677185f0b34ab0bcb0599c2d5d8ec42d8503302029"
+    },
+    {
+      "path": "docs/photon-features/ownership.json",
+      "sha256": "f8bf4f903f4982f6829ad1b30de5a7e7252560e739ecd38b4026b9c82d0edaf9"
+    },
+    {
+      "path": "docs/photon-features/reports/wt-09/defects.json",
+      "sha256": "aa4d878c2337e76ed6e65b85cf17385a9efe3fb14f4d7443138f64d9cfad86ee"
+    },
+    {
+      "path": "docs/photon-features/reports/wt-09/handoff.md",
+      "sha256": "fc4f444e3df603103b1749ddba9bb6f7a9e48f2b62adf57c46a21ed8f0d03134"
+    },
+    {
+      "path": "docs/photon-features/reports/wt-09/operation-coverage.json",
+      "sha256": "a1baaedec7209e3fa09e0abf9cde1da1bd0a314071b8fe9f35645a4e388a85d8"
+    },
+    {
+      "path": "docs/photon-features/reports/wt-09/operation-coverage.md",
+      "sha256": "55ba75da3259d0a0e5850135d5f6265a2b14e632180146402f91573b45b55cd5"
+    },
+    {
+      "path": "docs/photon-features/reports/wt-09/requirements.md",
+      "sha256": "ac4d029b5099f5c7e95a7c4ffb127be4cb8d6adacadec8f9a6f03a756d2b50d4"
+    },
+    {
+      "path": "docs/photon-features/reports/wt-09/summary.json",
+      "sha256": "768ee8367509257404ac89425213233792b6f1a5d43f513142fac606814c188a"
+    },
+    {
+      "path": "docs/photon-features/requests/wt-00/f0-decisions.md",
+      "sha256": "91c10156e5104731fd7ca1d831b9b2f0af9a33d460e88e62eb5150c0d085fb00"
+    },
+    {
+      "path": "docs/photon-features/requests/wt-01/001-execution-and-host-seams.md",
+      "sha256": "0a6963497777ae8e3252ba72c9978e42662fc0484327a07622420b7331e70954"
+    },
+    {
+      "path": "docs/photon-features/requests/wt-02/integration.md",
+      "sha256": "7ebddffec348c72aff7fcd4e5d94032746b0e2eeedec618755dc6d5164d7cb2c"
+    },
+    {
+      "path": "docs/photon-features/requests/wt-03/integration.md",
+      "sha256": "e54af54203b300519e7e41c817ff9e1713aeaa519b6aac18e0fbcb1c2e25d01c"
+    },
+    {
+      "path": "docs/photon-features/requests/wt-04/integration.md",
+      "sha256": "b94caf765943142c08a8593e0d67c4a2fcf1252f33c4bc1c9a604570e8549ee9"
+    },
+    {
+      "path": "docs/photon-features/requests/wt-05/advanced-polls.md",
+      "sha256": "555d17b987e670de8c9b122ec402746014a9888a3b624670b1303a7d8cfada64"
+    },
+    {
+      "path": "docs/photon-features/requests/wt-06/host-integration.md",
+      "sha256": "a1587e0e97b8c33beaf5cc0985cec4c47a09b528ecbc6856f8253a4a0973403c"
+    },
+    {
+      "path": "docs/photon-features/requests/wt-07/integration.md",
+      "sha256": "206a09f8a11760d97bdaea9565fd2b11b384b172316c48ec4d18cd13729a9d80"
+    },
+    {
+      "path": "docs/photon-features/requests/wt-08/integration.md",
+      "sha256": "c20ec1f72fc7fd7df4eb402d321f4f1635a5a27a9ec57f0c0de7638f542c28da"
+    },
+    {
+      "path": "docs/photon-features/requests/wt-09/wt00-candidate-and-test-registration.md",
+      "sha256": "77fe4267a78959fd6e37cdfd2ff1ebef5f81f22a038978b74846021e5f7fc959"
+    },
+    {
+      "path": "docs/photon-features/requests/wt-09/wt09-001.md",
+      "sha256": "fdea1f9f9be7258bc8f9d80d40293bff9d3523c6b82ad1e68d5035c195e9404a"
+    },
+    {
+      "path": "docs/photon-features/requests/wt-09/wt09-002.md",
+      "sha256": "2d3d2293accb5def0269991d76f25cf9b68473fd9a99519a03dcb985b1db9541"
+    },
+    {
+      "path": "docs/photon-features/requests/wt-09/wt09-003.md",
+      "sha256": "c9038f8bad7ecd96cd971ed228d0d9a5bac4f0ce6ba931bf824dc79231928d4a"
+    },
+    {
+      "path": "docs/photon-features/rollout.md",
+      "sha256": "47fe3867dbe409d0903d8167d3d9698fcdc92e3035ca0ea917954c84f7796d09"
+    },
+    {
+      "path": "docs/photon-features/runtime-contract.md",
+      "sha256": "e644e36e8d522c70799bd5bb7bfe67522aca58557a336cb68491831686b0be85"
+    },
+    {
+      "path": "docs/photon-features/sources/0d3d03e9c4311928.txt",
+      "sha256": "0a2f328fe6da4d202497e8bb859625de06af23cce884d1639dd1e8f3cb737de8"
+    },
+    {
+      "path": "docs/photon-features/sources/0efab1eff5a62cbb.txt",
+      "sha256": "5677f6f500a06b8286f0fa43dedc24aebb1ec2c61f67c8ba13491f590632399f"
+    },
+    {
+      "path": "docs/photon-features/sources/301e54f25d427958.txt",
+      "sha256": "04616a36a7dcd45def78fbeded3d2c5f508dae3353f496b6d79d608eba15f796"
+    },
+    {
+      "path": "docs/photon-features/sources/3c5aa1ecf9e69006.txt",
+      "sha256": "566a8ddbd1cf0dccdbcd3695c6e28c3cc4b100d97e606c0ee923ade339f24c47"
+    },
+    {
+      "path": "docs/photon-features/sources/4a6527efce8d619c.txt",
+      "sha256": "218af7703b8d12537ca8c6077c1b8b5d9865ccc2202fc7eaef2d883651a59dbb"
+    },
+    {
+      "path": "docs/photon-features/sources/4d520abbb1564086.txt",
+      "sha256": "6f8ead1678e917693423a932ad0b00c8c12b88665151f0f936630b0c3c8f3ce4"
+    },
+    {
+      "path": "docs/photon-features/sources/4f83e3008e7ebb73.txt",
+      "sha256": "b5eb80fad3e2c756cd1b7438fc3e695edffe7816eafb21ce99bbd0b539f27f3e"
+    },
+    {
+      "path": "docs/photon-features/sources/4f8d436cefb3b88e.txt",
+      "sha256": "9df570ca7d3e08256f47e03673d47ec3e96e05f250b738badda5980c0c0eb8e1"
+    },
+    {
+      "path": "docs/photon-features/sources/570445ae670a7bc0.txt",
+      "sha256": "7451fec93c937bf92238e916f6e811ce4e41ddd5459a2211950b0efdda471fe5"
+    },
+    {
+      "path": "docs/photon-features/sources/6a1c63a5fbf0bb9a.txt",
+      "sha256": "fb98345203b4a62462643df68280b64b78eaa58420505bb3e23e1e1776dba671"
+    },
+    {
+      "path": "docs/photon-features/sources/6d609c45d12a50d3.txt",
+      "sha256": "467ef6c27f50ff72555a335fd674402199a396237433d0cb4543c7836a4652f7"
+    },
+    {
+      "path": "docs/photon-features/sources/795a1cf6bd225ed5.txt",
+      "sha256": "f69d3567ce5bb75b6db2348c1906ff0e8629941be75c49f64416311693fbe044"
+    },
+    {
+      "path": "docs/photon-features/sources/812592b12ec09e37.txt",
+      "sha256": "4f3d5ad114aea76fad698c4985c8db1df04eebd66babf7c0bbfec37cac08fffb"
+    },
+    {
+      "path": "docs/photon-features/sources/8fdf47cb3771dbea.txt",
+      "sha256": "b3db924a0af366a16924334549acb509266e973b5485890f4490f5ab4bb6f41a"
+    },
+    {
+      "path": "docs/photon-features/sources/a277bf12ed7f7f52.txt",
+      "sha256": "bf4786f4ecab20832500b0585ceb406281eaf04299f1c6af987cbc980a7d137b"
+    },
+    {
+      "path": "docs/photon-features/sources/a5d95cb791f762ed.txt",
+      "sha256": "bcad66030707ffe00b5397e5a468c711d3db5c7de7d5c31cab85270ca98a0891"
+    },
+    {
+      "path": "docs/photon-features/sources/a66f06c0a3a40208.txt",
+      "sha256": "f00445888cb5944ff77f259b3e781009977d57367d753d586029705e406980c5"
+    },
+    {
+      "path": "docs/photon-features/sources/b17557afa43dc829.txt",
+      "sha256": "c67608ba7501fa7de8d8490f84e78afcaa88b4e5b44f86c0024cf0d8d2a21114"
+    },
+    {
+      "path": "docs/photon-features/sources/c67caa9377eea087.txt",
+      "sha256": "673b2fd18f7a6ec0f769ac9fff2cda4b03190e78cea064c782bfb1c448f2698b"
+    },
+    {
+      "path": "docs/photon-features/sources/c9f446dde978aa04.txt",
+      "sha256": "0e9cff75bdffdb8e625583fdd88ccd7317d027fa3f9a74cbe3cebfa256c0c033"
+    },
+    {
+      "path": "docs/photon-features/sources/d00523caefbd4d1c.txt",
+      "sha256": "dc003541cb706fe0cc0d175aefa9343e0f16545f8f7c86ce579bba5256da0137"
+    },
+    {
+      "path": "docs/photon-features/sources/e22b5eda8bfeeba7.txt",
+      "sha256": "0da88e0f2336f1f0757dc7359dd702ce9fc2d3e586e523871244251f97c7d39b"
+    },
+    {
+      "path": "docs/photon-features/sources/eaf6ade3d6b64d67.txt",
+      "sha256": "65944f4b202e0142388403aff39b3135b3dca7ab87035cdc36af22713716a9f0"
+    },
+    {
+      "path": "docs/photon-features/sources/ec03c9d13405be87.txt",
+      "sha256": "818b2e1c00d9edb84a63d4a229e55c3b1d9568e12c2e41d3e450207f8be1a460"
+    },
+    {
+      "path": "docs/photon-features/sources/ec7b3410fa4f3bc3.txt",
+      "sha256": "ff7fc65dfecc07fc3e760115262c14b3439b36e2f9fe2a3f109cee9e619bd42d"
+    },
+    {
+      "path": "docs/photon-features/sources/f2dfc2e2a0f48cb3.txt",
+      "sha256": "0e9cff75bdffdb8e625583fdd88ccd7317d027fa3f9a74cbe3cebfa256c0c033"
+    },
+    {
+      "path": "docs/photon-features/sources/fed4c469c38f5d5c.txt",
+      "sha256": "8fd4fd2d31b7e67793115eca2e44a05d44689ccfeb2d266698f5da9d8b98ac71"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "c97a899a134a87fefce0cbada1e4cdb6230e0ca4600335f41430e950108abeda"
+    },
+    {
+      "path": "package.json",
+      "sha256": "494b32180a6f78b825bb0eed697049fbc23be60cf31e61ee619671c8278dec31"
+    },
+    {
+      "path": "packages/photon-features/INSTALL.md",
+      "sha256": "8b83475f786aca44bd63048b94b04b7567431fe8e275f3139d0bbc4e06afde54"
+    },
+    {
+      "path": "packages/photon-features/README.md",
+      "sha256": "2b06202536bedf042c7235bbb32d433aaed334e686ba28061a1738321e7ea882"
+    },
+    {
+      "path": "packages/photon-features/SKILL.md",
+      "sha256": "e6b4158ee8b3d9cccd8f5adc4098ef50503122c189660835eac1825abecaf04e"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-00/consume-foundation.ts",
+      "sha256": "62cbf4e55c5fdf947db6dfaf9f4fced4d65767f877358ea7cec3ee552de66e32"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-01/compose-engine.ts",
+      "sha256": "d2ee35f1e63dfb3e1aa786fac05941c7c3c308ece757dd1fe2890bfdc20e7fe1"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-02/compose.ts",
+      "sha256": "d02eb0ba88df43093491a416235a7f470f49a7fe63808fd6033aedabe0ce965a"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-03/register.ts",
+      "sha256": "e201b1b452189dfca3336493e990f54e476918840a0c5ad7fa07d3797f75086a"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-04/host-composition.ts",
+      "sha256": "0c2b32e344f6266e1a968c8d9569425430bc1944dc202d5777e3a35134ec7c24"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-05/consume-polls.ts",
+      "sha256": "82e926fc45263bf02428889c217cd4ecd405a07803560a9cda9648042dc9bad4"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-06/host-seam.ts",
+      "sha256": "31f97a6db208b9b1453de136854f2b685b560783b2b9ec422a5e05133a2a754d"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-07/consume-native.ts",
+      "sha256": "4c9bd82542d499b3c0247ca927db120af1677e023ebb246470dfaa59daf83f45"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/account.shareContact.json",
+      "sha256": "10745d68b84f8599d08dfea760398ad863faa832e29aabef5e1d36902e2f338d"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/app.send.json",
+      "sha256": "59ea958b692d0ff89bded8ece2bec10d927a6fb0f7490d0e1f2cba944c147a38"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/app.sendCustomized.json",
+      "sha256": "5ae462d8c623bea20c704fa593170a318ef60f35dc1cfeb82495c59480db3ffc"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/app.update.json",
+      "sha256": "bc4a810c55d84c37f8f52029a75ab7c10e7c5158b858a5b4e182a14d59acfba9"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/attachment.fetch.json",
+      "sha256": "0e306a31d71ddc5ed34996e2d2ff5935cdb99c7e77a6ce3625f9c9a5b5eae30c"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/attachment.send.json",
+      "sha256": "731ccb820bd1f6080b29d6199a9d00c955e3b85a0f3144127b597e3807a50b9d"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/contact.send.json",
+      "sha256": "b4a9dafa47e3bbe3da794fbfd812545736b0833ab756312574ed52c4261b7295"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/content.compose.json",
+      "sha256": "874f150c6a60d3eee444cec4520c95d6510d48b0f9f1338e0b87f90697d5f8c1"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/content.group.json",
+      "sha256": "973fa790b24b4f604b192fab9b6d423c6d2d7bd63a75dcb76302bf05e8a4770b"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/custom.send.json",
+      "sha256": "80b418d0564cf47390ba0ea93e32ac49bc80cf7d4f5314c403b4902ade451cc0"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/effect.send.json",
+      "sha256": "9aa82e68b1813f81faf5bd480c36126a4f06acf05a485842b300e0be5f8e2a5a"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/link.send.json",
+      "sha256": "59a55b8af601df7a0f49818f17be96d32193bd8e2495ada7d93d4db6336e8c1a"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/markdown.send.json",
+      "sha256": "6340bd03dec8afddb350ed71d55b9b9e9ca4bf1eddceb768ece79d783e477909"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/message.edit.json",
+      "sha256": "ceb042a6532f38422d877fd8421f01318a60bb3d2ebb899bb0df4cc58ff3d290"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/message.get.json",
+      "sha256": "1e646c4d9d7daaaaf1578afeb13d61e954603a7228583a51bd09a0068399f7c2"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/message.markRead.json",
+      "sha256": "94b0e161bc5cdc4ccb2fd4800fc543faa034e5e007fc063bfd770565b8511d15"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/message.react.json",
+      "sha256": "c2fa1342879157783460ca3a865a11fca1d4a4848036ad5ef2d7be01739cafbb"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/message.reply.json",
+      "sha256": "577b546a32a8aa395bb6653861b849f961539dfd1dcfeda57bc5d17e8151b5b6"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/message.unsend.json",
+      "sha256": "3c61ba5022dacf9a024b8a819cf14c332943bd4c298f8e6bd3ca36d18f36df81"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/metadata.get.json",
+      "sha256": "6007bb6d85586a4ca362111a30b546c0970b4defd15bb72fddee20be5e103294"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/poll.addOption.json",
+      "sha256": "b624fa984d03337e1bd118c11af56814f6ed8f4d3ca6a0439a3e9b3de75f165e"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/poll.create.json",
+      "sha256": "944ae8a7193aa0476b797d111db485b8f7cdaa1b8eba590097cdd96f1dd81910"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/poll.get.json",
+      "sha256": "28850d7f13fe0cf6e9c39bf2093f859f5c56375cc558ea2cb459f3e946f2961c"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/poll.unvote.json",
+      "sha256": "d6878c1ae4651a9a47a8c307556ffc7e250f314828a7e55f89e02032b442d32c"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/poll.vote.json",
+      "sha256": "e04e80306830f79e30127558641eabfd79d5ab208b300a51e98a29eefd75e990"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/reaction.remove.json",
+      "sha256": "7611c19a9a03a4363aae15333c149eb8904925b8854c63dd5dd1353c48042aa6"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/space.addMembers.json",
+      "sha256": "cb7c2969105a27ba839b1e4f4c955b3122f7062de311e1e3268c9cd93f1a8573"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/space.clearAvatar.json",
+      "sha256": "9ddec9e0e5487b1c01a632ce9d7238504dee88c6c244080fb879270da139b2f7"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/space.clearBackground.json",
+      "sha256": "83046ed3c693ed7013ca64a3321d29490f0330469a1eee69ff70cbbaa07b01de"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/space.create.json",
+      "sha256": "e01fc49f854ee00b290400a03b07b159a14ed364c8d1f00030b60185177eb3dc"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/space.get.json",
+      "sha256": "4efc76c1a8a4cfc859a506ec7883b6c015fb708956634ba064818092ef75a3b1"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/space.getAvatar.json",
+      "sha256": "4671f45eab52c8a63ba519eedc44904da46844f4ba8a8244e47ff474a2f70889"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/space.getMembers.json",
+      "sha256": "9e19e84d161e0bc0a5e3eeb5de98972d18948a883f1122e1c6ee2747699d6cd1"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/space.getName.json",
+      "sha256": "f099830fe53d339b077cf90f587c0ec5b88b776bba6ee41bc2b4e79832f901c6"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/space.leave.json",
+      "sha256": "dd543d93e7ea00dc297151d98bc44f5a888259827ea8272e0045ab6ffd746ac4"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/space.removeMembers.json",
+      "sha256": "f91cc7f62e95ef188e8c8d8b870f9bfa619720554953723503ad448ed19bbe0f"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/space.rename.json",
+      "sha256": "8fe5d9b0f7c9aa8fddd16ac761ae339a1aefc6f02d05be9f85fcd91c5b5e5f93"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/space.setAvatar.json",
+      "sha256": "75b4986202d2937c3e1ae6234eb6fb8de00de31e0eb63c9495a751285f2b5c9c"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/space.setBackground.json",
+      "sha256": "35e7e82847db946705362f1972a059a589719acc0b3bdc4e296713f473e25bbf"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/text.send.json",
+      "sha256": "267a10dfe1ad108fa58cfaa03e208d4472f2204859fe67ea1e8d46e754e08d9c"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/text.stream.json",
+      "sha256": "10e1fb0678155afe6ffe88824b5c701ff71d2e905a6657cd8d49a7a0d5d67569"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/typing.begin.json",
+      "sha256": "40326628e22220206a40011ff5b0196fd0642914c50c3c3806b2105bd40c6c12"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/typing.end.json",
+      "sha256": "9dbaefc6af7cbaca0d90aedbd749f5494298c4b5d43abbeb0bb384d7ffc0b3e6"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-08/voice.send.json",
+      "sha256": "00942d021942cde79582146c474d22fe7bba34a06944c0bf707627346346dc6b"
+    },
+    {
+      "path": "packages/photon-features/examples/wt-09/README.md",
+      "sha256": "a192718c9a1735fdd37f517c1c263b15661a34d0fffb714c3fa9949a4e79bbe1"
+    },
+    {
+      "path": "packages/photon-features/package.json",
+      "sha256": "05ba44212dc811d8d12a5f3bbf87cc959d7cfab38996ec9122b1d27ebfac412a"
+    },
+    {
+      "path": "packages/photon-features/schemas/account.shareContact.json",
+      "sha256": "e79f27d9a0a8aae76b71fa966a2c3a258b58550d8d22ca685d77dc71f1069a8c"
+    },
+    {
+      "path": "packages/photon-features/schemas/app.send.json",
+      "sha256": "f6fc50b44c2eda816e033148710a66d5c19c489e238ab2e0898501fc0a76c1e3"
+    },
+    {
+      "path": "packages/photon-features/schemas/app.sendCustomized.json",
+      "sha256": "013b0c1414abfd7e49353004aa0381893dfb92bd21b447da07e9ac8e2493144d"
+    },
+    {
+      "path": "packages/photon-features/schemas/app.update.json",
+      "sha256": "8dd6031582e5afff4d1506a2af141a4b026580d4082f425934a05d4cbb04abe2"
+    },
+    {
+      "path": "packages/photon-features/schemas/attachment.fetch.json",
+      "sha256": "524d30132ab96ae79f9737963a0ce7b44d88035aaf50b031adb7319c4f5acf79"
+    },
+    {
+      "path": "packages/photon-features/schemas/attachment.send.json",
+      "sha256": "64f7d16454b48e92fc39dca0d5328c0fe8e2e6188c87e7cfaf1bd6094539705f"
+    },
+    {
+      "path": "packages/photon-features/schemas/capability.json",
+      "sha256": "50e8fbfb27c34c46fd9c85053fbdd74c316a7bc920c0370faef87e00fc6d5834"
+    },
+    {
+      "path": "packages/photon-features/schemas/contact.send.json",
+      "sha256": "31a53986db442e969588c858372abafa2f3e761d4d63116c188ab48971927dad"
+    },
+    {
+      "path": "packages/photon-features/schemas/content.compose.json",
+      "sha256": "04e1ed3e1cf358b1815041390ffff04d273776a2433d068b30cc17be0c734592"
+    },
+    {
+      "path": "packages/photon-features/schemas/content.group.json",
+      "sha256": "b05dad20732db30c0be8f2fc64e9616e0a0a88847b53249cf18c8a7afec9238e"
+    },
+    {
+      "path": "packages/photon-features/schemas/content.json",
+      "sha256": "66229019613e9cef703942f4879d04031206ff62afff5f7f7b6d6338d7df5f56"
+    },
+    {
+      "path": "packages/photon-features/schemas/context.json",
+      "sha256": "d95ec511677174d0c5638a65fd29de749393c4ead955c8fffc12d2e36695b260"
+    },
+    {
+      "path": "packages/photon-features/schemas/custom.send.json",
+      "sha256": "9774e41cb1220dbe1c1c38aca46229c7ead466c9be54c6af55e86109533f9919"
+    },
+    {
+      "path": "packages/photon-features/schemas/effect.send.json",
+      "sha256": "205dfcab2a0fe07fd069e406c9c9d6760b61a971f785833117039e4e0830e210"
+    },
+    {
+      "path": "packages/photon-features/schemas/event.json",
+      "sha256": "275870b699c12a59842d315329e7ad76c3df0cbcc16ee2e3fc36449d31f62aff"
+    },
+    {
+      "path": "packages/photon-features/schemas/link.send.json",
+      "sha256": "1ad218345cb60274dd66432d4d1f8d0d5dafe27e7f564215d607cd86ea0657ba"
+    },
+    {
+      "path": "packages/photon-features/schemas/markdown.send.json",
+      "sha256": "f768e62107de269a214d37f841dbc0455ea0191176f65df5c782ff2bce105172"
+    },
+    {
+      "path": "packages/photon-features/schemas/message.edit.json",
+      "sha256": "b18b27dd4723dd874b390ce9bf11e7eb526ebef154b0064477b97cf16ebc5076"
+    },
+    {
+      "path": "packages/photon-features/schemas/message.get.json",
+      "sha256": "ff79eac35a9c919cb5fbfca8e0c26d7399d505c569b7775be1e799e0fa06f366"
+    },
+    {
+      "path": "packages/photon-features/schemas/message.markRead.json",
+      "sha256": "ed39bcf0bb964c4a7ee574d7d7bd6005dbb00623ff419f660517a6c8d059fbd3"
+    },
+    {
+      "path": "packages/photon-features/schemas/message.react.json",
+      "sha256": "5b51b3117d702a20b3dc6333de64892b3e510f970adf33c62a3ba3f24202213d"
+    },
+    {
+      "path": "packages/photon-features/schemas/message.reply.json",
+      "sha256": "53db0f00f99412cc7c6d39189017dcb879ed5fb00a0efdce8d0438e079ba3d5d"
+    },
+    {
+      "path": "packages/photon-features/schemas/message.unsend.json",
+      "sha256": "3db7bc2648a10da5fe4ae7d807015e5623c4aa67a62cd71d0ddd6cf35f78d211"
+    },
+    {
+      "path": "packages/photon-features/schemas/metadata.get.json",
+      "sha256": "bf0a2ae2dabef515d9416bec1a846437d45cfd8e6343b82054d0f563af176b96"
+    },
+    {
+      "path": "packages/photon-features/schemas/poll.addOption.json",
+      "sha256": "6faf9149c59d0179796d9f9be8d5a11af5a99a2823b544e3900561af4c728169"
+    },
+    {
+      "path": "packages/photon-features/schemas/poll.create.json",
+      "sha256": "05846f80222989353b40d28c1d4f0b0c3fe1b350e9ac076221f602c29a6b6035"
+    },
+    {
+      "path": "packages/photon-features/schemas/poll.get.json",
+      "sha256": "8a85568e3a4ed02d672b3d7b025f46a793f8ff6939e729ac0214cfc497c3d727"
+    },
+    {
+      "path": "packages/photon-features/schemas/poll.unvote.json",
+      "sha256": "3b0f91bd799bc32b502f8b98e0133dfced0c90fdbc5db709c5625ccd9b413cc3"
+    },
+    {
+      "path": "packages/photon-features/schemas/poll.vote.json",
+      "sha256": "db494b6425c1c357e21eab69a8a035aacd9d75dbb8ff35e9aa8d5aa238a1f909"
+    },
+    {
+      "path": "packages/photon-features/schemas/protocol.json",
+      "sha256": "832c40974ed885a60580f6ac6dfd787e476b1415ea3d062728b9ff9006530f85"
+    },
+    {
+      "path": "packages/photon-features/schemas/reaction.remove.json",
+      "sha256": "ea7c7cc6d576611227d056da68e480b96f024f25f44fa4a27d3accbf3a5b3390"
+    },
+    {
+      "path": "packages/photon-features/schemas/resource.json",
+      "sha256": "fbe5065bbf9a66c9b9445ca1d359f288d2f3fdf3703ab5cb941d2cab78c7bbe7"
+    },
+    {
+      "path": "packages/photon-features/schemas/result.json",
+      "sha256": "e47a983d6f310180727b9d433e035cd4f8ba12930bf592f4ee5f2c5faf4a47bc"
+    },
+    {
+      "path": "packages/photon-features/schemas/space.addMembers.json",
+      "sha256": "3c992972cd9e6b73c9306ba97fef6ff98a464e3a0291eaf743b5491d6e4be460"
+    },
+    {
+      "path": "packages/photon-features/schemas/space.clearAvatar.json",
+      "sha256": "0b537432dfc68bcb4b67da0b052a709aec89fa622f8611ac93592773539696c8"
+    },
+    {
+      "path": "packages/photon-features/schemas/space.clearBackground.json",
+      "sha256": "6063b1fd36864695ea197c9a8ecd46e6935b4dedea87b844148d96df1c8a59a3"
+    },
+    {
+      "path": "packages/photon-features/schemas/space.create.json",
+      "sha256": "c9539f57f9c85fe9703ff88ea891734f19b56b9cd6747c32bdccab6134a6a57d"
+    },
+    {
+      "path": "packages/photon-features/schemas/space.get.json",
+      "sha256": "b842efc3d4a95b8c1059edc7bd002b72fdc15e97f309683e25f6f4ad17de7bb8"
+    },
+    {
+      "path": "packages/photon-features/schemas/space.getAvatar.json",
+      "sha256": "cab4beed17d77b05dc60b2e8532b5b184304ae667ea52aa706ee95dd19f6aed7"
+    },
+    {
+      "path": "packages/photon-features/schemas/space.getMembers.json",
+      "sha256": "3e8abfdccf53b0c47fbe2556c8e9bb39608e234a6b59b0a64f4f3cbf0e498b97"
+    },
+    {
+      "path": "packages/photon-features/schemas/space.getName.json",
+      "sha256": "16370cd111c08717089815bbc05af3529b29d7809401dda7cd7d61cafa8c9198"
+    },
+    {
+      "path": "packages/photon-features/schemas/space.leave.json",
+      "sha256": "9418af1558f8fa54f7f4a0eeb781218237fbb9bcb7940ae4023d7b7884251c95"
+    },
+    {
+      "path": "packages/photon-features/schemas/space.removeMembers.json",
+      "sha256": "7ac57276156f10f3e31d30621d27fa9c3b1f8ddb9e682793b3a7d0f8dd7145c9"
+    },
+    {
+      "path": "packages/photon-features/schemas/space.rename.json",
+      "sha256": "246370e4ee685d9e1e10f707ba03c90483af5f693532f54ee2d443674445c2f8"
+    },
+    {
+      "path": "packages/photon-features/schemas/space.setAvatar.json",
+      "sha256": "70618244798413d3465b9841c0f5a0d74020ffa4d88d7d20b31b60a47347d984"
+    },
+    {
+      "path": "packages/photon-features/schemas/space.setBackground.json",
+      "sha256": "3ba62d4735071467d521b7b667e0a4ed1148e15357200b19c6d2e3726938fc9a"
+    },
+    {
+      "path": "packages/photon-features/schemas/text.send.json",
+      "sha256": "3cf8a080b0a1f01c40d40ebffb4aeb6697780fbad1704c14d0eef345ad33d646"
+    },
+    {
+      "path": "packages/photon-features/schemas/text.stream.json",
+      "sha256": "eb4e0ae99f352c5be5acbf3081dcd1765076c3d1a9980ee8bc88cea4b2ac1b68"
+    },
+    {
+      "path": "packages/photon-features/schemas/typing.begin.json",
+      "sha256": "2eac56750971175336e2a8520c30ea9b062f37c0f12dcc2ff8be7b8d4196ace7"
+    },
+    {
+      "path": "packages/photon-features/schemas/typing.end.json",
+      "sha256": "2b50ec0b1ae6f81389312c0189df294aedb6e8bf76ee4a1fd86e812a9267c974"
+    },
+    {
+      "path": "packages/photon-features/schemas/voice.send.json",
+      "sha256": "deff7c9344422cc42df40ed8bea8b4e0e24ec3d7eaf9e31fdf895d5d735e54ff"
+    },
+    {
+      "path": "packages/photon-features/scripts/generate-contracts.mjs",
+      "sha256": "25c2613d7eaf66a6974b25a6ecc348d739bb71c5e499a21f1d1bf47bdeefe14d"
+    },
+    {
+      "path": "packages/photon-features/scripts/generate-skill.mjs",
+      "sha256": "755d9cc436cfe7b0709c45f43f3892d1a138aa6f3022cb5c0870b48b1a64b2f9"
+    },
+    {
+      "path": "packages/photon-features/scripts/install.mjs",
+      "sha256": "0e9bd65d571b1d43b9065e39adac3ec16e544185f3df982424d20432bb03078a"
+    },
+    {
+      "path": "packages/photon-features/scripts/package.mjs",
+      "sha256": "38c42f790486d0520bbe6a719eca2459e700068d68ce2331f885c6531ff094b9"
+    },
+    {
+      "path": "packages/photon-features/scripts/smoke-test.mjs",
+      "sha256": "12e88978f8be1721978a34c008d84646d94fc30d5f83fefda4a6fe6a080e060e"
+    },
+    {
+      "path": "packages/photon-features/src/adapters/legacy/index.ts",
+      "sha256": "a60d9a8fdcea2cef05f86ff5b32ba42feb1e8205f44d82430186c965896bf29c"
+    },
+    {
+      "path": "packages/photon-features/src/adapters/state/sqlite.ts",
+      "sha256": "58d9b9d4944af387098233737ef90b821a58d943dbd23830313e8e422e84a3ad"
+    },
+    {
+      "path": "packages/photon-features/src/adapters/state/unit-of-work.ts",
+      "sha256": "7057700214dff5d9d36921284f6714e56b81b57eccb2a7c30882b97fa59c39e8"
+    },
+    {
+      "path": "packages/photon-features/src/adapters/transport/capture.ts",
+      "sha256": "ede0abe83726f30c57b7a723ba94861bfa320509023d4defd7aad939834ab34a"
+    },
+    {
+      "path": "packages/photon-features/src/adapters/transport/event-source.ts",
+      "sha256": "a22a4deb0bd534907ebe220517a762218c8382237589e218bfd168c4436b88d2"
+    },
+    {
+      "path": "packages/photon-features/src/adapters/transport/provider-context.ts",
+      "sha256": "aaa2244757697b95247142adb75016961c46362e30349ccadf6958638af74e55"
+    },
+    {
+      "path": "packages/photon-features/src/adapters/transport/snapshot.ts",
+      "sha256": "63dc8993f4095ff6c5a061d052f2ef751056c4f6a156af6f252f85c38a4ab60e"
+    },
+    {
+      "path": "packages/photon-features/src/adapters/transport/spectrum-owner.ts",
+      "sha256": "015650808de5548b745729c47c1a2a1e95b8cd1731d4b0f85a7b79579618b9b8"
+    },
+    {
+      "path": "packages/photon-features/src/adapters/transport/webhook-ingress.ts",
+      "sha256": "b93142aa14836b1c70b9b7788ac45190bf407c77a779bf7ab16c5295a272912c"
+    },
+    {
+      "path": "packages/photon-features/src/capabilities.ts",
+      "sha256": "7c4cca7067f9d560102c817d5707edb7b8cc9f1eba77388a3b4c4b764be0d989"
+    },
+    {
+      "path": "packages/photon-features/src/cli/commands.ts",
+      "sha256": "a3577039a52559ff282b0884da755cff9733a2f00cea57a18fdd6029d9d29ea0"
+    },
+    {
+      "path": "packages/photon-features/src/cli/local-client.ts",
+      "sha256": "0c90ad33702aa19df54c38bc81e2eb6589f6d21a4cd0724c9af7503e9bbd9c1f"
+    },
+    {
+      "path": "packages/photon-features/src/cli/main.ts",
+      "sha256": "772c6e493b225d11baedf5ed0f2e6cefe672d01e69b85a32b44b2cb5efa2e37b"
+    },
+    {
+      "path": "packages/photon-features/src/cli/output.ts",
+      "sha256": "2c7c18e59022e68651a521d02ebd427dd983dcd78ba0d75a76e47ae6e86aceea"
+    },
+    {
+      "path": "packages/photon-features/src/contracts/actions.ts",
+      "sha256": "8903e95b30e31f08ab87cc55932b8767f3aa3668eb836a62b06ea2bf60449ccf"
+    },
+    {
+      "path": "packages/photon-features/src/contracts/content.ts",
+      "sha256": "8971df65a1a77321629e682b1001ca57b9963138625434f1eec0a5c48b45389f"
+    },
+    {
+      "path": "packages/photon-features/src/contracts/context.ts",
+      "sha256": "76633f2f6e9c35666caab6d45400fd2794ba0b543d2d9b6baf4f5a4aac461709"
+    },
+    {
+      "path": "packages/photon-features/src/contracts/events.ts",
+      "sha256": "a56598c257065fc7fcfe73aeaea4989126e54fe993f83cd00b415e6ff9dfb092"
+    },
+    {
+      "path": "packages/photon-features/src/contracts/execution.ts",
+      "sha256": "26241f99c2e5db61e3a2163c1c95a0c30ba5c616f3074558299bb7875f9c3091"
+    },
+    {
+      "path": "packages/photon-features/src/contracts/index.ts",
+      "sha256": "90c5fe59e60bc71d1611ccb43969337d23e123ed1a8789f3141dd7702927599e"
+    },
+    {
+      "path": "packages/photon-features/src/contracts/ports.ts",
+      "sha256": "e723c7832d1ebe51af49af1413832ca4c5ca7c9b6f9f6c2d761065aba814f6a1"
+    },
+    {
+      "path": "packages/photon-features/src/contracts/protocol.ts",
+      "sha256": "d9622ce116b346c7c259c3d7a75e2599ffab734a04578649d332673e11db229e"
+    },
+    {
+      "path": "packages/photon-features/src/contracts/resources.ts",
+      "sha256": "db7d21dffa47edc095020c98cea4eb95148fe8670e35c8ebb8e47028f0b2c179"
+    },
+    {
+      "path": "packages/photon-features/src/contracts/results.ts",
+      "sha256": "44ed00b47bbf8f00494b1e449b9929fb51cfad20d5c663f5dccf4cab9e47e839"
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/configuration.ts",
+      "sha256": "88d3f8401d03d35e29137681f1136b1a96e2ccd78396396f126d8dd48a5d87fa"
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/interaction-adapter.ts",
+      "sha256": "ea06db85407f9e7bba4d51ccbd619fe3c92f4139d7c574bb91da0f48bb0bc003"
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/module.ts",
+      "sha256": "b372d8d0a0097945f63240d633d8add18b3de5253e16db30b0810fa4b8e1d784"
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/operations.ts",
+      "sha256": "6de057a6d1781506f8a951b1e9648d4d22098a6fe9df420b0f26c312a32041d4"
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/reducer.ts",
+      "sha256": "a7bd4193364fde885bd12271532d9c09099bc8cf1f4ed5d14e9604edc29d0eed"
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/sdk.ts",
+      "sha256": "6960682ed3d4bad7befdf00b3bbf3268925d69e753f475e8d05f06a287eeb0bf"
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/session-codec.ts",
+      "sha256": "81775f33767f1923baff8066f59ff8e357a02526f174f5c6bcaa72b4b22ec725"
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/state.ts",
+      "sha256": "61fa88a49d1c08a8f7810f11c963754511ba279cad6f696fd0b46d641e7507bb"
+    },
+    {
+      "path": "packages/photon-features/src/features/cards/update-ordering.ts",
+      "sha256": "fcbf2c7677de8fe63ed7618fb582bc392e717a6041475454ec51f3a9a0880be2"
+    },
+    {
+      "path": "packages/photon-features/src/features/media/attachments.ts",
+      "sha256": "c2e343dfc2e6dc72af7395bd7ad5db037e909e6641d25c0f5cf62e6610f80309"
+    },
+    {
+      "path": "packages/photon-features/src/features/media/contacts.ts",
+      "sha256": "9610d670b580e0d7ce6258512a9e0aa5ff3b56a4cbb32fa83382683ce16f2741"
+    },
+    {
+      "path": "packages/photon-features/src/features/media/file-access.ts",
+      "sha256": "35cf92086ef816b871e8ff474032072fa5a66e4bb291971ffda7a6767e3f9277"
+    },
+    {
+      "path": "packages/photon-features/src/features/media/guarded-fetch.ts",
+      "sha256": "0b76f59645c61215a18e9e46b0ddeadcfb38134c0627a8f875906d6ea30f48c9"
+    },
+    {
+      "path": "packages/photon-features/src/features/media/index.ts",
+      "sha256": "1caf9438f68a9a5db381c5c2a846d55fe441bb7cea89bef7eea7b13118d4beb2"
+    },
+    {
+      "path": "packages/photon-features/src/features/media/metadata.ts",
+      "sha256": "c14d809d9a98d0513bd5ae29ee8b604409d86cf34af593bb4afefa5f502c40c0"
+    },
+    {
+      "path": "packages/photon-features/src/features/media/module.ts",
+      "sha256": "43634195237a8cafb3140dfc1fbec1ec02aa5cf41f586cc3cb343335ea6c32e6"
+    },
+    {
+      "path": "packages/photon-features/src/features/media/retention.ts",
+      "sha256": "0ab6a16ee17b9c7c55585a80deed9e0060487014be2c67a5cba3f555a620afba"
+    },
+    {
+      "path": "packages/photon-features/src/features/media/safety.ts",
+      "sha256": "63b4111d48a812381b749081ed593c82b4678ffa48d81e6e8d3d526c110de02d"
+    },
+    {
+      "path": "packages/photon-features/src/features/media/sdk.ts",
+      "sha256": "fa551da7a627f7a30470ee81524dc1374a324ac98a216db8adb4c70a914a677b"
+    },
+    {
+      "path": "packages/photon-features/src/features/media/staging.ts",
+      "sha256": "586378d85ad253ff60de5fd8b39801b022f7fcf47a2eabd2a7c4472443ecbc75"
+    },
+    {
+      "path": "packages/photon-features/src/features/media/voice.ts",
+      "sha256": "ad2589cb228e7825e790cc986952f6832ef8c11dbf18f6f7c39c8ef11559e34a"
+    },
+    {
+      "path": "packages/photon-features/src/features/native/appearance.ts",
+      "sha256": "96111a7b4c4b2ae63e49300b9f88ac7f6d6815ed0666c66ac24a12c0eaa1e8ab"
+    },
+    {
+      "path": "packages/photon-features/src/features/native/custom-handlers.ts",
+      "sha256": "fddb1d77a056c127793cd0286f66c29f62f8a25388ef6c8e4cd2b0868aaa9d16"
+    },
+    {
+      "path": "packages/photon-features/src/features/native/effects.ts",
+      "sha256": "ea19135dde82cfdad8b5ad873188864ae711561a1b39ee9ee1c74b82a14089ee"
+    },
+    {
+      "path": "packages/photon-features/src/features/native/guards.ts",
+      "sha256": "914229f30891c225adfef98fe4994b3eac137c1f6e1b4c60a70d6ebeacffc79b"
+    },
+    {
+      "path": "packages/photon-features/src/features/native/membership.ts",
+      "sha256": "54610b4e7d59397bfe431287d180218ddc5bd661bd580faf121039259a629a2b"
+    },
+    {
+      "path": "packages/photon-features/src/features/native/metadata.ts",
+      "sha256": "b5e462735e5a40f22d7229d487a1fa89d3c34324e8a0fb0020fd9ac2601a27d3"
+    },
+    {
+      "path": "packages/photon-features/src/features/native/module.ts",
+      "sha256": "ca4120d35c25c3b925dd06bb942059cb4cf343f02e19e423d5cbae0046bb32f6"
+    },
+    {
+      "path": "packages/photon-features/src/features/native/sdk.ts",
+      "sha256": "3f12d92444676a5d4b04f20a225d83ae4ebd1cba40089d81d2f32cf2f1829a76"
+    },
+    {
+      "path": "packages/photon-features/src/features/native/spaces.ts",
+      "sha256": "16916db5abde79444b4b9d71d34adafad4704aa15f0c4170c575e5978508ecd6"
+    },
+    {
+      "path": "packages/photon-features/src/features/polls/identity.ts",
+      "sha256": "ca3278386c8879ff032ed1bca8568b828a076299d27953f099f8af604c17ab4f"
+    },
+    {
+      "path": "packages/photon-features/src/features/polls/module.ts",
+      "sha256": "f8e627cabca4aa7d61bf6d99309855e27073119508cc04cf50c7af2040941a29"
+    },
+    {
+      "path": "packages/photon-features/src/features/polls/operations.ts",
+      "sha256": "e38168f10273fd2dd673c2a3a3f74ef04611c86e94087e191ae641aa97940b2d"
+    },
+    {
+      "path": "packages/photon-features/src/features/polls/reconciliation.ts",
+      "sha256": "1f037e351c8c94a9ec8b67eac59990b2ac0cdbdd21f61a3192dda07c4271e230"
+    },
+    {
+      "path": "packages/photon-features/src/features/polls/reducer.ts",
+      "sha256": "a64cee84d1a6a6456e83a1a7d13bc9feb93558634590b4607c58ea128a43dce8"
+    },
+    {
+      "path": "packages/photon-features/src/features/polls/sdk.ts",
+      "sha256": "3e24ba6e2b3f9eb1dfeebe7af6716aca595049806da37015283e8e0089b997fd"
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/actions.ts",
+      "sha256": "f0a56dbe9fb20213bf86412001b6140e0225e926cdc575e447ab16e52d06f369"
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/composition.ts",
+      "sha256": "63c927ab921bf0a91e0f0e74a449fbc2fe56b519864de3ed7a98f21abc1ef58f"
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/errors.ts",
+      "sha256": "17efabf4c4e06a3754057d56baf7d4319a2156d85e9689b9284f7213e38ef919"
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/identity.ts",
+      "sha256": "fb54113ca48edbfc05c5466dfd5c05d4621e20e9d6e1efa60eae177f250bdc45"
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/journal.ts",
+      "sha256": "2e2cfc666e368260bbaf1f31e3b531504ef2903a0d5803b22692191a0861e702"
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/module.ts",
+      "sha256": "8ca827628b5c03ba703fdb7b4a7f40975d8967ea610e1d7ad5e1b4832b737a87"
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/sdk.ts",
+      "sha256": "20805b18c3a9dd2ac55f19e34a3f6fe2d1aef937bf0f34d84cd5f9762d3171d9"
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/streaming.ts",
+      "sha256": "27a4d4dd16e1954a0e260a55fb468fdfe25b621b1b5e4591ba90364a0ac11eb4"
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/targets.ts",
+      "sha256": "d4053f866861f9288d2c648a02e4cc2bbba9beeea4c605c636401c65b59f3f13"
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/voice-policy.ts",
+      "sha256": "2510ca1fdaa701078d4d36d05a694ba8d245114bf7dff67b865577083ac10766"
+    },
+    {
+      "path": "packages/photon-features/src/host/composition.ts",
+      "sha256": "81fbb97b267889bba8d5a892945fe5e5ce421322193022858c8570cc3243c115"
+    },
+    {
+      "path": "packages/photon-features/src/host/index.ts",
+      "sha256": "8997dc712a243d90ad50ac3c14179b2ecbba582989611808e49ef4e7f2526968"
+    },
+    {
+      "path": "packages/photon-features/src/host/local-socket.ts",
+      "sha256": "b3bb8000c48938e7212dfb07fcaf2edf8d8b13af86ea690242d785f046842719"
+    },
+    {
+      "path": "packages/photon-features/src/host/protocol.ts",
+      "sha256": "d0e9588deadc9b350064de9fd1220b13d58ba661ab689fdd06f095826d8d4be0"
+    },
+    {
+      "path": "packages/photon-features/src/index.ts",
+      "sha256": "1ee17ae1cd278177a605c43e1350b2ac7cc78a5195f47539c4831db0b41725c1"
+    },
+    {
+      "path": "packages/photon-features/src/registry/index.ts",
+      "sha256": "b5bf68435a0caeb5a2c3e798d275bbabb22c677d30888c15c15bcd3a955c4663"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/core/admission.ts",
+      "sha256": "0e57f183cc0f243e87d8d82b5dbdd3dcb85dcc6936b24695f566c74e1c114e5b"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/core/authorization.ts",
+      "sha256": "aa70547468e259b845b039a4d5bca6d732930dcc58ced18f6c9b487ced514acc"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/core/cancellation.ts",
+      "sha256": "f79e69e9743ac2d73e94d6f4ca5c1dfd06411465733627247125c4d505e733bf"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/core/checkpoint-codec.ts",
+      "sha256": "9c901d9b49d1ce56ff48ac3f2ca02fe070f65d7c27fc4d7bb1606d4e0f87ea48"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/core/children.ts",
+      "sha256": "10497b4e20c2752c237be8273f1a4395766a0c3e06ecdaca31d00a4f4e542482"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/core/claims.ts",
+      "sha256": "4215d3b589fc5bc18e471b47ebbe8df778dc88a6a66ed7f062344adc3a155fdd"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/core/engine.ts",
+      "sha256": "3a17f86ca4e71e3796a8a9b2b549e682ee0e6a4716834ed86d4ff2e8bc2988d1"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/core/errors.ts",
+      "sha256": "472f13d77de890587135ab279d2b55c47752b2bb0555e1bf2d04d24379a6d1d4"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/core/execution-boundary.ts",
+      "sha256": "3b5a96f0a00c8173ce166d9c02a573896f90c70f4383ae2c9c64028eacc69ca0"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/core/executor.ts",
+      "sha256": "ac41e6f4981e18fd8cc60ed196d612c235d15f9ae4e89a0bdbbd0d329fa2c0e1"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/core/feature-services.ts",
+      "sha256": "e673c676202f4a5028ca8d40335e97f0665e88731d7b07b7d8e8f81ce96846e9"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/core/idempotency.ts",
+      "sha256": "69360b63903c1c129eb34669dbc2db2b17669442fb4ef80922edf274ead8b627"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/core/index.ts",
+      "sha256": "537e1e4266cda44ffc1cdcfb7ac9bf0a90c318b21da3d11eaa28026b7cd66da4"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/core/local-server.ts",
+      "sha256": "27c3a3a69e5352571d299da96dae84dc7cddb4d660a6ecd32923045928f45c4b"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/core/outcomes.ts",
+      "sha256": "ac789dc90c039a84e12e7452d65b1cf9fa125b20dd028ed6d2f6ff3667b2493f"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/core/recovery.ts",
+      "sha256": "29384ff542ecc1062690dcff09a98d02c7c2d6ad330855d58fb3607ad6136536"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/core/submission.ts",
+      "sha256": "7773ccb3495789c20fc70be4797090ec5b17b3109f5a0a4802f3751b81c9e8bb"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/core/work-handoff.ts",
+      "sha256": "86daad74e1e8f4311e8ac52a65ed11841041de53390d1890fac3c1aa1c1314f9"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/inbound/batching.ts",
+      "sha256": "0720a4ad0d411f5020dad2a9e664bdcfc7cdcec527b8479ddd96ac76da6aea46"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/inbound/checkpoints.ts",
+      "sha256": "9664adbcb79389bdc7e2eb4e14a2271c6ba121256195044c7d19a43ba31449ae"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/inbound/normalize.ts",
+      "sha256": "5b72830a8e9308228c6b092945ed365200819e876aaa05d2ad8caa6ba0321502"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/inbound/pump.ts",
+      "sha256": "0fba07a62e45c2f359eb20a1ee85fa82a836de0bf38032aa4324aac8e49cd97c"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/inbound/recovery.ts",
+      "sha256": "0bce6567750e80a928688f34913a0a8edada78c5fb6c2bdaa0f1b698139c62dc"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/inbound/router.ts",
+      "sha256": "25a56be5ed8434095fee569513a8c6ee8dc3b35215de0d3674d5ba6222599919"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/inbound/wake-dispatcher.ts",
+      "sha256": "7b4f8dfee85467ef6546f8561f44647079c1ad5ce5e6d7fefc7fbb8c57f67608"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/typing/leases.ts",
+      "sha256": "6f58c98161b25fd5b9bcca305077e836aeb3f210b709af68749e03d392d4e672"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/typing/operations.ts",
+      "sha256": "c2121fd17d48f1aa3d9fa1bbac937bf0d43ad3d9174bfbf2282acdf34cacbcc7"
+    },
+    {
+      "path": "packages/photon-features/src/state/index.ts",
+      "sha256": "fb2545bd00fa031809044a5b038ed4b317cde4f695b123057df07c4d8d30d6df"
+    },
+    {
+      "path": "packages/photon-features/src/state/ports.ts",
+      "sha256": "91788e91c3197fcd9ae0e419708c47cd190c76ed795930a8e238a1b297bcd8e4"
+    },
+    {
+      "path": "packages/photon-features/src/state/sqlite.ts",
+      "sha256": "cb912b61b24c1063b6fbbe4c4f3d4fcbdd091121f175e283144345cbba2a3ebd"
+    },
+    {
+      "path": "packages/photon-features/tests/e2e/card-restart.test.ts",
+      "sha256": "649c16a25d493c4e3c6cb00e1107535e28f279dfdeb9e2fed4617324703fe07f"
+    },
+    {
+      "path": "packages/photon-features/tests/e2e/feature-runtime.test.ts",
+      "sha256": "5223642f8bc2611aeaa7c1e31631ec5754717fbe801111eae183794d2e0b3238"
+    },
+    {
+      "path": "packages/photon-features/tests/e2e/inbound-events.test.ts",
+      "sha256": "ccf6b6487ebca0404fd1a57b1d8c64c0ec4a7c12ced166bfe165d99155b5b88d"
+    },
+    {
+      "path": "packages/photon-features/tests/e2e/install-rollback.test.ts",
+      "sha256": "36a026d7f7977942bd544cb44939b694760d2e6dd21477586daabc4732905666"
+    },
+    {
+      "path": "packages/photon-features/tests/e2e/local-roundtrip.test.ts",
+      "sha256": "b6fc4ec0c80d4b55209bde26a692a040854e2eb46653ceeaad790f8935644c82"
+    },
+    {
+      "path": "packages/photon-features/tests/e2e/multipart-recovery.test.ts",
+      "sha256": "18f8807bcd1f3b786b1ffc3c8e7a2d8ed47786c06d41e026295700e3e77e1cc3"
+    },
+    {
+      "path": "packages/photon-features/tests/e2e/poll-restart.test.ts",
+      "sha256": "be513a8d4089fc57f854c1caebf45537753115257f60cf7cd549a2a2cae5d0db"
+    },
+    {
+      "path": "packages/photon-features/tests/e2e/single-ownership.test.ts",
+      "sha256": "1a5d97306a5b0ff355504a1c9b71e99adf7d2d422f325bbdea6dacb222e17f41"
+    },
+    {
+      "path": "packages/photon-features/tests/e2e/typing-lifecycle.test.ts",
+      "sha256": "7b83780b3b51a30a3dd640a0272a9be9b65a8cac00638e944777ebad7a9eba94"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/account.shareContact.json",
+      "sha256": "543fe50cf4d9f0d7f806c6a6b922da7ffc87c3a1142d8548970c34fd9a4af708"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/app.send.json",
+      "sha256": "6dfe4c374d42fdd946f3b91620d765c54d860f680904dbba6ac619c5bcd5a29f"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/app.sendCustomized.json",
+      "sha256": "05e85918aad912bc1c80bb3fef5b62ef4e852475791ef35275eb49ca9c99ccce"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/app.update.json",
+      "sha256": "ad101f4939d40f4e4f274fa866f2eb87b8018e0e6874860e32841f51f3099e36"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/attachment.fetch.json",
+      "sha256": "4314622088e492a112252d8a0e12873458272a2e4d81575bfc7280337f573c1a"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/attachment.send.json",
+      "sha256": "f9c963512e2b4245fc8706baa60d5d4a93a832543e41c316f96dec8afdcf4ef9"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/contact.send.json",
+      "sha256": "277ec02c8c81a758c42b05a2846b2967f7071b05a8ab45c727b2af416733edfb"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/content.compose.json",
+      "sha256": "c8041b77fa389e58f6379031f6e636e329493ea7cad70412ebd2d2ed37f5e116"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/content.group.json",
+      "sha256": "e7a52d3cfb72f8b1aa312d7813cc993d89a99874ef5e0518b49946a9ee089654"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/custom.send.json",
+      "sha256": "2662bcae236a7b31fcdb50d6f536b8ca63f7d1fd8c1a416bbea643e951ac1ab8"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/effect.send.json",
+      "sha256": "79d73f4f6af7c2b9a1ab8735a8d6c6627c54f93d5082f4b8bba667448d792477"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/harness.ts",
+      "sha256": "89da65833e4815dcb632c2da5329ec0ca869c86901c15a4e3320d1ad0af75692"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/link.send.json",
+      "sha256": "d14266dbab481de378a0935c40a299196a0cc0ec6aa3690d27f4e7a15292dd73"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/markdown.send.json",
+      "sha256": "0d0399ff0f30fb0ce61de935fdb882574767328e0a983631371dfc2f8d3b547c"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/message.edit.json",
+      "sha256": "e768afdc1fc89f5432c1dc0246570a918abcd15de288a446e4cbee46dfb92ab5"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/message.get.json",
+      "sha256": "ee93367d418edcdb52a9d16537b69d9b3cff1295740d5a9f22b843430d353f03"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/message.markRead.json",
+      "sha256": "e346d7efe87d345114c6e61830387f79d00ee1124832836f7637b5281d8d2926"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/message.react.json",
+      "sha256": "c458e7a55b8f6e3d4c9f71586974d1a2751e08d20a7b0208ee4ad80b160380a9"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/message.reply.json",
+      "sha256": "e3ef0fa23bfcb8735984f9a97b6c3ae65c4cf1f4cf88f5fd163cde8db7fbbe5a"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/message.unsend.json",
+      "sha256": "1683d2ac9861f2e2f1fbff9bb49cc009fae088b2f4847023c14cfaa3c08e22dd"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/metadata.get.json",
+      "sha256": "1a44251fad3cdc95dfc50f717efc387f6c9a067f12a26481b1804df3153ad9c7"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/poll.addOption.json",
+      "sha256": "a33a076b3660074ff46548e4e7b4def9bc6e89089572ceaa484f0134d3c29e34"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/poll.create.json",
+      "sha256": "5c21096a75601e62140f7b957336972e468da8388771e3bac7fa0a481bbb7297"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/poll.get.json",
+      "sha256": "5a3c49e4dd2d6f7aea5a701379cea231dad6e4c57c87195daa9cc65261087e25"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/poll.unvote.json",
+      "sha256": "141c1e1495de292a5c3df5b94f7609d0aa5c551ae3c5ee887040ab7820b04cd5"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/poll.vote.json",
+      "sha256": "b1c0c84d41e722b59985aa3fdcacfbd838d26d7546711e73130e3d743798328e"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/reaction.remove.json",
+      "sha256": "38973327f54737393519febb2accc2a69e0ebffc4af53ff15c08436f4db4889b"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/space.addMembers.json",
+      "sha256": "ea11d1b69c66b8b682880a6a2e3412232289ab2633d470997e1daf9939c41999"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/space.clearAvatar.json",
+      "sha256": "4529e5448c9c64a270d465367ab87f3f4da226c3306c42f43230dba1b367edec"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/space.clearBackground.json",
+      "sha256": "c7099894a32899ddcec3a3085ca50c822aadf381785e1ee7164fb7b57b1e9283"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/space.create.json",
+      "sha256": "b8fa4335e2faacfd6169acc11609b68eb3b3b4cab2e36e1dca4b84ff9725486a"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/space.get.json",
+      "sha256": "e2183d3858d267578217c27dace7651b3e7caa4d4fd0a90ecae912024406c158"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/space.getAvatar.json",
+      "sha256": "80ae352e4ad6d3400e3a480b543c89cecb49703449dcda0c1c595001b2904dda"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/space.getMembers.json",
+      "sha256": "37f6ad59ac4419e927bb4913c87f6a281c8549cbbcb3ff195e9c583e6beb2ca9"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/space.getName.json",
+      "sha256": "b240353e88f96e41920a587cb6572086b05bb8c0c32cb25202fbb6a986d9bafa"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/space.leave.json",
+      "sha256": "ba94968021ef5514e44b2a1a9f63e40e4537b87c4d3926b6e0248e74ce4345f9"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/space.removeMembers.json",
+      "sha256": "2ea3d6b5b583a115d0594883b3674aa887b41d0b0c9b03920af63dc54040064b"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/space.rename.json",
+      "sha256": "f23c049a2ab48c0489d82172702ab2e8054c691119541de6ee4a7c356d9e1f26"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/space.setAvatar.json",
+      "sha256": "0bf63d3a8e527eb13d420808497a00d1b3a8bba7188281012660fd1e99d346d9"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/space.setBackground.json",
+      "sha256": "ec7883f96bd989218979e5021108bb18aa6f4e077d10639507db7d4f3bde32d0"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/text.send.json",
+      "sha256": "0a365c258268fe1599dde436f22bcf4245e76e3e0d761fac59b56789953606fd"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/text.stream.json",
+      "sha256": "f4495ce0a3c5bb0396b807bbb6ecbb1c1a5ac7ce029681c7a5a3109f99d621f4"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/typing.begin.json",
+      "sha256": "c3f8c4b83bbfdf3cdf5aee5a98a3f68e75359a910f55b81478ab76a7bc2460b9"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/typing.end.json",
+      "sha256": "a2cedd63ef7cc89d0a171fcb9a13d060d31f375ddc3662029c70c9c4b414f27d"
+    },
+    {
+      "path": "packages/photon-features/tests/fixtures/voice.send.json",
+      "sha256": "c0916ad3e864031f0f8a94d5cf0992e22d5649e4e68b162f98a5f24897fa5b13"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-00/contracts.test.ts",
+      "sha256": "b3f795c3b89ec307a7b4bdedc7e3856cc3ec66cebbcd5614e0c3b6e44eaeb166"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-00/host.test.ts",
+      "sha256": "8e695b021f99769a962becf8b3e18c44948be1216610e493bc17a7f0f3251178"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-00/protocol.test.ts",
+      "sha256": "04015b6313cb40986d3e0d281f9352db75bc64de25f0260ea0f5e986e3591c3c"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-00/sdk-probe.ts",
+      "sha256": "461654a19e819bda5268d26225d92f7e1b0e547a5b3eff0766d484a88c5ef5b7"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-00/state.test.ts",
+      "sha256": "d8e46d70d7af03e0f569ad1d21165d0762ce079521d69cf824bdcb04335b310c"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-01/fixture.ts",
+      "sha256": "6ae3a7806df7a449ca42474c8fc3d898a4f0126615d54c82cf854bde4540d8bd"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-01/process-worker.ts",
+      "sha256": "3f73624ff25a55c02b6dd3da225a6336af61685e365cf314799c858cb28f00dd"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-01/runtime.test.ts",
+      "sha256": "653a03904e95c8e60a5e3d57a3f1ff14ee4583beec71ac134ad158bb4e2de87a"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-01/work-protocol.test.ts",
+      "sha256": "c083c6c4f07957361e681f2c138cba54f68038e9c5539fdca11e44e794d56c0e"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-02/helpers.ts",
+      "sha256": "9821840af700ccf7e077c4f59447436cb27473d44b55f2b942ba5e488fd6556f"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-02/inbound.test.ts",
+      "sha256": "b6665f7958fd46780bb87edea87183b61b789a39c03599c043231d14ddd999ec"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-02/transport.test.ts",
+      "sha256": "3554a33ea40dcd7c7b202dac03c49871391e0a3e2fd6d0e3cb642bea81ac7ba2"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-02/tsconfig.json",
+      "sha256": "a030cb40966d6954df1da42fc0b0bbef9716a33b3e357e53ad2cdd03a0c2c269"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-02/typing.test.ts",
+      "sha256": "efb42f94e3c5b696ef9ff126fc095bab007f4b7631bea31284f13550d8ca822a"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-03/fixture.ts",
+      "sha256": "cf15b1f92738fe4509caedcdd573876f8456e3a8550d573b25d266063deb3088"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-03/operations.test.ts",
+      "sha256": "12b56f1c2dd065a945ac50152f92083f9f5072109f137586712e0506bf3ead90"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-03/recovery.test.ts",
+      "sha256": "45ff8ed861ce31b71766908d4942187c9bcd0fc00be4df4b137f23df9dd63514"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+      "sha256": "f7f1d1a34206cf00673aa4032e627e3639c4e5d8fa18b31c69abd76254c555e7"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-03/streaming.test.ts",
+      "sha256": "f3c8ecee3ede4608dff5189b127c2492744d5d8c9ff3e3aa7acd622982653ec6"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-04/helpers.ts",
+      "sha256": "571f7c41b9559e4b2720d27321c5546396edeb6e733c8f3d200c1d5f8b56740c"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-04/module.test.ts",
+      "sha256": "b84f54c72e24f7be613bcca082f159b0ecc2bc217785a22d1671ae59d9d38ce5"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-04/network.test.ts",
+      "sha256": "eae51dab1e8b0a708cee14df2db370e076899b2833e679397b18c6af7222967d"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-04/staging.test.ts",
+      "sha256": "462a396cc427b4c24e1dae6f97c1cf3c44f94df249dd90b82942a062d83bfe9c"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-04/tsconfig.json",
+      "sha256": "356ad5eaf280f23ce2dcb946524dbad9a4ad4b58f9192ce6540df7ac22ab3eca"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-04/verify.mjs",
+      "sha256": "667765a9e7074152d158e058821aeb1b9dcff5baf2937c0610fca0855f4ff1ff"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-05/integration-contract.ts",
+      "sha256": "e4b3d0a988c706189d5b69acb1274e433ede14d419d818347d99a1321ee6b77e"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-05/integration.test.ts",
+      "sha256": "25605cc9d638714b2b473489ff7e8fa5f46d4e52bc144a3fd70fe4c8c266d2e3"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-05/operations.test.ts",
+      "sha256": "8a05cfaba4a43928f81caeb992c2ff8b572a368d5e26b0b70587e09cf2ebe1cb"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-05/reducer.test.ts",
+      "sha256": "2afc0fed8a1a62f353bfce7ca7dd4e1292c3eeebfc3d2e7f556bea032a01ec70"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-05/support.ts",
+      "sha256": "edb932b61b24ee6282c39540b3d60b69a4489ebe38a593faabde69515669d48b"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-05/tsconfig.json",
+      "sha256": "83e4b463e300a5ba1c8c6bc2a9d1d7552344f2eaecfe5d926f408ecbbc16b3ca"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-06/fixture.ts",
+      "sha256": "007e5ae689a4beea0af18c344fa55b912d0a6c000a578b6aead3533ee1a76d33"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-06/interactions.test.ts",
+      "sha256": "9fffa46326e870cf4f6d6a806804b58253e6683efffdc640029f0aab563d5f4d"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-06/operations.test.ts",
+      "sha256": "51917ba4e0699e2697bce7b76a11e4c10c0bee5164a84fb11a7cea9ef212fe06"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-06/sdk.test.ts",
+      "sha256": "c3918c7d9a8a95ef4a024001b34c3f5c552b8d37835b8e6c0f1a933dd2390f2d"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-06/session-codec.test.ts",
+      "sha256": "40314ec6a5c57f85c98d82d0dbba433b9e32fcb538977bded8fe70dc9747a4af"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-06/tsconfig.json",
+      "sha256": "df2037f22972a629c12401f9e4044f500bdba2b3333c88661b3a69b1c5304078"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-07/.gitignore",
+      "sha256": "181314065df2f2fdaf920b1a8b5311daa216a2d6489a06ada5b49cc514d89417"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-07/fixture.ts",
+      "sha256": "2345cc2ed133ebb46e9d73b76530a5e32eee3054617abb34c89e7f18e946a6ca"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-07/native.test.ts",
+      "sha256": "7de701d408ffe5f5b5e8708e3862ab78fea10a65cacb8fdd00b9e9fd1a5d6048"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-07/tsconfig.json",
+      "sha256": "9d23930bc51225b5ddd3ff0f85030fc9acbb00717ef46066dcfd16d23403c5ea"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-08/cli.test.ts",
+      "sha256": "7243b72d5eafd2a5bd84f99343fea23da3a082f381c80664dfeb1d31001b4a24"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-08/distribution.test.mjs",
+      "sha256": "784209d7ed5a88c260443898a66cc7e73304e7ed59704173bd0549a8da3fd432"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-08/tsconfig.json",
+      "sha256": "47a90171311041f363b5bc64ff563941d8d39b0f9b7ca601fc989d25c89146cd"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-09/coverage.mjs",
+      "sha256": "42a84d7eaac6b316746e5bc49a9b7827cc2c60d96c18d75f27743259a5d4a9a7"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-09/crash-worker.ts",
+      "sha256": "3ca15309491548a96cf163857592d5ec7e77e02c6fca66aab76edfc9aa18baed"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-09/execution-harness.ts",
+      "sha256": "1e23d014f26974a92e16c4fd662bf0529c9a0b59d2c23f07430e4c76a6eceb2f"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-09/harness.ts",
+      "sha256": "2d80f2d7eaf57470fabcc0984c7892bb89acd8070dfb298ed12533b4510d8716"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-09/sdk-and-voice.test.ts",
+      "sha256": "67975ab6d35a5997b33851622d75e9cf8fea81702d4f9cb803073769cc2f1b7e"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-09/verify.mjs",
+      "sha256": "0f68cd8420dc198afcac330ecf70cb6d99aba7878cd3a84a84f68f3a4fbc8440"
+    },
+    {
+      "path": "packages/photon-features/tests/live/authorized-smoke.test.ts",
+      "sha256": "1347ee59e3cc8e6a2b308fe2d7240222d5b0939b1f79ca2f4c28c0b66cad8192"
+    },
+    {
+      "path": "packages/photon-features/tests/security/claim-fencing.test.ts",
+      "sha256": "a32e8db9ffe2489986420fe5b4e95d5be4fc2720569e6afe3a911632ec458f6f"
+    },
+    {
+      "path": "packages/photon-features/tests/security/context-scope.test.ts",
+      "sha256": "af11a86d480ba183cf742a3910a6020df4bfff5a2d10b9d62b7c90958266d4ec"
+    },
+    {
+      "path": "packages/photon-features/tests/security/media-access.test.ts",
+      "sha256": "3110d4f0f5b77d1e9f703490fce62f7ccede2f249959d3af64acf70469facf5e"
+    },
+    {
+      "path": "packages/photon-features/tests/security/webhook-auth.test.ts",
+      "sha256": "4d720b82a95d82a123c91490187e98acb3251ecae5726083a8bdae474562181a"
+    },
+    {
+      "path": "packages/photon-features/tsconfig.json",
+      "sha256": "11d2a8be2bf7a68ade6964de0d7be6ce6100e10d4d65dbebc2cf962ccfff1124"
+    },
+    {
+      "path": "renovate.json",
+      "sha256": "e80b4e42a3043bc12fa0640db4bac392d2bf770acf841360d7c8ceeeac2ec1a9"
+    },
+    {
+      "path": "src/app-session.js",
+      "sha256": "4cc4e0183c6594fd1cdae9a9e9f8bd06438d601206d57fc4e33ded7c806f6f26"
+    },
+    {
+      "path": "src/cli.js",
+      "sha256": "78e63016b15526be88a046b1076ddf7171fe99b65d7181253b428f4be9f9cb6d"
+    },
+    {
+      "path": "src/commands.js",
+      "sha256": "a99f2732f557ed512f3ff4c2402ffdd660628a100c99c1f543265848b7b47e74"
+    },
+    {
+      "path": "src/gateway.js",
+      "sha256": "c980ed6cebf534e52fb2d7bea0e58875d8b115f56171e79eb3bf1f780dee5241"
+    },
+    {
+      "path": "src/headers.js",
+      "sha256": "e229f2826ebdfb52949dab500798c0fa8a5ff7c4e63de91a63103bf45d2ae3cc"
+    },
+    {
+      "path": "src/store.js",
+      "sha256": "746b30895978d4dffffb0b8ae8c871d7a948e7d112730d97fc464943d99d99d5"
+    },
+    {
+      "path": "src/url-policy.js",
+      "sha256": "228674c0bf6a75bbbaa66dd8318699682e371fcb58fa6a4bf7f1d49d07553026"
+    },
+    {
+      "path": "test/app-session.test.js",
+      "sha256": "3ae6797a6e40ee26dd02e4708ef1ec99f7d62f63ba39f72b1503863ed7ce4f8d"
+    },
+    {
+      "path": "test/doctor.test.js",
+      "sha256": "2f0b9e3ef8573e010956d8654b1ae3d3e5256f304ed39875c999525f66c546ea"
+    },
+    {
+      "path": "test/gateway.test.js",
+      "sha256": "d4f1f54a3709304bdc941d10094747e8291cdd53b233c78ecd722bfb76a8b67f"
+    },
+    {
+      "path": "test/release-config.test.js",
+      "sha256": "f6881f7bf16ae5dbe63ae5e49289a0ff581817df2ad3c8c2bcbd22e31293e03e"
+    },
+    {
+      "path": "test/store.test.js",
+      "sha256": "aff54dcc3deb9b9be8010f3a3e36bc479ef21ae6c72131b9e237959fca27a319"
+    },
+    {
+      "path": "test/url-policy.test.js",
+      "sha256": "ed7738d59201c43730bd772f7a9d8efc63a7bbe589f854b06c26608668d3dad7"
+    }
+  ],
+  "snapshotDigest": "870f4a14ef6d3937c7c3703ab9d89030c2e92e3dc9dda5af569feb5d56785a46",
+  "commands": [
+    {
+      "name": "versions",
+      "argv": [
+        "/Users/darshan/.npm/_npx/cee224165f95995d/node_modules/node/bin/node",
+        "--version"
+      ],
+      "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt00-integration-preflight-miwhhyyo",
+      "startedAt": "2026-09-09T03:38:18.769407+00:00",
+      "exitCode": 0,
+      "logSha256": "3ebea09fcbed81499165f8bb4d650d8307e4a759136e5411b9a726504b8fc2ac"
+    },
+    {
+      "name": "npm-version",
+      "argv": [
+        "npm",
+        "--version"
+      ],
+      "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt00-integration-preflight-miwhhyyo",
+      "startedAt": "2026-09-09T03:38:18.786856+00:00",
+      "exitCode": 0,
+      "logSha256": "b90f6efb804599bb0ba84fec754b8c7807381dabfcdc1ffe3437ff37f18fb0f5"
+    },
+    {
+      "name": "clean-install",
+      "argv": [
+        "npm",
+        "ci",
+        "--ignore-scripts"
+      ],
+      "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt00-integration-preflight-miwhhyyo",
+      "startedAt": "2026-09-09T03:38:19.043610+00:00",
+      "exitCode": 0,
+      "logSha256": "f06e6a7b57c32445b1a5b11c482533897efd0019d4f33dd498faf616a08c081b"
+    },
+    {
+      "name": "original-cli",
+      "argv": [
+        "npm",
+        "test"
+      ],
+      "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt00-integration-preflight-miwhhyyo",
+      "startedAt": "2026-09-09T03:38:23.177433+00:00",
+      "exitCode": 0,
+      "logSha256": "de870377396d79e24e274853d9669b202deb55f3ccee1983262adf3bcc0025ed"
+    },
+    {
+      "name": "build",
+      "argv": [
+        "npm",
+        "run",
+        "photon:build"
+      ],
+      "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt00-integration-preflight-miwhhyyo",
+      "startedAt": "2026-09-09T03:38:23.628763+00:00",
+      "exitCode": 0,
+      "logSha256": "27608d404b2b96a621b62a6e4e79a05a40aaa486cc8d442203f1b06fff48e55a"
+    },
+    {
+      "name": "foundation",
+      "argv": [
+        "npm",
+        "run",
+        "photon:test"
+      ],
+      "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt00-integration-preflight-miwhhyyo",
+      "startedAt": "2026-09-09T03:38:31.211663+00:00",
+      "exitCode": 0,
+      "logSha256": "93769342972a0080ad33db933669cafb4e6f511795e02e28c82c462adba6b8aa"
+    },
+    {
+      "name": "contract-drift",
+      "argv": [
+        "npm",
+        "run",
+        "photon:check"
+      ],
+      "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt00-integration-preflight-miwhhyyo",
+      "startedAt": "2026-09-09T03:38:38.342451+00:00",
+      "exitCode": 0,
+      "logSha256": "17329cd5d46848b27afbff5efb55e170fe2964055be820a145d0b9a610f97bf4"
+    },
+    {
+      "name": "wt09",
+      "argv": [
+        "/Users/darshan/.npm/_npx/cee224165f95995d/node_modules/node/bin/node",
+        "--test",
+        "--test-reporter=tap",
+        "packages/photon-features/dist/tests/e2e/card-restart.test.js",
+        "packages/photon-features/dist/tests/e2e/feature-runtime.test.js",
+        "packages/photon-features/dist/tests/e2e/inbound-events.test.js",
+        "packages/photon-features/dist/tests/e2e/install-rollback.test.js",
+        "packages/photon-features/dist/tests/e2e/local-roundtrip.test.js",
+        "packages/photon-features/dist/tests/e2e/multipart-recovery.test.js",
+        "packages/photon-features/dist/tests/e2e/poll-restart.test.js",
+        "packages/photon-features/dist/tests/e2e/single-ownership.test.js",
+        "packages/photon-features/dist/tests/e2e/typing-lifecycle.test.js",
+        "packages/photon-features/dist/tests/lanes/wt-09/sdk-and-voice.test.js",
+        "packages/photon-features/dist/tests/live/authorized-smoke.test.js",
+        "packages/photon-features/dist/tests/security/claim-fencing.test.js",
+        "packages/photon-features/dist/tests/security/context-scope.test.js",
+        "packages/photon-features/dist/tests/security/media-access.test.js",
+        "packages/photon-features/dist/tests/security/webhook-auth.test.js"
+      ],
+      "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt00-integration-preflight-miwhhyyo",
+      "startedAt": "2026-09-09T03:38:43.186184+00:00",
+      "exitCode": 1,
+      "logSha256": "efc728ba48bc0a9593a9024fb695af4604613ce434ccafb725d3f22523e57c32"
+    },
+    {
+      "name": "generated-skill",
+      "argv": [
+        "/Users/darshan/.npm/_npx/cee224165f95995d/node_modules/node/bin/node",
+        "packages/photon-features/scripts/generate-skill.mjs",
+        "--check"
+      ],
+      "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt00-integration-preflight-miwhhyyo",
+      "startedAt": "2026-09-09T03:38:44.221449+00:00",
+      "exitCode": 0,
+      "logSha256": "f71ce053ab176476261de5ddc42a1bde85d2812b09921f79e16c6631eddec6d4"
+    },
+    {
+      "name": "package-boundary",
+      "argv": [
+        "npm",
+        "pack",
+        "--dry-run",
+        "--json",
+        "--workspace=@grokbot/photon-features"
+      ],
+      "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt00-integration-preflight-miwhhyyo",
+      "startedAt": "2026-09-09T03:38:44.332914+00:00",
+      "exitCode": 0,
+      "logSha256": "242d3d3cbe242720460230a10a3e54c0c8009c5c8c5c8f2466a4b512678927c3"
+    }
+  ],
+  "sourceChangedDuringRun": [
+    "docs/photon-features/evidence/wt-02/handoff.md",
+    "docs/photon-features/evidence/wt-04/build.txt",
+    "docs/photon-features/evidence/wt-06/aggregate-build.txt",
+    "docs/photon-features/evidence/wt-07/package-build.txt"
+  ]
+}

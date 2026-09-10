@@ -1,0 +1,29 @@
+{
+  "valid": {
+    "version": 1,
+    "idempotencyKey": "request-account.shareContact",
+    "contextId": "context-1",
+    "operation": "account.shareContact",
+    "arguments": {
+      "space": {
+        "version": 1,
+        "kind": "space",
+        "id": "space-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        }
+      }
+    }
+  },
+  "rejected": {
+    "version": 1,
+    "idempotencyKey": "request-account.shareContact",
+    "contextId": "context-1",
+    "operation": "account.shareContact",
+    "arguments": {}
+  }
+}

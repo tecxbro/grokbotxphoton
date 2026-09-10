@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "idempotencyKey": "request-space.create",
+  "contextId": "context-1",
+  "operation": "space.create",
+  "arguments": {
+    "members": [
+      "+15555550100"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "lane": "wt-01",
+  "files": [
+    {"path":"packages/photon-features/src/runtime/core/admission.ts","symbols":["admitRequest"],"responsibility":"Bounded strict request parsing and semantic validation."},
+    {"path":"packages/photon-features/src/runtime/core/authorization.ts","symbols":["resolveAndAuthorizeContext"],"responsibility":"Authenticate principal-derived context and authorize current scoped access."},
+    {"path":"packages/photon-features/src/runtime/core/executor.ts","symbols":["executeOperation"],"responsibility":"Claim and execute one registered trusted operation while preserving lifecycle evidence."},
+    {"path":"packages/photon-features/src/runtime/core/execution-services.ts","symbols":["createExecutionServices"],"responsibility":"Implement the frozen f0-services-2 feature boundary."},
+    {"path":"packages/photon-features/src/runtime/core/claims.ts","symbols":["acquireClaim","renewClaim","validateClaim"],"responsibility":"Acquire, renew, and validate durable fenced execution ownership."},
+    {"path":"packages/photon-features/src/runtime/core/cancellation.ts","symbols":["checkCancellation"],"responsibility":"Recheck durable cancellation and local abort state."},
+    {"path":"packages/photon-features/src/runtime/core/idempotency.ts","symbols":["reserveRequestIdentity"],"responsibility":"Bind an idempotency key to canonical authorized request identity before I/O."},
+    {"path":"packages/photon-features/src/runtime/core/child-journal.ts","symbols":["executeChild"],"responsibility":"Journal per-child dispatch, results, and ambiguous outcomes without replaying completed children."},
+    {"path":"packages/photon-features/src/runtime/core/local-server.ts","symbols":["createLocalServer"],"responsibility":"Create the bounded authenticated Unix-domain local protocol server."},
+    {"path":"packages/photon-features/src/runtime/core/work-handoff.ts","symbols":["claimWork","heartbeatWork","acknowledgeWork"],"responsibility":"Operate durable local handoff leases and acknowledgement fences."},
+    {"path":"packages/photon-features/src/runtime/core/receipt-state.ts","symbols":["applyReceiptObservation","getMessageStatus"],"responsibility":"Persist and summarize append-only scoped receipt evidence."},
+    {"path":"packages/photon-features/src/runtime/core/recovery.ts","symbols":["recoverPendingWork"],"responsibility":"Recover expired claims and uncertain work without provider replay."},
+    {"path":"packages/photon-features/src/adapters/state/sqlite.ts","symbols":["createStateStore"],"responsibility":"Open the one private SQLite store using the committed F0 migration."},
+    {"path":"packages/photon-features/src/adapters/state/unit-of-work.ts","symbols":["runUnitOfWorkTransaction"],"responsibility":"Expose synchronous scoped domain mutation plus atomic continuation creation."},
+    {"path":"packages/photon-features/tests/lanes/wt-01/unit.test.ts","symbols":[],"responsibility":"Admission, authorization, keys, claims, results, receipts, and UnitOfWork tests."},
+    {"path":"packages/photon-features/tests/lanes/wt-01/sdk-contract.test.ts","symbols":[],"responsibility":"Pinned Spectrum 12.8.0 declaration/result and retry-limitation tests."},
+    {"path":"packages/photon-features/tests/lanes/wt-01/integration.test.ts","symbols":[],"responsibility":"Real temporary SQLite and Unix socket protocol integration tests."},
+    {"path":"packages/photon-features/tests/lanes/wt-01/regression.test.ts","symbols":[],"responsibility":"Restart, multipart, receipt ordering, races, rollback, and privacy regressions."},
+    {"path":"docs/worktrees/wt-01/","symbols":[],"responsibility":"Lane rules, architecture, sources, evidence, acceptance, worklog, handoff, and shared change requests."}
+  ]
+}

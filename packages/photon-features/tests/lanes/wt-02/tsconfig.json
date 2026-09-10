@@ -1,0 +1,11 @@
+{
+  "extends": "../../../tsconfig.json",
+  "include": [
+    "../../../src/adapters/transport/**/*.ts",
+    "../../../src/runtime/inbound/**/*.ts",
+    "../../../src/runtime/typing/**/*.ts",
+    "../../../examples/wt-02/**/*.ts",
+    "./*.ts",
+    "../../../tests/lanes/wt-00/**/*.ts"
+  ]
+}

@@ -1,0 +1,196 @@
+TAP version 13
+# Subtest: decrypts an Electron Safe Storage v10 string
+ok 1 - decrypts an Electron Safe Storage v10 string
+  ---
+  duration_ms: 3.26225
+  type: 'test'
+  ...
+# Subtest: loads the signed-in Grok Bot gateway without manual tokens
+ok 2 - loads the signed-in Grok Bot gateway without manual tokens
+  ---
+  duration_ms: 1.116292
+  type: 'test'
+  ...
+# Subtest: loads a version 2 Grok Bot gateway entry
+ok 3 - loads a version 2 Grok Bot gateway entry
+  ---
+  duration_ms: 2.341333
+  type: 'test'
+  ...
+# Subtest: rejects a version 2 descriptor with no entries
+ok 4 - rejects a version 2 descriptor with no entries
+  ---
+  duration_ms: 2.074458
+  type: 'test'
+  ...
+# Subtest: rejects a version 2 descriptor with ambiguous entries
+ok 5 - rejects a version 2 descriptor with ambiguous entries
+  ---
+  duration_ms: 1.562666
+  type: 'test'
+  ...
+# Subtest: rejects a gateway entry without an encrypted payload
+ok 6 - rejects a gateway entry without an encrypted payload
+  ---
+  duration_ms: 0.958709
+  type: 'test'
+  ...
+# Subtest: rejects an unsupported gateway descriptor version
+ok 7 - rejects an unsupported gateway descriptor version
+  ---
+  duration_ms: 1.041625
+  type: 'test'
+  ...
+# Subtest: rejects an incomplete decrypted gateway descriptor
+ok 8 - rejects an incomplete decrypted gateway descriptor
+  ---
+  duration_ms: 0.809166
+  type: 'test'
+  ...
+# Subtest: reports a present but unusable Grok Bot app session
+ok 9 - reports a present but unusable Grok Bot app session
+  ---
+  duration_ms: 1.236667
+  type: 'test'
+  ...
+# Subtest: does not probe macOS credentials on other platforms
+ok 10 - does not probe macOS credentials on other platforms
+  ---
+  duration_ms: 0.33175
+  type: 'test'
+  ...
+# Subtest: doctor reports a present but unusable Grok Bot app session
+ok 11 - doctor reports a present but unusable Grok Bot app session
+  ---
+  duration_ms: 130.412583
+  type: 'test'
+  ...
+# Subtest: parses env JSON headers
+ok 12 - parses env JSON headers
+  ---
+  duration_ms: 2.756333
+  type: 'test'
+  ...
+# Subtest: reads EnsureSandBox gatewayHeaders
+ok 13 - reads EnsureSandBox gatewayHeaders
+  ---
+  duration_ms: 0.213625
+  type: 'test'
+  ...
+# Subtest: reads EnsureSandBox token field
+ok 14 - reads EnsureSandBox token field
+  ---
+  duration_ms: 0.092625
+  type: 'test'
+  ...
+# Subtest: env headers override EnsureSandBox
+ok 15 - env headers override EnsureSandBox
+  ---
+  duration_ms: 0.175458
+  type: 'test'
+  ...
+# Subtest: request headers keep routing header
+ok 16 - request headers keep routing header
+  ---
+  duration_ms: 0.459917
+  type: 'test'
+  ...
+# Subtest: empty env JSON is a no-op
+ok 17 - empty env JSON is a no-op
+  ---
+  duration_ms: 0.960666
+  type: 'test'
+  ...
+# Subtest: credential-bearing requests reject redirects
+ok 18 - credential-bearing requests reject redirects
+  ---
+  duration_ms: 21.017542
+  type: 'test'
+  ...
+# Subtest: gateway URL validation happens before credentials are sent
+ok 19 - gateway URL validation happens before credentials are sent
+  ---
+  duration_ms: 0.351041
+  type: 'test'
+  ...
+# Subtest: npm package metadata identifies the public source repository
+ok 20 - npm package metadata identifies the public source repository
+  ---
+  duration_ms: 0.630166
+  type: 'test'
+  ...
+# Subtest: npm executable paths are already normalized for publishing
+ok 21 - npm executable paths are already normalized for publishing
+  ---
+  duration_ms: 0.071
+  type: 'test'
+  ...
+# Subtest: create list delete bots
+ok 22 - create list delete bots
+  ---
+  duration_ms: 6.430834
+  type: 'test'
+  ...
+# Subtest: group add remove set
+ok 23 - group add remove set
+  ---
+  duration_ms: 30.566875
+  type: 'test'
+  ...
+# Subtest: rejects nested and empty groups
+ok 24 - rejects nested and empty groups
+  ---
+  duration_ms: 5.486125
+  type: 'test'
+  ...
+# Subtest: update merges profile, clears title, changes description, toggles settings, rejects blank name
+ok 25 - update merges profile, clears title, changes description, toggles settings, rejects blank name
+  ---
+  duration_ms: 4.038709
+  type: 'test'
+  ...
+# Subtest: update settings merge preserves extra keys
+ok 26 - update settings merge preserves extra keys
+  ---
+  duration_ms: 2.1665
+  type: 'test'
+  ...
+# Subtest: allows https Cursor gateway hosts
+ok 27 - allows https Cursor gateway hosts
+  ---
+  duration_ms: 1.467958
+  type: 'test'
+  ...
+# Subtest: rejects http and non-cursor hosts by default
+ok 28 - rejects http and non-cursor hosts by default
+  ---
+  duration_ms: 1.762
+  type: 'test'
+  ...
+# Subtest: allows local gateways when opted in
+ok 29 - allows local gateways when opted in
+  ---
+  duration_ms: 0.358584
+  type: 'test'
+  ...
+# Subtest: ALLOW_ANY_GATEWAY bypasses host checks
+ok 30 - ALLOW_ANY_GATEWAY bypasses host checks
+  ---
+  duration_ms: 0.1625
+  type: 'test'
+  ...
+# Subtest: redacts bearer and token-like fields
+ok 31 - redacts bearer and token-like fields
+  ---
+  duration_ms: 1.024292
+  type: 'test'
+  ...
+1..31
+# tests 31
+# suites 0
+# pass 31
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 191.34825

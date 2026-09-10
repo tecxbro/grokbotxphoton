@@ -1,0 +1,43 @@
+
+> grok-bot-cli@0.2.2 test
+> node --test test/*.test.js
+
+✔ decrypts an Electron Safe Storage v10 string (1.766125ms)
+✔ loads the signed-in Grok Bot gateway without manual tokens (1.476458ms)
+✔ loads a version 2 Grok Bot gateway entry (1.256292ms)
+✔ rejects a version 2 descriptor with no entries (0.663792ms)
+✔ rejects a version 2 descriptor with ambiguous entries (1.24025ms)
+✔ rejects a gateway entry without an encrypted payload (1.36075ms)
+✔ rejects an unsupported gateway descriptor version (1.433917ms)
+✔ rejects an incomplete decrypted gateway descriptor (2.551625ms)
+✔ reports a present but unusable Grok Bot app session (0.860291ms)
+✔ does not probe macOS credentials on other platforms (0.104958ms)
+✔ doctor reports a present but unusable Grok Bot app session (108.637583ms)
+✔ parses env JSON headers (1.40075ms)
+✔ reads EnsureSandBox gatewayHeaders (0.102792ms)
+✔ reads EnsureSandBox token field (0.049542ms)
+✔ env headers override EnsureSandBox (0.054583ms)
+✔ request headers keep routing header (0.111375ms)
+✔ empty env JSON is a no-op (1.093375ms)
+✔ credential-bearing requests reject redirects (18.445875ms)
+✔ gateway URL validation happens before credentials are sent (0.301542ms)
+✔ npm package metadata identifies the public source repository (0.726833ms)
+✔ npm executable paths are already normalized for publishing (0.090166ms)
+✔ create list delete bots (5.04875ms)
+✔ group add remove set (20.9835ms)
+✔ rejects nested and empty groups (5.099625ms)
+✔ update merges profile, clears title, changes description, toggles settings, rejects blank name (2.928958ms)
+✔ update settings merge preserves extra keys (1.934125ms)
+✔ allows https Cursor gateway hosts (0.634375ms)
+✔ rejects http and non-cursor hosts by default (0.633541ms)
+✔ allows local gateways when opted in (0.108125ms)
+✔ ALLOW_ANY_GATEWAY bypasses host checks (0.071042ms)
+✔ redacts bearer and token-like fields (1.302125ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 167.998625

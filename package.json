@@ -1,0 +1,35 @@
+{
+  "name": "grokbotxphoton",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Deterministic Photon messaging runtime, local worker protocol, and operating tools for Grok tasks.",
+  "type": "module",
+  "engines": {
+    "node": ">=24.13.0 <25"
+  },
+  "packageManager": "npm@10.9.2",
+  "workspaces": [
+    "packages/photon-features"
+  ],
+  "scripts": {
+    "build": "npm run photon:build",
+    "test": "npm run photon:test",
+    "check": "npm run photon:check",
+    "photon:build": "npm run build --workspace=@grokbot/photon-features",
+    "photon:test": "npm run test --workspace=@grokbot/photon-features",
+    "photon:check": "npm run check --workspace=@grokbot/photon-features",
+    "photon:test:integration": "npm run photon:build && node scripts/run-integration-tests.mjs",
+    "photon:verify-all": "node scripts/verify-all.mjs",
+    "test:verification": "npm run photon:test:integration",
+    "smoke": "node packages/photon-features/scripts/smoke-test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tecxbro/grokbotxphoton.git"
+  },
+  "homepage": "https://github.com/tecxbro/grokbotxphoton#readme",
+  "bugs": {
+    "url": "https://github.com/tecxbro/grokbotxphoton/issues"
+  },
+  "license": "MIT"
+}

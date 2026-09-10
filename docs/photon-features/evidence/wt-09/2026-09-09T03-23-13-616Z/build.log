@@ -1,0 +1,8 @@
+
+> grok-bot-cli@0.2.2 photon:build
+> npm run build --workspace=@grokbot/photon-features
+
+
+> @grokbot/photon-features@0.1.0 build
+> tsc -p tsconfig.json
+

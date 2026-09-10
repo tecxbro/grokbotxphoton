@@ -1,0 +1,58 @@
+{
+  "valid": {
+    "version": 1,
+    "idempotencyKey": "request-text.stream",
+    "contextId": "context-1",
+    "operation": "text.stream",
+    "arguments": {
+      "space": {
+        "version": 1,
+        "kind": "space",
+        "id": "space-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        }
+      },
+      "stream": {
+        "version": 1,
+        "kind": "stream",
+        "id": "stream-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        },
+        "generation": 1,
+        "expiresAt": 200000
+      }
+    }
+  },
+  "rejected": {
+    "version": 1,
+    "idempotencyKey": "request-text.stream",
+    "contextId": "context-1",
+    "operation": "text.stream",
+    "arguments": {
+      "stream": {
+        "version": 1,
+        "kind": "stream",
+        "id": "stream-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        },
+        "generation": 1,
+        "expiresAt": 200000
+      }
+    }
+  }
+}

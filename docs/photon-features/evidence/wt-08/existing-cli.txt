@@ -1,0 +1,43 @@
+
+> grok-bot-cli@0.2.2 test
+> node --test test/*.test.js
+
+✔ decrypts an Electron Safe Storage v10 string (1.540083ms)
+✔ loads the signed-in Grok Bot gateway without manual tokens (0.93525ms)
+✔ loads a version 2 Grok Bot gateway entry (0.704167ms)
+✔ rejects a version 2 descriptor with no entries (0.679334ms)
+✔ rejects a version 2 descriptor with ambiguous entries (0.470541ms)
+✔ rejects a gateway entry without an encrypted payload (0.672667ms)
+✔ rejects an unsupported gateway descriptor version (1.200333ms)
+✔ rejects an incomplete decrypted gateway descriptor (0.831917ms)
+✔ reports a present but unusable Grok Bot app session (0.532042ms)
+✔ does not probe macOS credentials on other platforms (0.095125ms)
+✔ doctor reports a present but unusable Grok Bot app session (100.2145ms)
+✔ parses env JSON headers (0.6785ms)
+✔ reads EnsureSandBox gatewayHeaders (0.176542ms)
+✔ reads EnsureSandBox token field (0.05075ms)
+✔ env headers override EnsureSandBox (0.053167ms)
+✔ request headers keep routing header (0.110958ms)
+✔ empty env JSON is a no-op (0.047708ms)
+✔ credential-bearing requests reject redirects (15.543ms)
+✔ gateway URL validation happens before credentials are sent (0.294583ms)
+✔ npm package metadata identifies the public source repository (0.652083ms)
+✔ npm executable paths are already normalized for publishing (0.078709ms)
+✔ create list delete bots (3.283708ms)
+✔ group add remove set (17.398875ms)
+✔ rejects nested and empty groups (3.949042ms)
+✔ update merges profile, clears title, changes description, toggles settings, rejects blank name (2.924166ms)
+✔ update settings merge preserves extra keys (1.649292ms)
+✔ allows https Cursor gateway hosts (0.6085ms)
+✔ rejects http and non-cursor hosts by default (0.595917ms)
+✔ allows local gateways when opted in (0.288541ms)
+✔ ALLOW_ANY_GATEWAY bypasses host checks (0.086416ms)
+✔ redacts bearer and token-like fields (0.857792ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 151.164834

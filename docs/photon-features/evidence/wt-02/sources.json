@@ -1,0 +1,809 @@
+[
+  {
+    "url": "https://photon.codes/docs/llms.txt",
+    "retrievedAt": "2026-09-09T03:03:17.545685+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/getting-started",
+    "retrievedAt": "2026-09-09T03:03:17.546145+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/messages",
+    "retrievedAt": "2026-09-09T03:03:17.546301+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/spaces-and-users",
+    "retrievedAt": "2026-09-09T03:03:17.546362+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/custom-events-and-lifecycle",
+    "retrievedAt": "2026-09-09T03:03:17.546487+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/webhooks",
+    "retrievedAt": "2026-09-09T03:03:17.546555+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/typing-indicators",
+    "retrievedAt": "2026-09-09T03:03:17.546730+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/connection-and-routing",
+    "retrievedAt": "2026-09-09T03:03:17.546869+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/inbound-group-events",
+    "retrievedAt": "2026-09-09T03:03:17.546987+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/inbound-read-receipts",
+    "retrievedAt": "2026-09-09T03:03:17.547163+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/troubleshooting/imessage",
+    "retrievedAt": "2026-09-09T03:03:18.224210+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/best-practices/inbound-pipeline",
+    "retrievedAt": "2026-09-09T03:03:18.224331+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/best-practices/imessage-deliverability",
+    "retrievedAt": "2026-09-09T03:03:18.224397+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/advanced-kits/imessage/events",
+    "retrievedAt": "2026-09-09T03:03:18.233848+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/advanced-kits/imessage/error-handling",
+    "retrievedAt": "2026-09-09T03:03:18.234007+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/webhooks/overview",
+    "retrievedAt": "2026-09-09T03:03:18.234063+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/webhooks/quickstart",
+    "retrievedAt": "2026-09-09T03:03:18.234252+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/webhooks/events",
+    "retrievedAt": "2026-09-09T03:03:18.234314+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/webhooks/verifying-signatures",
+    "retrievedAt": "2026-09-09T03:03:18.234376+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/webhooks/delivery",
+    "retrievedAt": "2026-09-09T03:03:18.248371+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/webhooks/managing-webhooks",
+    "retrievedAt": "2026-09-09T03:03:18.291340+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/webhooks/troubleshooting",
+    "retrievedAt": "2026-09-09T03:03:18.396280+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts",
+    "retrievedAt": "2026-09-09T03:03:18.396375+00:00",
+    "version": "website unversioned",
+    "readStatus": "retrieved-not-yet-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": 200,
+    "finalUrl": "https://github.com/photon-hq/spectrum-ts",
+    "sha256": "27f58ff72c07c548129316f085f6f8c1ea9e02457143e8c3246dd7568cfb34c7",
+    "snapshot": "/tmp/wt-02-sources/b425740d617c04330376813e34d4bd4dc6c4ad33590e67c949d8c4bd98796ea4.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/messages.md",
+    "retrievedAt": "2026-09-09T03:03:18.396685+00:00",
+    "version": "website unversioned",
+    "readStatus": "retrieved-not-yet-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": 200,
+    "finalUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/messages.md",
+    "sha256": "abb234ec31452e2fe5f242f01b4d4929ce19378bc101d5263abcaacb6863c7f9",
+    "snapshot": "/tmp/wt-02-sources/3d6122c210bdfc5180ee9a76bc90a571122e5f751f41f7e3412fe8b1f26c33cf.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/spaces-and-users.md",
+    "retrievedAt": "2026-09-09T03:03:18.396860+00:00",
+    "version": "website unversioned",
+    "readStatus": "retrieved-not-yet-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": 200,
+    "finalUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/spaces-and-users.md",
+    "sha256": "dc702c5f81321bc39cd3e523c6d20102075eaec0fd334cfc0cb393c275561579",
+    "snapshot": "/tmp/wt-02-sources/c03d18a9dd02776a87efd733d697b4f2a1520acc739d8055627416ab7eec14aa.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/webhooks.md",
+    "retrievedAt": "2026-09-09T03:03:18.396928+00:00",
+    "version": "website unversioned",
+    "readStatus": "retrieved-not-yet-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": 200,
+    "finalUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/webhooks.md",
+    "sha256": "cc1a11ad9340c89386cad7120b7ae5a7622670fd16c9c9be1a931006ca73ed65",
+    "snapshot": "/tmp/wt-02-sources/16d66e4b380834bb08c4f6d9ceb052d3fd6153333b8900e3d24be0745b5a24a0.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/providers/imessage.md",
+    "retrievedAt": "2026-09-09T03:03:18.397081+00:00",
+    "version": "website unversioned",
+    "readStatus": "retrieved-not-yet-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": 200,
+    "finalUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/providers/imessage.md",
+    "sha256": "2b6ef60b6fdb90e746e48f5bec3b7e169ee2430ae21e4dee6e18583b2101c756",
+    "snapshot": "/tmp/wt-02-sources/4c7fdfb4e154638e632470a755b71773a089df56e2f825db47daca0ce8dd08fe.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/custom-events-and-lifecycle.md",
+    "retrievedAt": "2026-09-09T03:03:18.397144+00:00",
+    "version": "website unversioned",
+    "readStatus": "retrieved-not-yet-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": 200,
+    "finalUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/custom-events-and-lifecycle.md",
+    "sha256": "f76077aabac5099668890c286991ec02e71257495cc72ee06ea7e3bb74023bfb",
+    "snapshot": "/tmp/wt-02-sources/9e5b0e2c74540c55a259e5d9f9b0aab758fc03459c4f1997dd0b8acd9b681495.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/content/read-and-typing.md",
+    "retrievedAt": "2026-09-09T03:03:18.397199+00:00",
+    "version": "website unversioned",
+    "readStatus": "retrieved-not-yet-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": 200,
+    "finalUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/content/read-and-typing.md",
+    "sha256": "ca16f1733711d8055d543847464cbabcdad851fe40312a7f37fcd1ecc4f25a22",
+    "snapshot": "/tmp/wt-02-sources/e8fa5a265e4228a87c6fd69b37f55dafc35f1f4b6bc12ddb25116a8f031dd6ab.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/imessage/advanced/events.md",
+    "retrievedAt": "2026-09-09T03:03:18.397370+00:00",
+    "version": "website unversioned",
+    "readStatus": "retrieved-not-yet-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": 200,
+    "finalUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/imessage/advanced/events.md",
+    "sha256": "e6a47440af21178fd041f9812266229364c5ad7da52706a5d9588c4753468b44",
+    "snapshot": "/tmp/wt-02-sources/8b4c8202274ac404747d535e328bc97dd483c7bc4428857ef2784e3ee79e2e27.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/photon-webhooks/SKILL.md",
+    "retrievedAt": "2026-09-09T03:03:18.470766+00:00",
+    "version": "website unversioned",
+    "readStatus": "retrieved-not-yet-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": 200,
+    "finalUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/photon-webhooks/SKILL.md",
+    "sha256": "48201c4347030d8b8fcd759b797277f229eec0ddfb9a2d5ca412bd8fdeef5a5a",
+    "snapshot": "/tmp/wt-02-sources/32adf3dc9daac438260bc1dcd95d62fc1547f21ae219607990f7344fe1830cc6.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/photon-webhooks/quickstart.md",
+    "retrievedAt": "2026-09-09T03:03:18.502502+00:00",
+    "version": "website unversioned",
+    "readStatus": "retrieved-not-yet-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": 200,
+    "finalUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/photon-webhooks/quickstart.md",
+    "sha256": "83d801b987a5805def3125badf2f3a3d20caca53d1c0497b0ed9f163cc10fdac",
+    "snapshot": "/tmp/wt-02-sources/91dce04b71b991d7d7545357a90fbe0a31e8d4006908bc6c603ab457353fcd2a.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/photon-webhooks/events.md",
+    "retrievedAt": "2026-09-09T03:03:20.732272+00:00",
+    "version": "website unversioned",
+    "readStatus": "retrieved-not-yet-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": 200,
+    "finalUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/photon-webhooks/events.md",
+    "sha256": "22763a4df69231000169824d3300014ed7c695b8652789f40377a163e0916e84",
+    "snapshot": "/tmp/wt-02-sources/277a97ad8c0f8e44321b0481779777c178a60c5c12c762f4aef2a9d2567e3976.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/photon-webhooks/verifying-signatures.md",
+    "retrievedAt": "2026-09-09T03:03:20.735044+00:00",
+    "version": "website unversioned",
+    "readStatus": "retrieved-not-yet-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": 200,
+    "finalUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/photon-webhooks/verifying-signatures.md",
+    "sha256": "0d05a6473ae12cbdd90c649e194fd31748a6e5d3bae0d714f13989cdd5c2282c",
+    "snapshot": "/tmp/wt-02-sources/828ab599b61c5f7fdfe2a6fc8d0432a5484226536cfe725d94c42f8c4f27aafe.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/photon-webhooks/delivery-and-retries.md",
+    "retrievedAt": "2026-09-09T03:03:20.768397+00:00",
+    "version": "website unversioned",
+    "readStatus": "retrieved-not-yet-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": 200,
+    "finalUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/photon-webhooks/delivery-and-retries.md",
+    "sha256": "053b17c45445690069499188819a992b138e879cdb24c9d071bfc523e5184ef7",
+    "snapshot": "/tmp/wt-02-sources/dfd582a242cf85468b61b453fa266e6b5230476c3735922e50ab3a9fa58c89b1.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/photon-webhooks/managing.md",
+    "retrievedAt": "2026-09-09T03:03:20.771390+00:00",
+    "version": "website unversioned",
+    "readStatus": "retrieved-not-yet-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": 200,
+    "finalUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/photon-webhooks/managing.md",
+    "sha256": "c6b9d561eacf3043726f40b26f8b66973fc00b72e73f7e7502558da0f5692fe6",
+    "snapshot": "/tmp/wt-02-sources/fd20f6bf16e62b3faf81fab8cfddb5724ce195a3213ab35cd4d0ce34585e0d89.txt"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/photon-webhooks/troubleshooting.md",
+    "retrievedAt": "2026-09-09T03:03:20.797326+00:00",
+    "version": "website unversioned",
+    "readStatus": "retrieved-not-yet-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": 200,
+    "finalUrl": "https://github.com/tecxbro/photon-skills/blob/main/skills/photon-webhooks/troubleshooting.md",
+    "sha256": "718905ba63ea7639f48e8f170693e673e9b0c955cf346f6d0242f377d6b91f1d",
+    "snapshot": "/tmp/wt-02-sources/8f4c51501b2a23b7c0f56be57c0399f982ea4c03361e5e2ae0c722fb96f00760.txt"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/getting-started.md",
+    "retrievedAt": "2026-09-09T03:03:20.805113+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/messages.md",
+    "retrievedAt": "2026-09-09T03:03:20.830381+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/spaces-and-users.md",
+    "retrievedAt": "2026-09-09T03:03:20.841856+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/custom-events-and-lifecycle.md",
+    "retrievedAt": "2026-09-09T03:03:20.875242+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/webhooks.md",
+    "retrievedAt": "2026-09-09T03:03:20.900436+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/typing-indicators.md",
+    "retrievedAt": "2026-09-09T03:03:20.928452+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/connection-and-routing.md",
+    "retrievedAt": "2026-09-09T03:03:20.928538+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/inbound-group-events.md",
+    "retrievedAt": "2026-09-09T03:03:21.049050+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/inbound-read-receipts.md",
+    "retrievedAt": "2026-09-09T03:03:21.049886+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/troubleshooting/imessage.md",
+    "retrievedAt": "2026-09-09T03:03:21.093182+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/best-practices/inbound-pipeline.md",
+    "retrievedAt": "2026-09-09T03:03:21.103429+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/best-practices/imessage-deliverability.md",
+    "retrievedAt": "2026-09-09T03:03:21.112337+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/advanced-kits/imessage/events.md",
+    "retrievedAt": "2026-09-09T03:03:21.142866+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/advanced-kits/imessage/error-handling.md",
+    "retrievedAt": "2026-09-09T03:03:21.149746+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/webhooks/overview.md",
+    "retrievedAt": "2026-09-09T03:03:21.164561+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/webhooks/quickstart.md",
+    "retrievedAt": "2026-09-09T03:03:21.173149+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/webhooks/events.md",
+    "retrievedAt": "2026-09-09T03:03:21.195373+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/webhooks/verifying-signatures.md",
+    "retrievedAt": "2026-09-09T03:03:21.218859+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/webhooks/delivery.md",
+    "retrievedAt": "2026-09-09T03:03:21.228711+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/webhooks/managing-webhooks.md",
+    "retrievedAt": "2026-09-09T03:03:21.275083+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/webhooks/troubleshooting.md",
+    "retrievedAt": "2026-09-09T03:03:21.276125+00:00",
+    "version": "website unversioned",
+    "readStatus": "not-read",
+    "associatedFeature": "transport/inbound/typing; sources.md maps implementation tests",
+    "status": "retrieval-error",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://photon.codes/docs/llms.txt",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "web-tool-retrieved",
+    "readStatus": "read-relevant-excerpts",
+    "version": "unversioned website on retrieval date",
+    "sha256": null,
+    "associatedFeature": "documentation index; source discovery",
+    "note": "Direct urllib request failed with HTTP 403; web tool retrieval succeeded. No website commit or byte hash supplied by web tool."
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/webhooks",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "web-tool-retrieved",
+    "readStatus": "read-relevant-excerpts",
+    "version": "unversioned website on retrieval date",
+    "sha256": null,
+    "associatedFeature": "native envelope authentication and callback acknowledgement; transport.test.ts actual SDK callback probe",
+    "note": "Direct urllib request failed with HTTP 403; web tool retrieval succeeded. No website commit or byte hash supplied by web tool."
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/custom-events-and-lifecycle",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "web-tool-retrieved",
+    "readStatus": "read-relevant-excerpts",
+    "version": "unversioned website on retrieval date",
+    "sha256": null,
+    "associatedFeature": "single lifecycle and documented custom stream limits; SpectrumOwner",
+    "note": "Direct urllib request failed with HTTP 403; web tool retrieval succeeded. No website commit or byte hash supplied by web tool."
+  },
+  {
+    "url": "https://photon.codes/docs/webhooks/verifying-signatures",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "web-tool-retrieved",
+    "readStatus": "read-relevant-excerpts",
+    "version": "unversioned website on retrieval date",
+    "sha256": null,
+    "associatedFeature": "HMAC v0 raw bytes and timestamp tolerance; webhook negative tests",
+    "note": "Direct urllib request failed with HTTP 403; web tool retrieval succeeded. No website commit or byte hash supplied by web tool."
+  },
+  {
+    "url": "https://photon.codes/docs/webhooks/events",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "web-tool-retrieved",
+    "readStatus": "read-relevant-excerpts",
+    "version": "unversioned website on retrieval date",
+    "sha256": null,
+    "associatedFeature": "native messages envelope, provider line phone, derived message IDs; native ingress and normalization",
+    "note": "Direct urllib request failed with HTTP 403; web tool retrieval succeeded. No website commit or byte hash supplied by web tool."
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/messages",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "web-tool-retrieved",
+    "readStatus": "read-relevant-excerpts",
+    "version": "unversioned website on retrieval date",
+    "sha256": null,
+    "associatedFeature": "content union and outbound filtering; inbound tests",
+    "note": "Direct urllib request failed with HTTP 403; web tool retrieval succeeded. No website commit or byte hash supplied by web tool."
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/connection-and-routing",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "web-tool-retrieved",
+    "readStatus": "read-relevant-excerpts",
+    "version": "unversioned website on retrieval date",
+    "sha256": null,
+    "associatedFeature": "explicit per-line routing; multi-line transport test",
+    "note": "Direct urllib request failed with HTTP 403; web tool retrieval succeeded. No website commit or byte hash supplied by web tool."
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/content/typing-indicators",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "web-tool-retrieved",
+    "readStatus": "read-relevant-excerpts",
+    "version": "unversioned website on retrieval date",
+    "sha256": null,
+    "associatedFeature": "typing controls; typing tests",
+    "note": "Direct urllib request failed with HTTP 403; web tool retrieval succeeded. No website commit or byte hash supplied by web tool."
+  },
+  {
+    "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/inbound-read-receipts",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "web-tool-retrieved",
+    "readStatus": "read-relevant-excerpts",
+    "version": "unversioned website on retrieval date",
+    "sha256": null,
+    "associatedFeature": "attributable read event coverage; source evidence",
+    "note": "Direct urllib request failed with HTTP 403; web tool retrieval succeeded. No website commit or byte hash supplied by web tool."
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts",
+    "localPath": "/Users/darshan/Documents/ChatGPT/grokbotxphoton/node_modules/spectrum-ts/package.json",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "installed-file-read",
+    "readStatus": "read-relevant-sections",
+    "version": "12.8.0",
+    "upstreamCommit": null,
+    "sha256": "69248e5615aecbe5844d9cc94323aa2a93391e76ac322cf82477c75df95dbcc2",
+    "associatedFeature": "public export/version inventory"
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts",
+    "localPath": "/Users/darshan/Documents/ChatGPT/grokbotxphoton/node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "installed-file-read",
+    "readStatus": "read-relevant-sections",
+    "version": "12.8.0",
+    "upstreamCommit": null,
+    "sha256": "c452a8fc2ffbab03c6e548ce13dcf28f841ec7c9331513c65975e12f869ad954",
+    "associatedFeature": "public Message/Space/Content/Spectrum declarations; compile checks"
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts",
+    "localPath": "/Users/darshan/Documents/ChatGPT/grokbotxphoton/node_modules/@spectrum-ts/core/dist/index.js",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "installed-file-read",
+    "readStatus": "read-relevant-sections",
+    "version": "12.8.0",
+    "upstreamCommit": null,
+    "sha256": "3c0aee84d815ed67827ff64016e182669528714842036f0b4fca95527a5761e6",
+    "associatedFeature": "native webhook helper acknowledgement behavior; actual SDK test"
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts",
+    "localPath": "/Users/darshan/Documents/ChatGPT/grokbotxphoton/node_modules/@spectrum-ts/core/dist/webhook.d.ts",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "installed-file-read",
+    "readStatus": "read-relevant-sections",
+    "version": "12.8.0",
+    "upstreamCommit": null,
+    "sha256": "3b19c5f255735c3fffd532392427ebaa9a84be8196287f03fc325491adb43626",
+    "associatedFeature": "public native wire schemas; no undeclared transitive import used"
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts",
+    "localPath": "/Users/darshan/Documents/ChatGPT/grokbotxphoton/node_modules/@spectrum-ts/core/dist/verify-CzNSONkt.js",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "installed-file-read",
+    "readStatus": "read-relevant-sections",
+    "version": "12.8.0",
+    "upstreamCommit": null,
+    "sha256": "bf32617510f08bd42ed80f333a1b7a45f43a78040fd691f7fe75c9327852e16b",
+    "associatedFeature": "native HMAC algorithm comparison; negative tests"
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts",
+    "localPath": "/Users/darshan/Documents/ChatGPT/grokbotxphoton/node_modules/@spectrum-ts/imessage/dist/index.d.ts",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "installed-file-read",
+    "readStatus": "read-relevant-sections",
+    "version": "12.8.0",
+    "upstreamCommit": null,
+    "sha256": "6a2278d14fd42a5603675b046fd1c8ad5c584da760e60b621f74059bf7dc3aa0",
+    "associatedFeature": "public imessage narrowing and phone routes"
+  },
+  {
+    "url": "https://github.com/photon-hq/spectrum-ts",
+    "localPath": "/Users/darshan/Documents/ChatGPT/grokbotxphoton/node_modules/@spectrum-ts/imessage/dist/index.js",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "installed-file-read",
+    "readStatus": "read-relevant-sections",
+    "version": "12.8.0",
+    "upstreamCommit": null,
+    "sha256": "2f7e13c432ad4e84f96b76eb3d59062d70d3d7e46737a7e15198a47ecda6ef24",
+    "associatedFeature": "message/poll/group filtering, synthetic identities, internal recovery; coverage limits"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/SKILL.md",
+    "localPath": "/Users/darshan/.codex/skills/spectrum/SKILL.md",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "local-skill-read",
+    "readStatus": "read",
+    "version": "skill 3.1.0 targeting spectrum-ts 12.8.0",
+    "upstreamCommit": null,
+    "sha256": "0a2f328fe6da4d202497e8bb859625de06af23cce884d1639dd1e8f3cb737de8",
+    "associatedFeature": "supplementary contract guidance; SDK declarations remain authoritative"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/providers/imessage.md",
+    "localPath": "/Users/darshan/.codex/skills/spectrum/providers/imessage.md",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "local-skill-read",
+    "readStatus": "read",
+    "version": "skill 3.1.0 targeting spectrum-ts 12.8.0",
+    "upstreamCommit": null,
+    "sha256": "10fb889be4fd62e0e3f201ab46e6b34096e8aa2f24101bdecb49197926e8c3de",
+    "associatedFeature": "supplementary contract guidance; SDK declarations remain authoritative"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/capability-semantics.md",
+    "localPath": "/Users/darshan/.codex/skills/spectrum/capability-semantics.md",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "local-skill-read",
+    "readStatus": "read",
+    "version": "skill 3.1.0 targeting spectrum-ts 12.8.0",
+    "upstreamCommit": null,
+    "sha256": "7451fec93c937bf92238e916f6e811ce4e41ddd5459a2211950b0efdda471fe5",
+    "associatedFeature": "supplementary contract guidance; SDK declarations remain authoritative"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/messages.md",
+    "localPath": "/Users/darshan/.codex/skills/spectrum/messages.md",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "local-skill-read",
+    "readStatus": "read",
+    "version": "skill 3.1.0 targeting spectrum-ts 12.8.0",
+    "upstreamCommit": null,
+    "sha256": "bb81d373222826951dcc615fe45feb4fa2d3dd8a1b08bc5114c185fb5226cb8b",
+    "associatedFeature": "supplementary contract guidance; SDK declarations remain authoritative"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/spaces-and-users.md",
+    "localPath": "/Users/darshan/.codex/skills/spectrum/spaces-and-users.md",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "local-skill-read",
+    "readStatus": "read",
+    "version": "skill 3.1.0 targeting spectrum-ts 12.8.0",
+    "upstreamCommit": null,
+    "sha256": "f68315e21670f205072ec038fd104e1248d2bf592075bdb500e6b2f1a5605ae4",
+    "associatedFeature": "supplementary contract guidance; SDK declarations remain authoritative"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/custom-events-and-lifecycle.md",
+    "localPath": "/Users/darshan/.codex/skills/spectrum/custom-events-and-lifecycle.md",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "local-skill-read",
+    "readStatus": "read",
+    "version": "skill 3.1.0 targeting spectrum-ts 12.8.0",
+    "upstreamCommit": null,
+    "sha256": "c8a0fc8ed49999b5d5e1a0bef47e6ff476708571921ef9c1bb5631b78e186ed2",
+    "associatedFeature": "supplementary contract guidance; SDK declarations remain authoritative"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/webhooks.md",
+    "localPath": "/Users/darshan/.codex/skills/spectrum/webhooks.md",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "local-skill-read",
+    "readStatus": "read",
+    "version": "skill 3.1.0 targeting spectrum-ts 12.8.0",
+    "upstreamCommit": null,
+    "sha256": "f3104ad9ab89090d26e36491b919b06dc6561f40a99ca24d586b54a2543a4a66",
+    "associatedFeature": "supplementary contract guidance; SDK declarations remain authoritative"
+  },
+  {
+    "url": "https://github.com/tecxbro/photon-skills/blob/main/skills/spectrum/custom-platforms.md",
+    "localPath": "/Users/darshan/.codex/skills/spectrum/custom-platforms.md",
+    "retrievedAt": "2026-09-09T03:27:37.743528+00:00",
+    "status": "local-skill-read",
+    "readStatus": "read",
+    "version": "skill 3.1.0 targeting spectrum-ts 12.8.0",
+    "upstreamCommit": null,
+    "sha256": "5366b357a0c9a4b9ab675577ce33e0499751909c575be6de1ba4099cab7d1f91",
+    "associatedFeature": "supplementary contract guidance; SDK declarations remain authoritative"
+  }
+]

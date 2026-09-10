@@ -1,0 +1,44 @@
+
+> grok-bot-cli@0.2.2 photon:check
+> npm run check --workspace=@grokbot/photon-features
+
+
+> @grokbot/photon-features@0.1.0 check
+> npm run build && node scripts/generate-contracts.mjs --check
+
+
+> @grokbot/photon-features@0.1.0 build
+> tsc -p tsconfig.json
+
+src/adapters/transport/snapshot.ts(10,59): error TS2551: Property 'platform' does not exist on type 'Space<unknown>'. Did you mean '__platform'?
+src/adapters/transport/snapshot.ts(11,28): error TS2551: Property 'platform' does not exist on type 'Space<unknown>'. Did you mean '__platform'?
+src/features/media/guarded-fetch.ts(57,7): error TS2322: Type 'ReadableStream<any>' is not assignable to type 'ReadableStream<unknown>'.
+  The types returned by 'getReader(...).read(...)' are incompatible between these types.
+    Type 'Promise<import("stream/web").ReadableStreamReadResult<T>>' is not assignable to type 'Promise<ReadableStreamReadResult<T>>'.
+      Type 'import("stream/web").ReadableStreamReadResult<T>' is not assignable to type 'ReadableStreamReadResult<T>'.
+        Type 'ReadableStreamReadDoneResult<T>' is not assignable to type 'ReadableStreamReadResult<T>'.
+          Type 'import("stream/web").ReadableStreamReadDoneResult<T>' is not assignable to type 'ReadableStreamReadDoneResult<T>'.
+            Property 'value' is optional in type 'ReadableStreamReadDoneResult<T>' but required in type 'ReadableStreamReadDoneResult<T>'.
+src/features/media/guarded-fetch.ts(80,27): error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string | URL'.
+  Type 'undefined' is not assignable to type 'string | URL'.
+src/features/media/safety.ts(90,15): error TS18046: 'next.value' is of type 'unknown'.
+src/features/media/safety.ts(92,37): error TS18046: 'next.value' is of type 'unknown'.
+src/features/media/safety.ts(94,21): error TS18046: 'next.value' is of type 'unknown'.
+src/features/text-messages/composition.ts(35,22): error TS2556: A spread argument must either have a tuple type or be passed to a rest parameter.
+src/features/text-messages/composition.ts(48,9): error TS2322: Type '{ type: "text"; text: string; } | { type: "markdown"; markdown: string; } | { type: "streamText"; stream: () => AsyncIterable<string>; format?: "markdown" | "plain" | undefined; } | ... 20 more ... | { ...; }' is not assignable to type 'ContentInput'.
+  Type '{ type: "text"; text: string; }' is not assignable to type 'ContentInput'.
+src/features/text-messages/sdk.ts(15,21): error TS2551: Property 'platform' does not exist on type 'Space<unknown>'. Did you mean '__platform'?
+npm error Lifecycle script `build` failed with error:
+npm error code 2
+npm error path /Users/darshan/Documents/ChatGPT/grokbotxphoton/packages/photon-features
+npm error workspace @grokbot/photon-features@0.1.0
+npm error location /Users/darshan/Documents/ChatGPT/grokbotxphoton/packages/photon-features
+npm error command failed
+npm error command sh -c tsc -p tsconfig.json
+npm error Lifecycle script `check` failed with error:
+npm error code 2
+npm error path /Users/darshan/Documents/ChatGPT/grokbotxphoton/packages/photon-features
+npm error workspace @grokbot/photon-features@0.1.0
+npm error location /Users/darshan/Documents/ChatGPT/grokbotxphoton/packages/photon-features
+npm error command failed
+npm error command sh -c npm run build && node scripts/generate-contracts.mjs --check

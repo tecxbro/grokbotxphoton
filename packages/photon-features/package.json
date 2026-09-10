@@ -1,0 +1,55 @@
+{
+  "name": "@grokbot/photon-features",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.13.0 <25"
+  },
+  "bin": {
+    "grok-photon": "dist/src/cli/main.js"
+  },
+  "exports": {
+    ".": "./dist/src/index.js",
+    "./contracts": "./dist/src/contracts/index.js",
+    "./state": "./dist/src/state/index.js",
+    "./host": "./dist/src/host/index.js",
+    "./registry": "./dist/src/registry/index.js",
+    "./foundation": "./dist/src/host/main.js",
+    "./feature": "./dist/src/contracts/feature.js",
+    "./services": "./dist/src/contracts/services.js",
+    "./integration": "./dist/src/integration/index.js"
+  },
+  "files": [
+    "dist/src",
+    "schemas",
+    "src/state/migrations",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/tests/lanes/wt-00/*.test.js",
+    "test:lane": "npm run build && node --test",
+    "generate": "npm run build && node ../../scripts/generate-contracts.mjs",
+    "check": "npm run build && node ../../scripts/generate-contracts.mjs --check",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test:foundation": "npm run build && node --test dist/tests/foundation/*.test.js"
+  },
+  "dependencies": {
+    "spectrum-ts": "12.8.0",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "24.10.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tecxbro/grokbotxphoton.git"
+  },
+  "homepage": "https://github.com/tecxbro/grokbotxphoton#readme",
+  "bugs": {
+    "url": "https://github.com/tecxbro/grokbotxphoton/issues"
+  },
+  "license": "MIT"
+}

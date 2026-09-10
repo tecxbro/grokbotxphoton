@@ -1,0 +1,88 @@
+
+> grok-bot-cli@0.2.2 photon:test
+> npm run test --workspace=@grokbot/photon-features
+
+
+> @grokbot/photon-features@0.1.0 test
+> npm run build && node --test dist/tests/lanes/wt-00/*.test.js
+
+
+> @grokbot/photon-features@0.1.0 build
+> tsc -p tsconfig.json
+
+(node:35422) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ typing.begin: valid, missing required argument, unknown envelope/argument (18.038083ms)
+✔ typing.end: valid, missing required argument, unknown envelope/argument (12.047292ms)
+✔ text.send: valid, missing required argument, unknown envelope/argument (3.809375ms)
+✔ text.stream: valid, missing required argument, unknown envelope/argument (5.992292ms)
+✔ markdown.send: valid, missing required argument, unknown envelope/argument (2.709542ms)
+✔ link.send: valid, missing required argument, unknown envelope/argument (3.289458ms)
+✔ content.group: valid, missing required argument, unknown envelope/argument (4.193417ms)
+✔ content.compose: valid, missing required argument, unknown envelope/argument (3.482459ms)
+✔ message.get: valid, missing required argument, unknown envelope/argument (1.508666ms)
+✔ message.reply: valid, missing required argument, unknown envelope/argument (2.115125ms)
+✔ message.react: valid, missing required argument, unknown envelope/argument (0.79ms)
+✔ reaction.remove: valid, missing required argument, unknown envelope/argument (1.396167ms)
+✔ message.edit: valid, missing required argument, unknown envelope/argument (2.231209ms)
+✔ message.unsend: valid, missing required argument, unknown envelope/argument (0.637209ms)
+✔ message.markRead: valid, missing required argument, unknown envelope/argument (1.775792ms)
+✔ attachment.send: valid, missing required argument, unknown envelope/argument (2.238333ms)
+✔ attachment.fetch: valid, missing required argument, unknown envelope/argument (1.297333ms)
+✔ voice.send: valid, missing required argument, unknown envelope/argument (4.240209ms)
+✔ contact.send: valid, missing required argument, unknown envelope/argument (1.56075ms)
+✔ poll.create: valid, missing required argument, unknown envelope/argument (1.705833ms)
+✔ poll.get: valid, missing required argument, unknown envelope/argument (4.53025ms)
+✔ poll.vote: valid, missing required argument, unknown envelope/argument (1.468375ms)
+✔ poll.unvote: valid, missing required argument, unknown envelope/argument (1.338833ms)
+✔ poll.addOption: valid, missing required argument, unknown envelope/argument (0.769584ms)
+✔ app.send: valid, missing required argument, unknown envelope/argument (0.93325ms)
+✔ app.sendCustomized: valid, missing required argument, unknown envelope/argument (6.028292ms)
+✔ app.update: valid, missing required argument, unknown envelope/argument (3.923833ms)
+✔ space.get: valid, missing required argument, unknown envelope/argument (0.815041ms)
+✔ space.create: valid, missing required argument, unknown envelope/argument (1.437ms)
+✔ space.getName: valid, missing required argument, unknown envelope/argument (1.651667ms)
+✔ space.rename: valid, missing required argument, unknown envelope/argument (0.820042ms)
+✔ space.getMembers: valid, missing required argument, unknown envelope/argument (0.568458ms)
+✔ space.addMembers: valid, missing required argument, unknown envelope/argument (0.955666ms)
+✔ space.removeMembers: valid, missing required argument, unknown envelope/argument (5.118ms)
+✔ space.leave: valid, missing required argument, unknown envelope/argument (0.8705ms)
+✔ space.getAvatar: valid, missing required argument, unknown envelope/argument (0.599667ms)
+✔ space.setAvatar: valid, missing required argument, unknown envelope/argument (0.759ms)
+✔ space.clearAvatar: valid, missing required argument, unknown envelope/argument (2.147166ms)
+✔ space.setBackground: valid, missing required argument, unknown envelope/argument (1.4655ms)
+✔ space.clearBackground: valid, missing required argument, unknown envelope/argument (1.375125ms)
+✔ account.shareContact: valid, missing required argument, unknown envelope/argument (2.290417ms)
+✔ effect.send: valid, missing required argument, unknown envelope/argument (1.836792ms)
+✔ metadata.get: valid, missing required argument, unknown envelope/argument (2.288708ms)
+✔ custom.send: valid, missing required argument, unknown envelope/argument (0.952334ms)
+✔ reference round trip and all scope dimensions (1.030542ms)
+✔ content rejects executable input, raw paths, wrapper nesting and overflow (1.283209ms)
+✔ context, incoming event, void result and capability dimensions (2.282958ms)
+✔ registry ownership is complete and production registry fails closed (1.40925ms)
+✔ every resource kind round trips and related parent identifiers are checked (3.711666ms)
+✔ fencing and lifecycle helpers distinguish cancellation and provider evidence (0.611833ms)
+✔ production source has no imports of test fixtures (30.594958ms)
+(node:35423) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ public SDK imports load without client construction (0.425292ms)
+✔ host activation, ordered recovery, singleton start and shutdown (1.930792ms)
+✔ failed recovery cleans up; disabled host never starts client (0.193125ms)
+(node:35424) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ woken task retrieves actual durable events, claims, heartbeats, acknowledges (10.801458ms)
+✔ expired leases fence old acknowledgements; auth, revocation and generation checks (5.073416ms)
+✔ Unix socket authenticates separately from opaque contextId and refuses unsafe directory (28.794791ms)
+✔ work query cannot starve behind acknowledged rows and context expiry denies access (24.746666ms)
+(node:35425) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ transaction rollback across inbox and handoff, CAS, reopen durability (18.988917ms)
+✔ abrupt process exit rolls back uncommitted writes but preserves committed writes (123.653583ms)
+ℹ tests 60
+ℹ suites 0
+ℹ pass 60
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 701.852792

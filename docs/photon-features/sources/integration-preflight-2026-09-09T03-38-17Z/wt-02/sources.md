@@ -1,0 +1,18 @@
+# WT-02 source record
+
+Exact URLs, timestamps, versions, local file paths, byte hashes where available, retrieval failures and feature/test associations are in [sources.json](./sources.json). The implementation uses installed `spectrum-ts`, `@spectrum-ts/core`, and `@spectrum-ts/imessage` 12.8.0. Upstream commit IDs for those installed packages were not supplied; no GitHub-main checkout is treated as the pin.
+
+Each supplied Photon website URL and its `.md` alternative was attempted separately. Direct HTTP requests received 403 responses. These are access failures, **not evidence that pages are missing**. The browser-backed web tool successfully read the relevant regular pages listed separately in the JSON. Several `.md` attempts also encountered web-tool URL-safety failures. Retrieved supplementary GitHub pages that were not read remain labelled `retrieved-not-yet-read`. Their contents are not claimed as implementation evidence. Local skill reads have separate file hashes.
+
+| Feature / test | Primary source | Finding |
+| --- | --- | --- |
+| Public imports and routing | Installed declarations; [connection and routing](https://photon.codes/docs/spectrum-ts/providers/imessage/connection-and-routing) | `Spectrum`, `imessage.config`, `imessage(app).space.get(id, {phone})`, public `Space.startTyping/stopTyping`, and `app.stop` compile against the pin. |
+| Native ingress | [SDK webhooks](https://photon.codes/docs/spectrum-ts/webhooks), [native event wire format](https://photon.codes/docs/webhooks/events), [signature verification](https://photon.codes/docs/webhooks/verifying-signatures) | The pinned helper does not await its callback. The lane instead authenticates the documented native JSON wire format and awaits its own durable accept callback. `transport.test.ts` proves helper behavior with the actual pinned SDK and an offline custom provider. |
+| Normalization/classification | [Messages](https://photon.codes/docs/spectrum-ts/messages); installed Content declarations and iMessage mapping code | Preserve typed content and target identities; operational content bypasses conversational work. Ambiguous or unrepresentable content retains a private durable capture. |
+| Recovery and event coverage | [Lifecycle](https://photon.codes/docs/spectrum-ts/custom-events-and-lifecycle), [inbound reads](https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/inbound-read-receipts); installed iMessage mapping code | SDK internally reconnects/catches up. Its public message surface does not expose a durable host resume cursor, raw sequence, or connection-state callback. Some native event arms are consumed without a public message. |
+| Typing | [Typing](https://photon.codes/docs/spectrum-ts/content/typing-indicators); installed Space declarations | Lease control uses public methods only. Scheduling/completion cannot prove recipient-visible typing. |
+| Grok wake | F0 `ExistingGrokTaskHandoff`, `WakeAdapter`, and `runtime-contract.md` | Binding is injected. No deployment endpoint or credential availability is inferred. Offline notification acceptance does not establish actual Grok resumption. |
+
+Website examples contain older or inconsistent details (including `iMessage` capitalization in one webhook example). The pinned public platform ID is `imessage`; this ingress explicitly accepts that ID. It does not silently alias arbitrary platform strings. The supplementary webhook advice to deduplicate by message ID applies to actual event-message IDs, not the target message referenced by votes or receipts.
+
+Source inspection of installed implementation is used to identify limitations, never to import private modules, expose native client fields, or call unapproved advanced extensions.

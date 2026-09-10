@@ -1,0 +1,14 @@
+# Change requests
+
+CR-04-1 (WT-01 / integration): Frozen stagedMedia records have no consumer collection or metadata field; public UnitOfWork has no exhaustive reference listing. Provide a synchronous authoritative no-consumer check, held in the same transaction as tombstoning, and admission-time retention for every consumer. Default public cleanup must retain resources until this hook is wired. Immutable staged metadata files avoid use of private checkpoints.
+
+CR-04-2 (verification owner): verify-lane.mjs currently rejects every lane other than wt-00 with LANE_NOT_ASSEMBLED. Direct checks will be recorded; do not change shared verifier in WT-04. verify-docs.mjs hard-codes WT-00 source prefixes, acceptance/evidence and full ownership inventory; the user authorized a narrower exact file set and lane-local references.
+
+CR-04-3 (shared fixture owner): tests/fixtures/runtime-services.ts resolveResource compares JSON.stringify(value) to JSON.stringify(ref), rejecting structurally identical references with different key insertion order as RESOURCE_NOT_FOUND. Owned integration tests use a structural deep-equality resolver against the same authoritative reference map; the shared fixture is unchanged. This is test-adapter evidence, not production resolver evidence.
+
+Observed verification outputs: shell Node 23.11.0 returns NODE_24_13_REQUIRED. Checksum-verified local Node 24.13.0 returns LANE_NOT_ASSEMBLED for `node scripts/verify-lane.mjs wt-04`. Independent `verify-worktree.mjs wt-04` succeeds against the actual registered relocated path. The user-supplied F0 base is independently verified from the tag and branch starting reflog; the shared verifier reports the earlier foundation startCommit separately.
+
+
+CR-04-4 (verification owner): `verify-ownership.mjs wt-04` returns `UNOWNED_PATH:.gitignore` because its comparison is foundation.startCommit (5c342f5e), which includes the already committed WT-00 foundation changes. WT-04 work is independently checked against photon-v3-f0 (ee2f8576), excluding the four hash-preserved pre-existing relocation files. `verify-docs.mjs wt-04` returns `FILE_INVENTORY_DRIFT`: it requires the older full ownership inventory, whereas the user explicitly authorized nine implementation files and four test filenames. Neither shared checker was changed.
+
+Resolved test execution limitations: relocated isolated build output caused ENOENT fixture/module paths in inherited foundation tests; rerunning from the normal pinned build output fixed those lookups. An absolute TMPDIR inside the long relocated worktree exceeded macOS Unix-socket path length (listen EINVAL) in one inherited host test. Running that suite with `TMPDIR=.photon-local/t` preserved WT-04 isolation and passed all 60 tests. These are not remaining code blockers. One owned concurrency-test scheduling race was fixed with an explicit stream-open barrier and the complete lane suite rerun.

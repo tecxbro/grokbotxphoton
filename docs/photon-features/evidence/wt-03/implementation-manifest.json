@@ -1,0 +1,18 @@
+{
+  "packages/photon-features/src/features/text-messages/actions.ts": "f0a56dbe9fb20213bf86412001b6140e0225e926cdc575e447ab16e52d06f369",
+  "packages/photon-features/src/features/text-messages/composition.ts": "63c927ab921bf0a91e0f0e74a449fbc2fe56b519864de3ed7a98f21abc1ef58f",
+  "packages/photon-features/src/features/text-messages/errors.ts": "17efabf4c4e06a3754057d56baf7d4319a2156d85e9689b9284f7213e38ef919",
+  "packages/photon-features/src/features/text-messages/identity.ts": "fb54113ca48edbfc05c5466dfd5c05d4621e20e9d6e1efa60eae177f250bdc45",
+  "packages/photon-features/src/features/text-messages/journal.ts": "2e2cfc666e368260bbaf1f31e3b531504ef2903a0d5803b22692191a0861e702",
+  "packages/photon-features/src/features/text-messages/module.ts": "8ca827628b5c03ba703fdb7b4a7f40975d8967ea610e1d7ad5e1b4832b737a87",
+  "packages/photon-features/src/features/text-messages/sdk.ts": "20805b18c3a9dd2ac55f19e34a3f6fe2d1aef937bf0f34d84cd5f9762d3171d9",
+  "packages/photon-features/src/features/text-messages/streaming.ts": "27a4d4dd16e1954a0e260a55fb468fdfe25b621b1b5e4591ba90364a0ac11eb4",
+  "packages/photon-features/src/features/text-messages/targets.ts": "d4053f866861f9288d2c648a02e4cc2bbba9beeea4c605c636401c65b59f3f13",
+  "packages/photon-features/src/features/text-messages/voice-policy.ts": "2510ca1fdaa701078d4d36d05a694ba8d245114bf7dff67b865577083ac10766",
+  "packages/photon-features/tests/lanes/wt-03/fixture.ts": "cf15b1f92738fe4509caedcdd573876f8456e3a8550d573b25d266063deb3088",
+  "packages/photon-features/tests/lanes/wt-03/operations.test.ts": "12b56f1c2dd065a945ac50152f92083f9f5072109f137586712e0506bf3ead90",
+  "packages/photon-features/tests/lanes/wt-03/recovery.test.ts": "45ff8ed861ce31b71766908d4942187c9bcd0fc00be4df4b137f23df9dd63514",
+  "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts": "f7f1d1a34206cf00673aa4032e627e3639c4e5d8fa18b31c69abd76254c555e7",
+  "packages/photon-features/tests/lanes/wt-03/streaming.test.ts": "f3c8ecee3ede4608dff5189b127c2492744d5d8c9ff3e3aa7acd622982653ec6",
+  "packages/photon-features/examples/wt-03/register.ts": "e201b1b452189dfca3336493e990f54e476918840a0c5ad7fa07d3797f75086a"
+}

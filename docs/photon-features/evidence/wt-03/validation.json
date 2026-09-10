@@ -1,0 +1,30 @@
+[
+  {
+    "name": "lane-tests",
+    "command": "npm run test:lane -- dist/tests/lanes/wt-03/*.test.js",
+    "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt03-validation-hv3v1pfd/packages/photon-features",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:38:04.813553+00:00"
+  },
+  {
+    "name": "foundation-tests",
+    "command": "npm run photon:test",
+    "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt03-validation-hv3v1pfd",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:38:08.232090+00:00"
+  },
+  {
+    "name": "schema-check",
+    "command": "npm run photon:check",
+    "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt03-validation-hv3v1pfd",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:38:10.272912+00:00"
+  },
+  {
+    "name": "existing-tests",
+    "command": "npm test",
+    "cwd": "/var/folders/mw/7sj15dn14z5g9zdvmmhzf1280000gn/T/wt03-validation-hv3v1pfd",
+    "exitCode": 0,
+    "observedAt": "2026-09-09T03:38:10.558056+00:00"
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "valid": {
+    "version": 1,
+    "idempotencyKey": "request-app.sendCustomized",
+    "contextId": "context-1",
+    "operation": "app.sendCustomized",
+    "arguments": {
+      "space": {
+        "version": 1,
+        "kind": "space",
+        "id": "space-1",
+        "scope": {
+          "projectId": "project-1",
+          "provider": "imessage",
+          "accountId": "account-1",
+          "lineId": "line-1",
+          "spaceId": "space-1"
+        }
+      },
+      "templateId": "template-1",
+      "url": "https://example.com/app",
+      "layout": {
+        "caption": "update"
+      }
+    }
+  },
+  "rejected": {
+    "version": 1,
+    "idempotencyKey": "request-app.sendCustomized",
+    "contextId": "context-1",
+    "operation": "app.sendCustomized",
+    "arguments": {
+      "templateId": "template-1",
+      "url": "https://example.com/app",
+      "layout": {
+        "caption": "update"
+      }
+    }
+  }
+}

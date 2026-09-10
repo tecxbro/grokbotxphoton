@@ -1,0 +1,15 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./build",
+    "noEmitOnError": true
+  },
+  "include": [
+    "../../../src/index.ts",
+    "../../../src/features/native/**/*.ts",
+    "../../fixtures/harness.ts",
+    "./*.ts",
+    "../../../examples/wt-07/**/*.ts"
+  ],
+  "exclude": ["./build"]
+}
