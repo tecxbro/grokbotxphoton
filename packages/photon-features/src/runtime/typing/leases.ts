@@ -289,6 +289,12 @@ export class TypingLeases {
       if (ticket) this.end(ticket);
     }
   }
+  /** Host/fake clock tick expires leases without replaying an old start. */
+  expire(): void {
+    for (const state of this.conversations.values()) {
+      this.desired(state); this.schedule(state); this.dispatch(state);
+    }
+  }
   evidence() {
     return {
       pending: [...this.conversations.values()].filter((s) => s.running).length,
@@ -298,3 +304,14 @@ export class TypingLeases {
     };
   }
 }
+
+/** Acquire a transient ticket; undefined explicitly means no start was scheduled. */
+export function acquireTypingLease(leases: TypingLeases, ...args: Parameters<TypingLeases["begin"]>) {
+  return leases.begin(...args);
+}
+/** Token/generation checks prevent an old turn from stopping a newer lease. */
+export function releaseTypingLease(leases: TypingLeases, ticket: Parameters<TypingLeases["end"]>[0]): void {
+  leases.end(ticket);
+}
+/** Explicit scheduler entrypoint; expiring input never becomes a persistent job. */
+export function expireLeases(leases: TypingLeases): void { leases.expire(); }

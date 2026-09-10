@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "packages/photon-features/src/features/polls/identity.ts",
+      "purpose": "WT-05 identity",
+      "symbols": [
+        "resolvePollIdentity",
+        "resolveOptionIdentity"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/polls/module.ts",
+      "purpose": "WT-05 module",
+      "symbols": [
+        "createFeatureModule",
+        "pollFeatureAvailability"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/polls/operations.ts",
+      "purpose": "WT-05 operations",
+      "symbols": [
+        "executePollOperation"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/polls/reconciliation.ts",
+      "purpose": "WT-05 reconciliation",
+      "symbols": [
+        "reconcilePollState",
+        "retryUnresolvedPollEvents"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/polls/reducer.ts",
+      "purpose": "WT-05 reducer",
+      "symbols": [
+        "applyPollEvent"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/polls/sdk.ts",
+      "purpose": "WT-05 sdk",
+      "symbols": [
+        "mapPollOperation"
+      ]
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-05/integration-contract.ts",
+      "purpose": "Inherited compatible artifact; listed for full ownership inventory, unchanged under this assignment",
+      "symbols": [],
+      "editStatus": "preserved"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-05/integration.test.ts",
+      "purpose": "WT-05 integration.test",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-05/operations.test.ts",
+      "purpose": "Inherited compatible artifact; listed for full ownership inventory, unchanged under this assignment",
+      "symbols": [],
+      "editStatus": "preserved"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-05/reducer.test.ts",
+      "purpose": "Inherited compatible artifact; listed for full ownership inventory, unchanged under this assignment",
+      "symbols": [],
+      "editStatus": "preserved"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-05/support.ts",
+      "purpose": "Inherited compatible artifact; listed for full ownership inventory, unchanged under this assignment",
+      "symbols": [],
+      "editStatus": "preserved"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-05/tsconfig.json",
+      "purpose": "Inherited compatible artifact; listed for full ownership inventory, unchanged under this assignment",
+      "symbols": [],
+      "editStatus": "preserved"
+    },
+    {
+      "path": "docs/worktrees/wt-05/AGENTS.md",
+      "purpose": "WT-05 AGENTS",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-05/README.md",
+      "purpose": "WT-05 README",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-05/ARCHITECTURE.md",
+      "purpose": "WT-05 ARCHITECTURE",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-05/WORKLOG.md",
+      "purpose": "WT-05 WORKLOG",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-05/SOURCES.md",
+      "purpose": "WT-05 SOURCES",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-05/source-lock.json",
+      "purpose": "WT-05 source-lock",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-05/FILES.json",
+      "purpose": "WT-05 FILES",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-05/ACCEPTANCE.md",
+      "purpose": "WT-05 ACCEPTANCE",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-05/TEST-EVIDENCE.md",
+      "purpose": "WT-05 TEST-EVIDENCE",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-05/HANDOFF.md",
+      "purpose": "WT-05 HANDOFF",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-05/CHANGE-REQUESTS.md",
+      "purpose": "WT-05 CHANGE-REQUESTS",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-05/unit.test.ts",
+      "purpose": "WT-05 unit.test",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-05/sdk-contract.test.ts",
+      "purpose": "WT-05 sdk-contract.test",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-05/regression.test.ts",
+      "purpose": "WT-05 regression.test",
+      "symbols": []
+    }
+  ],
+  "referenceSnapshots": [
+    "docs/worktrees/wt-05/references/official-_docs_llms.txt",
+    "docs/worktrees/wt-05/references/official-_docs_spectrum-ts_content_polls.md",
+    "docs/worktrees/wt-05/references/official-_docs_spectrum-ts_messages.md",
+    "docs/worktrees/wt-05/references/official-_docs_advanced-kits_imessage_polls.md",
+    "docs/worktrees/wt-05/references/official-_docs_advanced-kits_imessage_events.md",
+    "docs/worktrees/wt-05/references/official-_docs_advanced-kits_imessage_error-handling.md",
+    "docs/worktrees/wt-05/references/official-_docs_webhooks_events.md",
+    "docs/worktrees/wt-05/references/official-_docs_webhooks_delivery.md",
+    "docs/worktrees/wt-05/references/official-_docs_best-practices_recovery-and-state.md",
+    "docs/worktrees/wt-05/references/skill-_tecxbro_photon-skills_main_skills_spectrum_SKILL.md",
+    "docs/worktrees/wt-05/references/skill-_tecxbro_photon-skills_main_skills_imessage_SKILL.md",
+    "docs/worktrees/wt-05/references/skill-_tecxbro_photon-skills_main_skills_spectrum_content_polls-groups-and-custom.md",
+    "docs/worktrees/wt-05/references/skill-_tecxbro_photon-skills_main_skills_imessage_advanced_polls.md",
+    "docs/worktrees/wt-05/references/skill-_tecxbro_photon-skills_main_skills_imessage_advanced_events.md",
+    "docs/worktrees/wt-05/references/skill-_tecxbro_photon-skills_main_skills_spectrum_capability-semantics.md"
+  ]
+}

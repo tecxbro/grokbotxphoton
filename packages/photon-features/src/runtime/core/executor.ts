@@ -1,8 +1,17 @@
 import { randomUUID } from "node:crypto";
 import {
   assertTransition,
+  capabilitySchema,
+  type Action,
+  type Capability,
   type OperationResult,
 } from "../../contracts/index.js";
+import type { ExecutionServices as PublicExecutionServices } from "../../contracts/services.js";
+import type {
+  MediaStager,
+  RegisteredStreams,
+  ResourceResolver,
+} from "../../contracts/ports.js";
 import type { Claim } from "../../state/index.js";
 import { ExecutionClaims } from "./claims.js";
 import { servicesFor, type FeatureDependencies } from "./feature-services.js";
@@ -18,7 +27,199 @@ import {
 } from "./outcomes.js";
 import { ChildExecution } from "./children.js";
 import { withDeadline } from "./cancellation.js";
+import { createExecutionServices } from "./execution-services.js";
 export type { ExecutionBinding } from "./outcomes.js";
+export interface ExecuteOperationOptions {
+  claims: ExecutionClaims;
+  requestId: string;
+  handler(
+    action: Action,
+    services: PublicExecutionServices,
+  ): Promise<OperationResult>;
+  capability(context: PublicExecutionServices["context"]): Capability;
+  resources: ResourceResolver;
+  media: MediaStager;
+  streams: RegisteredStreams;
+  leaseMs?: number;
+  deadlineMs?: number;
+  afterCommit?(pointer: {
+    handoffId: string;
+    taskId: string;
+    generation: number;
+  }): void;
+}
+
+/** Execute one reserved operation exclusively through the frozen f0-services-2 boundary. */
+export async function executeOperation(
+  options: ExecuteOperationOptions,
+): Promise<OperationResult | null> {
+  const leaseMs = options.leaseMs ?? 30000;
+  const deadlineMs = options.deadlineMs ?? 30000;
+  const claim = options.claims.acquire(
+    options.requestId,
+    randomUUID(),
+    leaseMs,
+  );
+  if (!claim) return null;
+  const controller = new AbortController();
+  let heartbeat: ReturnType<typeof setInterval> | undefined;
+  try {
+    const start = options.claims.store.transaction((tx) => {
+      const { row, context } = options.claims.writable(
+        tx,
+        options.requestId,
+        claim,
+      );
+      const capability = capabilitySchema.parse(options.capability(context));
+      if (
+        capability.operation !== row.action.operation ||
+        capability.implementation !== "implemented"
+      )
+        fault("UNIMPLEMENTED");
+      if (capability.providerSupport === "unsupported") fault("UNSUPPORTED");
+      if (
+        capability.providerSupport === "unknown" ||
+        capability.availability.account !== "available" ||
+        capability.availability.conversation !== "available"
+      )
+        fault("UNAVAILABLE");
+      return row;
+    });
+    heartbeat = setInterval(
+      () => {
+        try {
+          options.claims.heartbeat(options.requestId, claim, leaseMs);
+        } catch {
+          controller.abort();
+        }
+      },
+      Math.max(250, Math.floor(leaseMs / 3)),
+    );
+    heartbeat.unref();
+    const services = createExecutionServices({
+      claims: options.claims,
+      requestId: options.requestId,
+      claim,
+      controller,
+      deadlineMs,
+      resources: options.resources,
+      media: options.media,
+      streams: options.streams,
+      afterCommit: options.afterCommit,
+    });
+    const result = cleanResult(await options.handler(start.action, services));
+    return options.claims.store.transaction((tx) => {
+      const { row } = options.claims.writable(
+        tx,
+        options.requestId,
+        claim,
+      );
+      if (
+        result.status === "provider-accepted" &&
+        !row.result.observations.some(
+          (observation) => observation.kind === "accepted",
+        )
+      )
+        fault("UNKNOWN_OUTCOME");
+      if (
+        result.status === "observed-delivered" &&
+        !row.result.observations.some(
+          (observation) =>
+            observation.kind === "delivered" &&
+            observation.source !== "sdk-return",
+        )
+      )
+        fault("UNKNOWN_OUTCOME");
+      if (
+        result.status === "observed-read" &&
+        !row.result.observations.some(
+          (observation) =>
+            observation.kind === "read" &&
+            observation.source !== "sdk-return",
+        )
+      )
+        fault("UNKNOWN_OUTCOME");
+      if (
+        result.status === "observed-delivered" ||
+        result.status === "observed-read"
+      ) {
+        assertTransition(row.result.status, "executor-completed");
+        assertTransition("executor-completed", result.status);
+      } else {
+        assertTransition(row.result.status, result.status);
+      }
+      row.result = {
+        ...result,
+        requestId: options.requestId,
+        revision: row.revision,
+        updatedAt: options.claims.contexts.clock.now(),
+        references: row.result.references,
+        observations: row.result.observations,
+      };
+      row.claim = null;
+      saveOutbox(tx, row, options.claims.contexts.clock.now());
+      return row.result;
+    });
+  } catch (error) {
+    return options.claims.store.transaction((tx) => {
+      const row = tx.get("outbox", options.requestId);
+      if (!row) return null;
+      if (row.result.status === "unknown-outcome") return row.result;
+      try {
+        options.claims.held(tx, options.requestId, claim);
+      } catch {
+        return null;
+      }
+      const uncertain = [...scanAll(options.claims.store, "attempts")].some(
+        (attempt) =>
+          attempt.requestId === options.requestId &&
+          attempt.claim.fence === claim.fence &&
+          (attempt.phase === "dispatching" || attempt.phase === "unknown"),
+      );
+      if (uncertain) {
+        row.result.status = "unknown-outcome";
+        row.result.error = {
+          code: "UNKNOWN_OUTCOME",
+          message: "UNKNOWN_OUTCOME",
+          retry: "reconcile-first",
+        };
+      } else {
+        const published = publicError(error);
+        if (published.code === "UNKNOWN_OUTCOME") {
+          row.result.status = "unknown-outcome";
+          row.result.error = {
+            code: "UNKNOWN_OUTCOME",
+            message: "UNKNOWN_OUTCOME",
+            retry: "reconcile-first",
+          };
+          row.claim = null;
+          saveOutbox(tx, row, options.claims.contexts.clock.now());
+          return row.result;
+        }
+        const currentAuthorityFailure = [
+          "CANCELLED",
+          "CONTEXT_REVOKED",
+          "CONTEXT_EXPIRED",
+          "STALE_GENERATION",
+          "FORBIDDEN",
+        ].includes(published.code);
+        row.result.status =
+          published.code === "CANCELLED" &&
+          row.result.references.length === 0
+            ? "cancelled"
+            : "blocked";
+        row.result.error = currentAuthorityFailure
+          ? published
+          : { ...published, retry: "safe-before-dispatch" };
+      }
+      row.claim = null;
+      saveOutbox(tx, row, options.claims.contexts.clock.now());
+      return row.result;
+    });
+  } finally {
+    if (heartbeat) clearInterval(heartbeat);
+  }
+}
 export class DurableExecutor {
   private readonly running = new Map<string, AbortController>();
   constructor(

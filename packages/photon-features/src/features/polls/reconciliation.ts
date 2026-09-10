@@ -31,3 +31,41 @@ function reconcileInTransaction(tx: Transaction, scope: Scope, reducer: EventRed
     }
     return { resolved, unresolved };
 }
+
+import type { UnitOfWork } from "../../contracts/store.js";
+import type { TrustedContext } from "../../contracts/context.js";
+import type { IncomingEvent } from "../../contracts/events.js";
+import { resolvePollIdentity, type PollRef } from "./identity.js";
+import { applyPollEvent, type PollEventPolicy } from "./reducer.js";
+
+/** Data from a shared-owner authoritative lookup, never derived from labels or caller choice keys.
+ * Full options are required so a partial/stale snapshot cannot remove known identities.
+ * This snapshot registers metadata only, not provider vote state or delivery evidence.
+ */
+export interface NativePollIdentitySnapshot {
+  poll: PollRef;
+  nativePollGuid: string;
+  options: readonly {nativeId: string; label: string}[];
+}
+
+/** Registration only: network lookup must finish before opening this UoW.
+ * The host rechecks active claim and task generation around lookup and transaction.
+ * Without a snapshot F0 cannot do a native lookup; return an explicit shared blocker.
+ */
+export function reconcilePollState(unit: UnitOfWork, context: Readonly<TrustedContext>,
+  snapshot?: NativePollIdentitySnapshot) {
+  if (!snapshot) return { status: "blocked" as const, blockerId: "wt-05-advanced-polls" };
+  const poll = resolvePollIdentity(unit, snapshot.poll, context);
+  const options = registerNativeOptions(unit, { ...snapshot, poll: poll.reference });
+  return { status: "registered" as const, options };
+}
+
+/** Reprocess a bounded batch loaded from the shared durable inbox after identity registration.
+ * This function does not claim to persist unresolved events: caller must retain each unresolved
+ * disposition and atomically acknowledge successful ones. Exceptions roll back the whole batch.
+ */
+export function retryUnresolvedPollEvents(events: readonly IncomingEvent[], unit: UnitOfWork,
+  context: Readonly<TrustedContext>, policy: PollEventPolicy) {
+  if (events.length > 100) throw new Error("POLL_RECONCILIATION_BATCH_TOO_LARGE");
+  return events.map(event => ({ eventId: event.eventId, ...applyPollEvent(event, unit, context, policy) }));
+}

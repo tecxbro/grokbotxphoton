@@ -113,3 +113,40 @@ test("real Spectrum runtime preserves reaction handles, void controls, buffering
     await app.stop();
   }
 });
+
+test("public F0 factory registers all thirteen owned handlers without starting the provider", async () => {
+  const { createFeatureModule, ownedOperations } = await import(
+    "../../../src/features/text-messages/module.js"
+  );
+  const { registerFeatureModules } = await import(
+    "../../../src/registry/modules.js"
+  );
+  const { scope } = await import("../../fixtures/runtime-services.js");
+  let starts = 0;
+  const module = createFeatureModule({
+    provider: {
+      provider: "imessage",
+      scope,
+      ready: () => true,
+      start: async () => {
+        starts++;
+      },
+      stop: async () => {},
+    },
+    binding: () => ({ scope, phone: "unused", nativeSpaceId: "unused" }),
+    resources: {
+      space: async () => {
+        throw Error("unused");
+      },
+      message: async () => {
+        throw Error("unused");
+      },
+    },
+  });
+  const registry = registerFeatureModules([module]);
+  assert.equal(registry.handlers.size, 13);
+  assert.equal(starts, 0);
+  for (const operation of ownedOperations)
+    assert.ok(registry.handlers.has(operation));
+  assert.equal(registry.missing.length, 31);
+});

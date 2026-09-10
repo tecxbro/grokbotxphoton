@@ -59,3 +59,24 @@ export const recoveryCodec: RecoveryCodec = {
   // A card snapshot is never evidence that an interrupted provider operation completed.
   reconcile: async () => 'unknown',
 };
+
+/** Versioned inert snapshot for a future approved host checkpoint seam. The public
+ * F0 domain records persist minimum bindings, not this payload or an SDK graph. */
+export function encodeCardSession(value: CardSession): string {
+  const json = encodeSession(value);
+  requireCard(Buffer.byteLength(json) <= 32768, 'INVALID_REQUEST', 'Card session checkpoint exceeds the bound.');
+  return json;
+}
+
+/** Proves only restoration with a genuine retained/publicly resolved SDK handle.
+ * A cold checkpoint alone cannot rehydrate the pinned provider session. */
+export function restoreCardSession(encoded: string, original?: Message): { data: CardSession; original: Message } {
+  const data = decodeSession(encoded);
+  requireCard(original, 'UNAVAILABLE', 'Public original session is required.', 'requires_original_session');
+  requireCard(original.platform === 'imessage' && original.direction === 'outbound' && original.id === data.providerMessageId,
+    'SCOPE_MISMATCH', 'Restored card is not the original outbound cloud message.');
+  const metadata = sessionMetadata(original);
+  requireCard(metadata && data.metadata && metadata.chatGuid === original.space.id && isDeepStrictEqual(metadata, data.metadata),
+    'UNAVAILABLE', 'Provider session metadata cannot be reconstructed from a checkpoint.', 'requires_original_session');
+  return { data, original };
+}

@@ -80,3 +80,10 @@ export function oneBubble(input: string): string {
   );
   return bubbles[0]!;
 }
+
+/** Public formatter preserves the installed conservative policy and never splits for length alone. */
+export const formatMessageBubbles = formatProse;
+/** Validate prose policy without performing a second model pass. Structured callers bypass this API. */
+export function validateVoicePolicy(input: string): { warnings: string[] } {
+  return { warnings: formatMessageBubbles(input).warnings };
+}

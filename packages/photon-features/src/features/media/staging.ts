@@ -1,6 +1,6 @@
 import type { MediaStream } from "./safety.js";
 import { randomUUID } from "node:crypto";
-import { mkdir, open, realpath, rename, unlink, lstat } from "node:fs/promises";
+import { mkdir, open, realpath, rename, unlink, lstat, opendir } from "node:fs/promises";
 import { join } from "node:path";
 import { Readable } from "node:stream";
 import {
@@ -31,7 +31,7 @@ export interface StagingOptions {
   timeoutMs?: number;
   concurrency?: number;
 }
-export interface ResolvedMedia { bytes: Uint8Array; mimeType: string; metadata?: MediaMetadata | SourceMetadata }
+export interface ResolvedMedia { bytes: Uint8Array; mimeType: string; metadata?: (MediaMetadata | SourceMetadata) & { retrieval?: import("spectrum-ts/providers/imessage").IMessageAttachmentMetadata } }
 
 /** Implements F0 MediaStager; creation/import methods are trusted-host APIs, never action JSON. */
 export class SafeMediaStager implements MediaStager {
@@ -218,3 +218,232 @@ export class SafeMediaStager implements MediaStager {
     return true;
   }
 }
+
+import type { ExecutionServices as PublicServices } from "../../contracts/services.js";
+import { authorizedMedia, retainResource, cleanExpiredResources, RETAINED, type NoMediaConsumers } from "./retention.js";
+import { abortable } from "./safety.js";
+
+import { z } from "zod";
+/** Bounded native metadata, stored verbatim as data; never used as a path or downloader input. */
+export const resourceMetadataSchema = metadataSchema.extend({ retrieval: z.strictObject({
+  guid: z.string().min(1).max(200), fileName: z.string().max(1000), mimeType: z.string().max(100),
+  totalBytes: z.number().int().nonnegative().max(MAX_MEDIA_BYTES), uti: z.string().max(200),
+  transferState: z.enum(["unknown", "pending", "transferring", "failed", "finished"]),
+  isHidden: z.boolean(), isSticker: z.boolean(),
+  companionKind: z.enum(["unknown", "live-photo-video"]).optional(), originalGuid: z.string().max(200).optional(),
+}).optional() });
+
+/** Trusted host import only; no inline buffers, paths or URLs are accepted by action JSON. */
+export type MediaResourceSource =
+  | { type: "file"; path: string; metadata: SourceMetadata }
+  | { type: "url"; url: string }
+  | { type: "native"; attachment: Extract<Media, { kind: "attachment" }> };
+export interface GuardedStagingOptions {
+  directory: string;
+  approvedRoots: readonly string[];
+  urls: FetchPolicy;
+  services: Pick<PublicServices, "context" | "transaction" | "assertActiveClaim" | "clock" | "signal" | "resolveResource">;
+  native: NativeMediaSource;
+  maxBytes?: number;
+  timeoutMs?: number;
+  /** Maximum directory entries, including partial and metadata files; fail closed at capacity. */
+  maxDirectoryEntries?: number;
+  /** Reuse one capacity across scoped ports in the single host to bound aggregate memory. */
+  capacity?: Capacity;
+}
+
+/** Public F0 port. Uses only stagedMedia through UnitOfWork, never private execution/checkpoint tables. */
+export class GuardedMediaStager implements MediaStager {
+  private readonly capacity: Capacity;
+  private readonly maxBytes: number;
+  private readonly timeoutMs: number;
+  private readonly fetchUrl;
+  private readonly readers = new Set<string>();
+  private constructor(private readonly options: GuardedStagingOptions, private readonly directory: string) {
+    this.maxBytes = options.maxBytes ?? MAX_MEDIA_BYTES;
+    this.timeoutMs = options.timeoutMs ?? 30000;
+    if (!Number.isSafeInteger(this.maxBytes) || this.maxBytes < 1 || this.maxBytes > MAX_MEDIA_BYTES ||
+      !Number.isSafeInteger(this.timeoutMs) || this.timeoutMs < 1 || this.timeoutMs > 120000) reject("invalid limits");
+    if (!Number.isSafeInteger(options.maxDirectoryEntries ?? 768) || (options.maxDirectoryEntries ?? 768) < 3 ||
+      (options.maxDirectoryEntries ?? 768) > 10000) reject("invalid storage limit");
+    this.capacity = options.capacity ?? new Capacity();
+    this.fetchUrl = createGuardedFetcher(options.urls);
+  }
+  /** The directory and its ancestors belong to the trusted runtime OS identity. */
+  static async create(options: GuardedStagingOptions): Promise<GuardedMediaStager> {
+    options.services.assertActiveClaim();
+    await mkdir(options.directory, { recursive: true, mode: 0o700 });
+    const directory = await realpath(options.directory), stat = await lstat(directory);
+    if (!stat.isDirectory() || (stat.mode & 0o077) !== 0 || stat.uid !== process.getuid?.()) reject("staging directory must be private");
+    options.services.assertActiveClaim();
+    return new GuardedMediaStager(options, directory);
+  }
+  private authorize(context: TrustedContext): void {
+    const bound = this.options.services.context;
+    if (!sameScope(bound.scope, context.scope) || bound.contextId !== context.contextId ||
+      bound.principalId !== context.principalId || bound.taskId !== context.taskId || bound.generation !== context.generation) reject("resource scope");
+    this.options.services.assertActiveClaim();
+    this.options.services.signal.throwIfAborted();
+  }
+  private deadline(): AbortSignal {
+    return AbortSignal.any([this.options.services.signal, AbortSignal.timeout(this.timeoutMs)]);
+  }
+  private async bytes(path: string, signal: AbortSignal, limit = this.maxBytes): Promise<Buffer> {
+    const file = await openApprovedFile(path, [this.directory]);
+    const chunks: Buffer[] = [];
+    try {
+      if ((await file.stat()).size > limit) reject("byte limit");
+      await consume(Readable.toWeb(file.createReadStream({ autoClose: false, highWaterMark: 65536 })), limit, signal,
+        async chunk => { chunks.push(Buffer.from(chunk)); });
+      return Buffer.concat(chunks);
+    } finally { await file.close(); }
+  }
+  private async storageAvailable(signal: AbortSignal): Promise<void> {
+    let count = 0;
+    const directory = await opendir(this.directory);
+    for await (const _entry of directory) {
+      signal.throwIfAborted();
+      if (++count >= (this.options.maxDirectoryEntries ?? 768) - 2) reject("staging storage limit");
+    }
+  }
+  /** Imports bounded bytes, fsyncs immutable files, then publishes the descriptor atomically. */
+  async stage(source: MediaResourceSource, context = this.options.services.context): Promise<StagedMedia> {
+    return this.capacity.run(async () => {
+      this.authorize(context);
+      const signal = this.deadline();
+      await this.storageAvailable(signal); this.authorize(context);
+      let stream: MediaStream, metadata: SourceMetadata;
+      let close: () => Promise<unknown> = async () => {};
+      if (source.type === "file") {
+        const file = await openApprovedFile(source.path, this.options.approvedRoots);
+        close = () => file.close();
+        stream = Readable.toWeb(file.createReadStream({ autoClose: false, highWaterMark: 65536 }));
+        metadata = source.metadata;
+      } else if (source.type === "url") {
+        const download = await this.fetchUrl(source.url, signal);
+        close = async () => download.close(); stream = download.stream; metadata = { mimeType: download.mimeType };
+      } else if (source.type === "native") {
+        assertScope(source.attachment, context.scope);
+        const authorized = await abortable(this.options.services.resolveResource(source.attachment), signal);
+        if (authorized.kind !== "attachment" || authorized.id !== source.attachment.id || authorized.messageId !== source.attachment.messageId) reject("attachment reference mismatch");
+        assertScope(authorized, context.scope); this.authorize(context);
+        const opening = this.options.native.open(source.attachment, context, signal);
+        opening.then(item => { if (signal.aborted) void item.stream.cancel().catch(() => {}); }).catch(() => {});
+        const native = await abortable(opening, signal);
+        stream = native.stream; metadata = native.metadata; close = async () => { void stream.cancel().catch(() => {}); };
+      } else return reject("invalid source");
+      const id = randomUUID(), partial = join(this.directory, `${id}.part`);
+      let output: string | undefined, metadataPath: string | undefined, published = false;
+      let file: Awaited<ReturnType<typeof open>> | undefined;
+      try {
+        this.authorize(context); signal.throwIfAborted();
+        const meta = resourceMetadataSchema.parse({ ...metadata, version: 1, stagingId: id });
+        validMime(meta.mimeType);
+        if (meta.source) assertScope(meta.source, context.scope);
+        if (source.type === "native" && (!meta.source || meta.source.id !== source.attachment.id || meta.source.messageId !== source.attachment.messageId)) reject("native metadata identity");
+        if (meta.size !== undefined && meta.size > this.maxBytes) reject("byte limit");
+        file = await open(partial, "wx", 0o600);
+        const size = await consume(stream, this.maxBytes, signal, async chunk => {
+          let offset = 0;
+          while (offset < chunk.length) {
+            const { bytesWritten } = await file!.write(chunk, offset, chunk.length - offset);
+            if (!bytesWritten) reject("interrupted file write"); offset += bytesWritten;
+          }
+        });
+        await file.sync(); await file.close(); file = undefined;
+        const bytes = await this.bytes(partial, signal);
+        validateBytes(bytes, meta.mimeType, this.maxBytes);
+        if (bytes.length !== size || (meta.size !== undefined && meta.size !== size)) reject("size mismatch");
+        const metadataBytes = Buffer.from(JSON.stringify({ ...meta, size }));
+        const name = `${id}.${sha256(metadataBytes)}`;
+        output = join(this.directory, `${name}.bin`); metadataPath = join(this.directory, `${name}.json`);
+        const metadataFile = await open(metadataPath, "wx", 0o600);
+        try { await metadataFile.writeFile(metadataBytes); await metadataFile.sync(); } finally { await metadataFile.close(); }
+        await rename(partial, output);
+        const dir = await open(this.directory, "r"); try { await dir.sync(); } finally { await dir.close(); }
+        const media: StagedMedia = { stagingId: id, sha256: sha256(bytes), mimeType: meta.mimeType, bytes: size };
+        this.authorize(context); signal.throwIfAborted();
+        this.options.services.transaction(unit => {
+          this.authorize(context);
+          unit.put("stagedMedia", { id, scope: context.scope, revision: 0, principalId: context.principalId,
+            taskId: context.taskId, generation: context.generation, relativePath: `${name}.bin`, sha256: media.sha256, mimeType: media.mimeType, bytes: media.bytes,
+            expiresAt: RETAINED }, null);
+        });
+        published = true; return media;
+      } finally {
+        await file?.close().catch(() => {});
+        await close().catch(() => {});
+        await unlink(partial).catch(() => {});
+        if (!published) {
+          if (output) await unlink(output).catch(() => {});
+          if (metadataPath) await unlink(metadataPath).catch(() => {});
+        }
+      }
+    });
+  }
+  /** Frozen MediaStager.resolve for all consumers; native refs are first staged durably. */
+  async resolve(media: Media, context: TrustedContext): Promise<ResolvedMedia> {
+    this.authorize(context);
+    if ("kind" in media) return this.resolve(await this.stage({ type: "native", attachment: media }, context), context);
+    return this.capacity.run(async () => {
+      this.authorize(context);
+      const signal = this.deadline(), reader = randomUUID();
+      const row = this.options.services.transaction(unit => {
+        retainResource(unit, media, context); return authorizedMedia(unit, media, context);
+      });
+      const name = this.checkedName(row);
+      this.readers.add(reader);
+      try {
+        const bytes = await this.bytes(join(this.directory, `${name}.bin`), signal);
+        if (bytes.length !== media.bytes || sha256(bytes) !== media.sha256) reject("resource integrity");
+        validateBytes(bytes, row.mimeType, this.maxBytes);
+        const metadataBytes = await this.bytes(join(this.directory, `${name}.json`), signal, 16384);
+        if (sha256(metadataBytes) !== name.split(".")[1]) reject("metadata integrity");
+        const metadata = resourceMetadataSchema.parse(JSON.parse(metadataBytes.toString("utf8")));
+        if (metadata.stagingId !== row.id || metadata.mimeType !== row.mimeType || metadata.size !== row.bytes) reject("metadata mismatch");
+        this.authorize(context); signal.throwIfAborted();
+        return { bytes, mimeType: row.mimeType, metadata };
+      } finally { this.readers.delete(reader); }
+    });
+  }
+  private checkedName(row: StagedMediaRecord): string {
+    const match = /^([a-f0-9-]{36})\.([a-f0-9]{64})\.bin$/.exec(row.relativePath);
+    if (!match || match[1] !== row.id) return reject("invalid staged path");
+    return row.relativePath.slice(0, -4);
+  }
+  /** Runtime maintenance must fence other processes/readers and action admission in noConsumers. */
+  async clean(media: StagedMedia, noConsumers?: NoMediaConsumers): Promise<boolean> {
+    const { services } = this.options; this.authorize(services.context);
+    const row = services.transaction(unit => {
+      if (this.readers.size) return undefined;
+      const record = authorizedMedia(unit, media, services.context); this.checkedName(record);
+      return cleanExpiredResources(unit, media, services.context, services.clock.now(), noConsumers);
+    });
+    if (!row) return false;
+    const name = this.checkedName(row);
+    for (const suffix of ["bin", "json"]) await unlink(join(this.directory, `${name}.${suffix}`)).catch(error => {
+      if (error.code !== "ENOENT") throw error;
+    });
+    return true;
+  }
+}
+/** Host-only import entry point; consumer features only receive the frozen resolve port. */
+export function stageMediaResource(stager: GuardedMediaStager, source: MediaResourceSource): Promise<StagedMedia> {
+  return stager.stage(source);
+}
+/** Rechecks the public claim around every await without requiring sibling private imports. */
+export async function resolveMediaResource(media: Media, services: PublicServices): Promise<ResolvedMedia> {
+  services.assertActiveClaim(); services.signal.throwIfAborted();
+  if ("kind" in media) {
+    const ref = await services.resolveResource(media);
+    if (ref.kind !== "attachment" || ref.id !== media.id || ref.messageId !== media.messageId) reject("attachment reference mismatch");
+    assertScope(ref, services.context.scope); services.assertActiveClaim();
+  } else services.transaction(unit => retainResource(unit, media, services.context));
+  const resolved = await services.media.resolve(media, services.context);
+  services.assertActiveClaim(); services.signal.throwIfAborted();
+  validateBytes(resolved.bytes, resolved.mimeType);
+  return resolved;
+}
+
+/** Host composition shares this capacity across every scoped staging port. */
+export function createMediaResourceCapacity(maximum = 4): Capacity { return new Capacity(maximum); }

@@ -40,3 +40,10 @@ export class TextBatcher {
     return work;
   }
 }
+
+/** Persist every input individually; the durable inbox owns the quiet window. */
+export function appendToBatch(router: InboundRouter, event: import("../../contracts/events.js").IncomingEvent): Promise<void> {
+  return router.accept(event);
+}
+/** Release ready historical bursts without applying text delays to structured events. */
+export function releaseReadyBatch(batcher: TextBatcher, scope: Scope): string[] { return batcher.tick(scope); }

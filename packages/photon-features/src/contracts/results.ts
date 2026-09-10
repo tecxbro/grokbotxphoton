@@ -139,3 +139,6 @@ export const resultSchema = z.strictObject({
 });
 export type OperationResult = z.infer<typeof resultSchema>;
 export type RuntimeError = z.infer<typeof errorSchema>;
+
+/** An error's retry classification does not authorize retry after an ambiguous dispatch. */
+export type OperationError = RuntimeError;

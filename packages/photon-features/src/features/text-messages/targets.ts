@@ -127,3 +127,138 @@ export async function targetMessage(
   }
   return message;
 }
+
+import type { ExecutionServices as PublicServices } from "../../contracts/services.js";
+import type { MessageRef, ReactionRef } from "../../contracts/references.js";
+import { checkPublicSpace, type PublicTextMessageOptions } from "./sdk.js";
+/** Resolve the shared domain record before handing a reference to the existing SDK owner. */
+export async function publicRecordFor(
+  ref: ResourceRef,
+  s: PublicServices,
+): Promise<ReferenceRecord> {
+  s.assertActiveClaim();
+  assertScope(ref, s.context.scope);
+  const resolved = await s.resolveResource(ref);
+  s.assertActiveClaim();
+  requireThat(
+    equivalent(resolved, ref),
+    "SCOPE_MISMATCH",
+    "Resource resolution changed identity.",
+  );
+  const record = s.transaction((unit) => unit.get("references", ref.id));
+  requireThat(
+    record &&
+      sameScope(record.scope, ref.scope) &&
+      equivalent(record.reference, ref),
+    "RESOURCE_NOT_FOUND",
+    "Authoritative reference mapping is unavailable.",
+  );
+  return record;
+}
+export async function resolveTextSpace(
+  ref: Extract<ResourceRef, { kind: "space" }>,
+  s: PublicServices,
+  o: PublicTextMessageOptions,
+): Promise<Space> {
+  const record = await publicRecordFor(ref, s);
+  const space = await o.resources.space(ref, s.context);
+  s.assertActiveClaim();
+  checkPublicSpace(space, s, o);
+  requireThat(
+    space.id === record.providerId,
+    "SCOPE_MISMATCH",
+    "SDK space differs from its mapping.",
+  );
+  return space;
+}
+/** Ownership is checked on authoritative records and actual SDK direction, never caller claims. */
+export async function resolveMessageTarget(
+  ref: MessageRef | ReactionRef,
+  s: PublicServices,
+  o: PublicTextMessageOptions,
+  owned = false,
+): Promise<Message> {
+  const record = await publicRecordFor(ref, s);
+  if (owned)
+    requireThat(
+      record.ownedByPrincipalId === s.context.principalId,
+      "FORBIDDEN",
+      "Target belongs to another principal.",
+    );
+  const message = await o.resources.message(ref, s.context);
+  s.assertActiveClaim();
+  requireThat(
+    message,
+    "RESOURCE_NOT_FOUND",
+    "Actual SDK target is unavailable.",
+  );
+  checkPublicSpace(message.space, s, o);
+  requireThat(
+    message.id === record.providerId && message.platform === "imessage",
+    "SCOPE_MISMATCH",
+    "SDK target differs from its mapping.",
+  );
+  requireThat(
+    message.direction === "inbound" || message.direction === "outbound",
+    "FORBIDDEN",
+    "Target direction is unknown.",
+  );
+  if (owned)
+    requireThat(
+      message.direction === "outbound",
+      "FORBIDDEN",
+      "Only owned outbound messages can be mutated.",
+    );
+  return message;
+}
+/** Removing a tapback requires the real bot reaction and its authorized parent handle. */
+export async function resolveReactionTarget(
+  ref: ReactionRef,
+  s: PublicServices,
+  o: PublicTextMessageOptions,
+): Promise<Message> {
+  const reaction = await resolveMessageTarget(ref, s, o, true);
+  requireThat(
+    reaction.content.type === "reaction",
+    "UNAVAILABLE",
+    "Actual reaction content is required.",
+  );
+  const parent = await resolveMessageTarget(
+    { version: 1, kind: "message", id: ref.messageId, scope: ref.scope },
+    s,
+    o,
+  );
+  checkPublicSpace(reaction.content.target.space, s, o);
+  requireThat(
+    reaction.content.target.id === parent.id &&
+      reaction.content.target.platform === parent.platform,
+    "SCOPE_MISMATCH",
+    "Reaction parent differs from the authorized target.",
+  );
+  return reaction;
+}
+
+/** Fetch current provider metadata only after resolving the authorized target and containing chat. */
+export async function getMessageTarget(
+  ref: MessageRef,
+  s: PublicServices,
+  o: PublicTextMessageOptions,
+): Promise<Message> {
+  const resolved = await resolveMessageTarget(ref, s, o);
+  const current = await resolved.space.getMessage(resolved.id);
+  s.assertActiveClaim();
+  requireThat(
+    current,
+    "RESOURCE_NOT_FOUND",
+    "Provider could not retrieve the authorized target.",
+  );
+  checkPublicSpace(current.space, s, o);
+  requireThat(
+    current.id === resolved.id &&
+      current.platform === "imessage" &&
+      current.direction === resolved.direction,
+    "SCOPE_MISMATCH",
+    "Provider retrieval changed the target identity or direction.",
+  );
+  return current;
+}

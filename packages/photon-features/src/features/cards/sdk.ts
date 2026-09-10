@@ -14,7 +14,7 @@ export function checkMessage(message: Message, s: ExecutionServices, options: Ca
   requireCard(message.platform === 'imessage' && message.direction === 'outbound', 'FORBIDDEN', 'An original outbound cloud iMessage card is required.');
   checkSpace(message.space, s, options);
 }
-export async function cardContent(template: CardTemplate, url: string, layout: CardLayout | undefined, s: ExecutionServices): Promise<ContentBuilder> {
+export async function cardContent(template: CardTemplate, url: string, layout: CardLayout | undefined, s: Pick<ExecutionServices, 'media' | 'context'>): Promise<ContentBuilder> {
   approvedUrl(template, url);
   if (template.kind === 'universal') {
     requireCard(!layout, 'UNAVAILABLE', 'The public universal builder accepts a URL, not a layout.', 'universal_update_url_required');
@@ -36,4 +36,15 @@ export async function preparedSend(builder: ContentBuilder): Promise<ContentBuil
 }
 export async function preparedEdit(builder: ContentBuilder, target: Message): Promise<ContentBuilder> {
   return preparedSend(edit(builder, target));
+}
+
+/** Public f0-services-2 mapping. Resolve media/builders before the final effect fence.
+ * The original Message is the only supported edit target; no fallback sends occur. */
+export async function mapCardOperation(template: CardTemplate, url: string, layout: CardLayout | undefined,
+  services: import('../../contracts/services.js').ExecutionServices, original?: Message): Promise<ContentBuilder> {
+  const builder = await cardContent(template, url, layout, services);
+  services.assertActiveClaim();
+  const prepared = original ? await preparedEdit(builder, original) : await preparedSend(builder);
+  services.assertActiveClaim();
+  return prepared;
 }

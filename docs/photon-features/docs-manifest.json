@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "sections": {
+    "AGENTS.md": [
+      "Isolation and ownership",
+      "Source authority",
+      "Documentation cadence",
+      "Exported APIs and comments",
+      "Evidence and completion",
+      "Operating boundary"
+    ],
+    "ARCHITECTURE.md": [
+      "Assembled implementation",
+      "Flow and ownership",
+      "Transactions and recovery",
+      "Non-ownership and limitations",
+      "Interfaces"
+    ],
+    "docs/contracts/execution.md": [
+      "Entry points",
+      "Authorization and claims",
+      "Public services and transactions",
+      "Child execution and unknown outcomes",
+      "Local protocol and durable work",
+      "Compatibility and adaptation"
+    ],
+    "docs/contracts/receipts.md": [
+      "Execution versus evidence",
+      "Identity and correlation",
+      "Early, stale and out-of-order observations",
+      "Persistence and restart"
+    ],
+    "docs/contracts/operations.md": [
+      "Catalog",
+      "Input and result schemas"
+    ],
+    "docs/photon-features/baseline.md": [
+      "Repository identity",
+      "Existing entrypoints and dependencies",
+      "Existing runtime components",
+      "Authorization and work",
+      "Startup and recovery",
+      "Compatibility findings and unknowns"
+    ],
+    "docs/worktrees/wt-00/README.md": [
+      "Purpose",
+      "Commands",
+      "Limitations"
+    ],
+    "docs/worktrees/wt-00/TEST-EVIDENCE.md": [
+      "Results",
+      "Identity"
+    ],
+    "docs/worktrees/wt-00/HANDOFF.md": [
+      "Status",
+      "Evidence",
+      "Integration"
+    ]
+  },
+  "acceptance": [
+    {
+      "id": 1,
+      "status": "passed",
+      "evidence": [
+        "worktree",
+        "ownership"
+      ]
+    },
+    {
+      "id": 2,
+      "status": "passed",
+      "evidence": [
+        "contracts"
+      ]
+    },
+    {
+      "id": 3,
+      "status": "passed",
+      "evidence": [
+        "feature-services"
+      ]
+    },
+    {
+      "id": 4,
+      "status": "passed",
+      "evidence": [
+        "receipts"
+      ]
+    },
+    {
+      "id": 5,
+      "status": "passed",
+      "evidence": [
+        "sdk-compatibility"
+      ]
+    },
+    {
+      "id": 6,
+      "status": "passed",
+      "evidence": [
+        "verification-tools",
+        "ownership"
+      ]
+    },
+    {
+      "id": 7,
+      "status": "passed",
+      "evidence": [
+        "schema-drift",
+        "typecheck",
+        "build",
+        "legacy-foundation",
+        "existing-cli"
+      ]
+    },
+    {
+      "id": 8,
+      "status": "passed",
+      "evidence": [
+        "docs",
+        "manual-review"
+      ]
+    }
+  ],
+  "evidence": [
+    "worktree",
+    "contracts",
+    "feature-services",
+    "receipts",
+    "sdk-compatibility",
+    "ownership",
+    "verification-tools",
+    "schema-drift",
+    "typecheck",
+    "build",
+    "legacy-foundation",
+    "existing-cli",
+    "manual-review",
+    "docs"
+  ],
+  "requiredResults": [
+    "worktree",
+    "contracts",
+    "feature-services",
+    "receipts",
+    "sdk-compatibility",
+    "ownership",
+    "verification-tools",
+    "schema-drift",
+    "typecheck",
+    "build",
+    "legacy-foundation",
+    "existing-cli",
+    "ownership-tests"
+  ]
+}

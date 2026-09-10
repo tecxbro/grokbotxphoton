@@ -1,0 +1,784 @@
+TAP version 13
+# Subtest: strict request: typing.begin
+ok 1 - strict request: typing.begin
+  ---
+  duration_ms: 59.663208
+  type: 'test'
+  ...
+# Subtest: strict request: typing.end
+ok 2 - strict request: typing.end
+  ---
+  duration_ms: 7.2075
+  type: 'test'
+  ...
+# Subtest: strict request: text.send
+ok 3 - strict request: text.send
+  ---
+  duration_ms: 12.899125
+  type: 'test'
+  ...
+# Subtest: strict request: text.stream
+ok 4 - strict request: text.stream
+  ---
+  duration_ms: 5.251
+  type: 'test'
+  ...
+# Subtest: strict request: markdown.send
+ok 5 - strict request: markdown.send
+  ---
+  duration_ms: 1.093125
+  type: 'test'
+  ...
+# Subtest: strict request: link.send
+ok 6 - strict request: link.send
+  ---
+  duration_ms: 10.279583
+  type: 'test'
+  ...
+# Subtest: strict request: content.group
+ok 7 - strict request: content.group
+  ---
+  duration_ms: 7.152375
+  type: 'test'
+  ...
+# Subtest: strict request: content.compose
+ok 8 - strict request: content.compose
+  ---
+  duration_ms: 6.0845
+  type: 'test'
+  ...
+# Subtest: strict request: message.get
+ok 9 - strict request: message.get
+  ---
+  duration_ms: 4.570084
+  type: 'test'
+  ...
+# Subtest: strict request: message.reply
+ok 10 - strict request: message.reply
+  ---
+  duration_ms: 1.69025
+  type: 'test'
+  ...
+# Subtest: strict request: message.react
+ok 11 - strict request: message.react
+  ---
+  duration_ms: 1.790209
+  type: 'test'
+  ...
+# Subtest: strict request: reaction.remove
+ok 12 - strict request: reaction.remove
+  ---
+  duration_ms: 4.236292
+  type: 'test'
+  ...
+# Subtest: strict request: message.edit
+ok 13 - strict request: message.edit
+  ---
+  duration_ms: 0.724417
+  type: 'test'
+  ...
+# Subtest: strict request: message.unsend
+ok 14 - strict request: message.unsend
+  ---
+  duration_ms: 0.779667
+  type: 'test'
+  ...
+# Subtest: strict request: message.markRead
+ok 15 - strict request: message.markRead
+  ---
+  duration_ms: 0.938375
+  type: 'test'
+  ...
+# Subtest: strict request: attachment.send
+ok 16 - strict request: attachment.send
+  ---
+  duration_ms: 6.072791
+  type: 'test'
+  ...
+# Subtest: strict request: attachment.fetch
+ok 17 - strict request: attachment.fetch
+  ---
+  duration_ms: 1.286375
+  type: 'test'
+  ...
+# Subtest: strict request: voice.send
+ok 18 - strict request: voice.send
+  ---
+  duration_ms: 0.810333
+  type: 'test'
+  ...
+# Subtest: strict request: contact.send
+ok 19 - strict request: contact.send
+  ---
+  duration_ms: 4.330458
+  type: 'test'
+  ...
+# Subtest: strict request: poll.create
+ok 20 - strict request: poll.create
+  ---
+  duration_ms: 1.212542
+  type: 'test'
+  ...
+# Subtest: strict request: poll.get
+ok 21 - strict request: poll.get
+  ---
+  duration_ms: 1.179041
+  type: 'test'
+  ...
+# Subtest: strict request: poll.vote
+ok 22 - strict request: poll.vote
+  ---
+  duration_ms: 0.992875
+  type: 'test'
+  ...
+# Subtest: strict request: poll.unvote
+ok 23 - strict request: poll.unvote
+  ---
+  duration_ms: 0.79425
+  type: 'test'
+  ...
+# Subtest: strict request: poll.addOption
+ok 24 - strict request: poll.addOption
+  ---
+  duration_ms: 5.109791
+  type: 'test'
+  ...
+# Subtest: strict request: app.send
+ok 25 - strict request: app.send
+  ---
+  duration_ms: 0.858084
+  type: 'test'
+  ...
+# Subtest: strict request: app.sendCustomized
+ok 26 - strict request: app.sendCustomized
+  ---
+  duration_ms: 1.242125
+  type: 'test'
+  ...
+# Subtest: strict request: app.update
+ok 27 - strict request: app.update
+  ---
+  duration_ms: 6.08525
+  type: 'test'
+  ...
+# Subtest: strict request: space.get
+ok 28 - strict request: space.get
+  ---
+  duration_ms: 3.258958
+  type: 'test'
+  ...
+# Subtest: strict request: space.create
+ok 29 - strict request: space.create
+  ---
+  duration_ms: 1.388459
+  type: 'test'
+  ...
+# Subtest: strict request: space.getName
+ok 30 - strict request: space.getName
+  ---
+  duration_ms: 0.687959
+  type: 'test'
+  ...
+# Subtest: strict request: space.rename
+ok 31 - strict request: space.rename
+  ---
+  duration_ms: 0.834625
+  type: 'test'
+  ...
+# Subtest: strict request: space.getMembers
+ok 32 - strict request: space.getMembers
+  ---
+  duration_ms: 0.694833
+  type: 'test'
+  ...
+# Subtest: strict request: space.addMembers
+ok 33 - strict request: space.addMembers
+  ---
+  duration_ms: 0.673792
+  type: 'test'
+  ...
+# Subtest: strict request: space.removeMembers
+ok 34 - strict request: space.removeMembers
+  ---
+  duration_ms: 1.249667
+  type: 'test'
+  ...
+# Subtest: strict request: space.leave
+ok 35 - strict request: space.leave
+  ---
+  duration_ms: 2.488958
+  type: 'test'
+  ...
+# Subtest: strict request: space.getAvatar
+ok 36 - strict request: space.getAvatar
+  ---
+  duration_ms: 1.451292
+  type: 'test'
+  ...
+# Subtest: strict request: space.setAvatar
+ok 37 - strict request: space.setAvatar
+  ---
+  duration_ms: 0.857958
+  type: 'test'
+  ...
+# Subtest: strict request: space.clearAvatar
+ok 38 - strict request: space.clearAvatar
+  ---
+  duration_ms: 2.234916
+  type: 'test'
+  ...
+# Subtest: strict request: space.setBackground
+ok 39 - strict request: space.setBackground
+  ---
+  duration_ms: 3.279667
+  type: 'test'
+  ...
+# Subtest: strict request: space.clearBackground
+ok 40 - strict request: space.clearBackground
+  ---
+  duration_ms: 1.928583
+  type: 'test'
+  ...
+# Subtest: strict request: account.shareContact
+ok 41 - strict request: account.shareContact
+  ---
+  duration_ms: 0.825625
+  type: 'test'
+  ...
+# Subtest: strict request: effect.send
+ok 42 - strict request: effect.send
+  ---
+  duration_ms: 0.867125
+  type: 'test'
+  ...
+# Subtest: strict request: metadata.get
+ok 43 - strict request: metadata.get
+  ---
+  duration_ms: 1.454542
+  type: 'test'
+  ...
+# Subtest: strict request: custom.send
+ok 44 - strict request: custom.send
+  ---
+  duration_ms: 4.118875
+  type: 'test'
+  ...
+# Subtest: JSON rejects getters without executing, SDK objects, cycles and oversized trees
+ok 45 - JSON rejects getters without executing, SDK objects, cycles and oversized trees
+  ---
+  duration_ms: 1.648541
+  type: 'test'
+  ...
+# Subtest: authoritative context binds identity, expiry, revocation, permissions, scopes and generation
+ok 46 - authoritative context binds identity, expiry, revocation, permissions, scopes and generation
+  ---
+  duration_ms: 2.046041
+  type: 'test'
+  ...
+# Subtest: event and result reject executable and unknown data
+ok 47 - event and result reject executable and unknown data
+  ---
+  duration_ms: 1.2085
+  type: 'test'
+  ...
+# Subtest: shared services: text.send
+ok 48 - shared services: text.send
+  ---
+  duration_ms: 9.318875
+  type: 'test'
+  ...
+# Subtest: shared services: poll.create
+ok 49 - shared services: poll.create
+  ---
+  duration_ms: 13.171708
+  type: 'test'
+  ...
+# Subtest: shared services: app.send
+ok 50 - shared services: app.send
+  ---
+  duration_ms: 6.388958
+  type: 'test'
+  ...
+# Subtest: claim cancellation and stale fences prevent consequential work
+ok 51 - claim cancellation and stale fences prevent consequential work
+  ---
+  duration_ms: 2.942708
+  type: 'test'
+  ...
+# Subtest: ambiguous child remains unknown on retry and identity changes are rejected
+ok 52 - ambiguous child remains unknown on retry and identity changes are rejected
+  ---
+  duration_ms: 0.758167
+  type: 'test'
+  ...
+# Subtest: domain transaction rolls back continuations and cannot escape or read private tables
+ok 53 - domain transaction rolls back continuations and cannot escape or read private tables
+  ---
+  duration_ms: 0.552708
+  type: 'test'
+  ...
+# Subtest: guarded media and streams deny unregistered resources
+ok 54 - guarded media and streams deny unregistered resources
+  ---
+  duration_ms: 1.065958
+  type: 'test'
+  ...
+# Subtest: host stays inert and unavailable without production components
+ok 55 - host stays inert and unavailable without production components
+  ---
+  duration_ms: 2.918625
+  type: 'test'
+  ...
+# Subtest: host registers injected features and shuts all components down after failed startup
+ok 56 - host registers injected features and shuts all components down after failed startup
+  ---
+  duration_ms: 8.912
+  type: 'test'
+  ...
+# Subtest: ownership rejects duplicates, wildcard grants and foreign staged/unstaged/untracked names
+ok 57 - ownership rejects duplicates, wildcard grants and foreign staged/unstaged/untracked names
+  ---
+  duration_ms: 8.915042
+  type: 'test'
+  ...
+# (node:3474) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: early read survives duplicates and resolves only within matching scope
+ok 58 - early read survives duplicates and resolves only within matching scope
+  ---
+  duration_ms: 5.609875
+  type: 'test'
+  ...
+# Subtest: late and stale observations retain stronger evidence without inventing readers/times
+ok 59 - late and stale observations retain stronger evidence without inventing readers/times
+  ---
+  duration_ms: 1.126792
+  type: 'test'
+  ...
+# Subtest: additive SQLite migration and early receipt persist across close/reopen
+ok 60 - additive SQLite migration and early receipt persist across close/reopen
+  ---
+  duration_ms: 7.454292
+  type: 'test'
+  ...
+# Subtest: pinned SDK public exports load and builder signatures compile
+ok 61 - pinned SDK public exports load and builder signatures compile
+  ---
+  duration_ms: 0.7275
+  type: 'test'
+  ...
+# Subtest: wrong worktree produces a real nonzero checker exit
+ok 62 - wrong worktree produces a real nonzero checker exit
+  ---
+  duration_ms: 105.4175
+  type: 'test'
+  ...
+# Subtest: missing and skipped tests cannot produce PASS
+ok 63 - missing and skipped tests cannot produce PASS
+  ---
+  duration_ms: 9.134959
+  type: 'test'
+  ...
+# Subtest: source checker rejects HTML, empty documents, forged success and hash mismatch
+ok 64 - source checker rejects HTML, empty documents, forged success and hash mismatch
+  ---
+  duration_ms: 9.448667
+  type: 'test'
+  ...
+# Subtest: documentation checker fails missing files and inconsistent acceptance evidence
+ok 65 - documentation checker fails missing files and inconsistent acceptance evidence
+  ---
+  duration_ms: 1.101417
+  type: 'test'
+  ...
+# (node:3477) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: typing.begin: valid, missing required argument, unknown envelope/argument
+ok 66 - typing.begin: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 41.220625
+  type: 'test'
+  ...
+# Subtest: typing.end: valid, missing required argument, unknown envelope/argument
+ok 67 - typing.end: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 3.98425
+  type: 'test'
+  ...
+# Subtest: text.send: valid, missing required argument, unknown envelope/argument
+ok 68 - text.send: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 6.946333
+  type: 'test'
+  ...
+# Subtest: text.stream: valid, missing required argument, unknown envelope/argument
+ok 69 - text.stream: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 2.507292
+  type: 'test'
+  ...
+# Subtest: markdown.send: valid, missing required argument, unknown envelope/argument
+ok 70 - markdown.send: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 0.904459
+  type: 'test'
+  ...
+# Subtest: link.send: valid, missing required argument, unknown envelope/argument
+ok 71 - link.send: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 4.326625
+  type: 'test'
+  ...
+# Subtest: content.group: valid, missing required argument, unknown envelope/argument
+ok 72 - content.group: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 10.060167
+  type: 'test'
+  ...
+# Subtest: content.compose: valid, missing required argument, unknown envelope/argument
+ok 73 - content.compose: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 3.188958
+  type: 'test'
+  ...
+# Subtest: message.get: valid, missing required argument, unknown envelope/argument
+ok 74 - message.get: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 1.781542
+  type: 'test'
+  ...
+# Subtest: message.reply: valid, missing required argument, unknown envelope/argument
+ok 75 - message.reply: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 4.338167
+  type: 'test'
+  ...
+# Subtest: message.react: valid, missing required argument, unknown envelope/argument
+ok 76 - message.react: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 4.764834
+  type: 'test'
+  ...
+# Subtest: reaction.remove: valid, missing required argument, unknown envelope/argument
+ok 77 - reaction.remove: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 2.92675
+  type: 'test'
+  ...
+# Subtest: message.edit: valid, missing required argument, unknown envelope/argument
+ok 78 - message.edit: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 0.710042
+  type: 'test'
+  ...
+# Subtest: message.unsend: valid, missing required argument, unknown envelope/argument
+ok 79 - message.unsend: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 1.114333
+  type: 'test'
+  ...
+# Subtest: message.markRead: valid, missing required argument, unknown envelope/argument
+ok 80 - message.markRead: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 1.52625
+  type: 'test'
+  ...
+# Subtest: attachment.send: valid, missing required argument, unknown envelope/argument
+ok 81 - attachment.send: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 4.430208
+  type: 'test'
+  ...
+# Subtest: attachment.fetch: valid, missing required argument, unknown envelope/argument
+ok 82 - attachment.fetch: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 2.043458
+  type: 'test'
+  ...
+# Subtest: voice.send: valid, missing required argument, unknown envelope/argument
+ok 83 - voice.send: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 0.961958
+  type: 'test'
+  ...
+# Subtest: contact.send: valid, missing required argument, unknown envelope/argument
+ok 84 - contact.send: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 1.362917
+  type: 'test'
+  ...
+# Subtest: poll.create: valid, missing required argument, unknown envelope/argument
+ok 85 - poll.create: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 3.268708
+  type: 'test'
+  ...
+# Subtest: poll.get: valid, missing required argument, unknown envelope/argument
+ok 86 - poll.get: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 1.538583
+  type: 'test'
+  ...
+# Subtest: poll.vote: valid, missing required argument, unknown envelope/argument
+ok 87 - poll.vote: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 0.97
+  type: 'test'
+  ...
+# Subtest: poll.unvote: valid, missing required argument, unknown envelope/argument
+ok 88 - poll.unvote: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 1.044542
+  type: 'test'
+  ...
+# Subtest: poll.addOption: valid, missing required argument, unknown envelope/argument
+ok 89 - poll.addOption: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 2.11425
+  type: 'test'
+  ...
+# Subtest: app.send: valid, missing required argument, unknown envelope/argument
+ok 90 - app.send: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 2.646583
+  type: 'test'
+  ...
+# Subtest: app.sendCustomized: valid, missing required argument, unknown envelope/argument
+ok 91 - app.sendCustomized: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 1.442583
+  type: 'test'
+  ...
+# Subtest: app.update: valid, missing required argument, unknown envelope/argument
+ok 92 - app.update: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 3.483542
+  type: 'test'
+  ...
+# Subtest: space.get: valid, missing required argument, unknown envelope/argument
+ok 93 - space.get: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 2.763042
+  type: 'test'
+  ...
+# Subtest: space.create: valid, missing required argument, unknown envelope/argument
+ok 94 - space.create: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 0.608084
+  type: 'test'
+  ...
+# Subtest: space.getName: valid, missing required argument, unknown envelope/argument
+ok 95 - space.getName: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 0.594083
+  type: 'test'
+  ...
+# Subtest: space.rename: valid, missing required argument, unknown envelope/argument
+ok 96 - space.rename: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 3.2295
+  type: 'test'
+  ...
+# Subtest: space.getMembers: valid, missing required argument, unknown envelope/argument
+ok 97 - space.getMembers: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 2.264125
+  type: 'test'
+  ...
+# Subtest: space.addMembers: valid, missing required argument, unknown envelope/argument
+ok 98 - space.addMembers: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 1.801125
+  type: 'test'
+  ...
+# Subtest: space.removeMembers: valid, missing required argument, unknown envelope/argument
+ok 99 - space.removeMembers: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 1.674917
+  type: 'test'
+  ...
+# Subtest: space.leave: valid, missing required argument, unknown envelope/argument
+ok 100 - space.leave: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 0.848166
+  type: 'test'
+  ...
+# Subtest: space.getAvatar: valid, missing required argument, unknown envelope/argument
+ok 101 - space.getAvatar: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 2.472917
+  type: 'test'
+  ...
+# Subtest: space.setAvatar: valid, missing required argument, unknown envelope/argument
+ok 102 - space.setAvatar: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 1.891792
+  type: 'test'
+  ...
+# Subtest: space.clearAvatar: valid, missing required argument, unknown envelope/argument
+ok 103 - space.clearAvatar: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 0.651542
+  type: 'test'
+  ...
+# Subtest: space.setBackground: valid, missing required argument, unknown envelope/argument
+ok 104 - space.setBackground: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 0.655
+  type: 'test'
+  ...
+# Subtest: space.clearBackground: valid, missing required argument, unknown envelope/argument
+ok 105 - space.clearBackground: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 0.631375
+  type: 'test'
+  ...
+# Subtest: account.shareContact: valid, missing required argument, unknown envelope/argument
+ok 106 - account.shareContact: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 0.843416
+  type: 'test'
+  ...
+# Subtest: effect.send: valid, missing required argument, unknown envelope/argument
+ok 107 - effect.send: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 3.42075
+  type: 'test'
+  ...
+# Subtest: metadata.get: valid, missing required argument, unknown envelope/argument
+ok 108 - metadata.get: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 1.087583
+  type: 'test'
+  ...
+# Subtest: custom.send: valid, missing required argument, unknown envelope/argument
+ok 109 - custom.send: valid, missing required argument, unknown envelope/argument
+  ---
+  duration_ms: 1.134333
+  type: 'test'
+  ...
+# Subtest: reference round trip and all scope dimensions
+ok 110 - reference round trip and all scope dimensions
+  ---
+  duration_ms: 0.639708
+  type: 'test'
+  ...
+# Subtest: content rejects executable input, raw paths, wrapper nesting and overflow
+ok 111 - content rejects executable input, raw paths, wrapper nesting and overflow
+  ---
+  duration_ms: 0.72625
+  type: 'test'
+  ...
+# Subtest: context, incoming event, void result and capability dimensions
+ok 112 - context, incoming event, void result and capability dimensions
+  ---
+  duration_ms: 2.016084
+  type: 'test'
+  ...
+# Subtest: registry ownership is complete and production registry fails closed
+ok 113 - registry ownership is complete and production registry fails closed
+  ---
+  duration_ms: 0.474667
+  type: 'test'
+  ...
+# Subtest: every resource kind round trips and related parent identifiers are checked
+ok 114 - every resource kind round trips and related parent identifiers are checked
+  ---
+  duration_ms: 5.38075
+  type: 'test'
+  ...
+# Subtest: fencing and lifecycle helpers distinguish cancellation and provider evidence
+ok 115 - fencing and lifecycle helpers distinguish cancellation and provider evidence
+  ---
+  duration_ms: 0.311875
+  type: 'test'
+  ...
+# Subtest: production source has no imports of test fixtures
+ok 116 - production source has no imports of test fixtures
+  ---
+  duration_ms: 35.655833
+  type: 'test'
+  ...
+# (node:3478) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: public SDK imports load without client construction
+ok 117 - public SDK imports load without client construction
+  ---
+  duration_ms: 0.3735
+  type: 'test'
+  ...
+# Subtest: host activation, ordered recovery, singleton start and shutdown
+ok 118 - host activation, ordered recovery, singleton start and shutdown
+  ---
+  duration_ms: 0.941583
+  type: 'test'
+  ...
+# Subtest: failed recovery cleans up; disabled host never starts client
+ok 119 - failed recovery cleans up; disabled host never starts client
+  ---
+  duration_ms: 2.025375
+  type: 'test'
+  ...
+# (node:3479) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: woken task retrieves actual durable events, claims, heartbeats, acknowledges
+ok 120 - woken task retrieves actual durable events, claims, heartbeats, acknowledges
+  ---
+  duration_ms: 21.018916
+  type: 'test'
+  ...
+# Subtest: expired leases fence old acknowledgements; auth, revocation and generation checks
+ok 121 - expired leases fence old acknowledgements; auth, revocation and generation checks
+  ---
+  duration_ms: 13.67575
+  type: 'test'
+  ...
+# Subtest: Unix socket authenticates separately from opaque contextId and refuses unsafe directory
+not ok 122 - Unix socket authenticates separately from opaque contextId and refuses unsafe directory
+  ---
+  duration_ms: 13.305708
+  type: 'test'
+  location: '/Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-02/packages/photon-features/dist/tests/lanes/wt-00/protocol.test.js:100:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EINVAL: invalid argument /Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-02/.photon-local/wt-02/tmp/photon-f0-BW2q8P/runtime.sock'
+  code: 'EINVAL'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1918:21)
+    listenInCluster (node:net:1997:12)
+    Server.listen (node:net:2119:5)
+    file:///Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-02/packages/photon-features/dist/src/host/local-socket.js:77:16
+    new Promise (<anonymous>)
+    listenLocal (file:///Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-02/packages/photon-features/dist/src/host/local-socket.js:75:11)
+    async TestContext.<anonymous> (file:///Users/darshan/Documents/ChatGPT/grokbotonimessage/worktrees/wt-02/packages/photon-features/dist/tests/lanes/wt-00/protocol.test.js:107:20)
+    async Test.run (node:internal/test_runner/test:1113:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:788:7)
+  ...
+# Subtest: work query cannot starve behind acknowledged rows and context expiry denies access
+ok 123 - work query cannot starve behind acknowledged rows and context expiry denies access
+  ---
+  duration_ms: 28.724958
+  type: 'test'
+  ...
+# (node:3480) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: transaction rollback across inbox and handoff, CAS, reopen durability
+ok 124 - transaction rollback across inbox and handoff, CAS, reopen durability
+  ---
+  duration_ms: 11.950333
+  type: 'test'
+  ...
+# Subtest: abrupt process exit rolls back uncommitted writes but preserves committed writes
+ok 125 - abrupt process exit rolls back uncommitted writes but preserves committed writes
+  ---
+  duration_ms: 123.86675
+  type: 'test'
+  ...
+1..125
+# tests 125
+# suites 0
+# pass 124
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 578.338708

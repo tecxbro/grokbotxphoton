@@ -5,6 +5,8 @@ import { templateFor, type CardOptions } from './configuration.js';
 import { cardContent } from './sdk.js';
 import { recoveryCodec, SESSION_CODEC } from './session-codec.js';
 import { unverifiedInteractionReducer } from './reducer.js';
+import type { FeatureModule as PublicFeatureModule } from '../../contracts/feature.js';
+import { CardRuntime, executeCardOperation, type CardRuntimeOptions } from './operations.js';
 
 const source = 'https://photon.codes/docs/spectrum-ts/content/app';
 const operations = ['app.send', 'app.sendCustomized', 'app.update'] as const;
@@ -45,3 +47,16 @@ export function createCardsModule(options: CardOptions): FeatureModule {
 export { createInteractionAdapter } from './interaction-adapter.js';
 export type { AppBackendContract, AuthenticatedInteraction } from './interaction-adapter.js';
 export type { CardOptions, CardTemplate } from './configuration.js';
+
+/** Register only public f0-services-2 handlers. The host supplies one existing
+ * executor/transport/store; legacy module registration is deliberately separate. */
+export function createFeatureModule(options: CardRuntimeOptions | CardRuntime): PublicFeatureModule<'app.send' | 'app.sendCustomized' | 'app.update'> {
+  const runtime = options instanceof CardRuntime ? options : new CardRuntime(options);
+  return { id: 'photon.cards', owner: 'wt-06', handlers: {
+    'app.send': (action, services) => executeCardOperation(action, services, runtime),
+    'app.sendCustomized': (action, services) => executeCardOperation(action, services, runtime),
+    'app.update': (action, services) => executeCardOperation(action, services, runtime),
+  } };
+}
+export { authenticateInteraction, normalizeInteraction } from './interaction-adapter.js';
+export { applyCardInteraction } from './reducer.js';

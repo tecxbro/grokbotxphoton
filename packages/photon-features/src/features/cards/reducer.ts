@@ -4,6 +4,9 @@ import type { AuthenticatedInteraction } from './interaction-adapter.js';
 import type { CardSession } from './session-codec.js';
 import { requireCard } from './configuration.js';
 import { key } from './state.js';
+import type { ExecutionServices as PublicCardServices } from '../../contracts/services.js';
+import { assertAuthenticatedInteraction } from './interaction-adapter.js';
+import { decodeSession } from './session-codec.js';
 
 /** Only invoked after backend authentication and the complete session binding checks. */
 export function reduceAuthenticatedInteraction(tx: Transaction, input: AuthenticatedInteraction, data: CardSession, backendId: string, now: number):
@@ -50,3 +53,63 @@ export const unverifiedInteractionReducer: EventReducer = {
       eventId: event.eventId, reason: 'app_backend_authentication_required', checkpointId: null }, null);
   },
 };
+
+
+/** Reduce a backend-authenticated, durably captured event using the shared domain
+ * transaction. Capture must contain the exact assertion including selection;
+ * the trusted host checks its inbox through its own API, outside feature access.
+ * Session consumption and continuation are atomic; only the runtime wakes after commit. */
+export async function applyCardInteraction(input: AuthenticatedInteraction, snapshot: string | undefined,
+  services: PublicCardServices, capturedEvent?: (event: AuthenticatedInteraction) => Promise<boolean>): Promise<
+    { status: 'unresolved' | 'replayed' } | { status: 'committed'; continuationId: string }> {
+  services.assertActiveClaim();
+  if (!snapshot) return { status: 'unresolved' };
+  const data = decodeSession(snapshot);
+  const binding = data.callback;
+  requireCard(binding, 'UNAVAILABLE', 'Card has no callback registration.', 'app_backend_contract_missing');
+  assertAuthenticatedInteraction(input, binding.backendContractId);
+  const now = services.clock.now();
+  requireCard(isDeepStrictEqual(input.session, data.session) && sameScope(input.scope, data.card.scope) &&
+    sameScope(input.scope, services.context.scope), 'SCOPE_MISMATCH', 'Callback card, chat or line differs.');
+  requireCard(input.taskId === data.taskId && data.taskId === services.context.taskId && data.principalId === services.context.principalId,
+    'FORBIDDEN', 'Callback task/principal differs.');
+  requireCard(input.generation === data.generation && data.generation === services.context.generation,
+    'STALE_GENERATION', 'Callback generation is stale.');
+  requireCard(binding.expiresAt > now && input.occurredAt <= now + 30000 && input.occurredAt >= now - 300000 && input.occurredAt < binding.expiresAt,
+    'FORBIDDEN', 'Callback has expired or its event timestamp is outside the freshness window.');
+  requireCard(binding.nonce === input.nonce && binding.participantIds.includes(input.participantId) && binding.actionIds.includes(input.actionId),
+    'FORBIDDEN', 'Callback participant, action or nonce is not allowed.');
+  requireCard(capturedEvent, 'UNAVAILABLE', 'Host must durably capture the authenticated callback before reduction.', 'app_backend_capture_required');
+  const captured = await capturedEvent(input);
+  services.assertActiveClaim();
+  assertAuthenticatedInteraction(input, binding.backendContractId);
+  requireCard(captured, 'UNAVAILABLE', 'Authenticated event capture is unavailable.', 'app_backend_capture_required');
+  const continuationId = key('continuation', binding.backendContractId + ':' + input.eventId);
+  return services.transaction(unit => {
+    services.assertActiveClaim();
+    requireCard(binding.expiresAt > services.clock.now(), 'FORBIDDEN', 'Callback expired during durable capture.');
+    const card = unit.get('cards', data.card.id), session = unit.get('sessions', data.session.id);
+    if (!card || !session) return { status: 'unresolved' as const };
+    requireCard(isDeepStrictEqual(card.reference, data.card) && isDeepStrictEqual(session.reference, data.session) &&
+      card.templateId === data.templateId && sameScope(card.scope, input.scope) && sameScope(session.scope, input.scope),
+      'SCOPE_MISMATCH', 'Authoritative callback card/session mapping differs.');
+    requireCard(session.generation === input.generation, 'STALE_GENERATION', 'Authoritative session generation changed.');
+    requireCard(session.expiresAt === binding.expiresAt && session.expiresAt > services.clock.now() && session.allowedActionIds.includes(input.actionId),
+      'FORBIDDEN', 'Authoritative callback expiry or allowed action differs.');
+    for (const reference of [data.card, data.session, data.message]) {
+      const row = unit.get('references', reference.id);
+      if (!row) return { status: 'unresolved' as const };
+      requireCard(isDeepStrictEqual(row.reference, reference) && sameScope(row.scope, input.scope) && row.providerId === data.providerMessageId,
+        'SCOPE_MISMATCH', 'Authoritative callback reference differs.');
+      requireCard(row.taskId === data.taskId && row.ownedByPrincipalId === data.principalId,
+        'FORBIDDEN', 'Authoritative callback resource ownership differs.');
+      requireCard(row.generation === data.generation, 'STALE_GENERATION', 'Authoritative callback resource generation differs.');
+    }
+    if (session.revision > 0) return { status: 'replayed' as const };
+    // F0 can persist consumption and a pointer, but not event payload. The checked
+    // durable host event supplies selection on resume; never discard it into a wake.
+    unit.put('sessions', { ...session, revision: 1 }, 0);
+    unit.createContinuation({ id: continuationId, eventIds: [input.eventId], resumeKey: data.session.id });
+    return { status: 'committed' as const, continuationId };
+  });
+}

@@ -1,4 +1,4 @@
-name: Grokbot x Photon checks
+name: Photon product checks
 on:
   push:
     branches: [main]
@@ -6,7 +6,7 @@ on:
 permissions:
   contents: read
 jobs:
-  foundation:
+  product:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,7 +16,5 @@ jobs:
           cache: npm
       - run: npm install --global npm@10.9.2
       - run: npm ci --ignore-scripts
-      - run: npm test
-      - run: npm run check
-      - run: node packages/photon-features/scripts/generate-skill.mjs --check
+      - run: npm run photon:verify-all
       - run: npm run smoke

@@ -14,3 +14,26 @@ export function responseExit(response: CliResponse): number {
   if (!Array.isArray(r) && "status" in r && ["blocked", "failed", "cancelled", "unknown-outcome"].includes(r.status)) return 5;
   return 0;
 }
+
+export interface FormattedCommandResult {
+  stdout: string;
+  stderr: string;
+  exitCode: number;
+}
+
+/** Keep the machine response on stdout and bounded human diagnostics on stderr. */
+export function formatCommandResult(input: CliResponse | CliError): FormattedCommandResult {
+  if (input instanceof CliError) {
+    return {
+      stdout: JSON.stringify({ version: 1, ok: false, error: { code: input.code } }) + "\n",
+      stderr: `grok-photon: ${input.code}\n`,
+      exitCode: input.exitCode,
+    };
+  }
+  const exitCode = responseExit(input);
+  return {
+    stdout: JSON.stringify(input) + "\n",
+    stderr: exitCode ? "grok-photon: request requires attention; inspect JSON result\n" : "",
+    exitCode,
+  };
+}

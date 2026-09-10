@@ -36,7 +36,7 @@ async function credential(path: string): Promise<string> {
     return token;
   } finally { await f.close(); }
 }
-export async function localRequest(request: LocalRequest, config: { socket: string; credentialFile: string; timeoutMs?: number }): Promise<CliResponse> {
+export async function callRuntime(request: LocalRequest, config: { socket: string; credentialFile: string; timeoutMs?: number }): Promise<CliResponse> {
   let token: string;
   try {
     if (!isAbsolute(config.socket)) throw new CliError("INVALID_CONFIGURATION", 2);
@@ -68,3 +68,6 @@ export async function localRequest(request: LocalRequest, config: { socket: stri
     });
   });
 }
+
+/** Retained for callers compiled against the earlier WT-08 function name. */
+export const localRequest = callRuntime;

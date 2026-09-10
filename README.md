@@ -12,7 +12,7 @@ The Grok orchestrator is an external integration dependency. This repository con
 - **Worker tools:** local CLI, operating skill, validated examples, inactive installation and rollback tooling.
 - **Verification:** foundation, lane, integration, security and explicitly gated live tests, plus source/evidence records.
 
-Source: [`packages/photon-features/src/`](packages/photon-features/src/). Tests: [`packages/photon-features/tests/`](packages/photon-features/tests/). Architecture: [`architecthure.md`](architecthure.md). Contributor guide: [`agent.md`](agent.md).
+Source: [`packages/photon-features/src/`](packages/photon-features/src/). Tests: [`packages/photon-features/tests/`](packages/photon-features/tests/). Architecture: [`ARCHITECTURE.md`](ARCHITECTURE.md). Contributor guide: [`AGENTS.md`](AGENTS.md).
 
 ## Development
 
@@ -23,18 +23,14 @@ npm ci --ignore-scripts
 npm run build
 npm test
 npm run check
+npm run photon:test:integration
+npm run photon:verify-all
 npm run smoke
 ```
 
-`npm test` runs the 60 foundation tests. `npm run check` verifies generated schemas and the frozen F0 contract digest. `npm run smoke` exercises the CLI offline without connecting a host or provider.
+`npm test` runs the 60 foundation tests. `npm run check` verifies generated schemas and the assembled candidate contract digest. `npm run photon:test:integration` discovers the full non-live test surface. `npm run photon:verify-all` adds the product-boundary, documentation, generated-skill and package checks. `npm run smoke` exercises the product CLI offline without connecting a host or provider.
 
-Run independent offline integration/security verification separately:
-
-```sh
-npm run test:verification
-```
-
-This suite currently fails on the documented integration defects below. It is not part of the foundation-only CI job. The existing live tests require separate explicit authorization and configuration.
+The live test directory remains excluded unless separately authorized and configured.
 
 For a particular lane after building:
 
@@ -44,19 +40,18 @@ node --test packages/photon-features/dist/tests/lanes/wt-03/*.test.js
 
 ## Current status
 
-All nine implementation/verification lanes are present. This is an implementation snapshot under integration, not an installable production release.
+All nine reviewed implementation/verification lanes are assembled. This is a locally verified candidate, not an installed or activated production release.
 
 | Gate | Status |
 | --- | --- |
-| Product foundation and compilation | Passed in the recorded preflight |
-| Text through durable executor | Blocked: execution-service contract mismatch (WT09-001) |
-| Inbound poll continuation | Blocked: router/reducer duplicate inbox ownership (WT09-002) |
-| Runtime database versus installer | Blocked: private-file permission mismatch (WT09-003) |
-| Full poll management | `poll.get`, `poll.vote`, `poll.unvote`, `poll.addOption` require implementation |
-| Production host and Grok wake wiring | Incomplete / unverified |
-| Final package, activation and live verification | Not complete |
+| Product foundation and compilation | Passed |
+| Complete registered surface | 44 handlers and 12 compiler families passed |
+| Non-live assembled tests | 755/755 passed on the source candidate |
+| Package dry-run and synthetic lifecycle | Passed |
+| Production host and external Grok wake wiring | Not activated or verified |
+| Final approved artifact and live/device verification | Not complete |
 
-Read the [44-operation evidence matrix](docs/photon-features/reports/wt-09/operation-coverage.md), [verification requirements](docs/photon-features/reports/wt-09/requirements.md), and [defect reports](docs/photon-features/requests/wt-09/).
+Read the [integration handoff](docs/worktrees/integration/HANDOFF.md), [test evidence](docs/worktrees/integration/TEST-EVIDENCE.md), and [remaining release gates](docs/worktrees/integration/CHANGE-REQUESTS.md).
 
 ## Local executable and installation
 
@@ -72,7 +67,7 @@ See the [operating skill](packages/photon-features/SKILL.md) and [installation/r
 
 ## Provenance
 
-Historical F0/lane evidence is retained unchanged, including its original repository URLs, commit identities and old CLI regression counts. Those references document where the work was developed; the former CLI source, tests, demos, changelog and automatic publishing setup are excluded from this product's current tree.
+Historical F0/lane evidence retains its source commit identities for auditability. The former Grok Bot CLI source, tests, demos, metadata, changelog and publishing workflows are excluded from this product tree and from this repository's new history.
 
 ## License
 

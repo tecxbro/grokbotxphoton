@@ -1,6 +1,8 @@
 import { resolveContents, type ContentInput } from "spectrum-ts";
 import { effect, imessage, type IMessageMessageEffect } from "spectrum-ts/providers/imessage";
-import { contentSchema, type ContentCompiler, type ContentSpec, type ExecutionServices } from "../../contracts/index.js";
+import {
+  contentSchema, type Action, type ContentCompiler, type ContentSpec, type ExecutionServices,
+} from "../../contracts/index.js";
 import { requireNative, resolveReference } from "./guards.js";
 
 const native = imessage.effect.message;
@@ -30,4 +32,15 @@ export function effectCompiler(compilers: readonly ContentCompiler[]): ContentCo
     requireNative(built, "UNSUPPORTED", "The effect content is missing.");
     return effect({ build: async () => built }, effectMapping[parsed.effect]);
   } };
+}
+
+/** Compiles one supported leaf with the registered common compiler before the
+ * caller crosses the provider dispatch boundary. */
+export async function executeEffect(
+  action: Extract<Action, { operation: "effect.send" }>,
+  services: ExecutionServices,
+  compiler: ContentCompiler,
+  send: (content: ContentInput, expectsMessage: boolean) => Promise<void>,
+): Promise<void> {
+  await send(await compiler.compile(action.arguments.content, services), true);
 }

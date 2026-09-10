@@ -5,12 +5,12 @@ import {
   type ContentSpec, type ExecutionServices, type FeatureModule, type OperationResult,
   type OutboxRecord, type RuntimeError,
 } from "../../index.js";
-import { compileAttachment } from "./attachments.js";
-import { compileContact } from "./contacts.js";
+import { compileAttachment, sendAttachment, fetchAttachment } from "./attachments.js";
+import { compileContact, sendContact } from "./contacts.js";
 import { mediaCheckpointSchema } from "./metadata.js";
 import { mappedResource, type MediaBindings } from "./sdk.js";
 import { SafeMediaStager } from "./staging.js";
-import { compileVoice, type VoiceBehavior } from "./voice.js";
+import { compileVoice, sendVoiceNote, type VoiceBehavior } from "./voice.js";
 import { MediaError } from "./safety.js";
 
 const operations = ["attachment.send", "attachment.fetch", "voice.send", "contact.send"] as const;
@@ -114,4 +114,16 @@ export function createMediaModule(options: { bindings: MediaBindings; voiceBehav
       { id: "wt04.media-metadata", version: 1, validate: value => mediaCheckpointSchema.safeParse(value).success, reconcile: async () => "unknown" },
     ],
   };
+}
+
+import type { FeatureModule as PublicFeatureModule } from "../../contracts/feature.js";
+import type { MediaOperation, MediaOperationOptions } from "./sdk.js";
+/** Register this F0 module explicitly in integration; legacy createMediaModule remains compatibility-only. */
+export function createFeatureModule(options: MediaOperationOptions): PublicFeatureModule<MediaOperation> {
+  return { id: "wt04.media", owner: "wt-04", handlers: {
+    "attachment.send": (action, services) => sendAttachment(action, services, options),
+    "attachment.fetch": (action, services) => fetchAttachment(action, services, options),
+    "voice.send": (action, services) => sendVoiceNote(action, services, options),
+    "contact.send": (action, services) => sendContact(action, services, options),
+  } };
 }

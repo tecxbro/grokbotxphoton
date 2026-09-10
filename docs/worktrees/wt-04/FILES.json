@@ -1,0 +1,188 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "packages/photon-features/src/features/media/module.ts",
+      "purpose": "Owned media implementation",
+      "symbols": [
+        "createFeatureModule"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/media/attachments.ts",
+      "purpose": "Owned media implementation",
+      "symbols": [
+        "sendAttachment",
+        "fetchAttachment"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/media/voice.ts",
+      "purpose": "Owned media implementation",
+      "symbols": [
+        "sendVoiceNote"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/media/contacts.ts",
+      "purpose": "Owned media implementation",
+      "symbols": [
+        "sendContact",
+        "compileContact",
+        "importVCard",
+        "exportVCard"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/media/staging.ts",
+      "purpose": "Owned media implementation",
+      "symbols": [
+        "stageMediaResource",
+        "resolveMediaResource",
+        "GuardedMediaStager",
+        "createMediaResourceCapacity"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/media/file-access.ts",
+      "purpose": "Owned media implementation",
+      "symbols": [
+        "openApprovedFile"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/media/guarded-fetch.ts",
+      "purpose": "Owned media implementation",
+      "symbols": [
+        "fetchApprovedResource",
+        "createGuardedFetcher"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/media/retention.ts",
+      "purpose": "Owned media implementation",
+      "symbols": [
+        "retainResource",
+        "releaseResource",
+        "cleanExpiredResources"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/media/sdk.ts",
+      "purpose": "Owned media implementation",
+      "symbols": [
+        "mapMediaOperation",
+        "publicNativeMediaSource",
+        "mappedMediaReference"
+      ]
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-04/unit.test.ts",
+      "purpose": "Owned direct evidence"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-04/sdk-contract.test.ts",
+      "purpose": "Owned direct evidence"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-04/integration.test.ts",
+      "purpose": "Owned direct evidence"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-04/regression.test.ts",
+      "purpose": "Owned direct evidence"
+    },
+    {
+      "path": "docs/worktrees/wt-04/AGENTS.md",
+      "purpose": "Lane contract and evidence"
+    },
+    {
+      "path": "docs/worktrees/wt-04/README.md",
+      "purpose": "Lane contract and evidence"
+    },
+    {
+      "path": "docs/worktrees/wt-04/ARCHITECTURE.md",
+      "purpose": "Lane contract and evidence"
+    },
+    {
+      "path": "docs/worktrees/wt-04/WORKLOG.md",
+      "purpose": "Lane contract and evidence"
+    },
+    {
+      "path": "docs/worktrees/wt-04/SOURCES.md",
+      "purpose": "Lane contract and evidence"
+    },
+    {
+      "path": "docs/worktrees/wt-04/source-lock.json",
+      "purpose": "Lane contract and evidence"
+    },
+    {
+      "path": "docs/worktrees/wt-04/FILES.json",
+      "purpose": "Lane contract and evidence"
+    },
+    {
+      "path": "docs/worktrees/wt-04/ACCEPTANCE.md",
+      "purpose": "Lane contract and evidence"
+    },
+    {
+      "path": "docs/worktrees/wt-04/TEST-EVIDENCE.md",
+      "purpose": "Lane contract and evidence"
+    },
+    {
+      "path": "docs/worktrees/wt-04/HANDOFF.md",
+      "purpose": "Lane contract and evidence"
+    },
+    {
+      "path": "docs/worktrees/wt-04/CHANGE-REQUESTS.md",
+      "purpose": "Lane contract and evidence"
+    },
+    {
+      "path": "docs/worktrees/wt-04/references/official-0.md",
+      "purpose": "Verified immutable official or skill source snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-04/references/official-1.md",
+      "purpose": "Verified immutable official or skill source snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-04/references/official-2.md",
+      "purpose": "Verified immutable official or skill source snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-04/references/official-3.md",
+      "purpose": "Verified immutable official or skill source snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-04/references/official-4.md",
+      "purpose": "Verified immutable official or skill source snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-04/references/official-5.md",
+      "purpose": "Verified immutable official or skill source snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-04/references/official-6.md",
+      "purpose": "Verified immutable official or skill source snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-04/references/skill-10.md",
+      "purpose": "Verified immutable official or skill source snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-04/references/skill-11.md",
+      "purpose": "Verified immutable official or skill source snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-04/references/skill-7.md",
+      "purpose": "Verified immutable official or skill source snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-04/references/skill-8.md",
+      "purpose": "Verified immutable official or skill source snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-04/references/skill-9.md",
+      "purpose": "Verified immutable official or skill source snapshot"
+    }
+  ]
+}

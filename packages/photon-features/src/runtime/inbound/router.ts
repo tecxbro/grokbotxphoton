@@ -142,6 +142,8 @@ export class InboundRouter {
         const continuationIds: string[] = [];
         for (const row of records) {
           const e = row.event;
+          let wantsWork = false;
+          let eventRoute: TaskRoute | undefined;
           if (!sameScope(first.scope, row.scope))
             throw new Error("SCOPE_MISMATCH");
           if (e.type === "unresolved") throw new CorrelationPending(e.reason);
@@ -149,8 +151,9 @@ export class InboundRouter {
             const reducer = this.reducers.get(e.type);
             if (!conversational(e) && !reducer)
               throw new CorrelationPending("missing-feature-reducer");
-            const wantsWork =
-              conversational(e) || this.policy.continuation?.(e) === true;
+            wantsWork =
+              conversational(e) || (e.direction === "inbound" && ["poll", "reaction", "app-interaction"].includes(e.type) &&
+                this.policy.continuation?.(e) === true);
             if (wantsWork) {
               const next = this.policy.route(e, tx);
               if (!next || !activeRoute(tx, row.scope, next))
@@ -158,7 +161,7 @@ export class InboundRouter {
               if (route && canonicalJson(route) !== canonicalJson(next))
                 throw new CorrelationPending("mixed-task-batch");
               route = next;
-              continuationIds.push(row.id);
+              eventRoute = next;
             }
             const reduced: unknown = reducer?.reduce(e, tx);
             if (
@@ -171,12 +174,42 @@ export class InboundRouter {
               void Promise.resolve(reduced).catch(() => undefined);
               throw new Error("ASYNC_REDUCER_FORBIDDEN");
             }
+            if (wantsWork) {
+              const continuationId =
+                reduced && typeof reduced === "object" &&
+                "continuationId" in reduced &&
+                typeof reduced.continuationId === "string"
+                  ? reduced.continuationId
+                  : undefined;
+              if (continuationId) {
+                const handoff = tx.get("handoffs", continuationId);
+                if (
+                  !handoff ||
+                  !eventRoute ||
+                  !sameScope(handoff.scope, row.scope) ||
+                  handoff.taskId !== eventRoute.taskId ||
+                  handoff.generation !== eventRoute.generation ||
+                  handoff.principalId !== eventRoute.principalId ||
+                  !handoff.eventIds.includes(row.id)
+                )
+                  throw new Error("INVALID_REDUCER_CONTINUATION");
+              } else continuationIds.push(row.id);
+            }
           }
-          tx.put(
-            "inbox",
-            { ...row, state: "reduced", revision: row.revision + 1 },
-            row.revision,
-          );
+          // A feature reducer may atomically persist its state and mark this
+          // inbox row reduced in the same transaction. Re-read after reduction
+          // so the router neither overwrites that update nor uses a stale fence.
+          const current = tx.get("inbox", row.id);
+          if (current && current.state !== "reduced")
+            tx.put(
+              "inbox",
+              {
+                ...current,
+                state: "reduced",
+                revision: current.revision + 1,
+              },
+              current.revision,
+            );
           const unresolved = tx.get("unresolved", row.id);
           if (unresolved)
             tx.put(
@@ -260,4 +293,10 @@ export class InboundRouter {
         );
     });
   }
+}
+
+/** Capture/receipt acquisition is the ingress caller's responsibility. This commits
+ * individual input, then reduces structured input through registered reducers. */
+export function routeInboundEvent(router: InboundRouter, event: IncomingEvent): Promise<void> {
+  return router.accept(event);
 }

@@ -105,6 +105,7 @@ export async function installRelease({ archivePath, checksum, root }) {
     return { installed: true, release, activation: 'disabled', path: destination };
   });
 }
+export async function installPackage(options) { return installRelease(options); }
 export async function rollbackRelease({ root, release }) {
   if (!isAbsolute(root) || !/^[a-f0-9]{64}$/.test(release)) throw new Error('INVALID_ROLLBACK_TARGET');
   await prepare(root);

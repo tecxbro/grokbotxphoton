@@ -88,3 +88,33 @@ export class ExecutionClaims {
     });
   }
 }
+
+/** Acquire a new fenced owner only when no live or recoverable predecessor owns the request. */
+export function acquireClaim(
+  claims: ExecutionClaims,
+  requestId: string,
+  owner: string,
+  leaseMs: number,
+): Claim | null {
+  return claims.acquire(requestId, owner, leaseMs);
+}
+
+/** Renew only the exact current fence and generation. */
+export function renewClaim(
+  claims: ExecutionClaims,
+  requestId: string,
+  claim: Claim,
+  leaseMs: number,
+): void {
+  claims.heartbeat(requestId, claim, leaseMs);
+}
+
+/** Revalidate mutable authority, cancellation, lease, generation, and owner in one transaction. */
+export function validateClaim(
+  claims: ExecutionClaims,
+  tx: Transaction,
+  requestId: string,
+  claim: Claim,
+): { row: OutboxRecord; context: TrustedContext } {
+  return claims.writable(tx, requestId, claim);
+}

@@ -40,3 +40,32 @@ export function createPollModule(config: PollModuleConfiguration = {
     }],
   };
 }
+
+import type { FeatureModule as F0FeatureModule } from "../../contracts/feature.js";
+import { executePollOperation } from "./operations.js";
+import type { PollProviderBinding } from "./sdk.js";
+
+/** F0 module factory; inert construction and no second SDK owner.
+ * Registration is handler availability only. Consult pollFeatureAvailability before advertising
+ * an interactive workflow; native management stays explicitly blocked on the frozen F0 seam.
+ */
+export function createFeatureModule(binding?: PollProviderBinding): F0FeatureModule {
+  return { id: "polls", owner: "wt-05", handlers: {
+    "poll.create": (action, services) => executePollOperation(action, services, binding),
+    "poll.get": (action, services) => executePollOperation(action, services, binding),
+    "poll.vote": (action, services) => executePollOperation(action, services, binding),
+    "poll.unvote": (action, services) => executePollOperation(action, services, binding),
+    "poll.addOption": (action, services) => executePollOperation(action, services, binding),
+  } };
+}
+
+/** Separate outbound implementation from provider availability and actual incoming user votes. */
+export function pollFeatureAvailability(voteIngress: PollModuleConfiguration["voteIngress"] = "unknown") {
+  return {
+    operations: { "poll.create": "implemented", "poll.get": "blocked", "poll.vote": "blocked",
+      "poll.unvote": "blocked", "poll.addOption": "blocked" } as const,
+    outboundProviderAvailability: "unverified" as const,
+    voteIngress, interactiveWorkflowAdvertisable: false as const,
+    blockers: ["wt-05-advanced-polls", ...(voteIngress === "available" ? [] : ["wt-05-vote-ingress"])],
+  };
+}

@@ -1,0 +1,387 @@
+{
+  "version": 1,
+  "basis": "User exact-file authorization; supersedes stale shared WT-02 inventory",
+  "files": [
+    {
+      "path": "packages/photon-features/src/adapters/transport/spectrum-owner.ts",
+      "symbols": [
+        "startSpectrumOwner",
+        "stopSpectrumOwner"
+      ],
+      "purpose": "WT-02 startSpectrumOwner, stopSpectrumOwner"
+    },
+    {
+      "path": "packages/photon-features/src/adapters/transport/provider-context.ts",
+      "symbols": [
+        "resolveProviderContext"
+      ],
+      "purpose": "WT-02 resolveProviderContext"
+    },
+    {
+      "path": "packages/photon-features/src/adapters/transport/message-events.ts",
+      "symbols": [
+        "subscribeMessageEvents"
+      ],
+      "purpose": "WT-02 subscribeMessageEvents"
+    },
+    {
+      "path": "packages/photon-features/src/adapters/transport/native-state.ts",
+      "symbols": [
+        "lookupNativeMessageState"
+      ],
+      "purpose": "WT-02 lookupNativeMessageState"
+    },
+    {
+      "path": "packages/photon-features/src/adapters/transport/webhook-ingress.ts",
+      "symbols": [
+        "acceptVerifiedWebhook"
+      ],
+      "purpose": "WT-02 acceptVerifiedWebhook"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/inbound/normalize.ts",
+      "symbols": [
+        "normalizeInboundEvent"
+      ],
+      "purpose": "WT-02 normalizeInboundEvent"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/inbound/router.ts",
+      "symbols": [
+        "routeInboundEvent"
+      ],
+      "purpose": "WT-02 routeInboundEvent"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/inbound/batching.ts",
+      "symbols": [
+        "appendToBatch",
+        "releaseReadyBatch"
+      ],
+      "purpose": "WT-02 appendToBatch, releaseReadyBatch"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/inbound/wake-dispatcher.ts",
+      "symbols": [
+        "dispatchWake",
+        "configuredGrokWake"
+      ],
+      "purpose": "WT-02 dispatchWake, configuredGrokWake"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/inbound/receipt-observer.ts",
+      "symbols": [
+        "observeReceipt"
+      ],
+      "purpose": "WT-02 observeReceipt"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/inbound/receipt-reconcile.ts",
+      "symbols": [
+        "reconcileReceiptTarget"
+      ],
+      "purpose": "WT-02 reconcileReceiptTarget"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/inbound/checkpoints.ts",
+      "symbols": [
+        "advanceCheckpoint",
+        "recoverStream"
+      ],
+      "purpose": "WT-02 advanceCheckpoint, recoverStream"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/typing/leases.ts",
+      "symbols": [
+        "acquireTypingLease",
+        "releaseTypingLease",
+        "expireLeases"
+      ],
+      "purpose": "WT-02 acquireTypingLease, releaseTypingLease, expireLeases"
+    },
+    {
+      "path": "packages/photon-features/src/runtime/typing/operations.ts",
+      "symbols": [
+        "executeTypingOperation",
+        "createTypingFeatureModule"
+      ],
+      "purpose": "WT-02 executeTypingOperation, createTypingFeatureModule"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-02/unit.test.ts",
+      "purpose": "unit acceptance coverage"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-02/sdk-contract.test.ts",
+      "purpose": "sdk-contract acceptance coverage"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-02/integration.test.ts",
+      "purpose": "integration acceptance coverage"
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-02/regression.test.ts",
+      "purpose": "regression acceptance coverage"
+    },
+    {
+      "path": "docs/worktrees/wt-02/ACCEPTANCE.md",
+      "purpose": "Lane ACCEPTANCE documentation"
+    },
+    {
+      "path": "docs/worktrees/wt-02/AGENTS.md",
+      "purpose": "Lane AGENTS documentation"
+    },
+    {
+      "path": "docs/worktrees/wt-02/ARCHITECTURE.md",
+      "purpose": "Lane ARCHITECTURE documentation"
+    },
+    {
+      "path": "docs/worktrees/wt-02/CHANGE-REQUESTS.md",
+      "purpose": "Lane CHANGE-REQUESTS documentation"
+    },
+    {
+      "path": "docs/worktrees/wt-02/FILES.json",
+      "purpose": "Lane FILES documentation"
+    },
+    {
+      "path": "docs/worktrees/wt-02/HANDOFF.md",
+      "purpose": "Lane HANDOFF documentation"
+    },
+    {
+      "path": "docs/worktrees/wt-02/README.md",
+      "purpose": "Lane README documentation"
+    },
+    {
+      "path": "docs/worktrees/wt-02/SOURCES.md",
+      "purpose": "Lane SOURCES documentation"
+    },
+    {
+      "path": "docs/worktrees/wt-02/TEST-EVIDENCE.md",
+      "purpose": "Lane TEST-EVIDENCE documentation"
+    },
+    {
+      "path": "docs/worktrees/wt-02/WORKLOG.md",
+      "purpose": "Lane WORKLOG documentation"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/02fd6c673d3e49da94d11e83d8c662b72fc574b207704e1c682af28856980901.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/032820ce8bbd13fb91ada9eeae1ac77489cad067ba9a69c90fa7fbdc6ef16386.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/07b5c4de6c1f9e41bd5af54c9d4c42c76b9dd30a3c6166d5d47af1190195f7ce.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/0a2f328fe6da4d202497e8bb859625de06af23cce884d1639dd1e8f3cb737de8.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/0c48bf0a55dc176d4d9515404ea96c9746505fcab6fa2c5b570b492a64c4d5c9.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/0da88e0f2336f1f0757dc7359dd702ce9fc2d3e586e523871244251f97c7d39b.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/0e9cff75bdffdb8e625583fdd88ccd7317d027fa3f9a74cbe3cebfa256c0c033.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/10fb889be4fd62e0e3f201ab46e6b34096e8aa2f24101bdecb49197926e8c3de.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/218af7703b8d12537ca8c6077c1b8b5d9865ccc2202fc7eaef2d883651a59dbb.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/32b3bfcbc333b734abd60b91046e6bf94fe4358c8a5df31c4aacad7733432bc9.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/39f468bcfe4089fbb404b8a68f522c69ba49ec2ff4cef340187e17869d5e5041.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/4498e7098702ee34919ebc305562d68109baf3c3b9378c31f0e26ee797302a0a.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/467ef6c27f50ff72555a335fd674402199a396237433d0cb4543c7836a4652f7.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/4a7113e2a9b987f51e8098f33a9b007f7cc31890487bff42a031c36bc15e9ee3.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/566a8ddbd1cf0dccdbcd3695c6e28c3cc4b100d97e606c0ee923ade339f24c47.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/635f450c71ecff3b4b7e9294e0324ffb59996afa045c777d72504fe48e6d0e6b.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/67f1422037a1eb775f0e06b6f6e6b7fdfdb0dee5e0f84d0ad3c38cab2a5f3cfb.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/6e8105b77cd5c763586f0cd869a76ad2dc90b395ce331feb6505ebf177d23e6b.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/6f8ead1678e917693423a932ad0b00c8c12b88665151f0f936630b0c3c8f3ce4.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/7aa55c7ecee4ebe392f314302205d8158a20550a5162e68574bf3dd9f0620853.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/7d374a1ab6bf234cd1e4a2ff750e23b51ebd60efbf2e3d25a6e31ac72da373fa.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/85bf1cfd9ecb68c44072ec629c504eafd643f5a0f311290d741022f76ee2824d.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/9d5a5904194b64d81525a44c4a63c89315c2b4d622b5bc863d064c74be27d5d9.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/a0bb3e19523db797357be14d72025496d17b3810ef1556f4f97d014243655f41.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/a425253f21fd4045ef978436cb68fc30fbd94f71287fa5e87e329573da21feb5.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/baseline.json",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/bb81d373222826951dcc615fe45feb4fa2d3dd8a1b08bc5114c185fb5226cb8b.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/bfa14bc970d4c6c4078e5b2241fdc200d3be8cd20cf80adc2193f3bc214fcbd5.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/build.txt",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/c8a0fc8ed49999b5d5e1a0bef47e6ff476708571921ef9c1bb5631b78e186ed2.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/c93b2de5ed273a859943bb573fb02375d69a987d3717e9efb750de1c80305bb0.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/cli-tests.txt",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/contracts.txt",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/d73dd5727d96a1145458d5a7e417149b24ee05e26899f710983e57aca4f4ce70.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/dd1fb5ecc13ba7efa93eebcbe70087bb2f4f3607838730187969d2770e646e86.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/e3c4d5d536853a7a9f463585a53866abcf630735d53b43b347c3b4ded3fd6e0c.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/e58ac8fa4ec788bbf3c178f83843be271715b7038765dc390849e91187bfdc8b.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/ea68f162fd7ed4d4ea24ff7223754bdc7e8941bb148fc247404d7821f492a3b9.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/f00445888cb5944ff77f259b3e781009977d57367d753d586029705e406980c5.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/f3104ad9ab89090d26e36491b919b06dc6561f40a99ca24d586b54a2543a4a66.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/f68315e21670f205072ec038fd104e1248d2bf592075bdb500e6b2f1a5605ae4.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/f69d3567ce5bb75b6db2348c1906ff0e8629941be75c49f64416311693fbe044.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/f821db30ca6f74b21f1489d1a64d0e5534cbe641d1ee8ad9d10b575d6d599350.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/ffbfaec5c8146c923a3df23dc84ab0df607a5f78beb4faf5675f2cac17df58f9.md",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/foundation-absolute-temp-failure.txt",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/foundation-tests.txt",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/lane-tests.txt",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/typecheck.txt",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/verification-results.json",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/verify-docs.txt",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/verify-lane.txt",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/verify-ownership.txt",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/verify-worktree.txt",
+      "purpose": "Lane reference/evidence snapshot"
+    },
+    {
+      "path": "docs/worktrees/wt-02/source-lock.json",
+      "purpose": "Lane source-lock documentation"
+    },
+    {
+      "path": "docs/worktrees/wt-02/references/final-audit.json",
+      "purpose": "Independent final source/test/diff/preservation audit"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "node": "/Users/darshan/.npm/_npx/cee224165f95995d/node_modules/node/bin/node",
+  "nodeVersion": "24.13.0",
+  "testedHead": "ee2f8576b55973eee312bca5cad0549b6f959a88",
+  "ownedContentSha256": "3af265ef9fbcbbf7c27190ab0e383e43b0f017cd2aa2c3960290e84e1b816fc1",
+  "results": [
+    {
+      "name": "foundation-tests",
+      "command": [
+        "/Users/darshan/.npm/_npx/cee224165f95995d/node_modules/node/bin/node",
+        "--test",
+        "--test-reporter=tap",
+        "packages/photon-features/dist/tests/foundation/*.test.js",
+        "packages/photon-features/dist/tests/lanes/wt-00/*.test.js"
+      ],
+      "exit": 0,
+      "counts": {
+        "tests": "125",
+        "pass": "125",
+        "fail": "0",
+        "cancelled": "0",
+        "skipped": "0",
+        "todo": "0"
+      },
+      "log": ".photon-local/wt-02/foundation-tests.log",
+      "sha256": "8ab306ce84a0efa4a0f94fb69d752bd3e862ab59f3e7533d287e50b2f3f8c954",
+      "snapshot": "docs/worktrees/wt-02/references/foundation-tests.txt"
+    },
+    {
+      "name": "cli-tests",
+      "command": [
+        "/Users/darshan/.npm/_npx/cee224165f95995d/node_modules/node/bin/node",
+        "--test",
+        "--test-reporter=tap",
+        "test/*.test.js"
+      ],
+      "exit": 0,
+      "counts": {
+        "tests": "31",
+        "pass": "31",
+        "fail": "0",
+        "cancelled": "0",
+        "skipped": "0",
+        "todo": "0"
+      },
+      "log": ".photon-local/wt-02/cli-tests.log",
+      "sha256": "d832aa55d975a775f7fe5ff9fbdaf41a11b027380c66dce5d1ce949849171efb",
+      "snapshot": "docs/worktrees/wt-02/references/cli-tests.txt"
+    },
+    {
+      "name": "contracts",
+      "command": [
+        "/Users/darshan/.npm/_npx/cee224165f95995d/node_modules/node/bin/node",
+        "scripts/generate-contracts.mjs",
+        "--check"
+      ],
+      "exit": 0,
+      "counts": {},
+      "log": ".photon-local/wt-02/contracts.log",
+      "sha256": "3ed0ce51a09c8e57f07679f23b23cea37175606e0a8128923a982a9ea029f608",
+      "snapshot": "docs/worktrees/wt-02/references/contracts.txt"
+    },
+    {
+      "name": "verify-worktree",
+      "command": [
+        "/Users/darshan/.npm/_npx/cee224165f95995d/node_modules/node/bin/node",
+        "scripts/verify-worktree.mjs",
+        "wt-02"
+      ],
+      "exit": 0,
+      "counts": {},
+      "log": ".photon-local/wt-02/verify-worktree.log",
+      "sha256": "2e51e86f6021e98bd9ed7116965f080a8a16db33258532f526d527051812b1bb",
+      "snapshot": "docs/worktrees/wt-02/references/verify-worktree.txt"
+    },
+    {
+      "name": "verify-lane",
+      "command": [
+        "/Users/darshan/.npm/_npx/cee224165f95995d/node_modules/node/bin/node",
+        "scripts/verify-lane.mjs",
+        "wt-02"
+      ],
+      "exit": 1,
+      "counts": {},
+      "log": ".photon-local/wt-02/verify-lane.log",
+      "sha256": "9deae2ed3c9156699f88a0b1459f1fe209f162348d05b85f5f0b03bdfba082bb",
+      "snapshot": "docs/worktrees/wt-02/references/verify-lane.txt"
+    },
+    {
+      "name": "verify-ownership",
+      "command": [
+        "/Users/darshan/.npm/_npx/cee224165f95995d/node_modules/node/bin/node",
+        "scripts/verify-ownership.mjs",
+        "wt-02"
+      ],
+      "exit": 1,
+      "counts": {},
+      "log": ".photon-local/wt-02/verify-ownership.log",
+      "sha256": "54ad17419c868eee2edcd4015a45f99ff4af0ee62ab0279f8872be07cd6df42b",
+      "snapshot": "docs/worktrees/wt-02/references/verify-ownership.txt"
+    },
+    {
+      "name": "verify-docs",
+      "command": [
+        "/Users/darshan/.npm/_npx/cee224165f95995d/node_modules/node/bin/node",
+        "scripts/verify-docs.mjs",
+        "wt-02"
+      ],
+      "exit": 1,
+      "counts": {},
+      "log": ".photon-local/wt-02/verify-docs.log",
+      "sha256": "7a9124c740e377298ead93f9bd5524c817f563389c57b1f137295c194de74709",
+      "snapshot": "docs/worktrees/wt-02/references/verify-docs.txt"
+    },
+    {
+      "name": "typecheck",
+      "command": [
+        "/Users/darshan/.npm/_npx/cee224165f95995d/node_modules/node/bin/node",
+        "node_modules/typescript/bin/tsc",
+        "-p",
+        "packages/photon-features/tsconfig.json",
+        "--noEmit"
+      ],
+      "exit": 0,
+      "counts": {},
+      "log": ".photon-local/wt-02/typecheck.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": "docs/worktrees/wt-02/references/typecheck.txt"
+    },
+    {
+      "name": "build",
+      "command": [
+        "/Users/darshan/.npm/_npx/cee224165f95995d/node_modules/node/bin/node",
+        "node_modules/typescript/bin/tsc",
+        "-p",
+        "packages/photon-features/tsconfig.json"
+      ],
+      "exit": 0,
+      "counts": {},
+      "log": ".photon-local/wt-02/build.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": "docs/worktrees/wt-02/references/build.txt"
+    },
+    {
+      "name": "lane-tests",
+      "command": [
+        "/Users/darshan/.npm/_npx/cee224165f95995d/node_modules/node/bin/node",
+        "--test",
+        "--test-reporter=tap",
+        "packages/photon-features/dist/tests/lanes/wt-02/*.test.js"
+      ],
+      "exit": 0,
+      "counts": {
+        "tests": "67",
+        "pass": "67",
+        "fail": "0",
+        "cancelled": "0",
+        "skipped": "0",
+        "todo": "0"
+      },
+      "log": ".photon-local/wt-02/lane-tests.log",
+      "sha256": "693842bca8b6ae431318ff108608971d2ad801b4292763471d2d18b6dcc5faba",
+      "snapshot": "docs/worktrees/wt-02/references/lane-tests.txt"
+    }
+  ],
+  "testTempDirectory": ".photon-local (relative to WT-02; avoids macOS socket path length limit)",
+  "whitespaceReview": {
+    "fullStagedCheck": "fails only on verbatim official verifying-signatures source indentation; preserved source hash",
+    "authoredFiles": "passed separately"
+  }
+}

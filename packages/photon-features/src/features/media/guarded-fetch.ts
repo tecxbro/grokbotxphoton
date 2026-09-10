@@ -83,7 +83,9 @@ export function createGuardedFetcher(policy: FetchPolicy, dependencies: {
       const url = approvedUrl(current, policy);
       const addresses = await abortable(lookup(url.hostname), signal);
       if (!addresses.length || addresses.some(a => !isPublicAddress(a.address) || isIP(a.address) !== a.family)) reject("nonpublic destination");
-      const response = await abortable(send(url, addresses[0]!, signal), signal);
+      const pending = send(url, addresses[0]!, signal);
+      pending.then(response => { if (signal.aborted) response.close(); }).catch(() => {});
+      const response = await abortable(pending, signal);
       if ([301,302,303,307,308].includes(response.status)) {
         response.close();
         if (!response.location || hop === redirects) reject("redirect limit");
@@ -96,4 +98,51 @@ export function createGuardedFetcher(policy: FetchPolicy, dependencies: {
     }
     return reject("redirect limit");
   };
+}
+
+let activeDownloads = 0;
+/** Bounded host download. A slot stays held until consumption, cancellation or deadline, including unused bodies. */
+export async function fetchApprovedResource(input: string, policy: FetchPolicy, signal: AbortSignal,
+  limits: { maxBytes?: number; timeoutMs?: number } = {},
+  dependencies: Parameters<typeof createGuardedFetcher>[1] = {}): Promise<Download> {
+  const maxBytes = limits.maxBytes ?? 25 * 1024 * 1024, timeoutMs = limits.timeoutMs ?? 30000;
+  if (!Number.isSafeInteger(maxBytes) || maxBytes < 1 || maxBytes > 25 * 1024 * 1024 ||
+    !Number.isSafeInteger(timeoutMs) || timeoutMs < 1 || timeoutMs > 120000) reject("invalid limits");
+  if (activeDownloads >= 4) reject("concurrency limit");
+  activeDownloads++;
+  const controller = new AbortController();
+  const deadline = AbortSignal.any([signal, controller.signal]);
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  timer.unref();
+  let download: Download | undefined, closed = false;
+  let reader: ReturnType<MediaStream["getReader"]> | undefined;
+  const close = () => {
+    if (closed) return;
+    closed = true; clearTimeout(timer); deadline.removeEventListener("abort", close);
+    if (reader) void reader.cancel().catch(() => {});
+    download?.close(); activeDownloads--;
+  };
+  deadline.addEventListener("abort", close, { once: true });
+  try {
+    download = await createGuardedFetcher(policy, dependencies)(input, deadline);
+    if (closed) download.close();
+    deadline.throwIfAborted();
+    reader = download.stream.getReader();
+    let bytes = 0;
+    const stream = new ReadableStream<Uint8Array>({
+      async pull(target) {
+        try {
+          deadline.throwIfAborted();
+          const item = await abortable(reader!.read(), deadline);
+          if (item.done) { if (!bytes) reject("empty resource"); target.close(); close(); return; }
+          if (!(item.value instanceof Uint8Array)) reject("nonbinary stream");
+          bytes += item.value.byteLength;
+          if (bytes > maxBytes) reject("byte limit");
+          target.enqueue(item.value);
+        } catch (error) { target.error(error); close(); }
+      },
+      cancel() { close(); },
+    }, { highWaterMark: 0 });
+    return { stream, mimeType: download.mimeType, close };
+  } catch (error) { close(); throw error; }
 }

@@ -11,6 +11,7 @@ import {
 } from "../../contracts/index.js";
 import {
   opaqueId,
+  isIMessagePlatform,
   scopeKey,
   type ProviderContext,
 } from "../../adapters/transport/provider-context.js";
@@ -179,8 +180,8 @@ export function normalizeCaptured(
 ): IncomingEvent {
   const m = slimMessage.parse(input);
   if (
-    m.platform !== "imessage" ||
-    (m.space.platform && m.space.platform !== "imessage")
+    !isIMessagePlatform(m.platform) ||
+    (m.space.platform && !isIMessagePlatform(m.space.platform))
   )
     throw new Error("UNBOUND_PROVIDER_ROUTE");
   const scope = routes.inbound(string(m.space.phone), m.space.id);
@@ -208,7 +209,8 @@ export function normalizeCaptured(
     receivedAt,
     occurredAt: at(m.timestamp),
     direction:
-      m.direction === "outbound" ? ("outbound" as const) : ("inbound" as const),
+      m.direction === "outbound" ? ("outbound" as const) :
+      m.direction === "inbound" ? ("inbound" as const) : ("system" as const),
     ordering: {
       source: "spectrum.messages",
       ...(revision ? { revision } : {}),
@@ -336,3 +338,7 @@ export function normalizeCaptured(
     return unresolved("unsupported-payload");
   }
 }
+
+/** Normalize only authenticated, already captured input; the capture preserves
+ * provider fields that the shared event union cannot yet represent. */
+export const normalizeInboundEvent = normalizeCaptured;

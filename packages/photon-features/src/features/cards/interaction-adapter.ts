@@ -3,6 +3,7 @@ import { idSchema, scopeSchema, sessionRefSchema, sameScope, type TransactionSto
 import { key, loadSession } from './state.js';
 import { CardError, requireCard } from './configuration.js';
 import { reduceAuthenticatedInteraction } from './reducer.js';
+import { assertJsonData as assertInteractionJson } from '../../contracts/content.js';
 
 /** Internal normalized assertion, NOT an invented app-backend wire protocol.
  * The configured backend verifier must authenticate raw bytes and the participant,
@@ -78,4 +79,31 @@ export function createInteractionAdapter(options: { backend?: AppBackendContract
       return { status: 'committed', handoffId: reduced.pointer.handoffId, wake };
     },
   };
+}
+
+const authenticatedBackend = new WeakMap<AuthenticatedInteraction, { id: string; json: string }>();
+/** Validate inert internal assertions only. This function grants no authentication. */
+export function normalizeInteraction(input: unknown): AuthenticatedInteraction {
+  assertInteractionJson(input);
+  return authenticatedInteractionSchema.parse(input);
+}
+
+/** Host callback seam: delegate to its configured, documented backend wire
+ * verifier. No default HMAC protocol, app.messages subscription or server exists. */
+export async function authenticateInteraction(request: { body: Uint8Array; headers: Readonly<Record<string, string>> },
+  backend?: AppBackendContract): Promise<AuthenticatedInteraction> {
+  requireCard(backend && backend.source.trim() && idSchema.safeParse(backend.id).success, 'UNAVAILABLE',
+    'Actual app backend return-path contract is not configured.', 'app_backend_contract_missing');
+  requireCard(request.body instanceof Uint8Array && request.body.byteLength > 0 && request.body.byteLength <= 16384 &&
+    Object.keys(request.headers).length <= 32 && Object.entries(request.headers).every(([k, v]) => k.length <= 200 && typeof v === 'string' && v.length <= 2048),
+    'INVALID_REQUEST', 'Callback body or headers exceed bounds.');
+  const assertion = normalizeInteraction(await backend.authenticate({ body: new Uint8Array(request.body), headers: { ...request.headers } }));
+  authenticatedBackend.set(assertion, { id: backend.id, json: JSON.stringify(assertion) });
+  return assertion;
+}
+/** Reject caller-created or mutated normalized assertions at the reduction seam. */
+export function assertAuthenticatedInteraction(input: AuthenticatedInteraction, backendId: string): void {
+  const proof = authenticatedBackend.get(input);
+  requireCard(proof && proof.id === backendId && proof.json === JSON.stringify(input),
+    'UNAUTHENTICATED', 'Callback assertion was not authenticated by its bound backend.');
 }

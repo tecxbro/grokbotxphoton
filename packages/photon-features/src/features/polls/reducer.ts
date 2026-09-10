@@ -136,6 +136,97 @@ export function createPollReducer(policy: PollReductionPolicy = { orderedSources
         eventIds: [event.eventId], state: "pending", claim: null, createdAt: event.receivedAt,
       }, null);
       markReduced(event, tx);
+      return { continuationId: handoffId };
     },
   };
+}
+
+import type { UnitOfWork } from "../../contracts/store.js";
+import type { TrustedContext } from "../../contracts/context.js";
+import { resolvePollIdentity, resolveOptionIdentity } from "./identity.js";
+
+/** Normalizer evidence, not participant IDs supplied by an action or guessed sentinels. */
+export interface PollEventPolicy extends PollReductionPolicy {
+  verifiedActors: readonly string[];
+}
+export type PollEventDisposition =
+  | { status: "applied" | "duplicate" | "stale"; continuationId?: string }
+  | { status: "unresolved"; reason: string };
+const unresolved = (reason: string): PollEventDisposition => ({ status: "unresolved", reason });
+
+/** Pure synchronous F0 reducer. Host captures/retains inbox events and selects the ORIGINAL task's
+ * authorized UoW before calling this function. State and continuation share that transaction;
+ * storage/commit failures propagate for rollback. No network, subscriptions or wake here.
+ */
+export function applyPollEvent(input: IncomingEvent, unit: UnitOfWork,
+  context: Readonly<TrustedContext>, policy: PollEventPolicy): PollEventDisposition {
+  const parsed = incomingEventSchema.safeParse(input);
+  if (!parsed.success || parsed.data.type !== "poll") return unresolved("INVALID_POLL_EVENT");
+  const event = parsed.data;
+  if (!sameScope(event.scope, context.scope) || !sameScope(event.poll.scope, event.scope) ||
+      !sameScope(event.option.scope, event.scope) || event.option.pollId !== event.poll.id ||
+      event.targets.some(t => !sameScope(t.scope, event.scope))) return unresolved("EVENT_SCOPE_OR_PARENT_MISMATCH");
+  if (event.direction !== "inbound") return unresolved("INBOUND_INTERACTION_REQUIRED");
+  if (!policy.verifiedActors.includes(event.actorId)) return unresolved("UNKNOWN_VOTER");
+  const seq = event.ordering.sequence;
+  if (!policy.orderedSources.includes(event.ordering.source) || !seq || !/^\d{1,100}$/.test(seq))
+    return unresolved("AUTHORITATIVE_ORDERING_REQUIRED");
+  let poll, option;
+  try {
+    poll = resolvePollIdentity(unit, event.poll, context);
+    option = resolveOptionIdentity(unit, poll, event.option, context);
+    for (const target of event.targets) {
+      if (target.kind === "poll" && resolvePollIdentity(unit, target, context).id !== poll.id)
+        return unresolved("AMBIGUOUS_EVENT_TARGET");
+      if (target.kind === "poll-option" && resolveOptionIdentity(unit, poll, target, context).reference.id !== option.reference.id)
+        return unresolved("AMBIGUOUS_EVENT_TARGET");
+      if (target.kind === "message") {
+        const native = unit.get("references", poll.reference.messageId)!;
+        if (target.id !== poll.reference.messageId && target.id !== native.providerId)
+          return unresolved("AMBIGUOUS_EVENT_TARGET");
+      }
+      if (!["poll", "poll-option", "message", "space"].includes(target.kind))
+        return unresolved("UNSUPPORTED_EVENT_TARGET");
+      if (target.kind === "space" && target.id !== context.scope.spaceId)
+        return unresolved("AMBIGUOUS_EVENT_TARGET");
+    }
+  } catch (error) {
+    // Only identity ambiguity is a disposition. Infrastructure errors must abort the transaction.
+    const reason = error instanceof Error ? error.message : "";
+    if (["SCOPE_MISMATCH", "POLL_OPTION_MISMATCH", "UNKNOWN_POLL", "AMBIGUOUS_POLL", "FORBIDDEN",
+      "STALE_GENERATION", "AMBIGUOUS_OPTION", "NATIVE_OPTION_LOOKUP_REQUIRED"].includes(reason)) return unresolved(reason);
+    throw error;
+  }
+  const continuationId = scopedId("continuation", event.scope, context.taskId, context.generation,
+    event.change === "option-added" ? ["option-added", poll.id, option.reference.id] :
+      [event.ordering.source, poll.id, option.reference.id, event.actorId, BigInt(seq).toString()]);
+  if (event.change !== "option-added") {
+    if (policy.selectionSemantics !== "independent-option-deltas")
+      return unresolved("SELECTION_SEMANTICS_REQUIRE_NATIVE_STATE");
+    const id = scopedId("vote", event.scope, poll.id, option.reference.id, event.actorId);
+    const prior = unit.get("votes", id);
+    const active = event.change === "vote";
+    if (prior) {
+      if (!sameScope(prior.scope, event.scope) || prior.pollId !== poll.id ||
+          prior.optionId !== option.reference.id || prior.actorId !== event.actorId)
+        return unresolved("VOTE_IDENTITY_CONFLICT");
+      let ordering: {source?: string; sequence?: string} | null;
+      try { ordering = JSON.parse(prior.sourceRevision ?? "null"); } catch { ordering = null; }
+      if (!ordering || ordering.source !== event.ordering.source || !ordering.sequence || !/^\d{1,100}$/.test(ordering.sequence))
+        return unresolved("INCOMPARABLE_ORDERING");
+      const comparison = BigInt(seq) - BigInt(ordering.sequence);
+      if (comparison < 0n) return { status: "stale" };
+      if (comparison === 0n) return prior.active === active ? { status: "duplicate" } : unresolved("CONFLICTING_REVISION");
+    }
+    unit.put("votes", { id, scope: event.scope, revision: prior ? prior.revision + 1 : 0,
+      pollId: poll.id, optionId: option.reference.id, actorId: event.actorId, active,
+      sourceRevision: JSON.stringify({ source: event.ordering.source, sequence: BigInt(seq).toString() }),
+      eventId: event.eventId }, prior?.revision ?? null);
+    // Persist an unvote tombstone even when no earlier vote was delivered; late votes cannot revive it.
+    if (prior?.active === active || (!prior && !active)) return { status: "applied" };
+  }
+  // Option-add replay relies on F0's idempotent continuation identity. It never creates a fake vote.
+  unit.createContinuation({ id: continuationId, eventIds: [event.eventId],
+    resumeKey: scopedId("resume", event.scope, context.taskId, context.generation, poll.id) });
+  return { status: "applied", continuationId };
 }

@@ -17,7 +17,7 @@ if(process.versions.node!=='24.13.0')throw new Error('NODE_24_13_0_REQUIRED');
 const runDir=join(evidence,new Date().toISOString().replace(/[:.]/g,'-'));mkdirSync(runDir);
 const snapshot=mkdtempSync(join(tmpdir(),'wt09-snapshot-'));
 const paths=git('ls-files','--cached','--others','--exclude-standard').split('\n').filter(p=>p&&
-  (/^(packages\/photon-features|docs\/photon-features)\//.test(p)||['package.json','package-lock.json','README.md','LICENSE'].includes(p))&&
+  (/^(src|test|packages\/photon-features|docs\/photon-features)\//.test(p)||['package.json','package-lock.json','README.md','LICENSE'].includes(p))&&
   !p.startsWith('docs/photon-features/evidence/wt-09/')&&!/\/node_modules\/|\/dist\//.test(p));
 const manifest=[];
 for(const path of [...new Set(paths)].sort()){
@@ -44,7 +44,7 @@ function run(name,command,args,cwd=snapshot){
 }
 const installed=run('clean-install','npm',['ci','--ignore-scripts']);
 if(installed){
-  run('product-foundation','npm',['test']);
+  run('original-cli','npm',['test']);
   const built=run('build','npm',['run','photon:build']);
   run('foundation','npm',['run','photon:test']);run('contract-drift','npm',['run','photon:check']);
   if(built){

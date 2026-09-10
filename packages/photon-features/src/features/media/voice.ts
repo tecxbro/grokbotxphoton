@@ -12,3 +12,11 @@ export async function compileVoice(media: Extract<ContentSpec, { type: "voice" }
   const options = { mimeType: resolved.mimeType, name: mediaName(resolved.mimeType, resolved.metadata?.name), duration: resolved.metadata?.duration };
   return behavior === "native" ? voice(bytes, options) : attachment(bytes, options);
 }
+
+import type { ActionFor } from "../../contracts/actions.js";
+import type { ExecutionServices as PublicServices } from "../../contracts/services.js";
+import { mapMediaOperation, type MediaOperationOptions } from "./sdk.js";
+/** Sends an existing audio resource; host-selected ordinary attachment fallback is reported explicitly. */
+export function sendVoiceNote(action: ActionFor<"voice.send">, services: PublicServices, options: MediaOperationOptions) {
+  return mapMediaOperation(action, services, options);
+}

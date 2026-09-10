@@ -19,3 +19,15 @@ export async function compileAttachment(media: Extract<ContentSpec, { type: "att
     mimeType: resolved.mimeType, name: mediaName(resolved.mimeType, resolved.metadata?.name),
   });
 }
+
+import type { ActionFor } from "../../contracts/actions.js";
+import type { ExecutionServices as PublicServices } from "../../contracts/services.js";
+import { mapMediaOperation, type MediaOperationOptions } from "./sdk.js";
+/** Public handler: scoped staged bytes enter the shared child dispatch boundary. */
+export function sendAttachment(action: ActionFor<"attachment.send">, services: PublicServices, options: MediaOperationOptions) {
+  return mapMediaOperation(action, services, options);
+}
+/** Public read handler: returns a durable staged descriptor, preserving source metadata in staging. */
+export function fetchAttachment(action: ActionFor<"attachment.fetch">, services: PublicServices, options: MediaOperationOptions) {
+  return mapMediaOperation(action, services, options);
+}

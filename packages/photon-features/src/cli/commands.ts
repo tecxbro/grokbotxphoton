@@ -1,5 +1,5 @@
 import { localRequestSchema, parseAction, type LocalRequest } from "../contracts/index.js";
-import { CliError } from "./output.js";
+import { CliError, type CliResponse } from "./output.js";
 export function commandRequest(argv: string[], contextId: string | undefined, input?: unknown): LocalRequest {
   const [command, ...rest] = argv;
   const flags = new Map<string, string | true>();
@@ -39,4 +39,15 @@ export function commandRequest(argv: string[], contextId: string | undefined, in
     if (def[0] === "work.list" && !flags.has("--limit")) request.limit = 20;
     return localRequestSchema.parse(request);
   } catch (e) { if (e instanceof CliError) throw e; throw new CliError("INVALID_REQUEST", 2); }
+}
+
+
+/** Parse one supported command and dispatch exactly one authenticated local request. */
+export async function executeCommand(
+  argv: string[],
+  contextId: string | undefined,
+  call: (request: LocalRequest) => Promise<CliResponse>,
+  input?: unknown,
+): Promise<CliResponse> {
+  return call(commandRequest(argv, contextId, input));
 }

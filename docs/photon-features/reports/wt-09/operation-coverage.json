@@ -1,8 +1,13 @@
 {
-  "head": "57e40736be8a59047b776654c766fbe8bfd10c9e",
+  "schemaVersion": 2,
+  "testedProductSha": "ee2f8576b55973eee312bca5cad0549b6f959a88",
+  "testCommit": "dacae5e6626c7ec05b9c1a8f624ae342d0463004",
+  "testDevelopmentBase": "photon-v3-f0",
+  "node": "24.13.0",
+  "ownedSuite": {"tests":76,"passed":71,"failed":4,"skipped":1},
   "testedCandidateSha": null,
-  "snapshotDigest": "e84694892ea9642967df6e63df83a4583b166b7ce152546c88cc0715b7529662",
-  "note": "Factory declarations are claims, not provider execution evidence. Registration remains F0. Missing implementation is never labeled unsupported by Photon.",
+  "sourceLockSha256": "126ab6981a50c4198334947a858cf4a4392182a7885feb5b139fb1607ed1ad3f",
+  "note": "All 44 operation schemas and owners are accounted for. Factory declarations and F0 fixtures are not assembled or provider evidence. Registration remains intentionally unimplemented at F0; missing implementation is never labeled unsupported by Photon.",
   "operations": [
     {
       "operation": "typing.begin",
@@ -65,6 +70,7 @@
       "tests": [
         "lanes/wt-09/sdk-and-voice.test.ts",
         "e2e/feature-runtime.test.ts",
+        "e2e/delivery-read.test.ts",
         "e2e/multipart-recovery.test.ts",
         "lanes/wt-09/sdk-and-voice.test.ts"
       ],
@@ -355,6 +361,7 @@
       "tests": [
         "lanes/wt-09/sdk-and-voice.test.ts",
         "e2e/feature-runtime.test.ts",
+        "e2e/delivery-read.test.ts",
         "e2e/multipart-recovery.test.ts",
         "lanes/wt-09/sdk-and-voice.test.ts"
       ],
@@ -645,6 +652,7 @@
       "assembledImplementation": "pending WT-00 exact candidate and binding",
       "tests": [
         "lanes/wt-09/sdk-and-voice.test.ts",
+        "e2e/delivery-read.test.ts",
         "security/context-scope.test.ts"
       ],
       "evidence": "offline fixtures / pinned public SDK / real temporary local storage as identified by each test; no live evidence",
@@ -976,6 +984,7 @@
       "assembledImplementation": "pending WT-00 exact candidate and binding",
       "tests": [
         "lanes/wt-09/sdk-and-voice.test.ts",
+        "e2e/delivery-read.test.ts",
         "security/context-scope.test.ts"
       ],
       "evidence": "offline fixtures / pinned public SDK / real temporary local storage as identified by each test; no live evidence",

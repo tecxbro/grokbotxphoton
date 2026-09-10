@@ -1,0 +1,24 @@
+# WT-05 architecture
+## Lifecycle
+createFeatureModule captures a trusted shared-owner Spectrum space resolver. executePollOperation parses and authorizes the action, resolves full-scope resources, compiles with mapPollOperation, then calls executeChild. The shared runtime journals dispatch and handles uncertain outcomes; the feature has no outbox or checkpoint. A returned poll message registers message/poll identity in UnitOfWork with originating principal, task and generation. Spectrum labels are display text; they cannot establish native option IDs. Authoritative identity registration is a separate reconciliation step.
+
+## Interaction and atomic continuation
+applyPollEvent receives a normalized event and a runtime-scoped UnitOfWork/context for the original task. Exact durable poll/message/option references, full scope, owner and generation are required. Ordered independent option deltas permit multiple voters and multiselect. Single-selection or missing ordering needs native state; receive time is never authoritative. Vote state and createContinuation commit together. The shared runtime retains unresolved events, updates inbox disposition, and wakes after commit. The feature returns unresolved reasons and never opens a subscription.
+
+## Recovery
+reconcilePollState registers already-resolved native metadata; it performs no network I/O. retryUnresolvedPollEvents processes a bounded caller-supplied durable batch; the runtime must retain/ack the actual events. Network reconciliation must precede a short transaction and identity must be revalidated in that transaction. A restart reads domain references/votes, not process caches. Repeated vote reductions must not duplicate logical continuations. Option-added events require resolved metadata; F0 event lacks a label.
+
+## Capability and non-ownership
+Outbound creation and inbound vote availability are separate. The public advanced SDK documents get/vote/unvote/addOption but approvedAdvancedExtensions is empty and ProviderContext exposes lifecycle only. Management remains blocked, never implemented via a private client. Native unvote clears the authenticated bot selection and accepts no option argument; frozen action requires an option, so semantics need shared resolution. No account changes, production action, host, registry, transport, migrations or shared verifier edits.
+
+## Compatibility
+Inherited legacy exports remain for existing regression consumers, per F0's explicit compatibility boundary. New F0 handlers/reducers never call their private-table implementations. Only createFeatureModule is the new public integration entry point; createPollModule remains legacy. Legacy test passes do not validate the new runtime seam.
+
+## Exact integration API obligations
+The handler binding resolves an already-owned public Spectrum Space; its native chat ID must equal the authorized space reference's providerId and its public phone must equal the scope lineId. This lane treats lineId as the provider line handle; if the host uses opaque internal line keys, it must supply an explicit trusted mapping before integration rather than disabling the line check. No binding is accepted through action JSON.
+
+UnitOfWork/TrustedContext for applyPollEvent must be selected from the original durable poll ownership, not whichever task is latest in a conversation. The runtime checks current context expiry/revocation, generation, fence and cancellation at transaction entry/commit. The pure reducer checks persisted identity/task ownership and propagates storage errors. It validates all poll/message/option targets for ambiguity. It only consumes inbound events with verified actors and decimal monotonic sequences from explicitly allowed sources.
+
+Votes are stored per poll/option/actor. An unvote without a prior vote writes an inactive ordering tombstone without scheduling spurious work. Identical selection with a newer sequence updates ordering but does not create another continuation. Native option additions use a stable poll/option continuation ID; F0's createContinuation must deduplicate it. The foundation in-memory fixture does not implement that deduplication; the local SQLite contract adapter exercises it explicitly. Neither is production dispatcher evidence.
+
+For create, actual message/poll GUIDs commit inside the shared child callback after provider return; if that short domain transaction fails, the callback returns unknown-outcome and the executor must retain the child without redispatch. A process crash between domain registration and child completion also requires reconciliation. This feature cannot clear that uncertainty because the native lookup seam is not approved. Display labels and native option identities register separately from authoritative metadata; caller keys never become native IDs.

@@ -1,0 +1,18 @@
+{
+  "ownedFiles": 83,
+  "sourceAndTestFiles": 18,
+  "preservedRelocationFiles": [
+    "AGENTS.md",
+    "docs/photon-features/rollout.md",
+    "docs/worktrees/worktree-map.json",
+    "docs/worktrees/wt-00/HANDOFF.md"
+  ],
+  "contentSha256": "3af265ef9fbcbbf7c27190ab0e383e43b0f017cd2aa2c3960290e84e1b816fc1",
+  "sourceHashes": "40 passed",
+  "testLogHashes": "passed",
+  "symbols": "passed",
+  "authorizedPaths": "passed",
+  "manualReview": "complete",
+  "authoredWhitespace": "passed",
+  "verbatimSourceWhitespace": "upstream Go example indentation preserved and documented"
+}

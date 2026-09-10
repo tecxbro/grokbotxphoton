@@ -4,6 +4,7 @@ import { mkdtemp, readFile, writeFile, rm, mkdir, chmod, symlink } from 'node:fs
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
 import { DatabaseSync } from 'node:sqlite';
+import { execFileSync } from 'node:child_process';
 import { encodeArchive, decodeArchive, sha256, packageCandidate } from '../../../scripts/package.mjs';
 import { installRelease, rollbackRelease } from '../../../scripts/install.mjs';
 import { generateSkill } from '../../../scripts/generate-skill.mjs';
@@ -80,9 +81,18 @@ test('tampered releases and symlink roots are refused', async () => {
     await assert.rejects(installRelease({ ...f, root: link }), /PRIVATE_DIRECTORY/);
   } finally { await f.close(); }
 });
-test('release boundary rejects current dirty isolated lane, never produces final artifact', async () => {
+test('release boundary rejects a dirty isolated candidate, never produces final artifact', async () => {
   const f = await fixture();
-  try { await assert.rejects(packageCandidate({ candidate: new URL('../../../../../', import.meta.url).pathname, approval: join(f.dir, 'missing'), output: join(f.dir, 'final.gpf.gz') }), /CLEAN_ASSEMBLED_CANDIDATE_REQUIRED/); }
+  try {
+    const candidate = join(f.dir, 'dirty-candidate');
+    await mkdir(candidate);
+    execFileSync('git', ['-C', candidate, 'init', '--quiet']);
+    await writeFile(join(candidate, 'tracked'), 'committed');
+    execFileSync('git', ['-C', candidate, 'add', 'tracked']);
+    execFileSync('git', ['-C', candidate, '-c', 'user.name=WT08', '-c', 'user.email=wt08@example.invalid', 'commit', '--quiet', '-m', 'fixture']);
+    await writeFile(join(candidate, 'untracked'), 'dirty');
+    await assert.rejects(packageCandidate({ candidate, approval: join(f.dir, 'missing'), output: join(f.dir, 'final.gpf.gz') }), /CLEAN_ASSEMBLED_CANDIDATE_REQUIRED/);
+  }
   finally { await f.close(); }
 });
 test('all generated examples validate, registry drift detected, offline smoke needs no host', async () => {

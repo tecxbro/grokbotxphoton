@@ -12,7 +12,7 @@ export const scopedId = (kind: string, scope: Scope, ...parts: unknown[]) =>
     scope.projectId, scope.provider, scope.accountId, scope.lineId, scope.spaceId, ...parts,
   ])).digest("hex")}`;
 
-export function referenceOwner(tx: Transaction, ref: ResourceRef): ReferenceRecord {
+export function referenceOwner(tx: Pick<UnitOfWork, "get">, ref: ResourceRef): ReferenceRecord {
   const owner = tx.get("references", ref.id);
   if (!owner || !sameScope(owner.scope, ref.scope) ||
       !isDeepStrictEqual(owner.reference, ref)) throw new Error("RESOURCE_NOT_FOUND");
@@ -24,14 +24,15 @@ export function referenceOwner(tx: Transaction, ref: ResourceRef): ReferenceReco
  * Caller must have persisted the originating poll/message ownership first.
  */
 export function registerNativeOptions(
-  tx: Transaction,
+  tx: Pick<UnitOfWork, "get" | "put">,
   input: { poll: PollRef; nativePollGuid: string; options: readonly { nativeId: string; label: string }[] },
 ): OptionRef[] {
   pollRefSchema.parse(input.poll);
+  idSchema.parse(input.nativePollGuid);
   const owner = referenceOwner(tx, input.poll);
   if (owner.providerId !== input.nativePollGuid) throw new Error("POLL_IDENTITY_MISMATCH");
   const stored = tx.get("polls", input.poll.id);
-  if (!stored || !sameScope(stored.scope, input.poll.scope)) throw new Error("RESOURCE_NOT_FOUND");
+  if (!stored || !sameScope(stored.scope, input.poll.scope) || !isDeepStrictEqual(stored.reference, input.poll)) throw new Error("RESOURCE_NOT_FOUND");
   if (input.options.length > 100 || new Set(input.options.map(o => o.nativeId)).size !== input.options.length)
     throw new Error("AMBIGUOUS_OPTIONS");
   const options = input.options.map(o => {
@@ -42,7 +43,7 @@ export function registerNativeOptions(
       id: scopedId("option", input.poll.scope, input.nativePollGuid, o.nativeId),
     };
     const prior = tx.get("references", reference.id);
-    if (prior && (prior.providerId !== o.nativeId || prior.taskId !== owner.taskId ||
+    if (prior && (!isDeepStrictEqual(prior.reference, reference) || prior.providerId !== o.nativeId || prior.taskId !== owner.taskId ||
         prior.generation !== owner.generation || prior.ownedByPrincipalId !== owner.ownedByPrincipalId ||
         !sameScope(prior.scope, owner.scope))) throw new Error("OPTION_IDENTITY_CONFLICT");
     if (!prior) tx.put("references", {
@@ -74,5 +75,65 @@ export function pollForEvent(tx: Transaction, ref: PollRef) {
       (ref.messageId === p.reference.messageId || ref.messageId === message.providerId);
   });
   if (matches.length !== 1) throw new Error(matches.length ? "AMBIGUOUS_POLL" : "UNKNOWN_POLL");
+  return matches[0]!;
+}
+
+import type { UnitOfWork } from "../../contracts/store.js";
+import type { TrustedContext } from "../../contracts/context.js";
+import type { PollRecord } from "../../state/ports.js";
+type PollIdentityReader = Pick<UnitOfWork, "get">;
+
+/** Verify the durable originating principal/task/generation; a matching chat is insufficient. */
+export function assertPollOwner(owner: ReferenceRecord, context: Readonly<TrustedContext>): void {
+  if (!sameScope(owner.scope, context.scope)) throw new Error("SCOPE_MISMATCH");
+  if (owner.ownedByPrincipalId !== context.principalId || owner.taskId !== context.taskId)
+    throw new Error("FORBIDDEN");
+  if (owner.generation !== context.generation) throw new Error("STALE_GENERATION");
+}
+
+/** Exact or deterministic native GUID lookup, never a latest-poll scan.
+ * Native aliases must agree with both persisted message and poll identity.
+ */
+export function resolvePollIdentity(unit: PollIdentityReader, ref: PollRef,
+  context: Readonly<TrustedContext>): PollRecord {
+  pollRefSchema.parse(ref);
+  if (!sameScope(ref.scope, context.scope)) throw new Error("SCOPE_MISMATCH");
+  const candidates = [ref.id, scopedId("poll", ref.scope, ref.id)]
+    .map(id => unit.get("polls", id)).filter((p): p is PollRecord => !!p);
+  const matches = candidates.filter(p => {
+    const owner = unit.get("references", p.id);
+    const message = unit.get("references", p.reference.messageId);
+    return owner && message && isDeepStrictEqual(owner.reference, p.reference) &&
+      message.reference.kind === "message" && message.reference.id === p.reference.messageId &&
+      sameScope(p.scope, ref.scope) && sameScope(p.reference.scope, ref.scope) &&
+      sameScope(owner.scope, ref.scope) && sameScope(message.scope, ref.scope) &&
+      sameScope(message.reference.scope, ref.scope) && owner.providerId === message.providerId &&
+      (ref.id === p.id || ref.id === owner.providerId) &&
+      (ref.messageId === p.reference.messageId || ref.messageId === message.providerId);
+  });
+  const unique = [...new Map(matches.map(p => [p.id, p])).values()];
+  if (unique.length !== 1) throw new Error(unique.length ? "AMBIGUOUS_POLL" : "UNKNOWN_POLL");
+  const poll = unique[0]!;
+  assertPollOwner(unit.get("references", poll.id)!, context);
+  assertPollOwner(unit.get("references", poll.reference.messageId)!, context);
+  return poll;
+}
+
+/** Compare native IDs only against reference records; duplicate display labels are valid. */
+export function resolveOptionIdentity(unit: PollIdentityReader, poll: PollRecord, ref: OptionRef,
+  context: Readonly<TrustedContext>): PollRecord["options"][number] {
+  const owner = unit.get("references", poll.id);
+  if (!owner) throw new Error("UNKNOWN_POLL");
+  assertPollOwner(owner, context);
+  if (!sameScope(ref.scope, context.scope) ||
+      (ref.pollId !== poll.id && ref.pollId !== owner.providerId)) throw new Error("POLL_OPTION_MISMATCH");
+  const matches = poll.options.filter(o => {
+    const native = unit.get("references", o.reference.id);
+    if (!native || !isDeepStrictEqual(native.reference, o.reference) ||
+        o.reference.pollId !== poll.id || !sameScope(o.reference.scope, poll.scope)) return false;
+    assertPollOwner(native, context);
+    return ref.id === o.reference.id || ref.id === native.providerId;
+  });
+  if (matches.length !== 1) throw new Error(matches.length ? "AMBIGUOUS_OPTION" : "NATIVE_OPTION_LOOKUP_REQUIRED");
   return matches[0]!;
 }

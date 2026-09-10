@@ -15,6 +15,7 @@ export async function smoke(root) {
   }
   return { offlineSmoke: 'passed', activated: false, liveVerified: false };
 }
+export async function verifyInstallation(root) { return smoke(root); }
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   try { console.log(JSON.stringify(await smoke(process.argv[2] ?? new URL('../', import.meta.url).pathname))); }
   catch { console.error('grok-photon: offline smoke failed'); process.exitCode = 1; }

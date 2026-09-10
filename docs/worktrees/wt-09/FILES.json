@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "lane": "wt-09",
+  "files": [
+    {"path":"packages/photon-features/tests/e2e/local-roundtrip.test.ts","purpose":"Assembled local CLI-to-provider path and durable dedupe"},
+    {"path":"packages/photon-features/tests/e2e/delivery-read.test.ts","purpose":"Receipt acquisition, correlation, independence, restart and no-reply acceptance"},
+    {"path":"packages/photon-features/tests/e2e/poll-restart.test.ts","purpose":"Poll identity, ordering, atomicity and restart"},
+    {"path":"packages/photon-features/tests/e2e/card-restart.test.ts","purpose":"Card session recovery, update ordering and callback security"},
+    {"path":"packages/photon-features/tests/e2e/multipart-recovery.test.ts","purpose":"Multipart child recovery and structured-content boundary"},
+    {"path":"packages/photon-features/tests/e2e/install-rollback.test.ts","purpose":"Inactive install, rollback and durable state retention"},
+    {"path":"packages/photon-features/tests/security/context-scope.test.ts","purpose":"Authentication, authorization, scope and disclosure"},
+    {"path":"packages/photon-features/tests/security/webhook-auth.test.ts","purpose":"Raw-body HMAC, duplicate delivery and durable acknowledgment"},
+    {"path":"packages/photon-features/tests/security/media-access.test.ts","purpose":"File/network media access controls and retention"},
+    {"path":"packages/photon-features/tests/security/claim-fencing.test.ts","purpose":"Claims, fences, cancellation and unknown outcomes"},
+    {"path":"packages/photon-features/tests/live/authorized-smoke.test.ts","purpose":"Separately gated live workflows"},
+    {"path":"docs/worktrees/wt-09/AGENTS.md","purpose":"Lane rules"},
+    {"path":"docs/worktrees/wt-09/README.md","purpose":"Scope and test map"},
+    {"path":"docs/worktrees/wt-09/ARCHITECTURE.md","purpose":"Test architecture and evidence boundaries"},
+    {"path":"docs/worktrees/wt-09/WORKLOG.md","purpose":"Chronological implementation record"},
+    {"path":"docs/worktrees/wt-09/SOURCES.md","purpose":"Source authority and SDK review"},
+    {"path":"docs/worktrees/wt-09/source-lock.json","purpose":"Hashed source retrieval evidence"},
+    {"path":"docs/worktrees/wt-09/FILES.json","purpose":"Owned file inventory"},
+    {"path":"docs/worktrees/wt-09/ACCEPTANCE.md","purpose":"Numbered acceptance matrix"},
+    {"path":"docs/worktrees/wt-09/TEST-EVIDENCE.md","purpose":"Commands and evidence reconciliation"},
+    {"path":"docs/worktrees/wt-09/HANDOFF.md","purpose":"Integration-owner handoff"},
+    {"path":"docs/worktrees/wt-09/CHANGE-REQUESTS.md","purpose":"Shared blockers and owner requests"},
+    {"path":"docs/photon-features/reports/wt-09/defects.md","purpose":"Reproducible product defects"},
+    {"path":"docs/photon-features/reports/wt-09/operation-coverage.json","purpose":"All-44-operation coverage accounting"},
+    {"path":"docs/photon-features/reports/wt-09/verification-summary.md","purpose":"Exact proof and limitation summary"}
+  ],
+  "snapshotRoots": ["docs/worktrees/wt-09/references/"]
+}

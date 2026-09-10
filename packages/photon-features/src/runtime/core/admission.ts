@@ -1,6 +1,7 @@
 import {
   MAX_REQUEST_BYTES,
   parseAction,
+  parseActionRequest,
   resourceRefSchema,
   type Action,
   type ResourceRef,
@@ -18,6 +19,14 @@ export function admit(input: unknown): Action {
       }
     });
     return action;
+  } catch {
+    return fault("INVALID_REQUEST");
+  }
+}
+/** Public admission boundary. Validation completes before authority lookup or I/O. */
+export function admitRequest(input: unknown): Action {
+  try {
+    return parseActionRequest(input);
   } catch {
     return fault("INVALID_REQUEST");
   }

@@ -51,13 +51,14 @@ test('redirect DNS rebinding and mixed public/private answers fail before privat
   await assert.rejects(mixed('https://media.example/a', new AbortController().signal));
 });
 
-test('byte count overrides misleading size and interrupted stream releases reader', async () => {
+test('byte count overrides misleading size and controlled timeout/interruption releases reader', async () => {
   let cancelled = 0, written = 0;
   const stream = new ReadableStream({start(c) {c.enqueue(new Uint8Array(5)); c.enqueue(new Uint8Array(6));}, cancel() {cancelled++;}});
   await assert.rejects(consume(stream, 10, new AbortController().signal, async b => {written += b.length;}));
   assert.equal(written, 5); assert.equal(stream.locked, false); assert.equal(cancelled, 1);
-  const blocked = new ReadableStream(); const controller = new AbortController();
-  const consuming = consume(blocked, 10, controller.signal, async () => {}); controller.abort();
+  const blocked = new ReadableStream(); const controlledTimeout = new AbortController();
+  const consuming = consume(blocked, 10, controlledTimeout.signal, async () => {});
+  controlledTimeout.abort(new Error('CONTROLLED_TIMEOUT'));
   await assert.rejects(consuming); assert.equal(blocked.locked, false);
 });
 

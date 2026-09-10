@@ -123,3 +123,37 @@ export const voicePolicy = Object.freeze({
   formatterOwner: "wt-03",
   orchestratorGuidanceOwner: "wt-08",
 });
+
+/** Validate inert JSON before Zod touches values; accessors and SDK instances are not data. */
+export function assertJsonData(value: unknown, maxBytes = 262144): void {
+  const ancestors = new Set<object>();
+  let bytes = 0;
+  function visit(v: unknown, depth: number): void {
+    if (depth > 16) throw new Error("CONTENT_TOO_DEEP");
+    if (v === null || typeof v === "boolean" || (typeof v === "number" && Number.isFinite(v))) { bytes += 24; }
+    else if (typeof v === "string") { bytes += Buffer.byteLength(JSON.stringify(v)); }
+    else if (typeof v === "object") {
+      const proto = Object.getPrototypeOf(v);
+      if (!Array.isArray(v) && proto !== Object.prototype && proto !== null) throw new Error("NON_JSON_OBJECT");
+      if (ancestors.has(v!)) throw new Error("CYCLIC_JSON");
+      ancestors.add(v!);
+      for (const key of Reflect.ownKeys(v!)) {
+        if (Array.isArray(v) && key === "length") continue;
+        if (Array.isArray(v) && (typeof key !== "string" || !/^(0|[1-9][0-9]*)$/.test(key))) throw new Error("NON_JSON_ARRAY_PROPERTY");
+        if (typeof key !== "string" || ["__proto__", "constructor", "prototype"].includes(key)) throw new Error("NON_JSON_KEY");
+        const descriptor = Object.getOwnPropertyDescriptor(v, key)!;
+        if (!descriptor.enumerable || !("value" in descriptor)) throw new Error("NON_JSON_PROPERTY");
+        bytes += Buffer.byteLength(key) + 4;
+        visit(descriptor.value, depth + 1);
+      }
+      ancestors.delete(v!);
+    } else throw new Error("NON_JSON_VALUE");
+    if (bytes > maxBytes) throw new Error("REQUEST_TOO_LARGE");
+  }
+  visit(value, 0);
+}
+/** Parse a bounded inert content tree; no SDK callbacks, paths or executable objects. */
+export function parseContentSpec(input: unknown): ContentSpec {
+  assertJsonData(input);
+  return contentSchema.parse(input);
+}

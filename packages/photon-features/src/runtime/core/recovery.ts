@@ -138,3 +138,10 @@ export class DurableRecovery {
     };
   }
 }
+
+/** Recover durable state without dispatching or retrying any provider operation. */
+export function recoverPendingWork(
+  recovery: DurableRecovery,
+): { requeued: number; unknown: number; blocked: number } {
+  return recovery.recover();
+}

@@ -33,3 +33,11 @@ export async function exportVCard(value: ContactSpec): Promise<string> {
   if (built.type !== "contact") return reject("contact builder contract");
   return toVCard(built);
 }
+
+import type { ActionFor } from "../../contracts/actions.js";
+import type { ExecutionServices as PublicServices } from "../../contracts/services.js";
+import { mapMediaOperation, type MediaOperationOptions } from "./sdk.js";
+/** Sends universal structured contact content, separate from native account contact sharing. */
+export function sendContact(action: ActionFor<"contact.send">, services: PublicServices, options: MediaOperationOptions) {
+  return mapMediaOperation(action, services, options);
+}

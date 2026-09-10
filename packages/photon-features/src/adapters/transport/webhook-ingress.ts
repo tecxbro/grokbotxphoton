@@ -1,3 +1,5 @@
+import { isIMessagePlatform } from "./provider-context.js";
+import { observeReceipt, type ReceiptAcquisition } from "../../runtime/inbound/receipt-observer.js";
 import { createHmac, timingSafeEqual } from "node:crypto";
 import { z } from "zod";
 import type {
@@ -56,6 +58,7 @@ export class NativeWebhookIngress implements IngressAdapter {
     private readonly clock: Clock,
     private readonly secret: string,
     private readonly correlations: Correlations = {},
+    private readonly receipts?: ReceiptAcquisition,
   ) {
     if (!secret) throw new Error("WEBHOOK_SECRET_REQUIRED");
   }
@@ -117,9 +120,9 @@ export class NativeWebhookIngress implements IngressAdapter {
     }
     const { message, space } = envelope;
     if (
-      space.platform !== "imessage" ||
-      message.platform !== "imessage" ||
-      message.space.platform !== "imessage" ||
+      !isIMessagePlatform(space.platform) ||
+      message.platform !== space.platform ||
+      message.space.platform !== space.platform ||
       message.space.id !== space.id ||
       message.space.phone !== space.phone ||
       message.direction !== "inbound"
@@ -139,6 +142,8 @@ export class NativeWebhookIngress implements IngressAdapter {
         this.clock.now(),
         this.correlations,
       );
+      if (message.content.type === "read" && !this.receipts) throw new Error("RECEIPT_SERVICE_NOT_CONFIGURED");
+      if (this.receipts) await observeReceipt(message, this.owner.routes, this.clock.now(), this.receipts);
       await this.accept!(event);
       return new Response(null, { status: 200 });
     } catch {
@@ -150,4 +155,9 @@ export class NativeWebhookIngress implements IngressAdapter {
     await Promise.allSettled(this.pending);
     this.accept = undefined;
   }
+}
+
+/** Exact raw-byte verification and durable acceptance complete before HTTP success. */
+export function acceptVerifiedWebhook(ingress: NativeWebhookIngress, request: Request): Promise<Response> {
+  return ingress.handle(request);
 }

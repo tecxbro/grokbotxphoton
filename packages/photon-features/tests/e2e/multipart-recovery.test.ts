@@ -8,6 +8,10 @@ import { DurableRecovery } from '../../src/runtime/core/recovery.js';
 import { executeChild } from '../../src/runtime/core/execution-boundary.js';
 import { runtime, action, context } from '../lanes/wt-09/harness.js';
 import { execution, binding, outcome } from '../lanes/wt-09/execution-harness.js';
+import { unusedDependencies } from '../lanes/wt-09/execution-harness.js';
+import { createCompilers } from '../../src/features/text-messages/composition.js';
+import { resolveContents } from 'spectrum-ts';
+import { scope } from '../lanes/wt-09/harness.js';
 
 test('process death after possible provider acceptance retains unknown and never blindly resends', async t => {
   const r = runtime(); t.after(() => r.close()); const submitted = await r.submission.submit(action(),context);
@@ -56,4 +60,16 @@ test('resolved promise cannot manufacture provider acceptance or read evidence',
     const r=runtime();t.after(()=>r.close());const submitted=await r.submission.submit(action(),context);const {executor}=execution(r);
     assert.equal((await executor.execute(submitted.requestId,binding(async()=>({...outcome(),status}))))!.status,'unknown-outcome');
   }
+});
+
+test('structured content bypasses prose formatting and remains byte-for-byte intact', async t => {
+  const r=runtime();t.after(()=>r.close());
+  const compiler=createCompilers({binding:()=>({scope,phone:'offline-line',nativeSpaceId:'offline-chat'}),requestId:()=> 'structured-request'})
+    .find(value=>value.family==='markdown')!;
+  const source='**NASA?** Keep `CamelCase()` and https://example.com/A?B=C unchanged?';
+  const built=await compiler.compile({type:'markdown',text:source},{...unusedDependencies,context,transactions:r.store,clock:r.clock,
+    signal:new AbortController().signal,claim:{owner:'fixture',fence:1,generation:1,leaseUntil:20000}});
+  const content=(await resolveContents([built]))[0]!;
+  assert.equal(content.type,'markdown');
+  assert.equal(content.markdown,source);
 });

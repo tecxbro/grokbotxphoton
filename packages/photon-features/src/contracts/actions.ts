@@ -12,6 +12,7 @@ import {
   streamRefSchema,
 } from "./resources.js";
 import {
+  assertJsonData,
   proseSchema,
   httpsSchema,
   mediaSchema,
@@ -181,4 +182,12 @@ export function parseAction(input: unknown): Action {
     throw new Error("DUPLICATE_OPTION");
   // Every nested resource is structurally scoped by WT-01 to the authenticated context.
   return result;
+}
+
+/** Public request name; the wire format remains compatible with existing version 1 callers. */
+export type ActionRequest = Action;
+/** Structural validation only. An authenticated resolver must still authorize this request. */
+export function parseActionRequest(input: unknown): ActionRequest {
+  assertJsonData(input, MAX_REQUEST_BYTES);
+  return parseAction(input);
 }

@@ -164,3 +164,129 @@ export async function executePoll(input: Action, s: ExecutionServices): Promise<
     return failure(requestId, s, safe, `Poll operation rejected: ${safe}.`);
   }
 }
+
+import { isDeepStrictEqual } from "node:util";
+import { parseActionRequest } from "../../contracts/actions.js";
+import type { ExecutionServices as F0ExecutionServices } from "../../contracts/services.js";
+import { assertPollOwner, resolvePollIdentity, resolveOptionIdentity } from "./identity.js";
+import { mapPollOperation, type PollProviderBinding, type PollAction } from "./sdk.js";
+
+function f0Result(s: F0ExecutionServices, requestId: string, fields: Partial<OperationResult>): OperationResult {
+  return { version: 1, requestId, status: "executor-completed", revision: 0,
+    updatedAt: s.clock.now(), references: [], observations: [], ...fields };
+}
+function f0Failure(s: F0ExecutionServices, requestId: string, code: RuntimeError["code"], message: string,
+  status: OperationResult["status"] = "failed", blockerId?: string): OperationResult {
+  return f0Result(s, requestId, { status, error: { code, message,
+    retry: status === "unknown-outcome" ? "reconcile-first" : "never", blockerId } });
+}
+function assertPollActionActive(action: Action, s: F0ExecutionServices): void {
+  s.assertActiveClaim();
+  const c = s.context;
+  if (s.signal.aborted) throw new Error("CANCELLED");
+  if (action.contextId !== c.contextId || !c.permissions.includes(action.operation)) throw new Error("FORBIDDEN");
+  if (c.revokedAt !== null) throw new Error("CONTEXT_REVOKED");
+  if (c.issuedAt > s.clock.now() || c.expiresAt <= s.clock.now()) throw new Error("CONTEXT_EXPIRED");
+}
+
+/** F0 handler. The shared executor owns dispatch intent, deduplication and uncertain recovery.
+ * Provider work happens outside UoW. Cancellation after transmission cannot erase uncertainty.
+ * Bindings are executable host code, never action arguments or a new SDK owner.
+ */
+export async function executePollOperation(input: Action, s: F0ExecutionServices,
+  binding?: PollProviderBinding): Promise<OperationResult> {
+  const requestId = input.idempotencyKey;
+  let possibleTransmission = false;
+  try {
+    const action = parseActionRequest(input);
+    if (!pollOperations.includes(action.operation as typeof pollOperations[number])) throw new Error("INVALID_REQUEST");
+    assertPollActionActive(action, s);
+    const refs: ResourceRef[] = [];
+    if ("space" in action.arguments) refs.push(action.arguments.space);
+    if ("poll" in action.arguments) refs.push(action.arguments.poll);
+    if ("option" in action.arguments && "pollId" in action.arguments.option) refs.push(action.arguments.option);
+    for (const ref of refs) {
+      assertScope(ref, s.context.scope);
+      const resolved = await s.resolveResource(ref);
+      assertPollActionActive(action, s);
+      if (!isDeepStrictEqual(resolved, ref)) throw new Error("RESOURCE_NOT_FOUND");
+      s.transaction(unit => assertPollOwner(referenceOwner(unit, ref), s.context));
+    }
+    const args = action.arguments;
+    if ("poll" in args) s.transaction(unit => {
+      const p = resolvePollIdentity(unit, args.poll, s.context);
+      if ("option" in args && "pollId" in args.option)
+        resolveOptionIdentity(unit, p, args.option, s.context);
+    });
+    const mapped = mapPollOperation(action as PollAction);
+    if (mapped.kind === "blocked") return f0Failure(s, requestId, "UNIMPLEMENTED", mapped.reason,
+      "blocked", mapped.blockerId);
+    if (action.operation !== "poll.create") throw new Error("INVALID_REQUEST");
+    if (!binding) return f0Failure(s, requestId, "UNAVAILABLE", "Shared owner Spectrum space binding is missing.",
+      "blocked", "wt-05-provider-binding");
+    const space = checkedSpace(await binding.resolveSpace(action.arguments.space, s.context));
+    assertPollActionActive(action, s);
+    s.transaction(unit => {
+      const owner = referenceOwner(unit, action.arguments.space);
+      assertPollOwner(owner, s.context);
+      if (owner.providerId !== space.id || imessage(space).phone !== s.context.scope.lineId)
+        throw new Error("SCOPE_MISMATCH");
+    });
+    const childResult = await s.executeChild({ index: 0,
+      key: scopedId("child", s.context.scope, s.context.taskId, s.context.generation, requestId),
+      argumentsDigest: actionDigest(action),
+      dispatch: async signal => {
+        assertPollActionActive(action, s);
+        if (signal.aborted) throw new Error("CANCELLED");
+        possibleTransmission = true;
+        try {
+          const message = await space.send(mapped.content);
+          if (!message || !message.id || message.platform !== "imessage" || message.direction !== "outbound" ||
+              message.content.type !== "poll" || message.space.id !== space.id ||
+              imessage(message.space).phone !== imessage(space).phone)
+            throw new Error("UNKNOWN_OUTCOME");
+          const messageRef: Extract<ResourceRef, { kind: "message" }> = {
+            version: 1, kind: "message", scope: s.context.scope, id: scopedId("message", s.context.scope, message.id),
+          };
+          const pollRef: PollRef = { version: 1, kind: "poll", scope: s.context.scope,
+            id: scopedId("poll", s.context.scope, message.id), messageId: messageRef.id };
+          // Persist actual native GUID while the child remains unfinished. A failed commit is uncertain,
+          // so runtime recovery must not resend. There is no feature-owned dispatch journal.
+          s.transaction(unit => {
+            assertPollActionActive(action, s);
+            for (const reference of [messageRef, pollRef]) {
+              const prior = unit.get("references", reference.id);
+              if (prior) {
+                assertPollOwner(prior, s.context);
+                if (!isDeepStrictEqual(prior.reference, reference) || prior.providerId !== message.id)
+                  throw new Error("POLL_IDENTITY_MISMATCH");
+              } else unit.put("references", { id: reference.id, scope: s.context.scope, revision: 0,
+                reference, providerId: message.id, ownedByPrincipalId: s.context.principalId,
+                taskId: s.context.taskId, generation: s.context.generation }, null);
+            }
+            const prior = unit.get("polls", pollRef.id);
+            if (prior && (!isDeepStrictEqual(prior.reference, pollRef) || prior.question !== action.arguments.question))
+              throw new Error("POLL_IDENTITY_MISMATCH");
+            if (!prior) unit.put("polls", { id: pollRef.id, scope: s.context.scope, revision: 0,
+              reference: pollRef, question: action.arguments.question, options: [] }, null);
+          });
+          return f0Result(s, requestId, { status: "provider-accepted", references: [messageRef, pollRef],
+            observations: [{ kind: "accepted", source: "sdk-return", at: s.clock.now() }] });
+        } catch {
+          return f0Failure(s, requestId, "UNKNOWN_OUTCOME", "Poll may have been transmitted; reconcile before retry.", "unknown-outcome");
+        }
+      },
+    });
+    // Returning recorded child evidence is valid even if cancellation wins after its dispatch.
+    return { ...childResult, requestId };
+  } catch (error) {
+    if (possibleTransmission) return f0Failure(s, requestId, "UNKNOWN_OUTCOME",
+      "Poll may have been transmitted; reconcile before retry.", "unknown-outcome");
+    const message = error instanceof Error ? error.message : "INTERNAL";
+    const codes = ["FORBIDDEN", "SCOPE_MISMATCH", "RESOURCE_NOT_FOUND", "CONTEXT_REVOKED", "CONTEXT_EXPIRED",
+      "STALE_GENERATION", "STALE_FENCE", "CANCELLED", "UNSUPPORTED", "IDEMPOTENCY_CONFLICT", "INVALID_REQUEST"] as const;
+    const invalid = error instanceof z.ZodError || ["POLL_OPTION_MISMATCH", "DUPLICATE_OPTION"].includes(message);
+    const code = invalid ? "INVALID_REQUEST" : codes.find(code => code === message) ?? "INTERNAL";
+    return f0Failure(s, requestId, code, `Poll operation rejected: ${code}.`);
+  }
+}

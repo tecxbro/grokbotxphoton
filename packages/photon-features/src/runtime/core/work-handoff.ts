@@ -90,3 +90,34 @@ export class DurableWork {
     });
   }
 }
+
+/** Claim durable work and return its persisted events; wake acceptance alone is never acknowledgement. */
+export function claimWork(
+  work: DurableWork,
+  context: TrustedContext,
+  handoffId: string,
+  leaseMs: number,
+): { handoff: HandoffRecord; events: IncomingEvent[] } {
+  return work.change(context, handoffId, "claim", undefined, leaseMs);
+}
+
+/** Extend only the exact current handoff fence. */
+export function heartbeatWork(
+  work: DurableWork,
+  context: TrustedContext,
+  handoffId: string,
+  fence: number,
+  leaseMs: number,
+): { handoff: HandoffRecord; events: IncomingEvent[] } {
+  return work.change(context, handoffId, "heartbeat", fence, leaseMs);
+}
+
+/** Acknowledge durably processed work; repeating the same completed fence is idempotent. */
+export function acknowledgeWork(
+  work: DurableWork,
+  context: TrustedContext,
+  handoffId: string,
+  fence: number,
+): { handoff: HandoffRecord; events: IncomingEvent[] } {
+  return work.change(context, handoffId, "ack", fence);
+}

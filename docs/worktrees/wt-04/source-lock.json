@@ -1,0 +1,220 @@
+{
+  "version": 1,
+  "sdkVersion": "12.8.0",
+  "sources": [
+    {
+      "url": "https://photon.codes/docs/llms.txt",
+      "finalUrl": "https://photon.codes/docs/llms.txt",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:05:26.538Z",
+      "contentType": "text/plain; charset=utf-8",
+      "identity": "Photon",
+      "sha256": "0e9cff75bdffdb8e625583fdd88ccd7317d027fa3f9a74cbe3cebfa256c0c033",
+      "snapshot": "docs/worktrees/wt-04/references/official-0.md",
+      "failure": null,
+      "classification": "official",
+      "documentTitle": "Photon"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/content/attachments.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/content/attachments.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:05:26.633Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Attachments",
+      "sha256": "c93e553cdf6d9e19ffdbb9fd6fe0c2c485fd418dd6a0422b8da0991230707d64",
+      "snapshot": "docs/worktrees/wt-04/references/official-1.md",
+      "failure": null,
+      "classification": "official",
+      "documentTitle": "Attachments"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/content/voice.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/content/voice.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:05:26.635Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Voice",
+      "sha256": "2dab42f05b1b55979445127bf82e038843318b63acbc7afb143b7f898c139b6d",
+      "snapshot": "docs/worktrees/wt-04/references/official-2.md",
+      "failure": null,
+      "classification": "official",
+      "documentTitle": "Voice"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/content/contacts.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/content/contacts.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:05:26.636Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Contacts",
+      "sha256": "8f2a4702d7814328bb1b82d0974ef948b0806b5a1b1cf7756be0ff51f1985472",
+      "snapshot": "docs/worktrees/wt-04/references/official-3.md",
+      "failure": null,
+      "classification": "official",
+      "documentTitle": "Contacts"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/fetching-attachments.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/fetching-attachments.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:05:26.637Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Fetching iMessage attachments",
+      "sha256": "836566e9499f33b3dfb7442b33267a9ebd47b5aa2298260a3320c6d4509bbf5f",
+      "snapshot": "docs/worktrees/wt-04/references/official-4.md",
+      "failure": null,
+      "classification": "official",
+      "documentTitle": "Fetching iMessage attachments"
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/imessage/attachments.md",
+      "finalUrl": "https://photon.codes/docs/advanced-kits/imessage/attachments.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:05:26.639Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Attachments",
+      "sha256": "cacdf3b51c92d591a64e3d8a61d5fdd15b8ac0bc1dd32a8cf531135d732ab1b2",
+      "snapshot": "docs/worktrees/wt-04/references/official-5.md",
+      "failure": null,
+      "classification": "official",
+      "documentTitle": "Attachments"
+    },
+    {
+      "url": "https://photon.codes/docs/utilities/heif2jpeg.md",
+      "finalUrl": "https://photon.codes/docs/utilities/heif2jpeg.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:05:26.639Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "heif2jpeg",
+      "sha256": "c4adb8022055d1f2123ea0ffdb0eb2408fd076107b62561f34b970442497cb95",
+      "snapshot": "docs/worktrees/wt-04/references/official-6.md",
+      "failure": null,
+      "classification": "official",
+      "documentTitle": "heif2jpeg"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/SKILL.md",
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/SKILL.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:05:34.336Z",
+      "contentType": "text/plain; charset=utf-8",
+      "identity": "Spectrum",
+      "sha256": "0a2f328fe6da4d202497e8bb859625de06af23cce884d1639dd1e8f3cb737de8",
+      "snapshot": "docs/worktrees/wt-04/references/skill-7.md",
+      "failure": null,
+      "classification": "skill",
+      "documentTitle": "Spectrum",
+      "localSkillSha256": "0a2f328fe6da4d202497e8bb859625de06af23cce884d1639dd1e8f3cb737de8",
+      "matchesLoadedLocalSkill": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/SKILL.md",
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/SKILL.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:05:34.338Z",
+      "contentType": "text/plain; charset=utf-8",
+      "identity": "iMessage",
+      "sha256": "218af7703b8d12537ca8c6077c1b8b5d9865ccc2202fc7eaef2d883651a59dbb",
+      "snapshot": "docs/worktrees/wt-04/references/skill-8.md",
+      "failure": null,
+      "classification": "skill",
+      "documentTitle": "iMessage",
+      "localSkillSha256": "218af7703b8d12537ca8c6077c1b8b5d9865ccc2202fc7eaef2d883651a59dbb",
+      "matchesLoadedLocalSkill": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/attachments-and-voice.md",
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/attachments-and-voice.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:05:34.341Z",
+      "contentType": "text/plain; charset=utf-8",
+      "identity": "Spectrum attachments and voice notes",
+      "sha256": "e9b827340e7599a2cd8495d145c148bf7447a8e1dabfd0b726199d4abc4e956d",
+      "snapshot": "docs/worktrees/wt-04/references/skill-9.md",
+      "failure": null,
+      "classification": "skill",
+      "documentTitle": "Spectrum attachments and voice notes",
+      "localSkillSha256": "e9b827340e7599a2cd8495d145c148bf7447a8e1dabfd0b726199d4abc4e956d",
+      "matchesLoadedLocalSkill": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/contacts-and-rich-links.md",
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/contacts-and-rich-links.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:05:34.342Z",
+      "contentType": "text/plain; charset=utf-8",
+      "identity": "Spectrum contacts and rich links",
+      "sha256": "7a0f1e9f0a386df2c2e945b4880f41d417752255ab6b042c2e49da497cf2225c",
+      "snapshot": "docs/worktrees/wt-04/references/skill-10.md",
+      "failure": null,
+      "classification": "skill",
+      "documentTitle": "Spectrum contacts and rich links",
+      "localSkillSha256": "7a0f1e9f0a386df2c2e945b4880f41d417752255ab6b042c2e49da497cf2225c",
+      "matchesLoadedLocalSkill": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/advanced/attachments.md",
+      "finalUrl": "https://raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/advanced/attachments.md",
+      "status": 200,
+      "retrievedAt": "2026-09-10T08:05:34.343Z",
+      "contentType": "text/plain; charset=utf-8",
+      "identity": "Advanced iMessage attachments",
+      "sha256": "b83072648e25c3ff63d290ad66d57870acb7d6fead03511922042cd7d93e9a43",
+      "snapshot": "docs/worktrees/wt-04/references/skill-11.md",
+      "failure": null,
+      "classification": "skill",
+      "documentTitle": "Advanced iMessage attachments",
+      "localSkillSha256": "b83072648e25c3ff63d290ad66d57870acb7d6fead03511922042cd7d93e9a43",
+      "matchesLoadedLocalSkill": true
+    }
+  ],
+  "installedContracts": [
+    {
+      "path": "node_modules/spectrum-ts/package.json",
+      "sha256": "69248e5615aecbe5844d9cc94323aa2a93391e76ac322cf82477c75df95dbcc2",
+      "version": "12.8.0"
+    },
+    {
+      "path": "node_modules/@spectrum-ts/core/package.json",
+      "sha256": "bf239b4f2bea2a1fce09ba09c8c4a3570014b2fa8842ed43101d8b88b81d34a4",
+      "version": "12.8.0"
+    },
+    {
+      "path": "node_modules/@spectrum-ts/imessage/package.json",
+      "sha256": "4da6358fdaa9d40e97598f0882bf9c719c38469ec955dd129958002e1ec20e81",
+      "version": "12.8.0"
+    },
+    {
+      "path": "node_modules/@spectrum-ts/imessage/dist/index.d.ts",
+      "sha256": "6a2278d14fd42a5603675b046fd1c8ad5c584da760e60b621f74059bf7dc3aa0"
+    },
+    {
+      "path": "node_modules/@spectrum-ts/imessage/dist/index.js",
+      "sha256": "2f7e13c432ad4e84f96b76eb3d59062d70d3d7e46737a7e15198a47ecda6ef24"
+    },
+    {
+      "path": "node_modules/@spectrum-ts/core/dist/attachment-Dy4PsNVw.d.ts",
+      "sha256": "c452a8fc2ffbab03c6e548ce13dcf28f841ec7c9331513c65975e12f869ad954"
+    },
+    {
+      "path": "node_modules/typescript/package.json",
+      "sha256": "9332e97c30d3e53ed54910b89207ed657fb444066484df6e5b6965bf130865e9",
+      "version": "6.0.3"
+    },
+    {
+      "path": "node_modules/zod/package.json",
+      "sha256": "5a1983857f982cc7d69336f32053ac7e38780de313d9e18ca3f7b9b7f2f94298",
+      "version": "4.5.4"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "6aff930eec3f42597185e7f504f66e66b3ea1684126099ad3260d31c16111b88"
+    }
+  ],
+  "publicSdkTag": {
+    "url": "https://github.com/photon-hq/spectrum-ts",
+    "tag": "v12.8.0",
+    "sha": "938b0f86abbb998e2f36e5ef0f09b415e9913fd7"
+  }
+}

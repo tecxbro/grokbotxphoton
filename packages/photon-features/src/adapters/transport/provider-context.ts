@@ -1,3 +1,4 @@
+import { lookupNativeMessageState, type NativeState } from "./native-state.js";
 import { createHash } from "node:crypto";
 import { scopeSchema, type Scope } from "../../contracts/index.js";
 
@@ -71,3 +72,31 @@ export class ProviderContext {
     return this.lines.map(({ accountId, lineId }) => ({ accountId, lineId }));
   }
 }
+
+/** Resolve a fully scoped route using the shared owner, without constructing a client.
+ * The shared ProviderContext currently lacks lookup; this additive owned view keeps
+ * the limitation explicit until WT-00 approves that contract extension. */
+export function resolveProviderContext(
+  owner: import("./spectrum-owner.js").SpectrumOwner,
+  scope: Scope,
+  conversationId: string,
+) {
+  owner.routes.outbound(scope, conversationId);
+  return {
+    provider: "imessage" as const,
+    scope,
+    ready: () => owner.ready(),
+    start: () => owner.start(),
+    stop: () => owner.stop(),
+    space: () => owner.space(scope, conversationId),
+    lookupNativeMessageState: (providerTargetId: string, options?: {timeoutMs?: number; signal?: AbortSignal}) =>
+      lookupNativeMessageState(owner, {scope, conversationId, providerTargetId}, options),
+  } satisfies import("../../contracts/transport.js").ProviderContext & {
+    space(): Promise<import("spectrum-ts").Space>;
+    lookupNativeMessageState(providerTargetId: string, options?: {timeoutMs?: number; signal?: AbortSignal}): Promise<NativeState>;
+  };
+}
+
+/** Official standalone webhook examples use iMessage; the pinned SDK uses
+ * imessage. These two explicit provider spellings route to the same binding. */
+export const isIMessagePlatform = (value: unknown): boolean => value === "imessage" || value === "iMessage";

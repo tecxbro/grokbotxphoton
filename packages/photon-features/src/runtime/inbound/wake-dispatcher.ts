@@ -68,3 +68,13 @@ export class WakeDispatcher {
     }
   }
 }
+
+/** Explicit configuration gate: no invented endpoint or successful no-op fallback. */
+export function configuredGrokWake(binding?: ExistingGrokTaskHandoff): ExistingGrokWakeAdapter {
+  if (!binding || typeof binding.notifyExistingTask !== "function") throw new Error("GROK_WAKE_NOT_CONFIGURED");
+  return new ExistingGrokWakeAdapter(binding);
+}
+/** Send durable pointers only. Wake acceptance never acknowledges work retrieval. */
+export function dispatchWake(dispatcher: WakeDispatcher, scope: Scope, route: TaskRoute) {
+  return dispatcher.tick(scope, route);
+}

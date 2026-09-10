@@ -139,3 +139,12 @@ export class SpectrumOwner implements ClientOwner {
     })());
   }
 }
+
+/** Start the injected shared owner; concurrent starts reuse one construction. */
+export async function startSpectrumOwner(owner: SpectrumOwner): Promise<SpectrumOwner> {
+  await owner.start();
+  if (!owner.ready()) throw new Error("OWNER_NOT_READY");
+  return owner;
+}
+/** Stop reception and provider resources once, preserving shutdown failures. */
+export function stopSpectrumOwner(owner: SpectrumOwner): Promise<void> { return owner.stop(); }

@@ -1,0 +1,11 @@
+{
+  "head": "ee2f8576b55973eee312bca5cad0549b6f959a88",
+  "preserved": {
+    "AGENTS.md": "1b0329f17b2d2647e26073e801d1d69fcdf2dfee9f276d06f68746df2f85fbbe",
+    "docs/photon-features/rollout.md": "e0c2010ab8636179201f7143f9cad725fee8bdaf550b09ab1f1989a03925877b",
+    "docs/worktrees/worktree-map.json": "08dc9688b461305b6dcd1823029c154ef5a41efa80467104bff55e2ecb7cffaf",
+    "docs/worktrees/wt-00/HANDOFF.md": "d82d1dd66976dff06b00301f32053a62da201299e132df65c9bcc0fdf03176c3"
+  },
+  "status": "# branch.oid ee2f8576b55973eee312bca5cad0549b6f959a88\n# branch.head photon-v3/wt-02\n1 .M N... 100644 100644 100644 7a63d9961b677c1c62b655c364456581e0fb4a96 7a63d9961b677c1c62b655c364456581e0fb4a96 AGENTS.md\n1 .M N... 100644 100644 100644 89cb6ea016adf5edd46ed68e1b24afb8157bccdd 89cb6ea016adf5edd46ed68e1b24afb8157bccdd docs/photon-features/rollout.md\n1 .M N... 100644 100644 100644 96aeeb83952f8ffede56d518838c60deb8a987e2 96aeeb83952f8ffede56d518838c60deb8a987e2 docs/worktrees/worktree-map.json\n1 .M N... 100644 100644 100644 701f4b4839254cdac0d1f205a09e7bcc926397f5 701f4b4839254cdac0d1f205a09e7bcc926397f5 docs/worktrees/wt-00/HANDOFF.md\n",
+  "index": ""
+}

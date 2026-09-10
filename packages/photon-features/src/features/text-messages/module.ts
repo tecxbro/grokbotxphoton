@@ -254,3 +254,203 @@ export function createTextMessageModule(
     })),
   };
 }
+
+import { parseActionRequest } from "../../contracts/actions.js";
+import type { FeatureModule as PublicFeatureModule } from "../../contracts/feature.js";
+import type { ExecutionServices as PublicServices } from "../../contracts/services.js";
+import {
+  assertTextProvider,
+  textResult,
+  digestTextInput,
+  textFailure,
+  type PublicTextMessageOptions,
+} from "./sdk.js";
+import { executeTextOperation } from "./text.js";
+import { executeTextStream } from "./streaming.js";
+import { executeComposition } from "./composition.js";
+import { getMessageTarget } from "./targets.js";
+import { contentSchema } from "../../contracts/content.js";
+import { imessage } from "spectrum-ts/providers/imessage";
+import { executeReply } from "./replies.js";
+import { executeReaction, removeOwnReaction } from "./reactions.js";
+import { executeEdit, executeUnsend } from "./edits.js";
+import { executeMarkRead } from "./mark-read.js";
+/** F0 factory. This entry point uses only public services; legacy factory above is not registered by F0. */
+export function createFeatureModule(
+  options: PublicTextMessageOptions,
+): PublicFeatureModule<(typeof ownedOperations)[number]> {
+  const run = async (
+    input: Action,
+    s: PublicServices,
+  ): Promise<OperationResult> => {
+    let base: OperationResult = {
+      version: 1,
+      requestId: digestTextInput([
+        "invalid",
+        s.context.contextId,
+        s.context.taskId,
+        s.context.generation,
+      ]),
+      status: "failed",
+      revision: 0,
+      updatedAt: s.clock.now(),
+      references: [],
+      observations: [],
+    };
+    try {
+      const action = parseActionRequest(input);
+      base = textResult(action, s);
+      s.assertActiveClaim();
+      if (
+        action.contextId !== s.context.contextId ||
+        !s.context.permissions.includes(action.operation)
+      )
+        throw new FeatureError(
+          "FORBIDDEN",
+          "Action is outside the trusted context grant.",
+        );
+      assertTextProvider(s, options);
+      let result: OperationResult;
+      switch (action.operation) {
+        case "text.send":
+        case "markdown.send":
+        case "link.send":
+          result = await executeTextOperation(action, s, options);
+          break;
+        case "text.stream":
+          result = await executeTextStream(action, s, options);
+          break;
+        case "content.group":
+        case "content.compose":
+          result = await executeComposition(action, s, options);
+          break;
+        case "message.reply":
+          result = await executeReply(action, s, options);
+          break;
+        case "message.react":
+          result = await executeReaction(action, s, options);
+          break;
+        case "reaction.remove":
+          result = await removeOwnReaction(action, s, options);
+          break;
+        case "message.edit":
+          result = await executeEdit(action, s, options);
+          break;
+        case "message.unsend":
+          result = await executeUnsend(action, s, options);
+          break;
+        case "message.markRead":
+          result = await executeMarkRead(action, s, options);
+          break;
+        case "message.get": {
+          const message = await getMessageTarget(
+            action.arguments.message,
+            s,
+            options,
+          );
+          result = {
+            ...base,
+            references: [action.arguments.message],
+            value: {
+              type: "metadata",
+              sentAt: Number.isFinite(message.timestamp.getTime())
+                ? message.timestamp.getTime()
+                : null,
+              editedAt: imessage(message).dateEdited?.getTime() ?? null,
+              isFromMe: message.direction === "outbound",
+            },
+          };
+          const parsed = contentSchema.safeParse(
+            message.content.type === "text"
+              ? { type: "text", text: message.content.text }
+              : message.content.type === "markdown"
+                ? { type: "markdown", text: message.content.markdown }
+                : message.content.type === "richlink"
+                  ? { type: "link", url: message.content.url }
+                  : undefined,
+          );
+          if (parsed.success)
+            result.value = {
+              type: "message",
+              content: parsed.data,
+              senderId: message.sender?.id ?? null,
+              direction: message.direction,
+            };
+          break;
+        }
+        default:
+          throw new FeatureError(
+            "INVALID_REQUEST",
+            "Operation is not owned by WT-03.",
+          );
+      }
+      const capability = textCapabilities().find(
+        (c) => c.operation === action.operation,
+      )!;
+      return {
+        ...result,
+        capability: {
+          ...capability,
+          sources: [
+            "npm:spectrum-ts@12.8.0",
+            "docs/worktrees/wt-03/source-lock.json",
+          ],
+          blockers: [
+            "Public host registration and authoritative compiler/handle adapters require integration; no activation or live evidence.",
+            ...(action.operation === "text.stream"
+              ? ["Buffered single-send fallback; no progressive delivery."]
+              : []),
+            ...(action.operation === "content.group"
+              ? [
+                  "One opaque child; provider-internal partial sends require reconciliation.",
+                ]
+              : []),
+            ...(action.operation === "message.markRead"
+              ? [
+                  "Marks the inbound conversation read; does not prove recipient read.",
+                ]
+              : []),
+          ],
+        },
+      };
+    } catch (error) {
+      return textFailure(base, error);
+    }
+  };
+  const handlers: PublicFeatureModule<
+    (typeof ownedOperations)[number]
+  >["handlers"] = {};
+  for (const operation of ownedOperations) {
+    const handler = async (input: Action, s: PublicServices) => {
+      // Parse before inspecting input properties, including when the caller selected the wrong handler.
+      try {
+        const action = parseActionRequest(input);
+        if (action.operation !== operation)
+          throw new FeatureError(
+            "INVALID_REQUEST",
+            "Wrong operation handler selected.",
+          );
+      } catch (error) {
+        return textFailure(
+          {
+            version: 1,
+            requestId: digestTextInput([
+              "invalid",
+              s.context.contextId,
+              operation,
+            ]),
+            status: "failed",
+            revision: 0,
+            updatedAt: s.clock.now(),
+            references: [],
+            observations: [],
+          },
+          error,
+        );
+      }
+      return run(input, s);
+    };
+    handlers[operation] = handler;
+  }
+  return { id: "text-messages", owner: "wt-03", handlers };
+}

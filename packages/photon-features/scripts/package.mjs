@@ -5,6 +5,11 @@ import { resolve, join, relative, isAbsolute } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { execFileSync } from 'node:child_process';
 export const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
+export const packageSupportFiles = Object.freeze([
+  'package.json', 'LICENSE', 'SKILL.md', 'INSTALL.md', 'README.md',
+  'scripts/generate-skill.mjs', 'scripts/install.mjs', 'scripts/package.mjs',
+  'scripts/rollback.mjs', 'scripts/smoke-test.mjs',
+]);
 const safePath = name => typeof name === 'string' && name.length < 500 && !isAbsolute(name) && !name.includes('\\') && name.split('/').every(p => p && p !== '.' && p !== '..') && !/(^|\/)(\.env(?:\..*)?|\.npmrc|\.git|credentials?|.*\.(sqlite|db|pem|key)|runtime\.sock)(\/|$)/i.test(name);
 export function encodeArchive(files, metadata) {
   const entries = Object.entries(files).sort(([a], [b]) => a < b ? -1 : a > b ? 1 : 0).map(([path, value]) => {
@@ -33,6 +38,8 @@ export function decodeArchive(bytes, expectedChecksum) {
 export function validateMetadata(m) {
   const required = ['npm test', 'npm run photon:test', 'npm run photon:check', 'npm run photon:test:integration', 'node scripts/generate-skill.mjs --check'];
   if (!m || m.kind !== 'assembled-tested-candidate' || !/^[a-f0-9]{40}$/.test(m.commit) || !/^[a-f0-9]{64}$/.test(m.f0Digest) || m.node !== '24.13.0' || m.npm !== '10.9.2' || !Number.isSafeInteger(m.stateSchemaVersion) || m.stateSchemaVersion !== 1 || !Array.isArray(m.compatibleStateSchemas) || m.compatibleStateSchemas.join() !== '1' || !Array.isArray(m.tests) || !m.tests.length || m.tests.some(t => t.exitCode !== 0) || required.some(command => !m.tests.some(t => t.command === command)) || !['darwin', 'linux'].includes(m.platform) || !['arm64', 'x64'].includes(m.arch)) throw new Error('UNTESTED_OR_INCOMPATIBLE_ARTIFACT');
+  if (m.releaseContract !== undefined && m.releaseContract !== 2) throw new Error('UNTESTED_OR_INCOMPATIBLE_ARTIFACT');
+  if (m.releaseContract === 2 && (!/^\d+\.\d+\.\d+(?:[-+].+)?$/.test(m.version) || m.dependencies?.['spectrum-ts'] !== '12.8.0' || m.dependencies?.zod !== '4.5.4' || Object.keys(m.dependencies).sort().join() !== 'spectrum-ts,zod')) throw new Error('UNTESTED_OR_INCOMPATIBLE_ARTIFACT');
 }
 export async function packageCandidate({ candidate, approval, output }) {
   candidate = await realpath(candidate);
@@ -44,9 +51,10 @@ export async function packageCandidate({ candidate, approval, output }) {
   const outputRelative = relative(candidate, resolve(output));
   if (!outputRelative.startsWith('..' + '/') && !isAbsolute(outputRelative)) throw new Error('OUTPUT_MUST_BE_OUTSIDE_CANDIDATE');
   const root = join(candidate, 'packages/photon-features');
-  const foundation = JSON.parse(await readFile(join(candidate, 'docs/photon-features/foundation.json'), 'utf8'));
+  const foundation = JSON.parse(await readFile(join(candidate, 'docs/worktrees/foundation.json'), 'utf8'));
+  const legacyFoundation = JSON.parse(await readFile(join(candidate, 'docs/photon-features/foundation.json'), 'utf8'));
   if (authorization.f0Digest !== foundation.contractDigest) throw new Error('FOUNDATION_DIGEST_MISMATCH');
-  if (process.versions.node !== foundation.runtime.node || execFileSync('npm', ['--version'], { encoding: 'utf8' }).trim() !== foundation.runtime.npm) throw new Error('PINNED_TOOLCHAIN_REQUIRED');
+  if (process.versions.node !== legacyFoundation.runtime.node || execFileSync('npm', ['--version'], { encoding: 'utf8' }).trim() !== legacyFoundation.runtime.npm) throw new Error('PINNED_TOOLCHAIN_REQUIRED');
   const pkg = JSON.parse(await readFile(join(root, 'package.json'), 'utf8'));
   const aggregate = JSON.parse(await readFile(join(candidate, 'package.json'), 'utf8'));
   if (pkg.bin?.['grok-photon'] !== 'dist/src/cli/main.js' || !aggregate.scripts?.['photon:test:integration']) throw new Error('WT00_INTEGRATION_REQUIRED');
@@ -80,7 +88,7 @@ export async function packageCandidate({ candidate, approval, output }) {
   await collect(join(root, 'schemas'), 'schemas/');
   await collect(join(root, 'examples/wt-08'), 'examples/wt-08/');
   await collect(join(candidate, 'node_modules'), 'node_modules/', true);
-  for (const name of ['package.json', 'LICENSE', 'SKILL.md', 'INSTALL.md', 'README.md', 'scripts/install.mjs', 'scripts/package.mjs', 'scripts/smoke-test.mjs']) files[name] = await readFile(join(root, name));
+  for (const name of packageSupportFiles) files[name] = await readFile(join(root, name));
   files['bin/grok-photon'] = { content: Buffer.from("#!/usr/bin/env node\nimport { run } from '../dist/src/cli/main.js';\nprocess.exitCode = await run(process.argv.slice(2));\n"), mode: 0o700 };
   files['dependency-lock.json'] = await readFile(join(candidate, 'package-lock.json'));
   const lock = JSON.parse(files['dependency-lock.json'].toString('utf8'));
@@ -88,8 +96,8 @@ export async function packageCandidate({ candidate, approval, output }) {
     if (record.resolved?.startsWith('https://')) { const url = new URL(record.resolved); if (url.username || url.password) throw new Error('CREDENTIAL_IN_DEPENDENCY_LOCK'); }
     if (name.startsWith('packages/photon-features/node_modules/') && !record.dev) throw new Error('NESTED_RUNTIME_DEPENDENCY_REQUIRES_INTEGRATION');
   }
-  files['foundation.json'] = await readFile(join(candidate, 'docs/photon-features/foundation.json'));
-  const metadata = { kind: 'assembled-tested-candidate', commit, f0Digest: foundation.contractDigest, node: foundation.runtime.node, npm: foundation.runtime.npm,
+  files['foundation.json'] = await readFile(join(candidate, 'docs/worktrees/foundation.json'));
+  const metadata = { kind: 'assembled-tested-candidate', releaseContract: 2, commit, f0Digest: foundation.contractDigest, node: legacyFoundation.runtime.node, npm: legacyFoundation.runtime.npm,
     platform: process.platform, arch: process.arch, version: pkg.version, dependencies: pkg.dependencies, stateSchemaVersion: 1, compatibleStateSchemas: [1], workflowRun: authorization.workflowRun, tests: tests.map(({ command, exitCode }) => ({ command, exitCode })) };
   validateMetadata(metadata);
   const archive = encodeArchive(files, metadata);
@@ -100,6 +108,7 @@ export async function packageCandidate({ candidate, approval, output }) {
   await writeFile(output + '.provenance.json', JSON.stringify({ commit, tests }, null, 2) + '\n', { flag: 'wx', mode: 0o600 });
   return { artifact: output, sha256: sha256(archive), commit, files: Object.keys(files).length };
 }
+export async function buildPackage(options) { return packageCandidate(options); }
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   try {
     const [candidate, approval, output, ...extra] = process.argv.slice(2);

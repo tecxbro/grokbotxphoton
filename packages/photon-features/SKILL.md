@@ -39,6 +39,8 @@ Resolve people and conversations through existing task context and persisted res
 
 Keep a stable idempotency key for the same intended action and identical arguments. Persist it with the host-returned request ID. Never change the key just to bypass an error. Reusing a key with changed arguments is an idempotency conflict. Scope/task/generation are also part of runtime identity; a new generation must be resolved by the orchestrator.
 
+Four concise, schema-validated starting points are [create a poll](examples/wt-08/create-poll.json), [reply](examples/wt-08/reply.json), [send a voice note](examples/wt-08/send-voice.json), and [update an app card](examples/wt-08/update-card.json). They are generated from the same canonical fixtures/parser as the complete operation inventory below. Fixture IDs are examples, never target authority.
+
 ## Work after a wake
 
 A wake is only a notification. Retrieve `work.list`, claim a returned handoff, and consume the actual persisted typed `events` in the claim response. Persist task acceptance idempotently by handoff ID through the existing Grok task handoff before acknowledging. Heartbeat within the lease using the exact returned fence while accepting work. `work.ack` means the task accepted responsibility, not that outbound messaging finished. Never ack work you have not accepted durably.

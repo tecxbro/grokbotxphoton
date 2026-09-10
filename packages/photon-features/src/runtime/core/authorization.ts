@@ -15,6 +15,7 @@ import type {
 import { references, walk } from "./admission.js";
 import { canonical } from "./idempotency.js";
 import { fault } from "./errors.js";
+import { admitRequest } from "./admission.js";
 const admin = new Set([
   "space.create",
   "space.rename",
@@ -34,6 +35,17 @@ export interface AuthorizationPolicy {
     context: TrustedContext,
     recipients: readonly string[],
   ): boolean;
+}
+/** Resolve authority from the authenticated transport principal, then authorize the admitted action. */
+export async function resolveAndAuthorizeContext(
+  contexts: DurableContexts,
+  principal: AuthenticatedPrincipal,
+  input: unknown,
+): Promise<{ action: Action; context: TrustedContext }> {
+  const action = admitRequest(input);
+  const context = await contexts.resolve(principal, action.contextId);
+  await contexts.authorize(context, action);
+  return { action, context };
 }
 export class DurableContexts implements ContextResolver {
   constructor(

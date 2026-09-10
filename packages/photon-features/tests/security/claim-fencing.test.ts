@@ -34,3 +34,14 @@ test('revocation and task generation change fence a previously acquired executor
     assert.throws(()=>r.store.transaction(tx=>claims.writable(tx,result.requestId,claim)),/CONTEXT_REVOKED|STALE_GENERATION/);
   }
 });
+
+test('one idempotency key cannot claim conflicting arguments',async t=>{
+  const r=runtime();t.after(()=>r.close());const first=action('text.send');
+  await r.submission.submit(first,context);
+  const conflict=structuredClone(first);
+  if(conflict.operation!=='text.send')throw new Error('fixture');
+  conflict.arguments.text='conflicting logical write';
+  await assert.rejects(r.submission.submit(conflict,context),/IDEMPOTENCY_CONFLICT/);
+  assert.equal(r.store.scan('outbox').length,1);
+  assert.deepEqual(r.store.scan('outbox')[0]!.action,first);
+});

@@ -42,6 +42,11 @@ test('webhook awaits durable acceptance; database failure is 503 and alternate e
   let ack = false; const response = ingress.handle(request()).then(value => {ack = true; return value;});
   await entered; assert.equal(ack,false); assert.equal(r.store.scan('inbox').length,0);
   release(); assert.equal((await response).status,200); assert.equal(r.store.scan('inbox').length,1);
-  fail = true; assert.equal((await ingress.handle(request())).status,503);
+  assert.equal((await ingress.handle(request())).status,200,'duplicate delivery is acknowledged after idempotent durable capture');
+  assert.equal(r.store.scan('inbox').length,1,'duplicate delivery does not create a second event');
+  fail = true;
+  const failedRaw=raw.replaceAll('message-1','message-2');
+  assert.equal((await ingress.handle(request(failedRaw))).status,503);
+  assert.equal(r.store.scan('inbox').length,1,'failed durable capture must not acknowledge or persist partial state');
   assert.equal((await ingress.handle(request(JSON.stringify({event:'message.received',data:{}})))).status,400);
 });

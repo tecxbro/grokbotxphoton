@@ -1,0 +1,875 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "url": "https://docs.photon.codes/docs/llms.txt",
+      "finalUrl": "https://photon.codes/docs/llms.txt",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:04.984Z",
+      "contentType": "text/plain; charset=utf-8",
+      "identity": "Photon",
+      "sha256": "0e9cff75bdffdb8e625583fdd88ccd7317d027fa3f9a74cbe3cebfa256c0c033",
+      "snapshot": "docs/photon/reference/docs.photon.codes/llms.txt",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/llms.txt",
+      "finalUrl": "https://photon.codes/docs/llms.txt",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:06.234Z",
+      "contentType": "text/plain; charset=utf-8",
+      "identity": "Photon",
+      "sha256": "0e9cff75bdffdb8e625583fdd88ccd7317d027fa3f9a74cbe3cebfa256c0c033",
+      "snapshot": "docs/photon/reference/photon.codes/llms.txt",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/llms-spectrum.txt",
+      "finalUrl": "https://photon.codes/docs/llms-spectrum.txt",
+      "status": 404,
+      "retrievedAt": "2026-09-09T22:27:06.874Z",
+      "contentType": "text/plain;charset=UTF-8",
+      "identity": null,
+      "sha256": null,
+      "snapshot": null,
+      "failure": "HTTP_STATUS:404",
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/llms-cli.txt",
+      "finalUrl": "https://photon.codes/docs/llms-cli.txt",
+      "status": 404,
+      "retrievedAt": "2026-09-09T22:27:06.875Z",
+      "contentType": "text/plain;charset=UTF-8",
+      "identity": null,
+      "sha256": null,
+      "snapshot": null,
+      "failure": "HTTP_STATUS:404",
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/llms-webhooks.txt",
+      "finalUrl": "https://photon.codes/docs/llms-webhooks.txt",
+      "status": 404,
+      "retrievedAt": "2026-09-09T22:27:06.876Z",
+      "contentType": "text/plain;charset=UTF-8",
+      "identity": null,
+      "sha256": null,
+      "snapshot": null,
+      "failure": "HTTP_STATUS:404",
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/llms-low-level-sdks.txt",
+      "finalUrl": "https://photon.codes/docs/llms-low-level-sdks.txt",
+      "status": 404,
+      "retrievedAt": "2026-09-09T22:27:06.877Z",
+      "contentType": "text/plain;charset=UTF-8",
+      "identity": null,
+      "sha256": null,
+      "snapshot": null,
+      "failure": "HTTP_STATUS:404",
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/llms-api-reference.txt",
+      "finalUrl": "https://photon.codes/docs/llms-api-reference.txt",
+      "status": 404,
+      "retrievedAt": "2026-09-09T22:27:09.189Z",
+      "contentType": "text/plain;charset=UTF-8",
+      "identity": null,
+      "sha256": null,
+      "snapshot": null,
+      "failure": "HTTP_STATUS:404",
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/introduction.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/introduction.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:09.190Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Introduction",
+      "sha256": "b5eb80fad3e2c756cd1b7438fc3e695edffe7816eafb21ce99bbd0b539f27f3e",
+      "snapshot": "docs/photon/reference/photon.codes/spectrum-ts/introduction.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/getting-started.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/getting-started.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:09.190Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Getting Started",
+      "sha256": "6f8ead1678e917693423a932ad0b00c8c12b88665151f0f936630b0c3c8f3ce4",
+      "snapshot": "docs/photon/reference/photon.codes/spectrum-ts/getting-started.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/messages.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/messages.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:09.191Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Messages",
+      "sha256": "0da88e0f2336f1f0757dc7359dd702ce9fc2d3e586e523871244251f97c7d39b",
+      "snapshot": "docs/photon/reference/photon.codes/spectrum-ts/messages.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/spaces-and-users.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/spaces-and-users.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:10.033Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Spaces and Users",
+      "sha256": "f69d3567ce5bb75b6db2348c1906ff0e8629941be75c49f64416311693fbe044",
+      "snapshot": "docs/photon/reference/photon.codes/spectrum-ts/spaces-and-users.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/platform-narrowing.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/platform-narrowing.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:10.033Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Platform Narrowing",
+      "sha256": "bf4786f4ecab20832500b0585ceb406281eaf04299f1c6af987cbc980a7d137b",
+      "snapshot": "docs/photon/reference/photon.codes/spectrum-ts/platform-narrowing.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:10.033Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Providers",
+      "sha256": "04616a36a7dcd45def78fbeded3d2c5f508dae3353f496b6d79d608eba15f796",
+      "snapshot": "docs/photon/reference/photon.codes/spectrum-ts/providers.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/connection-and-routing.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers/imessage/connection-and-routing.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:10.034Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "iMessage connection and routing",
+      "sha256": "566a8ddbd1cf0dccdbcd3695c6e28c3cc4b100d97e606c0ee923ade339f24c47",
+      "snapshot": "docs/photon/reference/photon.codes/spectrum-ts/providers/imessage/connection-and-routing.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/content.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/content.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:10.432Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Content",
+      "sha256": "ff7fc65dfecc07fc3e760115262c14b3439b36e2f9fe2a3f109cee9e619bd42d",
+      "snapshot": "docs/photon/reference/photon.codes/spectrum-ts/content.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/content/composing-content.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/content/composing-content.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:10.433Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Composing content",
+      "sha256": "590be3805c1b141c6d00b7cac2b62a3ceb0c5a5d66f170f6b7783a217edfb1e4",
+      "snapshot": "docs/photon/reference/photon.codes/spectrum-ts/content/composing-content.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/content/polls.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/content/polls.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:10.433Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Polls",
+      "sha256": "e57ffa8265660ccbe175e92f46862af905e9129a10be598c0cc851d6643a61b9",
+      "snapshot": "docs/photon/reference/photon.codes/spectrum-ts/content/polls.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/content/app.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/content/app.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:10.433Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "App",
+      "sha256": "81ae485a85373813cb78b50de592144527a5ddad80c0252e338e8aa01bdb4a11",
+      "snapshot": "docs/photon/reference/photon.codes/spectrum-ts/content/app.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/content/read.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/content/read.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:10.987Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Read",
+      "sha256": "032820ce8bbd13fb91ada9eeae1ac77489cad067ba9a69c90fa7fbdc6ef16386",
+      "snapshot": "docs/photon/reference/photon.codes/spectrum-ts/content/read.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/custom-events-and-lifecycle.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/custom-events-and-lifecycle.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:10.987Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Custom Events and Lifecycle",
+      "sha256": "f00445888cb5944ff77f259b3e781009977d57367d753d586029705e406980c5",
+      "snapshot": "docs/photon/reference/photon.codes/spectrum-ts/custom-events-and-lifecycle.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/inbound-read-receipts.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/inbound-read-receipts.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:10.987Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Inbound iMessage read receipts",
+      "sha256": "85bf1cfd9ecb68c44072ec629c504eafd643f5a0f311290d741022f76ee2824d",
+      "snapshot": "docs/photon/reference/photon.codes/spectrum-ts/providers/imessage/messaging-features/inbound-read-receipts.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/message-metadata.md",
+      "finalUrl": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/message-metadata.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:10.987Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Native iMessage message metadata",
+      "sha256": "e3c4d5d536853a7a9f463585a53866abcf630735d53b43b347c3b4ded3fd6e0c",
+      "snapshot": "docs/photon/reference/photon.codes/spectrum-ts/providers/imessage/messaging-features/message-metadata.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/best-practices/architecture.md",
+      "finalUrl": "https://photon.codes/docs/best-practices/architecture.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:11.382Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Architecture",
+      "sha256": "9df570ca7d3e08256f47e03673d47ec3e96e05f250b738badda5980c0c0eb8e1",
+      "snapshot": "docs/photon/reference/photon.codes/best-practices/architecture.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/best-practices/inbound-pipeline.md",
+      "finalUrl": "https://photon.codes/docs/best-practices/inbound-pipeline.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:11.382Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Inbound pipeline",
+      "sha256": "4a7113e2a9b987f51e8098f33a9b007f7cc31890487bff42a031c36bc15e9ee3",
+      "snapshot": "docs/photon/reference/photon.codes/best-practices/inbound-pipeline.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/best-practices/recovery-and-state.md",
+      "finalUrl": "https://photon.codes/docs/best-practices/recovery-and-state.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:11.382Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Recovery and state",
+      "sha256": "65944f4b202e0142388403aff39b3135b3dca7ab87035cdc36af22713716a9f0",
+      "snapshot": "docs/photon/reference/photon.codes/best-practices/recovery-and-state.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/imessage/getting-started.md",
+      "finalUrl": "https://photon.codes/docs/advanced-kits/imessage/getting-started.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:11.382Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Getting Started",
+      "sha256": "0ea8284fe707db60c1b43b138afca52241385d7ba7caaca5c8b5193457478277",
+      "snapshot": "docs/photon/reference/photon.codes/advanced-kits/imessage/getting-started.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/imessage/error-handling.md",
+      "finalUrl": "https://photon.codes/docs/advanced-kits/imessage/error-handling.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:39:34.412Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Error Handling",
+      "sha256": "ea68f162fd7ed4d4ea24ff7223754bdc7e8941bb148fc247404d7821f492a3b9",
+      "snapshot": "docs/photon/reference/photon.codes/advanced-kits/imessage/error-handling.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/advanced-kits/imessage/events.md",
+      "finalUrl": "https://photon.codes/docs/advanced-kits/imessage/events.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:11.764Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Events",
+      "sha256": "ffbfaec5c8146c923a3df23dc84ab0df607a5f78beb4faf5675f2cac17df58f9",
+      "snapshot": "docs/photon/reference/photon.codes/advanced-kits/imessage/events.md",
+      "failure": null,
+      "classification": "official"
+    },
+    {
+      "url": "https://photon.codes/docs/webhooks/delivery.md",
+      "finalUrl": "https://photon.codes/docs/webhooks/delivery.md",
+      "status": 200,
+      "retrievedAt": "2026-09-09T22:27:11.764Z",
+      "contentType": "text/markdown; charset=utf-8",
+      "identity": "Delivery and retries",
+      "sha256": "6e8105b77cd5c763586f0cd869a76ad2dc90b395ce331feb6505ebf177d23e6b",
+      "snapshot": "docs/photon/reference/photon.codes/webhooks/delivery.md",
+      "failure": null,
+      "classification": "official"
+    }
+  ],
+  "discovered": [
+    {
+      "title": "Full content for this tab",
+      "url": "https://photon.codes/docs/llms-spectrum.txt",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Introduction",
+      "url": "https://photon.codes/docs/spectrum-ts/introduction",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Getting Started",
+      "url": "https://photon.codes/docs/spectrum-ts/getting-started",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Messages",
+      "url": "https://photon.codes/docs/spectrum-ts/messages",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Spaces and Users",
+      "url": "https://photon.codes/docs/spectrum-ts/spaces-and-users",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Reactions and Replies",
+      "url": "https://photon.codes/docs/spectrum-ts/reactions-and-replies",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Platform Narrowing",
+      "url": "https://photon.codes/docs/spectrum-ts/platform-narrowing",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Webhooks",
+      "url": "https://photon.codes/docs/spectrum-ts/webhooks",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Content",
+      "url": "https://photon.codes/docs/spectrum-ts/content",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Text",
+      "url": "https://photon.codes/docs/spectrum-ts/content/text",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Markdown",
+      "url": "https://photon.codes/docs/spectrum-ts/content/markdown",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Attachments",
+      "url": "https://photon.codes/docs/spectrum-ts/content/attachments",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Voice",
+      "url": "https://photon.codes/docs/spectrum-ts/content/voice",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Contacts",
+      "url": "https://photon.codes/docs/spectrum-ts/content/contacts",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Rich links",
+      "url": "https://photon.codes/docs/spectrum-ts/content/rich-links",
+      "scope": "reference-only"
+    },
+    {
+      "title": "App",
+      "url": "https://photon.codes/docs/spectrum-ts/content/app",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Polls",
+      "url": "https://photon.codes/docs/spectrum-ts/content/polls",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Groups",
+      "url": "https://photon.codes/docs/spectrum-ts/content/groups",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Custom content",
+      "url": "https://photon.codes/docs/spectrum-ts/content/custom",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Replies",
+      "url": "https://photon.codes/docs/spectrum-ts/content/replies",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Edits",
+      "url": "https://photon.codes/docs/spectrum-ts/content/edits",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Unsend",
+      "url": "https://photon.codes/docs/spectrum-ts/content/unsend",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Read",
+      "url": "https://photon.codes/docs/spectrum-ts/content/read",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Typing indicators",
+      "url": "https://photon.codes/docs/spectrum-ts/content/typing-indicators",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Rename",
+      "url": "https://photon.codes/docs/spectrum-ts/content/rename",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Avatar",
+      "url": "https://photon.codes/docs/spectrum-ts/content/avatar",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Membership",
+      "url": "https://photon.codes/docs/spectrum-ts/content/membership",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Composing content",
+      "url": "https://photon.codes/docs/spectrum-ts/content/composing-content",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Providers",
+      "url": "https://photon.codes/docs/spectrum-ts/providers",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Outbound calls",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/voice/outbound-calls",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Inbound calls",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/voice/inbound-calls",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Voice call troubleshooting",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/voice/troubleshooting",
+      "scope": "reference-only"
+    },
+    {
+      "title": "iMessage connection and routing",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/connection-and-routing",
+      "scope": "reference-only"
+    },
+    {
+      "title": "iMessage messaging features",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features",
+      "scope": "reference-only"
+    },
+    {
+      "title": "iMessage message effects",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/message-effects",
+      "scope": "reference-only"
+    },
+    {
+      "title": "iMessage chat renaming",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/chat-renaming",
+      "scope": "reference-only"
+    },
+    {
+      "title": "iMessage group avatars",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/group-avatars",
+      "scope": "reference-only"
+    },
+    {
+      "title": "iMessage group membership",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/group-membership",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Inbound iMessage group events",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/inbound-group-events",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Inbound iMessage read receipts",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/inbound-read-receipts",
+      "scope": "reference-only"
+    },
+    {
+      "title": "iMessage chat backgrounds",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/chat-backgrounds",
+      "scope": "reference-only"
+    },
+    {
+      "title": "iMessage Apps",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/apps",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Native iMessage contact card sharing",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/contact-card-sharing",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Native iMessage message metadata",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/message-metadata",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Fetching iMessage attachments",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/fetching-attachments",
+      "scope": "reference-only"
+    },
+    {
+      "title": "iMessage tapback reactions",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/tapback-reactions",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Terminal setup and usage",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/terminal/setup-and-usage",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Terminal interactions",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/terminal/interactions",
+      "scope": "reference-only"
+    },
+    {
+      "title": "WhatsApp Business setup",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/whatsapp-business/setup",
+      "scope": "reference-only"
+    },
+    {
+      "title": "WhatsApp Business conversations",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/whatsapp-business/conversations",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Telegram setup",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/telegram/setup",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Telegram conversations and features",
+      "url": "https://photon.codes/docs/spectrum-ts/providers/telegram/conversations-and-features",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Custom Events and Lifecycle",
+      "url": "https://photon.codes/docs/spectrum-ts/custom-events-and-lifecycle",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Building a Custom Platform",
+      "url": "https://photon.codes/docs/spectrum-ts/custom-platforms",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Chat SDK",
+      "url": "https://photon.codes/docs/integrations/chat-sdk",
+      "scope": "reference-only"
+    },
+    {
+      "title": "eve",
+      "url": "https://photon.codes/docs/integrations/eve",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Architecture",
+      "url": "https://photon.codes/docs/best-practices/architecture",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Inbound pipeline",
+      "url": "https://photon.codes/docs/best-practices/inbound-pipeline",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Recovery and state",
+      "url": "https://photon.codes/docs/best-practices/recovery-and-state",
+      "scope": "reference-only"
+    },
+    {
+      "title": "iMessage deliverability",
+      "url": "https://photon.codes/docs/best-practices/imessage-deliverability",
+      "scope": "reference-only"
+    },
+    {
+      "title": "iMessage troubleshooting",
+      "url": "https://photon.codes/docs/spectrum-ts/troubleshooting/imessage",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Full content for this tab",
+      "url": "https://photon.codes/docs/llms-cli.txt",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Photon CLI",
+      "url": "https://photon.codes/docs/cli/overview",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Installation",
+      "url": "https://photon.codes/docs/cli/installation",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Authentication",
+      "url": "https://photon.codes/docs/cli/authentication",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Projects",
+      "url": "https://photon.codes/docs/cli/projects",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Spectrum",
+      "url": "https://photon.codes/docs/cli/spectrum",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Billing",
+      "url": "https://photon.codes/docs/cli/billing",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Profile & utilities",
+      "url": "https://photon.codes/docs/cli/profile-and-utilities",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Full content for this tab",
+      "url": "https://photon.codes/docs/llms-webhooks.txt",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Webhooks",
+      "url": "https://photon.codes/docs/webhooks/overview",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Quickstart",
+      "url": "https://photon.codes/docs/webhooks/quickstart",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Events",
+      "url": "https://photon.codes/docs/webhooks/events",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Verifying signatures",
+      "url": "https://photon.codes/docs/webhooks/verifying-signatures",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Delivery and retries",
+      "url": "https://photon.codes/docs/webhooks/delivery",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Managing webhooks",
+      "url": "https://photon.codes/docs/webhooks/managing-webhooks",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Troubleshooting",
+      "url": "https://photon.codes/docs/webhooks/troubleshooting",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Full content for this tab",
+      "url": "https://photon.codes/docs/llms-low-level-sdks.txt",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Getting Started",
+      "url": "https://photon.codes/docs/advanced-kits/imessage/getting-started",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Messages",
+      "url": "https://photon.codes/docs/advanced-kits/imessage/messages",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Chats",
+      "url": "https://photon.codes/docs/advanced-kits/imessage/chats",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Groups",
+      "url": "https://photon.codes/docs/advanced-kits/imessage/groups",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Attachments",
+      "url": "https://photon.codes/docs/advanced-kits/imessage/attachments",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Polls",
+      "url": "https://photon.codes/docs/advanced-kits/imessage/polls",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Addresses",
+      "url": "https://photon.codes/docs/advanced-kits/imessage/addresses",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Locations",
+      "url": "https://photon.codes/docs/advanced-kits/imessage/locations",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Events",
+      "url": "https://photon.codes/docs/advanced-kits/imessage/events",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Error Handling",
+      "url": "https://photon.codes/docs/advanced-kits/imessage/error-handling",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Getting Started",
+      "url": "https://photon.codes/docs/advanced-kits/whatsapp/getting-started",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Messages",
+      "url": "https://photon.codes/docs/advanced-kits/whatsapp/messages",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Interactive Messages",
+      "url": "https://photon.codes/docs/advanced-kits/whatsapp/interactive-messages",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Templates",
+      "url": "https://photon.codes/docs/advanced-kits/whatsapp/templates",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Events",
+      "url": "https://photon.codes/docs/advanced-kits/whatsapp/events",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Media",
+      "url": "https://photon.codes/docs/advanced-kits/whatsapp/media",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Error Handling",
+      "url": "https://photon.codes/docs/advanced-kits/whatsapp/error-handling",
+      "scope": "reference-only"
+    },
+    {
+      "title": "iMessage (Legacy)",
+      "url": "https://photon.codes/docs/legacy/imessage",
+      "scope": "reference-only"
+    },
+    {
+      "title": "imessage-kit",
+      "url": "https://photon.codes/docs/opensource/imessage-kit",
+      "scope": "reference-only"
+    },
+    {
+      "title": "heif2jpeg",
+      "url": "https://photon.codes/docs/utilities/heif2jpeg",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Full content for this tab",
+      "url": "https://photon.codes/docs/llms-api-reference.txt",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Introduction",
+      "url": "https://photon.codes/docs/api-reference/introduction",
+      "scope": "reference-only"
+    },
+    {
+      "title": "OAuth",
+      "url": "https://photon.codes/docs/api-reference/oauth",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Rate limit",
+      "url": "https://photon.codes/docs/api-reference/rate-limit",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Dashboard API (OpenAPI)",
+      "url": "https://photon.codes/docs/api-reference/dashboard-openapi.json",
+      "scope": "reference-only"
+    },
+    {
+      "title": "Spectrum API (OpenAPI)",
+      "url": "https://spectrum.photon.codes/openapi/json",
+      "scope": "reference-only"
+    }
+  ]
+}

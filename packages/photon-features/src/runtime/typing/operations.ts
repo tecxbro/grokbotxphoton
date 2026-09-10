@@ -1,3 +1,5 @@
+import { createHash } from "node:crypto";
+import { canonicalJson } from "../../adapters/transport/provider-context.js";
 import {
   assertScope,
   type Action,
@@ -109,4 +111,56 @@ export function createTypingModule(
       },
     ],
   };
+}
+
+/** Current F0 public service binding. Request identity/expiry come from durable
+ * runtime work, never action idempotency input. Legacy createTypingModule remains
+ * for the inherited host and is not silently registered as current composition. */
+export async function executeTypingOperation(
+  leases: TypingLeases,
+  action: Extract<Action, {operation: "typing.begin" | "typing.end"}>,
+  services: import("../../contracts/services.js").ExecutionServices,
+  binding: TypingExecutionBinding,
+): Promise<OperationResult> {
+  const validate = () => {
+    services.assertActiveClaim(); binding.assertCurrent();
+    if (services.signal.aborted) throw new Error("CANCELLED");
+    if (binding.expiresAt <= services.clock.now()) throw new Error("TYPING_WORK_EXPIRED");
+  };
+  validate();
+  assertScope(action.arguments.space, services.context.scope);
+  await services.resolveResource(action.arguments.space);
+  validate();
+  return services.executeChild({
+    index: 0, key: `${binding.requestId}:typing`,
+    argumentsDigest: createHash("sha256").update(canonicalJson(action)).digest("hex"),
+    dispatch: async () => {
+      validate();
+      let unavailable = false;
+      if (action.operation === "typing.begin") {
+        const ttl = Math.min(action.arguments.ttlMs, binding.expiresAt - services.clock.now(),
+          services.claim.leaseUntil - services.clock.now(), services.context.expiresAt - services.clock.now());
+        unavailable = ttl < 100 || !leases.begin(services.context.scope, services.context.generation,
+          ttl, {signal: services.signal, validate});
+      } else leases.end({scope: services.context.scope, generation: services.context.generation});
+      return {
+        version: 1, requestId: binding.requestId, revision: binding.resultRevision,
+        updatedAt: services.clock.now(), status: unavailable ? "failed" : "executor-completed",
+        value: {type: "void"}, references: [], observations: [],
+        ...(unavailable ? {error: {code: "UNAVAILABLE" as const,
+          message: "No typing start scheduled", retry: "never" as const}} : {}),
+      };
+    },
+  });
+}
+/** Public f0-services-2 module; host registration remains integration-owned. */
+export function createTypingFeatureModule(
+  leases: TypingLeases,
+  bind: (action: Extract<Action, {operation: "typing.begin" | "typing.end"}>,
+    services: import("../../contracts/services.js").ExecutionServices) => TypingExecutionBinding,
+): import("../../contracts/feature.js").FeatureModule<"typing.begin" | "typing.end"> {
+  return {id: "wt-02.typing", owner: "wt-02", handlers: {
+    "typing.begin": (action, services) => executeTypingOperation(leases, action, services, bind(action, services)),
+    "typing.end": (action, services) => executeTypingOperation(leases, action, services, bind(action, services)),
+  }};
 }

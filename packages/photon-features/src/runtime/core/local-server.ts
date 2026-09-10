@@ -7,6 +7,7 @@ import {
   localRequestSchema,
   principalSchema,
   capabilitySchema,
+  assertJsonData,
   MAX_REQUEST_BYTES,
   type AuthenticatedPrincipal,
   type Capability,
@@ -15,7 +16,7 @@ import {
 import type { SubmissionPort } from "../../host/protocol.js";
 import { DurableContexts } from "./authorization.js";
 import { DurableWork } from "./work-handoff.js";
-import { admit } from "./admission.js";
+import { admitRequest } from "./admission.js";
 import { publicError, RuntimeFault } from "./errors.js";
 export interface RuntimeProtocolServices {
   contexts: DurableContexts;
@@ -33,10 +34,7 @@ export class DurableLocalProtocol {
     try {
       let request: ReturnType<typeof localRequestSchema.parse>;
       try {
-        if (
-          Buffer.byteLength(JSON.stringify(input), "utf8") > MAX_REQUEST_BYTES
-        )
-          throw new Error();
+        assertJsonData(input, MAX_REQUEST_BYTES);
         request = localRequestSchema.parse(input);
         principalSchema.parse(principal);
       } catch {
@@ -52,7 +50,7 @@ export class DurableLocalProtocol {
       let result: unknown;
       switch (request.method) {
         case "submit":
-          result = await s.submission.submit(admit(request.action), c);
+          result = await s.submission.submit(admitRequest(request.action), c);
           break;
         case "status":
           result = await s.submission.status(request.requestId, c);
@@ -116,6 +114,18 @@ export class DurableLocalProtocol {
 export interface LocalCredential {
   token: string;
   principal: AuthenticatedPrincipal;
+}
+/** Build the frozen local protocol over one authenticated private Unix-domain socket. */
+export function createLocalServer(options: {
+  path: string;
+  credentials: readonly LocalCredential[];
+  services: RuntimeProtocolServices;
+}): Promise<{ close(): Promise<void> }> {
+  return listenDurableLocal(
+    options.path,
+    options.credentials,
+    new DurableLocalProtocol(options.services),
+  );
 }
 /** Same OS user is one trust domain. No peer PID identity or hostile same-user isolation is claimed. */
 export async function listenDurableLocal(

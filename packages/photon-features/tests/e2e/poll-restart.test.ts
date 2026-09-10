@@ -5,6 +5,8 @@ import { createPollReducer } from '../../src/features/polls/reducer.js';
 import { registerNativeOptions } from '../../src/features/polls/identity.js';
 import { reconcilePollEvents } from '../../src/features/polls/reconciliation.js';
 import { InboundRouter } from '../../src/runtime/inbound/router.js';
+import { normalizeCaptured } from '../../src/runtime/inbound/normalize.js';
+import { ProviderContext } from '../../src/adapters/transport/provider-context.js';
 import { DurableSQLiteStore } from '../../src/adapters/state/sqlite.js';
 import { runtime, context, scope } from '../lanes/wt-09/harness.js';
 
@@ -19,7 +21,7 @@ function poll(r: ReturnType<typeof runtime>, suffix = '1') {
   });
   return {ref,options};
 }
-function vote(p:ReturnType<typeof poll>,id:string,seq:string,actor='voter-a',index=0,change:'vote'|'unvote'='vote'):IncomingEvent {
+function vote(p:ReturnType<typeof poll>,id:string,seq:string,actor='voter-a',index=0,change:'vote'|'unvote'|'option-added'='vote'):IncomingEvent {
   return {version:1,type:'poll',eventId:id,scope,direction:'inbound',occurredAt:null,receivedAt:10000,
     ordering:{source:'verified-sequence-fixture',sequence:seq},targets:[p.ref,p.options[index]!],poll:p.ref,option:p.options[index]!,actorId:actor,change};
 }
@@ -66,4 +68,29 @@ test('WT-02 router and WT-05 reducer commit one correlated continuation together
   await router.accept(vote(p,'assembled-vote','1'));
   assert.equal(r.store.scan('votes').length,1);assert.equal(r.store.scan('handoffs').length,1);
   assert.equal(r.store.transaction(tx=>tx.get('inbox','assembled-vote'))!.state,'reduced');
+});
+
+test('native add-option event creates one continuation without fabricating a vote', t => {
+  const r=runtime();t.after(()=>r.close());const p=poll(r);
+  r.store.transaction(tx=>reducer().reduce(vote(p,'option-added','1','voter-a',1,'option-added'),tx));
+  assert.equal(r.store.scan('votes').length,0);
+  assert.equal(r.store.scan('handoffs').length,1);
+  assert.equal(r.store.transaction(tx=>tx.get('inbox','option-added'))!.state,'reduced');
+});
+
+test('missing vote correlation stays durable and unresolved across restart', async t => {
+  const r=runtime();t.after(()=>r.close());
+  const routes=new ProviderContext('project-1',[{accountId:'account-1',lineId:'line-1',phone:'offline-line'}]);
+  const event=normalizeCaptured({id:'missing-vote',platform:'imessage',direction:'inbound',sender:{id:'voter-a'},
+    space:{id:'offline-chat',platform:'imessage',phone:'offline-line'},
+    content:{type:'poll_option',title:'Same',selected:true}},'capture-missing',routes,10000);
+  assert.equal(event.type,'unresolved');
+  const router=new InboundRouter(r.store,r.clock,{route:()=>({taskId:context.taskId,generation:1,principalId:context.principalId})},[reducer()]);
+  await router.accept(event);
+  const reopened=new DurableSQLiteStore(r.path);
+  try {
+    assert.equal(reopened.scan('inbox')[0]!.state,'unresolved');
+    assert.equal(reopened.scan('unresolved').length,1);
+    assert.equal(reopened.scan('votes').length,0);
+  } finally { reopened.close(); }
 });

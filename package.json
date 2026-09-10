@@ -18,7 +18,9 @@
     "photon:build": "npm run build --workspace=@grokbot/photon-features",
     "photon:test": "npm run test --workspace=@grokbot/photon-features",
     "photon:check": "npm run check --workspace=@grokbot/photon-features",
-    "test:verification": "npm run photon:build && node --test \"packages/photon-features/dist/tests/e2e/*.test.js\" \"packages/photon-features/dist/tests/security/*.test.js\" \"packages/photon-features/dist/tests/lanes/wt-09/*.test.js\"",
+    "photon:test:integration": "npm run photon:build && node scripts/run-integration-tests.mjs",
+    "photon:verify-all": "node scripts/verify-all.mjs",
+    "test:verification": "npm run photon:test:integration",
     "smoke": "node packages/photon-features/scripts/smoke-test.mjs"
   },
   "repository": {

@@ -98,3 +98,7 @@ export const incomingEventSchema = z.discriminatedUnion("type", [
   }),
 ]);
 export type IncomingEvent = z.infer<typeof incomingEventSchema>;
+
+/** Typed provider input; unresolved correlation is durable work, never a guessed target. */
+export type InboundEvent = IncomingEvent;
+export type UnresolvedEvent = Extract<InboundEvent, {type: "unresolved"}>;

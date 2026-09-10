@@ -1,0 +1,322 @@
+{
+  "version": 1,
+  "assignment": "2026-09-10 exact WT-03 assignment supersedes historical ownership manifest",
+  "files": [
+    {
+      "path": "docs/worktrees/wt-03/ACCEPTANCE.md",
+      "purpose": "Lane documentation and evidence",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/AGENTS.md",
+      "purpose": "Lane documentation and evidence",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/ARCHITECTURE.md",
+      "purpose": "Lane documentation and evidence",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/CHANGE-REQUESTS.md",
+      "purpose": "Lane documentation and evidence",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/FILES.json",
+      "purpose": "Lane documentation and evidence",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/HANDOFF.md",
+      "purpose": "Lane documentation and evidence",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/README.md",
+      "purpose": "Lane documentation and evidence",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/SOURCES.md",
+      "purpose": "Lane documentation and evidence",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/TEST-EVIDENCE.md",
+      "purpose": "Lane documentation and evidence",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/WORKLOG.md",
+      "purpose": "Lane documentation and evidence",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/photon.codes/docs/advanced-kits/imessage/messages.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/photon.codes/docs/llms.txt",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/photon.codes/docs/spectrum-ts/content/composing-content.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/photon.codes/docs/spectrum-ts/content/edits.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/photon.codes/docs/spectrum-ts/content/groups.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/photon.codes/docs/spectrum-ts/content/markdown.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/photon.codes/docs/spectrum-ts/content/read.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/photon.codes/docs/spectrum-ts/content/replies.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/photon.codes/docs/spectrum-ts/content/rich-links.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/photon.codes/docs/spectrum-ts/content/text.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/photon.codes/docs/spectrum-ts/content/unsend.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/photon.codes/docs/spectrum-ts/content.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/photon.codes/docs/spectrum-ts/messages.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/inbound-read-receipts.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/photon.codes/docs/spectrum-ts/providers/imessage/messaging-features/tapback-reactions.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/photon.codes/docs/spectrum-ts/reactions-and-replies.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/SKILL.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/imessage/advanced/messages.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/SKILL.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/composing-and-streaming.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/contacts-and-rich-links.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/read-and-typing.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/replies-edits-and-unsend.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content/text-and-markdown.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/content.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/references/raw.githubusercontent.com/tecxbro/photon-skills/main/skills/spectrum/reactions-and-replies.md",
+      "purpose": "Official or skill reference snapshot",
+      "symbols": []
+    },
+    {
+      "path": "docs/worktrees/wt-03/source-lock.json",
+      "purpose": "Lane documentation and evidence",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/composition.ts",
+      "purpose": "Owned implementation and preserved compatibility APIs",
+      "symbols": [
+        "validateContent",
+        "createCompilers",
+        "compileComposition",
+        "executeComposition"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/edits.ts",
+      "purpose": "Owned implementation and preserved compatibility APIs",
+      "symbols": [
+        "executeEdit",
+        "executeUnsend"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/mark-read.ts",
+      "purpose": "Owned implementation and preserved compatibility APIs",
+      "symbols": [
+        "executeMarkRead"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/module.ts",
+      "purpose": "Owned implementation and preserved compatibility APIs",
+      "symbols": [
+        "ownedOperations",
+        "textCapabilities",
+        "createTextMessageModule",
+        "createFeatureModule"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/reactions.ts",
+      "purpose": "Owned implementation and preserved compatibility APIs",
+      "symbols": [
+        "executeReaction",
+        "removeOwnReaction"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/replies.ts",
+      "purpose": "Owned implementation and preserved compatibility APIs",
+      "symbols": [
+        "executeReply"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/sdk.ts",
+      "purpose": "Owned implementation and preserved compatibility APIs",
+      "symbols": [
+        "Binding",
+        "TextMessageOptions",
+        "checkSpace",
+        "checkMessage",
+        "tapbacks",
+        "PublicContentCompiler",
+        "PublicTextMessageOptions",
+        "digestTextInput",
+        "textResult",
+        "assertTextProvider",
+        "checkPublicSpace",
+        "mapTextMessageOperation",
+        "executeTextChild",
+        "textFailure"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/streaming.ts",
+      "purpose": "Owned implementation and preserved compatibility APIs",
+      "symbols": [
+        "streamBounds",
+        "bufferStream",
+        "executeTextStream"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/targets.ts",
+      "purpose": "Owned implementation and preserved compatibility APIs",
+      "symbols": [
+        "remember",
+        "recordFor",
+        "targetSpace",
+        "targetMessage",
+        "publicRecordFor",
+        "resolveTextSpace",
+        "resolveMessageTarget",
+        "resolveReactionTarget",
+        "getMessageTarget"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/text.ts",
+      "purpose": "Owned implementation and preserved compatibility APIs",
+      "symbols": [
+        "executeTextOperation"
+      ]
+    },
+    {
+      "path": "packages/photon-features/src/features/text-messages/voice-policy.ts",
+      "purpose": "Owned implementation and preserved compatibility APIs",
+      "symbols": [
+        "formatProse",
+        "oneBubble",
+        "formatMessageBubbles",
+        "validateVoicePolicy"
+      ]
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-03/integration.test.ts",
+      "purpose": "Owned test suite",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-03/regression.test.ts",
+      "purpose": "Owned test suite",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-03/sdk-contract.test.ts",
+      "purpose": "Owned test suite",
+      "symbols": []
+    },
+    {
+      "path": "packages/photon-features/tests/lanes/wt-03/unit.test.ts",
+      "purpose": "Owned test suite",
+      "symbols": []
+    }
+  ]
+}

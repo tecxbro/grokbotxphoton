@@ -1,0 +1,2 @@
+# WT-05 rules
+Own only the six poll source files, four requested tests, and this documentation directory. Preserve legacy compatibility exports without registering them with F0. All new entry points import contracts/feature.ts and contracts/services.ts directly. No private execution tables, local journals, credentials, SDK subscriptions, or wake calls. Provider bindings are trusted closures over the shared owner as allowed by docs/contracts/execution.md. No advanced seam is approved at this F0. Record blockers rather than inventing one.

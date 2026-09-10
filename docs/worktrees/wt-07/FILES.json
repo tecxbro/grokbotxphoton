@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "files": [
+    {"path":"packages/photon-features/src/features/native/module.ts","purpose":"Feature assembly and guarded execution","symbols":["createFeatureModule"]},
+    {"path":"packages/photon-features/src/features/native/spaces.ts","purpose":"Scoped lookup and creation","symbols":["executeSpaceLookup","createSpace"]},
+    {"path":"packages/photon-features/src/features/native/membership.ts","purpose":"Membership reads and writes","symbols":["executeMembershipOperation"]},
+    {"path":"packages/photon-features/src/features/native/appearance.ts","purpose":"Name, avatar, and background operations through guarded media","symbols":["executeAppearanceOperation"]},
+    {"path":"packages/photon-features/src/features/native/effects.ts","purpose":"Pinned effect mapping and dispatch","symbols":["executeEffect"]},
+    {"path":"packages/photon-features/src/features/native/account-contact.ts","purpose":"Authorized native account contact sharing","symbols":["shareAccountContact"]},
+    {"path":"packages/photon-features/src/features/native/metadata.ts","purpose":"Curated safe message metadata","symbols":["getCuratedMetadata"]},
+    {"path":"packages/photon-features/src/features/native/custom-handlers.ts","purpose":"Strict named custom handler registry and dispatch","symbols":["resolveCustomHandler","executeCustomHandler"]},
+    {"path":"packages/photon-features/src/features/native/reducer.ts","purpose":"Synchronous normalized group-event consumption","symbols":["applyNativeEvent"]},
+    {"path":"packages/photon-features/src/features/native/sdk.ts","purpose":"Pinned public SDK types and native operation mapping","symbols":["mapNativeOperation"]},
+    {"path":"packages/photon-features/tests/lanes/wt-07/unit.test.ts","purpose":"Schemas, authorization, scope, and validation tests"},
+    {"path":"packages/photon-features/tests/lanes/wt-07/sdk-contract.test.ts","purpose":"Pinned public SDK declaration and builder tests"},
+    {"path":"packages/photon-features/tests/lanes/wt-07/integration.test.ts","purpose":"Executor, compiler, media, reducer, and routing tests"},
+    {"path":"packages/photon-features/tests/lanes/wt-07/regression.test.ts","purpose":"Wrong-route, read-safety, redaction, recovery, and event regressions"},
+    {"path":"docs/worktrees/wt-07/AGENTS.md","purpose":"Lane rules"},
+    {"path":"docs/worktrees/wt-07/README.md","purpose":"Scope overview"},
+    {"path":"docs/worktrees/wt-07/ARCHITECTURE.md","purpose":"Execution and recovery architecture"},
+    {"path":"docs/worktrees/wt-07/WORKLOG.md","purpose":"Chronological implementation record"},
+    {"path":"docs/worktrees/wt-07/SOURCES.md","purpose":"Source conclusions and separation"},
+    {"path":"docs/worktrees/wt-07/source-lock.json","purpose":"Verified official source identities and hashes"},
+    {"path":"docs/worktrees/wt-07/FILES.json","purpose":"Exact assigned file inventory"},
+    {"path":"docs/worktrees/wt-07/ACCEPTANCE.md","purpose":"Observable acceptance cases"},
+    {"path":"docs/worktrees/wt-07/TEST-EVIDENCE.md","purpose":"Commands and results"},
+    {"path":"docs/worktrees/wt-07/HANDOFF.md","purpose":"Evidence-tiered integration handoff"},
+    {"path":"docs/worktrees/wt-07/CHANGE-REQUESTS.md","purpose":"Shared blockers and integration requests"},
+    {"path":"docs/worktrees/wt-07/references/contract-evidence.md","purpose":"Pinned package and skill evidence"}
+  ]
+}

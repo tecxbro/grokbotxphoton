@@ -1,0 +1,2 @@
+# WT-06 cards
+Use only the seven requested cards source files, four requested test files, and this documentation directory. Preserve inherited compatibility exports and the four relocation edits. Public handlers import contracts/feature.ts and contracts/services.ts explicitly; no private journal, task/outbox tables, transport instance, server, live sends or provisioning. Every provider effect uses executeChild. Update documentation and evidence with behavior changes.

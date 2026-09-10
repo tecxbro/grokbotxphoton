@@ -34,3 +34,47 @@ export function assertActionMediaAvailable(tx: Transaction, action: Action, cont
   }
   walk(action.arguments);
 }
+
+import type { UnitOfWork } from "../../contracts/store.js";
+import type { StagedMediaRecord } from "../../state/ports.js";
+import type { StagedMedia } from "./staging.js";
+
+/** A pin has no time-based expiry: queued or unknown work may survive arbitrarily long. */
+export const RETAINED = Number.MAX_SAFE_INTEGER;
+/** Runtime-owned proof, synchronous in the tombstone transaction. Must cover admission and all readers. */
+export type NoMediaConsumers = (unit: UnitOfWork, record: Readonly<StagedMediaRecord>) => boolean;
+
+/** Verify descriptor, full scope and owner against the existing shared domain row. */
+export function authorizedMedia(unit: UnitOfWork, media: StagedMedia, context: TrustedContext): StagedMediaRecord {
+  stagedMediaSchema.parse(media);
+  const row = unit.get("stagedMedia", media.stagingId);
+  if (!row || !sameScope(row.scope, context.scope) || row.principalId !== context.principalId ||
+    row.taskId !== context.taskId || row.generation !== context.generation || row.sha256 !== media.sha256 ||
+    row.mimeType !== media.mimeType || row.bytes !== media.bytes) reject("staged resource unavailable");
+  return row;
+}
+/** Call atomically during admission, and before asynchronous reads. Idempotent across retries. */
+export function retainResource(unit: UnitOfWork, media: StagedMedia, context: TrustedContext): void {
+  const row = authorizedMedia(unit, media, context);
+  if (row.expiresAt === 0) reject("released resource");
+  if (row.expiresAt !== RETAINED) unit.put("stagedMedia", { ...row, expiresAt: RETAINED, revision: row.revision + 1 }, row.revision);
+}
+/** Only a runtime proof can release a pin; an expired lease is not proof that a send no longer needs bytes. */
+export function releaseResource(unit: UnitOfWork, media: StagedMedia, context: TrustedContext,
+  expiresAt: number, noConsumers?: NoMediaConsumers): boolean {
+  const row = authorizedMedia(unit, media, context);
+  if (!Number.isSafeInteger(expiresAt) || expiresAt <= 0 || expiresAt >= RETAINED) reject("invalid expiry");
+  if (row.expiresAt === 0 || noConsumers?.(unit, row) !== true) return false;
+  unit.put("stagedMedia", { ...row, expiresAt, revision: row.revision + 1 }, row.revision);
+  return true;
+}
+/** Tombstone before filesystem removal. Without a same-transaction runtime proof, retain indefinitely. */
+export function cleanExpiredResources(unit: UnitOfWork, media: StagedMedia, context: TrustedContext,
+  now: number, noConsumers?: NoMediaConsumers): StagedMediaRecord | undefined {
+  const row = authorizedMedia(unit, media, context);
+  if (row.expiresAt === 0) return row;
+  if (row.expiresAt === RETAINED || row.expiresAt > now || noConsumers?.(unit, row) !== true) return undefined;
+  const tombstone = { ...row, expiresAt: 0, revision: row.revision + 1 };
+  unit.put("stagedMedia", tombstone, row.revision);
+  return tombstone;
+}
