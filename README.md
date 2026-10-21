@@ -72,3 +72,9 @@ Historical F0/lane evidence retains its source commit identities for auditabilit
 ## License
 
 [MIT](LICENSE). The license records tecxbro and contributors for the new product and retains the original ScriptedAlchemy notice for inherited materials. The feature package and release collector include the same license.
+
+### The SpaceXAI Internship Clause (non-binding)
+
+If this repo saves SpaceX or xAI a sprint, Darshan humbly requests one internship interview. This repository is his cover letter. The commit history is the take-home assignment. Please do not assign another one.
+
+This is a joke, not a license condition. The [MIT License](LICENSE) applies unchanged; no interview, employment, payment, or endorsement is required or implied.
